@@ -2198,3 +2198,48 @@ body {
 
     to {
         opacity: 1;
+
+/* ===== CONTACT METHODS STYLES ===== */
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-method.primary {
+    border-color: var(--primary);
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    width: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.contact-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+

@@ -1096,6 +1096,142 @@ body {
     transition: width var(--duration-700) var(--ease-out);
 }
 
+/* Stack Technique Card (Glassmorphism) */
+.stack-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-revolutionary);
+    padding: var(--space-6);
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stack-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--gradient-glow);
+    opacity: 0.1;
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+}
+
+.stack-header {
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+.stack-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-full);
+    padding: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-3);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+}
+
+.stack-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.stack-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.stack-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--glass-border);
+    transition: all var(--duration-300) var(--ease-out);
+}
+
+.stack-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--revolution-primary);
+}
+
+.stack-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--glass-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+    flex-shrink: 0;
+}
+
+.stack-info {
+    flex: 1;
+}
+
+.stack-name {
+    font-size: 0.95rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.stack-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.skill-tag {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-1) var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+    transition: all var(--duration-200) var(--ease-out);
+}
+
+.skill-tag:hover {
+    background: var(--revolution-primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Floating Elements */
 .floating-elements {
     position: absolute;
@@ -1962,6 +2098,36 @@ body {
     .trust-item {
         flex-direction: row;
         text-align: left;
+    }
+
+    /* Hero Responsive */
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+        text-align: center;
+        min-height: auto;
+        padding-top: var(--space-8);
+        padding-bottom: var(--space-8);
+    }
+
+    /* Stack Card Responsive */
+    .stack-card {
+        max-width: none;
+        margin: var(--space-4) 0;
+    }
+
+    .stack-items {
+        gap: var(--space-4);
+    }
+
+    .stack-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-3);
+    }
+
+    .stack-skills {
+        justify-content: center;
     }
 }
 

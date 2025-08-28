@@ -31,7 +31,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # Charger les variables d'environnement depuis le fichier .env
-load_dotenv('/var/www/Revolutionnary/.env')
+load_dotenv('/var/www/production-workspace/.env')
 
 # Import des services Revolutionary
 from services.zscore import zscore_bp, ZScoreAlgorithm
@@ -135,17 +135,17 @@ def create_app():
 
     # Instances des algorithmes (partagées)
     zscore_algo = ZScoreAlgorithm()  # ✅ Utilise le constructeur par défaut
-    usa_residents_algo = USAResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_usa_residents.json')
-    france_residents_algo = FranceResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_france_residents.json')
-    canada_residents_algo = CanadaResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_canada_residents.json')
-    uk_residents_algo = UKResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_uk_residents.json')
-    germany_residents_algo = GermanyResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_germany_residents.json')
-    australia_residents_algo = AustraliaResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_australia_residents.json')
-    spain_residents_algo = SpainResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_spain_residents.json')
-    japan_residents_algo = JapanResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_japan_residents.json')
-    morocco_residents_algo = MoroccoResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_morocco_residents.json')
-    brazil_residents_algo = BrazilResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_brazil_residents.json')
-    thailand_residents_algo = ThailandResidentsAlgorithm('/var/www/Revolutionnary/platform/backend/data_v2/villes_thailand_residents.json')
+    usa_residents_algo = USAResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_usa_residents.json')
+    france_residents_algo = FranceResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_france_residents.json')
+    canada_residents_algo = CanadaResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_canada_residents.json')
+    uk_residents_algo = UKResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_uk_residents.json')
+    germany_residents_algo = GermanyResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_germany_residents.json')
+    australia_residents_algo = AustraliaResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_australia_residents.json')
+    spain_residents_algo = SpainResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_spain_residents.json')
+    japan_residents_algo = JapanResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_japan_residents.json')
+    morocco_residents_algo = MoroccoResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_morocco_residents.json')
+    brazil_residents_algo = BrazilResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_brazil_residents.json')
+    thailand_residents_algo = ThailandResidentsAlgorithm('/var/www/production-workspace/backend/data_v2/villes_thailand_residents.json')
     skillgraph_algo = SkillGraphAlgorithm(data_loader)
     wealth_algo = WealthAlgorithm(data_loader)
 
@@ -2112,7 +2112,7 @@ def create_app():
 
             # Sélectionner l'algorithme approprié
             algo = country_algorithms.get(selected_country, france_residents_algo)
-            
+
             # Calculer les recommandations
             try:
                 recommendations = algo.calculate_recommendations(questionnaire, limit=10)
@@ -2157,7 +2157,7 @@ def create_app():
         """Helper function to get country_id from country name"""
         country_id_mapping = {
             'france': 'fr',
-            'usa': 'us', 
+            'usa': 'us',
             'canada': 'ca',
             'uk': 'uk',
             'germany': 'de',

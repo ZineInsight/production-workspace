@@ -102,7 +102,7 @@ class SimpleAPI {
     async testConnection() {
         console.log('🧪 Testing connection to your site...');
 
-        const result = await this.call('/api/health');
+        const result = await this.call('/api/');
         if (!result.success) {
             // Essayer juste la racine
             const homeResult = await this.call('/');
@@ -118,7 +118,9 @@ class SimpleAPI {
         return {
             siteOnline: true,
             apiAvailable: true,
-            message: 'API disponible !'
+            apiStatus: result.data.status,
+            services: Object.keys(result.data.services || {}),
+            message: `API opérationnelle avec ${Object.keys(result.data.services || {}).length} services`
         };
     }
 }

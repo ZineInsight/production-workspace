@@ -1108,6 +1108,12 @@ body {
     max-width: 400px;
     position: relative;
     overflow: hidden;
+    transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+    transition: all var(--duration-500) var(--ease-out);
+}
+
+.stack-card:hover {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
 }
 
 .stack-card::before {

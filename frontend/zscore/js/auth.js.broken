@@ -1,0 +1,820 @@
+/**
+ * 🔐 REVOLUTIONARY AUTH MANAGER
+ * ===============================
+ * Frontend authentication system with JWT + Redis integration
+ * Author: Revolutionary Team
+ * Version: 1.0.0
+ */
+
+// ===== AUTH CONFIG =====
+const AUTH_CONFIG = {
+    API_BASE_URL: window.location.protocol + '//' + window.location.hostname,
+    ENDPOINTS: {
+        LOGIN: '/api/auth/login',
+        REGISTER: '/api/auth/register',
+        LOGOUT: '/api/auth/logout',
+        VERIFY_EMAIL: '/api/auth/verify-email',
+        RESEND_VERIFICATION: '/api/auth/resend-verification',
+        FORGOT_PASSWORD: '/api/auth/forgot-password',
+        RESET_PASSWORD: '/api/auth/reset-password',
+        PROFILE: '/api/auth/profile'
+    },
+    STORAGE_KEYS: {
+        TOKEN: 'revolutionary_token',
+        USER: 'revolutionary_user',
+        REMEMBER_ME: 'revolutionary_remember'
+    },
+    VALIDATION: {
+        EMAIL_REGEX: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        PASSWORD_MIN_LENGTH: 8,
+        NAME_MIN_LENGTH: 2
+    }
+};
+
+// ===== AUTH MANAGER CLASS =====
+class RevolutionaryAuth {
+    constructor() {
+        this.currentForm = 'login';
+        this.isLoading = false;
+        this.notifications = new NotificationManager();
+        this.init();
+    }
+
+    // 🚀 Initialize authentication system
+    init() {
+        this.setupEventListeners();
+        this.setupFormValidation();
+        this.checkAuthStatus();
+        this.handleURLParams();
+        console.log('🔐 Revolutionary Auth initialized');
+    }
+
+    // 📱 Setup event listeners
+    setupEventListeners() {
+        // Form switching
+        document.getElementById('switchToRegister')?.addEventListener('click', () => this.switchForm('register'));
+        document.getElementById('switchToLogin')?.addEventListener('click', () => this.switchForm('login'));
+        document.getElementById('backToLogin')?.addEventListener('click', () => this.switchForm('login'));
+    });
+
+        document.getElementById('backToLoginFromForgot')?.addEventListener('click', () => {
+    this.switchForm('login');
+});
+
+document.getElementById('forgotPasswordLink')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    this.switchForm('forgot');
+});
+
+// Form submissions
+document.getElementById('loginForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    this.handleLogin(e);
+});
+
+document.getElementById('registerForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    this.handleRegister(e);
+});
+
+document.getElementById('forgotPasswordForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    this.handleForgotPassword(e);
+});
+
+// Password visibility toggles
+document.getElementById('loginPasswordToggle')?.addEventListener('click', () => {
+    this.togglePasswordVisibility('loginPassword', 'loginPasswordToggle');
+});
+
+document.getElementById('registerPasswordToggle')?.addEventListener('click', () => {
+    this.togglePasswordVisibility('registerPassword', 'registerPasswordToggle');
+});
+
+// Email verification resend
+document.getElementById('resendVerification')?.addEventListener('click', () => {
+    this.resendVerification();
+});
+
+// Real-time validation
+this.initRealTimeValidation();
+    }
+
+/**
+ * 🔄 Switch between different forms
+ */
+switchForm(formName) {
+    console.log(`[Revolutionary Auth] Switching to ${formName} form`);
+
+    // Hide all forms
+    const forms = document.querySelectorAll('.auth-form');
+    forms.forEach(form => {
+        form.classList.remove('active');
+    });
+
+    // Show target form
+    const targetForm = formName === 'login' ? document.getElementById('loginForm') :
+        formName === 'register' ? document.getElementById('registerForm') :
+            formName === 'verification' ? document.getElementById('emailVerification') :
+                formName === 'forgot' ? document.getElementById('forgotPasswordForm') : null;
+
+    if (targetForm) {
+        targetForm.classList.add('active');
+        this.currentForm = formName;
+
+        // Focus first input
+        const firstInput = targetForm.querySelector('.form-input');
+        if (firstInput) {
+            setTimeout(() => firstInput.focus(), 100);
+        }
+
+        // Track event
+        this.trackEvent('form_switch', { form: formName });
+    }
+}
+
+    /**
+     * 🔑 Handle login form submission
+     */
+    async handleLogin(event) {
+    const form = event.target;
+    const formData = new FormData(form);
+    const button = document.getElementById('loginButton');
+
+    // Clear previous errors
+    this.clearFormErrors('login');
+
+    // Validate form
+    if (!this.validateLoginForm(formData)) {
+        return;
+    }
+
+    // Set loading state
+    this.setLoadingState(button, true);
+
+    try {
+        const response = await fetch(`${this.apiBase}/login`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: formData.get('email'),
+                password: formData.get('password'),
+                remember: formData.get('remember') === 'on'
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            this.showNotification('success', 'Connexion réussie', 'Redirection en cours...');
+
+            // Store session info
+            if (data.token) {
+                localStorage.setItem('auth_token', data.token);
+            }
+
+            // Track successful login
+            this.trackEvent('login_success', {
+                email: formData.get('email'),
+                tier: data.user?.tier || 'free'
+            });
+
+            // Redirect to dashboard or intended page
+            setTimeout(() => {
+                const redirectUrl = new URLSearchParams(window.location.search).get('redirect') || '/dashboard';
+                window.location.href = redirectUrl;
+            }, 1000);
+
+        } else {
+            // Handle specific error cases
+            if (data.error === 'email_not_verified') {
+                this.showNotification('warning', 'E-mail non vérifié', 'Veuillez vérifier votre boîte e-mail');
+                document.getElementById('verificationEmail').textContent = formData.get('email');
+                this.switchForm('verification');
+            } else if (data.error === 'invalid_credentials') {
+                this.showFormError('loginPassword', 'E-mail ou mot de passe incorrect');
+            } else if (data.error === 'account_locked') {
+                this.showNotification('error', 'Compte bloqué', 'Trop de tentatives de connexion. Réessayez plus tard.');
+            } else {
+                this.showNotification('error', 'Erreur de connexion', data.message || 'Une erreur inattendue s\'est produite');
+            }
+
+            this.trackEvent('login_error', {
+                error: data.error,
+                email: formData.get('email')
+            });
+        }
+
+    } catch (error) {
+        console.error('[Revolutionary Auth] Login error:', error);
+        this.showNotification('error', 'Erreur réseau', 'Impossible de se connecter au serveur');
+        this.trackEvent('login_network_error', { error: error.message });
+    } finally {
+        this.setLoadingState(button, false);
+    }
+}
+
+    /**
+     * 📝 Handle registration form submission
+     */
+    async handleRegister(event) {
+    const form = event.target;
+    const formData = new FormData(form);
+    const button = document.getElementById('registerButton');
+
+    // Clear previous errors
+    this.clearFormErrors('register');
+
+    // Validate form
+    if (!this.validateRegisterForm(formData)) {
+        return;
+    }
+
+    // Set loading state
+    this.setLoadingState(button, true);
+
+    try {
+        const response = await fetch(`${this.apiBase}/register`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: formData.get('email'),
+                password: formData.get('password'),
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                acceptTerms: formData.get('acceptTerms') === 'on',
+                acceptMarketing: formData.get('acceptMarketing') === 'on'
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            this.showNotification('success', 'Compte créé !', 'Un e-mail de vérification a été envoyé');
+
+            // Show email verification screen
+            document.getElementById('verificationEmail').textContent = formData.get('email');
+            this.switchForm('verification');
+
+            // Track successful registration
+            this.trackEvent('register_success', {
+                email: formData.get('email'),
+                marketing: formData.get('acceptMarketing') === 'on'
+            });
+
+        } else {
+            // Handle specific error cases
+            if (data.error === 'email_exists') {
+                this.showFormError('registerEmail', 'Cette adresse e-mail est déjà utilisée');
+            } else if (data.error === 'weak_password') {
+                this.showFormError('registerPassword', 'Le mot de passe ne respecte pas les critères de sécurité');
+            } else if (data.error === 'invalid_email') {
+                this.showFormError('registerEmail', 'Adresse e-mail non valide');
+            } else {
+                this.showNotification('error', 'Erreur d\'inscription', data.message || 'Une erreur inattendue s\'est produite');
+            }
+
+            this.trackEvent('register_error', {
+                error: data.error,
+                email: formData.get('email')
+            });
+        }
+
+    } catch (error) {
+        console.error('[Revolutionary Auth] Registration error:', error);
+        this.showNotification('error', 'Erreur réseau', 'Impossible de se connecter au serveur');
+        this.trackEvent('register_network_error', { error: error.message });
+    } finally {
+        this.setLoadingState(button, false);
+    }
+}
+
+    /**
+     * 🔓 Handle forgot password form submission
+     */
+    async handleForgotPassword(event) {
+    const form = event.target;
+    const formData = new FormData(form);
+    const button = document.getElementById('forgotPasswordButton');
+
+    // Clear previous errors
+    this.clearFormErrors('forgot');
+
+    // Validate email
+    const email = formData.get('email');
+    if (!this.validateEmail(email)) {
+        this.showFormError('forgotEmail', 'Adresse e-mail non valide');
+        return;
+    }
+
+    // Set loading state
+    this.setLoadingState(button, true);
+
+    try {
+        const response = await fetch(`${this.apiBase}/forgot-password`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            this.showNotification('success', 'E-mail envoyé', 'Vérifiez votre boîte e-mail pour le lien de réinitialisation');
+
+            // Switch back to login after a delay
+            setTimeout(() => {
+                this.switchForm('login');
+            }, 2000);
+
+            this.trackEvent('forgot_password_success', { email });
+
+        } else {
+            if (data.error === 'email_not_found') {
+                this.showFormError('forgotEmail', 'Aucun compte associé à cette adresse e-mail');
+            } else {
+                this.showNotification('error', 'Erreur', data.message || 'Une erreur inattendue s\'est produite');
+            }
+
+            this.trackEvent('forgot_password_error', { error: data.error, email });
+        }
+
+    } catch (error) {
+        console.error('[Revolutionary Auth] Forgot password error:', error);
+        this.showNotification('error', 'Erreur réseau', 'Impossible de se connecter au serveur');
+        this.trackEvent('forgot_password_network_error', { error: error.message });
+    } finally {
+        this.setLoadingState(button, false);
+    }
+}
+
+    /**
+     * 📧 Resend email verification
+     */
+    async resendVerification() {
+    const email = document.getElementById('verificationEmail').textContent;
+    const button = document.getElementById('resendVerification');
+
+    if (!email) {
+        this.showNotification('error', 'Erreur', 'Adresse e-mail manquante');
+        return;
+    }
+
+    this.setLoadingState(button, true);
+
+    try {
+        const response = await fetch(`${this.apiBase}/resend-verification`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            this.showNotification('success', 'E-mail renvoyé', 'Vérifiez votre boîte e-mail');
+            this.trackEvent('resend_verification_success', { email });
+        } else {
+            this.showNotification('error', 'Erreur', data.message || 'Impossible de renvoyer l\'e-mail');
+            this.trackEvent('resend_verification_error', { error: data.error, email });
+        }
+
+    } catch (error) {
+        console.error('[Revolutionary Auth] Resend verification error:', error);
+        this.showNotification('error', 'Erreur réseau', 'Impossible de se connecter au serveur');
+    } finally {
+        this.setLoadingState(button, false);
+    }
+}
+
+/**
+ * 👁️ Toggle password visibility
+ */
+togglePasswordVisibility(inputId, buttonId) {
+    const input = document.getElementById(inputId);
+    const button = document.getElementById(buttonId);
+    const eyeOpen = button.querySelector('.eye-open');
+    const eyeClosed = button.querySelector('.eye-closed');
+
+    if (input.type === 'password') {
+        input.type = 'text';
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = 'block';
+    } else {
+        input.type = 'password';
+        eyeOpen.style.display = 'block';
+        eyeClosed.style.display = 'none';
+    }
+
+    this.trackEvent('password_visibility_toggle', { field: inputId });
+}
+
+/**
+ * 💪 Initialize password strength checker
+ */
+initPasswordStrength() {
+    const passwordInput = document.getElementById('registerPassword');
+    const strengthIndicator = document.getElementById('passwordStrength');
+
+    if (passwordInput && strengthIndicator) {
+        passwordInput.addEventListener('input', (e) => {
+            this.updatePasswordStrength(e.target.value, strengthIndicator);
+        });
+    }
+}
+
+/**
+ * 📊 Update password strength indicator
+ */
+updatePasswordStrength(password, indicator) {
+    const strength = this.calculatePasswordStrength(password);
+
+    if (password.length === 0) {
+        indicator.classList.remove('visible', 'weak', 'fair', 'good', 'strong');
+        return;
+    }
+
+    indicator.classList.add('visible');
+    indicator.classList.remove('weak', 'fair', 'good', 'strong');
+
+    if (strength.score <= 1) {
+        indicator.classList.add('weak');
+        indicator.querySelector('.strength-text').textContent = 'Faible';
+    } else if (strength.score === 2) {
+        indicator.classList.add('fair');
+        indicator.querySelector('.strength-text').textContent = 'Moyen';
+    } else if (strength.score === 3) {
+        indicator.classList.add('good');
+        indicator.querySelector('.strength-text').textContent = 'Bon';
+    } else {
+        indicator.classList.add('strong');
+        indicator.querySelector('.strength-text').textContent = 'Excellent';
+    }
+}
+
+/**
+ * 🧮 Calculate password strength score
+ */
+calculatePasswordStrength(password) {
+    let score = 0;
+    const checks = {
+        length: password.length >= 8,
+        lowercase: /[a-z]/.test(password),
+        uppercase: /[A-Z]/.test(password),
+        numbers: /\d/.test(password),
+        special: /[!@#$%^&*(),.?":{}|<>]/.test(password),
+        longLength: password.length >= 12
+    };
+
+    // Calculate score
+    if (checks.length) score++;
+    if (checks.lowercase) score++;
+    if (checks.uppercase) score++;
+    if (checks.numbers) score++;
+    if (checks.special) score++;
+    if (checks.longLength) score++;
+
+    // Penalty for common patterns
+    if (/(.)\1{2,}/.test(password)) score--; // Repeated characters
+    if (/123|abc|qwe/i.test(password)) score--; // Sequential characters
+
+    return { score: Math.max(0, Math.min(4, score)), checks };
+}
+
+/**
+ * ✅ Initialize real-time form validation
+ */
+initRealTimeValidation() {
+    // Email validation
+    const emailInputs = document.querySelectorAll('input[type="email"]');
+    emailInputs.forEach(input => {
+        input.addEventListener('blur', () => {
+            this.validateEmailField(input);
+        });
+    });
+
+    // Password confirmation
+    const confirmPassword = document.getElementById('confirmPassword');
+    const registerPassword = document.getElementById('registerPassword');
+
+    if (confirmPassword && registerPassword) {
+        confirmPassword.addEventListener('input', () => {
+            this.validatePasswordConfirmation(registerPassword, confirmPassword);
+        });
+    }
+}
+
+/**
+ * 📧 Validate email field
+ */
+validateEmailField(input) {
+    const email = input.value.trim();
+    const errorElement = document.getElementById(input.id + 'Error');
+
+    if (email && !this.validateEmail(email)) {
+        this.showFormError(input.id, 'Format d\'e-mail non valide');
+        return false;
+    } else {
+        this.clearFormError(input.id);
+        return true;
+    }
+}
+
+/**
+ * 🔒 Validate password confirmation
+ */
+validatePasswordConfirmation(passwordInput, confirmInput) {
+    const password = passwordInput.value;
+    const confirmPassword = confirmInput.value;
+
+    if (confirmPassword && password !== confirmPassword) {
+        this.showFormError('confirmPassword', 'Les mots de passe ne correspondent pas');
+        return false;
+    } else {
+        this.clearFormError('confirmPassword');
+        return true;
+    }
+}
+
+/**
+ * 🔍 Validate login form
+ */
+validateLoginForm(formData) {
+    let isValid = true;
+
+    const email = formData.get('email');
+    const password = formData.get('password');
+
+    if (!email || !this.validateEmail(email)) {
+        this.showFormError('loginEmail', 'Adresse e-mail valide requise');
+        isValid = false;
+    }
+
+    if (!password || password.length < 1) {
+        this.showFormError('loginPassword', 'Mot de passe requis');
+        isValid = false;
+    }
+
+    return isValid;
+}
+
+/**
+ * 📝 Validate registration form
+ */
+validateRegisterForm(formData) {
+    let isValid = true;
+
+    const firstName = formData.get('firstName');
+    const lastName = formData.get('lastName');
+    const email = formData.get('email');
+    const password = formData.get('password');
+    const confirmPassword = formData.get('confirmPassword');
+    const acceptTerms = formData.get('acceptTerms');
+
+    if (!firstName || firstName.length < 2) {
+        this.showFormError('firstName', 'Prénom requis (min. 2 caractères)');
+        isValid = false;
+    }
+
+    if (!lastName || lastName.length < 2) {
+        this.showFormError('lastName', 'Nom requis (min. 2 caractères)');
+        isValid = false;
+    }
+
+    if (!email || !this.validateEmail(email)) {
+        this.showFormError('registerEmail', 'Adresse e-mail valide requise');
+        isValid = false;
+    }
+
+    if (!password || password.length < 8) {
+        this.showFormError('registerPassword', 'Mot de passe requis (min. 8 caractères)');
+        isValid = false;
+    } else {
+        const strength = this.calculatePasswordStrength(password);
+        if (strength.score < 2) {
+            this.showFormError('registerPassword', 'Mot de passe trop faible');
+            isValid = false;
+        }
+    }
+
+    if (password !== confirmPassword) {
+        this.showFormError('confirmPassword', 'Les mots de passe ne correspondent pas');
+        isValid = false;
+    }
+
+    if (!acceptTerms) {
+        this.showNotification('warning', 'Conditions requises', 'Vous devez accepter les conditions d\'utilisation');
+        isValid = false;
+    }
+
+    return isValid;
+}
+
+/**
+ * 📧 Validate email format
+ */
+validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+/**
+ * ⚠️ Show form error
+ */
+showFormError(fieldId, message) {
+    const errorElement = document.getElementById(fieldId + 'Error');
+    if (errorElement) {
+        errorElement.textContent = message;
+        errorElement.classList.add('visible');
+    }
+}
+
+/**
+ * 🧹 Clear form error
+ */
+clearFormError(fieldId) {
+    const errorElement = document.getElementById(fieldId + 'Error');
+    if (errorElement) {
+        errorElement.textContent = '';
+        errorElement.classList.remove('visible');
+    }
+}
+
+/**
+ * 🧹 Clear all form errors
+ */
+clearFormErrors(formType) {
+    const form = formType === 'login' ? document.getElementById('loginForm') :
+        formType === 'register' ? document.getElementById('registerForm') :
+            formType === 'forgot' ? document.getElementById('forgotPasswordForm') : null;
+
+    if (form) {
+        const errorElements = form.querySelectorAll('.form-error');
+        errorElements.forEach(el => {
+            el.textContent = '';
+            el.classList.remove('visible');
+        });
+    }
+}
+
+/**
+ * 🔄 Set loading state for buttons
+ */
+setLoadingState(button, isLoading) {
+    if (isLoading) {
+        button.classList.add('loading');
+        button.disabled = true;
+    } else {
+        button.classList.remove('loading');
+        button.disabled = false;
+    }
+}
+
+/**
+ * 🔔 Show notification
+ */
+showNotification(type, title, message) {
+    const container = document.getElementById('notifications');
+    const notificationId = 'notification-' + Date.now();
+
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.id = notificationId;
+    notification.innerHTML = `
+            <div class="notification-content">
+                <div class="notification-icon">
+                    ${this.getNotificationIcon(type)}
+                </div>
+                <div class="notification-text">
+                    <div class="notification-title">${title}</div>
+                    <div class="notification-message">${message}</div>
+                </div>
+                <button class="notification-close" onclick="revolutionaryAuth.closeNotification('${notificationId}')">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        `;
+
+    container.appendChild(notification);
+
+    // Trigger animation
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        this.closeNotification(notificationId);
+    }, 5000);
+
+    this.notifications.push(notificationId);
+}
+
+/**
+ * ❌ Close notification
+ */
+closeNotification(notificationId) {
+    const notification = document.getElementById(notificationId);
+    if (notification) {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+            this.notifications = this.notifications.filter(id => id !== notificationId);
+        }, 300);
+    }
+}
+
+/**
+ * 🎨 Get notification icon
+ */
+getNotificationIcon(type) {
+    const icons = {
+        success: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        error: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        warning: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.29 3.86L1.82 18C1.64466 18.3024 1.55611 18.6453 1.56331 18.9931C1.57051 19.3409 1.67328 19.6798 1.86037 19.9764C2.04746 20.2729 2.31163 20.5157 2.62556 20.6777C2.9395 20.8396 3.29282 20.9148 3.65 20.895H20.35C20.7072 20.9148 21.0605 20.8396 21.3744 20.6777C21.6884 20.5157 21.9525 20.2729 22.1396 19.9764C22.3267 19.6798 22.4295 19.3409 22.4367 18.9931C22.4439 18.6453 22.3553 18.3024 22.18 18L13.71 3.86C13.5317 3.56611 13.2807 3.32312 12.9812 3.15133C12.6817 2.97955 12.3437 2.88477 12 2.88477C11.6563 2.88477 11.3183 2.97955 11.0188 3.15133C10.7193 3.32312 10.4683 3.56611 10.29 3.86V3.86Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg>',
+        info: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    };
+
+    return icons[type] || icons.info;
+}
+
+/**
+ * 🔗 Check URL parameters for special actions
+ */
+checkUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Email verification
+    if (urlParams.get('verify') === 'success') {
+        this.showNotification('success', 'E-mail vérifié !', 'Votre compte est maintenant activé');
+        this.trackEvent('email_verified', { source: 'url' });
+    } else if (urlParams.get('verify') === 'error') {
+        this.showNotification('error', 'Erreur de vérification', 'Le lien de vérification est invalide ou expiré');
+    }
+
+    // Password reset
+    if (urlParams.get('reset') === 'success') {
+        this.showNotification('success', 'Mot de passe réinitialisé', 'Vous pouvez maintenant vous connecter avec votre nouveau mot de passe');
+    } else if (urlParams.get('reset') === 'error') {
+        this.showNotification('error', 'Erreur de réinitialisation', 'Le lien de réinitialisation est invalide ou expiré');
+    }
+
+    // Auto-switch to registration if specified
+    if (urlParams.get('mode') === 'register') {
+        this.switchForm('register');
+    }
+}
+
+/**
+ * 📝 Auto-fill email from URL
+ */
+autoFillEmail() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const email = urlParams.get('email');
+
+    if (email && this.validateEmail(email)) {
+        const emailInputs = document.querySelectorAll('input[type="email"]');
+        emailInputs.forEach(input => {
+            input.value = email;
+        });
+    }
+}
+
+/**
+ * 📊 Track authentication events
+ */
+trackEvent(event, data = {}) {
+    if (window.revolutionaryAuth && typeof window.revolutionaryAuth.trackEvent === 'function') {
+        window.revolutionaryAuth.trackEvent(event, {
+            ...data,
+            timestamp: new Date().toISOString(),
+            form: this.currentForm,
+            userAgent: navigator.userAgent,
+            url: window.location.href
+        });
+    }
+
+    console.log(`[Revolutionary Auth] Event: ${event}`, data);
+}
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    window.revolutionaryAuth = new RevolutionaryAuth();
+});
+
+// Export for module systems
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = RevolutionaryAuth;
+}

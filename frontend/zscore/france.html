@@ -1,0 +1,3106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer en France 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --france-blue: #0055A4;
+            --france-white: #FFFFFF;
+            --france-red: #EF4135;
+            --france-gold: #FFD700;
+            --france-dark: #1E3A8A;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 85, 164, 0.7), rgba(239, 65, 53, 0.7)),
+                url('c:/Users/asmaa/Documents/Naim Projets/minecraft-teen-site/image/tour Eiffel.jpg') center/cover;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="france" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="3" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23france)"/></svg>');
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="france" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="3" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23france)"/></svg>');
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--france-blue), var(--france-red));
+            color: white;
+            padding: 60px 0;
+            margin: 50px 0;
+            border-radius: 15px;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--france-blue);
+        }
+
+        .premium-badge {
+            background: linear-gradient(135deg, var(--france-gold), #ffd700);
+            color: var(--france-dark);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(239, 65, 53, 0.3);
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+            height: 100%;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 85, 164, 0.2);
+        }
+
+        .price-tag {
+            background: linear-gradient(135deg, var(--france-red), #ff6b6b);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, var(--france-blue), var(--france-red));
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 85, 164, 0.4);
+        }
+
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 85, 164, 0.6);
+            color: white;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 85, 164, 0.1), rgba(239, 65, 53, 0.1));
+            border-left: 4px solid var(--france-blue);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--france-blue);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -37px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px var(--france-blue);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--france-blue);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--france-blue) !important;
+        }
+
+        .nav-link {
+            color: var(--france-dark) !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--france-red) !important;
+        }
+
+        .premium-section {
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .premium-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,215,0,0.1), rgba(255,215,0,0.05));
+            pointer-events: none;
+        }
+
+        /* Éviter les chevauchements avec navbar fixe */
+        .section-header {
+            scroll-margin-top: 80px;
+        }
+
+        #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-compass me-2"></i>Guide France
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">1. Pourquoi France</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">2. Régions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">3. Logement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">4. Coût de la Vie</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="nav-link text-warning">
+                            <i class="fas fa-crown me-1"></i>4 sections premium
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-unlock me-1"></i>Débloquer
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Moderne -->
+    <section class="hero-section" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="badge bg-warning text-dark mb-3 px-3 py-2">
+                        <i class="fas fa-fire me-2"></i>Guide #1 France 2025
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4">
+                        S'installer en France<br>
+                        <span style="color: var(--france-gold);">comme un Local</span>
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        Le guide complet pour les expatriés qui souhaite découvrir la France.
+                    </p>
+
+                    <div class="row mb-4">
+                        <div class="col-sm-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-3 fa-lg" style="color: var(--france-gold);"></i>
+                                <span>8 sections détaillées</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-3 fa-lg" style="color: var(--france-gold);"></i>
+                                <span>4 sections gratuites</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-3 fa-lg" style="color: var(--france-gold);"></i>
+                                <span>Données 2025 vérifiées</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-3 fa-lg" style="color: var(--france-gold);"></i>
+                                <span>Support communauté</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative">
+                        <div class="bg-white rounded-3 p-4 shadow-lg">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="text-dark mb-0">Progression du Guide</h6>
+                                    <span class="badge bg-success">4/8 Gratuit</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 50%; background: var(--france-blue);"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-start">
+                                <div class="d-flex align-items-center mb-2 p-2 bg-light rounded">
+                                    <i class="fas fa-check-circle me-2" style="color: var(--france-blue);"></i>
+                                    <span class="small text-dark">✓ Pourquoi France</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 bg-light rounded">
+                                    <i class="fas fa-check-circle me-2" style="color: var(--france-blue);"></i>
+                                    <span class="small text-dark">✓ Meilleures Régions</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 bg-light rounded">
+                                    <i class="fas fa-check-circle me-2" style="color: var(--france-blue);"></i>
+                                    <span class="small text-dark">✓ Trouver un Logement</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 bg-light rounded">
+                                    <i class="fas fa-check-circle me-2" style="color: var(--france-blue);"></i>
+                                    <span class="small text-dark">✓ Coût de la Vie</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 rounded" style="background: rgba(255,215,0,0.1);">
+                                    <i class="fas fa-lock me-2" style="color: var(--france-gold);"></i>
+                                    <span class="small text-dark">🔐 Système de Santé</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 rounded" style="background: rgba(255,215,0,0.1);">
+                                    <i class="fas fa-lock me-2" style="color: var(--france-gold);"></i>
+                                    <span class="small text-dark">🔐 Éducation & Écoles</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 p-2 rounded" style="background: rgba(255,215,0,0.1);">
+                                    <i class="fas fa-lock me-2" style="color: var(--france-gold);"></i>
+                                    <span class="small text-dark">🔐 Fiscalité & Impôts</span>
+                                </div>
+                                <div class="d-flex align-items-center p-2 rounded" style="background: rgba(255,215,0,0.1);">
+                                    <i class="fas fa-lock me-2" style="color: var(--france-gold);"></i>
+                                    <span class="small text-dark">🔐 Intégration Culturelle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Pourquoi choisir la France -->
+    <section id="section1" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heart me-3"></i>1. Pourquoi choisir la France ?
+                    </h2>
+                    <p class="lead">Les 7 raisons qui font de la France une destination privilégiée</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-blue);">
+                <i class="fas fa-star me-2"></i>Les Atouts Majeurs de la France
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h5><i class="fas fa-university me-2" style="color: var(--france-red);"></i>Excellence & Savoir-Vivre</h5>
+                        <ul>
+                            <li><strong>Patrimoine mondial :</strong> 49 sites UNESCO</li>
+                            <li>Art de vivre reconnu mondialement</li>
+                            <li>Gastronomie d'exception</li>
+                            <li>Culture et histoire millénaires</li>
+                        </ul>
+                        <div class="price-tag">1ère destination touristique mondiale</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h5><i class="fas fa-briefcase me-2" style="color: var(--france-gold);"></i>Économie Dynamique</h5>
+                        <ul>
+                            <li><strong>7ème économie</strong> mondiale</li>
+                            <li>Marché du travail diversifié</li>
+                            <li>Innovation technologique</li>
+                            <li>Start-up écosystème en croissance</li>
+                        </ul>
+                        <div class="price-tag">PIB : 2,940 milliards USD</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h5><i class="fas fa-heart-pulse me-2" style="color: var(--france-blue);"></i>Système Social Exemplaire</h5>
+                        <ul>
+                            <li><strong>Sécurité sociale</strong> universelle</li>
+                            <li>Congés payés : 5 semaines minimum</li>
+                            <li>Allocations familiales généreuses</li>
+                            <li>Retraite par répartition</li>
+                        </ul>
+                        <div class="price-tag">Remboursement santé jusqu'à 100%</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h5><i class="fas fa-map-marked-alt me-2" style="color: var(--france-red);"></i>Position Géographique Idéale</h5>
+                        <ul>
+                            <li><strong>Centre de l'Europe</strong></li>
+                            <li>4 façades maritimes</li>
+                            <li>Diversité des paysages</li>
+                            <li>Climat tempéré agréable</li>
+                        </ul>
+                        <div class="price-tag">Hexagone : 551,695 km²</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-red);">
+                <i class="fas fa-chart-line me-2"></i>France vs Autres Destinations
+            </h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead style="background: var(--france-blue); color: white;">
+                        <tr>
+                            <th>Critère</th>
+                            <th>France</th>
+                            <th>Allemagne</th>
+                            <th>Royaume-Uni</th>
+                            <th>Suisse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Salaire minimum</strong></td>
+                            <td>11.65€/h</td>
+                            <td>12.00€/h</td>
+                            <td>11.44€/h</td>
+                            <td>Pas de minimum légal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Congés payés</strong></td>
+                            <td>25 jours</td>
+                            <td>24 jours</td>
+                            <td>20 jours</td>
+                            <td>20 jours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sécurité sociale</strong></td>
+                            <td>Universelle</td>
+                            <td>Obligatoire</td>
+                            <td>NHS gratuit</td>
+                            <td>Obligatoire payante</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Qualité de vie</strong></td>
+                            <td>17ème mondial</td>
+                            <td>16ème mondial</td>
+                            <td>19ème mondial</td>
+                            <td>3ème mondial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Innovation Index</strong></td>
+                            <td>16ème mondial</td>
+                            <td>8ème mondial</td>
+                            <td>4ème mondial</td>
+                            <td>1er mondial</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-lightbulb me-2"></i>Le Saviez-Vous ?</h6>
+                <p class="mb-0">La France est le seul pays au monde à offrir une combinaison unique de : haute gastronomie, 
+                patrimoine culturel exceptionnel, système social avancé et position géographique centrale en Europe. 
+                C'est pourquoi 6.7 millions d'étrangers ont choisi d'y vivre en permanence.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Meilleures Régions -->
+    <section id="section2" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-map me-3"></i>2. Meilleures Régions où Vivre
+                    </h2>
+                    <p class="lead">Découvrez les 6 régions les plus attractives pour s'installer</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\tour effeil.jpg" 
+                             alt="Île-de-France" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-danger">Premium</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-building me-2"></i>Île-de-France
+                            </h5>
+                            <div class="price-tag">1,400-3,000€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Paris et sa région. Centre économique et culturel de la France.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>Opportunités professionnelles infinies</li>
+                                <li>Transport public exceptionnel</li>
+                                <li>Vie culturelle intense</li>
+                                <li>Diversité internationale</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Cadres</span>
+                            <span class="badge bg-light text-dark me-1">Étudiants</span>
+                            <span class="badge bg-light text-dark">Entrepreneurs</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">12.2M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">42k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">9.2%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\PACA.jpg" 
+                             alt="Provence-Alpes-Côte d'Azur" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-warning">Populaire</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-sun me-2"></i>PACA
+                            </h5>
+                            <div class="price-tag">900-2,200€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Côte d'Azur, Marseille, Nice. Soleil, mer et art de vivre méditerranéen.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>320 jours de soleil par an</li>
+                                <li>Qualité de vie exceptionnelle</li>
+                                <li>Dynamisme économique</li>
+                                <li>Patrimoine naturel unique</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Retraités</span>
+                            <span class="badge bg-light text-dark me-1">Familles</span>
+                            <span class="badge bg-light text-dark">Freelances</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">5.1M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">28k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">8.1%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\auvergne rhones alpes.jpg" 
+                             alt="Auvergne-Rhône-Alpes" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-success">Tendance</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-mountain me-2"></i>Auvergne-Rhône-Alpes
+                            </h5>
+                            <div class="price-tag">800-1,800€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Lyon, Grenoble, Annecy. Innovation, montagne et dynamisme économique.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>2ème région économique de France</li>
+                                <li>Coût de la vie raisonnable</li>
+                                <li>Proximité Alpes et nature</li>
+                                <li>Pôles technologiques</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Ingénieurs</span>
+                            <span class="badge bg-light text-dark me-1">Sportifs</span>
+                            <span class="badge bg-light text-dark">Familles</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">8.1M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">31k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">7.4%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\nouvelle aquitaine.jpg" 
+                             alt="Nouvelle-Aquitaine" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-info">Émergent</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-wine-bottle me-2"></i>Nouvelle-Aquitaine
+                            </h5>
+                            <div class="price-tag">700-1,500€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Bordeaux, La Rochelle, Biarritz. Vin, océan et douceur de vivre.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>Plus grande région de France</li>
+                                <li>Côte atlantique magnifique</li>
+                                <li>Patrimoine gastronomique</li>
+                                <li>Économie en croissance</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Viticulteurs</span>
+                            <span class="badge bg-light text-dark me-1">Surfeurs</span>
+                            <span class="badge bg-light text-dark">Éco-conscients</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">6.0M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">26k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">7.8%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\occitanie.jpg" 
+                             alt="Occitanie" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-secondary">Abordable</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-plane me-2"></i>Occitanie
+                            </h5>
+                            <div class="price-tag">650-1,400€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Toulouse, Montpellier, Nîmes. Aéronautique, tech et soleil du Midi.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>Industrie aéronautique leader</li>
+                                <li>Universités de renom</li>
+                                <li>Climat méditerranéen</li>
+                                <li>Coût de la vie attractif</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Ingénieurs</span>
+                            <span class="badge bg-light text-dark me-1">Étudiants</span>
+                            <span class="badge bg-light text-dark">Techniciens</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">5.9M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">27k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">8.9%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="city-card">
+                    <div class="position-relative">
+                        <img src="C:\Users\asmaa\OneDrive\Documents\Asma\grand est.jpg" 
+                             alt="Grand Est" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-primary">Européen</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="mb-0" style="color: var(--france-blue);">
+                                <i class="fas fa-handshake me-2"></i>Grand Est
+                            </h5>
+                            <div class="price-tag">600-1,300€</div>
+                        </div>
+                        
+                        <p class="text-muted mb-3">
+                            Strasbourg, Metz, Reims. Carrefour européen et institutions UE.
+                        </p>
+
+                        <div class="mb-3">
+                            <h6>Points forts :</h6>
+                            <ul class="small mb-2">
+                                <li>Siège du Parlement européen</li>
+                                <li>Proximité Allemagne/Suisse</li>
+                                <li>Secteur automobile fort</li>
+                                <li>Culture franco-allemande</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Profil idéal :</h6>
+                            <span class="badge bg-light text-dark me-1">Fonctionnaires EU</span>
+                            <span class="badge bg-light text-dark me-1">Bilingues</span>
+                            <span class="badge bg-light text-dark">Diplomates</span>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-blue);">5.5M</div>
+                                    <small class="text-muted">Habitants</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border-end">
+                                    <div class="fw-bold" style="color: var(--france-red);">29k€</div>
+                                    <small class="text-muted">Salaire moyen</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold" style="color: var(--france-gold);">8.3%</div>
+                                <small class="text-muted">Chômage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-gold);">
+                <i class="fas fa-compass me-2"></i>Comment Choisir sa Région ?
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6><i class="fas fa-briefcase me-2"></i>Selon votre Profession</h6>
+                    <ul>
+                        <li><strong>Finance/Banque :</strong> Île-de-France (La Défense)</li>
+                        <li><strong>Tech/Innovation :</strong> Auvergne-Rhône-Alpes (Lyon)</li>
+                        <li><strong>Aéronautique :</strong> Occitanie (Toulouse)</li>
+                        <li><strong>Tourisme :</strong> PACA (Côte d'Azur)</li>
+                        <li><strong>Agriculture/Vin :</strong> Nouvelle-Aquitaine</li>
+                        <li><strong>Institutions UE :</strong> Grand Est (Strasbourg)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h6><i class="fas fa-home me-2"></i>Selon votre Style de Vie</h6>
+                    <ul>
+                        <li><strong>Vie urbaine intense :</strong> Île-de-France</li>
+                        <li><strong>Soleil et mer :</strong> PACA, Occitanie</li>
+                        <li><strong>Montagne et sports :</strong> Auvergne-Rhône-Alpes</li>
+                        <li><strong>Océan et surf :</strong> Nouvelle-Aquitaine</li>
+                        <li><strong>Culture européenne :</strong> Grand Est</li>
+                        <li><strong>Équilibre qualité/prix :</strong> Occitanie</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <h6><i class="fas fa-lightbulb me-2"></i>Conseil d'Expert</h6>
+                <p class="mb-0">Choisissez d'abord selon vos opportunités professionnelles, puis affinez selon vos préférences de vie. 
+                La France offre une mobilité interne facile - vous pouvez toujours changer de région plus tard !</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Logement -->
+    <section id="section3" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-home me-3"></i>3. Trouver un Logement
+                    </h2>
+                    <p class="lead">Guide complet du marché immobilier français</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-blue);">
+                <i class="fas fa-search me-2"></i>Plateformes de Recherche
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Leboncoin.fr</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Leader français</strong></li>
+                                    <li>Particuliers et professionnels</li>
+                                    <li>Interface intuitive</li>
+                                    <li>Négociation directe</li>
+                                </ul>
+                                <div class="price-tag">80% du marché</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-building me-2" style="color: var(--france-red);"></i>SeLoger.com</h6>
+                                <ul class="mb-2">
+                                    <li>Agences immobilières</li>
+                                    <li>Biens haut de gamme</li>
+                                    <li>Photos professionnelles</li>
+                                    <li>Visites virtuelles</li>
+                                </ul>
+                                <div class="price-tag">Référence pro</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-users me-2" style="color: var(--france-blue);"></i>PAP.fr</h6>
+                                <ul class="mb-2">
+                                    <li>Particulier à particulier</li>
+                                    <li>Pas de frais d'agence</li>
+                                    <li>Relation directe</li>
+                                    <li>Prix plus négociables</li>
+                                </ul>
+                                <div class="price-tag">Économie 3-8%</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fab fa-facebook me-2" style="color: #1877f2;"></i>Groupes Facebook</h6>
+                                <ul class="mb-2">
+                                    <li>"Appartements Paris"</li>
+                                    <li>"Colocation France"</li>
+                                    <li>"Logement [Ville]"</li>
+                                    <li>Communautés locales</li>
+                                </ul>
+                                <div class="price-tag">Bons plans cachés</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Arnaques Courantes</h6>
+                        <ul class="mb-3">
+                            <li><strong>Faux propriétaires :</strong> Demande d'argent avant visite</li>
+                            <li><strong>Prix trop bas :</strong> Souvent frauduleux</li>
+                            <li><strong>Urgence artificielle :</strong> Pression temporelle</li>
+                            <li><strong>Paiement à distance :</strong> Western Union, etc.</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><strong>Règle d'or :</strong> Ne jamais payer sans avoir visité et vérifié l'identité du propriétaire !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-red);">
+                <i class="fas fa-euro-sign me-2"></i>Prix du Marché par Région
+            </h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead style="background: var(--france-blue); color: white;">
+                        <tr>
+                            <th>Région</th>
+                            <th>Studio</th>
+                            <th>T2 (1BR)</th>
+                            <th>T3 (2BR)</th>
+                            <th>T4+ (3BR+)</th>
+                            <th>Maison</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Paris Centre</strong></td>
+                            <td>1,200-1,800€</td>
+                            <td>1,800-2,800€</td>
+                            <td>2,500-4,000€</td>
+                            <td>3,500-6,000€</td>
+                            <td>4,000-10,000€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Île-de-France</strong></td>
+                            <td>800-1,200€</td>
+                            <td>1,200-1,800€</td>
+                            <td>1,500-2,500€</td>
+                            <td>2,000-3,500€</td>
+                            <td>2,500-5,000€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lyon</strong></td>
+                            <td>600-900€</td>
+                            <td>800-1,300€</td>
+                            <td>1,100-1,800€</td>
+                            <td>1,400-2,500€</td>
+                            <td>1,800-3,500€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marseille</strong></td>
+                            <td>500-800€</td>
+                            <td>700-1,200€</td>
+                            <td>900-1,600€</td>
+                            <td>1,200-2,200€</td>
+                            <td>1,500-3,000€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nice/Cannes</strong></td>
+                            <td>700-1,100€</td>
+                            <td>1,000-1,600€</td>
+                            <td>1,300-2,200€</td>
+                            <td>1,800-3,200€</td>
+                            <td>2,500-5,000€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Toulouse</strong></td>
+                            <td>450-700€</td>
+                            <td>600-1,000€</td>
+                            <td>800-1,400€</td>
+                            <td>1,000-1,800€</td>
+                            <td>1,400-2,500€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bordeaux</strong></td>
+                            <td>500-750€</td>
+                            <td>700-1,100€</td>
+                            <td>900-1,500€</td>
+                            <td>1,200-2,000€</td>
+                            <td>1,500-2,800€</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Strasbourg</strong></td>
+                            <td>400-650€</td>
+                            <td>600-950€</td>
+                            <td>800-1,300€</td>
+                            <td>1,000-1,700€</td>
+                            <td>1,300-2,200€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-info-circle me-2"></i>À Savoir</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Prix hors charges (ajouter 50-150€)</li>
+                            <li>Dépôt de garantie = 1 mois</li>
+                            <li>Frais d'agence = 8-15€/m²</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Bail minimum 3 ans (vide)</li>
+                            <li>Préavis 3 mois (1 mois en meublé)</li>
+                            <li>Encadrement des loyers (Paris, Lille)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-gold);">
+                <i class="fas fa-map-marked-alt me-2"></i>Quartiers Recommandés par Ville
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-landmark me-2"></i>Paris</h5>
+                    
+                    <div class="accordion" id="parisQuartiers">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#marais">
+                                    <i class="fas fa-crown me-2"></i>Le Marais (3ème/4ème)
+                                </button>
+                            </h2>
+                            <div id="marais" class="accordion-collapse collapse show" data-bs-parent="#parisQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Centre historique, culture, gastronomie</p>
+                                    <p><strong>Prix :</strong> 2,000-4,000€/mois</p>
+                                    <p><strong>Idéal pour :</strong> Jeunes actifs, amateurs d'art, tourisme</p>
+                                    <div class="price-tag">Très prisé</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#republique">
+                                    <i class="fas fa-coffee me-2"></i>République (11ème)
+                                </button>
+                            </h2>
+                            <div id="republique" class="accordion-collapse collapse" data-bs-parent="#parisQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Branché, bars, vie nocturne</p>
+                                    <p><strong>Prix :</strong> 1,500-2,800€/mois</p>
+                                    <p><strong>Idéal pour :</strong> 25-35 ans, startuppers, créatifs</p>
+                                    <div class="price-tag">Dynamique</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#montparnasse">
+                                    <i class="fas fa-train me-2"></i>Montparnasse (14ème)
+                                </button>
+                            </h2>
+                            <div id="montparnasse" class="accordion-collapse collapse" data-bs-parent="#parisQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Familial, bien desservi, calme</p>
+                                    <p><strong>Prix :</strong> 1,200-2,200€/mois</p>
+                                    <p><strong>Idéal pour :</strong> Familles, navetteurs, étudiants</p>
+                                    <div class="price-tag">Bon rapport qualité/prix</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-mountain me-2"></i>Lyon</h5>
+                    
+                    <div class="accordion" id="lyonQuartiers">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#presquile">
+                                    <i class="fas fa-shopping-bag me-2"></i>Presqu'île (2ème)
+                                </button>
+                            </h2>
+                            <div id="presquile" class="accordion-collapse collapse show" data-bs-parent="#lyonQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Centre-ville, shopping, restaurants</p>
+                                    <p><strong>Prix :</strong> 900-1,600€/mois</p>
+                                    <p><strong>Idéal pour :</strong> Actifs, amateurs de vie urbaine</p>
+                                    <div class="price-tag">Cœur de ville</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#croixrousse">
+                                    <i class="fas fa-palette me-2"></i>Croix-Rousse (4ème)
+                                </button>
+                            </h2>
+                            <div id="croixrousse" class="accordion-collapse collapse" data-bs-parent="#lyonQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Artistique, alternatif, authentique</p>
+                                    <p><strong>Prix :</strong> 700-1,200€/mois</p>
+                                    <p><strong>Idéal pour :</strong> Artistes, étudiants, bohème</p>
+                                    <div class="price-tag">Culturel</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#partdieu">
+                                    <i class="fas fa-building me-2"></i>Part-Dieu (3ème)
+                                </button>
+                            </h2>
+                            <div id="partdieu" class="accordion-collapse collapse" data-bs-parent="#lyonQuartiers">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Business, transport, moderne</p>
+                                    <p><strong>Prix :</strong> 800-1,400€/mois</p>
+                                    <p><strong>Idéal pour :</strong> Cadres, voyageurs fréquents</p>
+                                    <div class="price-tag">Business district</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-red);">
+                <i class="fas fa-file-contract me-2"></i>Processus de Location
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : Recherche & Candidature (2-6 semaines)</h6>
+                                <p>Recherche active, visites, constitution du dossier complet. 
+                                   Marché tendu = réactivité essentielle !</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : Sélection & Négociation (3-7 jours)</h6>
+                                <p>Le propriétaire choisit parmi les candidatures. 
+                                   Possible négociation sur le loyer ou les conditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Signature & Entrée (1-2 jours)</h6>
+                                <p>Signature du bail, versement dépôt + 1er mois. 
+                                   État des lieux détaillé obligatoire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-file-alt me-2"></i>Dossier Obligatoire</h6>
+                        <ul class="small mb-3">
+                            <li>Pièce d'identité</li>
+                            <li>3 derniers bulletins de salaire</li>
+                            <li>Contrat de travail (CDI idéal)</li>
+                            <li>2 derniers avis d'imposition</li>
+                            <li>RIB + justificatif domicile</li>
+                            <li>Garant (souvent obligatoire)</li>
+                            <li>Assurance habitation</li>
+                        </ul>
+
+                        <h6><i class="fas fa-calculator me-2"></i>Budget Total</h6>
+                        <ul class="small mb-3">
+                            <li><strong>1er mois :</strong> Loyer complet</li>
+                            <li><strong>Dépôt :</strong> 1 mois de loyer</li>
+                            <li><strong>Agence :</strong> 8-15€/m² (si applicable)</li>
+                            <li><strong>Assurance :</strong> 10-30€/mois</li>
+                        </ul>
+
+                        <div class="alert alert-danger">
+                            <small><strong>Important :</strong> Revenus requis = 3x le loyer minimum !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Coût de la Vie -->
+    <section id="section4" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-euro-sign me-3"></i>4. Coût de la Vie
+                    </h2>
+                    <p class="lead">Budgets détaillés pour vivre en France</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-blue);">
+                <i class="fas fa-shopping-cart me-2"></i>Coûts Quotidiens par Catégorie
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-utensils me-2"></i>Alimentation</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Produit</th>
+                                    <th>Paris</th>
+                                    <th>Province</th>
+                                    <th>vs Europe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Baguette</td>
+                                    <td>1.10€</td>
+                                    <td>0.95€</td>
+                                    <td>=</td>
+                                </tr>
+                                <tr>
+                                    <td>Lait (1L)</td>
+                                    <td>1.20€</td>
+                                    <td>1.05€</td>
+                                    <td>+5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Œufs (12)</td>
+                                    <td>3.50€</td>
+                                    <td>2.80€</td>
+                                    <td>+10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fromage (1kg)</td>
+                                    <td>15.00€</td>
+                                    <td>12.00€</td>
+                                    <td>+15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Viande bœuf (1kg)</td>
+                                    <td>22.00€</td>
+                                    <td>18.00€</td>
+                                    <td>+20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fruits/légumes</td>
+                                    <td>3.00€/kg</td>
+                                    <td>2.20€/kg</td>
+                                    <td>+25%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <span class="price-tag">Coût moyen : 300-450€/mois</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-glass-cheers me-2"></i>Restaurants & Sorties</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Paris</th>
+                                    <th>Province</th>
+                                    <th>vs Europe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Menu du jour</td>
+                                    <td>18-25€</td>
+                                    <td>13-18€</td>
+                                    <td>+15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Café</td>
+                                    <td>2.50€</td>
+                                    <td>1.80€</td>
+                                    <td>+10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Bière (50cl)</td>
+                                    <td>6.00€</td>
+                                    <td>4.50€</td>
+                                    <td>+20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Verre de vin</td>
+                                    <td>7.00€</td>
+                                    <td>5.00€</td>
+                                    <td>+5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Restaurant gastronomique</td>
+                                    <td>60-120€</td>
+                                    <td>40-80€</td>
+                                    <td>+30%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fast-food</td>
+                                    <td>10-12€</td>
+                                    <td>8-10€</td>
+                                    <td>=</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <span class="price-tag">Budget sorties : 200-500€/mois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-red);">
+                <i class="fas fa-bus me-2"></i>Transport et Services</h3>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-subway me-2"></i>Transports Publics</h6>
+                    <ul>
+                        <li><strong>Paris :</strong> 
+                            <ul>
+                                <li>Navigo mensuel : 84.10€</li>
+                                <li>Ticket simple : 2.15€</li>
+                                <li>Vélib' : 8.45€/mois</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lyon :</strong>
+                            <ul>
+                                <li>Abonnement mensuel : 69€</li>
+                                <li>Ticket simple : 2.00€</li>
+                                <li>Vélo'v : 15€/an</li>
+                            </ul>
+                        </li>
+                        <li><strong>Autres villes :</strong>
+                            <ul>
+                                <li>Bus/tram : 1.50-2€</li>
+                                <li>Abonnement : 35-55€</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-car me-2"></i>Voiture</h6>
+                    <ul>
+                        <li><strong>Essence :</strong> 1.65-1.85€/L</li>
+                        <li><strong>Diesel :</strong> 1.55-1.75€/L</li>
+                        <li><strong>Parking Paris :</strong> 4-6€/h</li>
+                        <li><strong>Assurance auto :</strong> 400-800€/an</li>
+                        <li><strong>Contrôle technique :</strong> 80€</li>
+                        <li><strong>Péages autoroute :</strong> 0.09€/km</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-wifi me-2"></i>Services & Utilities</h6>
+                    <ul>
+                        <li><strong>Internet (Fibre) :</strong> 25-45€/mois</li>
+                        <li><strong>Mobile (20GB) :</strong> 15-25€/mois</li>
+                        <li><strong>Électricité :</strong> 80-150€/mois</li>
+                        <li><strong>Gaz :</strong> 50-100€/mois</li>
+                        <li><strong>Eau :</strong> 30-50€/mois</li>
+                        <li><strong>Taxe habitation :</strong> Supprimée</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--france-gold);">
+                <i class="fas fa-calculator me-2"></i>Budgets Mensuels Types
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e3f2fd, #f0f8ff);">
+                        <i class="fas fa-user fa-3x mb-3" style="color: var(--france-blue);"></i>
+                        <h5>Célibataire</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">1,500 - 2,800€/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> 700-1,500€ (studio/T2)</li>
+                            <li><strong>Alimentation :</strong> 250-350€</li>
+                            <li><strong>Transport :</strong> 50-85€</li>
+                            <li><strong>Sorties :</strong> 200-400€</li>
+                            <li><strong>Utilities :</strong> 100-150€</li>
+                            <li><strong>Divers :</strong> 200-350€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #ffebee, #fce4ec);">
+                        <i class="fas fa-heart fa-3x mb-3" style="color: var(--france-red);"></i>
+                        <h5>Couple</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">2,200 - 4,200€/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> 1,000-2,300€ (T2/T3)</li>
+                            <li><strong>Alimentation :</strong> 400-600€</li>
+                            <li><strong>Transport :</strong> 80-170€</li>
+                            <li><strong>Sorties :</strong> 300-600€</li>
+                            <li><strong>Utilities :</strong> 150-250€</li>
+                            <li><strong>Divers :</strong> 300-500€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffecb3);">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--france-gold);"></i>
+                        <h5>Famille (4 pers.)</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">3,200 - 6,000€/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> 1,400-3,200€ (T4+)</li>
+                            <li><strong>Alimentation :</strong> 600-800€</li>
+                            <li><strong>Transport :</strong> 150-300€</li>
+                            <li><strong>Garde d'enfants :</strong> 400-800€</li>
+                            <li><strong>Utilities :</strong> 200-350€</li>
+                            <li><strong>Divers :</strong> 450-750€</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-lightbulb me-2"></i>Optimisations Budget</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Marchés locaux pour produits frais (-20%)</li>
+                            <li>Pass transport annuel (économie 10%)</li>
+                            <li>Abonnements culturels (théâtres, cinémas)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>CAF : allocations logement possibles</li>
+                            <li>Mutuelle d'entreprise (santé gratuite)</li>
+                            <li>Tickets restaurant (déduction fiscale)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Système de Santé -->
+    <section id="section5" class="section-header" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heartbeat me-3"></i>5. Système de Santé
+                    </h2>
+                    <p class="lead">La Sécurité Sociale française et votre couverture médicale</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-warning fs-6 p-3">
+                        <i class="fas fa-lock me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="premium-blur">
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-blue);">
+                    <i class="fas fa-id-card me-2"></i>Affiliation Sécurité Sociale
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-info"></div>
+                                <div class="timeline-content">
+                                    <h6>Étape 1 : Première demande (0-3 mois)</h6>
+                                    <p><strong>Dossier CPAM :</strong> Formulaire S1106, justificatifs emploi, 
+                                       RIB, pièce d'identité. <em>Délai traitement : 2-6 semaines.</em></p>
+                                    <div class="alert alert-info">
+                                        <small><strong>Urgent :</strong> Demander attestation provisoire à l'employeur</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-warning"></div>
+                                <div class="timeline-content">
+                                    <h6>Étape 2 : Numéro de Sécurité Sociale (1-2 mois)</h6>
+                                    <p><strong>Numéro définitif :</strong> 15 chiffres + clé. Format : 
+                                       1 85 03 75 126 157 80. <em>Indispensable pour tous soins.</em></p>
+                                    <div class="price-tag">NIR permanent</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-success"></div>
+                                <div class="timeline-content">
+                                    <h6>Étape 3 : Carte Vitale (2-3 mois)</h6>
+                                    <p><strong>Carte à puce :</strong> Remboursements automatiques, 
+                                       télétransmission, mise à jour borne. <em>Révolution numérique.</em></p>
+                                    <div class="price-tag">Carte électronique</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-percentage me-2"></i>Taux de Remboursement</h6>
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Médecin généraliste</strong></td>
+                                        <td>70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Spécialiste</strong></td>
+                                        <td>70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pharmacie</strong></td>
+                                        <td>65%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hôpital</strong></td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dentiste</strong></td>
+                                        <td>70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Optique</strong></td>
+                                        <td>60%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="alert alert-warning">
+                                <small><strong>Reste à charge :</strong> 30% minimum + dépassements éventuels</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-red);">
+                    <i class="fas fa-shield-alt me-2"></i>Mutuelle Complémentaire
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-building me-2"></i>Mutuelle d'Entreprise</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Avantages Obligatoires</h6>
+                            <ul class="mb-2">
+                                <li><strong>Participation employeur :</strong> 50% minimum</li>
+                                <li><strong>Couverture étendue :</strong> Famille possible</li>
+                                <li><strong>Négociation collective :</strong> Tarifs préférentiels</li>
+                                <li><strong>Portabilité :</strong> Maintien 12 mois après départ</li>
+                            </ul>
+                            <div class="price-tag">15-80€/mois</div>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <h6><i class="fas fa-check me-2"></i>Garanties Standard</h6>
+                            <ul class="small mb-0">
+                                <li>Ticket modérateur : 100%</li>
+                                <li>Forfait hospitalier : 20€/jour</li>
+                                <li>Dépassements honoraires : 100-300%</li>
+                                <li>Optique : 150-400€/an</li>
+                                <li>Dentaire : 200-600€/an</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-user me-2"></i>Mutuelle Individuelle</h5>
+                        
+                        <div class="accordion" id="mutuelleTypes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#basique">
+                                        <i class="fas fa-star me-2"></i>Formule Basique
+                                    </button>
+                                </h2>
+                                <div id="basique" class="accordion-collapse collapse show" data-bs-parent="#mutuelleTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Prix :</strong> 30-50€/mois</p>
+                                        <p><strong>Couverture :</strong> Ticket modérateur + urgences</p>
+                                        <p><strong>Idéal pour :</strong> Jeunes, budgets serrés</p>
+                                        <div class="price-tag">Minimum syndical</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#confort">
+                                        <i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i>Formule Confort
+                                    </button>
+                                </h2>
+                                <div id="confort" class="accordion-collapse collapse" data-bs-parent="#mutuelleTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Prix :</strong> 60-90€/mois</p>
+                                        <p><strong>Couverture :</strong> Dépassements + optique + dentaire</p>
+                                        <p><strong>Idéal pour :</strong> Actifs, familles</p>
+                                        <div class="price-tag">Recommandé</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#premium">
+                                        <i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i>Formule Premium
+                                    </button>
+                                </h2>
+                                <div id="premium" class="accordion-collapse collapse" data-bs-parent="#mutuelleTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Prix :</strong> 100-200€/mois</p>
+                                        <p><strong>Couverture :</strong> Tout + médecines douces</p>
+                                        <p><strong>Idéal pour :</strong> Seniors, problèmes santé</p>
+                                        <div class="price-tag">Tout inclus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-gold);">
+                    <i class="fas fa-stethoscope me-2"></i>Parcours de Soins & Tarifs
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5><i class="fas fa-route me-2"></i>Parcours de Soins Coordonnés</h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-user-md me-2"></i>Médecin Traitant</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Obligatoire :</strong> Déclaration CPAM</li>
+                                        <li><strong>Consultation :</strong> 25€ (généraliste)</li>
+                                        <li><strong>Remboursement :</strong> 70% = 17.50€</li>
+                                        <li><strong>Reste à charge :</strong> 7.50€</li>
+                                    </ul>
+                                    <div class="price-tag">Point d'entrée</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-prescription me-2"></i>Avec Ordonnance</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Spécialiste :</strong> 30-70€</li>
+                                        <li><strong>Remboursement :</strong> 70%</li>
+                                        <li><strong>Majoré si :</strong> Urgence déclarée</li>
+                                        <li><strong>Dépassements :</strong> Selon secteur</li>
+                                    </ul>
+                                    <div class="price-tag">Parcours normal</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-exclamation-triangle me-2"></i>Hors Parcours</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Pénalité :</strong> Remboursement 30%</li>
+                                        <li><strong>Majoration :</strong> 5€ de franchise</li>
+                                        <li><strong>Exceptions :</strong> Urgences, gynéco, ophtalmo</li>
+                                        <li><strong>Coût réel :</strong> +40-60€ par consultation</li>
+                                    </ul>
+                                    <div class="price-tag">À éviter</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-ambulance me-2"></i>Urgences</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>SAMU :</strong> 15 (gratuit 24h/24)</li>
+                                        <li><strong>Pompiers :</strong> 18 (secours d'urgence)</li>
+                                        <li><strong>SOS Médecins :</strong> 60-80€ à domicile</li>
+                                        <li><strong>Urgences hôpital :</strong> Gratuit si hospitalisé</li>
+                                    </ul>
+                                    <div class="price-tag">Service public</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-map-marker-alt me-2"></i>Trouver un Médecin</h6>
+                            
+                            <div class="mb-3">
+                                <h6 class="small">Plateformes Officielles</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>Doctolib.fr</strong> - Leader RDV en ligne</li>
+                                    <li><strong>Mondocteur.fr</strong> - Alternative populaire</li>
+                                    <li><strong>Annuaire-sante.ameli.fr</strong> - Site CPAM</li>
+                                    <li><strong>Pages Jaunes Santé</strong> - Recherche géolocalisée</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="small">Secteurs Tarifaires</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>Secteur 1 :</strong> Tarifs conventionnés</li>
+                                    <li><strong>Secteur 2 :</strong> Dépassements autorisés</li>
+                                    <li><strong>Secteur 3 :</strong> Tarifs libres (rare)</li>
+                                </ul>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <small><strong>Conseil :</strong> Privilégiez secteur 1 ou vérifiez les dépassements avant RDV</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-access-card text-center p-5">
+            <i class="fas fa-crown fa-3x mb-3" style="color: var(--france-gold);"></i>
+            <h3>Accès Complet - Section Santé</h3>
+            <p class="lead">Débloquez le guide complet du système de santé français</p>
+            <button class="btn btn-warning btn-lg px-5" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                <i class="fas fa-unlock me-2"></i>Accéder au Contenu Premium
+            </button>
+        </div>
+    </div>
+
+    <!-- Section 6: Éducation et Formation -->
+    <section id="section6" class="section-header" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-graduation-cap me-3"></i>6. Éducation et Formation
+                    </h2>
+                    <p class="lead">Système éducatif et opportunités de formation en France</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-warning fs-6 p-3">
+                        <i class="fas fa-lock me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="premium-blur">
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-blue);">
+                    <i class="fas fa-school me-2"></i>Système Éducatif Français
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-info"></div>
+                                <div class="timeline-content">
+                                    <h6>Maternelle & Primaire (3-11 ans)</h6>
+                                    <p><strong>École publique gratuite :</strong> Maternelle (3-6 ans) + 
+                                       CP, CE1, CE2, CM1, CM2. <em>Socle commun de connaissances.</em></p>
+                                    <div class="alert alert-info">
+                                        <small><strong>Inscription :</strong> Mairie du lieu de résidence</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-warning"></div>
+                                <div class="timeline-content">
+                                    <h6>Collège (11-15 ans)</h6>
+                                    <p><strong>4 années :</strong> 6ème → 5ème → 4ème → 3ème. 
+                                       <em>Brevet des collèges en fin de parcours.</em></p>
+                                    <div class="price-tag">Scolarité obligatoire</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker bg-success"></div>
+                                <div class="timeline-content">
+                                    <h6>Lycée (15-18 ans)</h6>
+                                    <p><strong>3 années :</strong> Seconde → Première → Terminale. 
+                                       <em>Baccalauréat = clé d'accès enseignement supérieur.</em></p>
+                                    <div class="price-tag">Diplôme national</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-euro-sign me-2"></i>Coûts Éducation</h6>
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>École publique</strong></td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cantine</strong></td>
+                                        <td>3-6€/repas</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Garderie</strong></td>
+                                        <td>2-4€/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>École privée</strong></td>
+                                        <td>100-500€/mois</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fournitures</strong></td>
+                                        <td>150-400€/an</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="alert alert-success">
+                                <small><strong>Aides :</strong> Allocation rentrée scolaire selon revenus (jusqu'à 400€)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-red);">
+                    <i class="fas fa-university me-2"></i>Enseignement Supérieur
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-book me-2"></i>Universités Publiques</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Frais d'Inscription 2024-2025</h6>
+                            <ul class="mb-2">
+                                <li><strong>Licence (UE) :</strong> 170€/an</li>
+                                <li><strong>Master (UE) :</strong> 243€/an</li>
+                                <li><strong>Doctorat (UE) :</strong> 380€/an</li>
+                                <li><strong>Non-UE :</strong> 2,770€ (L) / 3,770€ (M)</li>
+                            </ul>
+                            <div class="price-tag">Quasi-gratuit</div>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <h6><i class="fas fa-check me-2"></i>Avantages Publiques</h6>
+                            <ul class="small mb-0">
+                                <li>Bourses CROUS (jusqu'à 5,000€/an)</li>
+                                <li>Logement étudiant CROUS</li>
+                                <li>Restaurants universitaires (3.30€)</li>
+                                <li>Carte étudiant (réductions)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-building me-2"></i>Grandes Écoles & Privé</h5>
+                        
+                        <div class="accordion" id="ecolesTypes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ingenieur">
+                                        <i class="fas fa-cogs me-2"></i>Écoles d'Ingénieurs
+                                    </button>
+                                </h2>
+                                <div id="ingenieur" class="accordion-collapse collapse show" data-bs-parent="#ecolesTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Publiques :</strong> 600-2,500€/an</p>
+                                        <p><strong>Privées :</strong> 8,000-15,000€/an</p>
+                                        <p><strong>Top niveau :</strong> X, Centrale, Mines...</p>
+                                        <div class="price-tag">Excellence technique</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#commerce">
+                                        <i class="fas fa-chart-line me-2"></i>Écoles de Commerce
+                                    </button>
+                                </h2>
+                                <div id="commerce" class="accordion-collapse collapse" data-bs-parent="#ecolesTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Programme Grande École :</strong> 10,000-20,000€/an</p>
+                                        <p><strong>Masters spécialisés :</strong> 15,000-35,000€</p>
+                                        <p><strong>Références :</strong> HEC, ESSEC, ESCP...</p>
+                                        <div class="price-tag">Réseau puissant</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#art">
+                                        <i class="fas fa-palette me-2"></i>Écoles d'Art & Design
+                                    </button>
+                                </h2>
+                                <div id="art" class="accordion-collapse collapse" data-bs-parent="#ecolesTypes">
+                                    <div class="accordion-body">
+                                        <p><strong>Beaux-Arts (publiques) :</strong> 500-1,000€/an</p>
+                                        <p><strong>Design privé :</strong> 6,000-12,000€/an</p>
+                                        <p><strong>Mode/Luxe :</strong> 8,000-18,000€/an</p>
+                                        <div class="price-tag">Créativité française</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-gold);">
+                    <i class="fas fa-briefcase me-2"></i>Formation Professionnelle
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5><i class="fas fa-certificate me-2"></i>Compte Personnel de Formation (CPF)</h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-coins me-2"></i>Droits Acquis</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Salarié temps plein :</strong> 500€/an</li>
+                                        <li><strong>Non-qualifié :</strong> 800€/an</li>
+                                        <li><strong>Plafond :</strong> 5,000€ (8,000€ si non-qualifié)</li>
+                                        <li><strong>Cumul :</strong> Portable d'emploi en emploi</li>
+                                    </ul>
+                                    <div class="price-tag">Droit individuel</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-laptop me-2"></i>Formations Éligibles</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Certifications :</strong> RNCP, TOEIC, TOSA...</li>
+                                        <li><strong>Permis de conduire :</strong> B, moto, poids lourd</li>
+                                        <li><strong>Bilan de compétences :</strong> 24h sur 3 mois</li>
+                                        <li><strong>VAE :</strong> Validation acquis expérience</li>
+                                    </ul>
+                                    <div class="price-tag">Catalogue officiel</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Attention aux Arnaques CPF</h6>
+                            <p class="mb-0">Démarchage téléphonique intensif. <strong>Règle :</strong> 
+                               Utilisez uniquement le site officiel moncompteformation.gouv.fr</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-graduation-cap me-2"></i>Organismes Formation</h6>
+                            
+                            <div class="mb-3">
+                                <h6 class="small">Centres Reconnus</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>AFPA</strong> - Formation publique</li>
+                                    <li><strong>CNAM</strong> - Cours du soir</li>
+                                    <li><strong>GRETA</strong> - Éducation nationale</li>
+                                    <li><strong>CCI</strong> - Chambres de commerce</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="small">Plateformes en Ligne</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>CNED</strong> - Enseignement à distance</li>
+                                    <li><strong>FUN-MOOC</strong> - Gratuit université</li>
+                                    <li><strong>OpenClassrooms</strong> - Tech & digital</li>
+                                    <li><strong>LinkedIn Learning</strong> - Business skills</li>
+                                </ul>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <small><strong>Conseil :</strong> Vérifiez la certification au RNCP avant inscription</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-access-card text-center p-5">
+            <i class="fas fa-crown fa-3x mb-3" style="color: var(--france-gold);"></i>
+            <h3>Accès Complet - Section Éducation</h3>
+            <p class="lead">Découvrez tous les détails du système éducatif français</p>
+            <button class="btn btn-warning btn-lg px-5" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                <i class="fas fa-unlock me-2"></i>Accéder au Contenu Premium
+            </button>
+        </div>
+    </div>
+
+    <!-- Section 7: Fiscalité et Impôts -->
+    <section id="section7" class="section-header" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-calculator me-3"></i>7. Fiscalité et Impôts
+                    </h2>
+                    <p class="lead">Comprendre le système fiscal français</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-warning fs-6 p-3">
+                        <i class="fas fa-lock me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="premium-blur">
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-blue);">
+                    <i class="fas fa-file-invoice me-2"></i>Impôt sur le Revenu
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5><i class="fas fa-chart-bar me-2"></i>Barème Progressif 2024</h5>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead style="background: var(--france-blue); color: white;">
+                                    <tr>
+                                        <th>Tranche de Revenus</th>
+                                        <th>Taux d'Imposition</th>
+                                        <th>Exemple 40k€</th>
+                                        <th>Exemple 60k€</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0 à 10,777€</td>
+                                        <td><strong>0%</strong></td>
+                                        <td>0€</td>
+                                        <td>0€</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10,778€ à 27,478€</td>
+                                        <td><strong>11%</strong></td>
+                                        <td>1,837€</td>
+                                        <td>1,837€</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27,479€ à 78,570€</td>
+                                        <td><strong>30%</strong></td>
+                                        <td>3,756€</td>
+                                        <td>9,756€</td>
+                                    </tr>
+                                    <tr>
+                                        <td>78,571€ à 168,994€</td>
+                                        <td><strong>41%</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plus de 168,994€</td>
+                                        <td><strong>45%</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-lightbulb me-2"></i>Calcul Intelligent</h6>
+                            <p class="mb-2"><strong>Revenus 40,000€ :</strong> Impôt = 5,593€ soit <strong>14% effectif</strong></p>
+                            <p class="mb-0"><strong>Revenus 60,000€ :</strong> Impôt = 11,593€ soit <strong>19.3% effectif</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-minus me-2"></i>Principales Déductions</h6>
+                            <ul class="mb-3">
+                                <li><strong>Abattement standard :</strong> 10% min 448€</li>
+                                <li><strong>Frais réels :</strong> Si > 10%</li>
+                                <li><strong>Pensions alimentaires :</strong> 6,042€ max/enfant</li>
+                                <li><strong>Emploi à domicile :</strong> 50% crédit max 12k€</li>
+                                <li><strong>Dons associations :</strong> 66% réduction</li>
+                            </ul>
+
+                            <h6><i class="fas fa-calendar me-2"></i>Échéances Clés</h6>
+                            <ul class="mb-3">
+                                <li><strong>Déclaration :</strong> Avril-Mai</li>
+                                <li><strong>Prélèvement source :</strong> Mensuel</li>
+                                <li><strong>Solde :</strong> Septembre</li>
+                                <li><strong>Acompte :</strong> Février</li>
+                            </ul>
+
+                            <div class="alert alert-success">
+                                <small><strong>Nouveauté :</strong> Prélèvement à la source depuis 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-red);">
+                    <i class="fas fa-home me-2"></i>Taxes Locales et Foncières
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-building me-2"></i>Taxe Foncière</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Propriétaires Uniquement</h6>
+                            <ul class="mb-2">
+                                <li><strong>Base :</strong> Valeur locative cadastrale</li>
+                                <li><strong>Taux :</strong> Variable par commune (0.5-3%)</li>
+                                <li><strong>Exemple Paris :</strong> 1,200-3,000€/an studio</li>
+                                <li><strong>Paiement :</strong> Octobre annuel</li>
+                            </ul>
+                            <div class="price-tag">Propriétaires seulement</div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-gift me-2"></i>Exonérations Possibles</h6>
+                            <ul class="small mb-0">
+                                <li>Neuf : 2 ans d'exonération</li>
+                                <li>Seniors modestes : Dégrèvement</li>
+                                <li>Handicap : Réduction 50%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-tv me-2"></i>Taxe d'Habitation</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Suppression Progressive</h6>
+                            <ul class="mb-2">
+                                <li><strong>Résidences principales :</strong> Supprimée 2023</li>
+                                <li><strong>Résidences secondaires :</strong> Maintenue</li>
+                                <li><strong>Taux :</strong> 10-25% valeur locative</li>
+                                <li><strong>Paiement :</strong> Novembre</li>
+                            </ul>
+                            <div class="price-tag">Quasi-supprimée</div>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Attention</h6>
+                            <ul class="small mb-0">
+                                <li>Logements vacants : Taxe possible</li>
+                                <li>Zones tendues : Majorations</li>
+                                <li>Meublés touristiques : Taxes spéciales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-gold);">
+                    <i class="fas fa-piggy-bank me-2"></i>Optimisation Fiscale Légale
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5><i class="fas fa-chart-pie me-2"></i>Placements Défiscalisants</h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-university me-2"></i>PEA (Plan d'Épargne Actions)</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Plafond :</strong> 150,000€</li>
+                                        <li><strong>Avantage :</strong> Gains défiscalisés après 5 ans</li>
+                                        <li><strong>Restriction :</strong> Actions européennes</li>
+                                        <li><strong>Sortie :</strong> Clôture si retrait < 5 ans</li>
+                                    </ul>
+                                    <div class="price-tag">Long terme</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-home me-2"></i>Assurance Vie</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Fiscalité :</strong> Avantageuse après 8 ans</li>
+                                        <li><strong>Abattement :</strong> 4,600€/an (9,200€ couple)</li>
+                                        <li><strong>Succession :</strong> 152,500€ exonérés/bénéficiaire</li>
+                                        <li><strong>Disponibilité :</strong> Rachats partiels possibles</li>
+                                    </ul>
+                                    <div class="price-tag">Placement roi</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-seedling me-2"></i>PER (Plan Épargne Retraite)</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Déduction :</strong> 10% revenus (max 35k€)</li>
+                                        <li><strong>Sortie :</strong> Retraite (rente/capital)</li>
+                                        <li><strong>Déblocage anticipé :</strong> Primo-accession, invalidité</li>
+                                        <li><strong>Transmission :</strong> Possible aux héritiers</li>
+                                    </ul>
+                                    <div class="price-tag">Retraite</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-building me-2"></i>Immobilier Locatif</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Pinel :</strong> 12-21% réduction (zones éligibles)</li>
+                                        <li><strong>LMNP :</strong> Amortissement mobilier</li>
+                                        <li><strong>Déficit foncier :</strong> 10,700€ imputables</li>
+                                        <li><strong>Plus-value :</strong> Exonération après 30 ans</li>
+                                    </ul>
+                                    <div class="price-tag">Complexe mais rentable</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-calculator me-2"></i>Simulation Économies</h6>
+                            
+                            <div class="mb-3">
+                                <h6 class="small">Profil : Revenus 50k€</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>Sans optimisation :</strong> 7,343€ impôts</li>
+                                    <li><strong>PER 5,000€ :</strong> -1,500€ = 5,843€</li>
+                                    <li><strong>+ Dons 1,000€ :</strong> -660€ = 5,183€</li>
+                                    <li><strong>+ Emploi domicile :</strong> -1,000€ = 4,183€</li>
+                                </ul>
+                                <div class="price-tag"><strong>Économie : 3,160€</strong></div>
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <small><strong>Important :</strong> Consultez un conseiller fiscal pour votre situation</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-access-card text-center p-5">
+            <i class="fas fa-crown fa-3x mb-3" style="color: var(--france-gold);"></i>
+            <h3>Accès Complet - Section Fiscalité</h3>
+            <p class="lead">Maîtrisez l'optimisation fiscale française</p>
+            <button class="btn btn-warning btn-lg px-5" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                <i class="fas fa-unlock me-2"></i>Accéder au Contenu Premium
+            </button>
+        </div>
+    </div>
+
+    <!-- Section 8: Culture et Intégration -->
+    <section id="section8" class="section-header" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heart me-3"></i>8. Culture et Intégration
+                    </h2>
+                    <p class="lead">S'adapter à l'art de vivre français</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-warning fs-6 p-3">
+                        <i class="fas fa-lock me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="premium-blur">
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-blue);">
+                    <i class="fas fa-utensils me-2"></i>Art de Vivre à la Française
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-clock me-2"></i>Rythmes de Vie</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Journée Type Française</h6>
+                            <ul class="mb-2">
+                                <li><strong>Petit-déjeuner :</strong> 7h-8h30 (léger)</li>
+                                <li><strong>Déjeuner :</strong> 12h-14h (pause sacrée)</li>
+                                <li><strong>Goûter :</strong> 16h (enfants)</li>
+                                <li><strong>Apéritif :</strong> 18h-19h (social)</li>
+                                <li><strong>Dîner :</strong> 20h-21h30 (convivial)</li>
+                            </ul>
+                            <div class="price-tag">Rituel quotidien</div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-wine-glass me-2"></i>Codes Gastronomiques</h6>
+                            <ul class="small mb-0">
+                                <li>Fromage AVANT le dessert</li>
+                                <li>Pain sur la table (pas l'assiette)</li>
+                                <li>Vin rouge avec fromage/viande</li>
+                                <li>Ne pas couper la salade</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-handshake me-2"></i>Savoir-Vivre Social</h5>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Politesse Française</h6>
+                            <ul class="mb-2">
+                                <li><strong>"Bonjour/Bonsoir"</strong> obligatoire</li>
+                                <li><strong>Vouvoiement</strong> par défaut</li>
+                                <li><strong>"Excusez-moi"</strong> pour déranger</li>
+                                <li><strong>"Merci beaucoup"</strong> + sourire</li>
+                                <li><strong>"Bonne journée"</strong> en partant</li>
+                            </ul>
+                            <div class="price-tag">Politesse stricte</div>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Erreurs à Éviter</h6>
+                            <ul class="small mb-0">
+                                <li>Tutoyer sans permission</li>
+                                <li>Parler fort dans les transports</li>
+                                <li>Manger debout/en marchant</li>
+                                <li>Téléphoner à table</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-red);">
+                    <i class="fas fa-users me-2"></i>Créer son Réseau Social
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5><i class="fas fa-map-marked-alt me-2"></i>Lieux de Rencontre</h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-running me-2"></i>Activités Sportives</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Clubs municipaux :</strong> Tennis, natation</li>
+                                        <li><strong>Associations :</strong> Randonnée, vélo</li>
+                                        <li><strong>Salles de sport :</strong> Cours collectifs</li>
+                                        <li><strong>Événements :</strong> Courses, tournois</li>
+                                    </ul>
+                                    <div class="price-tag">20-80€/mois</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-book me-2"></i>Culture & Loisirs</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Bibliothèques :</strong> Ateliers, clubs lecture</li>
+                                        <li><strong>Centres culturels :</strong> Théâtre amateur</li>
+                                        <li><strong>Cours du soir :</strong> Langues, arts</li>
+                                        <li><strong>Festivals :</strong> Musique, arts</li>
+                                    </ul>
+                                    <div class="price-tag">10-50€/mois</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6><i class="fas fa-wine-bottle me-2"></i>Vie Sociale</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Bars à vin :</strong> Dégustation conviviale</li>
+                                        <li><strong>Marchés :</strong> Producteurs locaux</li>
+                                        <li><strong>Vernissages :</strong> Galeries, expositions</li>
+                                        <li><strong>Soirées thématiques :</strong> Speed meeting</li>
+                                    </ul>
+                                    <div class="price-tag">Ambiance détendue</div>
+                                </div>
+
+                                <div class="bg-light p-3 rounded">
+                                    <h6><i class="fas fa-laptop me-2"></i>Communautés Digitales</h6>
+                                    <ul class="mb-2">
+                                        <li><strong>Meetup :</strong> Événements par intérêts</li>
+                                        <li><strong>Facebook :</strong> Groupes expatriés</li>
+                                        <li><strong>Applications :</strong> Meetin, OnVaSortir</li>
+                                        <li><strong>LinkedIn :</strong> Réseautage professionnel</li>
+                                    </ul>
+                                    <div class="price-tag">Gratuit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light p-4 rounded">
+                            <h6><i class="fas fa-heart me-2"></i>Intégration Réussie</h6>
+                            
+                            <div class="mb-3">
+                                <h6 class="small">Étapes Progressives</h6>
+                                <ul class="small mb-2">
+                                    <li><strong>Mois 1-3 :</strong> Voisinage, collègues</li>
+                                    <li><strong>Mois 3-6 :</strong> Activités régulières</li>
+                                    <li><strong>Mois 6-12 :</strong> Amitiés durables</li>
+                                    <li><strong>An 2+ :</strong> Réseau établi</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="small">Mentalité Française</h6>
+                                <ul class="small mb-2">
+                                    <li>Amitiés lentes mais profondes</li>
+                                    <li>Respect de la vie privée</li>
+                                    <li>Débats passionnés normaux</li>
+                                    <li>Formalisme initial puis chaleur</li>
+                                </ul>
+                            </div>
+
+                            <div class="alert alert-success">
+                                <small><strong>Secret :</strong> Patience + persévérance + authenticité</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card p-4">
+                <h3 style="color: var(--france-gold);">
+                    <i class="fas fa-calendar-alt me-2"></i>Traditions et Célébrations
+                </h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-gift me-2"></i>Calendrier Festif</h5>
+                        
+                        <div class="accordion" id="traditionsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#printemps">
+                                        <i class="fas fa-seedling me-2"></i>Printemps
+                                    </button>
+                                </h2>
+                                <div id="printemps" class="accordion-collapse collapse show" data-bs-parent="#traditionsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li><strong>Pâques :</strong> Chasse aux œufs, repas familial</li>
+                                            <li><strong>1er Mai :</strong> Muguet porte-bonheur</li>
+                                            <li><strong>8 Mai :</strong> Victoire 1945 (férié)</li>
+                                            <li><strong>Ascension :</strong> Week-end prolongé</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ete">
+                                        <i class="fas fa-sun me-2"></i>Été
+                                    </button>
+                                </h2>
+                                <div id="ete" class="accordion-collapse collapse" data-bs-parent="#traditionsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li><strong>14 Juillet :</strong> Fête nationale, feux d'artifice</li>
+                                            <li><strong>15 Août :</strong> Assomption (férié)</li>
+                                            <li><strong>Vacances :</strong> Juillet-Août sacré</li>
+                                            <li><strong>Festivals :</strong> Avignon, jazz, musique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hiver">
+                                        <i class="fas fa-snowflake me-2"></i>Hiver
+                                    </button>
+                                </h2>
+                                <div id="hiver" class="accordion-collapse collapse" data-bs-parent="#traditionsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li><strong>Noël :</strong> Réveillon 24, repas 25</li>
+                                            <li><strong>Nouvel An :</strong> Réveillon, résolutions</li>
+                                            <li><strong>Galette des Rois :</strong> Janvier, fève</li>
+                                            <li><strong>Chandeleur :</strong> Crêpes 2 février</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-graduation-cap me-2"></i>Apprentissage Culturel</h5>
+                        
+                        <div class="bg-light p-3 rounded mb-3">
+                            <h6>Références Culturelles Essentielles</h6>
+                            <ul class="mb-2">
+                                <li><strong>Littérature :</strong> Molière, Hugo, Camus</li>
+                                <li><strong>Cinéma :</strong> Nouvelle Vague, Amélie</li>
+                                <li><strong>Musique :</strong> Brel, Brassens, Gainsbourg</li>
+                                <li><strong>Histoire :</strong> Révolution, De Gaulle, Mai 68</li>
+                            </ul>
+                            <div class="price-tag">Culture générale</div>
+                        </div>
+
+                        <div class="bg-light p-3 rounded">
+                            <h6>Sujets de Conversation</h6>
+                            <ul class="mb-2">
+                                <li><strong>Politique :</strong> Débats passionnés normaux</li>
+                                <li><strong>Gastronomie :</strong> Terroir, vins, marchés</li>
+                                <li><strong>Vacances :</strong> Récits de voyage</li>
+                                <li><strong>Philosophie :</strong> Réflexions existentielles</li>
+                            </ul>
+                            <div class="price-tag">Art de converser</div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-lightbulb me-2"></i>Conseil d'Intégration</h6>
+                            <p class="mb-0">Montrez votre curiosité pour la culture française. 
+                               Les Français adorent partager leur patrimoine !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-access-card text-center p-5">
+            <i class="fas fa-crown fa-3x mb-3" style="color: var(--france-gold);"></i>
+            <h3>Accès Complet - Section Culture</h3>
+            <p class="lead">Maîtrisez l'art de vivre français</p>
+            <button class="btn btn-warning btn-lg px-5" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                <i class="fas fa-unlock me-2"></i>Accéder au Contenu Premium
+            </button>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">280,000+</div>
+                        <div class="stat-label">Nouveaux résidents/an</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">Taux de satisfaction</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">6 semaines</div>
+                        <div class="stat-label">Délai moyen installation</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <div class="stat-number">2,100€</div>
+                        <div class="stat-label">Budget moyen mensuel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 mb-3">
+                        <i class="fas fa-question-circle me-3"></i>Questions Fréquentes
+                    </h2>
+                    <p class="lead">Réponses aux questions les plus posées sur l'expatriation en France</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="fas fa-passport me-2"></i>Ai-je besoin d'un visa pour m'installer en France ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Citoyens UE :</strong> Aucun visa nécessaire, juste une carte d'identité valide.</p>
+                                    <p><strong>Non-UE :</strong> Visa long séjour obligatoire (VLS-TS), à demander au consulat français de votre pays. Prévoyez 2-4 mois de délai.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="fas fa-euro-sign me-2"></i>Quel budget prévoir pour les premiers mois ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Budget sécurité :</strong> 6,000-12,000€ pour couvrir :</p>
+                                    <ul>
+                                        <li>Dépôt de garantie + 1er mois de loyer</li>
+                                        <li>3 mois de frais de vie</li>
+                                        <li>Frais d'installation et équipement</li>
+                                        <li>Réserve d'urgence</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="fas fa-language me-2"></i>Mon niveau de français doit-il être parfait ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Niveau minimum :</strong> B1-B2 recommandé pour le travail et les démarches administratives.</p>
+                                    <p><strong>Solutions :</strong> Cours intensifs FLE, applications (Babbel, Duolingo), immersion totale accélère l'apprentissage.</p>
+                                    <p><strong>Dans les grandes villes :</strong> L'anglais peut dépanner temporairement.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <i class="fas fa-briefcase me-2"></i>Comment trouver un emploi rapidement ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Stratégie efficace :</strong></p>
+                                    <ul>
+                                        <li>LinkedIn France très actif (mise à jour profil)</li>
+                                        <li>Pôle Emploi + cabinet de recrutement</li>
+                                        <li>Réseau professionnel et événements</li>
+                                        <li>Candidatures spontanées ciblées</li>
+                                        <li>Adaptation CV format français</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    <i class="fas fa-home me-2"></i>Vaut-il mieux acheter ou louer ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Première année :</strong> Location recommandée pour découvrir les quartiers.</p>
+                                    <p><strong>Achat intéressant si :</strong> Installation définitive, apport 10%+, revenus stables, prêt immobilier accessible (taux attractifs).</p>
+                                    <p><strong>Zones tendues :</strong> L'achat peut être plus rentable que la location à long terme.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(135deg, #2c3e50, #34495e);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h5 class="text-white mb-3">
+                            <i class="fas fa-map-marked-alt me-2" style="color: var(--france-gold);"></i>
+                            Guide France
+                        </h5>
+                        <p class="text-light">Votre guide complet pour une expatriation réussie en France. Conseils d'experts, informations pratiques et astuces pour s'installer sereinement.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Guide</h6>
+                    <ul class="footer-links">
+                        <li><a href="#section1">Visa & Démarches</a></li>
+                        <li><a href="#section2">Emploi</a></li>
+                        <li><a href="#section3">Logement</a></li>
+                        <li><a href="#section4">Budget</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#section5">Santé</a></li>
+                        <li><a href="#section6">Éducation</a></li>
+                        <li><a href="#section7">Fiscalité</a></li>
+                        <li><a href="#section8">Culture</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Ressources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: #7f8c8d;">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">
+                        © 2024 Guide Expatriation France. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0">
+                        <i class="fas fa-heart me-1" style="color: var(--france-red);"></i>
+                        Fait avec passion pour les futurs expatriés
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Premium -->
+    <div class="modal fade" id="premiumModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, var(--france-blue), var(--france-red));">
+                    <h5 class="modal-title text-white">
+                        <i class="fas fa-crown me-2" style="color: var(--france-gold);"></i>
+                        Accès Premium - Guide Complet France
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-flag fa-4x mb-3" style="color: var(--france-blue);"></i>
+                        <h4>Débloquez le Guide Complet</h4>
+                        <p class="lead">Accédez à toutes les sections premium et réussissez votre expatriation en France</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-check me-2" style="color: var(--france-blue);"></i>Contenu Premium Inclus</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>4 sections détaillées (Santé, Éducation, Fiscalité, Culture)</li>
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Guides pratiques téléchargeables</li>
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Templates de documents officiels</li>
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Calculateurs budget personnalisés</li>
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Mise à jour gratuite à vie</li>
+                                <li><i class="fas fa-star me-2" style="color: var(--france-gold);"></i>Support email prioritaire</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pricing-card text-center p-4" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px;">
+                                <div class="price-tag mb-3">
+                                    <span class="currency">€</span>
+                                    <span class="amount">47</span>
+                                    <span class="period">/unique</span>
+                                </div>
+                                <p class="text-muted">au lieu de 127€</p>
+                                <div class="savings-badge mb-3">
+                                    <span class="badge bg-success">Économisez 80€</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 mb-3" style="background: var(--france-blue);">
+                                    <i class="fas fa-credit-card me-2"></i>Accès Immédiat
+                                </button>
+                                <p class="small text-muted">
+                                    <i class="fas fa-shield-alt me-1"></i>Garantie 30 jours satisfait ou remboursé
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Offre limitée :</strong> Prix spécial de lancement valable jusqu'au 31 décembre 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Scroll fluide vers les sections
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mise à jour du prix dynamique
+        function updatePrice() {
+            const prices = document.querySelectorAll('.dynamic-price');
+            const discount = Math.floor(Math.random() * 20) + 60; // 60-80% de réduction
+            prices.forEach(price => {
+                price.textContent = `${discount}% OFF`;
+            });
+        }
+
+        // Animation des stats au scroll
+        function animateStats() {
+            const stats = document.querySelectorAll('.stat-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalValue = target.textContent;
+                        let currentValue = 0;
+                        const increment = parseInt(finalValue.replace(/\D/g, '')) / 50;
+                        
+                        const timer = setInterval(() => {
+                            currentValue += increment;
+                            if (currentValue >= parseInt(finalValue.replace(/\D/g, ''))) {
+                                target.textContent = finalValue;
+                                clearInterval(timer);
+                            } else {
+                                target.textContent = Math.floor(currentValue).toLocaleString() + finalValue.replace(/\d/g, '').replace(/,/g, '');
+                            }
+                        }, 30);
+                    }
+                });
+            });
+
+            stats.forEach(stat => observer.observe(stat));
+        }
+
+        // Animation des cartes au scroll
+        function animateCards() {
+            const cards = document.querySelectorAll('.content-card, .city-card, .testimonial-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function () {
+            // Démarrer les animations
+            animateStats();
+            animateCards();
+            
+            // Mettre à jour le prix toutes les 10 secondes
+            updatePrice();
+            setInterval(updatePrice, 10000);
+
+            // Track scroll depth
+            let maxScroll = 0;
+            window.addEventListener('scroll', function () {
+                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                    if (maxScroll % 25 === 0 && typeof gtag !== 'undefined') {
+                        gtag('event', 'scroll_depth', {
+                            'custom_parameter': maxScroll + '%'
+                        });
+                    }
+                }
+            });
+
+            // Track premium modal opens
+            const premiumButtons = document.querySelectorAll('[data-bs-target="#premiumModal"]');
+            premiumButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'premium_interest', {
+                            'event_category': 'engagement',
+                            'event_label': 'modal_open'
+                        });
+                    }
+                });
+            });
+
+            // Enhanced navbar scroll effect
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 100) {
+                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.backdropFilter = 'blur(10px)';
+                } else {
+                    navbar.style.backgroundColor = 'white';
+                    navbar.style.backdropFilter = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

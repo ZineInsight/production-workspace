@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Canada - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet de 32 pages pour réussir votre installation au Canada : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Canada, expatriation, installation, guide, logement, emploi, visa, Toronto, Vancouver, Montréal">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer au Canada">
+    <meta property="og:description" content="32 pages d'expertise pour réussir votre expatriation au Canada">
+    <meta property="og:image"
+        content="https://images.shutterstock.com/image-photo/toronto-skyline-cn-tower-canada-600w-1234567890.jpg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --canada-red: #FF0000;
+            --canada-white: #FFFFFF;
+            --canada-blue: #0066CC;
+            --warm-snow: #f8f9fa;
+            --deep-blue: #1a365d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-snow) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(0, 102, 204, 0.7)),
+                url('https://images.unsplash.com/photo-1518811578013-d3b5e8d0e6dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--canada-red), var(--canada-blue));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--canada-red);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--canada-red), #ff4444);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff7e6, #ffe0b3);
+            border-left: 5px solid var(--canada-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .price-tag {
+            background: var(--canada-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .unlock-button {
+            background: linear-gradient(135deg, var(--canada-red), var(--canada-blue));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .unlock-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" style="color: var(--canada-red);">
+                <i class="fas fa-compass me-2"></i>ZineInsight
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#economie">Économie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logement">Logement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cout-vie">Coût de la vie</a></li>
+                    <li class="nav-item">
+                        <button class="btn unlock-button btn-sm ms-2" onclick="showPricingModal()">
+                            Accès Complet
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <i class="fas fa-map-marked-alt me-3"></i>
+                        Guide Complet : S'installer au Canada
+                    </h1>
+                    <p class="lead mb-4" style="font-size: 1.3rem;">
+                        32 pages d'expertise pour réussir votre expatriation au Canada
+                    </p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>
+                        Guide Premium • Mise à jour 2025 • Conseils d'experts
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <button class="btn btn-light btn-lg" onclick="scrollToSection('introduction')">
+                            <i class="fas fa-play me-2"></i>Découvrir
+                        </button>
+                        <button class="btn unlock-button btn-lg" onclick="showPricingModal()">
+                            <i class="fas fa-download me-2"></i>Accès Complet - 19.99€
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table des matières -->
+    <section class="container my-5">
+        <div class="content-card p-4">
+            <h2 class="text-center mb-4" style="color: var(--canada-red);">
+                <i class="fas fa-list-ul me-2"></i>Table des Matières
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>1. Présentation du Canada</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>2. Économie & Emploi</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>3. Logement & Immobilier</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>4. Coût de la vie</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>5. Visa & Immigration</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>6. Culture & Intégration</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>7. Santé & Assurances</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>8. Éducation & Écoles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Aperçu gratuit :</strong> Les 4 premières sections sont disponibles.
+                    <a href="#" onclick="showPricingModal()" class="alert-link">Débloquez le guide complet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Présentation du Canada -->
+    <section id="introduction" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-flag me-3"></i>1. Présentation du Canada
+            </h2>
+            <p class="lead text-center">Découvrez le Grand Nord dans toute sa diversité</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <img src="https://images.shutterstock.com/image-photo/toronto-skyline-cn-tower-600w-1234567892.jpg"
+                        class="img-fluid h-100 object-fit-cover" alt="Toronto CN Tower">
+                </div>
+                <div class="col-lg-6 p-4">
+                    <h3 style="color: var(--canada-red);">
+                        <i class="fas fa-info-circle me-2"></i>Informations Générales
+                    </h3>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <strong>Capitale :</strong> Ottawa
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Population :</strong> 38,2 millions
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Langues :</strong> Anglais, Français
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Monnaie :</strong> Dollar canadien (CAD)
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-lightbulb me-2" style="color: var(--canada-red);"></i>
+                        <strong>Le saviez-vous ?</strong> Le Canada est le deuxième plus grand pays au monde par superficie et compte 2 langues officielles.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Villes principales -->
+        <div class="content-card p-4">
+            <h3 class="mb-4" style="color: var(--canada-blue);">
+                <i class="fas fa-city me-2"></i>Principales Villes d'Expatriation
+            </h3>
+
+            <div class="city-grid">
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/toronto-financial-district-skyline-600w-1234567893.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Toronto">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Toronto <span class="badge bg-primary">🇨🇦</span>
+                        </h5>
+                        <p class="card-text">Centre économique du Canada, hub international, nombreuses opportunités d'emploi.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-1"></i> 2,9 millions d'habitants</li>
+                            <li><i class="fas fa-briefcase me-1"></i> Finance, Tech, Média</li>
+                            <li><i class="fas fa-dollar-sign me-1"></i> Salaire moyen: 65,000 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/vancouver-downtown-skyline-mountains-600w-1234567894.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Vancouver">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Vancouver <span class="badge bg-success">🌲</span>
+                        </h5>
+                        <p class="card-text">Ville côtière, climat doux, porte d'entrée vers l'Asie, cadre de vie exceptionnel.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-1"></i> 2,6 millions d'habitants</li>
+                            <li><i class="fas fa-briefcase me-1"></i> Tech, Cinéma, Commerce</li>
+                            <li><i class="fas fa-dollar-sign me-1"></i> Salaire moyen: 62,000 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/montreal-old-port-quebec-canada-600w-1234567895.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Montréal">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Montréal <span class="badge bg-info">🇫🇷</span>
+                        </h5>
+                        <p class="card-text">Ville francophone, culture européenne, coût de la vie abordable, vie nocturne.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-1"></i> 4,3 millions d'habitants</li>
+                            <li><i class="fas fa-briefcase me-1"></i> Aéro, Pharma, IA</li>
+                            <li><i class="fas fa-dollar-sign me-1"></i> Salaire moyen: 55,000 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box mt-4">
+                <h5><i class="fas fa-star me-2" style="color: var(--canada-red);"></i>Conseil d'Expert</h5>
+                <p class="mb-0">Toronto offre le plus d'opportunités économiques, Vancouver le meilleur cadre de vie, et Montréal l'adaptation la plus facile pour les francophones.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Économie & Emploi -->
+    <section id="economie" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-chart-line me-3"></i>2. Économie & Emploi
+            </h2>
+            <p class="lead text-center">Comprendre le marché du travail canadien</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-globe-americas me-2"></i>Panorama Économique
+            </h3>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead">Le Canada maintient une économie stable avec un PIB de 2,1 billions CAD et un taux de chômage historiquement bas.</p>
+
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--canada-red);">2,1B CAD</h4>
+                                <small>PIB 2024</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--canada-blue);">5,2%</h4>
+                                <small>Taux de chômage</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--canada-red);">58,000 CAD</h4>
+                                <small>Salaire moyen</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--deep-blue);">16,65 CAD</h4>
+                                <small>Salaire minimum</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://images.shutterstock.com/image-photo/canada-business-district-modern-buildings-600w-1234567896.jpg"
+                        class="img-fluid rounded" alt="Centre d'affaires Canada">
+                </div>
+            </div>
+        </div>
+
+        <!-- Secteurs porteurs -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-rocket me-2"></i>Secteurs d'Avenir pour les Expatriés
+            </h3>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--canada-red) !important;">
+                        <h5><i class="fas fa-laptop-code me-2"></i>Technologies & IA</h5>
+                        <p>Le secteur tech connaît une croissance de 20% par an. Forte demande pour :</p>
+                        <ul>
+                            <li>Développeurs (80,000-120,000 CAD)</li>
+                            <li>Data Scientists (90,000-130,000 CAD)</li>
+                            <li>Ingénieurs DevOps (85,000-125,000 CAD)</li>
+                            <li>Experts en IA (100,000-150,000 CAD)</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small>Toronto, Vancouver, Montréal = hubs tech majeurs</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--canada-blue) !important;">
+                        <h5><i class="fas fa-pills me-2"></i>Santé & Biotechnologies</h5>
+                        <p>Secteur prioritaire avec vieillissement population :</p>
+                        <ul>
+                            <li>Infirmiers (65,000-85,000 CAD)</li>
+                            <li>Médecins (200,000-400,000 CAD)</li>
+                            <li>Pharmaciens (90,000-120,000 CAD)</li>
+                            <li>Chercheurs biotech (70,000-110,000 CAD)</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small>Reconnaissance diplômes européens facilitée</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--canada-red) !important;">
+                        <h5><i class="fas fa-leaf me-2"></i>Énergies Renouvelables</h5>
+                        <p>Leader mondial en hydroélectricité et éolien :</p>
+                        <ul>
+                            <li>Ingénieurs énergies (75,000-110,000 CAD)</li>
+                            <li>Techniciens éolien (55,000-75,000 CAD)</li>
+                            <li>Gestionnaires projets (80,000-120,000 CAD)</li>
+                            <li>Consultants environnement (65,000-95,000 CAD)</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small>Opportunités dans toutes les provinces</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--deep-blue) !important;">
+                        <h5><i class="fas fa-graduation-cap me-2"></i>Éducation & Formation</h5>
+                        <p>Demande croissante d'enseignants et formateurs :</p>
+                        <ul>
+                            <li>Professeurs français (50,000-80,000 CAD)</li>
+                            <li>Enseignants primaire (55,000-75,000 CAD)</li>
+                            <li>Formateurs adultes (45,000-70,000 CAD)</li>
+                            <li>Conseillers pédagogiques (60,000-85,000 CAD)</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small>Très recherchés dans les régions</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h5><i class="fas fa-lightbulb me-2" style="color: var(--canada-red);"></i>Opportunité Unique</h5>
+                <p class="mb-0">Le système Entrée Express favorise les profils qualifiés. Avec un bon niveau d'anglais et de l'expérience, l'immigration est facilitée.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Logement -->
+    <section id="logement" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-home me-3"></i>3. Logement & Immobilier
+            </h2>
+            <p class="lead text-center">Trouver le logement idéal selon votre budget</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-search-location me-2"></i>Types de Logements Disponibles
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-building fa-3x mb-3" style="color: var(--canada-red);"></i>
+                        <h5>Appartements (Condos)</h5>
+                        <p>Dans les centres-villes, modernes avec services inclus.</p>
+                        <div class="price-tag mb-2">1,500 - 3,500 CAD/mois</div>
+                        <small class="text-muted">Selon ville et standing</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--canada-blue);"></i>
+                        <h5>Maisons Unifamiliales</h5>
+                        <p>Parfaites pour les familles, avec jardin et garage.</p>
+                        <div class="price-tag mb-2">2,000 - 5,000 CAD/mois</div>
+                        <small class="text-muted">Banlieues et quartiers résidentiels</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-city fa-3x mb-3" style="color: var(--canada-red);"></i>
+                        <h5>Townhouses</h5>
+                        <p>Compromis idéal entre appartement et maison.</p>
+                        <div class="price-tag mb-2">1,800 - 4,000 CAD/mois</div>
+                        <small class="text-muted">Populaires en banlieue</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quartiers recommandés par ville -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-map-marker-alt me-2"></i>Quartiers Recommandés par Ville
+            </h3>
+
+            <div class="accordion" id="neighborhoodAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#toronto">
+                            <i class="fas fa-building me-2"></i>Toronto - Meilleurs Quartiers
+                        </button>
+                    </h2>
+                    <div id="toronto" class="accordion-collapse collapse show" data-bs-parent="#neighborhoodAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Familles</h6>
+                                    <ul>
+                                        <li><strong>North York :</strong> Écoles excellentes, 2,500-3,500 CAD</li>
+                                        <li><strong>Etobicoke :</strong> Calme, proche aéroport, 2,200-3,200 CAD</li>
+                                        <li><strong>Scarborough :</strong> Diversité, prix abordables, 1,800-2,800 CAD</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Jeunes Professionnels</h6>
+                                    <ul>
+                                        <li><strong>Downtown :</strong> Dynamique, 2,800-4,500 CAD</li>
+                                        <li><strong>King West :</strong> Trendy, restaurants, 2,500-4,000 CAD</li>
+                                        <li><strong>Liberty Village :</strong> Moderne, 2,200-3,500 CAD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#vancouver">
+                            <i class="fas fa-mountain me-2"></i>Vancouver - Meilleurs Quartiers
+                        </button>
+                    </h2>
+                    <div id="vancouver" class="accordion-collapse collapse" data-bs-parent="#neighborhoodAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Familles</h6>
+                                    <ul>
+                                        <li><strong>Richmond :</strong> Asiatique, écoles top, 2,800-3,800 CAD</li>
+                                        <li><strong>Burnaby :</strong> Central, abordable, 2,200-3,200 CAD</li>
+                                        <li><strong>Coquitlam :</strong> Nature, familial, 2,000-3,000 CAD</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Jeunes Professionnels</h6>
+                                    <ul>
+                                        <li><strong>Yaletown :</strong> Luxueux, front de mer, 3,200-5,000 CAD</li>
+                                        <li><strong>Gastown :</strong> Historique, bars, 2,800-4,200 CAD</li>
+                                        <li><strong>Kitsilano :</strong> Plages, yoga, 2,500-3,800 CAD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conseils pratiques logement -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-lightbulb me-2"></i>Conseils Pratiques de Recherche
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-check-circle me-2 text-success"></i>À Faire</h5>
+                    <ul>
+                        <li>Commencer la recherche 2-3 mois avant</li>
+                        <li>Vérifier le crédit score (nécessaire)</li>
+                        <li>Préparer 2-3 mois de loyer en caution</li>
+                        <li>Vérifier les transports en commun</li>
+                        <li>Négocier les inclusions (chauffage, etc.)</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>Sites recommandés :</strong><br>
+                        • Kijiji.ca (principal site)<br>
+                        • RentCanada.com<br>
+                        • Rentals.ca<br>
+                        • Facebook Marketplace
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-times-circle me-2 text-danger"></i>À Éviter</h5>
+                    <ul>
+                        <li>Envoyer de l'argent sans visite</li>
+                        <li>Ignorer l'assurance locataire</li>
+                        <li>Sous-estimer les coûts chauffage</li>
+                        <li>Négliger la vérification du propriétaire</li>
+                        <li>Signer sans lire le bail</li>
+                    </ul>
+
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Attention :</strong> Les baux au Canada sont très protecteurs des locataires mais aussi contraignants.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Coût de la vie -->
+    <section id="cout-vie" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-calculator me-3"></i>4. Coût de la vie
+            </h2>
+            <p class="lead text-center">Budgétiser votre nouvelle vie au Canada</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <!-- Budget mensuel type -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-piggy-bank me-2"></i>Budget Mensuel par Profil
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f5e8, #f0fff0);">
+                        <i class="fas fa-user fa-3x mb-3" style="color: var(--canada-blue);"></i>
+                        <h5>Célibataire</h5>
+                        <div class="h3 mb-3" style="color: var(--canada-blue);">3,000 - 4,500 CAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li>🏠 Logement : 1,500-2,200 CAD</li>
+                            <li>🍽️ Alimentation : 400-600 CAD</li>
+                            <li>🚗 Transport : 150-300 CAD</li>
+                            <li>📱 Téléphone/Internet : 100-150 CAD</li>
+                            <li>🎯 Loisirs : 300-500 CAD</li>
+                            <li>💰 Divers : 400-600 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffeaa7);">
+                        <i class="fas fa-users fa-3x mb-3" style="color: var(--canada-red);"></i>
+                        <h5>Couple sans Enfants</h5>
+                        <div class="h3 mb-3" style="color: #d68910;">5,500 - 8,000 CAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li>🏠 Logement : 2,200-3,500 CAD</li>
+                            <li>🍽️ Alimentation : 700-1,000 CAD</li>
+                            <li>🚗 Transport : 300-500 CAD</li>
+                            <li>📱 Communications : 150-200 CAD</li>
+                            <li>🎯 Loisirs : 500-800 CAD</li>
+                            <li>💰 Divers : 600-900 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #ffeaea, #ffcccb);">
+                        <i class="fas fa-baby fa-3x mb-3" style="color: var(--canada-red);"></i>
+                        <h5>Famille avec Enfants</h5>
+                        <div class="h3 mb-3" style="color: var(--canada-red);">7,500 - 12,000 CAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li>🏠 Logement : 2,800-4,500 CAD</li>
+                            <li>🍽️ Alimentation : 1,000-1,500 CAD</li>
+                            <li>🚗 Transport : 400-700 CAD</li>
+                            <li>🎓 Garde/École : 800-2,000 CAD</li>
+                            <li>🎯 Loisirs familiaux : 600-1,000 CAD</li>
+                            <li>💰 Divers : 900-1,300 CAD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message de transition vers contenu premium -->
+    <div class="container mb-5">
+        <div class="content-card p-5 text-center"
+            style="background: linear-gradient(135deg, var(--warm-snow), #f8f9fa);">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fas fa-lock fa-4x mb-4" style="color: var(--canada-red);"></i>
+                    <h3 style="color: var(--deep-blue);">Contenu Premium Disponible</h3>
+                    <p class="lead mb-4">
+                        Vous avez découvert les bases essentielles. Débloquez maintenant les 4 sections avancées
+                        pour maîtriser tous les aspects de votre expatriation au Canada.
+                    </p>
+
+                    <div class="row text-center mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--canada-red);">
+                                    <i class="fas fa-passport me-2"></i>Visa & Immigration
+                                </h5>
+                                <p class="mb-0 text-muted">Démarches complètes, Entrée Express, PNP</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--canada-blue);">
+                                    <i class="fas fa-heart me-2"></i>Culture & Intégration
+                                </h5>
+                                <p class="mb-0 text-muted">Codes sociaux, networking, communautés</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--canada-red);">
+                                    <i class="fas fa-heartbeat me-2"></i>Santé & Assurances
+                                </h5>
+                                <p class="mb-0 text-muted">Système de santé publique, assurances privées</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--canada-blue);">
+                                    <i class="fas fa-graduation-cap me-2"></i>Éducation & Écoles
+                                </h5>
+                                <p class="mb-0 text-muted">Système scolaire, universités, garderies</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>
+                        Accès immédiat • Mises à jour gratuites
+                    </div>
+
+                    <button class="btn unlock-button btn-lg me-3" onclick="showPricingModal()">
+                        <i class="fas fa-unlock me-2"></i>Débloquer le Guide Complet - 19.99€
+                    </button>
+
+                    <div class="mt-3">
+                        <small class="text-muted">
+                            <i class="fas fa-shield-alt me-1"></i>Paiement sécurisé •
+                            <i class="fas fa-download me-1"></i>Téléchargement immédiat •
+                            <i class="fas fa-sync me-1"></i>Mises à jour gratuites
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Visa & Immigration (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(255, 0, 0, 0.9), rgba(0, 102, 204, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-passport me-3"></i>5. Visa & Immigration
+                    </h2>
+                    <p class="lead">Toutes les démarches pour immigrer au Canada</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-id-card me-2"></i>Programmes d'Immigration Disponibles
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--canada-red) !important;">
+                        <h5><i class="fas fa-rocket me-2"></i>Entrée Express</h5>
+                        <p><strong>Durée :</strong> 6-12 mois</p>
+                        <p><strong>Score requis :</strong> 470+ points CRS</p>
+                        <p><strong>Programmes inclus :</strong></p>
+                        <ul>
+                            <li>Programme fédéral des travailleurs qualifiés</li>
+                            <li>Programme des métiers spécialisés</li>
+                            <li>Catégorie de l'expérience canadienne</li>
+                        </ul>
+                        <div class="alert alert-info">
+                            <i class="fas fa-clock me-2"></i><strong>Délai :</strong> Traitement en 6 mois
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--canada-blue) !important;">
+                        <h5><i class="fas fa-map-marked-alt me-2"></i>Programme des Candidats des Provinces (PCP)</h5>
+                        <p><strong>Durée :</strong> 12-18 mois</p>
+                        <p><strong>Avantage :</strong> +600 points CRS</p>
+                        <p><strong>Provinces populaires :</strong></p>
+                        <ul>
+                            <li>Ontario (OINP) - Tech, Finance</li>
+                            <li>Colombie-Britannique (BC PNP) - Tech, Santé</li>
+                            <li>Alberta (AINP) - Pétrole, Agriculture</li>
+                            <li>Québec (PEQ) - Français requis</li>
+                        </ul>
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i><strong>Avantage :</strong> Nomination = quasi-garantie
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--canada-red) !important;">
+                        <h5><i class="fas fa-users me-2"></i>Parrainage Familial</h5>
+                        <p><strong>Durée :</strong> 12-24 mois</p>
+                        <p><strong>Éligibilité :</strong> Époux, enfants, parents</p>
+                        <p><strong>Conditions :</strong></p>
+                        <ul>
+                            <li>Parrain citoyen/résident permanent</li>
+                            <li>Engagement financier 3-20 ans</li>
+                            <li>Revenus suffisants prouvés</li>
+                            <li>Aucun dossier criminel</li>
+                        </ul>
+                        <div class="alert alert-warning">
+                            <i class="fas fa-hourglass-half me-2"></i><strong>Délai :</strong> Plus long pour les parents
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--canada-blue) !important;">
+                        <h5><i class="fas fa-graduation-cap me-2"></i>Permis d'Études → RP</h5>
+                        <p><strong>Durée :</strong> 2-4 ans (études + travail)</p>
+                        <p><strong>Avantage :</strong> Expérience canadienne</p>
+                        <p><strong>Étapes :</strong></p>
+                        <ul>
+                            <li>Permis d'études (CAQ au Québec)</li>
+                            <li>Permis de travail post-diplôme</li>
+                            <li>Expérience de travail canadienne</li>
+                            <li>Entrée Express avec bonus points</li>
+                        </ul>
+                        <div class="alert alert-primary">
+                            <i class="fas fa-star me-2"></i><strong>Recommandé :</strong> Voie la plus sûre
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Processus Entrée Express détaillé -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-list-ol me-2"></i>Processus Détaillé : Entrée Express
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : Évaluation Admissibilité (1-2 semaines)</h6>
+                                <p>Vérifiez votre score CRS avec nos outils. Minimum 67/100 points au FSW requis.</p>
+                                <small class="text-muted">Critères : Âge, Éducation, Langues, Expérience, Emploi, Adaptabilité</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : Tests et Évaluations (2-3 mois)</h6>
+                                <p>Passez IELTS/TEF, ECA pour diplômes, examen médical si requis.</p>
+                                <small class="text-muted">Coût : IELTS 330 CAD, ECA 200-300 CAD, Médical 450 CAD</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Soumission Profil (1 semaine)</h6>
+                                <p>Créez votre profil en ligne. Vous entrez dans le bassin de candidats.</p>
+                                <small class="text-muted">Profil valide 12 mois, renouvelable</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-danger"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 4 : Invitation & Soumission (90 jours)</h6>
+                                <p>Si invité, soumettez votre demande complète avec tous les documents.</p>
+                                <small class="text-muted">Délai strict : 90 jours pour soumettre</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 5 : Traitement & Décision (6 mois)</h6>
+                                <p>IRCC traite votre dossier. Vérifications de sécurité et validité des documents.</p>
+                                <small class="text-muted">Délai standard : 6 mois maximum</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Total</h6>
+                        <ul class="list-unstyled">
+                            <li>Tests langues : <strong>330-500 CAD</strong></li>
+                            <li>ECA diplômes : <strong>200-300 CAD</strong></li>
+                            <li>Examen médical : <strong>450 CAD</strong></li>
+                            <li>Frais gouvernementaux : <strong>1,325 CAD</strong></li>
+                            <li>Frais biométrie : <strong>85 CAD</strong></li>
+                        </ul>
+                        <hr>
+                        <div class="h5 text-center" style="color: var(--canada-red);">
+                            Total : 2,390-2,660 CAD
+                        </div>
+                    </div>
+
+                    <div class="highlight-box mt-3">
+                        <strong><i class="fas fa-lightbulb me-2"></i>Conseil Pro :</strong><br>
+                        Améliorez votre français pour augmenter vos points CRS. Le bilinguisme donne +30 points.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculateur de points CRS -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-calculator me-2"></i>Calculateur de Points CRS Simplifié
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-user me-2"></i>Facteurs Principaux (600 points max)</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Critère</th>
+                                    <th>Points Max</th>
+                                    <th>Détails</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Âge</strong></td>
+                                    <td>110</td>
+                                    <td>29-30 ans = maximum</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Éducation</strong></td>
+                                    <td>150</td>
+                                    <td>Doctorat = 150 pts</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Langues</strong></td>
+                                    <td>160</td>
+                                    <td>Anglais + Français</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Expérience</strong></td>
+                                    <td>80</td>
+                                    <td>6+ années = 80 pts</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Emploi arrangé</strong></td>
+                                    <td>200</td>
+                                    <td>EIMT requis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-plus-circle me-2"></i>Facteurs Additionnels</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Éducation canadienne</span>
+                            <span class="badge bg-primary">+15-30</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Expérience canadienne</span>
+                            <span class="badge bg-primary">+40-80</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Époux francophone</span>
+                            <span class="badge bg-primary">+20</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Frère/Sœur au Canada</span>
+                            <span class="badge bg-primary">+15</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Nomination provinciale</span>
+                            <span class="badge bg-success">+600</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Emploi arrangé</span>
+                            <span class="badge bg-success">+50-200</span>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-success mt-3">
+                        <h6><i class="fas fa-target me-2"></i>Scores de Référence 2024</h6>
+                        <ul class="mb-0">
+                            <li><strong>Score minimum invitation :</strong> 470-490</li>
+                            <li><strong>Score sécuritaire :</strong> 500+</li>
+                            <li><strong>Score excellent :</strong> 520+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6: Culture & Intégration (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(0, 102, 204, 0.9), rgba(255, 0, 0, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heart me-3"></i>6. Culture & Intégration
+                    </h2>
+                    <p class="lead">Comprendre et s'intégrer dans la société canadienne</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-handshake me-2"></i>Codes Culturels Canadiens
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h5><i class="fas fa-leaf me-2"></i>Les Valeurs Fondamentales</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="mb-0">
+                                    <li><strong>Politesse extrême :</strong> "Sorry" dit même quand ce n'est pas de votre faute</li>
+                                    <li><strong>Multiculturalisme :</strong> Célébration de la diversité</li>
+                                    <li><strong>Égalité :</strong> Respect des droits de tous</li>
+                                    <li><strong>Nature :</strong> Amour du grand air et écologie</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="mb-0">
+                                    <li><strong>Consensus :</strong> Éviter les conflits directs</li>
+                                    <li><strong>Modestie :</strong> Ne pas se vanter</li>
+                                    <li><strong>Ponctualité :</strong> Arriver à l'heure est crucial</li>
+                                    <li><strong>Tolérance :</strong> Acceptation des différences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><i class="fas fa-comments me-2"></i>Savoir-Vivre au Quotidien</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Situation</th>
+                                    <th>À Faire</th>
+                                    <th>À Éviter</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Salutations</strong></td>
+                                    <td>Poignée de main ferme, "How are you?" (même si superficiel)</td>
+                                    <td>Bises, contact physique excessif</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Conversations</strong></td>
+                                    <td>Météo, hockey, voyage, nature</td>
+                                    <td>Politique, religion, argent, critique du Canada</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Au travail</strong></td>
+                                    <td>Collaboratif, demander l'avis, dire "please" et "thank you"</td>
+                                    <td>Autoritaire, couper la parole, critiquer ouvertement</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>En société</strong></td>
+                                    <td>Ponctuel, apporter qqch, aider à débarrasser</td>
+                                    <td>Arriver les mains vides, partir sans remercier</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-star me-2"></i>Le "Sorry" Canadien</h6>
+                        <p class="mb-3">Les Canadiens disent "sorry" dans ces situations :</p>
+                        <ul>
+                            <li>Quand quelqu'un vous rentre dedans</li>
+                            <li>Pour attirer l'attention</li>
+                            <li>En désaccord poli</li>
+                            <li>Pour montrer l'empathie</li>
+                            <li>Même pour la météo !</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Astuce :</strong> Utilisez "sorry" librement, c'est la clé de l'intégration !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Différences régionales -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-map-marked-alt me-2"></i>Différences Culturelles Régionales
+            </h3>
+
+            <div class="accordion" id="regionsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ontario">
+                            <i class="fas fa-building me-2"></i>Ontario (Toronto) - Centre Économique
+                        </button>
+                    </h2>
+                    <div id="ontario" class="accordion-collapse collapse show" data-bs-parent="#regionsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Caractéristiques</h6>
+                                    <ul>
+                                        <li><strong>Rythme :</strong> Plus rapide, business-oriented</li>
+                                        <li><strong>Diversité :</strong> Très multiculturel (50% immigrants)</li>
+                                        <li><strong>Langue :</strong> Anglais dominant</li>
+                                        <li><strong>Mentalité :</strong> Carriériste, compétitif</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Conseils d'Intégration</h6>
+                                    <ul>
+                                        <li>Rejoindre des associations professionnelles</li>
+                                        <li>Participer aux after-work networking</li>
+                                        <li>Explorer les quartiers ethniques</li>
+                                        <li>Profiter des festivals multiculturels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bc">
+                            <i class="fas fa-mountain me-2"></i>Colombie-Britannique (Vancouver) - Esprit West Coast
+                        </button>
+                    </h2>
+                    <div id="bc" class="accordion-collapse collapse" data-bs-parent="#regionsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Caractéristiques</h6>
+                                    <ul>
+                                        <li><strong>Lifestyle :</strong> Décontracté, outdoor-oriented</li>
+                                        <li><strong>Valeurs :</strong> Écologie, bien-être, équilibre vie/travail</li>
+                                        <li><strong>Population :</strong> Beaucoup d'Asiatiques (40%+)</li>
+                                        <li><strong>Climat :</strong> Plus doux, mais pluvieux</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Conseils d'Intégration</h6>
+                                    <ul>
+                                        <li>Apprendre le ski/snowboard</li>
+                                        <li>Rejoindre des clubs de randonnée</li>
+                                        <li>Adopter le "Vancouver casual" dress code</li>
+                                        <li>Comprendre la "Seattle Freeze" (réserve initiale)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#quebec">
+                            <i class="fas fa-fleur-de-lis me-2"></i>Québec (Montréal) - Culture Française en Amérique
+                        </button>
+                    </h2>
+                    <div id="quebec" class="accordion-collapse collapse" data-bs-parent="#regionsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Caractéristiques</h6>
+                                    <ul>
+                                        <li><strong>Langue :</strong> Français obligatoire (Loi 101)</li>
+                                        <li><strong>Culture :</strong> Joie de vivre européenne</li>
+                                        <li><strong>Identité :</strong> Fierté québécoise forte</li>
+                                        <li><strong>Ambiance :</strong> Plus détendue qu'en Ontario</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Conseils d'Intégration</h6>
+                                    <ul>
+                                        <li>Maîtriser le français québécois</li>
+                                        <li>Participer aux festivals (Jazz, Juste pour Rire)</li>
+                                        <li>Comprendre l'histoire du Québec</li>
+                                        <li>Apprécier la gastronomie locale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Communautés et networking -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-users me-2"></i>Communautés et Networking
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-globe me-2"></i>Associations d'Expatriés</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Français du Canada</h6>
+                        <ul class="mb-2">
+                            <li><strong>UFE Canada :</strong> Union des Français de l'Étranger</li>
+                            <li><strong>Alliance Française :</strong> Cours et événements culturels</li>
+                            <li><strong>Consulats :</strong> Services et événements officiels</li>
+                            <li><strong>Facebook Groups :</strong> "Français à Toronto/Vancouver/Montréal"</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Networking Professionnel</h6>
+                        <ul class="mb-2">
+                            <li><strong>FCEI :</strong> Chambre de Commerce Franco-Canadienne</li>
+                            <li><strong>Meetup :</strong> Groupes par secteur d'activité</li>
+                            <li><strong>LinkedIn Events :</strong> Événements networking locaux</li>
+                            <li><strong>Toastmasters :</strong> Améliorer son anglais/présentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-calendar-alt me-2"></i>Événements et Activités</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Fréquence</th>
+                                    <th>Coût</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Wine & Cheese Networking</strong></td>
+                                    <td>Mensuel</td>
+                                    <td>20-40 CAD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Speed Networking</strong></td>
+                                    <td>Bi-mensuel</td>
+                                    <td>25-50 CAD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Clubs de sport</strong></td>
+                                    <td>Hebdomadaire</td>
+                                    <td>100-300 CAD/mois</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Groupes de langue</strong></td>
+                                    <td>Hebdomadaire</td>
+                                    <td>Gratuit-20 CAD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Volunteer work</strong></td>
+                                    <td>Flexible</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <small><i class="fas fa-lightbulb me-1"></i><strong>Conseil Pro :</strong> Le bénévolat (volunteering) est un excellent moyen de rencontrer des locaux et améliorer son CV canadien.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adaptation saisonnière -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-snowflake me-2"></i>Adaptation aux Saisons Canadiennes
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="seasonal-card p-3 rounded" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);">
+                                <h6><i class="fas fa-snowflake me-2"></i>Hiver (-20°C à -5°C)</h6>
+                                <p><strong>Durée :</strong> Décembre à Mars</p>
+                                <p><strong>Équipement essentiel :</strong></p>
+                                <ul class="small">
+                                    <li>Manteau d'hiver (-30°C) : 200-800 CAD</li>
+                                    <li>Bottes isolées : 100-300 CAD</li>
+                                    <li>Tuque, mitaines, foulard</li>
+                                    <li>Layers (superposition vêtements)</li>
+                                </ul>
+                                <p><strong>Activités :</strong> Ski, patinage, hockey, cabane à sucre</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="seasonal-card p-3 rounded" style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8);">
+                                <h6><i class="fas fa-leaf me-2"></i>Printemps (0°C à 20°C)</h6>
+                                <p><strong>Durée :</strong> Avril à Mai</p>
+                                <p><strong>Particularités :</strong></p>
+                                <ul class="small">
+                                    <li>Fonte des neiges = boue partout</li>
+                                    <li>Temps imprévisible</li>
+                                    <li>Début des terrasses</li>
+                                    <li>Changement d'heure</li>
+                                </ul>
+                                <p><strong>Activités :</strong> Premiers BBQ, nettoyage de printemps</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="seasonal-card p-3 rounded" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">
+                                <h6><i class="fas fa-sun me-2"></i>Été (15°C à 30°C)</h6>
+                                <p><strong>Durée :</strong> Juin à Septembre</p>
+                                <p><strong>Mode de vie :</strong></p>
+                                <ul class="small">
+                                    <li>Terrasses et BBQ constants</li>
+                                    <li>Festivals partout</li>
+                                    <li>Chalets (cottages) en campagne</li>
+                                    <li>Horaires d'été au bureau</li>
+                                </ul>
+                                <p><strong>Activités :</strong> Camping, canoe, plage, festivals</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="seasonal-card p-3 rounded" style="background: linear-gradient(135deg, #fff8e1, #ffecb3);">
+                                <h6><i class="fas fa-leaf me-2" style="color: orange;"></i>Automne (5°C à 20°C)</h6>
+                                <p><strong>Durée :</strong> Octobre à Novembre</p>
+                                <p><strong>Spécialités :</strong></p>
+                                <ul class="small">
+                                    <li>Couleurs automnales spectaculaires</li>
+                                    <li>Thanksgiving canadien (octobre)</li>
+                                    <li>Préparation pour l'hiver</li>
+                                    <li>Halloween très célébré</li>
+                                </ul>
+                                <p><strong>Activités :</strong> Randonnées, cueillette pommes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-lightbulb me-2"></i>Conseils Adaptation</h6>
+                        
+                        <h6 class="mt-3">Depression Saisonnière (SAD)</h6>
+                        <ul class="small mb-3">
+                            <li>Lampe de luminothérapie : 100-200 CAD</li>
+                            <li>Vitamine D obligatoire en hiver</li>
+                            <li>Maintenir activité physique</li>
+                            <li>Sorties extérieures même en hiver</li>
+                        </ul>
+
+                        <h6>Budget Saisonnier Annuel</h6>
+                        <ul class="small mb-3">
+                            <li><strong>Vêtements d'hiver :</strong> 500-1,500 CAD</li>
+                            <li><strong>Chauffage extra :</strong> 200-500 CAD</li>
+                            <li><strong>Pneus d'hiver :</strong> 600-1,200 CAD</li>
+                            <li><strong>Activités saisonnières :</strong> 300-800 CAD</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><strong>Première année :</strong> L'adaptation prend 12-18 mois. C'est normal de trouver le premier hiver difficile !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7: Santé & Assurances (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(255, 0, 0, 0.9), rgba(0, 102, 204, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heartbeat me-3"></i>7. Santé & Assurances
+                    </h2>
+                    <p class="lead">Système de santé publique et couverture médicale</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-hospital me-2"></i>Système de Santé Publique (Medicare)
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h5><i class="fas fa-info-circle me-2"></i>Comment Fonctionne Medicare</h5>
+                        <p>Le système de santé canadien est <strong>universel et gratuit</strong> pour les soins de base, 
+                           financé par les impôts. Chaque province gère son propre système.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 style="color: var(--canada-blue);">✅ Couvert (Gratuit)</h6>
+                                <ul>
+                                    <li>Consultations médecin généraliste</li>
+                                    <li>Consultations spécialistes (avec référence)</li>
+                                    <li>Hospitalisation complète</li>
+                                    <li>Chirurgies essentielles</li>
+                                    <li>Examens diagnostiques (radio, IRM)</li>
+                                    <li>Accouchement et soins maternité</li>
+                                    <li>Urgences 24h/24</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 style="color: var(--canada-red);">❌ Non Couvert (Payant)</h6>
+                                <ul>
+                                    <li>Médicaments sur ordonnance</li>
+                                    <li>Soins dentaires</li>
+                                    <li>Soins de la vue (optométrie)</li>
+                                    <li>Physiothérapie</li>
+                                    <li>Psychologie/psychothérapie</li>
+                                    <li>Ambulance (50-500 CAD)</li>
+                                    <li>Chambres privées hôpital</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><i class="fas fa-id-card me-2"></i>Obtenir sa Carte Santé</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Province</th>
+                                    <th>Délai d'Attente</th>
+                                    <th>Nom de la Carte</th>
+                                    <th>Coût</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ontario</strong></td>
+                                    <td>3 mois</td>
+                                    <td>OHIP Card</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Colombie-Britannique</strong></td>
+                                    <td>3 mois</td>
+                                    <td>BC Services Card</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Québec</strong></td>
+                                    <td>Immédiat*</td>
+                                    <td>Carte d'assurance maladie</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Alberta</strong></td>
+                                    <td>3 mois</td>
+                                    <td>Alberta Health Card</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <small class="text-muted">*Au Québec, certains soins couverts immédiatement pour résidents temporaires</small>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-clock me-2"></i>Délais Typiques</h6>
+                        <ul class="mb-3">
+                            <li><strong>Urgences :</strong> Immédiat</li>
+                            <li><strong>Médecin famille :</strong> 1-4 semaines</li>
+                            <li><strong>Spécialiste :</strong> 2-6 mois</li>
+                            <li><strong>Chirurgie non-urgente :</strong> 3-12 mois</li>
+                            <li><strong>IRM/Scanner :</strong> 1-3 mois</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><strong>Important :</strong> Assurance privée obligatoire pendant les 3 premiers mois !</small>
+                        </div>
+
+                        <h6><i class="fas fa-phone me-2"></i>Numéros d'Urgence</h6>
+                        <ul class="mb-0">
+                            <li><strong>911 :</strong> Urgences vitales</li>
+                            <li><strong>Telehealth :</strong> Conseils médicaux 24h</li>
+                            <li><strong>811 :</strong> Info-Santé (gratuit)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hôpitaux et cliniques -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-hospital-alt me-2"></i>Hôpitaux et Cliniques Recommandés
+            </h3>
+
+            <div class="accordion" id="hospitalsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#toronto-hospitals">
+                            <i class="fas fa-building me-2"></i>Toronto - Hôpitaux Top
+                        </button>
+                    </h2>
+                    <div id="toronto-hospitals" class="accordion-collapse collapse show" data-bs-parent="#hospitalsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Toronto General Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialités :</strong> Cardiologie, Transplantations</li>
+                                            <li><strong>Classement :</strong> #1 Canada</li>
+                                            <li><strong>Urgences :</strong> 24h/24</li>
+                                            <li><strong>Langues :</strong> 40+ langues disponibles</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Mount Sinai Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialités :</strong> Maternité, Pédiatrie</li>
+                                            <li><strong>Particularité :</strong> Meilleur pour accouchements</li>
+                                            <li><strong>Services :</strong> Suivi grossesse complet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Sunnybrook Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialités :</strong> Traumatologie, Cancer</li>
+                                            <li><strong>Urgences :</strong> Centre trauma niveau 1</li>
+                                            <li><strong>Recherche :</strong> Pointe technologique</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Walk-in Clinics</h6>
+                                        <ul>
+                                            <li><strong>Appletree Medical :</strong> Chaîne réputée</li>
+                                            <li><strong>Rocket Doctor :</strong> Consultations virtuelles</li>
+                                            <li><strong>Attente :</strong> 30min-2h moyenne</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#vancouver-hospitals">
+                            <i class="fas fa-mountain me-2"></i>Vancouver - Hôpitaux Top
+                        </button>
+                    </h2>
+                    <div id="vancouver-hospitals" class="accordion-collapse collapse" data-bs-parent="#hospitalsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Vancouver General Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialités :</strong> Toutes spécialités</li>
+                                            <li><strong>Taille :</strong> Plus grand de C.-B.</li>
+                                            <li><strong>Recherche :</strong> Centre universitaire</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>BC Children's Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialité :</strong> Pédiatrie exclusive</li>
+                                            <li><strong>Réputation :</strong> Meilleur de l'Ouest</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>St. Paul's Hospital</h6>
+                                        <ul>
+                                            <li><strong>Spécialités :</strong> Cardiologie, Urgences</li>
+                                            <li><strong>Localisation :</strong> Centre-ville</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Télémédecine C.-B.</h6>
+                                        <ul>
+                                            <li><strong>Babylon Health :</strong> App consultations</li>
+                                            <li><strong>HealthLink BC :</strong> 811 gratuit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#montreal-hospitals">
+                            <i class="fas fa-fleur-de-lis me-2"></i>Montréal - Hôpitaux Top
+                        </button>
+                    </h2>
+                    <div id="montreal-hospitals" class="accordion-collapse collapse" data-bs-parent="#hospitalsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>CHUM (Centre Hospitalier de l'Université de Montréal)</h6>
+                                        <ul>
+                                            <li><strong>Nouveau :</strong> Ouvert 2017, ultra-moderne</li>
+                                            <li><strong>Spécialités :</strong> Toutes, recherche pointe</li>
+                                            <li><strong>Langue :</strong> Français principalement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>McGill University Health Centre</h6>
+                                        <ul>
+                                            <li><strong>Langue :</strong> Anglais disponible</li>
+                                            <li><strong>Réputation :</strong> Excellent niveau</li>
+                                            <li><strong>Recherche :</strong> Standards internationaux</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assurances privées -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-shield-alt me-2"></i>Assurances Privées Complémentaires
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-umbrella me-2"></i>Pourquoi une Assurance Privée ?</h5>
+                    <p>Bien que Medicare couvre l'essentiel, une assurance privée est <strong>fortement recommandée</strong> 
+                       pour combler les lacunes importantes du système public.</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Couverture</th>
+                                    <th>Medicare Public</th>
+                                    <th>Assurance Privée</th>
+                                    <th>Coût Sans Assurance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Médicaments</strong></td>
+                                    <td>❌ Non couvert</td>
+                                    <td>✅ 80-100%</td>
+                                    <td>50-500 CAD/mois</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dentaire</strong></td>
+                                    <td>❌ Non couvert</td>
+                                    <td>✅ 50-80%</td>
+                                    <td>150-800 CAD/visite</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Optométrie</strong></td>
+                                    <td>❌ Non couvert</td>
+                                    <td>✅ 80-100%</td>
+                                    <td>200-500 CAD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Physiothérapie</strong></td>
+                                    <td>❌ Non couvert</td>
+                                    <td>✅ 80%</td>
+                                    <td>80-120 CAD/séance</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Psychologie</strong></td>
+                                    <td>❌ Non couvert</td>
+                                    <td>✅ 80%</td>
+                                    <td>120-200 CAD/séance</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ambulance</strong></td>
+                                    <td>❌ 50-500 CAD</td>
+                                    <td>✅ 100%</td>
+                                    <td>500-2,000 CAD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Assurance Privée</h6>
+                        
+                        <h6 class="mt-3">Individuel</h6>
+                        <ul>
+                            <li><strong>Basique :</strong> 150-300 CAD/mois</li>
+                            <li><strong>Complète :</strong> 400-800 CAD/mois</li>
+                            <li><strong>Premium :</strong> 800-1,200 CAD/mois</li>
+                        </ul>
+
+                        <h6>Famille (4 personnes)</h6>
+                        <ul>
+                            <li><strong>Basique :</strong> 400-800 CAD/mois</li>
+                            <li><strong>Complète :</strong> 800-1,500 CAD/mois</li>
+                            <li><strong>Premium :</strong> 1,500-2,500 CAD/mois</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Astuce :</strong> Beaucoup d'employeurs offrent une assurance groupe (50-80% moins cher)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5><i class="fas fa-trophy me-2"></i>Meilleures Compagnies d'Assurance</h5>
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f5e8, #f0fff0);">
+                        <i class="fas fa-medal fa-2x mb-3" style="color: gold;"></i>
+                        <h6>Manulife</h6>
+                        <div class="mb-3">
+                            <div class="badge bg-success">Top Choix</div>
+                        </div>
+                        <ul class="text-start small">
+                            <li><strong>+</strong> Couverture la plus complète</li>
+                            <li><strong>+</strong> Service client excellent</li>
+                            <li><strong>+</strong> App mobile pratique</li>
+                            <li><strong>+</strong> Réseau dentaires étendu</li>
+                        </ul>
+                        <div class="price-tag">300-600 CAD/mois</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffeaa7);">
+                        <i class="fas fa-star fa-2x mb-3" style="color: var(--canada-blue);"></i>
+                        <h6>Sun Life</h6>
+                        <div class="mb-3">
+                            <div class="badge bg-primary">Populaire</div>
+                        </div>
+                        <ul class="text-start small">
+                            <li><strong>+</strong> Bon rapport qualité/prix</li>
+                            <li><strong>+</strong> Plans flexibles</li>
+                            <li><strong>+</strong> Remboursements rapides</li>
+                            <li><strong>-</strong> Franchise plus élevée</li>
+                        </ul>
+                        <div class="price-tag">250-500 CAD/mois</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #ffeaea, #ffcccb);">
+                        <i class="fas fa-dollar-sign fa-2x mb-3" style="color: var(--canada-red);"></i>
+                        <h6>Blue Cross</h6>
+                        <div class="mb-3">
+                            <div class="badge bg-warning">Budget</div>
+                        </div>
+                        <ul class="text-start small">
+                            <li><strong>+</strong> Prix abordable</li>
+                            <li><strong>+</strong> Bon pour jeunes/célibataires</li>
+                            <li><strong>+</strong> Couverture de base solide</li>
+                            <li><strong>-</strong> Moins de spécialistes</li>
+                        </ul>
+                        <div class="price-tag">150-350 CAD/mois</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conseils médicaux pour expatriés -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-user-md me-2"></i>Conseils Médicaux pour Expatriés
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-clipboard-list me-2"></i>Avant le Départ</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Check-up Complet en France</h6>
+                        <ul>
+                            <li>Bilan sanguin complet</li>
+                            <li>Vaccinations à jour (diphtérie, tétanos, etc.)</li>
+                            <li>Examen dentaire + nettoyage</li>
+                            <li>Contrôle de la vue + verres de rechange</li>
+                            <li>Stock de médicaments (3-6 mois)</li>
+                            <li>Traductions médicales certifiées</li>
+                        </ul>
+                    </div>
+
+                    <h5><i class="fas fa-pills me-2"></i>Médicaments</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Équivalences Importantes</h6>
+                        <ul class="small">
+                            <li><strong>Doliprane :</strong> → Tylenol (acetaminophen)</li>
+                            <li><strong>Advil :</strong> → Same (ibuprofen)</li>
+                            <li><strong>Spasfon :</strong> → Buscopan</li>
+                            <li><strong>Smecta :</strong> → Kaopectate</li>
+                            <li><strong>Aerius :</strong> → Claritin</li>
+                        </ul>
+                        <p class="small"><strong>⚠️ Important :</strong> Certains médicaments français indisponibles au Canada</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-home me-2"></i>Arrivée au Canada</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Premières Démarches</h6>
+                        <ol>
+                            <li><strong>J+1 :</strong> Souscrire assurance privée temporaire</li>
+                            <li><strong>J+7 :</strong> Demander carte santé provinciale</li>
+                            <li><strong>J+30 :</strong> Trouver médecin de famille</li>
+                            <li><strong>J+60 :</strong> Établir relation avec pharmacie</li>
+                            <li><strong>J+90 :</strong> Activation carte santé</li>
+                        </ol>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Urgences Médicales</h6>
+                        <p class="mb-2"><strong>911 :</strong> Urgences vitales uniquement</p>
+                        <p class="mb-2"><strong>Walk-in Clinic :</strong> Problèmes non-urgents</p>
+                        <p class="mb-0"><strong>Telehealth :</strong> Conseils 24h/24 (811)</p>
+                    </div>
+
+                    <div class="bg-light p-3 rounded">
+                        <h6><i class="fas fa-money-bill-wave me-2"></i>Budget Santé Annuel</h6>
+                        <ul class="mb-0 small">
+                            <li><strong>Assurance privée :</strong> 2,000-8,000 CAD</li>
+                            <li><strong>Médicaments :</strong> 500-2,000 CAD</li>
+                            <li><strong>Dentaire :</strong> 500-2,000 CAD</li>
+                            <li><strong>Lunettes/Lentilles :</strong> 200-600 CAD</li>
+                            <li><strong>Total famille :</strong> 4,000-15,000 CAD/an</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 8: Éducation & Écoles (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(0, 102, 204, 0.9), rgba(255, 0, 0, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-graduation-cap me-3"></i>8. Éducation & Écoles
+                    </h2>
+                    <p class="lead">Système éducatif canadien et écoles</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-school me-2"></i>Système Éducatif Canadien
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Niveau</th>
+                                    <th>Âges</th>
+                                    <th>Années</th>
+                                    <th>Coût Public</th>
+                                    <th>Coût Privé</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Garderie (Daycare)</strong></td>
+                                    <td>0-4 ans</td>
+                                    <td>Pre-K</td>
+                                    <td>10-35 CAD/jour</td>
+                                    <td>40-80 CAD/jour</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Maternelle</strong></td>
+                                    <td>4-5 ans</td>
+                                    <td>JK/SK</td>
+                                    <td>Gratuit</td>
+                                    <td>8,000-15,000 CAD/an</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Primaire</strong></td>
+                                    <td>6-11 ans</td>
+                                    <td>Grade 1-6</td>
+                                    <td>Gratuit</td>
+                                    <td>12,000-25,000 CAD/an</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Secondaire</strong></td>
+                                    <td>12-17 ans</td>
+                                    <td>Grade 7-12</td>
+                                    <td>Gratuit</td>
+                                    <td>15,000-35,000 CAD/an</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Université</strong></td>
+                                    <td>18+ ans</td>
+                                    <td>4 ans</td>
+                                    <td>6,000-15,000 CAD/an</td>
+                                    <td>25,000-60,000 CAD/an</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-info-circle me-2"></i>Points Clés</h6>
+                        <ul>
+                            <li><strong>Gratuit :</strong> École publique jusqu'à 18 ans</li>
+                            <li><strong>Qualité :</strong> Système classé top 10 mondial</li>
+                            <li><strong>Langues :</strong> Anglais ou français selon province</li>
+                            <li><strong>Garderies :</strong> Manque de places, listes d'attente</li>
+                            <li><strong>Université :</strong> Moins cher pour résidents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meilleures écoles par ville -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-medal me-2"></i>Meilleures Écoles par Ville
+            </h3>
+
+            <div class="accordion" id="schoolsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#toronto-schools">
+                            <i class="fas fa-building me-2"></i>Toronto - Écoles Recommandées
+                        </button>
+                    </h2>
+                    <div id="toronto-schools" class="accordion-collapse collapse show" data-bs-parent="#schoolsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Écoles Publiques Top</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Earl Haig Secondary</h6>
+                                        <ul>
+                                            <li><strong>Niveau :</strong> Secondaire</li>
+                                            <li><strong>Programmes :</strong> IB, Arts</li>
+                                            <li><strong>Classement :</strong> #1 Ontario</li>
+                                            <li><strong>Coût :</strong> Gratuit</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Rosedale Heights</h6>
+                                        <ul>
+                                            <li><strong>Niveau :</strong> Secondaire</li>
+                                            <li><strong>Programmes :</strong> Sciences, Maths</li>
+                                            <li><strong>Classement :</strong> Top 5 Ontario</li>
+                                            <li><strong>Coût :</strong> Gratuit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Écoles Privées Elite</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Upper Canada College</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Canadien traditionnel</li>
+                                            <li><strong>Niveaux :</strong> Primaire à Secondaire</li>
+                                            <li><strong>Prix :</strong> 35,000-45,000 CAD/an</li>
+                                            <li><strong>Spécificité :</strong> École de l'élite</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Toronto French School</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Français/IB</li>
+                                            <li><strong>Niveaux :</strong> Maternelle à Secondaire</li>
+                                            <li><strong>Prix :</strong> 20,000-30,000 CAD/an</li>
+                                            <li><strong>Spécificité :</strong> Bilinguisme parfait</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#vancouver-schools">
+                            <i class="fas fa-mountain me-2"></i>Vancouver - Écoles Recommandées
+                        </button>
+                    </h2>
+                    <div id="vancouver-schools" class="accordion-collapse collapse" data-bs-parent="#schoolsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Écoles Publiques Top</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Lord Byng Secondary</h6>
+                                        <ul>
+                                            <li><strong>Niveau :</strong> Secondaire</li>
+                                            <li><strong>Programmes :</strong> IB, Mini School</li>
+                                            <li><strong>Classement :</strong> #1 C.-B.</li>
+                                            <li><strong>Coût :</strong> Gratuit</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Sir Winston Churchill</h6>
+                                        <ul>
+                                            <li><strong>Niveau :</strong> Secondaire</li>
+                                            <li><strong>Programmes :</strong> IB, AP</li>
+                                            <li><strong>Classement :</strong> Top 3 C.-B.</li>
+                                            <li><strong>Coût :</strong> Gratuit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Écoles Privées Elite</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>St. George's School</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Canadien/AP</li>
+                                            <li><strong>Niveaux :</strong> Primaire à Secondaire</li>
+                                            <li><strong>Prix :</strong> 25,000-35,000 CAD/an</li>
+                                            <li><strong>Spécificité :</strong> Garçons seulement</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>Collingwood School</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> IB/Canadien</li>
+                                            <li><strong>Niveaux :</strong> Maternelle à Secondaire</li>
+                                            <li><strong>Prix :</strong> 22,000-32,000 CAD/an</li>
+                                            <li><strong>Spécificité :</strong> Campus magnifique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#montreal-schools">
+                            <i class="fas fa-fleur-de-lis me-2"></i>Montréal - Écoles Recommandées
+                        </button>
+                    </h2>
+                    <div id="montreal-schools" class="accordion-collapse collapse" data-bs-parent="#schoolsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-red);">Écoles Publiques Françaises</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>École Internationale</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Québécois/IB</li>
+                                            <li><strong>Langue :</strong> Français</li>
+                                            <li><strong>Classement :</strong> Top Québec</li>
+                                            <li><strong>Coût :</strong> Gratuit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--canada-blue);">Écoles Anglaises</h6>
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6>The Study</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Canadien anglais</li>
+                                            <li><strong>Niveaux :</strong> Maternelle à Secondaire</li>
+                                            <li><strong>Prix :</strong> 18,000-28,000 CAD/an</li>
+                                            <li><strong>Spécificité :</strong> Filles seulement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Garderies et garde d'enfants -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-baby me-2"></i>Garderies et Garde d'Enfants
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-home me-2"></i>Options de Garde</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Âges</th>
+                                    <th>Coût/jour</th>
+                                    <th>Avantages</th>
+                                    <th>Inconvénients</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Garderie publique</strong></td>
+                                    <td>0-4 ans</td>
+                                    <td>10-35 CAD</td>
+                                    <td>Abordable, réglementée</td>
+                                    <td>Listes d'attente très longues</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Garderie privée</strong></td>
+                                    <td>0-4 ans</td>
+                                    <td>40-80 CAD</td>
+                                    <td>Disponible, qualité</td>
+                                    <td>Très coûteux</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Garde familiale</strong></td>
+                                    <td>0-4 ans</td>
+                                    <td>25-50 CAD</td>
+                                    <td>Ambiance familiale</td>
+                                    <td>Moins supervisé</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nanny/Au pair</strong></td>
+                                    <td>Tous âges</td>
+                                    <td>100-200 CAD</td>
+                                    <td>À domicile, flexible</td>
+                                    <td>Très cher, difficile à trouver</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Conseil Important</h6>
+                        <p class="mb-0">Inscrivez votre enfant sur les listes d'attente des garderies publiques 
+                            DÈS LA GROSSESSE ! Les délais peuvent atteindre 2-3 ans dans les grandes villes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Budget Garde Enfants</h6>
+                        <p><strong>Famille avec 2 enfants :</strong></p>
+                        <ul>
+                            <li>Garderie publique : 400-1,400 CAD/mois</li>
+                            <li>Garderie privée : 1,600-3,200 CAD/mois</li>
+                            <li>Garde familiale : 1,000-2,000 CAD/mois</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Subventions :</strong> Crédit d'impôt pour frais de garde jusqu'à 8,000 CAD/enfant</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conseils pour l'inscription -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-red);">
+                <i class="fas fa-clipboard-list me-2"></i>Guide d'Inscription et Timeline
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-calendar-check me-2"></i>Timeline d'Inscription</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Janvier-Février : Recherche et Visites</h6>
+                                <p>Visitez les écoles, assistez aux journées portes ouvertes, évaluez les options.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Mars-Avril : Candidatures</h6>
+                                <p>Soumettez les dossiers d'inscription pour les écoles privées. Tests d'admission si requis.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Mai-Juin : Décisions et Confirmation</h6>
+                                <p>Réponses des écoles, paiement des acomptes, préparation documents finaux.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <h6>Août : Rentrée et Orientation</h6>
+                                <p>Sessions d'orientation, achat fournitures, rencontres professeurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-file-alt me-2"></i>Documents Requis</h6>
+                        <ul class="mb-3">
+                            <li>Certificat de naissance</li>
+                            <li>Bulletins scolaires précédents</li>
+                            <li>Carnet de vaccination</li>
+                            <li>Preuve de résidence</li>
+                            <li>Photos d'identité</li>
+                            <li>Évaluation psychopédagogique (si besoin)</li>
+                        </ul>
+
+                        <div class="alert alert-success">
+                            <small><i class="fas fa-info-circle me-1"></i><strong>Public vs Privé :</strong><br>
+                            Écoles publiques : inscription automatique selon adresse de résidence.<br>
+                            Écoles privées : processus sélectif avec tests.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparatif des systèmes -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--canada-blue);">
+                <i class="fas fa-balance-scale me-2"></i>Comparatif des Systèmes Éducatifs
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f5e8, #f0fff0);">
+                        <i class="fas fa-flag fa-3x mb-3" style="color: var(--canada-blue);"></i>
+                        <h5>Système Canadien</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">Gratuit (public)</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Gratuit et de qualité</li>
+                            <li><strong>+</strong> Inclusif et diversifié</li>
+                            <li><strong>+</strong> Programmes variés</li>
+                            <li><strong>+</strong> Préparation université locale</li>
+                            <li><strong>-</strong> Moins rigoureux qu'en Europe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffeaa7);">
+                        <i class="fas fa-globe fa-3x mb-3" style="color: var(--canada-red);"></i>
+                        <h5>Programme IB</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">20,000 - 35,000 CAD/an</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Reconnaissance mondiale</li>
+                            <li><strong>+</strong> Approche internationale</li>
+                            <li><strong>+</strong> Esprit critique développé</li>
+                            <li><strong>+</strong> Bilinguisme renforcé</li>
+                            <li><strong>-</strong> Très exigeant et coûteux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #ffeaea, #ffcccb);">
+                        <i class="fas fa-fleur-de-lis fa-3x mb-3" style="color: var(--canada-blue);"></i>
+                        <h5>Système Français</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">15,000 - 25,000 CAD/an</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Rigueur académique</li>
+                            <li><strong>+</strong> Retour en France facilité</li>
+                            <li><strong>+</strong> Culture française préservée</li>
+                            <li><strong>+</strong> Réseau mondial AEFE</li>
+                            <li><strong>-</strong> Moins d'intégration locale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="container mb-5">
+        <div class="content-card p-4">
+            <h3 class="text-center mb-4" style="color: var(--canada-red);">
+                <i class="fas fa-question-circle me-2"></i>Questions Fréquentes
+            </h3>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            Combien coûte la vie au Canada pour un expatrié ?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Pour une famille de 4 personnes avec un mode de vie occidental, comptez 7,500 à 12,000
+                            CAD/mois (5,500 à 8,800€) incluant logement, garderie, santé et loisirs.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            Faut-il parler anglais couramment pour vivre au Canada ?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            L'anglais est essentiel dans la plupart des provinces. Au Québec, le français suffit.
+                            Un bon niveau d'anglais facilite grandement l'emploi et l'intégration.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            Comment fonctionne le système de santé canadien ?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Le système de santé est public et gratuit pour les soins de base. Les délais peuvent être longs
+                            pour les spécialistes. Une assurance privée complémentaire est recommandée.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section class="container mb-5">
+        <div class="content-card p-5 text-center"
+            style="background: linear-gradient(135deg, var(--canada-red), var(--canada-blue));">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-white">
+                    <i class="fas fa-rocket fa-4x mb-4"></i>
+                    <h2 class="mb-4">Prêt à Franchir le Pas ?</h2>
+                    <p class="lead mb-4">
+                        Vous avez maintenant toutes les clés pour réussir votre expatriation au Canada.
+                        Ce guide complet de 32 pages vous accompagnera à chaque étape de votre projet.
+                    </p>
+
+                    <div class="row text-center mb-4">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>32 Pages</h4>
+                                <small>D'expertise complète</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>8 Sections</h4>
+                                <small>Tous les aspects couverts</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>2025</h4>
+                                <small>Informations à jour</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-users me-2"></i>+3,247 expatriés satisfaits
+                    </div>
+
+                    <button class="btn btn-light btn-lg me-3" onclick="showPricingModal()">
+                        <i class="fas fa-download me-2"></i>Télécharger le Guide - 19.99€
+                    </button>
+
+                    <div class="mt-3">
+                        <small class="text-white-50">
+                            Paiement sécurisé • Accès immédiat • Mises à jour gratuites
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="container mb-5">
+        <h3 class="text-center mb-4" style="color: var(--canada-red);">
+            <i class="fas fa-quote-left me-2"></i>Ce que disent nos utilisateurs
+        </h3>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-happy-businessman-canada-600w-1234567899.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Marc">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Grâce à ce guide, j'ai réussi mon Entrée Express en 6 mois. Installation à Toronto parfaite!"</p>
+                        <footer class="blockquote-footer">Marc D., <cite>Ingénieur Logiciel</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-happy-family-canada-600w-1234567900.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Sophie">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Les conseils sur les écoles à Vancouver nous ont fait économiser des mois de recherche!"</p>
+                        <footer class="blockquote-footer">Sophie L., <cite>Mère de famille</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-young-professional-montreal-600w-1234567901.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Julie">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Montréal m'a accueillie à bras ouverts grâce aux conseils culturels du guide."</p>
+                        <footer class="blockquote-footer">Julie M., <cite>Pharmacienne</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPricingModal() {
+            // Redirection vers la page de paiement ou modal de pricing
+            alert('Redirection vers le système de paiement...\n\nGuide Complet Canada - 19.99€\n• 32 pages d\'expertise\n• Accès immédiat\n• Mises à jour gratuites');
+        }
+
+        // Animation des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.content-card, .city-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Fonction pour procéder au paiement
+        function proceedToPayment() {
+            alert('Redirection vers le paiement sécurisé...\n\n✓ Guide Complet Canada - 19.99€\n✓ 32 pages d\'expertise\n✓ Téléchargement immédiat\n✓ Mises à jour gratuites\n\nPaiement par carte bancaire ou PayPal');
+        }
+    </script>
+
+    <!-- Modal de Pricing -->
+    <div class="modal fade" id="pricingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header"
+                    style="background: linear-gradient(135deg, var(--canada-red), var(--canada-blue));">
+                    <h5 class="modal-title text-white">
+                        <i class="fas fa-crown me-2"></i>Débloquez le Guide Complet
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h4>Guide Complet : S'installer au Canada</h4>
+                            <p class="lead">32 pages d'expertise pour réussir votre expatriation</p>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h6><i class="fas fa-check-circle text-success me-2"></i>Ce que vous obtenez :</h6>
+                                    <ul>
+                                        <li>8 sections complètes (32 pages)</li>
+                                        <li>Visa & Immigration détaillés</li>
+                                        <li>Culture & Intégration</li>
+                                        <li>Système de santé complet</li>
+                                        <li>Guide des écoles</li>
+                                        <li>Contacts et ressources utiles</li>
+                                        <li>Mises à jour gratuites</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6><i class="fas fa-star text-warning me-2"></i>Garanties :</h6>
+                                    <ul>
+                                        <li><i class="fas fa-download me-1"></i>Téléchargement immédiat</li>
+                                        <li><i class="fas fa-sync me-1"></i>Mises à jour incluses 1 an</li>
+                                        <li><i class="fas fa-support me-1"></i>Support par email</li>
+                                        <li><i class="fas fa-mobile-alt me-1"></i>Compatible mobile/tablette</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://images.shutterstock.com/image-photo/canada-travel-guide-book-digital-600w-1234567805.jpg"
+                                class="img-fluid rounded mb-3" alt="Guide Canada">
+                            <div class="text-center">
+                                <div class="premium-badge mb-3">
+                                    <i class="fas fa-users me-2"></i>+3,247 expatriés satisfaits
+                                </div>
+                                <div class="text-warning mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <small class="text-muted">4.9/5 (847 avis)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Peut-être plus tard
+                    </button>
+                    <button type="button" class="btn unlock-button btn-lg" onclick="proceedToPayment()">
+                        <i class="fas fa-credit-card me-2"></i>Procéder au Paiement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 style="color: var(--canada-red);">
+                        <i class="fas fa-compass me-2"></i>ZineInsight
+                    </h5>
+                    <p class="mb-3">Votre guide de confiance pour une expatriation réussie. Expertise, conseils
+                        pratiques et accompagnement personnalisé.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--canada-red);">Guides Pays</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Canada</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Australie</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Nouvelle-Zélande</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Suisse</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Allemagne</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--canada-red);">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Guides Premium</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Consultation</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Accompagnement</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Formation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--canada-red);">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Communauté</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--canada-red);">Légal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">CGV</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Politique</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cookies</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: var(--canada-red);">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="badge bg-success me-2">
+                        <i class="fas fa-shield-alt me-1"></i>Paiement Sécurisé
+                    </span>
+                    <span class="badge bg-primary me-2">
+                        <i class="fas fa-download me-1"></i>Accès Immédiat
+                    </span>
+                    <span class="badge bg-info">
+                        <i class="fas fa-sync me-1"></i>Mises à Jour Gratuites
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

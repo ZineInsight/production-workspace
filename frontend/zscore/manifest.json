@@ -1,0 +1,24 @@
+{
+    "name": "ZineInsight Revolutionary Platform",
+    "short_name": "ZineInsight",
+    "description": "Revolutionize your life with AI - Find your ideal city and optimize your career",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#0066FF",
+    "background_color": "#0a0a0b",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/icons/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "categories": [
+        "lifestyle",
+        "productivity",
+        "travel"
+    ],
+    "lang": "fr",
+    "dir": "ltr"
+}

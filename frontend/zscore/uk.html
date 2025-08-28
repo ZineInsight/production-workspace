@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Royaume-Uni 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --uk-blue: #012169;
+            --uk-red: #C8102E;
+            --uk-white: #FFFFFF;
+            --uk-navy: #003366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--uk-blue), var(--uk-red));
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=600&fit=crop') center/cover;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--uk-blue), var(--uk-red));
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 0;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .region-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+            border: 1px solid #e9ecef;
+        }
+
+        .region-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .region-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .price-tag {
+            background: linear-gradient(135deg, var(--uk-blue), var(--uk-red));
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            display: inline-block;
+        }
+
+        .premium-badge {
+            background: linear-gradient(135deg, var(--uk-red), var(--uk-blue));
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--uk-blue) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--uk-blue) !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--uk-red) !important;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--uk-blue), var(--uk-red));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, var(--uk-red), var(--uk-blue));
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .premium-blur {
+            filter: blur(2px);
+            opacity: 0.7;
+            pointer-events: none;
+            position: relative;
+        }
+
+        .premium-access-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 20px;
+            border: 2px dashed var(--uk-red);
+            margin: 40px 0;
+        }
+
+        .testimonials-section {
+            padding: 80px 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--uk-red);
+        }
+
+        .stars {
+            color: var(--uk-red);
+        }
+
+        .stats-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            color: var(--uk-red);
+            margin-bottom: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--uk-blue);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .footer {
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-link {
+            color: #adb5bd;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--uk-red);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -37px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 14px;
+            bottom: -16px;
+            width: 2px;
+            background: #dee2e6;
+        }
+
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .timeline {
+                padding-left: 20px;
+            }
+            
+            .timeline-marker {
+                left: -27px;
+            }
+            
+            .timeline-item::before {
+                left: -21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-flag me-2" style="color: var(--uk-red);"></i>
+                Guide Royaume-Uni
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1" onclick="scrollToSection('section1')">
+                            <i class="fas fa-passport me-1"></i>Visa & Démarches
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2" onclick="scrollToSection('section2')">
+                            <i class="fas fa-briefcase me-1"></i>Emploi
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3" onclick="scrollToSection('section3')">
+                            <i class="fas fa-home me-1"></i>Logement
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4" onclick="scrollToSection('section4')">
+                            <i class="fas fa-pound-sign me-1"></i>Budget
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5" onclick="scrollToSection('section5')">
+                            <i class="fas fa-baby me-1"></i>Garde d'Enfants
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                    <i class="fas fa-crown me-2"></i>Accès Premium
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-3 fw-bold mb-4">
+                            <i class="fas fa-flag me-3" style="color: var(--uk-white);"></i>
+                            S'installer au Royaume-Uni
+                        </h1>
+                        <p class="lead fs-4 mb-5">
+                            Le guide complet pour réussir votre expatriation au Royaume-Uni. 
+                            Visa post-Brexit, emploi, logement, NHS - tout ce qu'il faut savoir pour une installation réussie.
+                        </p>
+                        <div class="row justify-content-center text-start">
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-check-circle fa-lg me-3" style="color: var(--uk-white);"></i>
+                                            <span><strong>Centre financier mondial</strong> - Londres leader</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-check-circle fa-lg me-3" style="color: var(--uk-white);"></i>
+                                            <span><strong>Innovation & Tech</strong> - Écosystème dynamique</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-check-circle fa-lg me-3" style="color: var(--uk-white);"></i>
+                                            <span><strong>Salaires compétitifs</strong> - 35k£ à 80k£/an</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-check-circle fa-lg me-3" style="color: var(--uk-white);"></i>
+                                            <span><strong>NHS gratuit</strong> - Santé universelle</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button class="btn btn-warning btn-lg px-5 me-3" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                                <i class="fas fa-rocket me-2"></i>Commencer Maintenant
+                            </button>
+                            <a href="#section1" class="btn btn-outline-light btn-lg px-5" onclick="scrollToSection('section1')">
+                                <i class="fas fa-arrow-down me-2"></i>Découvrir le Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Visa et Démarches -->
+    <section id="section1" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-passport me-3"></i>1. Visa et Démarches Post-Brexit
+                    </h2>
+                    <p class="lead">Naviguer le nouveau système d'immigration britannique depuis 2021</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-globe-europe me-2"></i>Points-Based Immigration System
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="alert alert-warning">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Post-Brexit : Nouvelles Règles</h6>
+                        <p class="mb-2">Depuis janvier 2021, les citoyens UE sont soumis aux mêmes règles d'immigration que les autres nationalités. 
+                           Le système à points remplace la libre circulation.</p>
+                        <p class="mb-0"><strong>Exception :</strong> EU Settlement Scheme pour les résidents avant le 31/12/2020</p>
+                    </div>
+
+                    <h5><i class="fas fa-briefcase me-2"></i>Skilled Worker Visa</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-star me-2" style="color: var(--uk-red);"></i>Conditions Obligatoires (50 points)</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Job offer :</strong> Employeur agréé (20 pts)</li>
+                                    <li><strong>Skill level :</strong> RQF Level 3+ (20 pts)</li>
+                                    <li><strong>Anglais :</strong> Niveau B1 minimum (10 pts)</li>
+                                </ul>
+                                <div class="price-tag">Base requise</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-trophy me-2" style="color: var(--uk-red);"></i>Points Additionnels (20 points requis)</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Salaire 20k-23k£ :</strong> 0 points</li>
+                                    <li><strong>Salaire 23k-26k£ :</strong> 10 points</li>
+                                    <li><strong>Salaire 26k£+ :</strong> 20 points</li>
+                                    <li><strong>PhD pertinent :</strong> 10 points</li>
+                                    <li><strong>Profession pénurie :</strong> 20 points</li>
+                                </ul>
+                                <div class="price-tag">Total : 70 points</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><i class="fas fa-graduation-cap me-2"></i>Global Talent Visa</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Pour les talents exceptionnels</h6>
+                        <ul class="mb-2">
+                            <li><strong>Sciences & Recherche :</strong> Royal Society, British Academy</li>
+                            <li><strong>Arts & Culture :</strong> Arts Council England</li>
+                            <li><strong>Tech :</strong> Tech Nation (IA, fintech, cybersécurité)</li>
+                            <li><strong>Avantages :</strong> Pas de sponsor requis, voie vers résidence permanente</li>
+                        </ul>
+                        <div class="price-tag">Visa d'élite</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Immigration 2024</h6>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Skilled Worker</strong></td>
+                                    <td>£610-1,408</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Global Talent</strong></td>
+                                    <td>£152-624</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>IHS (santé)</strong></td>
+                                    <td>£624/an</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Priority Service</strong></td>
+                                    <td>£500</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Biométrie</strong></td>
+                                    <td>£19.20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h6><i class="fas fa-clock me-2"></i>Délais de Traitement</h6>
+                        <ul class="small mb-3">
+                            <li><strong>Standard :</strong> 3-8 semaines</li>
+                            <li><strong>Priority :</strong> 5 jours ouvrés</li>
+                            <li><strong>Super Priority :</strong> 24h ouvrées</li>
+                            <li><strong>Depuis UK :</strong> Plus rapide</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Conseil :</strong> Commencez 3 mois avant la date souhaitée de début d'emploi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-file-alt me-2"></i>Démarches Administratives Essentielles
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : BRP & Police Registration (0-2 semaines)</h6>
+                                <p><strong>Biometric Residence Permit</strong> à récupérer sous 10 jours. 
+                                   Enregistrement police pour certaines nationalités.</p>
+                                <div class="alert alert-info">
+                                    <small><strong>Documents :</strong> Passeport, lettre d'arrivée, preuve d'adresse UK</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : National Insurance Number (2-6 semaines)</h6>
+                                <p><strong>NINo obligatoire pour travailler</strong>. Demande en ligne ou par téléphone. 
+                                   Peut commencer à travailler avant réception.</p>
+                                <div class="price-tag">Gratuit - Service gouvernemental</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Compte Bancaire (1-3 semaines)</h6>
+                                <p><strong>Current Account</strong> essentiel. Barclays, HSBC, Lloyds acceptent les nouveaux arrivants. 
+                                   Confirmation d'employeur aide.</p>
+                                <div class="price-tag">£0-15/mois selon banque</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 4 : NHS Registration (immédiat)</h6>
+                                <p><strong>Inscription GP (médecin)</strong> gratuite après paiement IHS. 
+                                   Trouve GP local via NHS website.</p>
+                                <div class="price-tag">Couverture universelle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-building me-2"></i>Organismes Clés UK</h6>
+                        
+                        <div class="mb-3">
+                            <h6 class="small">Immigration</h6>
+                            <ul class="small mb-2">
+                                <li><strong>UKVI :</strong> UK Visas & Immigration</li>
+                                <li><strong>Home Office :</strong> Ministère de l'Intérieur</li>
+                                <li><strong>UKBA :</strong> Border Agency</li>
+                                <li><strong>Police :</strong> Enregistrement si requis</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6 class="small">Services Essentiels</h6>
+                            <ul class="small mb-2">
+                                <li><strong>HMRC :</strong> Impôts et NINo</li>
+                                <li><strong>DWP :</strong> Prestations sociales</li>
+                                <li><strong>NHS :</strong> Système de santé</li>
+                                <li><strong>DVLA :</strong> Permis de conduire</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <small><strong>Ressource :</strong> GOV.UK est votre référence officielle pour toutes les démarches</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Marché de l'Emploi -->
+    <section id="section2" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-briefcase me-3"></i>2. Marché de l'Emploi
+                    </h2>
+                    <p class="lead">Opportunités professionnelles et stratégies de recherche d'emploi au UK</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-chart-line me-2"></i>Secteurs Porteurs au Royaume-Uni
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-university me-2" style="color: var(--uk-red);"></i>Services Financiers</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Investment Banking :</strong> £80-200k+/an</li>
+                                    <li><strong>Risk Management :</strong> £50-120k/an</li>
+                                    <li><strong>Fintech :</strong> £45-100k/an</li>
+                                    <li><strong>Insurance :</strong> £35-80k/an</li>
+                                </ul>
+                                <div class="price-tag">City de Londres</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-laptop-code me-2" style="color: var(--uk-red);"></i>Technologie & IT</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Software Engineer :</strong> £40-90k/an</li>
+                                    <li><strong>Data Scientist :</strong> £45-85k/an</li>
+                                    <li><strong>DevOps Engineer :</strong> £50-95k/an</li>
+                                    <li><strong>AI/ML Specialist :</strong> £60-120k/an</li>
+                                </ul>
+                                <div class="price-tag">Silicon Roundabout</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-heartbeat me-2" style="color: var(--uk-red);"></i>Santé & Sciences</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Doctor (NHS) :</strong> £28-80k/an</li>
+                                    <li><strong>Nurse :</strong> £25-45k/an</li>
+                                    <li><strong>Pharmacist :</strong> £30-55k/an</li>
+                                    <li><strong>Biotech :</strong> £35-75k/an</li>
+                                </ul>
+                                <div class="price-tag">NHS + Privé</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-balance-scale me-2" style="color: var(--uk-red);"></i>Legal & Consulting</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Solicitor :</strong> £35-150k+/an</li>
+                                    <li><strong>Barrister :</strong> £40-500k+/an</li>
+                                    <li><strong>Management Consulting :</strong> £50-120k/an</li>
+                                    <li><strong>Strategy Consultant :</strong> £60-150k/an</li>
+                                </ul>
+                                <div class="price-tag">Tradition britannique</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-graduation-cap me-2" style="color: var(--uk-red);"></i>Éducation & Recherche</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Lecturer :</strong> £35-60k/an</li>
+                                    <li><strong>Professor :</strong> £55-100k+/an</li>
+                                    <li><strong>Research Fellow :</strong> £30-50k/an</li>
+                                    <li><strong>Teacher :</strong> £25-45k/an</li>
+                                </ul>
+                                <div class="price-tag">Universités prestigieuses</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-film me-2" style="color: var(--uk-red);"></i>Médias & Créatif</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Journalism :</strong> £22-60k/an</li>
+                                    <li><strong>Film/TV Production :</strong> £25-80k/an</li>
+                                    <li><strong>Digital Marketing :</strong> £25-65k/an</li>
+                                    <li><strong>Game Development :</strong> £30-70k/an</li>
+                                </ul>
+                                <div class="price-tag">Industries créatives</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-trophy me-2"></i>Shortage Occupation List</h6>
+                        <div class="mb-3">
+                            <h6 class="small">Professions Prioritaires 2024</h6>
+                            <ul class="small mb-2">
+                                <li>Ingénieurs (toutes spécialités)</li>
+                                <li>Personnel infirmier</li>
+                                <li>Développeurs logiciels</li>
+                                <li>Chercheurs scientifiques</li>
+                                <li>Enseignants mathématiques/sciences</li>
+                                <li>Vétérinaires</li>
+                                <li>Chefs cuisiniers</li>
+                            </ul>
+                        </div>
+
+                        <h6><i class="fas fa-star me-2"></i>Avantages Candidats</h6>
+                        <ul class="small mb-3">
+                            <li><strong>Salaire minimum réduit :</strong> 80% du taux standard</li>
+                            <li><strong>Points bonus :</strong> +20 points sur visa</li>
+                            <li><strong>Processus accéléré :</strong> Priorité traitement</li>
+                            <li><strong>Sponsors multiples :</strong> Plus d'options employeurs</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Brexit Impact :</strong> Pénurie de main-d'œuvre dans plusieurs secteurs crée des opportunités</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-search me-2"></i>Stratégies de Recherche d'Emploi UK
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-laptop me-2"></i>Plateformes de Recrutement</h5>
+                    
+                    <div class="accordion" id="jobPlatformsUK">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#linkedinUK">
+                                    <i class="fab fa-linkedin me-2"></i>LinkedIn & Professional Networks
+                                </button>
+                            </h2>
+                            <div id="linkedinUK" class="accordion-collapse collapse show" data-bs-parent="#jobPlatformsUK">
+                                <div class="accordion-body">
+                                    <p><strong>LinkedIn :</strong> Plateforme n°1 pour professionnels</p>
+                                    <p><strong>Networking :</strong> Alumni associations, events</p>
+                                    <p><strong>Stratégie :</strong> Profil optimisé, recommandations</p>
+                                    <div class="price-tag">80% des recrutements</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jobboardsUK">
+                                    <i class="fas fa-globe me-2"></i>Job Boards Britanniques
+                                </button>
+                            </h2>
+                            <div id="jobboardsUK" class="accordion-collapse collapse" data-bs-parent="#jobPlatformsUK">
+                                <div class="accordion-body">
+                                    <ul class="mb-0">
+                                        <li><strong>Indeed.co.uk :</strong> Plus large base</li>
+                                        <li><strong>Reed.co.uk :</strong> Leader britannique</li>
+                                        <li><strong>Totaljobs.com :</strong> Tous niveaux</li>
+                                        <li><strong>Monster.co.uk :</strong> Management</li>
+                                        <li><strong>CV-Library :</strong> PME et startups</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specializedUK">
+                                    <i class="fas fa-cogs me-2"></i>Sites Spécialisés
+                                </button>
+                            </h2>
+                            <div id="specializedUK" class="accordion-collapse collapse" data-bs-parent="#jobPlatformsUK">
+                                <div class="accordion-body">
+                                    <ul class="mb-0">
+                                        <li><strong>CWJobs :</strong> IT et technologie</li>
+                                        <li><strong>eFinancialCareers :</strong> Finance</li>
+                                        <li><strong>BMJ Careers :</strong> Secteur médical</li>
+                                        <li><strong>Times Higher Education :</strong> Académique</li>
+                                        <li><strong>Prospects.ac.uk :</strong> Graduates</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-file-alt me-2"></i>CV et Cover Letter Britanniques</h5>
+                    
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Format CV Britannique</h6>
+                        <ul class="mb-2">
+                            <li><strong>Pas de photo :</strong> Illégal de demander</li>
+                            <li><strong>Personal Statement :</strong> 3-4 lignes d'accroche</li>
+                            <li><strong>Chronologie inverse :</strong> Plus récent en premier</li>
+                            <li><strong>Longueur :</strong> 2 pages maximum</li>
+                            <li><strong>Références :</strong> "Available upon request"</li>
+                        </ul>
+                        <div class="price-tag">Professional & Concis</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded">
+                        <h6>Cover Letter Britannique</h6>
+                        <ul class="mb-2">
+                            <li><strong>Personnalisation :</strong> Recherche approfondie</li>
+                            <li><strong>Structure :</strong> Opening, body, closing</li>
+                            <li><strong>Achievements :</strong> Résultats quantifiés</li>
+                            <li><strong>Longueur :</strong> 1 page exactement</li>
+                            <li><strong>Ton :</strong> Professionnel mais personnel</li>
+                        </ul>
+                        <div class="price-tag">Essential companion</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-handshake me-2"></i>Processus de Recrutement Britannique
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : Application (1-2 semaines)</h6>
+                                <p>Soumission online via ATS (Applicant Tracking System). 
+                                   <strong>Mots-clés importants</strong> pour passer les filtres automatiques.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : Phone/Video Screening (1-2 semaines)</h6>
+                                <p><strong>Premier contact</strong> avec HR ou hiring manager. 
+                                   Questions motivation, éligibilité visa, culture fit.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Assessment/Technical Test (1-3 semaines)</h6>
+                                <p><strong>Tests variés :</strong> Technical skills, psychometric tests, 
+                                   case studies selon le poste et l'industrie.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 4 : Final Interview & Offer (2-4 semaines)</h6>
+                                <p><strong>Entretien final</strong> avec senior management. 
+                                   References check, puis négociation package complet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-clipboard-check me-2"></i>Interview Tips UK</h6>
+                        
+                        <div class="mb-3">
+                            <h6 class="small">Do's</h6>
+                            <ul class="small mb-2">
+                                <li>Ponctualité (15min avant)</li>
+                                <li>Business attire conservateur</li>
+                                <li>Recherche entreprise approfondie</li>
+                                <li>Questions sur l'équipe/culture</li>
+                                <li>Poignée de main ferme + eye contact</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6 class="small">Don'ts</h6>
+                            <ul class="small mb-2">
+                                <li>Arrivée en retard</li>
+                                <li>Questions salaire trop tôt</li>
+                                <li>Critique ancien employeur</li>
+                                <li>Familiarité excessive</li>
+                                <li>Réponses trop courtes</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <small><strong>STAR Method :</strong> Situation, Task, Action, Result pour structurer vos réponses</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Logement -->
+    <section id="section3" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-home me-3"></i>3. Trouver un Logement
+                    </h2>
+                    <p class="lead">Naviguer le marché immobilier britannique</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-search me-2"></i>Plateformes de Recherche de Logement
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-star me-2" style="color: var(--uk-red);"></i>Rightmove</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Leader britannique</strong></li>
+                                    <li>Plus grand choix de propriétés</li>
+                                    <li>Outils de recherche avancés</li>
+                                    <li>Alertes email personnalisées</li>
+                                    <li>Données marché locales</li>
+                                </ul>
+                                <div class="price-tag">90% du marché</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-building me-2" style="color: var(--uk-red);"></i>Zoopla</h6>
+                                <ul class="mb-2">
+                                    <li>Concurrent principal</li>
+                                    <li>Estimations de valeur</li>
+                                    <li>Historique des prix</li>
+                                    <li>Calculateur d'affordabilité</li>
+                                    <li>Application mobile excellente</li>
+                                </ul>
+                                <div class="price-tag">Alternative de qualité</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-users me-2" style="color: var(--uk-blue);"></i>SpareRoom</h6>
+                                <ul class="mb-2">
+                                    <li>Spécialiste house shares</li>
+                                    <li>Colocations et chambres</li>
+                                    <li>Profils détaillés colocataires</li>
+                                    <li>Système de matching</li>
+                                    <li>Étudiants et jeunes pros</li>
+                                </ul>
+                                <div class="price-tag">Solution économique</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-handshake me-2" style="color: var(--uk-blue);"></i>OpenRent</h6>
+                                <ul class="mb-2">
+                                    <li>Pas de frais d'agence</li>
+                                    <li>Direct propriétaire-locataire</li>
+                                    <li>Processus simplifié</li>
+                                    <li>Vérifications incluses</li>
+                                    <li>Économies substantielles</li>
+                                </ul>
+                                <div class="price-tag">No agent fees</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Arnaques Communes</h6>
+                        <ul class="mb-3">
+                            <li><strong>Advance fee fraud :</strong> Paiement avant visite</li>
+                            <li><strong>Fake landlords :</strong> Photos volées</li>
+                            <li><strong>Too good to be true :</strong> Prix anormalement bas</li>
+                            <li><strong>Overseas scam :</strong> Propriétaire à l'étranger</li>
+                        </ul>
+
+                        <h6><i class="fas fa-shield-alt me-2"></i>Sécurité</h6>
+                        <ul class="mb-3">
+                            <li>Toujours visiter en personne</li>
+                            <li>Vérifier documents propriété</li>
+                            <li>Utiliser deposit protection scheme</li>
+                            <li>Contrat écrit obligatoire</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><strong>Red Flag :</strong> Jamais de paiement avant signature du tenancy agreement !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-pound-sign me-2"></i>Prix du Marché par Région
+            </h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead style="background: var(--uk-blue); color: white;">
+                        <tr>
+                            <th>Région</th>
+                            <th>Studio</th>
+                            <th>1 Bedroom</th>
+                            <th>2 Bedrooms</th>
+                            <th>3+ Bedrooms</th>
+                            <th>Évolution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Londres (Zone 1-2)</strong></td>
+                            <td>£1,200-2,000</td>
+                            <td>£1,800-3,500</td>
+                            <td>£2,500-5,000</td>
+                            <td>£3,500-8,000+</td>
+                            <td><span class="badge bg-danger">+5%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Londres (Zone 3-4)</strong></td>
+                            <td>£900-1,400</td>
+                            <td>£1,300-2,200</td>
+                            <td>£1,800-3,000</td>
+                            <td>£2,500-4,000</td>
+                            <td><span class="badge bg-warning">+3%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Manchester</strong></td>
+                            <td>£600-900</td>
+                            <td>£800-1,300</td>
+                            <td>£1,100-1,800</td>
+                            <td>£1,400-2,500</td>
+                            <td><span class="badge bg-warning">+4%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Birmingham</strong></td>
+                            <td>£550-850</td>
+                            <td>£700-1,200</td>
+                            <td>£900-1,600</td>
+                            <td>£1,200-2,200</td>
+                            <td><span class="badge bg-success">+2%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Edinburgh</strong></td>
+                            <td>£700-1,100</td>
+                            <td>£900-1,500</td>
+                            <td>£1,200-2,000</td>
+                            <td>£1,600-2,800</td>
+                            <td><span class="badge bg-warning">+3%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bristol</strong></td>
+                            <td>£650-1,000</td>
+                            <td>£850-1,400</td>
+                            <td>£1,100-1,900</td>
+                            <td>£1,500-2,600</td>
+                            <td><span class="badge bg-warning">+4%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Leeds</strong></td>
+                            <td>£500-750</td>
+                            <td>£650-1,000</td>
+                            <td>£800-1,400</td>
+                            <td>£1,100-1,800</td>
+                            <td><span class="badge bg-success">+2%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Newcastle</strong></td>
+                            <td>£450-650</td>
+                            <td>£550-850</td>
+                            <td>£700-1,200</td>
+                            <td>£900-1,600</td>
+                            <td><span class="badge bg-success">+1%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-info-circle me-2"></i>À Savoir sur les Prix UK</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Prix <strong>par calendrier month</strong> (pcm)</li>
+                            <li><strong>Deposit :</strong> 1-6 semaines de loyer</li>
+                            <li><strong>Agency fees :</strong> Interdites depuis 2019</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li><strong>Council Tax :</strong> £100-400/mois selon borough</li>
+                            <li><strong>Utilities :</strong> £100-200/mois (gaz/électricité)</li>
+                            <li><strong>Bills included :</strong> Rare, à vérifier</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-file-contract me-2"></i>Processus de Location Britannique
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : Recherche & Viewing (1-4 semaines)</h6>
+                                <p>Marché rapide, surtout Londres. <strong>Décision immédiate</strong> souvent requise. 
+                                   Préparez tous documents à l'avance.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : Application & References (3-5 jours)</h6>
+                                <p><strong>Right to Rent check</strong> obligatoire + references employeur/précédent landlord. 
+                                   Credit check systématique.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Tenancy Agreement & Move-in (1-2 semaines)</h6>
+                                <p><strong>AST (Assured Shorthold Tenancy)</strong> standard. 
+                                   Deposit dans scheme protection + inventory check.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-file-alt me-2"></i>Documents Requis</h6>
+                        <ul class="small mb-3">
+                            <li><strong>Right to Rent :</strong> Passeport + visa/BRP</li>
+                            <li><strong>Employment letter :</strong> Salaire + permanence</li>
+                            <li><strong>Bank statements :</strong> 3 derniers mois</li>
+                            <li><strong>References :</strong> Employeur + précédent landlord</li>
+                            <li><strong>Guarantor :</strong> Si revenus insuffisants</li>
+                            <li><strong>Credit report :</strong> Experian/Equifax</li>
+                        </ul>
+
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Initiaux</h6>
+                        <ul class="small mb-3">
+                            <li><strong>First month :</strong> Loyer complet</li>
+                            <li><strong>Deposit :</strong> 1-6 semaines</li>
+                            <li><strong>Admin fees :</strong> Interdites (Tenant Fees Act)</li>
+                            <li><strong>Inventory :</strong> £100-300</li>
+                        </ul>
+
+                        <div class="alert alert-success">
+                            <small><strong>Loi :</strong> Depuis 2019, les frais d'agence sont à la charge du propriétaire !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-map-marked-alt me-2"></i>Quartiers Populaires par Ville
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-landmark me-2"></i>Londres</h5>
+                    
+                    <div class="accordion" id="londonAreas">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#canaryWharf">
+                                    <i class="fas fa-building me-2"></i>Canary Wharf & Docklands
+                                </button>
+                            </h2>
+                            <div id="canaryWharf" class="accordion-collapse collapse show" data-bs-parent="#londonAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> District financier, gratte-ciels, moderne</p>
+                                    <p><strong>Prix :</strong> £1,800-4,000/mois</p>
+                                    <p><strong>Idéal pour :</strong> Banquiers, financiers, consultants</p>
+                                    <div class="price-tag">Business district</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shoreditch">
+                                    <i class="fas fa-palette me-2"></i>Shoreditch & East London
+                                </button>
+                            </h2>
+                            <div id="shoreditch" class="accordion-collapse collapse" data-bs-parent="#londonAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Tech hub, créatif, branché, nightlife</p>
+                                    <p><strong>Prix :</strong> £1,400-2,800/mois</p>
+                                    <p><strong>Idéal pour :</strong> Tech workers, créatifs, jeunes pros</p>
+                                    <div class="price-tag">Silicon Roundabout</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clapham">
+                                    <i class="fas fa-home me-2"></i>Clapham & South London
+                                </button>
+                            </h2>
+                            <div id="clapham" class="accordion-collapse collapse" data-bs-parent="#londonAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Résidentiel, famille, espaces verts</p>
+                                    <p><strong>Prix :</strong> £1,200-2,500/mois</p>
+                                    <p><strong>Idéal pour :</strong> Familles, young professionals</p>
+                                    <div class="price-tag">Quality of life</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-industry me-2"></i>Manchester</h5>
+                    
+                    <div class="accordion" id="manchesterAreas">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#northernQuarter">
+                                    <i class="fas fa-music me-2"></i>Northern Quarter
+                                </button>
+                            </h2>
+                            <div id="northernQuarter" class="accordion-collapse collapse show" data-bs-parent="#manchesterAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Bohème, musique, art, indépendant</p>
+                                    <p><strong>Prix :</strong> £700-1,400/mois</p>
+                                    <p><strong>Idéal pour :</strong> Créatifs, musiciens, étudiants</p>
+                                    <div class="price-tag">Cultural heart</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deansgate">
+                                    <i class="fas fa-glass-cheers me-2"></i>Deansgate & City Centre
+                                </button>
+                            </h2>
+                            <div id="deansgate" class="accordion-collapse collapse" data-bs-parent="#manchesterAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Centre-ville, business, shopping, nightlife</p>
+                                    <p><strong>Prix :</strong> £800-1,600/mois</p>
+                                    <p><strong>Idéal pour :</strong> Young professionals, business</p>
+                                    <div class="price-tag">Urban living</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chorlton">
+                                    <i class="fas fa-leaf me-2"></i>Chorlton & South Manchester
+                                </button>
+                            </h2>
+                            <div id="chorlton" class="accordion-collapse collapse" data-bs-parent="#manchesterAreas">
+                                <div class="accordion-body">
+                                    <p><strong>Profil :</strong> Familial, écologique, communauté</p>
+                                    <p><strong>Prix :</strong> £600-1,200/mois</p>
+                                    <p><strong>Idéal pour :</strong> Familles, environnementalistes</p>
+                                    <div class="price-tag">Green & friendly</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Coût de la Vie -->
+    <section id="section4" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-pound-sign me-3"></i>4. Coût de la Vie
+                    </h2>
+                    <p class="lead">Budgets détaillés pour vivre au Royaume-Uni</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-shopping-cart me-2"></i>Coûts Quotidiens par Catégorie
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-utensils me-2"></i>Alimentation & Groceries</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Produit</th>
+                                    <th>Londres</th>
+                                    <th>Autres villes</th>
+                                    <th>vs UE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pain (loaf)</td>
+                                    <td>£1.30</td>
+                                    <td>£1.10</td>
+                                    <td>+10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Lait (1L)</td>
+                                    <td>£1.15</td>
+                                    <td>£1.05</td>
+                                    <td>+5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Œufs (12)</td>
+                                    <td>£2.80</td>
+                                    <td>£2.40</td>
+                                    <td>=</td>
+                                </tr>
+                                <tr>
+                                    <td>Fromage (kg)</td>
+                                    <td>£8.50</td>
+                                    <td>£7.20</td>
+                                    <td>-20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Viande bœuf (kg)</td>
+                                    <td>£12.00</td>
+                                    <td>£10.50</td>
+                                    <td>-25%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fruits/légumes</td>
+                                    <td>£2.50/kg</td>
+                                    <td>£2.00/kg</td>
+                                    <td>-10%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <span class="price-tag">Budget food : £200-400/mois</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-coffee me-2"></i>Restaurants & Sorties</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Londres</th>
+                                    <th>Autres villes</th>
+                                    <th>vs UE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunch (meal deal)</td>
+                                    <td>£8-15</td>
+                                    <td>£6-12</td>
+                                    <td>+15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Coffee (flat white)</td>
+                                    <td>£3.50</td>
+                                    <td>£2.80</td>
+                                    <td>+20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Pint of beer</td>
+                                    <td>£5.50</td>
+                                    <td>£4.20</td>
+                                    <td>+25%</td>
+                                </tr>
+                                <tr>
+                                    <td>Restaurant (2 pers.)</td>
+                                    <td>£50-100</td>
+                                    <td>£35-70</td>
+                                    <td>+20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fish & Chips</td>
+                                    <td>£8-12</td>
+                                    <td>£6-10</td>
+                                    <td>Tradition</td>
+                                </tr>
+                                <tr>
+                                    <td>Pub meal</td>
+                                    <td>£12-18</td>
+                                    <td>£10-15</td>
+                                    <td>Culture</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <span class="price-tag">Budget sorties : £150-500/mois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-train me-2"></i>Transport et Services</h3>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-subway me-2"></i>Transports Publics</h6>
+                    <ul>
+                        <li><strong>Londres (TfL) :</strong> 
+                            <ul>
+                                <li>Travelcard Zone 1-2 : £156/mois</li>
+                                <li>Single journey : £2.50-5.60</li>
+                                <li>Oyster Card : Obligatoire</li>
+                                <li>Night Tube : Weekend</li>
+                            </ul>
+                        </li>
+                        <li><strong>Manchester :</strong>
+                            <ul>
+                                <li>System One : £60-80/mois</li>
+                                <li>Metrolink tram : Excellent</li>
+                                <li>Bus day pass : £4.50</li>
+                            </ul>
+                        </li>
+                        <li><strong>Autres villes :</strong>
+                            <ul>
+                                <li>Monthly pass : £45-70/mois</li>
+                                <li>Single ticket : £2-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-car me-2"></i>Automobile</h6>
+                    <ul>
+                        <li><strong>Petrol :</strong> £1.40-1.60/L</li>
+                        <li><strong>Diesel :</strong> £1.45-1.65/L</li>
+                        <li><strong>Insurance :</strong> £500-2,000/an</li>
+                        <li><strong>MOT Test :</strong> £54.85/an</li>
+                        <li><strong>Road Tax :</strong> £0-580/an</li>
+                        <li><strong>Parking Londres :</strong> £4-8/h</li>
+                        <li><strong>Congestion Charge :</strong> £15/jour</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6><i class="fas fa-wifi me-2"></i>Utilities & Services</h6>
+                    <ul>
+                        <li><strong>Broadband (Unlimited) :</strong> £25-40/mois</li>
+                        <li><strong>Mobile (Unlimited) :</strong> £15-35/mois</li>
+                        <li><strong>Gas & Electricity :</strong> £100-200/mois</li>
+                        <li><strong>Water bill :</strong> £30-50/mois</li>
+                        <li><strong>Council Tax :</strong> £100-400/mois</li>
+                        <li><strong>TV Licence :</strong> £159/an</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-calculator me-2"></i>Budgets Mensuels Types
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                        <i class="fas fa-user fa-3x mb-3" style="color: var(--uk-blue);"></i>
+                        <h5>Young Professional</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">£1,800 - 3,500/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> £900-2,000 (house share/studio)</li>
+                            <li><strong>Food :</strong> £250-400</li>
+                            <li><strong>Transport :</strong> £60-160</li>
+                            <li><strong>Sorties :</strong> £200-400</li>
+                            <li><strong>Utilities :</strong> £100-200</li>
+                            <li><strong>Divers :</strong> £200-400</li>
+                        </ul>
+                        <div class="small text-muted mt-2">Londres vs Régions</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffecb3);">
+                        <i class="fas fa-heart fa-3x mb-3" style="color: var(--uk-red);"></i>
+                        <h5>Couple</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">£2,500 - 4,800/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> £1,300-2,800 (1-2 bed flat)</li>
+                            <li><strong>Food :</strong> £400-650</li>
+                            <li><strong>Transport :</strong> £120-300</li>
+                            <li><strong>Sorties :</strong> £250-500</li>
+                            <li><strong>Utilities :</strong> £150-300</li>
+                            <li><strong>Divers :</strong> £300-600</li>
+                        </ul>
+                        <div class="small text-muted mt-2">Double income beneficial</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f5e8, #c8e6c9);">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--uk-red);"></i>
+                        <h5>Family (4 pers.)</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">£3,200 - 6,500/mois</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>Logement :</strong> £1,600-3,500 (3+ bed house)</li>
+                            <li><strong>Food :</strong> £600-900</li>
+                            <li><strong>Transport :</strong> £200-400</li>
+                            <li><strong>Childcare :</strong> £500-1,500</li>
+                            <li><strong>Utilities :</strong> £200-400</li>
+                            <li><strong>Divers :</strong> £400-800</li>
+                        </ul>
+                        <div class="small text-muted mt-2">Childcare très coûteux</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-lightbulb me-2"></i>Optimisations Budget UK</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Supermarchés budget (ASDA, Tesco Value)</li>
+                            <li>Meal deals lunch (£3-5)</li>
+                            <li>Pubs vs restaurants (meilleur rapport qualité/prix)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>Oyster Card discount zones</li>
+                            <li>Free museums & attractions</li>
+                            <li>NHS gratuit (après IHS payment)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-university me-2"></i>Système Fiscal et Social
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-receipt me-2"></i>Impôts sur le Revenu (PAYE)</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Tranche de Revenu</th>
+                                    <th>Taux</th>
+                                    <th>2024/25</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Personal Allowance</strong></td>
+                                    <td>0%</td>
+                                    <td>£0 - £12,570</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Basic Rate</strong></td>
+                                    <td>20%</td>
+                                    <td>£12,571 - £50,270</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Higher Rate</strong></td>
+                                    <td>40%</td>
+                                    <td>£50,271 - £125,140</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Additional Rate</strong></td>
+                                    <td>45%</td>
+                                    <td>£125,140+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-success">
+                        <small><strong>PAYE :</strong> Prélèvement automatique à la source par l'employeur</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-shield-alt me-2"></i>National Insurance (NI)</h5>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Cotisations Employé (Class 1)</h6>
+                        <ul class="mb-2">
+                            <li><strong>£0 - £12,570 :</strong> 0%</li>
+                            <li><strong>£12,571 - £50,270 :</strong> 12%</li>
+                            <li><strong>£50,270+ :</strong> 2%</li>
+                        </ul>
+                        <div class="price-tag">Retraite + NHS + Benefits</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded">
+                        <h6>Benefits Access</h6>
+                        <ul class="mb-2">
+                            <li><strong>NHS :</strong> Gratuit après IHS payment</li>
+                            <li><strong>State Pension :</strong> Après 35 ans cotisations</li>
+                            <li><strong>Jobseeker's Allowance :</strong> £84.80/semaine</li>
+                            <li><strong>Child Benefit :</strong> £24/semaine (1er enfant)</li>
+                        </ul>
+                        <div class="price-tag">Social safety net</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Garderies et Garde d'Enfants -->
+    <section id="section5" class="section-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-baby me-3"></i>5. Garderies et Garde d'Enfants
+                    </h2>
+                    <p class="lead">Guide complet du système de garde d'enfants au Royaume-Uni</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-unlock me-2"></i>Section Gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-school me-2"></i>Types de Garde d'Enfants
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-building me-2" style="color: var(--uk-red);"></i>Nurseries (Crèches)</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Âge :</strong> 6 semaines - 5 ans</li>
+                                    <li><strong>Horaires :</strong> 7h30-18h30 généralement</li>
+                                    <li><strong>Coût :</strong> £50-80/jour à Londres</li>
+                                    <li><strong>Coût :</strong> £35-55/jour en régions</li>
+                                    <li><strong>Avantages :</strong> Structuré, social, EYFS curriculum</li>
+                                </ul>
+                                <div class="price-tag">£900-1,600/mois</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-home me-2" style="color: var(--uk-red);"></i>Childminders</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Âge :</strong> 0-12 ans (parfois +)</li>
+                                    <li><strong>Lieu :</strong> Domicile du childminder</li>
+                                    <li><strong>Coût :</strong> £4-8/heure selon région</li>
+                                    <li><strong>Flexibilité :</strong> Horaires adaptables</li>
+                                    <li><strong>Ratio :</strong> Max 6 enfants dont 3 < 5 ans</li>
+                                </ul>
+                                <div class="price-tag">£600-1,200/mois</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-user me-2" style="color: var(--uk-blue);"></i>Nannies</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Lieu :</strong> Votre domicile</li>
+                                    <li><strong>Type :</strong> Live-in ou live-out</li>
+                                    <li><strong>Salaire :</strong> £12-20/heure (net)</li>
+                                    <li><strong>Charges :</strong> Employeur (NI, pension)</li>
+                                    <li><strong>Flexibilité :</strong> Maximale</li>
+                                </ul>
+                                <div class="price-tag">£1,500-3,200/mois</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-users me-2" style="color: var(--uk-blue);"></i>Au Pairs</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Âge :</strong> 18-30 ans généralement</li>
+                                    <li><strong>Logement :</strong> Chez vous (chambre privée)</li>
+                                    <li><strong>Heures :</strong> 25-30h/semaine max</li>
+                                    <li><strong>Pocket money :</strong> £70-85/semaine</li>
+                                    <li><strong>Échange :</strong> Culturel + apprentissage anglais</li>
+                                </ul>
+                                <div class="price-tag">£280-340/mois</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-graduation-cap me-2" style="color: var(--uk-red);"></i>Pre-schools & Playgroups</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Âge :</strong> 2.5-4 ans</li>
+                                    <li><strong>Durée :</strong> Sessions 2.5-3h</li>
+                                    <li><strong>Focus :</strong> Préparation école</li>
+                                    <li><strong>Coût :</strong> £15-25/session</li>
+                                    <li><strong>Funded places :</strong> 15-30h gratuites dès 3 ans</li>
+                                </ul>
+                                <div class="price-tag">Partiellement gratuit</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-clock me-2" style="color: var(--uk-blue);"></i>After School Clubs</h6>
+                                <ul class="mb-2">
+                                    <li><strong>Âge :</strong> 4-11 ans (school age)</li>
+                                    <li><strong>Lieu :</strong> École ou centres dédiés</li>
+                                    <li><strong>Horaires :</strong> 15h30-18h00</li>
+                                    <li><strong>Vacances :</strong> Holiday clubs disponibles</li>
+                                    <li><strong>Coût :</strong> £10-20/session</li>
+                                </ul>
+                                <div class="price-tag">£200-400/mois</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Moyens par Région</h6>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Région</th>
+                                    <th>Nursery/jour</th>
+                                    <th>Childminder/h</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Londres</strong></td>
+                                    <td>£60-80</td>
+                                    <td>£6-10</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sud-Est</strong></td>
+                                    <td>£50-70</td>
+                                    <td>£5-8</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nord-Ouest</strong></td>
+                                    <td>£35-50</td>
+                                    <td>£4-6</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Écosse</strong></td>
+                                    <td>£35-45</td>
+                                    <td>£4-6</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pays de Galles</strong></td>
+                                    <td>£30-45</td>
+                                    <td>£4-6</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nord-Est</strong></td>
+                                    <td>£30-40</td>
+                                    <td>£4-5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h6><i class="fas fa-info-circle me-2"></i>Points Clés</h6>
+                        <ul class="small mb-3">
+                            <li><strong>Ofsted :</strong> Vérifiez les ratings obligatoirement</li>
+                            <li><strong>Waiting lists :</strong> Inscrivez-vous tôt</li>
+                            <li><strong>Vouchers :</strong> Employeur peut contribuer</li>
+                            <li><strong>Tax-Free Childcare :</strong> 20% de remise gouvernementale</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><strong>Important :</strong> Demand >> Supply dans la plupart des régions. Anticipez !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-red);">
+                <i class="fas fa-pound-sign me-2"></i>Aides Financières et Free Hours
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-gift me-2"></i>Free Early Education</h5>
+                    
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>2 Year Old Funding</h6>
+                        <ul class="mb-2">
+                            <li><strong>Éligibilité :</strong> Revenus < £16,190/an</li>
+                            <li><strong>Heures :</strong> 15h/semaine gratuites</li>
+                            <li><strong>Période :</strong> 38 semaines/an</li>
+                            <li><strong>Valeur :</strong> ~£2,500/an</li>
+                            <li><strong>Conditions :</strong> Benefits ou low income</li>
+                        </ul>
+                        <div class="price-tag">Means-tested</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Universal 3-4 Year Old Funding</h6>
+                        <ul class="mb-2">
+                            <li><strong>Âge :</strong> Dès le trimestre suivant les 3 ans</li>
+                            <li><strong>Heures :</strong> 15h/semaine gratuites</li>
+                            <li><strong>Universel :</strong> Tous les enfants éligibles</li>
+                            <li><strong>Flexible :</strong> Répartition sur 2-5 jours</li>
+                            <li><strong>Valeur :</strong> ~£2,500/an</li>
+                        </ul>
+                        <div class="price-tag">Droit universel</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded">
+                        <h6>Extended 30 Hours (Working Parents)</h6>
+                        <ul class="mb-2">
+                            <li><strong>Éligibilité :</strong> Parents qui travaillent</li>
+                            <li><strong>Heures :</strong> 30h/semaine gratuites total</li>
+                            <li><strong>Revenus :</strong> £100-100k/an par parent</li>
+                            <li><strong>Reconfirmation :</strong> Tous les 3 mois</li>
+                            <li><strong>Valeur :</strong> ~£5,000/an</li>
+                        </ul>
+                        <div class="price-tag">Game changer</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-credit-card me-2"></i>Tax-Free Childcare & Vouchers</h5>
+                    
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Tax-Free Childcare Account</h6>
+                        <ul class="mb-2">
+                            <li><strong>Principe :</strong> Gouvernement ajoute 20%</li>
+                            <li><strong>Limite :</strong> £2,000/an par enfant (£4,000 disabled)</li>
+                            <li><strong>Vous payez :</strong> £8,000 → Recevez £10,000</li>
+                            <li><strong>Âge :</strong> Jusqu'à 11 ans (17 si disabled)</li>
+                            <li><strong>Éligibilité :</strong> Parents qui travaillent</li>
+                        </ul>
+                        <div class="price-tag">20% de remise</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Employer Childcare Vouchers (Legacy)</h6>
+                        <ul class="mb-2">
+                            <li><strong>Statut :</strong> Fermé aux nouveaux (2018)</li>
+                            <li><strong>Existing :</strong> Peuvent continuer</li>
+                            <li><strong>Économie :</strong> £930-1,196/an selon taux tax</li>
+                            <li><strong>Principe :</strong> Salary sacrifice</li>
+                        </ul>
+                        <div class="price-tag">Legacy scheme</div>
+                    </div>
+
+                    <div class="bg-light p-3 rounded">
+                        <h6>Universal Credit Childcare Support</h6>
+                        <ul class="mb-2">
+                            <li><strong>Couverture :</strong> 85% des coûts childcare</li>
+                            <li><strong>Limite :</strong> £646/mois (1 enfant), £1,108 (2+)</li>
+                            <li><strong>Advance :</strong> Paiement avant remboursement</li>
+                            <li><strong>Providers :</strong> Doit être Ofsted registered</li>
+                        </ul>
+                        <div class="price-tag">Pour low income</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <h6><i class="fas fa-lightbulb me-2"></i>Optimisation Stratégique</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li><strong>Combinez</strong> 30 hours + Tax-Free Childcare</li>
+                            <li><strong>Timing :</strong> Commencez dès 3 ans pour maximiser</li>
+                            <li><strong>Flexible :</strong> Utilisez sur 51 semaines/an</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li><strong>Calculez :</strong> Vouchers vs Tax-Free selon situation</li>
+                            <li><strong>School readiness :</strong> Focus sur qualité Ofsted</li>
+                            <li><strong>Backup :</strong> Toujours avoir plan B</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-search me-2"></i>Comment Trouver et Choisir
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-laptop me-2"></i>Plateformes de Recherche</h5>
+                    
+                    <div class="accordion" id="childcareSearch">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#officialSites">
+                                    <i class="fas fa-gov me-2"></i>Sites Officiels
+                                </button>
+                            </h2>
+                            <div id="officialSites" class="accordion-collapse collapse show" data-bs-parent="#childcareSearch">
+                                <div class="accordion-body">
+                                    <ul class="mb-2">
+                                        <li><strong>Gov.uk/find-free-early-education :</strong> Free hours</li>
+                                        <li><strong>Ofsted.gov.uk :</strong> Ratings et rapports</li>
+                                        <li><strong>Familyinformationservice :</strong> Local authority</li>
+                                        <li><strong>Childcare.gov.uk :</strong> Calculateur coûts</li>
+                                    </ul>
+                                    <div class="price-tag">Sources officielles</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privateSites">
+                                    <i class="fas fa-globe me-2"></i>Plateformes Privées
+                                </button>
+                            </h2>
+                            <div id="privateSites" class="accordion-collapse collapse" data-bs-parent="#childcareSearch">
+                                <div class="accordion-body">
+                                    <ul class="mb-2">
+                                        <li><strong>Daycare Trust :</strong> Recherche locale</li>
+                                        <li><strong>Care.com :</strong> Nannies et babysitters</li>
+                                        <li><strong>Childcare.co.uk :</strong> Tous types de garde</li>
+                                        <li><strong>Sittercity.co.uk :</strong> Garde ponctuelle</li>
+                                        <li><strong>GreatAuPair.com :</strong> Au pairs spécialisé</li>
+                                    </ul>
+                                    <div class="price-tag">Recherche élargie</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#localNetworks">
+                                    <i class="fas fa-users me-2"></i>Réseaux Locaux
+                                </button>
+                            </h2>
+                            <div id="localNetworks" class="accordion-collapse collapse" data-bs-parent="#childcareSearch">
+                                <div class="accordion-body">
+                                    <ul class="mb-2">
+                                        <li><strong>NCT groups :</strong> National Childbirth Trust</li>
+                                        <li><strong>Parent Facebook groups :</strong> Recommandations locales</li>
+                                        <li><strong>Mumsnet local :</strong> Forums de parents</li>
+                                        <li><strong>Children centres :</strong> Conseils gratuits</li>
+                                    </ul>
+                                    <div class="price-tag">Bouche-à-oreille</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4"><i class="fas fa-clipboard-check me-2"></i>Critères de Sélection</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <h6>1. Ofsted Rating (Obligatoire)</h6>
+                                <p><strong>Outstanding/Good obligatoire.</strong> Évitez "Requires Improvement" ou "Inadequate". 
+                                   Consultez les rapports détaillés.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>2. Localisation & Praticité</h6>
+                                <p><strong>Proximité domicile/travail.</strong> Transport en commun accessible. 
+                                   Parking disponible si nécessaire.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>3. Philosophie & Approche</h6>
+                                <p><strong>EYFS compliance.</strong> Play-based learning vs académique. 
+                                   Outdoor activities, multilingual welcome.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>4. Aspects Pratiques</h6>
+                                <p><strong>Horaires flexibles.</strong> Meals inclus, nappies fournies, 
+                                   politique maladie, holiday closure dates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-star me-2"></i>Ofsted Ratings</h6>
+                        <div class="mb-3">
+                            <div class="badge bg-success me-2">Outstanding</div>
+                            <div class="badge bg-primary me-2">Good</div>
+                            <div class="badge bg-warning me-2">Requires Improvement</div>
+                            <div class="badge bg-danger">Inadequate</div>
+                        </div>
+
+                        <h6><i class="fas fa-question-circle me-2"></i>Questions Clés</h6>
+                        <ul class="small mb-3">
+                            <li>Ratio staff-to-children respecté ?</li>
+                            <li>Staff qualification levels ?</li>
+                            <li>Turnover rate du personnel ?</li>
+                            <li>Settling-in process ?</li>
+                            <li>Communication parents-staff ?</li>
+                            <li>Emergency procedures ?</li>
+                            <li>Food allergies management ?</li>
+                        </ul>
+
+                        <h6><i class="fas fa-calendar me-2"></i>Planning Timeline</h6>
+                        <ul class="small mb-3">
+                            <li><strong>6-12 mois avant :</strong> Recherche et waiting lists</li>
+                            <li><strong>3-6 mois avant :</strong> Visites et décisions</li>
+                            <li><strong>1-3 mois avant :</strong> Paperwork et préparation</li>
+                            <li><strong>2 semaines avant :</strong> Settling sessions</li>
+                        </ul>
+
+                        <div class="alert alert-info">
+                            <small><strong>Pro Tip :</strong> Visitez toujours en personne et faites confiance à votre instinct !</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Premium -->
+    <section class="section-header" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-crown me-3"></i>6. NHS et Système de Santé
+                    </h2>
+                    <p class="lead">Comprendre le système de santé britannique</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="badge bg-warning fs-6 p-3">
+                        <i class="fas fa-lock me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--uk-blue);">
+                <i class="fas fa-heartbeat me-2"></i>National Health Service (NHS)
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-user-md me-2"></i>Inscription et Fonctionnement</h5>
+                    
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h6>Inscription GP (General Practitioner)</h6>
+                        <ul class="mb-2">
+                            <li><strong>Obligatoire :</strong> S'inscrire chez un GP local</li>
+                            <li><strong>Documents :</strong> Passeport, proof of address, NHS number</li>
+                            <li><strong>Gratuit :</strong> Après paiement IHS (Immigration Health Surcharge)</li>
+                            <li><strong>Services :</strong> Consultations, prescriptions, références spécialistes</li>
+                        </ul>
+                    </div>
+
+                    <h5><i class="fas fa-hospital me-2"></i>Services NHS Couverts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>GP consultations</strong> - Gratuit</li>
+                                <li><strong>A&E (Emergency)</strong> - Gratuit</li>
+                                <li><strong>Hospital treatment</strong> - Gratuit</li>
+                                <li><strong>Maternity care</strong> - Gratuit</li>
+                                <li><strong>Mental health</strong> - Gratuit</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>Dental basic</strong> - Charges apply</li>
+                                <li><strong>Prescriptions</strong> - £9.65/item England</li>
+                                <li><strong>Optical</strong> - Charges apply</li>
+                                <li><strong>Physiotherapy</strong> - Gratuit sur référence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-pound-sign me-2"></i>IHS - Immigration Health Surcharge</h6>
+                        <ul class="mb-3">
+                            <li><strong>Montant :</strong> £624/an</li>
+                            <li><strong>Paiement :</strong> Avec visa application</li>
+                            <li><strong>Durée :</strong> Selon visa (1-5 ans)</li>
+                            <li><strong>Réductions :</strong> Étudiants, healthcare workers</li>
+                        </ul>
+                        
+                        <h6><i class="fas fa-phone me-2"></i>Numéros Utiles</h6>
+                        <ul class="small">
+                            <li><strong>NHS 111 :</strong> Non-emergency</li>
+                            <li><strong>999 :</strong> Urgences</li>
+                            <li><strong>GP surgery :</strong> Rendez-vous</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-access-card p-5 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fas fa-crown fa-3x mb-4" style="color: var(--uk-red);"></i>
+                    <h3 style="color: var(--uk-blue);">Accédez au Guide Premium</h3>
+                    <p class="lead">Débloquez les sections exclusives sur la santé, l'éducation, l'entrepreneuriat et bien plus encore...</p>
+                    <div class="row text-start mb-4">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Guide NHS complet</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Système éducatif britannique</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Créer son entreprise au UK</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Investissement immobilier</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Templates documents</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Calculateurs financiers</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Support communauté</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Mises à jour régulières</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning btn-lg px-5" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                        <i class="fas fa-unlock me-2"></i>Débloquer Maintenant - £29.99
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials-section" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">
+                    <i class="fas fa-quote-left me-3" style="color: var(--uk-red);"></i>
+                    Témoignages d'Expatriés
+                </h2>
+                <p class="lead">Découvrez les expériences de ceux qui ont réussi leur installation au UK</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Marc" class="author-image me-3">
+                            <div>
+                                <h6 class="mb-1">Marc D.</h6>
+                                <small class="text-muted">Développeur • Paris → Londres</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-3">"Ce guide m'a énormément aidé pour naviguer le système post-Brexit. J'ai obtenu mon Skilled Worker visa en 6 semaines grâce aux conseils précis. Londres est incroyable pour la tech !"</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-success">Visa obtenu</span>
+                            <span class="badge bg-info">£65k salary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b524?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Sophie" class="author-image me-3">
+                            <div>
+                                <h6 class="mb-1">Sophie L.</h6>
+                                <small class="text-muted">Médecin • Lyon → Manchester</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-3">"L'information sur le NHS et la reconnaissance des diplômes médicaux était exactement ce dont j'avais besoin. Manchester offre un excellent équilibre vie-travail."</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-success">NHS position</span>
+                            <span class="badge bg-info">Work-life balance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Antoine" class="author-image me-3">
+                            <div>
+                                <h6 class="mb-1">Antoine & Claire</h6>
+                                <small class="text-muted">Famille • Toulouse → Edinburgh</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-3">"La section sur les garderies nous a fait économiser des mois de recherche. Nos enfants sont épanouis dans le système écossais, et les 30h gratuites sont un vrai plus !"</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-success">Famille établie</span>
+                            <span class="badge bg-info">Free childcare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">
+                    <i class="fas fa-chart-bar me-3" style="color: var(--uk-red);"></i>
+                    Le UK en Chiffres
+                </h2>
+                <p class="lead">Données clés pour votre expatriation</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-users stat-icon"></i>
+                        <div class="stat-number">3.5M</div>
+                        <div class="stat-label">Citoyens UE au UK</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-pound-sign stat-icon"></i>
+                        <div class="stat-number">£28k</div>
+                        <div class="stat-label">Salaire médian UK</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-briefcase stat-icon"></i>
+                        <div class="stat-number">3.7%</div>
+                        <div class="stat-label">Taux de chômage</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap stat-icon"></i>
+                        <div class="stat-number">42%</div>
+                        <div class="stat-label">Diplômés supérieur</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">
+                    <i class="fas fa-question-circle me-3" style="color: var(--uk-red);"></i>
+                    Questions Fréquentes
+                </h2>
+                <p class="lead">Réponses aux questions les plus posées sur l'expatriation au UK</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Puis-je encore m'installer au UK après le Brexit ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <strong>Oui, mais avec un visa.</strong> Depuis janvier 2021, les citoyens UE doivent obtenir un visa pour travailler au UK. 
+                                    Le système à points (70 points minimum) remplace la libre circulation. Les principales routes sont le Skilled Worker visa, 
+                                    Global Talent visa, ou Start-up/Innovator visas.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Combien coûte vraiment la vie à Londres ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Pour un jeune professionnel, comptez £2,500-3,500/mois à Londres (logement £1,200-2,000, transport £156, food £300-400). 
+                                    C'est 30-40% plus cher que Paris, mais les salaires sont souvent 20-30% plus élevés. Les zones 3-4 offrent un meilleur rapport qualité-prix.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Le NHS est-il vraiment gratuit ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Le NHS est gratuit après paiement de l'IHS (£624/an) avec votre visa. GP, hôpitaux, urgences sont gratuits. 
+                                    Vous payez les prescriptions (£9.65/item en Angleterre, gratuit en Écosse/Pays de Galles), 
+                                    dentaire et optique selon barème NHS.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Comment trouver un logement rapidement ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Préparez votre dossier à l'avance (references, bank statements, Right to Rent docs). 
+                                    Utilisez Rightmove et Zoopla principalement. Pour Londres, soyez prêt à décider le jour même. 
+                                    SpareRoom est excellent pour house shares, surtout au début.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Quelles sont les meilleures villes hors Londres ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <strong>Manchester</strong> (tech, coût modéré), <strong>Edinburgh</strong> (finance, qualité de vie), 
+                                    <strong>Bristol</strong> (créatif, jeune), <strong>Birmingham</strong> (central, abordable), 
+                                    <strong>Leeds</strong> (business, bon rapport qualité-prix). Chacune a ses spécialités industrielles.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(135deg, var(--uk-blue), var(--uk-navy));">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>
+                        <i class="fas fa-flag me-2" style="color: var(--uk-red);"></i>
+                        Guide Royaume-Uni
+                    </h5>
+                    <p>Votre compagnon de confiance pour une expatriation réussie au Royaume-Uni. 
+                       Informations à jour, conseils pratiques, communauté d'entraide.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link me-3">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6>Navigation</h6>
+                    <ul class="footer-links">
+                        <li><a href="#section1">Visa & Démarches</a></li>
+                        <li><a href="#section2">Emploi</a></li>
+                        <li><a href="#section3">Logement</a></li>
+                        <li><a href="#section4">Budget</a></li>
+                        <li><a href="#section5">Garde d'Enfants</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6>Ressources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Guides Gratuits</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Calculateurs</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Communauté</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6>Légal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Guide Royaume-Uni. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">
+                        <small>Dernière mise à jour : August 2025 | 
+                        <i class="fas fa-shield-alt me-1"></i>Informations vérifiées</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Premium -->
+    <div class="modal fade" id="premiumModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, var(--uk-blue), var(--uk-red)); color: white;">
+                    <h5 class="modal-title">
+                        <i class="fas fa-crown me-2"></i>Accès Premium
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <h4>Débloquez le Guide Complet</h4>
+                        <p class="lead">Accédez à toutes les sections premium et ressources exclusives</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-check text-success me-2"></i>Inclus dans Premium</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i>Guide NHS détaillé</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Système éducatif complet</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Business & Entrepreneuriat</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Investissement immobilier</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Templates documents</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Calculateurs financiers</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-users text-primary me-2"></i>Communauté & Support</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-comments me-2"></i>Forum privé</li>
+                                <li><i class="fas fa-calendar me-2"></i>Webinaires mensuels</li>
+                                <li><i class="fas fa-phone me-2"></i>Support prioritaire</li>
+                                <li><i class="fas fa-sync me-2"></i>Mises à jour automatiques</li>
+                                <li><i class="fas fa-mobile-alt me-2"></i>App mobile</li>
+                                <li><i class="fas fa-download me-2"></i>Guides PDF</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center pricing-section p-4" style="background: #f8f9fa; border-radius: 10px;">
+                        <h5>Prix de Lancement</h5>
+                        <div class="h2 mb-1">
+                            <span class="text-muted text-decoration-line-through">£49.99</span>
+                            <span class="text-success ms-2">£29.99</span>
+                        </div>
+                        <p class="text-muted">Accès à vie • Mises à jour incluses</p>
+                        <button class="btn btn-success btn-lg px-5">
+                            <i class="fas fa-credit-card me-2"></i>Acheter Maintenant
+                        </button>
+                        <div class="mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-lock me-1"></i>Paiement sécurisé •
+                                <i class="fas fa-undo me-1"></i>30 jours satisfait ou remboursé
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Navigation fade effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                navbar.style.background = 'white';
+            }
+        });
+    </script>
+</body>
+</html>

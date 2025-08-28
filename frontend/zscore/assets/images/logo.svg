@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Z Letter -->
+  <path d="M15 10 L45 10 L45 20 L25 40 L45 40 L45 50 L15 50 L15 40 L35 20 L15 20 Z" fill="url(#gradient)"/>
+
+  <!-- Text "ineInsight" -->
+  <text x="55" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="url(#gradient)">ineInsight</text>
+
+  <!-- Subtle tagline -->
+  <text x="15" y="55" font-family="Arial, sans-serif" font-size="8" fill="#888">Votre Future Ville Vous Attend</text>
+</svg>

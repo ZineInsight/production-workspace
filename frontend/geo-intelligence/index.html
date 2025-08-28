@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment ça marche - Algorithmes ZScore | ZineInsight</title>
+    <meta name="description"
+        content="Découvrez les algorithmes d'IA géographique qui alimentent ZScore - 12 pays analysés en temps réel">
+    <link rel="stylesheet" href="/css/revolutionary.css">
+    <style>
+        .tech-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .tech-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .tech-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .tech-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tech-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .algorithms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .algo-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .algo-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .algo-flag {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .algo-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .algo-desc {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .tech-explanation {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 4rem 0;
+            backdrop-filter: blur(5px);
+        }
+
+        .code-preview {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+            border-left: 4px solid #60a5fa;
+        }
+
+        .code-line {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        .keyword {
+            color: #60a5fa;
+        }
+
+        .function {
+            color: #34d399;
+        }
+
+        .comment {
+            color: #9ca3af;
+            font-style: italic;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-test {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: linear-gradient(45deg, #f59e0b, #d97706);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-test:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        .stat-label {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tech-page">
+        <div class="tech-container">
+            <div class="tech-header">
+                <h1>🧠 Comment ça marche</h1>
+                <p class="tech-subtitle">
+                    Découvrez les algorithmes d'intelligence géographique qui alimentent
+                    <strong>ZScore</strong> pour analyser votre potentiel d'expatriation
+                </p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Pays analysés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Critères évalués</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Intelligence artificielle</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-explanation">
+                <h2>🎯 L'Intelligence Géographique ZScore</h2>
+                <p>
+                    Chaque pays dispose d'un <strong>algorithme spécialisé</strong> qui analyse
+                    votre profil selon les spécificités locales : coût de la vie, marché du travail,
+                    immigration, qualité de vie, opportunités business.
+                </p>
+
+                <div class="code-preview">
+                    <div class="code-line"><span class="comment"># Exemple : Algorithme France</span></div>
+                    <div class="code-line"><span class="keyword">def</span> <span
+                            class="function">analyze_france_potential</span>(user_profile):</div>
+                    <div class="code-line"> <span class="comment"># Analyse coût de la vie par région</span></div>
+                    <div class="code-line"> cost_score = <span class="function">calculate_living_costs</span>(profile,
+                        french_regions)</div>
+                    <div class="code-line"> <span class="comment"># Évaluation opportunités professionnelles</span>
+                    </div>
+                    <div class="code-line"> career_score = <span
+                            class="function">assess_job_market</span>(profile.skills, france_market)</div>
+                    <div class="code-line"> <span class="comment"># Score composite final</span></div>
+                    <div class="code-line"> <span class="keyword">return</span> <span
+                            class="function">compute_zscore</span>(cost_score, career_score, visa_ease)</div>
+                </div>
+            </div>
+
+            <div class="algorithms-grid">
+                <div class="algo-card">
+                    <div class="algo-flag">🇫🇷</div>
+                    <div class="algo-title">France</div>
+                    <div class="algo-desc">Analyse des régions françaises, marché tech, coût Paris vs province</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇺🇸</div>
+                    <div class="algo-title">États-Unis</div>
+                    <div class="algo-desc">Visa H1B, Silicon Valley, coûts par état, opportunités startup</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇨🇦</div>
+                    <div class="algo-title">Canada</div>
+                    <div class="algo-desc">Système de points, provinces, marché tech Toronto/Vancouver</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇬🇧</div>
+                    <div class="algo-title">Royaume-Uni</div>
+                    <div class="algo-desc">Post-Brexit, visa travail, opportunités Londres vs régions</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇩🇪</div>
+                    <div class="algo-title">Allemagne</div>
+                    <div class="algo-desc">Marché tech Berlin, visa EU, coûts Munich vs autres villes</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇯🇵</div>
+                    <div class="algo-title">Japon</div>
+                    <div class="algo-desc">Visa travail, culture d'entreprise, coût Tokyo, opportunités tech</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇦🇺</div>
+                    <div class="algo-title">Australie</div>
+                    <div class="algo-desc">Système de points, villes principales, marché tech Sydney/Melbourne</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇹🇭</div>
+                    <div class="algo-title">Thaïlande</div>
+                    <div class="algo-desc">Coût de vie, visa numérique, Bangkok vs Chiang Mai</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇪🇸</div>
+                    <div class="algo-title">Espagne</div>
+                    <div class="algo-desc">Visa nomade, coûts Madrid/Barcelona, marché freelance</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇲🇽</div>
+                    <div class="algo-title">Mexique</div>
+                    <div class="algo-desc">Visa temporaire, coûts CDMX/Playa del Carmen, opportunités</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇧🇷</div>
+                    <div class="algo-title">Brésil</div>
+                    <div class="algo-desc">Marché São Paulo, coûts régionaux, visa investisseur</div>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-flag">🇲🇦</div>
+                    <div class="algo-title">Maroc</div>
+                    <div class="algo-desc">Casablanca Finance City, coûts Rabat/Casa, opportunités tech</div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>🚀 Prêt à découvrir votre potentiel ?</h2>
+                <p>
+                    Les algorithmes sont en action dans <strong>ZScore</strong>.
+                    Testez votre profil et découvrez quel pays vous correspond le mieux !
+                </p>
+                <a href="/zscore/" class="btn-test">
+                    🎯 Tester ZScore maintenant
+                </a>
+                <a href="/" class="btn-back">
+                    ← Retour au Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

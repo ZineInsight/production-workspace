@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Maroc - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet de 32 pages pour réussir votre installation au Maroc : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Maroc, expatriation, installation, guide, logement, emploi, visa, Casablanca, Rabat">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer au Maroc">
+    <meta property="og:description" content="32 pages d'expertise pour réussir votre expatriation au Maroc">
+    <meta property="og:image"
+        content="https://images.shutterstock.com/image-photo/casablanca-morocco-panoramic-view-600w-1234567890.jpg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --morocco-red: #c1272d;
+            --morocco-green: #006233;
+            --morocco-gold: #ffd700;
+            --warm-sand: #f4f1e8;
+            --deep-blue: #1a365d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-sand) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(193, 39, 45, 0.8), rgba(0, 98, 51, 0.8)),
+                url('https://images.shutterstock.com/image-photo/hassan-ii-mosque-casablanca-morocco-600w-1234567891.jpg') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--morocco-red), var(--morocco-green));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--morocco-gold);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--morocco-gold), #ffed4a);
+            color: var(--deep-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff7e6, #ffe0b3);
+            border-left: 5px solid var(--morocco-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .price-tag {
+            background: var(--morocco-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .unlock-button {
+            background: linear-gradient(135deg, var(--morocco-red), var(--morocco-green));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(193, 39, 45, 0.3);
+        }
+
+        .unlock-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(193, 39, 45, 0.4);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" style="color: var(--morocco-red);">
+                <i class="fas fa-compass me-2"></i>ZineInsight
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#economie">Économie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logement">Logement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cout-vie">Coût de la vie</a></li>
+                    <li class="nav-item">
+                        <button class="btn unlock-button btn-sm ms-2" onclick="showPricingModal()">
+                            <i class="fas fa-unlock me-1"></i>Version Complète
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <i class="fas fa-map-marked-alt me-3"></i>
+                        Guide Complet : S'installer au Maroc
+                    </h1>
+                    <p class="lead mb-4" style="font-size: 1.3rem;">
+                        32 pages d'expertise pour réussir votre expatriation au Maroc
+                    </p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>
+                        Guide Premium • Mise à jour 2025 • Conseils d'experts
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <button class="btn btn-light btn-lg" onclick="scrollToSection('introduction')">
+                            <i class="fas fa-play me-2"></i>Découvrir
+                        </button>
+                        <button class="btn unlock-button btn-lg" onclick="showPricingModal()">
+                            <i class="fas fa-download me-2"></i>Accès Complet - 19.99€
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table des matières -->
+    <section class="container my-5">
+        <div class="content-card p-4">
+            <h2 class="text-center mb-4" style="color: var(--morocco-red);">
+                <i class="fas fa-list-ul me-2"></i>Table des Matières
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>1. Présentation du Maroc
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>2. Économie & Emploi</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>3. Logement & Immobilier
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>4. Coût de la vie</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>5. Visa & Immigration</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>6. Culture & Intégration</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>7. Santé & Assurances</li>
+                        <li class="mb-2"><i class="fas fa-lock text-warning me-2"></i>8. Éducation & Écoles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Aperçu gratuit :</strong> Les 4 premières sections sont disponibles.
+                    <a href="#" onclick="showPricingModal()" class="alert-link">Débloquez le guide complet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Présentation du Maroc -->
+    <section id="introduction" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-flag me-3"></i>1. Présentation du Maroc
+            </h2>
+            <p class="lead text-center">Découvrez le Royaume chérifien dans toute sa diversité</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <img src="https://images.shutterstock.com/image-photo/marrakech-morocco-jamaa-el-fna-600w-1234567892.jpg"
+                        class="img-fluid h-100 object-fit-cover" alt="Marrakech Place Jemaa el-Fna">
+                </div>
+                <div class="col-lg-6 p-4">
+                    <h3 style="color: var(--morocco-red);">
+                        <i class="fas fa-info-circle me-2"></i>Informations Générales
+                    </h3>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <strong>Population :</strong><br>
+                            <span class="text-muted">37,8 millions</span>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Capitale :</strong><br>
+                            <span class="text-muted">Rabat</span>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Monnaie :</strong><br>
+                            <span class="text-muted">Dirham (MAD)</span>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <strong>Langues :</strong><br>
+                            <span class="text-muted">Arabe, Berbère, Français</span>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-lightbulb me-2" style="color: var(--morocco-gold);"></i>
+                        <strong>Le saviez-vous ?</strong> Le Maroc est le seul pays africain à avoir des côtes sur
+                        l'Atlantique et la Méditerranée.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Villes principales -->
+        <div class="content-card p-4">
+            <h3 class="mb-4" style="color: var(--morocco-green);">
+                <i class="fas fa-city me-2"></i>Principales Villes d'Expatriation
+            </h3>
+
+            <div class="city-grid">
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/casablanca-hassan-ii-mosque-morocco-600w-1234567893.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Casablanca">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Casablanca
+                            <span class="price-tag">★★★★★</span>
+                        </h5>
+                        <p class="card-text">Centre économique du pays, hub international, nombreuses opportunités
+                            d'emploi.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-2 text-success"></i>Population : 3,7M</li>
+                            <li><i class="fas fa-briefcase me-2 text-primary"></i>Secteurs : Finance, industrie</li>
+                            <li><i class="fas fa-home me-2 text-warning"></i>Loyer moyen : 4000-8000 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/rabat-morocco-kasbah-oudayas-600w-1234567894.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Rabat">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Rabat
+                            <span class="price-tag">★★★★☆</span>
+                        </h5>
+                        <p class="card-text">Capitale politique, ville calme, idéale pour les familles et les
+                            fonctionnaires.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-2 text-success"></i>Population : 1,9M</li>
+                            <li><i class="fas fa-briefcase me-2 text-primary"></i>Secteurs : Administration, éducation
+                            </li>
+                            <li><i class="fas fa-home me-2 text-warning"></i>Loyer moyen : 3500-7000 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.shutterstock.com/image-photo/marrakech-koutoubia-mosque-morocco-600w-1234567895.jpg"
+                        class="card-img-top" style="height: 200px; object-fit: cover;" alt="Marrakech">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between">
+                            Marrakech
+                            <span class="price-tag">★★★☆☆</span>
+                        </h5>
+                        <p class="card-text">Ville touristique, riche culturellement, coût de la vie abordable.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-users me-2 text-success"></i>Population : 1,3M</li>
+                            <li><i class="fas fa-briefcase me-2 text-primary"></i>Secteurs : Tourisme, artisanat</li>
+                            <li><i class="fas fa-home me-2 text-warning"></i>Loyer moyen : 2500-5000 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box mt-4">
+                <h5><i class="fas fa-star me-2" style="color: var(--morocco-gold);"></i>Conseil d'Expert</h5>
+                <p class="mb-0">Pour une première expatriation, Casablanca offre le plus d'opportunités
+                    professionnelles, tandis que Rabat convient mieux aux familles recherchant la tranquillité.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Économie & Emploi -->
+    <section id="economie" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-chart-line me-3"></i>2. Économie & Emploi
+            </h2>
+            <p class="lead text-center">Comprendre le marché du travail marocain</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-globe-americas me-2"></i>Panorama Économique
+            </h3>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead">Le Maroc connaît une croissance économique stable avec un PIB en progression
+                        constante depuis 2020.</p>
+
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--morocco-green);">+3.2%</h4>
+                                <small>Croissance PIB 2024</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--morocco-red);">8.7%</h4>
+                                <small>Taux de chômage</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--morocco-gold);">11,500 MAD</h4>
+                                <small>Salaire moyen</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h4 style="color: var(--deep-blue);">2,970 MAD</h4>
+                                <small>SMIG mensuel</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://images.shutterstock.com/image-photo/morocco-business-district-modern-buildings-600w-1234567896.jpg"
+                        class="img-fluid rounded" alt="Centre d'affaires Maroc">
+                </div>
+            </div>
+        </div>
+
+        <!-- Secteurs porteurs -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-rocket me-2"></i>Secteurs d'Avenir pour les Expatriés
+            </h3>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--morocco-red) !important;">
+                        <h5><i class="fas fa-laptop-code me-2"></i>Technologies & Digital</h5>
+                        <p>Le secteur IT connaît une croissance de 15% par an. Forte demande pour :</p>
+                        <ul>
+                            <li>Développeurs web/mobile</li>
+                            <li>Data scientists</li>
+                            <li>Consultants en transformation digitale</li>
+                            <li>Experts en cybersécurité</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small><i class="fas fa-money-bill-wave me-1"></i>Salaires : 15,000 - 35,000
+                                MAD/mois</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--morocco-green) !important;">
+                        <h5><i class="fas fa-car me-2"></i>Automobile & Aéronautique</h5>
+                        <p>Le Maroc, hub industriel africain avec des usines Renault, PSA, Boeing :</p>
+                        <ul>
+                            <li>Ingénieurs production</li>
+                            <li>Techniciens qualifiés</li>
+                            <li>Managers qualité</li>
+                            <li>Logisticiens</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small><i class="fas fa-money-bill-wave me-1"></i>Salaires : 12,000 - 28,000
+                                MAD/mois</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--morocco-gold) !important;">
+                        <h5><i class="fas fa-leaf me-2"></i>Énergies Renouvelables</h5>
+                        <p>Avec Noor Ouarzazate, le Maroc attire les talents en :</p>
+                        <ul>
+                            <li>Ingénierie solaire/éolien</li>
+                            <li>Gestion de projets verts</li>
+                            <li>Maintenance installations</li>
+                            <li>R&D environnementale</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small><i class="fas fa-money-bill-wave me-1"></i>Salaires : 14,000 - 32,000
+                                MAD/mois</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="border-start border-5 ps-3" style="border-color: var(--deep-blue) !important;">
+                        <h5><i class="fas fa-plane me-2"></i>Tourisme & Hôtellerie</h5>
+                        <p>Secteur stratégique en forte reprise post-Covid :</p>
+                        <ul>
+                            <li>Management hôtelier</li>
+                            <li>Guides spécialisés</li>
+                            <li>Event management</li>
+                            <li>Marketing touristique</li>
+                        </ul>
+                        <div class="text-muted">
+                            <small><i class="fas fa-money-bill-wave me-1"></i>Salaires : 8,000 - 22,000 MAD/mois</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h5><i class="fas fa-lightbulb me-2" style="color: var(--morocco-gold);"></i>Opportunité Unique</h5>
+                <p class="mb-0">Le Plan d'Accélération Industrielle 2025 offre de nombreuses opportunités pour les
+                    profils techniques et managériaux européens.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Logement -->
+    <section id="logement" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-home me-3"></i>3. Logement & Immobilier
+            </h2>
+            <p class="lead text-center">Trouver le logement idéal selon votre budget</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-search-location me-2"></i>Types de Logements Disponibles
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-building fa-3x mb-3" style="color: var(--morocco-red);"></i>
+                        <h5>Appartements Modernes</h5>
+                        <p>Dans les quartiers résidentiels, sécurisés avec gardiennage.</p>
+                        <div class="price-tag mb-2">3,000 - 12,000 MAD/mois</div>
+                        <small class="text-muted">Selon ville et standing</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--morocco-green);"></i>
+                        <h5>Villas avec Jardins</h5>
+                        <p>Parfaites pour les familles, souvent avec piscine privée.</p>
+                        <div class="price-tag mb-2">8,000 - 25,000 MAD/mois</div>
+                        <small class="text-muted">Banlieues et quartiers huppés</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-city fa-3x mb-3" style="color: var(--morocco-gold);"></i>
+                        <h5>Riads Traditionnels</h5>
+                        <p>Charme authentique en médina, rénovés pour le confort moderne.</p>
+                        <div class="price-tag mb-2">4,000 - 15,000 MAD/mois</div>
+                        <small class="text-muted">Médinas de Marrakech, Fès</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quartiers recommandés par ville -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-map-marker-alt me-2"></i>Quartiers Recommandés par Ville
+            </h3>
+
+            <div class="accordion" id="neighborhoodAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#casablanca">
+                            <i class="fas fa-building me-2"></i>Casablanca - Quartiers d'Expatriés
+                        </button>
+                    </h2>
+                    <div id="casablanca" class="accordion-collapse collapse show"
+                        data-bs-parent="#neighborhoodAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--morocco-red);">Ain Diab - Haut Standing</h6>
+                                    <ul>
+                                        <li>Front de mer, résidences de luxe</li>
+                                        <li>Restaurants et clubs privés</li>
+                                        <li>Prix : 8,000-15,000 MAD/mois</li>
+                                    </ul>
+
+                                    <h6 style="color: var(--morocco-red);">Maarif - Centre Moderne</h6>
+                                    <ul>
+                                        <li>Proche du centre d'affaires</li>
+                                        <li>Commerces et transports</li>
+                                        <li>Prix : 5,000-10,000 MAD/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://images.shutterstock.com/image-photo/casablanca-modern-residential-buildings-600w-1234567897.jpg"
+                                        class="img-fluid rounded" alt="Quartier résidentiel Casablanca">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#rabat">
+                            <i class="fas fa-landmark me-2"></i>Rabat - Quartiers Familiaux
+                        </button>
+                    </h2>
+                    <div id="rabat" class="accordion-collapse collapse" data-bs-parent="#neighborhoodAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: var(--morocco-green);">Agdal - Résidentiel</h6>
+                                    <ul>
+                                        <li>Quartier calme et sécurisé</li>
+                                        <li>Proche des écoles internationales</li>
+                                        <li>Prix : 4,000-8,000 MAD/mois</li>
+                                    </ul>
+
+                                    <h6 style="color: var(--morocco-green);">Hay Riad - Moderne</h6>
+                                    <ul>
+                                        <li>Infrastructure récente</li>
+                                        <li>Centre commercial et services</li>
+                                        <li>Prix : 6,000-12,000 MAD/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://images.shutterstock.com/image-photo/rabat-residential-neighborhood-morocco-600w-1234567898.jpg"
+                                        class="img-fluid rounded" alt="Quartier résidentiel Rabat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conseils pratiques logement -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-lightbulb me-2"></i>Conseils Pratiques de Recherche
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-check-circle me-2 text-success"></i>À Faire</h5>
+                    <ul>
+                        <li>Visiter plusieurs quartiers avant de choisir</li>
+                        <li>Négocier le loyer, c'est souvent possible</li>
+                        <li>Vérifier l'état électrique et plomberie</li>
+                        <li>Demander des références du propriétaire</li>
+                        <li>Prévoir 2-3 mois de caution</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>Sites recommandés :</strong><br>
+                        • Avito.ma (équivalent du Bon Coin)<br>
+                        • Sarouty.ma<br>
+                        • Marocannonces.com
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-times-circle me-2 text-danger"></i>À Éviter</h5>
+                    <ul>
+                        <li>Signer sans visiter le logement</li>
+                        <li>Payer l'intégralité avant l'état des lieux</li>
+                        <li>Ignorer les frais d'agence (2-3%)</li>
+                        <li>Sous-estimer les charges (eau, électricité)</li>
+                        <li>Négliger la vérification des voisins</li>
+                    </ul>
+
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Attention :</strong> Les contrats de bail doivent être enregistrés auprès des autorités
+                        fiscales.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Coût de la vie -->
+    <section id="cout-vie" class="section-header">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                <i class="fas fa-calculator me-3"></i>4. Coût de la vie
+            </h2>
+            <p class="lead text-center">Budgétiser votre nouvelle vie au Maroc</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <!-- Budget mensuel type -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-piggy-bank me-2"></i>Budget Mensuel par Profil
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f5e8, #f0fff0);">
+                        <i class="fas fa-user fa-3x mb-3" style="color: var(--morocco-green);"></i>
+                        <h5>Célibataire</h5>
+                        <div class="h3 mb-3" style="color: var(--morocco-green);">8,000 - 12,000 MAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li><i class="fas fa-home me-2"></i>Logement : 3,000-5,000 MAD</li>
+                            <li><i class="fas fa-utensils me-2"></i>Alimentation : 1,500-2,500 MAD</li>
+                            <li><i class="fas fa-car me-2"></i>Transport : 800-1,200 MAD</li>
+                            <li><i class="fas fa-wifi me-2"></i>Internet/Tel : 400-600 MAD</li>
+                            <li><i class="fas fa-gamepad me-2"></i>Loisirs : 1,000-1,500 MAD</li>
+                            <li><i class="fas fa-plus me-2"></i>Divers : 800-1,200 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fff3e0, #ffeaa7);">
+                        <i class="fas fa-users fa-3x mb-3" style="color: var(--morocco-gold);"></i>
+                        <h5>Couple sans Enfants</h5>
+                        <div class="h3 mb-3" style="color: #d68910;">15,000 - 22,000 MAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li><i class="fas fa-home me-2"></i>Logement : 5,000-8,000 MAD</li>
+                            <li><i class="fas fa-utensils me-2"></i>Alimentation : 2,500-4,000 MAD</li>
+                            <li><i class="fas fa-car me-2"></i>Transport : 1,500-2,000 MAD</li>
+                            <li><i class="fas fa-wifi me-2"></i>Internet/Tel : 600-800 MAD</li>
+                            <li><i class="fas fa-gamepad me-2"></i>Loisirs : 2,000-3,000 MAD</li>
+                            <li><i class="fas fa-plus me-2"></i>Divers : 1,500-2,200 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #ffeaea, #ffcccb);">
+                        <i class="fas fa-baby fa-3x mb-3" style="color: var(--morocco-red);"></i>
+                        <h5>Famille avec Enfants</h5>
+                        <div class="h3 mb-3" style="color: var(--morocco-red);">25,000 - 40,000 MAD</div>
+                        <ul class="text-start list-unstyled">
+                            <li><i class="fas fa-home me-2"></i>Logement : 8,000-15,000 MAD</li>
+                            <li><i class="fas fa-utensils me-2"></i>Alimentation : 4,000-6,000 MAD</li>
+                            <li><i class="fas fa-graduation-cap me-2"></i>École : 3,000-8,000 MAD</li>
+                            <li><i class="fas fa-car me-2"></i>Transport : 2,000-3,000 MAD</li>
+                            <li><i class="fas fa-heart me-2"></i>Santé : 1,500-2,500 MAD</li>
+                            <li><i class="fas fa-plus me-2"></i>Divers : 2,500-4,500 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message de transition vers contenu premium -->
+    <div class="container mb-5">
+        <div class="content-card p-5 text-center"
+            style="background: linear-gradient(135deg, var(--warm-sand), #f8f9fa);">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fas fa-lock fa-4x mb-4" style="color: var(--morocco-gold);"></i>
+                    <h3 style="color: var(--deep-blue);">Contenu Premium Disponible</h3>
+                    <p class="lead mb-4">
+                        Vous avez découvert les bases essentielles. Débloquez maintenant les 4 sections avancées
+                        pour maîtriser tous les aspects de votre expatriation au Maroc.
+                    </p>
+
+                    <div class="row text-center mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--morocco-red);">
+                                    <i class="fas fa-passport me-2"></i>Visa & Immigration
+                                </h5>
+                                <p class="mb-0 text-muted">Démarches complètes, documents, délais</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--morocco-green);">
+                                    <i class="fas fa-heart me-2"></i>Culture & Intégration
+                                </h5>
+                                <p class="mb-0 text-muted">Codes sociaux, networking, communautés</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--morocco-gold);">
+                                    <i class="fas fa-heartbeat me-2"></i>Santé & Assurances
+                                </h5>
+                                <p class="mb-0 text-muted">Système de santé, assurances, urgences</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <h5 style="color: var(--deep-blue);">
+                                    <i class="fas fa-graduation-cap me-2"></i>Éducation & Écoles
+                                </h5>
+                                <p class="mb-0 text-muted">Écoles internationales, universités, coûts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>
+                        Accès immédiat • Garantie satisfait ou remboursé 30 jours
+                    </div>
+
+                    <button class="btn unlock-button btn-lg me-3" onclick="showPricingModal()">
+                        <i class="fas fa-unlock me-2"></i>Débloquer le Guide Complet - 19.99€
+                    </button>
+
+                    <div class="mt-3">
+                        <small class="text-muted">
+                            <i class="fas fa-shield-alt me-1"></i>Paiement sécurisé •
+                            <i class="fas fa-download me-1"></i>Téléchargement immédiat •
+                            <i class="fas fa-sync me-1"></i>Mises à jour gratuites
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Visa & Immigration (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(193, 39, 45, 0.9), rgba(0, 98, 51, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-passport me-3"></i>5. Visa & Immigration
+                    </h2>
+                    <p class="lead">Toutes les démarches pour légaliser votre séjour</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-id-card me-2"></i>Types de Visas Disponibles
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--morocco-green) !important;">
+                        <h5><i class="fas fa-plane me-2"></i>Visa Touristique</h5>
+                        <p><strong>Durée :</strong> 90 jours renouvelables</p>
+                        <p><strong>Prix :</strong> Gratuit pour les Français</p>
+                        <p><strong>Documents :</strong></p>
+                        <ul>
+                            <li>Passeport valide 6 mois</li>
+                            <li>Billet retour</li>
+                            <li>Justificatif d'hébergement</li>
+                        </ul>
+                        <div class="alert alert-info">
+                            <i class="fas fa-clock me-2"></i><strong>Délai :</strong> Immédiat à l'arrivée
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--morocco-red) !important;">
+                        <h5><i class="fas fa-briefcase me-2"></i>Visa de Travail</h5>
+                        <p><strong>Durée :</strong> 1 an renouvelable</p>
+                        <p><strong>Prix :</strong> 1,200 MAD</p>
+                        <p><strong>Documents :</strong></p>
+                        <ul>
+                            <li>Contrat de travail visé</li>
+                            <li>Autorisation de l'ANAPEC</li>
+                            <li>Certificat médical</li>
+                            <li>Casier judiciaire</li>
+                        </ul>
+                        <div class="alert alert-warning">
+                            <i class="fas fa-hourglass-half me-2"></i><strong>Délai :</strong> 2-3 mois
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--morocco-gold) !important;">
+                        <h5><i class="fas fa-graduation-cap me-2"></i>Visa Étudiant</h5>
+                        <p><strong>Durée :</strong> Durée des études</p>
+                        <p><strong>Prix :</strong> 800 MAD</p>
+                        <p><strong>Documents :</strong></p>
+                        <ul>
+                            <li>Inscription université/école</li>
+                            <li>Relevés de notes traduits</li>
+                            <li>Justificatifs financiers</li>
+                            <li>Certificat médical</li>
+                        </ul>
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i><strong>Avantage :</strong> Possibilité job étudiant
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="border-start border-5 ps-4" style="border-color: var(--deep-blue) !important;">
+                        <h5><i class="fas fa-home me-2"></i>Carte de Résident</h5>
+                        <p><strong>Durée :</strong> 10 ans renouvelable</p>
+                        <p><strong>Conditions :</strong> 4 ans de résidence</p>
+                        <p><strong>Documents :</strong></p>
+                        <ul>
+                            <li>Justificatifs de résidence</li>
+                            <li>Intégration prouvée</li>
+                            <li>Ressources stables</li>
+                            <li>Casier judiciaire vierge</li>
+                        </ul>
+                        <div class="alert alert-primary">
+                            <i class="fas fa-star me-2"></i><strong>Avantage :</strong> Quasi-nationalité
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Processus détaillé -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-list-ol me-2"></i>Processus Détaillé : Visa de Travail
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 1 : Obtenir un Emploi (2-6 semaines)</h6>
+                                <p>L'employeur marocain doit déposer votre demande d'autorisation de travail à l'ANAPEC.
+                                </p>
+                                <small class="text-muted">Documents : CV, diplômes, lettre de motivation</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 2 : Autorisation ANAPEC (3-4 semaines)</h6>
+                                <p>L'ANAPEC vérifie que le poste ne peut être pourvu par un Marocain.</p>
+                                <small class="text-muted">Coût : 500 MAD</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 3 : Dossier Consulat (2-3 semaines)</h6>
+                                <p>Dépôt du dossier complet au consulat du Maroc en France.</p>
+                                <small class="text-muted">Coût : 1,200 MAD + frais consulaires</small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-danger"></div>
+                            <div class="timeline-content">
+                                <h6>Étape 4 : Carte de Séjour (1-2 semaines)</h6>
+                                <p>Demande de carte de séjour dans les 15 jours après votre arrivée.</p>
+                                <small class="text-muted">Lieu : Préfecture de votre ville</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-calculator me-2"></i>Coûts Total</h6>
+                        <ul class="list-unstyled">
+                            <li>Autorisation ANAPEC : <strong>500 MAD</strong></li>
+                            <li>Visa consulat : <strong>1,200 MAD</strong></li>
+                            <li>Carte de séjour : <strong>300 MAD</strong></li>
+                            <li>Frais divers : <strong>500 MAD</strong></li>
+                        </ul>
+                        <hr>
+                        <div class="h5 text-center" style="color: var(--morocco-red);">
+                            Total : 2,500 MAD
+                        </div>
+                    </div>
+
+                    <div class="highlight-box mt-3">
+                        <strong><i class="fas fa-lightbulb me-2"></i>Conseil Pro :</strong><br>
+                        Commencez les démarches 3 mois avant votre départ prévu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6: Culture & Intégration (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(0, 98, 51, 0.9), rgba(193, 39, 45, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heart me-3"></i>6. Culture & Intégration
+                    </h2>
+                    <p class="lead">Comprendre et s'intégrer dans la société marocaine</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-handshake me-2"></i>Codes Sociaux & Savoir-Vivre
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h5 style="color: var(--morocco-green);">
+                        <i class="fas fa-check-circle me-2"></i>À Adopter
+                    </h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i
+                                class="fas fa-hand-peace me-2 text-success"></i><strong>Salutations :</strong> Serrer la
+                            main, demander des nouvelles de la famille</li>
+                        <li class="list-group-item"><i class="fas fa-clock me-2 text-success"></i><strong>Ponctualité
+                                :</strong> Prévoir 15-30min de retard "culturel"</li>
+                        <li class="list-group-item"><i class="fas fa-coffee me-2 text-success"></i><strong>Hospitalité
+                                :</strong> Toujours accepter le thé à la menthe</li>
+                        <li class="list-group-item"><i class="fas fa-pray me-2 text-success"></i><strong>Religion
+                                :</strong> Respecter les horaires de prière</li>
+                        <li class="list-group-item"><i class="fas fa-moon me-2 text-success"></i><strong>Ramadan
+                                :</strong> Discrétion pendant le jeûne</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <h5 style="color: var(--morocco-red);">
+                        <i class="fas fa-times-circle me-2"></i>À Éviter
+                    </h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-hand-paper me-2 text-danger"></i><strong>Main
+                                gauche :</strong> Ne pas manger ou saluer avec</li>
+                        <li class="list-group-item"><i
+                                class="fas fa-shoe-prints me-2 text-danger"></i><strong>Chaussures :</strong> Les
+                            retirer avant d'entrer chez quelqu'un</li>
+                        <li class="list-group-item"><i class="fas fa-wine-bottle me-2 text-danger"></i><strong>Alcool
+                                :</strong> Discrétion, pas en public</li>
+                        <li class="list-group-item"><i class="fas fa-camera me-2 text-danger"></i><strong>Photos
+                                :</strong> Demander l'autorisation aux personnes</li>
+                        <li class="list-group-item"><i class="fas fa-crown me-2 text-danger"></i><strong>Roi :</strong>
+                            Ne jamais critiquer la famille royale</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h5><i class="fas fa-lightbulb me-2" style="color: var(--morocco-gold);"></i>Astuce d'Intégration</h5>
+                <p class="mb-0">Apprenez quelques mots d'arabe de base : "Shukran" (merci), "Marhaban" (bienvenue),
+                    "Inchallah" (si Dieu veut). Les Marocains apprécient énormément cet effort.</p>
+            </div>
+        </div>
+
+        <!-- Communautés d'expatriés -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-users me-2"></i>Communautés & Networking
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fab fa-facebook me-2" style="color: #1877f2;"></i>Groupes Facebook</h6>
+                                <ul class="mb-0">
+                                    <li>Français au Maroc</li>
+                                    <li>Expats Casablanca</li>
+                                    <li>Entrepreneurs Maroc</li>
+                                    <li>Femmes Expat Maroc</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-calendar me-2" style="color: var(--morocco-red);"></i>Événements
+                                    Réguliers</h6>
+                                <ul class="mb-0">
+                                    <li>Afterwork Business Club</li>
+                                    <li>Soirées networking</li>
+                                    <li>Sorties culturelles</li>
+                                    <li>Activités sportives</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-building me-2"
+                                        style="color: var(--morocco-green);"></i>Associations</h6>
+                                <ul class="mb-0">
+                                    <li>Union des Français</li>
+                                    <li>Chambre de Commerce</li>
+                                    <li>Alliance Française</li>
+                                    <li>Rotary/Lions Club</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h6><i class="fas fa-dumbbell me-2" style="color: var(--morocco-gold);"></i>Clubs &
+                                    Loisirs</h6>
+                                <ul class="mb-0">
+                                    <li>Royal Golf Dar Es Salam</li>
+                                    <li>Cercle de l'Union</li>
+                                    <li>Tennis Club</li>
+                                    <li>Yacht Club</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://images.shutterstock.com/image-photo/international-business-networking-morocco-600w-1234567802.jpg"
+                        class="img-fluid rounded" alt="Networking au Maroc">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7: Santé & Assurances (Premium) -->
+    <section class="section-header"
+        style="background: linear-gradient(rgba(255, 215, 0, 0.9), rgba(193, 39, 45, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-heartbeat me-3"></i>7. Santé & Assurances
+                    </h2>
+                    <p class="lead">Système de santé et couverture médicale</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-hospital me-2"></i>Système de Santé Marocain
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h5 style="color: var(--morocco-green);">
+                        <i class="fas fa-user-md me-2"></i>Secteur Public
+                    </h5>
+                    <div class="bg-light p-3 rounded">
+                        <p><strong>Avantages :</strong></p>
+                        <ul>
+                            <li>Coûts très bas</li>
+                            <li>Couverture nationale</li>
+                            <li>Urgences 24h/24</li>
+                        </ul>
+                        <p><strong>Inconvénients :</strong></p>
+                        <ul>
+                            <li>Attente parfois longue</li>
+                            <li>Qualité variable</li>
+                            <li>Peu de français parlé</li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-info mt-3">
+                        <i class="fas fa-money-bill-wave me-2"></i>
+                        <strong>Coût consultation :</strong> 20-50 MAD
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <h5 style="color: var(--morocco-red);">
+                        <i class="fas fa-star me-2"></i>Secteur Privé
+                    </h5>
+                    <div class="bg-light p-3 rounded">
+                        <p><strong>Avantages :</strong></p>
+                        <ul>
+                            <li>Qualité européenne</li>
+                            <li>Personnel francophone</li>
+                            <li>Rapidité des soins</li>
+                            <li>Technologies modernes</li>
+                        </ul>
+                        <p><strong>Inconvénients :</strong></p>
+                        <ul>
+                            <li>Coûts élevés</li>
+                            <li>Principalement en ville</li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-warning mt-3">
+                        <i class="fas fa-money-bill-wave me-2"></i>
+                        <strong>Coût consultation :</strong> 300-800 MAD
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meilleures cliniques -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-hospital-alt me-2"></i>Meilleures Cliniques par Ville
+            </h3>
+
+            <div class="city-grid">
+                <div class="city-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: var(--morocco-red);">
+                            <i class="fas fa-building me-2"></i>Casablanca
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Clinique Internationale</strong><br>
+                                <small class="text-muted">Spécialités : Cardiologie, Chirurgie</small>
+                            </li>
+                            <li><strong>Polyclinique du Littoral</strong><br>
+                                <small class="text-muted">Spécialités : Maternité, Pédiatrie</small>
+                            </li>
+                            <li><strong>Centre Hospitalier Privé</strong><br>
+                                <small class="text-muted">Spécialités : Urgences 24h</small>
+                            </li>
+                        </ul>
+                        <div class="price-tag">300-1000 MAD/consultation</div>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: var(--morocco-green);">
+                            <i class="fas fa-landmark me-2"></i>Rabat
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Clinique Avicenne</strong><br>
+                                <small class="text-muted">Spécialités : Neurologie, ORL</small>
+                            </li>
+                            <li><strong>Polyclinique Agdal</strong><br>
+                                <small class="text-muted">Spécialités : Dentaire, Esthétique</small>
+                            </li>
+                            <li><strong>Centre Al Kindy</strong><br>
+                                <small class="text-muted">Spécialités : Check-up complet</small>
+                            </li>
+                        </ul>
+                        <div class="price-tag">250-800 MAD/consultation</div>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: var(--morocco-gold);">
+                            <i class="fas fa-mosque me-2"></i>Marrakech
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Polyclinique du Sud</strong><br>
+                                <small class="text-muted">Spécialités : Urgences, Chirurgie</small>
+                            </li>
+                            <li><strong>Clinique Atlas</strong><br>
+                                <small class="text-muted">Spécialités : Dermatologie</small>
+                            </li>
+                            <li><strong>Centre Médical International</strong><br>
+                                <small class="text-muted">Spécialités : Médecine générale</small>
+                            </li>
+                        </ul>
+                        <div class="price-tag">200-600 MAD/consultation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assurances recommandées -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-shield-alt me-2"></i>Assurances Santé Recommandées
+            </h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Assureur</th>
+                            <th>Formule</th>
+                            <th>Couverture</th>
+                            <th>Prix/mois</th>
+                            <th>Avantages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Saham Assistance</strong></td>
+                            <td>Premium</td>
+                            <td>100% privé</td>
+                            <td>800-1200 MAD</td>
+                            <td>Réseau étendu, rapatriement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Atlanta Assurance</strong></td>
+                            <td>Excellence</td>
+                            <td>Privé + étranger</td>
+                            <td>1000-1500 MAD</td>
+                            <td>Couverture internationale</td>
+                        </tr>
+                        <tr>
+                            <td><strong>April International</strong></td>
+                            <td>Expat</td>
+                            <td>Mondiale</td>
+                            <td>1200-2000 MAD</td>
+                            <td>Spécialisé expatriés</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CNSS (obligatoire)</strong></td>
+                            <td>Base</td>
+                            <td>Public + urgences</td>
+                            <td>200-400 MAD</td>
+                            <td>Obligatoire salariés</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box">
+                <h5><i class="fas fa-star me-2" style="color: var(--morocco-gold);"></i>Notre Recommandation</h5>
+                <p class="mb-0">Pour les expatriés : <strong>Saham + April International</strong> - Couverture locale
+                    excellent + international pour voyages. Budget : 2000 MAD/mois/personne.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 8: Éducation & Écoles (Premium) -->
+    <section class="section-header" style="background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(0, 98, 51, 0.9));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4">
+                        <i class="fas fa-graduation-cap me-3"></i>8. Éducation & Écoles
+                    </h2>
+                    <p class="lead">Système éducatif et écoles internationales</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="premium-badge">
+                        <i class="fas fa-crown me-2"></i>Section Premium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-school me-2"></i>Écoles Internationales Recommandées
+            </h3>
+
+            <div class="accordion" id="schoolsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#casablanca-schools">
+                            <i class="fas fa-building me-2"></i>Casablanca - Écoles Internationales
+                        </button>
+                    </h2>
+                    <div id="casablanca-schools" class="accordion-collapse collapse show"
+                        data-bs-parent="#schoolsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6 style="color: var(--morocco-red);">Lycée Lyautey</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Français (AEFE)</li>
+                                            <li><strong>Niveaux :</strong> Maternelle à Terminale</li>
+                                            <li><strong>Prix :</strong> 25,000-35,000 MAD/an</li>
+                                            <li><strong>Avantages :</strong> Excellence académique, réseau alumni</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6 style="color: var(--morocco-green);">Casablanca American School</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Américain</li>
+                                            <li><strong>Niveaux :</strong> K-12</li>
+                                            <li><strong>Prix :</strong> 80,000-120,000 MAD/an</li>
+                                            <li><strong>Avantages :</strong> Programme IB, campus moderne</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://images.shutterstock.com/image-photo/international-school-morocco-modern-building-600w-1234567803.jpg"
+                                        class="img-fluid rounded" alt="École internationale Casablanca">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#rabat-schools">
+                            <i class="fas fa-landmark me-2"></i>Rabat - Écoles Diplomatiques
+                        </button>
+                    </h2>
+                    <div id="rabat-schools" class="accordion-collapse collapse" data-bs-parent="#schoolsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6 style="color: var(--morocco-red);">Lycée Descartes</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Français (AEFE)</li>
+                                            <li><strong>Niveaux :</strong> Maternelle à Terminale</li>
+                                            <li><strong>Prix :</strong> 28,000-40,000 MAD/an</li>
+                                            <li><strong>Spécificité :</strong> Forte tradition diplomatique</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bg-light p-3 rounded mb-3">
+                                        <h6 style="color: var(--morocco-green);">Rabat American School</h6>
+                                        <ul>
+                                            <li><strong>Système :</strong> Américain</li>
+                                            <li><strong>Niveaux :</strong> Pre-K à Grade 12</li>
+                                            <li><strong>Prix :</strong> 85,000-130,000 MAD/an</li>
+                                            <li><strong>Spécificité :</strong> Campus diplomatique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-success">
+                                        <h6><i class="fas fa-star me-2"></i>Avantage Rabat</h6>
+                                        <p class="mb-0">Les écoles de Rabat bénéficient de l'environnement diplomatique
+                                            et offrent souvent de meilleures infrastructures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparatif des systèmes -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-green);">
+                <i class="fas fa-balance-scale me-2"></i>Comparatif des Systèmes Éducatifs
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #e8f4fd, #dbeafe);">
+                        <i class="fas fa-flag-usa fa-3x mb-3" style="color: var(--deep-blue);"></i>
+                        <h5>Système Américain</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">80,000 - 130,000 MAD/an</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Flexibilité programme</li>
+                            <li><strong>+</strong> Activités extra-scolaires</li>
+                            <li><strong>+</strong> Prépa universités US</li>
+                            <li><strong>-</strong> Coût très élevé</li>
+                            <li><strong>-</strong> Moins rigoureux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #fef3e2, #fed7aa);">
+                        <i class="fas fa-flag me-2" style="color: var(--morocco-red);"></i><span
+                            style="color: var(--morocco-red);">🇫🇷</span>
+                        <i class="fa-3x mb-3 d-block mt-2"></i>
+                        <h5>Système Français</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">25,000 - 40,000 MAD/an</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Excellence académique</li>
+                            <li><strong>+</strong> Coût raisonnable</li>
+                            <li><strong>+</strong> Bac reconnu</li>
+                            <li><strong>+</strong> Réseau AEFE</li>
+                            <li><strong>-</strong> Sélection rigoureuse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center p-4 border rounded h-100"
+                        style="background: linear-gradient(135deg, #f0fdf4, #dcfce7);">
+                        <i class="fas fa-globe fa-3x mb-3" style="color: var(--morocco-green);"></i>
+                        <h5>Programme IB</h5>
+                        <div class="mb-3">
+                            <div class="price-tag">60,000 - 100,000 MAD/an</div>
+                        </div>
+                        <ul class="text-start">
+                            <li><strong>+</strong> Reconnaissance mondiale</li>
+                            <li><strong>+</strong> Approche internationale</li>
+                            <li><strong>+</strong> Esprit critique</li>
+                            <li><strong>-</strong> Exigence très élevée</li>
+                            <li><strong>-</strong> Coût important</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conseils pour l'inscription -->
+        <div class="content-card p-4">
+            <h3 style="color: var(--morocco-red);">
+                <i class="fas fa-clipboard-list me-2"></i>Guide d'Inscription
+            </h3>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-calendar-check me-2"></i>Timeline d'Inscription</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h6>Janvier-Février : Recherche & Candidature</h6>
+                                <p>Visites virtuelles, dossiers de candidature, tests d'entrée.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h6>Mars-Avril : Sélection</h6>
+                                <p>Entretiens, résultats d'admission, réservation de place.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h6>Mai-Juin : Finalisation</h6>
+                                <p>Paiement acompte, documents finaux, préparation rentrée.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 rounded">
+                        <h6><i class="fas fa-file-alt me-2"></i>Documents Requis</h6>
+                        <ul class="mb-3">
+                            <li>Bulletins scolaires (3 ans)</li>
+                            <li>Certificat de naissance</li>
+                            <li>Photos d'identité</li>
+                            <li>Certificat médical</li>
+                            <li>Lettre de motivation</li>
+                            <li>Justificatifs revenus parents</li>
+                        </ul>
+
+                        <div class="alert alert-warning">
+                            <small><i class="fas fa-exclamation-triangle me-1"></i><strong>Important :</strong> Tous les
+                                documents doivent être traduits et légalisés.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="container mb-5">
+        <div class="content-card p-4">
+            <h3 class="text-center mb-4" style="color: var(--morocco-red);">
+                <i class="fas fa-question-circle me-2"></i>Questions Fréquentes
+            </h3>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            Combien coûte la vie au Maroc pour un expatrié ?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Pour une famille de 4 personnes avec un mode de vie occidental, comptez 25,000 à 40,000
+                            MAD/mois (2,300 à 3,700€) incluant logement, école privée, santé et loisirs.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            Faut-il parler arabe pour vivre au Maroc ?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Non, le français est largement parlé dans les villes. Cependant, apprendre quelques mots
+                            d'arabe ou de darija facilite grandement l'intégration et est très apprécié des Marocains.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            Quel est le délai pour obtenir un visa de travail ?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Comptez 2 à 3 mois au total : autorisation ANAPEC (3-4 semaines) + visa consulaire (2-3
+                            semaines) + carte de séjour (1-2 semaines après arrivée).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section class="container mb-5">
+        <div class="content-card p-5 text-center"
+            style="background: linear-gradient(135deg, var(--morocco-red), var(--morocco-green));">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-white">
+                    <i class="fas fa-rocket fa-4x mb-4"></i>
+                    <h2 class="mb-4">Prêt à Franchir le Pas ?</h2>
+                    <p class="lead mb-4">
+                        Vous avez maintenant toutes les clés pour réussir votre expatriation au Maroc.
+                        Ce guide complet de 32 pages vous accompagnera à chaque étape de votre projet.
+                    </p>
+
+                    <div class="row text-center mb-4">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>32 Pages</h4>
+                                <small>D'expertise complète</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>8 Sections</h4>
+                                <small>Tous les aspects couverts</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-white bg-opacity-25 p-3 rounded">
+                                <h4>2025</h4>
+                                <small>Informations à jour</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-crown me-2"></i>
+                        Guide Premium • Accès Immédiat • Mises à Jour Gratuites
+                    </div>
+
+                    <button class="btn btn-light btn-lg me-3" onclick="showPricingModal()">
+                        <i class="fas fa-download me-2"></i>Télécharger Maintenant - 19.99€
+                    </button>
+
+                    <div class="mt-3">
+                        <small>
+                            <i class="fas fa-shield-alt me-1"></i>Garantie satisfait ou remboursé 30 jours •
+                            <i class="fas fa-lock me-1"></i>Paiement sécurisé •
+                            <i class="fas fa-sync me-1"></i>Mises à jour incluses
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="container mb-5">
+        <h3 class="text-center mb-4" style="color: var(--morocco-red);">
+            <i class="fas fa-quote-left me-2"></i>Ce que disent nos utilisateurs
+        </h3>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-happy-businessman-morocco-600w-1234567899.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Pierre">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Grâce à ce guide, j'ai évité tous les pièges. Installation à Casablanca réussie en 3 mois!"
+                        </p>
+                        <footer class="blockquote-footer">Pierre D., <cite>Développeur IT</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-smiling-woman-morocco-600w-1234567800.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Marie">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Les conseils sur les quartiers et écoles ont été parfaits pour notre famille."</p>
+                        <footer class="blockquote-footer">Marie L., <cite>Mère de famille</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="text-center mb-3">
+                        <img src="https://images.shutterstock.com/image-photo/portrait-business-executive-morocco-600w-1234567801.jpg"
+                            class="rounded-circle" width="60" height="60" alt="Témoignage Thomas">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>"Rapport qualité-prix exceptionnel. Le guide vaut largement son prix."</p>
+                        <footer class="blockquote-footer">Thomas R., <cite>Manager</cite></footer>
+                    </blockquote>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPricingModal() {
+            // Redirection vers la page de paiement ou modal de pricing
+            alert('Redirection vers le système de paiement...\n\nGuide Complet Maroc - 19.99€\n• 32 pages d\'expertise\n• Accès immédiat\n• Mises à jour gratuites\n• Garantie 30 jours');
+        }
+
+        // Animation des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.content-card, .city-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+
+    <!-- Modal de Pricing -->
+    <div class="modal fade" id="pricingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header"
+                    style="background: linear-gradient(135deg, var(--morocco-red), var(--morocco-green));">
+                    <h5 class="modal-title text-white">
+                        <i class="fas fa-crown me-2"></i>Débloquez le Guide Complet
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h4>Guide Complet : S'installer au Maroc</h4>
+                            <p class="lead">32 pages d'expertise pour réussir votre expatriation</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h6><i class="fas fa-check-circle text-success me-2"></i>Ce que vous obtenez :</h6>
+                                    <ul>
+                                        <li>8 sections complètes (32 pages)</li>
+                                        <li>Visa & Immigration détaillés</li>
+                                        <li>Culture & Intégration</li>
+                                        <li>Système de santé complet</li>
+                                        <li>Guide des écoles internationales</li>
+                                        <li>Contacts et ressources utiles</li>
+                                        <li>Mises à jour gratuites</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6><i class="fas fa-star text-warning me-2"></i>Garanties :</h6>
+                                    <ul>
+                                        <li><i class="fas fa-download me-1"></i>Téléchargement immédiat</li>
+                                        <li><i class="fas fa-shield-alt me-1"></i>30 jours satisfait ou remboursé</li>
+                                        <li><i class="fas fa-sync me-1"></i>Mises à jour incluses 1 an</li>
+                                        <li><i class="fas fa-support me-1"></i>Support par email</li>
+                                        <li><i class="fas fa-mobile-alt me-1"></i>Compatible mobile/tablette</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="pricing-options mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="border rounded p-3 text-center">
+                                            <h6>Guide Maroc</h6>
+                                            <div class="h4" style="color: var(--morocco-red);">19.99€</div>
+                                            <small>Guide complet Maroc</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="border rounded p-3 text-center bg-light">
+                                            <h6>Pack Afrique du Nord</h6>
+                                            <div class="h4" style="color: var(--morocco-green);">29.99€</div>
+                                            <small>Maroc + Tunisie + Algérie</small>
+                                            <div class="badge bg-warning text-dark mt-1">-25%</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="border rounded p-3 text-center"
+                                            style="background: linear-gradient(135deg, #ffeaa7, #fdcb6e);">
+                                            <h6>Accès Mondial</h6>
+                                            <div class="h4" style="color: var(--deep-blue);">39.99€</div>
+                                            <small>Tous les guides disponibles</small>
+                                            <div class="badge bg-danger mt-1">BEST</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://images.shutterstock.com/image-photo/morocco-travel-guide-book-digital-600w-1234567805.jpg"
+                                class="img-fluid rounded mb-3" alt="Guide Maroc">
+                            <div class="text-center">
+                                <div class="premium-badge mb-3">
+                                    <i class="fas fa-users me-2"></i>+2,847 expatriés satisfaits
+                                </div>
+                                <div class="text-warning mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <strong>4.9/5</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Plus tard
+                    </button>
+                    <button type="button" class="btn unlock-button btn-lg" onclick="proceedToPayment()">
+                        <i class="fas fa-credit-card me-2"></i>Commande Sécurisée - 19.99€
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 style="color: var(--morocco-gold);">
+                        <i class="fas fa-compass me-2"></i>ZineInsight
+                    </h5>
+                    <p class="mb-3">Votre guide de confiance pour une expatriation réussie. Expertise, conseils
+                        pratiques et accompagnement personnalisé.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--morocco-gold);">Guides Pays</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Maroc</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Tunisie</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Algérie</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Sénégal</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Canada</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--morocco-gold);">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Consultation</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Accompagnement</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Mise en relation</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Formation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--morocco-gold);">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Témoignages</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <h6 style="color: var(--morocco-gold);">Légal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">CGV</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Mentions légales</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Confidentialité</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: var(--morocco-gold);">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="badge bg-success me-2">
+                        <i class="fas fa-shield-alt me-1"></i>Paiement Sécurisé
+                    </span>
+                    <span class="badge bg-primary me-2">
+                        <i class="fas fa-undo-alt me-1"></i>30j Satisfait ou Remboursé
+                    </span>
+                    <span class="badge bg-info">
+                        <i class="fas fa-headset me-1"></i>Support 7j/7
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts additionnels -->
+    <script>
+        // Fonction pour afficher le modal de pricing
+        function showPricingModal() {
+            const modal = new bootstrap.Modal(document.getElementById('pricingModal'));
+            modal.show();
+
+            // Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'pricing_modal_open', {
+                    'event_category': 'engagement',
+                    'event_label': 'maroc_guide'
+                });
+            }
+        }
+
+        // Fonction pour procéder au paiement
+        function proceedToPayment() {
+            // Ici vous intégrerez votre solution de paiement (Stripe, PayPal, etc.)
+
+            // Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'purchase_intent', {
+                    'event_category': 'ecommerce',
+                    'value': 19.99,
+                    'currency': 'EUR',
+                    'item_id': 'guide_maroc'
+                });
+            }
+
+            // Redirection vers le système de paiement
+            alert('Redirection vers le paiement sécurisé...\n\n✓ Guide Complet Maroc - 19.99€\n✓ 32 pages d\'expertise\n✓ Téléchargement immédiat\n✓ Garantie 30 jours\n\nPaiement par carte bancaire ou PayPal');
+
+            // Ici, vous feriez la vraie redirection vers Stripe Checkout ou votre processeur de paiement
+            // window.location.href = 'https://checkout.stripe.com/...';
+        }
+
+        // Fonctions utilitaires
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Tracking des interactions
+        document.addEventListener('DOMContentLoaded', function () {
+            // Track scroll depth
+            let maxScroll = 0;
+            window.addEventListener('scroll', function () {
+                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                    if (maxScroll % 25 === 0 && typeof gtag !== 'undefined') {
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'engagement',
+                            'value': maxScroll
+                        });
+                    }
+                }
+            });
+
+            // Track time on page
+            const startTime = Date.now();
+            window.addEventListener('beforeunload', function () {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'time_on_page', {
+                        'event_category': 'engagement',
+                        'value': timeSpent
+                    });
+                }
+            });
+        });
+
+        // Styles CSS additionnels pour la timeline
+        document.addEventListener('DOMContentLoaded', function () {
+            const style = document.createElement('style');
+            style.textContent = `
+            .timeline {
+                position: relative;
+                padding: 20px 0;
+            }
+
+            .timeline::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: var(--morocco-gold);
+            }
+
+            .timeline-item {
+                position: relative;
+                margin-bottom: 30px;
+                padding-left: 60px;
+            }
+
+            .timeline-marker {
+                position: absolute;
+                left: 11px;
+                top: 5px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+
+            .timeline-content {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+
+            .timeline-content h6 {
+                margin-bottom: 8px;
+                color: var(--morocco-red);
+            }
+        `;
+            document.head.appendChild(style);
+        });
+    </script>
+
+</body>
+
+</html>

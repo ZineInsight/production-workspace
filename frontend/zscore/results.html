@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="results.meta.title">🏆 Vos Villes Parfaites - ZineInsight Revolutionary</title>
+    <meta name="description" data-i18n="results.meta.description"
+        content="Découvrez vos 3 villes recommandées selon votre profil personnalisé par l'intelligence artificielle ZineInsight.">
+
+    <!-- Icônes Lucide -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- CSS Revolutionary -->
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/results-optimized.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+</head>
+
+<body class="results-page aurora-theme">
+    <!-- ========================================
+         🌟 HEADER REVOLUTIONARY
+         ======================================== -->
+    <header class="revolutionary-header">
+        <div class="header-container">
+            <!-- Logo & Brand -->
+            <div class="brand-section">
+                <div class="logo-container">
+                    <i data-lucide="sparkles" class="logo-icon"></i>
+                    <span class="brand-name">ZineInsight</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-navigation" role="navigation" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-page="home">
+                            <i data-lucide="home"></i>
+                            <span data-i18n="nav.home">Accueil</span>
+                        </a></li>
+                    <li><a href="/about" class="nav-link" data-page="about">
+                            <i data-lucide="info"></i>
+                            <span data-i18n="results.nav.about">À Propos</span>
+                        </a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions -->
+            <div class="header-actions">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <button class="action-btn primary" data-action="restart">
+                    <i data-lucide="refresh-cw"></i>
+                    <span data-i18n="results.header.restart">Recommencer</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         📊 MAIN CONTENT - RESULTS DASHBOARD
+         ======================================== -->
+    <main class="results-dashboard">
+        <div class="dashboard-container">
+
+            <!-- Page Title Section ENHANCED -->
+            <section class="page-intro" role="banner">
+                <div class="intro-content">
+                    <h1 class="page-title">
+                        <i data-lucide="trophy" class="title-icon spinning-slow"></i>
+                        <span data-i18n="results.main.title.prefix">Vos</span> <span class="highlight-gradient"
+                            data-i18n="results.main.title.highlight">3 Villes Parfaites</span>
+                    </h1>
+                    <p class="page-subtitle" data-i18n="results.main.subtitle">Recommandations basées sur l'IA
+                        propriétaire ZineInsight • Précision 94%</p>
+                    <div class="analysis-badge">
+                        <i data-lucide="brain" class="pulsing"></i>
+                        <span data-i18n="results.main.badge">Analyse IA Avancée Complétée</span>
+                        <div class="badge-timestamp" id="analysisTimestamp" data-i18n="results.main.timestamp">Il y a
+                            quelques instants</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Grid Layout 2 Sections -->
+            <div class="dashboard-grid two-sections">
+
+                <!-- ========================================
+                     🏆 LEFT: PODIUM DES VILLES
+                     ======================================== -->
+                <section class="grid-section podium-section" role="region" aria-labelledby="podium-title">
+                    <header class="section-header">
+                        <h2 id="podium-title" class="section-title">
+                            <i data-lucide="medal" aria-hidden="true"></i>
+                            <span data-i18n="results.podium.title">Podium de Vos Villes</span>
+                        </h2>
+                        <p class="section-subtitle" data-i18n="results.podium.subtitle">Top 3 selon votre profil</p>
+                    </header>
+
+                    <div class="podium-container" role="list" aria-label="Classement des villes recommandées">
+                        <!-- Ville 1ère place -->
+                        <article class="podium-place first-place" data-rank="1" role="listitem"
+                            aria-labelledby="city1Name">
+                            <div class="place-medal" aria-label="Médaille d'or">
+                                <span class="medal-emoji" aria-hidden="true">🥇</span>
+                            </div>
+                            <div class="city-card gold">
+                                <h3 class="city-name" id="city1Name">Chargement...</h3>
+                                <p class="city-country" id="city1Country">---</p>
+                                <div class="city-score" aria-label="Score de compatibilité">
+                                    <span class="score-value" id="city1Score">--</span>
+                                    <span class="score-unit">/100</span>
+                                </div>
+                                <div class="city-strengths" id="city1Strengths" aria-label="Points forts">
+                                    <div class="strength-tags"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Ville 2ème place -->
+                        <div class="podium-place second-place" data-rank="2">
+                            <div class="place-medal">
+                                <span class="medal-emoji">🥈</span>
+                            </div>
+                            <div class="city-card silver">
+                                <div class="city-name" id="city2Name">Chargement...</div>
+                                <div class="city-country" id="city2Country">---</div>
+                                <div class="city-score">
+                                    <span class="score-value" id="city2Score">--</span>
+                                    <span class="score-unit">/100</span>
+                                </div>
+                                <div class="city-strengths" id="city2Strengths">
+                                    <div class="strength-tags"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ville 3ème place -->
+                        <div class="podium-place third-place" data-rank="3">
+                            <div class="place-medal">
+                                <span class="medal-emoji">🥉</span>
+                            </div>
+                            <div class="city-card bronze">
+                                <div class="city-name" id="city3Name">Chargement...</div>
+                                <div class="city-country" id="city3Country">---</div>
+                                <div class="city-score">
+                                    <span class="score-value" id="city3Score">--</span>
+                                    <span class="score-unit">/100</span>
+                                </div>
+                                <div class="city-strengths" id="city3Strengths">
+                                    <div class="strength-tags"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========================================
+                     📍 RIGHT: FOCUS VILLE #1
+                     ======================================== -->
+                <section class="grid-section focus-section" role="region" aria-labelledby="focus-title">
+                    <header class="section-header">
+                        <h2 id="focus-title" class="section-title">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span id="focusCityName">Ville #1</span> <span data-i18n="results.focus.title.suffix">en
+                                Détail</span>
+                        </h2>
+                        <p class="section-subtitle" data-i18n="results.focus.subtitle">Votre meilleure recommandation
+                        </p>
+                    </header>
+
+                    <div class="city-focus-content">
+                        <!-- Compatibilités -->
+                        <div class="compatibility-section">
+                            <h3 class="compatibility-title">Compatibilités</h3>
+                            <div class="compatibility-list">
+                                <div class="compatibility-item" id="compatibility1">1. Chargement...</div>
+                                <div class="compatibility-item" id="compatibility2">2. Chargement...</div>
+                                <div class="compatibility-item" id="compatibility3">3. Chargement...</div>
+                            </div>
+                        </div>
+
+                        <!-- Population + Météo -->
+                        <div class="city-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Population</span>
+                                <span class="stat-value" id="cityPopulationStat">---</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Météo moyenne</span>
+                                <span class="stat-value" id="cityWeatherStat">--- °C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- ========================================
+                     📘 BOTTOM LEFT: GUIDE RECTANGLE
+                     ======================================== -->
+                <div class="guide-rectangle">
+                    <button class="guide-btn-main">
+                        <i data-lucide="book-open" aria-hidden="true"></i>
+                        <span>Accéder à mon guide</span>
+                    </button>
+                </div>
+
+                <!-- ========================================
+                     📤 BOTTOM RIGHT: SOCIAL RECTANGLE
+                     ======================================== -->
+                <div class="social-rectangle">
+                    <div class="social-mini whatsapp" data-platform="whatsapp" title="WhatsApp">
+                        <i data-lucide="message-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="social-mini instagram" data-platform="instagram" title="Instagram">
+                        <i data-lucide="instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="social-mini facebook" data-platform="facebook" title="Facebook">
+                        <i data-lucide="facebook" aria-hidden="true"></i>
+                    </div>
+                    <div class="social-mini x" data-platform="x" title="X (Twitter)">
+                        <i data-lucide="x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div> <!-- End Dashboard Container -->
+    </main>
+
+    <!-- ========================================
+         🌍 FOOTER REVOLUTIONARY
+         ======================================== -->
+    <footer class="revolutionary-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+
+                <!-- Brand Section -->
+                <section class="footer-brand" aria-labelledby="footer-brand-title">
+                    <div class="footer-logo">
+                        <i data-lucide="sparkles" aria-hidden="true"></i>
+                        <span id="footer-brand-title">ZineInsight</span>
+                    </div>
+                    <p class="footer-tagline" data-i18n="results.footer.tagline">
+                        L'intelligence artificielle au service de vos décisions géographiques
+                    </p>
+                </section>
+
+                <!-- Links Section -->
+                <nav class="footer-links" aria-label="Liens du footer">
+                    <div class="link-group">
+                        <h3 data-i18n="results.footer.platform.title">Plateforme</h3>
+                        <ul role="list">
+                            <li role="listitem"><a href="/" data-i18n="results.footer.platform.home">Accueil</a></li>
+                            <li role="listitem"><a href="/about" data-i18n="results.footer.platform.about">À Propos</a>
+                            </li>
+                            <li role="listitem"><a href="/contact"
+                                    data-i18n="results.footer.platform.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3 data-i18n="results.footer.legal.title">Legal</h3>
+                        <ul role="list">
+                            <li role="listitem"><a href="/privacy"
+                                    data-i18n="results.footer.legal.privacy">Confidentialité</a></li>
+                            <li role="listitem"><a href="/terms" data-i18n="results.footer.legal.terms">Conditions</a>
+                            </li>
+                            <li role="listitem"><a href="/cookies" data-i18n="results.footer.legal.cookies">Cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3 data-i18n="results.footer.help.title">Aide</h3>
+                        <ul role="list">
+                            <li role="listitem"><a href="/faq" data-i18n="results.footer.help.faq">FAQ</a></li>
+                            <li role="listitem"><a href="/support" data-i18n="results.footer.help.support">Support</a>
+                            </li>
+                            <li role="listitem"><a href="/guides" data-i18n="results.footer.help.guides">Guides</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p data-i18n="results.footer.copyright">&copy; 2025 ZineInsight Revolutionary. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         🔄 LOADING OVERLAY
+         ======================================== -->
+    <div class="loading-overlay" id="loadingOverlay" role="dialog" aria-hidden="true" aria-labelledby="loading-title">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <i data-lucide="loader" class="spinning" aria-hidden="true"></i>
+            </div>
+            <h3 class="loading-title" id="loading-title" data-i18n="results.loading.title">Chargement de vos
+                résultats...</h3>
+            <p class="loading-subtitle" data-i18n="results.loading.subtitle">Analyse de vos données personnalisées</p>
+        </div>
+    </div>
+
+    <!-- Floating AI Coach Zine -->
+    <div id="floating-ai-coach" class="floating-coach">
+        <div class="coach-avatar" id="zine-avatar">
+            🤖
+        </div>
+        <div class="coach-bubble" id="zine-bubble">
+            <div class="coach-message" id="zine-message" data-i18n="zine.welcome.results">
+                Félicitations ! Tes résultats sont prêts ! 🎉
+            </div>
+        </div>
+        <div class="coach-tooltip" data-i18n="zine.tooltip">
+            Zine Assistant
+        </div>
+    </div>
+
+    <!-- ========================================
+          SCRIPTS
+         ======================================== -->
+    <!-- 🌍 Revolutionary I18n System -->
+    <script src="js/i18n-system.js?v=2025082401"></script>
+
+    <!-- Initialize Lucide Icons & Page -->
+    <script>
+        // Initialize icons when DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            lucide.createIcons();
+            console.log('✅ Results page initialization complete with Revolutionary I18n');
+        });
+    </script>
+
+    <!-- Main Results JavaScript -->
+    <script src="js/results.js"></script>
+</body>
+
+</html>

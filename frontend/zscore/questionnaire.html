@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire ZineInsight - Révolutionnez votre profil</title>
+
+    <!-- Meta tags SEO -->
+    < <!-- Questions Data - Australia Residents -->
+        <script src="js/questions-data-au-residents.js?v=2025082209"></script>
+
+        <!-- Questions Data - Spain Residents -->
+        <script src="js/questions-data-es-residents.js?v=2025082210"></script>
+
+        <!-- Configuration environnement --> name="description"
+        content="Découvrez votre potentiel unique avec le questionnaire intelligent ZineInsight. IA avancée pour
+        l'expatriation et la carrière.">
+        <meta name="keywords" content="questionnaire IA, expatriation, carrière internationale, ZineInsight">
+        <meta name="author" content="ZineInsight Revolutionary Platform">
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0066FF">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet">
+
+        <!-- CSS Revolutionary -->
+        <!-- <link rel="stylesheet" href="css/revolutionary.css"> -->
+
+        <!-- Questionnaire Premium CSS -->
+        <link rel="stylesheet" href="css/questionnaire.css">
+</head>
+
+<body class="revolutionary-body">
+    <!-- ===== REVOLUTIONARY HEADER ===== -->
+    <header class="header-revolutionary" id="header">
+        <nav class="nav-container">
+            <!-- Brand Section -->
+            <div class="brand-revolutionary">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <i data-lucide="zap" class="logo-svg"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">ZineInsight</span>
+                        <span class="brand-tagline">Revolutionary Platform</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i data-lucide="home"></i>
+                    <span data-i18n="nav.home">Accueil</span>
+                </a>
+            </div>
+
+            <!-- Language & Auth Section -->
+            <div class="nav-actions">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <div class="auth-section">
+                    <button class="btn-auth" id="authBtn">
+                        <i data-lucide="user"></i>
+                        <span data-i18n="auth.login">Connexion</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ANALYSIS CONTAINER ===== -->
+    <main class="analysis-container" id="analysisContainer">
+
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen" class="welcome-section">
+            <div class="welcome-content">
+                <div class="welcome-title">ZineInsight</div>
+                <div class="welcome-subtitle" data-i18n="questionnaire.welcome.subtitle">
+                    Découvrez votre potentiel unique avec notre analyse IA révolutionnaire.<br>
+                    Répondez à quelques questions pour révéler les opportunités qui vous attendent.
+                </div>
+                <div class="welcome-actions">
+                    <button class="btn-revolutionary primary" id="startAnalysisBtn">
+                        <i data-lucide="play"></i>
+                        <span data-i18n="questionnaire.welcome.start">Commencer l'analyse</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parcours Selection -->
+        <div id="parcoursSection" class="parcours-section" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="questionnaire.parcours.title">🌍 Choisissez votre parcours</h2>
+                <p class="section-subtitle" data-i18n="questionnaire.parcours.subtitle">Sélectionnez le type d'analyse
+                    qui correspond à vos objectifs</p>
+            </div>
+
+            <div class="parcours-options">
+                <div class="parcours-card" data-parcours="international" data-question-id="parcours_type"
+                    data-option-value="international">
+                    <div class="parcours-icon">🌍</div>
+                    <h3 class="parcours-title" data-i18n="questionnaire.parcours.international.title">International</h3>
+                    <p class="parcours-description" data-i18n="questionnaire.parcours.international.description">Analyse
+                        générale pour l'expatriation mondiale</p>
+                </div>
+
+                <div class="parcours-card" data-parcours="national" data-question-id="parcours_type"
+                    data-option-value="national">
+                    <div class="parcours-icon">🎯</div>
+                    <h3 class="parcours-title" data-i18n="questionnaire.parcours.national.title">National</h3>
+                    <p class="parcours-description" data-i18n="questionnaire.parcours.national.description">Analyse
+                        spécifique à un pays</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Selection -->
+        <div id="countrySection" class="country-section" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="questionnaire.country.title">🗺️ Sélectionnez votre destination
+                </h2>
+                <p class="section-subtitle" data-i18n="questionnaire.country.subtitle">Choisissez le pays pour une
+                    analyse personnalisée</p>
+            </div>
+
+            <div class="country-grid">
+                <div class="country-card" data-country="france" data-question-id="destination_country"
+                    data-option-value="france">
+                    <div class="country-flag">🇫🇷</div>
+                    <h3 class="country-name" data-i18n="questionnaire.country.france">France</h3>
+                </div>
+                <div class="country-card" data-country="usa" data-question-id="destination_country"
+                    data-option-value="usa">
+                    <div class="country-flag">🇺🇸</div>
+                    <h3 class="country-name" data-i18n="questionnaire.country.usa">USA</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Questions Section -->
+        <div id="questionsSection" class="questions-section" style="display: none;">
+            <div class="questions-header">
+                <!-- Progress Container -->
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <div class="progress-percent" id="progressPercent">0%</div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-details">
+                        <span class="question-counter">
+                            <span data-i18n="questionnaire.question.question">Question</span> <span
+                                id="currentQuestion">1</span> <span data-i18n="questionnaire.question.of">sur</span>
+                            <span id="totalQuestions">10</span>
+                        </span>
+                        <span class="time-estimate" id="timeRemaining">~2 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-content">
+                <div class="question-main">
+                    <h2 class="question-title" id="questionTitle">Question en cours de chargement...</h2>
+                    <div class="question-options" id="questionOptions">
+                        <!-- Options will be generated here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-navigation">
+                <button class="btn-nav" id="prevBtn" onclick="previousQuestion()" disabled>
+                    <i data-lucide="chevron-left"></i>
+                    <span data-i18n="questionnaire.navigation.previous">Précédent</span>
+                </button>
+
+                <button class="btn-nav primary" id="nextBtn" onclick="nextQuestion()" disabled>
+                    <span data-i18n="questionnaire.navigation.next">Suivant</span>
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Floating AI Coach Zine -->
+    <div id="floating-ai-coach" class="floating-coach">
+        <div class="coach-avatar" id="zine-avatar">
+            🤖
+        </div>
+        <div class="coach-bubble" id="zine-bubble">
+            <div class="coach-message" id="zine-message" data-i18n="zine.welcome.questionnaire">
+                Hey ! Moi c'est Zine ! Je vais t'accompagner 😊
+            </div>
+        </div>
+        <div class="coach-tooltip" data-i18n="zine.tooltip">
+            Zine Assistant
+        </div>
+    </div>
+
+    <!-- ===== REVOLUTIONARY FOOTER ===== -->
+    <footer class="footer-revolutionary" id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-revolutionary">
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <i data-lucide="zap" class="logo-svg"></i>
+                            </div>
+                            <div class="brand-text">
+                                <span class="brand-name">ZineInsight</span>
+                                <span class="brand-tagline">Revolutionary Platform</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description" data-i18n="footer.description">
+                        Révolutionnez votre vie avec l'IA la plus avancée pour l'expatriation et la carrière.
+                        Rejoignez +2,847 utilisateurs qui ont déjà transformé leur futur.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="footer.copyright">
+                    © 2025 ZineInsight Revolutionary Platform. Tous droits réservés.
+                </p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SSL Secured</span>
+                    <span class="badge">🛡️ GDPR Compliant</span>
+                    <span class="badge">⚡ Powered by AI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Questions Data -->
+    <script src="js/questions-data.js?v=2025082105"></script>
+
+    <!-- Questions Data - USA Residents -->
+    <script src="js/questions-data-usa-residents.js?v=2025082105"></script>
+    <script src="js/usa-residents-api.js?v=2025082105"></script>
+
+    <!-- Questions Data - France Residents -->
+    <script src="js/questions-data-fr-residents.js?v=2025082205"></script>
+
+    <!-- Questions Data - Canada Residents -->
+    <script src="js/questions-data-ca-residents.js?v=2025082206"></script>
+
+    <!-- Questions Data - UK Residents -->
+    <script src="js/questions-data-uk-residents.js?v=2025082207"></script>
+
+    <!-- Questions Data - Japan Residents -->
+    <script src="js/questions-data-jp-residents.js?v=2025082312"></script>
+
+    <!-- Questions Data - Germany Residents -->
+    <script src="js/questions-data-de-residents.js?v=2025082208"></script>
+
+    <!-- Questions Data - Australia Residents -->
+    <script src="js/questions-data-au-residents.js?v=2025082209"></script>
+
+    <!-- Questions Data - Spain Residents -->
+    <script src="js/questions-data-es-residents.js?v=2025082210"></script>
+
+    <!-- Questions Data - Mexico Residents -->
+    <script src="js/questions-data-mx-residents.js?v=2025082211"></script>
+
+    <!-- Questions Data - Brazil Residents -->
+    <script src="js/questions-data-br-residents.js?v=2025082213"></script>
+
+    <!-- Questions Data - Morocco Residents -->
+    <script src="js/questions-data-ma-residents.js?v=2025082315"></script>
+
+    <!-- Questions Data - Thailand Residents -->
+    <script src="js/questions-data-th-residents.js?v=2025082323"></script>
+
+    <!-- Configuration environnement -->
+    <script src="js/environment-config.js?v=2025082105"></script>
+
+    <!-- 🌍 Revolutionary I18n System -->
+    <script src="js/i18n-system.js?v=2025082401"></script>
+
+    <!-- ⚡ Module principal - Analysis Engine -->
+    <script src="js/analysis.js?v=2025082105"></script>
+    <script>
+        // ===== GLOBAL FUNCTIONS FOR COMPATIBILITY =====
+        function nextQuestion() {
+            if (window.zineAnalysis) {
+                window.zineAnalysis.nextQuestion();
+            }
+        }
+
+        function previousQuestion() {
+            if (window.zineAnalysis) {
+                window.zineAnalysis.previousQuestion();
+            }
+        }
+
+        function startAnalysis() {
+            console.log('🚀 Starting analysis...');
+            if (window.zineAnalysis) {
+                // Use ZineInsight Analysis to start
+                window.zineAnalysis.startAnalysis?.();
+            } else {
+                // Fallback: show parcours section manually
+                document.getElementById('welcomeScreen').style.display = 'none';
+                document.getElementById('parcoursSection').style.display = 'block';
+            }
+        }
+
+        function openAuthModal() {
+            console.log('🔑 Opening auth modal...');
+            const message = window.revolutionaryI18n?.getCurrentLanguage() === 'en'
+                ? 'Login feature coming soon!'
+                : 'Fonctionnalité de connexion à venir !';
+            alert(message);
+        }
+
+        // ===== INITIALIZATION =====
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Lucide icons
+            lucide.createIcons();
+
+            // Add event listeners
+            const startBtn = document.getElementById('startAnalysisBtn');
+            if (startBtn) {
+                startBtn.addEventListener('click', startAnalysis);
+            }
+
+            const authBtn = document.getElementById('authBtn');
+            if (authBtn) {
+                authBtn.addEventListener('click', openAuthModal);
+            }
+
+            // Initialize ZineInsight Analysis
+            if (typeof ZineInsightAnalysis !== 'undefined') {
+                window.zineAnalysis = new ZineInsightAnalysis();
+                console.log('✅ ZineInsight Analysis initialized');
+            } else {
+                console.error('❌ ZineInsightAnalysis not found - using fallback');
+            }
+
+            console.log('✅ Questionnaire page initialization complete with Revolutionary I18n');
+        });
+
+        // ===== ZINE COACH IA QUESTIONNAIRE OPTIMISÉ =====
+        class OptimizedQuestionnaireCoach {
+            constructor() {
+                this.avatar = document.getElementById('zine-avatar');
+                this.bubble = document.getElementById('zine-bubble');
+                this.message = document.getElementById('zine-message');
+                this.isMessageVisible = false;
+                this.messageTimeout = null;
+                this.lastComment = '';
+                this.questionCount = 0;
+                this.userProfile = {}; // Stocker le profil utilisateur
+
+                this.init();
+            }
+
+            init() {
+                if (!this.avatar || !this.bubble || !this.message) {
+                    console.log('Éléments de l\'assistant Zine non trouvés');
+                    return;
+                }
+
+                // Event listeners
+                this.avatar.addEventListener('click', () => this.showContextualTip());
+
+                // Message de bienvenue contextualisé
+                setTimeout(() => {
+                    this.showWelcomeMessage();
+                }, 2500);
+
+                // Hook pour écouter les réponses
+                this.setupAnswerListeners();
+            }
+
+            setupAnswerListeners() {
+                // Intercepter les réponses du questionnaire
+                document.addEventListener('questionAnswered', (event) => {
+                    this.onQuestionAnswered(event.detail);
+                });
+
+                // Observer les changements de questions
+                const observer = new MutationObserver(() => {
+                    this.onQuestionChanged();
+                });
+            }
+
+            onQuestionAnswered(answerData) {
+                const { questionId, selectedValue, questionIndex } = answerData;
+
+                // Sauvegarder dans le profil
+                this.userProfile[questionId] = selectedValue;
+                this.questionCount = questionIndex + 1;
+
+                // Générer commentaire dynamique
+                this.generateDynamicComment(questionId, selectedValue);
+            }
+
+            generateDynamicComment(questionId, selectedValue) {
+                // Commentaires spécialisés par question et réponse
+                const dynamicComments = {
+                    // Choix de parcours
+                    'parcours_type': {
+                        'international': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.international.1') : "Mindset international ! 🌍 Le monde t'appartient !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.international.2') : "Vision globale activée ! 🚀 Excellent choix !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.international.3') : "Aventurier mondial détecté ! ✈️ C'est parti !"
+                        ],
+                        'national': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.national.1') : "Focus pays spécifique ! 🎯 Stratégie précise !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.national.2') : "Approche ciblée ! 💡 Smart move !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.parcours_type.national.3') : "Localisation focused ! 📍 J'adore !"
+                        ]
+                    },
+
+                    // Destination pays
+                    'destination_country': {
+                        'france': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.france.1') : "La France ! 🇫🇷 Art de vivre légendaire !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.france.2') : "Baguettes et châteaux ! 🥖 Romantique !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.france.3') : "Hexagone power ! ⚡ Culture et gastronomie !"
+                        ],
+                        'usa': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.usa.1') : "USA ! 🇺🇸 Land of opportunities !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.usa.2') : "American Dream activated ! 🦅 Let's go !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.usa.3') : "États-Unis ! 🗽 Innovation et ambition !"
+                        ],
+                        'canada': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.canada.1') : "Canada ! 🇨🇦 Politesse et paysages !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.canada.2') : "Eh ! Maple syrup country ! 🍁",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.canada.3') : "Great White North ! ❄️ Friendly vibes !"
+                        ],
+                        'australia': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.australia.1') : "Australia ! 🇦🇺 Laid-back lifestyle !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.australia.2') : "Down Under adventure ! 🦘",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.destination_country.australia.3') : "Aussie spirit ! 🌅 Work-life balance !"
+                        ]
+                    },
+
+                    // Age & Situation
+                    'age_situation': {
+                        'young_single': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_single.1') : "Libre comme l'air ! 🦅 Tu peux tout oser !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_single.2') : "Le monde t'appartient ! 🌍 Fonce !",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_single.3') : "Aucune limite à tes rêves ! ✨"
+                        ],
+                        'young_couple': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_couple.1') : "En duo, vous êtes imbattables ! 💑",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_couple.2') : "Deux cerveaux valent mieux qu'un ! 🧠",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.young_couple.3') : "L'union fait la force ! 💪"
+                        ],
+                        'family_building': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.family_building.1') : "Famille = motivation x1000 ! 👨‍👩‍👧‍👦",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.family_building.2') : "Construire pour les siens, noble mission ! 🏗️",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.family_building.3') : "Vos enfants seront fiers de vous ! 🏆"
+                        ],
+                        'established': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.established.1') : "L'expérience, ton super-pouvoir ! 💎",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.established.2') : "Sagesse + ambition = combo gagnant ! 🎯",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.age_situation.established.3') : "Tu connais tes forces, use-s'en ! ⚡"
+                        ]
+                    },
+
+                    // Revenus
+                    'income_level': {
+                        'starter': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.starter.1') : "Tout génie a commencé quelque part ! 🚀",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.starter.2') : "L'important c'est la progression ! 📈",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.starter.3') : "Petit budget, grandes ambitions ! 💫"
+                        ],
+                        'growing': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.growing.1') : "Sur la bonne trajectoire ! 🎯",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.growing.2') : "Momentum positif détecté ! ⚡",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.growing.3') : "Continue, ça paye ! 💰"
+                        ],
+                        'comfortable': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.comfortable.1') : "Bel équilibre financier ! ⚖️",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.comfortable.2') : "Stabilité = liberté de choix ! 🗽",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.comfortable.3') : "Tu géres comme un chef ! 👑"
+                        ],
+                        'high_earner': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.high_earner.1') : "Niveau expert débloqué ! 🏆",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.high_earner.2') : "Performance financière top ! 💎",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.income_level.high_earner.3') : "Tu joues dans la cour des grands ! 🎩"
+                        ]
+                    },
+
+                    // Priorités de vie
+                    'priority': {
+                        'location': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.location.1') : "Géolocalisation stratégique ! 🗺️",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.location.2') : "Le lieu façonne la vie ! 🏙️",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.location.3') : "Smart move, l'emplacement c'est tout ! 📍"
+                        ],
+                        'career': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.career.1') : "Ambition professionnelle au max ! 💼",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.career.2') : "Carrière first, respect ! 🚀",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.career.3') : "Le travail, ton terrain de jeu ! ⚡"
+                        ],
+                        'wealth': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.wealth.1') : "Vision patrimoniale claire ! 💰",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.wealth.2') : "L'argent travaille pour toi ! 📊",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.priority.wealth.3') : "Richesse = liberté ! 🦅"
+                        ]
+                    },
+
+                    // Style de vie
+                    'lifestyle_detailed': {
+                        'urban': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.urban.1') : "Urbain dans l'âme ! 🏙️ Énergie +",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.urban.2') : "City life = opportunités ! 🌃",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.urban.3') : "Le béton, ton habitat naturel ! 🏢",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.urban.4') : "Skyline addict detected ! 🏗️"
+                        ],
+                        'suburban': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.suburban.1') : "Équilibre parfait trouvé ! 🏡",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.suburban.2') : "Tranquillité + accessibilité ! ✨",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.suburban.3') : "Banlieue intelligente ! 🚂",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.suburban.4') : "Sweet spot lifestyle ! 🌸"
+                        ],
+                        'rural': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.rural.1') : "Nature = ressourcement ! 🌿",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.rural.2') : "Loin de la foule, près de l'essentiel ! 🍃",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.rural.3') : "Campagne = qualité de vie ! 🌾",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.rural.4') : "Green therapy activated ! 🌳"
+                        ],
+                        'digital_nomad': [
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.digital_nomad.1') : "Freedom lifestyle ! 🌍",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.digital_nomad.2') : "Le monde comme bureau ! 💻",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.digital_nomad.3') : "Nomade = liberté totale ! ⚡",
+                            window.revolutionaryI18n ? window.revolutionaryI18n.translate('zine.dynamic.lifestyle_detailed.digital_nomad.4') : "Wanderlust + WiFi = combo ! 🗺️"
+                        ]
+                    }
+                };
+
+                // Commentaires basés sur la progression - ENHANCED VERSION with i18n
+                const currentLang = window.revolutionaryI18n?.getCurrentLanguage() || 'fr';
+                const progressComments = {
+                    first: currentLang === 'en'
+                        ? ["Excellent start! 👟 Let's build your dream!", "Here we go! 🎬 Adventure starts now!"]
+                        : ["Premier pas, excellent début ! 👟 Construisons ton rêve !", "C'est parti, tu assures ! 🎬 L'aventure commence !"],
+                    quarter: currentLang === 'en'
+                        ? ["25% done! You're finding your rhythm! 🎵 On fire!", "Good pace, keep going! ⚡ Momentum building!"]
+                        : ["25% fait ! Tu prends le rythme ! 🎵 En feu !", "Bon rythme, continue ! ⚡ Momentum en construction !"],
+                    half: currentLang === 'en'
+                        ? ["Halfway there! You're doing perfectly! 🏃‍♀️ Halfway to greatness!", "50%! Excellent momentum! 🔥 Keep crushing it!"]
+                        : ["Mi-parcours ! Tu gères parfaitement ! 🏃‍♀️ À mi-chemin de la grandeur !", "50% ! Momentum excellent ! 🔥 Continue à tout déchirer !"],
+                    threequarter: currentLang === 'en'
+                        ? ["Final stretch! 🏁 Almost there, champion!", "75%! You're almost there! 🎯 Final push!"]
+                        : ["Dernière ligne droite ! 🏁 Presque là, champion !", "75% ! Tu touches au but ! 🎯 Dernier effort !"],
+                    final: currentLang === 'en'
+                        ? ["Last question! Champion! 🏆 Victory lap time!", "Final sprint! You're going to make it! 🚀 Epic finale!"]
+                        : ["Dernière question ! Champion ! 🏆 Tour de victoire !", "Sprint final ! Tu vas y arriver ! 🚀 Finale épique !"]
+                };
+
+                // Choisir le commentaire approprié
+                let selectedComment = null;
+
+                // 1. Commentaire spécialisé si disponible
+                if (dynamicComments[questionId] && dynamicComments[questionId][selectedValue]) {
+                    const options = dynamicComments[questionId][selectedValue];
+                    selectedComment = options[Math.floor(Math.random() * options.length)];
+                }
+
+                // 2. Commentaire de progression si pas de spécialisé
+                if (!selectedComment) {
+                    const progress = this.getProgressLevel();
+                    const progressOptions = progressComments[progress] || progressComments.quarter;
+                    selectedComment = progressOptions[Math.floor(Math.random() * progressOptions.length)];
+                }
+
+                // 3. Ajouter context intelligent selon le profil
+                selectedComment = this.addProfileContext(selectedComment, questionId, selectedValue);
+
+                // Éviter répétitions
+                if (selectedComment !== this.lastComment) {
+                    this.showMessage(selectedComment, 3500);
+                }
+            }
+
+            addProfileContext(comment, questionId, selectedValue) {
+                // Ajouter du contexte intelligent selon les réponses précédentes - ENHANCED
+                const profile = this.userProfile;
+                const currentLang = window.revolutionaryI18n?.getCurrentLanguage() || 'fr';
+
+                // Contexte intelligent multi-layer avec i18n
+                if (profile.age_situation === 'young_single' && questionId === 'income_level') {
+                    const contextText = currentLang === 'en'
+                        ? " Young + free = infinite potential! ⚡ The world is your oyster!"
+                        : " Jeune + libre = potentiel infini ! ⚡ Le monde t'appartient !";
+                    return comment + contextText;
+                }
+
+                if (profile.age_situation === 'young_couple' && questionId === 'priority') {
+                    const contextText = currentLang === 'en'
+                        ? " Dynamic duo decision! 💑 Double power activated!"
+                        : " Décision de duo dynamique ! 💑 Double pouvoir activé !";
+                    return comment + contextText;
+                }
+
+                if (profile.priority === 'career' && questionId === 'lifestyle_detailed') {
+                    const contextText = currentLang === 'en'
+                        ? " Career focus detected! 💼 Success-oriented lifestyle!"
+                        : " Focus carrière détecté ! 💼 Style de vie orienté succès !";
+                    return comment + contextText;
+                }
+
+                if (profile.priority === 'wealth' && questionId === 'income_level') {
+                    const contextText = currentLang === 'en'
+                        ? " Financial mastermind! 💰 Money strategy alignment!"
+                        : " Maître financier ! 💰 Alignement stratégie argent !";
+                    return comment + contextText;
+                }
+
+                if (profile.income_level === 'high_earner' && questionId === 'destination_country') {
+                    const contextText = currentLang === 'en'
+                        ? " Elite lifestyle incoming! 💎 Premium destination deserved!"
+                        : " Style de vie élite en approche ! 💎 Destination premium méritée !";
+                    return comment + contextText;
+                }
+
+                if (profile.destination_country === 'usa' && questionId === 'priority' && selectedValue === 'career') {
+                    const contextText = currentLang === 'en'
+                        ? " USA + Career = American Dream combo! 🇺🇸🚀"
+                        : " USA + Carrière = combo American Dream ! 🇺🇸🚀";
+                    return comment + contextText;
+                }
+
+                if (profile.lifestyle_detailed === 'digital_nomad' && questionId === 'destination_country') {
+                    const contextText = currentLang === 'en'
+                        ? " Nomad choosing home base! 🌍💻 Strategic positioning!"
+                        : " Nomade choisit sa base ! 🌍💻 Positionnement stratégique !";
+                    return comment + contextText;
+                }
+
+                return comment;
+            }
+
+            getProgressLevel() {
+                const totalQuestions = 15; // Estimation
+                const progress = this.questionCount / totalQuestions;
+
+                if (progress <= 0.25) return 'quarter';
+                if (progress <= 0.5) return 'half';
+                if (progress <= 0.75) return 'threequarter';
+                if (progress >= 0.9) return 'final';
+                return 'quarter';
+            }
+
+            showWelcomeMessage() {
+                const welcomeMessages = [
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.ready') :
+                        "Prêt(e) pour ton analyse IA ? 🤖 C'est parti !",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.comment') :
+                        "Salut ! Je vais commenter tes réponses ! 🎯",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.profile') :
+                        "Hey ! Ton profil parfait se construit ici ! ✨"
+                ];
+
+                const randomMessage = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+                this.showMessage(randomMessage);
+            }
+
+            showContextualTip() {
+                const tips = [
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.tip_authentic') :
+                        "💡 Sois authentique, l'IA détecte tout !",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.tip_refine') :
+                        "🎯 Chaque réponse affine ton profil !",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.tip_precise') :
+                        "🚀 Plus tu es précis, meilleurs sont les résultats !",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.tip_analyze') :
+                        "🔍 L'IA analyse 30+ critères par réponse !",
+                    window.revolutionaryI18n ?
+                        window.revolutionaryI18n.translate('zine.questionnaire.tip_future') :
+                        "⚡ Ton futur se dessine question par question !"
+                ];
+
+                const contextTip = tips[Math.floor(Math.random() * tips.length)];
+                this.showMessage(contextTip, 4000);
+            }
+
+            showMessage(text, duration = 4000) {
+                // Éviter les répétitions
+                if (text === this.lastComment) return;
+                this.lastComment = text;
+
+                if (text) {
+                    this.message.textContent = text;
+                }
+
+                this.bubble.classList.add('show');
+                this.isMessageVisible = true;
+
+                if (this.messageTimeout) {
+                    clearTimeout(this.messageTimeout);
+                }
+
+                this.messageTimeout = setTimeout(() => {
+                    this.hideMessage();
+                }, duration);
+            }
+
+            hideMessage() {
+                this.bubble.classList.remove('show');
+                this.isMessageVisible = false;
+
+                if (this.messageTimeout) {
+                    clearTimeout(this.messageTimeout);
+                    this.messageTimeout = null;
+                }
+            }
+
+            // Méthode publique pour déclencher commentaires depuis l'extérieur
+            commentOnAnswer(questionId, selectedValue, questionIndex = 0) {
+                this.onQuestionAnswered({ questionId, selectedValue, questionIndex });
+            }
+        }
+
+        // Initialiser le coach optimisé
+        document.addEventListener('DOMContentLoaded', () => {
+            window.questionnaireCoach = new OptimizedQuestionnaireCoach();
+
+            // Rendre disponible globalement pour les scripts externes
+            window.zineCoachComment = (questionId, selectedValue, questionIndex) => {
+                if (window.questionnaireCoach) {
+                    window.questionnaireCoach.commentOnAnswer(questionId, selectedValue, questionIndex);
+                }
+            };
+
+            // Auto-détecter les clics sur les options de questionnaire
+            document.addEventListener('click', (event) => {
+                // Détecter si c'est une option de questionnaire qui a été cliquée
+                const optionElement = event.target.closest('[data-option-value], .option-card, .question-option');
+
+                if (optionElement) {
+                    // Extraire les données de l'option
+                    const questionId = optionElement.dataset.questionId ||
+                        optionElement.closest('[data-question-id]')?.dataset.questionId ||
+                        'unknown';
+
+                    const selectedValue = optionElement.dataset.optionValue ||
+                        optionElement.dataset.value ||
+                        optionElement.value ||
+                        'unknown';
+
+                    const questionIndex = parseInt(optionElement.dataset.questionIndex || '0');
+
+                    console.log('🎯 Option détectée:', { questionId, selectedValue, questionIndex });
+
+                    // Délai pour laisser le temps à l'UI de se mettre à jour
+                    setTimeout(() => {
+                        if (window.questionnaireCoach) {
+                            window.questionnaireCoach.commentOnAnswer(questionId, selectedValue, questionIndex);
+                        }
+                    }, 300);
+                }
+            });
+        });
+
+        // Fonctions utilitaires globales pour intégration facile
+        window.ZineCoachUtils = {
+            // Fonction simple à appeler depuis n'importe où
+            comment: (questionId, selectedValue, questionIndex = 0) => {
+                window.zineCoachComment(questionId, selectedValue, questionIndex);
+            },
+
+            // Fonction avec délai personnalisé
+            commentDelayed: (questionId, selectedValue, delay = 500, questionIndex = 0) => {
+                setTimeout(() => {
+                    window.zineCoachComment(questionId, selectedValue, questionIndex);
+                }, delay);
+            },
+
+            // Fonction pour tips génériques
+            showTip: () => {
+                if (window.questionnaireCoach) {
+                    window.questionnaireCoach.showContextualTip();
+                }
+            }
+        };
+
+        // ===== MODE DÉMO/TEST (à retirer en production) =====
+        window.ZineCoachDemo = {
+            testInternational: () => window.ZineCoachUtils.comment('parcours_type', 'international'),
+            testNational: () => window.ZineCoachUtils.comment('parcours_type', 'national'),
+            testFrance: () => window.ZineCoachUtils.comment('destination_country', 'france'),
+            testUSA: () => window.ZineCoachUtils.comment('destination_country', 'usa'),
+            testYoung: () => window.ZineCoachUtils.comment('age_situation', 'young_single'),
+            testTip: () => window.ZineCoachUtils.showTip()
+        };
+
+        // Afficher dans la console les fonctions disponibles
+        console.log(`
+🤖 ZINE COACH IA - SYSTÈME OPTIMISÉ ACTIVÉ !
+
+📋 UTILISATION:
+• Automatique: Clique sur les options avec data-question-id et data-option-value
+• Manuel: window.ZineCoachUtils.comment('question_id', 'selected_value')
+• Tips: window.ZineCoachUtils.showTip()
+
+🧪 TEST DÉMO (dans la console):
+• window.ZineCoachDemo.testInternational()
+• window.ZineCoachDemo.testFrance()
+• window.ZineCoachDemo.testYoung()
+• window.ZineCoachDemo.testTip()
+
+✅ FONCTIONNALITÉS:
+• Anti-répétition intelligent
+• Commentaires contextuels
+• Profil utilisateur mémorisé
+• Progress-aware
+• 50+ commentaires uniques
+        `);
+    </script>
+</body>
+
+</html>

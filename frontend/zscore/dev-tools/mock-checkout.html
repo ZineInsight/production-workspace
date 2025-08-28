@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💳 Mock Stripe Checkout - Revolutionary Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .checkout-container {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stripe-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .stripe-logo h1 {
+            background: linear-gradient(45deg, #635bff, #00d924);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .product-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #e9ecef;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .product-description {
+            color: #6c757d;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .product-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+        }
+
+        .payment-form {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #635bff;
+            box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+        }
+
+        .card-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 12px;
+        }
+
+        .btn-pay {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(45deg, #635bff, #00d924);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .btn-pay:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 91, 255, 0.3);
+        }
+
+        .btn-pay:active {
+            transform: translateY(0);
+        }
+
+        .btn-cancel {
+            width: 100%;
+            padding: 12px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+            color: white;
+            text-decoration: none;
+        }
+
+        .security-info {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #155724;
+            text-align: center;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #635bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .demo-banner {
+            background: #fff3cd;
+            color: #856404;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #ffeaa7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="checkout-container">
+        <div class="demo-banner">
+            🧪 DEMO MODE - Paiement simulé pour les tests
+        </div>
+
+        <div class="stripe-logo">
+            <h1>💳 Stripe Checkout</h1>
+            <p style="color: #6c757d; margin-top: 5px;">Revolutionary Platform</p>
+        </div>
+
+        <div class="product-info">
+            <div class="product-name" id="product-name">Premium Feature</div>
+            <div class="product-description" id="product-description">Débloquez cette fonctionnalité premium</div>
+            <div class="product-price" id="product-price">€9.99</div>
+        </div>
+
+        <div class="payment-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="votre@email.com"
+                    value="test@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Numéro de carte</label>
+                <div class="card-row">
+                    <input type="text" id="card-number" class="form-control" placeholder="4242 4242 4242 4242"
+                        value="4242 4242 4242 4242" readonly>
+                    <input type="text" id="card-expiry" class="form-control" placeholder="12/28" value="12/28" readonly>
+                    <input type="text" id="card-cvc" class="form-control" placeholder="123" value="123" readonly>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cardholder-name">Nom du titulaire</label>
+                <input type="text" id="cardholder-name" class="form-control" placeholder="John Doe" value="Test User">
+            </div>
+        </div>
+
+        <button class="btn-pay" onclick="processPayment()">
+            💳 Payer maintenant - <span id="pay-amount">€9.99</span>
+        </button>
+
+        <a href="#" class="btn-cancel" onclick="cancelPayment()">Annuler</a>
+
+        <div class="security-info">
+            🔒 Paiement sécurisé par Stripe • 🛡️ Données chiffrées • ⚡ Accès immédiat
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Traitement du paiement en cours...</p>
+        </div>
+    </div>
+
+    <script>
+        // Récupérer les paramètres URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get('session_id');
+
+        // Configuration des produits
+        const products = {
+            'guide_unlock': {
+                name: '🔓 Guide Premium Unlock',
+                description: 'Accès permanent à nos guides premium exclusifs',
+                price: 4.99
+            },
+            'country_access': {
+                name: '🌍 Country Data Access',
+                description: 'Débloquer les données analytiques pour tous les pays',
+                price: 14.99
+            },
+            'unlimited_analyses': {
+                name: '🎯 Unlimited Analyses',
+                description: 'Analyses illimitées et insights avancés',
+                price: 9.99
+            },
+            'premium_insights': {
+                name: '💎 Premium Insights',
+                description: 'Rapports IA personnalisés et métriques avancées',
+                price: 29.99
+            },
+            'export_pdf': {
+                name: '📄 PDF Export Feature',
+                description: 'Export de tous vos rapports en format PDF',
+                price: 2.99
+            }
+        };
+
+        // Initialiser la page
+        async function initCheckout() {
+            if (!sessionId) {
+                alert('Session ID manquant');
+                return;
+            }
+
+            try {
+                // Récupérer les détails de la session
+                const response = await fetch(`/api/payments/session/${sessionId}`);
+                const data = await response.json();
+
+                if (data.success && data.session) {
+                    const session = data.session;
+                    const paywallType = session.paywall_type;
+
+                    if (products[paywallType]) {
+                        const product = products[paywallType];
+                        document.getElementById('product-name').textContent = product.name;
+                        document.getElementById('product-description').textContent = product.description;
+                        document.getElementById('product-price').textContent = `€${product.price}`;
+                        document.getElementById('pay-amount').textContent = `€${product.price}`;
+                    }
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement de la session:', error);
+            }
+        }
+
+        // Traiter le paiement (simulé)
+        async function processPayment() {
+            const payButton = document.querySelector('.btn-pay');
+            const loading = document.getElementById('loading');
+            const form = document.querySelector('.payment-form');
+
+            // Afficher le loading
+            form.style.display = 'none';
+            payButton.style.display = 'none';
+            loading.style.display = 'block';
+
+            // Simuler un délai de traitement
+            setTimeout(() => {
+                // Rediriger vers la page de succès
+                const successUrl = `http://localhost:8080/dashboard.html?payment=success&session_id=${sessionId}`;
+                window.location.href = successUrl;
+            }, 2000);
+        }
+
+        // Annuler le paiement
+        function cancelPayment() {
+            const cancelUrl = `http://localhost:8080/dashboard.html?payment=cancelled`;
+            window.location.href = cancelUrl;
+        }
+
+        // Initialiser au chargement
+        document.addEventListener('DOMContentLoaded', initCheckout);
+
+        console.log('💳 Mock Stripe Checkout initialized');
+        console.log('🔧 Session ID:', sessionId);
+    </script>
+</body>
+
+</html>

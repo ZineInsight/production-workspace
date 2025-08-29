@@ -77,7 +77,7 @@ class EnvironmentConfig {
             },
 
             direct_production: {
-                apiBaseUrl: 'https://zineinsight.com/api',  // MÊME DOMAINE AVEC PROXY NGINX !
+                apiBaseUrl: '/api',  // RELATIF - PROXY NGINX VERS BACKEND LOCAL !
                 wsUrl: 'wss://zineinsight.com/ws',
                 environment: 'production',
                 debug: true,

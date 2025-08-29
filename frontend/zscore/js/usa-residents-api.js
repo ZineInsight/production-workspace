@@ -23,7 +23,7 @@ class USAResidentsAPI {
         const hostname = window.location.hostname;
 
         if (hostname === 'zineinsight.com' || hostname.includes('zineinsight.com')) {
-            return 'https://zineinsight.com/api';
+            return '/api';  // Chemin relatif pour proxy nginx
         } else if (hostname === 'localhost' || hostname === '127.0.0.1') {
             return 'http://localhost:8000/api';
         } else {

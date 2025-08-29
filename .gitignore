@@ -1,0 +1,38 @@
+# GITIGNORE - PRODUCTION WORKSPACE
+# ================================
+
+# Documentation locale (ne pas commit)
+**/README.md
+**/*_README.md
+
+# Données et credentials sensibles
+*.json
+data/raw_datasets/
+data/cleaned_datasets/
+data/config/
+
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs
+*.log
+logs/
+
+# Streamlit
+.streamlit/
+
+# VS Code
+.vscode/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.DS_Store

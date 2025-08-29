@@ -32,7 +32,7 @@ class ContactFormManager {
 
             const response = await fetch('/contact.php', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             });
 

@@ -2083,6 +2083,7 @@ def create_app():
     # ===============================
 
     @app.route('/api/calculate', methods=['POST'])
+    @app.route('/calculate', methods=['POST'])  # Route pour le proxy NGINX
     def calculate_recommendations():
         """
         🌍 Universal recommendation endpoint with country ID support
@@ -2091,8 +2092,16 @@ def create_app():
         """
         try:
             data = request.get_json()
-            questionnaire = data.get('questionnaire', {})
+
+            # Support pour les deux formats de données:
+            # Format ancien: {"questionnaire": {...}, "country": "france"}
+            # Format nouveau: {"answers": {...}, "country": "world", "parcours": "international"}
+            questionnaire = data.get('questionnaire', data.get('answers', {}))
             selected_country = data.get('country', 'france').lower()
+            parcours = data.get('parcours', None)
+
+            logger.info(f"🔍 Calculate API called with country: {selected_country}, parcours: {parcours}")
+            logger.info(f"📋 Questionnaire keys: {list(questionnaire.keys())}")
 
             # Mapping des pays vers leurs algorithmes spécifiques
             country_algorithms = {
@@ -2110,16 +2119,23 @@ def create_app():
                 # 'mexico': mexico_residents_algo  # TODO: Add Mexico algorithm
             }
 
-            # Sélectionner l'algorithme approprié
-            algo = country_algorithms.get(selected_country, france_residents_algo)
+            # Gestion spéciale pour le parcours international (world)
+            if selected_country == 'world' or parcours == 'international':
+                logger.info("🌍 International questionnaire detected - using ZScore algorithm")
+                # Pour les questionnaires internationaux, on utilise l'algorithme ZScore général
+                recommendations = zscore_algo.calculate_recommendations(questionnaire, limit=10)
+                selected_country = 'world'  # Normaliser le pays
+            else:
+                # Sélectionner l'algorithme approprié pour un pays spécifique
+                algo = country_algorithms.get(selected_country, france_residents_algo)
 
-            # Calculer les recommandations
-            try:
-                recommendations = algo.calculate_recommendations(questionnaire, limit=10)
-            except Exception as calc_error:
-                logger.error(f"❌ Calculation error for {selected_country}: {calc_error}")
-                # Fallback vers France si erreur
-                recommendations = france_residents_algo.calculate_recommendations(questionnaire, limit=10)
+                # Calculer les recommandations
+                try:
+                    recommendations = algo.calculate_recommendations(questionnaire, limit=10)
+                except Exception as calc_error:
+                    logger.error(f"❌ Calculation error for {selected_country}: {calc_error}")
+                    # Fallback vers France si erreur
+                    recommendations = france_residents_algo.calculate_recommendations(questionnaire, limit=10)
 
             # Adapter les résultats avec country_id pour le nouveau système
             adapted_recommendations = []

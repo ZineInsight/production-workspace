@@ -20,7 +20,16 @@ __endpoints__ = ["/api/calculate", "/api/countries", "/api/stats"]
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from algorithms_historical.algo_expat import AlgorithmeExpat as ZScoreAlgorithm
+from algorithms_historical.algo_expat import AlgorithmeExpat
 from .routes import zscore_bp
+
+# Adaptateur pour compatibilité avec l'interface standard
+class ZScoreAlgorithm(AlgorithmeExpat):
+    def __init__(self):
+        super().__init__()
+
+    def calculate_recommendations(self, questionnaire, limit=10):
+        """Adaptateur pour compatibilité avec l'interface standard"""
+        return self.calculer_recommandations(questionnaire, country='world')[:limit]
 
 __all__ = ['ZScoreAlgorithm', 'zscore_bp']

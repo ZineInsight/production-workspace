@@ -36,6 +36,15 @@
     --text-secondary: #b3b3b3;
     --text-tertiary: #808080;
 
+    /* 🎭 REVOLUTIONARY THEME VARIABLES (MISSING) */
+    --revolution-bg: var(--bg-primary);
+    --revolution-bg-dark: var(--bg-secondary);
+    --revolution-text: var(--text-primary);
+    --revolution-text-muted: var(--text-secondary);
+    --revolution-accent: #FF6B6B;
+    --revolution-accent-light: rgba(255, 107, 107, 0.1);
+    --glass-blur: blur(20px);
+
     /* 📱 MODERN NEUTRALS */
     --neutral-50: #fafafa;
     --neutral-100: #f5f5f5;
@@ -751,8 +760,8 @@ body {
     margin: 0 auto;
     padding: 0 var(--space-6);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-16);
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 120px;
     align-items: center;
     min-height: calc(100vh - 80px);
 }

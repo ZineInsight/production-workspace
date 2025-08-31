@@ -10,6 +10,8 @@ CORS(app)
 
 # Configuration
 app.config['SECRET_KEY'] = 'your-secret-key-here'
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.jinja_env.auto_reload = True
 
 # Charger les données Amazon
 def load_amazon_data():
@@ -17,11 +19,11 @@ def load_amazon_data():
     try:
         with open('data/amazon_insights.json', 'r') as f:
             insights = json.load(f)
-        
+
         # Charger aussi les données brutes pour les graphiques détaillés
         products_df = pd.read_csv('data/amazon_products.csv')
         sales_df = pd.read_csv('data/amazon_sales_timeseries.csv')
-        
+
         return insights, products_df, sales_df
     except FileNotFoundError:
         print("⚠️ Données Amazon non trouvées. Lancez d'abord generate_amazon_data.py")
@@ -57,7 +59,7 @@ def index():
         },
         {
             'id': 'finance',
-            'title': 'Financial Market Analysis', 
+            'title': 'Financial Market Analysis',
             'subtitle': 'Sentiment-Driven Trading Signals',
             'description': 'AI-powered analysis combining S&P 500 data with news sentiment to predict market movements and generate trading signals.',
             'metrics': [
@@ -98,7 +100,7 @@ def index():
             'url': '/saas'
         }
     ]
-    
+
     return render_template('index.html', studies=studies)
 
 @app.route('/ecommerce')
@@ -106,7 +108,7 @@ def ecommerce_study():
     """Étude de cas E-commerce Amazon"""
     if not amazon_insights:
         return "Données Amazon non disponibles. Lancez d'abord la génération des données.", 500
-    
+
     return render_template('ecommerce.html', insights=amazon_insights)
 
 @app.route('/finance')
@@ -114,7 +116,7 @@ def finance_study():
     """Étude de cas Finance (placeholder)"""
     return render_template('coming_soon.html', study='Financial Market Analysis')
 
-@app.route('/saas') 
+@app.route('/saas')
 def saas_study():
     """Étude de cas SaaS (placeholder)"""
     return render_template('coming_soon.html', study='SaaS Customer Analytics')
@@ -135,7 +137,7 @@ def api_ecommerce_overview():
     """Métriques générales E-commerce"""
     if not amazon_insights:
         return jsonify({'error': 'Data not available'}), 500
-    
+
     return jsonify(amazon_insights['general_metrics'])
 
 @app.route('/api/ecommerce/categories')
@@ -143,7 +145,7 @@ def api_ecommerce_categories():
     """Performance par catégorie"""
     if not amazon_insights:
         return jsonify({'error': 'Data not available'}), 500
-        
+
     return jsonify(amazon_insights['category_performance'])
 
 @app.route('/api/ecommerce/seasonal')
@@ -151,7 +153,7 @@ def api_ecommerce_seasonal():
     """Tendances saisonnières"""
     if not amazon_insights:
         return jsonify({'error': 'Data not available'}), 500
-        
+
     return jsonify(amazon_insights['seasonal_trends'])
 
 @app.route('/api/ecommerce/pricing')
@@ -159,7 +161,7 @@ def api_ecommerce_pricing():
     """Insights pricing"""
     if not amazon_insights:
         return jsonify({'error': 'Data not available'}), 500
-        
+
     return jsonify(amazon_insights['pricing_insights'])
 
 @app.route('/api/ecommerce/top-performers')
@@ -167,7 +169,7 @@ def api_ecommerce_top_performers():
     """Top produits et marques"""
     if not amazon_insights:
         return jsonify({'error': 'Data not available'}), 500
-        
+
     return jsonify(amazon_insights['top_performers'])
 
 @app.route('/api/ecommerce/timeseries')
@@ -175,24 +177,24 @@ def api_ecommerce_timeseries():
     """Données temporelles pour graphiques"""
     if sales_df is None:
         return jsonify({'error': 'Data not available'}), 500
-    
+
     # Prendre les 90 derniers jours pour éviter trop de données
     recent_data = sales_df.tail(90)
-    
+
     timeseries_data = {
         'dates': recent_data['date'].tolist(),
         'sales': recent_data['total_sales'].tolist(),
         'revenue': recent_data['revenue'].round(2).tolist(),
         'orders': recent_data['orders'].tolist()
     }
-    
+
     return jsonify(timeseries_data)
 
 @app.route('/health')
 def health_check():
     """Health check endpoint"""
     return jsonify({
-        'status': 'healthy', 
+        'status': 'healthy',
         'timestamp': datetime.now().isoformat(),
         'data_loaded': amazon_insights is not None
     })
@@ -204,5 +206,5 @@ if __name__ == '__main__':
     else:
         print("✅ Données Amazon chargées avec succès!")
         print(f"📊 {amazon_insights['general_metrics']['total_products']:,} produits disponibles")
-    
+
     app.run(debug=True, host='0.0.0.0', port=5000)

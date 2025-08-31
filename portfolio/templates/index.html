@@ -1,89 +1,242 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZineInsight Analytics - Data Intelligence Showcase</title>
-    <meta name="description" content="Découvrez la puissance de l'analyse de données avec ZineInsight. 3 études de cas réelles démontrant notre expertise en E-commerce, Finance et SaaS.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <meta name="description"
+        content="Découvrez la puissance de l'analyse de données avec ZineInsight. 3 études de cas réelles démontrant notre expertise en E-commerce, Finance et SaaS.">
+
     <!-- Revolutionary CSS -->
-    <link rel="stylesheet" href="/css/revolutionary.css">
-    
+    <link rel="stylesheet" href="/analytics/static/css/revolutionary.css">
+
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Custom Styles -->
     <style>
         /* Additional styles for analytics showcase */
+
+        /* Hero Badge Fixes */
+        .hero-badge {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 8px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--revolution-primary);
+            margin-bottom: 30px;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        /* Revolutionary Buttons */
+        .btn-revolutionary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-revolutionary.btn-primary {
+            background: var(--gradient-revolutionary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-revolutionary.btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn-revolutionary.btn-outline {
+            background: transparent;
+            color: var(--revolution-text);
+            border: 2px solid var(--glass-border);
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .btn-revolutionary.btn-outline:hover {
+            background: var(--glass-bg);
+            border-color: var(--revolution-primary);
+            color: var(--revolution-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Layout Fixes */
+        .hero-revolutionary {
+            padding: 120px 0 80px;
+            background: var(--revolution-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto 0 0;
+            padding: 0 20px 0 40px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr !important;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+            padding-right: 20px;
+            padding-left: 0;
+            text-align: left !important;
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 30px;
+            color: var(--revolution-text);
+            max-width: 600px;
+        }
+
+        .gradient-text {
+            background: var(--gradient-revolutionary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--revolution-text-muted);
+            margin-bottom: 45px;
+            max-width: 550px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 50px;
+            justify-content: flex-start;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--revolution-text);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--revolution-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Floating Cards */
         .floating-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
             border-radius: 16px;
             backdrop-filter: var(--glass-blur);
-            padding: 20px;
+            padding: 24px;
             animation: float 6s ease-in-out infinite;
             transition: all 0.3s ease;
             position: relative;
-            margin: 10px;
-            width: 240px;
-            height: 140px;
+            margin: 15px;
+            width: 280px;
+            min-height: 160px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
-        
+
         .floating-card:hover {
             transform: translateY(-15px) scale(1.05) !important;
-            box-shadow: var(--revolutionary-shadow);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        
+
         .card-icon {
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             background: var(--gradient-revolutionary);
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            margin-right: 12px;
-            font-size: 14px;
+            margin-right: 15px;
+            font-size: 18px;
         }
-        
+
         .card-title {
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 700;
             color: var(--revolution-text);
         }
-        
+
         .metric-preview {
             text-align: center;
-            padding-top: 10px;
+            padding-top: 15px;
         }
-        
+
         .metric-value {
-            font-size: 28px;
-            font-weight: 700;
+            font-size: 36px;
+            font-weight: 900;
             background: var(--gradient-revolutionary);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             line-height: 1;
+            margin-bottom: 8px;
         }
-        
+
         .metric-label {
-            font-size: 12px;
+            font-size: 14px;
             color: var(--revolution-text-muted);
-            margin-top: 4px;
+            font-weight: 500;
         }
-        
+
         .visual-container {
             display: flex;
             flex-direction: column;
@@ -91,32 +244,90 @@
             justify-content: center;
             position: relative;
             height: 500px;
+            width: 100%;
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
-        
+
+        /* Section Styles */
+        .section-revolutionary {
+            padding: 100px 0;
+            background: var(--revolution-bg);
+        }
+
+        .container-revolutionary {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-badge {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 8px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--revolution-primary);
+            margin-bottom: 20px;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--revolution-text);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--revolution-text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Case Studies Grid */
         .case-studies-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            gap: 40px;
+            margin-top: 60px;
         }
-        
+
         .case-study-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
-            border-radius: 20px;
+            border-radius: 24px;
             backdrop-filter: var(--glass-blur);
-            padding: 30px;
+            padding: 40px;
             transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
         }
-        
+
         .case-study-card::before {
             content: '';
             position: absolute;
@@ -128,203 +339,312 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
+        .case-study-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
         .case-study-card:hover::before {
             opacity: 1;
         }
-        
+
         .case-study-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
-        
+
         .case-study-icon {
-            width: 48px;
-            height: 48px;
+            width: 56px;
+            height: 56px;
             background: var(--gradient-revolutionary);
-            border-radius: 12px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 20px;
+            font-size: 24px;
         }
-        
+
         .case-study-badge {
             background: var(--revolution-primary-light);
             color: var(--revolution-primary);
-            padding: 6px 12px;
+            padding: 6px 16px;
             border-radius: 20px;
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
+
         .case-study-title {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 28px;
+            font-weight: 800;
             color: var(--revolution-text);
-            margin: 20px 0 15px 0;
+            margin: 25px 0 20px 0;
+            line-height: 1.2;
         }
-        
+
         .case-study-description {
             color: var(--revolution-text-muted);
-            line-height: 1.6;
-            margin-bottom: 25px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            font-size: 16px;
         }
-        
+
         .case-study-metrics {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            margin-bottom: 25px;
-            padding: 20px;
+            margin-bottom: 30px;
+            padding: 25px;
             background: var(--revolution-bg-dark);
-            border-radius: 12px;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
         }
-        
+
         .metric-item {
             text-align: center;
         }
-        
+
         .metric-item .metric-label {
             font-size: 12px;
             color: var(--revolution-text-muted);
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
         }
-        
+
         .metric-item .metric-value {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 800;
             color: var(--revolution-text);
         }
-        
+
         .case-study-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
-        
+
         .tag {
             background: var(--revolution-secondary-light);
             color: var(--revolution-secondary);
-            padding: 6px 12px;
-            border-radius: 16px;
+            padding: 8px 16px;
+            border-radius: 20px;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 600;
         }
-        
+
         .case-study-cta {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             color: var(--revolution-primary);
-            font-weight: 600;
+            font-weight: 700;
             text-decoration: none;
             transition: all 0.3s ease;
+            font-size: 16px;
         }
-        
+
         .case-study-cta:hover {
             transform: translateX(10px);
             color: var(--revolution-primary-dark);
         }
-        
+
+        /* Insights Grid */
         .insights-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
         }
-        
+
         .insight-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
-            border-radius: 20px;
+            border-radius: 24px;
             backdrop-filter: var(--glass-blur);
-            padding: 30px;
+            padding: 40px;
             text-align: center;
             transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
         }
-        
+
         .insight-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--revolutionary-shadow);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
-        
+
         .insight-icon {
-            width: 64px;
-            height: 64px;
+            width: 80px;
+            height: 80px;
             background: var(--gradient-revolutionary);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
+            margin: 0 auto 25px;
             color: white;
-            font-size: 24px;
+            font-size: 32px;
         }
-        
+
         .insight-title {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 24px;
+            font-weight: 800;
             color: var(--revolution-text);
-            margin-bottom: 15px;
-        }
-        
-        .insight-description {
-            color: var(--revolution-text-muted);
-            line-height: 1.6;
             margin-bottom: 20px;
         }
-        
+
+        .insight-description {
+            color: var(--revolution-text-muted);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
         .insight-tech {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 10px;
             justify-content: center;
         }
-        
+
         .tech-tag {
             background: var(--revolution-accent-light);
             color: var(--revolution-accent);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 11px;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 12px;
             font-weight: 600;
         }
-        
+
+        /* Header */
+        .header-revolutionary {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
         .header-revolutionary.scrolled {
             background: var(--glass-bg);
             backdrop-filter: var(--glass-blur);
-            border-bottom: 1px solid var(--glass-border);
         }
-        
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--revolution-text);
+            line-height: 1;
+        }
+
+        .brand-tagline {
+            font-size: 12px;
+            color: var(--revolution-text-muted);
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--revolution-text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link.active,
+        .nav-link:hover {
+            color: var(--revolution-primary);
+        }
+
+        .nav-icon {
+            font-size: 16px;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 42px;
+            }
+
             .case-studies-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
             }
-            
+
             .case-study-metrics {
                 grid-template-columns: 1fr;
                 gap: 15px;
             }
-            
+
             .floating-card {
-                width: 200px;
-                height: 120px;
-                padding: 15px;
+                width: 250px;
+                min-height: 140px;
+                padding: 20px;
             }
-            
+
             .visual-container {
                 height: 400px;
             }
+
+            .hero-stats {
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
         }
     </style>
+    <!-- Template reloaded: 2025-08-31 20:57 -->
 </head>
 
 <body class="revolutionary-body">
@@ -381,10 +701,11 @@
                     Transforming Data into
                     <span class="gradient-text">Actionable Insights</span>
                 </h1>
-                
+
                 <p class="hero-description">
-                    Découvrez comment ZineInsight analyse les données pour révéler des opportunités cachées, 
-                    optimiser les performances et prédire les tendances futures. 3 études de cas réelles avec de vraies données.
+                    Découvrez comment ZineInsight analyse les données pour révéler des opportunités cachées,
+                    optimiser les performances et prédire les tendances futures. 3 études de cas réelles avec de vraies
+                    données.
                 </p>
 
                 <!-- Hero Stats -->
@@ -472,7 +793,7 @@
                 </div>
                 <h2 class="section-title">Trois Analyses Révolutionnaires</h2>
                 <p class="section-description">
-                    Chaque étude démontre une approche différente de l'analyse de données, 
+                    Chaque étude démontre une approche différente de l'analyse de données,
                     avec des insights concrets et des recommandations actionnables.
                 </p>
             </div>
@@ -486,10 +807,10 @@
                         </div>
                         <div class="case-study-badge">E-commerce</div>
                     </div>
-                    
+
                     <h3 class="case-study-title">Amazon Product Analytics</h3>
                     <p class="case-study-description">
-                        Analyse approfondie de 50,000+ produits Amazon pour optimiser pricing, 
+                        Analyse approfondie de 50,000+ produits Amazon pour optimiser pricing,
                         inventory et identifier les opportunités de croissance.
                     </p>
 
@@ -528,10 +849,10 @@
                         </div>
                         <div class="case-study-badge">Finance</div>
                     </div>
-                    
+
                     <h3 class="case-study-title">Trading Algorithm Analysis</h3>
                     <p class="case-study-description">
-                        Développement d'un système de trading basé sur l'analyse des sentiments 
+                        Développement d'un système de trading basé sur l'analyse des sentiments
                         et les patterns techniques du marché S&P 500.
                     </p>
 
@@ -570,10 +891,10 @@
                         </div>
                         <div class="case-study-badge">SaaS</div>
                     </div>
-                    
+
                     <h3 class="case-study-title">Customer Churn Prediction</h3>
                     <p class="case-study-description">
-                        Machine Learning pour prédire et prévenir la perte de clients, 
+                        Machine Learning pour prédire et prévenir la perte de clients,
                         avec segmentation comportementale et stratégies de rétention.
                     </p>
 
@@ -617,7 +938,7 @@
                 </div>
                 <h2 class="section-title">Méthodologie ZineInsight</h2>
                 <p class="section-description">
-                    Notre approche unique combine analytics avancés, machine learning 
+                    Notre approche unique combine analytics avancés, machine learning
                     et visualisations interactives pour révéler des insights actionnables.
                 </p>
             </div>
@@ -644,7 +965,8 @@
                     </div>
                     <h3 class="insight-title">Analytics Avancés</h3>
                     <p class="insight-description">
-                        Analyses statistiques poussées et modélisation prédictive pour optimiser les performances business.
+                        Analyses statistiques poussées et modélisation prédictive pour optimiser les performances
+                        business.
                     </p>
                     <div class="insight-tech">
                         <span class="tech-tag">Pandas</span>
@@ -675,7 +997,7 @@
     <script>
         // Smooth scrolling for navigation
         document.querySelectorAll('.nav-link, .btn-revolutionary, .case-study-cta').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 if (this.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
@@ -690,7 +1012,7 @@
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
@@ -698,7 +1020,7 @@
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').substring(1) === current) {
@@ -722,7 +1044,7 @@
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-10px) scale(1.02)';
             });
-            
+
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0) scale(1)';
             });
@@ -733,11 +1055,12 @@
             card.addEventListener('mouseenter', () => {
                 card.style.animationPlayState = 'paused';
             });
-            
+
             card.addEventListener('mouseleave', () => {
                 card.style.animationPlayState = 'running';
             });
         });
     </script>
 </body>
+
 </html>

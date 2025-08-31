@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Analytics - ZineInsight</title>
+    <meta name="description"
+        content="Analyse approfondie de 50,000+ produits Amazon pour optimiser pricing, inventory et identifier les opportunités de croissance.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Revolutionary CSS -->
+    <link rel="stylesheet" href="/css/revolutionary.css">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        .dashboard-header {
+            background: var(--gradient-revolutionary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dashboard-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .dashboard-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dashboard-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dashboard-nav {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .dashboard-nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-tab {
+            color: var(--revolution-text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .nav-tab.active,
+        .nav-tab:hover {
+            color: var(--revolution-primary);
+            border-bottom-color: var(--revolution-primary);
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--revolution-text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--revolution-primary);
+            transform: translateX(-5px);
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .metric-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: var(--glass-blur);
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-revolutionary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--revolutionary-shadow);
+        }
+
+        .metric-card:hover::before {
+            opacity: 1;
+        }
+
+        .metric-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .metric-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-revolutionary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .metric-trend {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .metric-trend.positive {
+            color: var(--revolution-success);
+        }
+
+        .metric-trend.negative {
+            color: var(--revolution-danger);
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--revolution-text);
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            color: var(--revolution-text-muted);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .metric-description {
+            color: var(--revolution-text-muted);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .chart-container {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: var(--glass-blur);
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .chart-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--revolution-text);
+        }
+
+        .chart-filters {
+            display: flex;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            color: var(--revolution-text-muted);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--revolution-primary);
+            color: white;
+            border-color: var(--revolution-primary);
+        }
+
+        .insights-section {
+            margin: 50px 0;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .insight-item {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            backdrop-filter: var(--glass-blur);
+            padding: 25px;
+            position: relative;
+        }
+
+        .insight-priority {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .insight-priority.high {
+            background: var(--revolution-danger);
+        }
+
+        .insight-priority.medium {
+            background: var(--revolution-warning);
+        }
+
+        .insight-priority.low {
+            background: var(--revolution-success);
+        }
+
+        .insight-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--revolution-text);
+            margin-bottom: 15px;
+        }
+
+        .insight-description {
+            color: var(--revolution-text-muted);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .insight-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--revolution-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .insight-action:hover {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .dashboard-nav-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-tabs {
+                gap: 20px;
+            }
+
+            .dashboard-title {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body class="revolutionary-body">
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+        <div class="container-revolutionary">
+            <h1 class="dashboard-title">
+                <i class="fas fa-shopping-cart" style="margin-right: 20px;"></i>
+                Amazon Product Analytics
+            </h1>
+            <p class="dashboard-subtitle">
+                Analyse approfondie de 50,847 produits avec insights actionnables pour optimiser votre stratégie
+                e-commerce
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="dashboard-nav">
+        <div class="dashboard-nav-content">
+            <a href="/" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour aux Case Studies</span>
+            </a>
+
+            <div class="nav-tabs">
+                <a href="#overview" class="nav-tab active">Overview</a>
+                <a href="#revenue" class="nav-tab">Revenue Analysis</a>
+                <a href="#categories" class="nav-tab">Categories</a>
+                <a href="#insights" class="nav-tab">Insights</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-revolutionary">
+        <!-- Key Metrics -->
+        <div id="overview" class="dashboard-grid">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+15.3%</span>
+                    </div>
+                </div>
+                <div class="metric-value">50,847</div>
+                <div class="metric-label">Produits Analysés</div>
+                <div class="metric-description">
+                    Dataset complet avec 731 jours de données de ventes, covering multiple categories et prix ranges.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+23.7%</span>
+                    </div>
+                </div>
+                <div class="metric-value">€2.8M</div>
+                <div class="metric-label">Revenue Total Analysé</div>
+                <div class="metric-description">
+                    Chiffre d'affaires cumulé sur la période d'analyse avec identification des drivers de croissance.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+847%</span>
+                    </div>
+                </div>
+                <div class="metric-value">847%</div>
+                <div class="metric-label">ROI Potentiel Identifié</div>
+                <div class="metric-description">
+                    Amélioration potentielle du ROI grâce aux optimisations de pricing et inventory management.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="metric-trend neutral">
+                        <i class="fas fa-minus"></i>
+                        <span>Stable</span>
+                    </div>
+                </div>
+                <div class="metric-value">18</div>
+                <div class="metric-label">Catégories Analysées</div>
+                <div class="metric-description">
+                    Distribution across Electronics, Home & Garden, Books, Sports et 14 autres catégories principales.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+12.4%</span>
+                    </div>
+                </div>
+                <div class="metric-value">4.2</div>
+                <div class="metric-label">Rating Moyen</div>
+                <div class="metric-description">
+                    Score de satisfaction client moyen avec corrélation forte entre rating et performance de ventes.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>-34%</span>
+                    </div>
+                </div>
+                <div class="metric-value">731</div>
+                <div class="metric-label">Jours de Données</div>
+                <div class="metric-description">
+                    Période d'analyse de 2 ans avec détection des patterns saisonniers et cycliques.
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Analysis Chart -->
+        <div id="revenue" class="chart-container">
+            <div class="chart-header">
+                <h3 class="chart-title">Évolution du Revenue par Période</h3>
+                <div class="chart-filters">
+                    <button class="filter-btn active" onclick="updateChart('monthly')">Mensuel</button>
+                    <button class="filter-btn" onclick="updateChart('quarterly')">Trimestriel</button>
+                    <button class="filter-btn" onclick="updateChart('yearly')">Annuel</button>
+                </div>
+            </div>
+            <canvas id="revenueChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Category Performance -->
+        <div id="categories" class="chart-container">
+            <div class="chart-header">
+                <h3 class="chart-title">Performance par Catégorie</h3>
+                <div class="chart-filters">
+                    <button class="filter-btn active" onclick="updateCategoryChart('revenue')">Revenue</button>
+                    <button class="filter-btn" onclick="updateCategoryChart('volume')">Volume</button>
+                    <button class="filter-btn" onclick="updateCategoryChart('growth')">Croissance</button>
+                </div>
+            </div>
+            <canvas id="categoryChart" width="400" height="300"></canvas>
+        </div>
+
+        <!-- Key Insights -->
+        <div id="insights" class="insights-section">
+            <div class="section-header">
+                <h2 class="section-title">Insights Clés & Recommandations</h2>
+                <p class="section-description">
+                    Découvertes importantes et actions recommandées basées sur l'analyse des données Amazon.
+                </p>
+            </div>
+
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <div class="insight-priority high"></div>
+                    <h4 class="insight-title">Optimisation Pricing Dynamique</h4>
+                    <p class="insight-description">
+                        Les produits avec pricing dynamique génèrent 34% de revenue en plus.
+                        Implémenter un système de prix adaptatif basé sur la demande et la concurrence.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Voir la stratégie</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-priority high"></div>
+                    <h4 class="insight-title">Seasonality Impact</h4>
+                    <p class="insight-description">
+                        Q4 génère 67% du revenue annuel. Ajuster l'inventory et le marketing
+                        pour maximiser les périodes de forte demande.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Plan saisonnier</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-priority medium"></div>
+                    <h4 class="insight-title">Category Cross-Selling</h4>
+                    <p class="insight-description">
+                        Electronics + Accessories montrent une forte corrélation d'achat.
+                        Opportunité de bundling pour augmenter l'AOV de 23%.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Stratégie bundling</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-priority medium"></div>
+                    <h4 class="insight-title">Rating Optimization</h4>
+                    <p class="insight-description">
+                        Produits avec rating >4.5 ont un taux de conversion 156% plus élevé.
+                        Focus sur l'amélioration de la satisfaction client.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Action plan qualité</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-priority low"></div>
+                    <h4 class="insight-title">Long-tail Opportunities</h4>
+                    <p class="insight-description">
+                        28% des profits viennent de produits niche avec faible volume mais marge élevée.
+                        Développer le catalogue long-tail.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Stratégie niche</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-priority low"></div>
+                    <h4 class="insight-title">Inventory Turnover</h4>
+                    <p class="insight-description">
+                        Optimiser le stock turnover peut réduire les coûts de 18%.
+                        Implémenter un système de prévision de demande.
+                    </p>
+                    <a href="#" class="insight-action">
+                        <span>Modèle prédictif</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Revenue Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        let revenueChart = new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Revenue (€)',
+                    data: [120000, 135000, 142000, 138000, 155000, 148000, 162000, 158000, 178000, 245000, 298000, 325000],
+                    borderColor: '#0066FF',
+                    backgroundColor: 'rgba(0, 102, 255, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#8B949E',
+                            callback: function (value) {
+                                return '€' + (value / 1000) + 'K';
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#8B949E'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Category Chart
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        let categoryChart = new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Electronics', 'Home & Garden', 'Books', 'Sports', 'Fashion', 'Beauty', 'Others'],
+                datasets: [{
+                    data: [425000, 324000, 287000, 245000, 198000, 156000, 365000],
+                    backgroundColor: [
+                        '#0066FF',
+                        '#00C896',
+                        '#FF6B6B',
+                        '#4ECDC4',
+                        '#45B7D1',
+                        '#FFA726',
+                        '#AB47BC'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#8B949E',
+                            padding: 20
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart update functions
+        function updateChart(period) {
+            // Update active filter
+            document.querySelectorAll('.chart-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update chart data based on period
+            const data = {
+                monthly: [120000, 135000, 142000, 138000, 155000, 148000, 162000, 158000, 178000, 245000, 298000, 325000],
+                quarterly: [397000, 451000, 498000, 868000],
+                yearly: [2214000]
+            };
+
+            const labels = {
+                monthly: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                quarterly: ['Q1', 'Q2', 'Q3', 'Q4'],
+                yearly: ['2024']
+            };
+
+            revenueChart.data.labels = labels[period];
+            revenueChart.data.datasets[0].data = data[period];
+            revenueChart.update();
+        }
+
+        function updateCategoryChart(metric) {
+            // Update active filter
+            const parentFilters = event.target.parentElement;
+            parentFilters.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            const data = {
+                revenue: [425000, 324000, 287000, 245000, 198000, 156000, 365000],
+                volume: [8500, 6400, 5700, 4900, 3900, 3100, 7300],
+                growth: [23.5, 18.2, 15.7, 12.4, 8.9, 6.2, 14.8]
+            };
+
+            categoryChart.data.datasets[0].data = data[metric];
+            categoryChart.update();
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-tab').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active navigation state
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('[id]');
+            const navLinks = document.querySelectorAll('.nav-tab');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

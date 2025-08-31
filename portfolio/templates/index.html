@@ -245,6 +245,9 @@
             position: relative;
             height: 550px;
             width: 100%;
+            /* Adjust alignment to move content to the right */
+            align-items: flex-end;
+            margin-right: -20px;
         }
 
         /* Override spécifique pour cette page analytics */
@@ -284,8 +287,7 @@
         }
 
         .container-revolutionary {
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 100%;
             padding: 0 20px;
         }
 
@@ -328,7 +330,7 @@
         /* Case Studies Grid */
         .case-studies-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 60px;
         }
@@ -680,21 +682,21 @@
                     <li class="nav-item">
                         <a href="#overview" class="nav-link active">
                             <i class="fas fa-chart-line nav-icon"></i>
-                            <span>Overview</span>
+                            <span>Vue d'ensemble</span>
                             <div class="nav-indicator"></div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#case-studies" class="nav-link">
                             <i class="fas fa-microscope nav-icon"></i>
-                            <span>Case Studies</span>
+                            <span>Études de cas</span>
                             <div class="nav-indicator"></div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#insights" class="nav-link">
                             <i class="fas fa-lightbulb nav-icon"></i>
-                            <span>Insights</span>
+                            <span>Perspectives</span>
                             <div class="nav-indicator"></div>
                         </a>
                     </li>
@@ -710,8 +712,8 @@
 
                 <!-- Hero Titles -->
                 <h1 class="hero-title">
-                    Transforming Data into
-                    <span class="gradient-text">Actionable Insights</span>
+                    Transformer les données en
+                    <span class="gradient-text">Perspectives exploitables</span>
                 </h1>
 
                 <p class="hero-description">
@@ -727,11 +729,11 @@
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50K+</div>
-                        <div class="stat-label">Data Points</div>
+                        <div class="stat-label">Points de données</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">12</div>
-                        <div class="stat-label">Insights Clés</div>
+                        <div class="stat-label">Perspectives clés</div>
                     </div>
                 </div>
 
@@ -739,11 +741,11 @@
                 <div class="hero-cta">
                     <a href="#case-studies" class="btn-revolutionary btn-primary">
                         <i class="fas fa-rocket"></i>
-                        <span>Explorer les Analyses</span>
+                        <span>Explorer les analyses</span>
                     </a>
                     <a href="/api/analytics" class="btn-revolutionary btn-outline">
                         <i class="fas fa-code"></i>
-                        <span>API Documentation</span>
+                        <span>Documentation API</span>
                     </a>
                 </div>
             </div>
@@ -756,11 +758,11 @@
                             <div class="card-icon">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <span class="card-title">E-commerce Analytics</span>
+                            <span class="card-title">Analyse E-commerce</span>
                         </div>
                         <div class="metric-preview">
                             <div class="metric-value">+847%</div>
-                            <div class="metric-label">ROI Improvement</div>
+                            <div class="metric-label">Amélioration du ROI</div>
                         </div>
                     </div>
 
@@ -769,11 +771,11 @@
                             <div class="card-icon">
                                 <i class="fas fa-chart-candlestick"></i>
                             </div>
-                            <span class="card-title">Finance Trading</span>
+                            <span class="card-title">Trading Finance</span>
                         </div>
                         <div class="metric-preview">
                             <div class="metric-value">73.4%</div>
-                            <div class="metric-label">Accuracy Rate</div>
+                            <div class="metric-label">Taux de précision</div>
                         </div>
                     </div>
 
@@ -782,11 +784,11 @@
                             <div class="card-icon">
                                 <i class="fas fa-users"></i>
                             </div>
-                            <span class="card-title">SaaS Retention</span>
+                            <span class="card-title">Rétention SaaS</span>
                         </div>
                         <div class="metric-preview">
                             <div class="metric-value">-67%</div>
-                            <div class="metric-label">Churn Reduction</div>
+                            <div class="metric-label">Réduction du churn</div>
                         </div>
                     </div>
                 </div>
@@ -802,7 +804,7 @@
                     <i class="fas fa-microscope"></i>
                     <span>Case Studies</span>
                 </div>
-                <h2 class="section-title">Trois Analyses Révolutionnaires</h2>
+                <h2 class="section-title">Trois Analyses</h2>
                 <p class="section-description">
                     Chaque étude démontre une approche différente de l'analyse de données,
                     avec des insights concrets et des recommandations actionnables.
@@ -831,7 +833,7 @@
                             <span class="metric-value">50,847</span>
                         </div>
                         <div class="metric-item">
-                            <span class="metric-label">Période</span>
+                            <span class="metric-label">Période étudiée</span>
                             <span class="metric-value">24 mois</span>
                         </div>
                         <div class="metric-item">

@@ -1439,7 +1439,8 @@ body {
     font-weight: var(--font-weight-bold);
 }
 
-.use-case, .roi-estimate {
+.use-case,
+.roi-estimate {
     font-size: 0.875rem;
     color: var(--text-secondary);
     line-height: 1.4;

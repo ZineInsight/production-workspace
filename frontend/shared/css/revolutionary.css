@@ -1401,6 +1401,309 @@ body {
     margin: 0 auto;
 }
 
+/* Services Details Styles */
+.service-details {
+    margin: var(--space-6) 0;
+}
+
+.detail-section {
+    margin-bottom: var(--space-4);
+}
+
+.detail-title {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--revolution-primary);
+    margin-bottom: var(--space-2);
+}
+
+.detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-list li {
+    padding: var(--space-1) 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: var(--space-4);
+}
+
+.detail-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--revolution-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+.use-case, .roi-estimate {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.roi-estimate {
+    color: var(--revolution-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Testimonials Styles */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-16);
+}
+
+.testimonial-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-6);
+    box-shadow: var(--glass-shadow);
+    transition: all var(--duration-300) var(--ease-out);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-revolutionary);
+    opacity: 0;
+    transition: opacity var(--duration-300) var(--ease-out);
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-text::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--revolution-primary);
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-family: serif;
+    opacity: 0.3;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--space-4);
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-name {
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.author-role {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.testimonial-impact {
+    flex-shrink: 0;
+}
+
+.impact-badge {
+    display: inline-block;
+    background: var(--gradient-secondary);
+    color: white;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Power BI Advantages Styles */
+.powerbi-advantages {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-16);
+}
+
+.advantage-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-6);
+    box-shadow: var(--glass-shadow);
+    transition: all var(--duration-300) var(--ease-out);
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-revolutionary);
+    border-radius: var(--radius-2xl);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity var(--duration-300) var(--ease-out);
+}
+
+.advantage-card:hover::before {
+    opacity: 0.1;
+}
+
+.advantage-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.advantage-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    display: block;
+}
+
+.advantage-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.advantage-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+}
+
+.advantage-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantage-features li {
+    padding: var(--space-1) 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: var(--space-4);
+}
+
+.advantage-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--revolution-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Comparison Table */
+.competition-comparison {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
+    box-shadow: var(--glass-shadow);
+}
+
+.comparison-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+}
+
+.comparison-table {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-4);
+    align-items: center;
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    transition: background var(--duration-200) var(--ease-out);
+}
+
+.comparison-row:hover {
+    background: var(--glass-bg);
+}
+
+.feature {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+}
+
+.powerbi {
+    background: var(--gradient-secondary);
+    color: white;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.competitor {
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 0.875rem;
+}
+
 /* ===== PRODUCTS REVOLUTIONARY ===== */
 .products-revolutionary {
     position: relative;

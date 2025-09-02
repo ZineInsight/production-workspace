@@ -1,0 +1,16 @@
+name,region,dept,weight,type,estimated_ca
+Paris,Île-de-France,75,0.2,Métropole,114800.0
+Lyon,Auvergne-Rhône-Alpes,69,0.06,Métropole,34440.0
+Marseille,Provence-Alpes-Côte d'Azur,13,0.04,Métropole,22960.0
+Toulouse,Occitanie,31,0.03,Métropole,17220.0
+Nice,Provence-Alpes-Côte d'Azur,06,0.025,Grande Ville,14350.0
+Nantes,Pays de la Loire,44,0.02,Métropole,11480.0
+Strasbourg,Grand Est,67,0.02,Métropole,11480.0
+Montpellier,Occitanie,34,0.02,Grande Ville,11480.0
+Bordeaux,Nouvelle-Aquitaine,33,0.02,Métropole,11480.0
+Lille,Hauts-de-France,59,0.015,Métropole,8610.0
+Rennes,Bretagne,35,0.015,Grande Ville,8610.0
+Annecy,Auvergne-Rhône-Alpes,74,0.01,Ville Moyenne,5740.0
+Grenoble,Auvergne-Rhône-Alpes,38,0.01,Grande Ville,5740.0
+Aix-en-Provence,Provence-Alpes-Côte d'Azur,13,0.01,Grande Ville,5740.0
+Tours,Centre-Val de Loire,37,0.005,Ville Moyenne,2870.0

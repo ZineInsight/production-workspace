@@ -1,0 +1,51 @@
+products_id,pdt_name,category_1,category_2,category_3,pdt_segment,products_status,statut_stock,performance
+1,Produit Sneakers 001,Mode,Chaussures,Sneakers,Économique,inactive,0.0,0.0
+2,Produit Casques 002,Électronique,Audio,Casques,Premium,active,88997.25000000001,15079.500000000004
+3,Produit iPhone 003,Électronique,Smartphones,iPhone,Économique,active,66897.0,6231.000000000002
+4,Produit iPhone 004,Électronique,Smartphones,iPhone,Économique,active,51064.799999999996,8133.119999999997
+5,Produit Compléments 005,Santé,Bien-être,Compléments,Économique,active,2869.92,163.4399999999997
+6,Produit Sneakers 006,Mode,Chaussures,Sneakers,Premium,active,433.08,80.51999999999998
+7,Produit Compléments 007,Santé,Bien-être,Compléments,Standard,inactive,0.0,0.0
+8,Produit Casques 008,Électronique,Audio,Casques,Économique,active,14037.51,1006.4600000000007
+9,Produit Coussins 009,Maison,Décoration,Coussins,Standard,active,1351.22,188.24000000000007
+10,Produit T-shirts 010,Mode,Vêtements Homme,T-shirts,Standard,active,6225.44,966.1599999999999
+11,Produit Yoga 011,Sport,Fitness,Yoga,Économique,active,4127.06,749.0000000000005
+12,Produit Coussins 012,Maison,Décoration,Coussins,Premium,active,26669.699999999997,2736.899999999997
+13,Produit Robes 013,Mode,Vêtements Femme,Robes,Standard,active,18614.77,2076.9099999999994
+14,Produit iPhone 014,Électronique,Smartphones,iPhone,Standard,active,34580.200000000004,2041.6600000000024
+15,Produit Ustensiles 015,Maison,Cuisine,Ustensiles,Standard,active,507.64,99.65999999999997
+16,Produit Casques 016,Électronique,Audio,Casques,Standard,active,29733.2,3467.7999999999975
+17,Produit Ustensiles 017,Maison,Cuisine,Ustensiles,Standard,active,7392.48,122.39999999999918
+18,Produit Micro-ondes 018,Maison,Électroménager,Micro-ondes,Premium,active,11112.14,483.48000000000036
+19,Produit Sneakers 019,Mode,Chaussures,Sneakers,Économique,active,8768.789999999999,862.4499999999997
+20,Produit Coussins 020,Maison,Décoration,Coussins,Premium,active,1099.04,135.03999999999996
+21,Produit Coussins 021,Maison,Décoration,Coussins,Standard,inactive,0.0,0.0
+22,Produit Coussins 022,Maison,Décoration,Coussins,Premium,active,3742.2,346.5000000000001
+23,Produit T-shirts 023,Mode,Vêtements Homme,T-shirts,Premium,inactive,0.0,0.0
+24,Produit Casques 024,Électronique,Audio,Casques,Premium,active,18541.25,402.34999999999985
+25,Produit T-shirts 025,Mode,Vêtements Homme,T-shirts,Économique,inactive,0.0,0.0
+26,Produit Cables 026,Électronique,Accessoires,Cables,Standard,inactive,0.0,0.0
+27,Produit Robes 027,Mode,Vêtements Femme,Robes,Premium,inactive,0.0,0.0
+28,Produit Yoga 028,Sport,Fitness,Yoga,Économique,active,3195.5099999999998,270.56999999999994
+29,Produit Robes 029,Mode,Vêtements Femme,Robes,Standard,inactive,0.0,0.0
+30,Produit Sacs 030,Mode,Accessoires Mode,Sacs,Économique,active,6922.65,722.7500000000002
+31,Produit Laptops 031,Électronique,Ordinateurs,Laptops,Premium,active,7941.78,859.1399999999993
+32,Produit Robes 032,Mode,Vêtements Femme,Robes,Standard,active,4155.36,503.5799999999997
+33,Produit Casques 033,Électronique,Audio,Casques,Économique,active,50579.520000000004,7094.220000000002
+34,Produit Ustensiles 034,Maison,Cuisine,Ustensiles,Premium,inactive,0.0,0.0
+35,Produit Micro-ondes 035,Maison,Électroménager,Micro-ondes,Standard,inactive,0.0,0.0
+36,Produit Randonnée 036,Sport,Outdoor,Randonnée,Standard,active,3121.58,332.4199999999997
+37,Produit Micro-ondes 037,Maison,Électroménager,Micro-ondes,Premium,inactive,0.0,0.0
+38,Produit Sneakers 038,Mode,Chaussures,Sneakers,Premium,inactive,0.0,0.0
+39,Produit Cables 039,Électronique,Accessoires,Cables,Standard,active,39324.57,1170.9600000000019
+40,Produit Robes 040,Mode,Vêtements Femme,Robes,Standard,active,7286.570000000001,1045.8000000000006
+41,Produit Laptops 041,Électronique,Ordinateurs,Laptops,Standard,inactive,0.0,0.0
+42,Produit Football 042,Sport,Sports Collectifs,Football,Standard,active,14938.289999999999,932.6899999999995
+43,Produit Cables 043,Électronique,Accessoires,Cables,Premium,inactive,0.0,0.0
+44,Produit Randonnée 044,Sport,Outdoor,Randonnée,Standard,active,4492.8,755.8400000000001
+45,Produit Ustensiles 045,Maison,Cuisine,Ustensiles,Standard,inactive,0.0,0.0
+46,Produit Sacs 046,Mode,Accessoires Mode,Sacs,Économique,active,20914.25,280.50000000000097
+47,Produit Micro-ondes 047,Maison,Électroménager,Micro-ondes,Standard,active,2629.9800000000005,192.33000000000004
+48,Produit Ustensiles 048,Maison,Cuisine,Ustensiles,Premium,active,6663.09,412.4400000000009
+49,Produit Cables 049,Électronique,Accessoires,Cables,Standard,active,3851.01,697.6800000000003
+50,Produit Micro-ondes 050,Maison,Électroménager,Micro-ondes,Économique,active,1213.41,71.5

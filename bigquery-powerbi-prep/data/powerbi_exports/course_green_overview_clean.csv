@@ -1,0 +1,51 @@
+products_id,pdt_name,categories_id,products_status,promo_id,category_1,category_2,category_3,ps_cat,pd_cat,pdt_id_x,qty,pdt_id_y,stock,pdt_segment,statut_stock,performance
+1,Produit Sneakers 001,7,inactive,,Mode,Chaussures,Sneakers,56.87,49.2,,0.0,1,177,Économique,Élevé,Aucune
+2,Produit Casques 002,3,active,2.0,Électronique,Audio,Casques,1186.63,985.57,2.0,75.0,2,134,Premium,Élevé,Top
+3,Produit iPhone 003,1,active,1.0,Électronique,Smartphones,iPhone,1114.95,1011.1,3.0,60.0,3,213,Économique,Élevé,Top
+4,Produit iPhone 004,1,active,4.0,Électronique,Smartphones,iPhone,1063.85,894.41,4.0,48.0,4,316,Économique,Élevé,Bon
+5,Produit Compléments 005,15,active,,Santé,Bien-être,Compléments,79.72,75.18,5.0,36.0,5,374,Économique,Élevé,Bon
+6,Produit Sneakers 006,7,active,,Mode,Chaussures,Sneakers,216.54,176.28,6.0,2.0,6,143,Premium,Élevé,Moyen
+7,Produit Compléments 007,15,inactive,4.0,Santé,Bien-être,Compléments,59.97,53.9,,0.0,7,474,Standard,Élevé,Aucune
+8,Produit Casques 008,3,active,,Électronique,Audio,Casques,177.69,164.95,8.0,79.0,8,283,Économique,Élevé,Top
+9,Produit Coussins 009,10,active,,Maison,Décoration,Coussins,51.97,44.73,9.0,26.0,9,135,Standard,Élevé,Bon
+10,Produit T-shirts 010,5,active,3.0,Mode,Vêtements Homme,T-shirts,119.72,101.14,10.0,52.0,10,84,Standard,Normal,Top
+11,Produit Yoga 011,12,active,2.0,Sport,Fitness,Yoga,294.79,241.29,11.0,14.0,11,426,Économique,Élevé,Moyen
+12,Produit Coussins 012,10,active,3.0,Maison,Décoration,Coussins,296.33,265.92,12.0,90.0,12,500,Premium,Élevé,Top
+13,Produit Robes 013,6,active,4.0,Mode,Vêtements Femme,Robes,235.63,209.34,13.0,79.0,13,381,Standard,Élevé,Top
+14,Produit iPhone 014,1,active,2.0,Électronique,Smartphones,iPhone,934.6,879.42,14.0,37.0,14,115,Standard,Élevé,Bon
+15,Produit Ustensiles 015,9,active,4.0,Maison,Cuisine,Ustensiles,253.82,203.99,15.0,2.0,15,49,Standard,Normal,Moyen
+16,Produit Casques 016,3,active,1.0,Électronique,Audio,Casques,424.76,375.22,16.0,70.0,16,425,Standard,Élevé,Top
+17,Produit Ustensiles 017,9,active,1.0,Maison,Cuisine,Ustensiles,154.01,151.46,17.0,48.0,17,284,Standard,Élevé,Bon
+18,Produit Micro-ondes 018,11,active,3.0,Maison,Électroménager,Micro-ondes,140.66,134.54,18.0,79.0,18,406,Premium,Élevé,Top
+19,Produit Sneakers 019,7,active,,Mode,Chaussures,Sneakers,186.57,168.22,19.0,47.0,19,380,Économique,Élevé,Bon
+20,Produit Coussins 020,10,active,1.0,Maison,Décoration,Coussins,68.69,60.25,20.0,16.0,20,347,Premium,Élevé,Moyen
+21,Produit Coussins 021,10,inactive,1.0,Maison,Décoration,Coussins,304.66,296.29,,0.0,21,267,Standard,Élevé,Aucune
+22,Produit Coussins 022,10,active,,Maison,Décoration,Coussins,41.58,37.73,22.0,90.0,22,435,Premium,Élevé,Top
+23,Produit T-shirts 023,5,inactive,4.0,Mode,Vêtements Homme,T-shirts,184.65,158.86,,0.0,23,253,Premium,Élevé,Aucune
+24,Produit Casques 024,3,active,2.0,Électronique,Audio,Casques,285.25,279.06,24.0,65.0,24,102,Premium,Élevé,Top
+25,Produit T-shirts 025,5,inactive,4.0,Mode,Vêtements Homme,T-shirts,151.51,130.73,,0.0,25,261,Économique,Élevé,Aucune
+26,Produit Cables 026,4,inactive,4.0,Électronique,Accessoires,Cables,856.17,758.35,,0.0,26,412,Standard,Élevé,Aucune
+27,Produit Robes 027,6,inactive,3.0,Mode,Vêtements Femme,Robes,100.94,93.92,,0.0,27,26,Premium,Normal,Aucune
+28,Produit Yoga 028,12,active,3.0,Sport,Fitness,Yoga,36.73,33.62,28.0,87.0,28,166,Économique,Élevé,Top
+29,Produit Robes 029,6,inactive,3.0,Mode,Vêtements Femme,Robes,45.3,42.85,,0.0,29,430,Standard,Élevé,Aucune
+30,Produit Sacs 030,8,active,4.0,Mode,Accessoires Mode,Sacs,197.79,177.14,30.0,35.0,30,199,Économique,Élevé,Bon
+31,Produit Laptops 031,2,active,3.0,Électronique,Ordinateurs,Laptops,441.21,393.48,31.0,18.0,31,278,Premium,Élevé,Moyen
+32,Produit Robes 032,6,active,,Mode,Vêtements Femme,Robes,188.88,165.99,32.0,22.0,32,491,Standard,Élevé,Bon
+33,Produit Casques 033,3,active,2.0,Électronique,Audio,Casques,887.36,762.9,33.0,57.0,33,223,Économique,Élevé,Top
+34,Produit Ustensiles 034,9,inactive,2.0,Maison,Cuisine,Ustensiles,234.96,209.36,,0.0,34,166,Premium,Élevé,Aucune
+35,Produit Micro-ondes 035,11,inactive,3.0,Maison,Électroménager,Micro-ondes,36.41,32.08,,0.0,35,196,Standard,Élevé,Aucune
+36,Produit Randonnée 036,13,active,3.0,Sport,Outdoor,Randonnée,141.89,126.78,36.0,22.0,36,261,Standard,Élevé,Bon
+37,Produit Micro-ondes 037,11,inactive,2.0,Maison,Électroménager,Micro-ondes,386.04,342.02,,0.0,37,247,Premium,Élevé,Aucune
+38,Produit Sneakers 038,7,inactive,1.0,Mode,Chaussures,Sneakers,35.21,33.74,,0.0,38,9,Premium,Faible,Aucune
+39,Produit Cables 039,4,active,4.0,Électronique,Accessoires,Cables,771.07,748.11,39.0,51.0,39,291,Standard,Élevé,Top
+40,Produit Robes 040,6,active,1.0,Mode,Vêtements Femme,Robes,87.79,75.19,40.0,83.0,40,174,Standard,Élevé,Top
+41,Produit Laptops 041,2,inactive,4.0,Électronique,Ordinateurs,Laptops,972.7,817.37,,0.0,41,455,Standard,Élevé,Aucune
+42,Produit Football 042,14,active,2.0,Sport,Sports Collectifs,Football,244.89,229.6,42.0,61.0,42,135,Standard,Élevé,Top
+43,Produit Cables 043,4,inactive,3.0,Électronique,Accessoires,Cables,351.72,316.42,,0.0,43,445,Premium,Élevé,Aucune
+44,Produit Randonnée 044,13,active,2.0,Sport,Outdoor,Randonnée,70.2,58.39,44.0,64.0,44,243,Standard,Élevé,Top
+45,Produit Ustensiles 045,9,inactive,4.0,Maison,Cuisine,Ustensiles,334.39,312.87,,0.0,45,233,Standard,Élevé,Aucune
+46,Produit Sacs 046,8,active,,Mode,Accessoires Mode,Sacs,246.05,242.75,46.0,85.0,46,465,Économique,Élevé,Top
+47,Produit Micro-ondes 047,11,active,4.0,Maison,Électroménager,Micro-ondes,292.22,270.85,47.0,9.0,47,352,Standard,Élevé,Moyen
+48,Produit Ustensiles 048,9,active,3.0,Maison,Cuisine,Ustensiles,317.29,297.65,48.0,21.0,48,33,Premium,Normal,Bon
+49,Produit Cables 049,4,active,2.0,Électronique,Accessoires,Cables,75.51,61.83,49.0,51.0,49,232,Standard,Élevé,Top
+50,Produit Micro-ondes 050,11,active,2.0,Maison,Électroménager,Micro-ondes,110.31,103.81,50.0,11.0,50,480,Économique,Élevé,Moyen

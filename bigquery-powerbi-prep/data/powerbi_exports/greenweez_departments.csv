@@ -1,0 +1,11 @@
+department_code,department_name,region_name,weight_percent,estimated_ca
+75,Paris,Île-de-France,25.0,143500
+69,Rhône,Auvergne-Rhône-Alpes,8.0,45920
+13,Bouches-du-Rhône,Provence-Alpes-Côte d'Azur,6.0,34440
+31,Haute-Garonne,Occitanie,4.0,22960
+74,Haute-Savoie,Auvergne-Rhône-Alpes,3.0,17220
+44,Loire-Atlantique,Pays de la Loire,3.0,17220
+33,Gironde,Nouvelle-Aquitaine,3.0,17220
+59,Nord,Hauts-de-France,2.5,14350
+67,Bas-Rhin,Grand Est,2.5,14350
+06,Alpes-Maritimes,Provence-Alpes-Côte d'Azur,2.0,11480

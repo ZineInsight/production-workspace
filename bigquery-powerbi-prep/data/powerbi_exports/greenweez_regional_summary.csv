@@ -1,0 +1,14 @@
+region_name,weight_percent,premium_ratio_percent,avg_basket_euro,estimated_annual_ca,zone_climatique,caracteristique
+Île-de-France,35.0,65.0,85,200900,Sud,Urbain Dense
+Auvergne-Rhône-Alpes,15.0,45.0,72,86100,Montagne,Métropoles
+Provence-Alpes-Côte d'Azur,12.0,50.0,78,68880,Sud,Métropoles
+Nouvelle-Aquitaine,8.0,35.0,65,45920,Sud,Mixte
+Occitanie,7.000000000000001,40.0,68,40180,Sud,Mixte
+Hauts-de-France,5.0,30.0,58,28700,Nord,Mixte
+Grand Est,5.0,32.0,60,28700,Nord,Mixte
+Pays de la Loire,4.0,38.0,63,22960,Sud,Mixte
+Bretagne,3.0,42.0,67,17220,Sud,Mixte
+Normandie,3.0,28.000000000000004,55,17220,Nord,Mixte
+Bourgogne-Franche-Comté,2.0,35.0,62,11480,Sud,Mixte
+Centre-Val de Loire,1.0,25.0,52,5740,Sud,Mixte
+Corse,0.5,45.0,75,2870,Sud,Mixte

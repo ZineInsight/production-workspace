@@ -1,0 +1,25 @@
+Date,Annee,Trimestre,PNB_Millions_Euro,Variation_Pct,Division,Commentaire
+2023-03-31,2023,Q1,10800,-2.1,Retail Banking France,Impact inflation
+2023-06-30,2023,Q2,11200,1.5,Retail Banking France,Reprise activité
+2023-09-30,2023,Q3,11000,-0.8,Retail Banking France,Stabilisation
+2023-12-31,2023,Q4,11400,3.2,Retail Banking France,Fin d'année solide
+2024-03-31,2024,Q1,11600,7.4,Retail Banking France,Forte croissance
+2024-06-30,2024,Q2,11800,5.4,Retail Banking France,Momentum confirmé
+2024-09-30,2024,Q3,11500,4.5,Retail Banking France,Performance stable
+2024-12-31,2024,Q4,11900,4.4,Retail Banking France,Croissance continue
+2023-03-31,2023,Q1,8200,-3.2,Corporate Banking,Contexte difficile
+2023-06-30,2023,Q2,8500,2.1,Corporate Banking,Amélioration graduelle
+2023-09-30,2023,Q3,8300,-1.5,Corporate Banking,Volatilité marchés
+2023-12-31,2023,Q4,8600,4.8,Corporate Banking,Rattrapage T4
+2024-03-31,2024,Q1,8900,8.5,Corporate Banking,Très forte croissance
+2024-06-30,2024,Q2,9100,7.1,Corporate Banking,Excellence opérationnelle
+2024-09-30,2024,Q3,8950,7.8,Corporate Banking,Performance soutenue
+2024-12-31,2024,Q4,9200,7.0,Corporate Banking,Année record
+2023-03-31,2023,Q1,6800,-1.8,International,Ajustements géopolitiques
+2023-06-30,2023,Q2,7000,1.4,International,Stabilisation régionale
+2023-09-30,2023,Q3,6900,-0.5,International,Consolidation
+2023-12-31,2023,Q4,7200,5.2,International,Expansion contrôlée
+2024-03-31,2024,Q1,7400,8.8,International,Croissance internationale
+2024-06-30,2024,Q2,7600,8.6,International,Développement accéléré
+2024-09-30,2024,Q3,7350,6.5,International,Croissance robuste
+2024-12-31,2024,Q4,7800,8.3,International,Expansion réussie

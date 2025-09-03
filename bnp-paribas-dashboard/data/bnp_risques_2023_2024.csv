@@ -1,0 +1,25 @@
+Date,Annee,Trimestre,Provisions_Credit_Millions_Euro,NPL_Ratio_Pct,Cost_of_Risk_Bps,Division,Commentaire_Risque
+2023-03-31,2023,Q1,820,3.2,42,Retail Banking France,Provisions normalisées
+2023-06-30,2023,Q2,750,3.1,38,Retail Banking France,Amélioration qualité
+2023-09-30,2023,Q3,780,3.0,40,Retail Banking France,Stabilisation
+2023-12-31,2023,Q4,690,2.9,35,Retail Banking France,Excellente qualité
+2024-03-31,2024,Q1,650,2.8,33,Retail Banking France,Qualité renforcée
+2024-06-30,2024,Q2,620,2.7,31,Retail Banking France,Optimisation continue
+2024-09-30,2024,Q3,640,2.7,32,Retail Banking France,Maîtrise parfaite
+2024-12-31,2024,Q4,580,2.6,29,Retail Banking France,Qualité exceptionnelle
+2023-03-31,2023,Q1,450,4.1,38,Corporate Banking,Surveillance renforcée
+2023-06-30,2023,Q2,420,3.9,35,Corporate Banking,Amélioration progressive
+2023-09-30,2023,Q3,440,3.8,37,Corporate Banking,Gestion proactive
+2023-12-31,2023,Q4,380,3.6,32,Corporate Banking,Qualité améliorée
+2024-03-31,2024,Q1,350,3.4,29,Corporate Banking,Excellente sélectivité
+2024-06-30,2024,Q2,330,3.2,27,Corporate Banking,Optimisation portfolio
+2024-09-30,2024,Q3,340,3.1,28,Corporate Banking,Maîtrise renforcée
+2024-12-31,2024,Q4,310,2.9,25,Corporate Banking,Performance exceptionnelle
+2023-03-31,2023,Q1,320,3.8,45,International,Diversification géographique
+2023-06-30,2023,Q2,300,3.6,42,International,Amélioration régionale
+2023-09-30,2023,Q3,310,3.5,43,International,Stabilisation
+2023-12-31,2023,Q4,290,3.3,40,International,Fin d'année positive
+2024-03-31,2024,Q1,280,3.1,38,International,Amélioration continue
+2024-06-30,2024,Q2,270,2.9,36,International,Optimisation géographique
+2024-09-30,2024,Q3,275,2.8,37,International,Maîtrise régionale
+2024-12-31,2024,Q4,250,2.6,33,International,Excellence opérationnelle

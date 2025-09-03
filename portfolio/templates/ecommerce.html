@@ -45,7 +45,7 @@
 
     <!-- Styles Revolutionary + Power BI -->
     <link rel="stylesheet" href="/css/revolutionary.css">
-    <link rel="stylesheet" href="css/powerbi-dashboard.css">
+    <link rel="stylesheet" href="/css/powerbi-dashboard.css">
 
     <!-- Chart.js for interactive elements -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -122,7 +122,7 @@
                 </div>
                 <h1 class="section-title">
                     Dashboard E-commerce
-                    <span class="title-gradient">574K€ CA</span>
+                    <span class="title-gradient">Professionnel</span>
                 </h1>
                 <p class="section-subtitle">
                     Analyse complète des ventes 2025 : +14.8% croissance,
@@ -154,54 +154,6 @@
                     <div class="stat-number" id="clients-counter">892</div>
                     <div class="stat-label">Clients actifs</div>
                     <div class="stat-growth positive">+8.7%</div>
-                </div>
-            </div>
-
-            <!-- Dashboard Principal avec screenshot -->
-            <div class="powerbi-dashboard-preview">
-                <!-- Toolbar Power BI simulée -->
-                <div class="powerbi-toolbar">
-                    <div class="toolbar-left">
-                        <div class="powerbi-logo">⚡ Power BI</div>
-                        <div class="dashboard-title">E-commerce Analytics</div>
-                    </div>
-                    <div class="toolbar-right">
-                        <button class="toolbar-btn" title="Actualiser">
-                            <i data-lucide="refresh-cw"></i>
-                        </button>
-                        <button class="toolbar-btn" title="Exporter">
-                            <i data-lucide="download"></i>
-                        </button>
-                        <button class="toolbar-btn" title="Partager">
-                            <i data-lucide="share-2"></i>
-                        </button>
-                        <div class="last-refresh">Dernière actualisation: il y a 2h</div>
-                    </div>
-                </div>
-
-                <!-- Screenshot du dashboard principal -->
-                <div class="dashboard-screenshot-container">
-                    <div class="screenshot-placeholder">
-                        <div class="screenshot-content">
-                            <h3>📊 Dashboard E-commerce Complet</h3>
-                            <p>Interface Power BI authentique avec tous les visuels d'analyse</p>
-                            <div class="screenshot-features">
-                                <div class="feature-tag">📈 Évolution temporelle</div>
-                                <div class="feature-tag">🏆 Top produits</div>
-                                <div class="feature-tag">📊 Performance catégories</div>
-                                <div class="feature-tag">🎯 KPIs temps réel</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Overlay avec CTA -->
-                    <div class="dashboard-overlay">
-                        <button class="btn-gradient btn-hero dashboard-cta">
-                            <i data-lucide="play-circle" class="btn-icon"></i>
-                            <span>📊 Explorer le dashboard interactif</span>
-                            <div class="btn-shine"></div>
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -289,129 +241,95 @@
             <div class="section-header">
                 <h2 class="section-title">Analyses Approfondies</h2>
                 <p class="section-subtitle">
-                    Visualisations détaillées des performances par dimension
+                    Screenshots authentiques de votre dashboard Power BI en action
                 </p>
             </div>
 
-            <div class="powerbi-charts-grid">
-                <!-- Chart 1: Évolution temporelle -->
-                <div class="chart-container mini-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">📈 Évolution Temporelle</h3>
-                        <div class="chart-period">Jan - Déc 2024</div>
-                    </div>
-                    <div class="chart-content">
-                        <canvas id="temporal-chart" width="400" height="200"></canvas>
-                        <div class="chart-insights">
-                            <div class="chart-insight peak">Pic: Juin (94.7K€)</div>
-                            <div class="chart-insight low">Creux: Août (42.1K€)</div>
+            <div class="powerbi-screenshots-grid">
+                <!-- Dashboard View 1 -->
+                <div class="screenshot-container mini-card" onclick="openModal(0)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_e_commerce1.png" 
+                             alt="Dashboard Power BI - Vue d'ensemble performance e-commerce" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">📈 Vue d'ensemble Performance</h3>
+                            <div class="chart-period">Dashboard principal</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">🔴 LIVE Dashboard</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Chart 2: Performance catégories -->
-                <div class="chart-container mini-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">🏷️ Performance Catégories</h3>
-                        <div class="chart-period">Répartition CA</div>
-                    </div>
-                    <div class="chart-content">
-                        <canvas id="categories-chart" width="400" height="200"></canvas>
-                        <div class="chart-insights">
-                            <div class="chart-insight leader">Leader: Électronique 50.4%</div>
-                            <div class="chart-insight alert">Alertes: Santé marge faible</div>
+                <!-- Dashboard View 2 -->
+                <div class="screenshot-container mini-card" onclick="openModal(1)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_e_commerce2.png" 
+                             alt="Dashboard Power BI - Analyse par catégorie produits" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🏷️ Analyse par Catégorie</h3>
+                            <div class="chart-period">Répartition détaillée</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">📊 Analytics</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Chart 3: Top produits -->
-                <div class="chart-container mini-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">🏆 Top Produits</h3>
-                        <div class="chart-period">Par CA généré</div>
-                    </div>
-                    <div class="chart-content">
-                        <canvas id="products-chart" width="400" height="200"></canvas>
-                        <div class="chart-insights">
-                            <div class="chart-insight top">1er: Casques 202K€</div>
-                            <div class="chart-insight growth">Growth: iPhone +31%</div>
+                <!-- Dashboard View 3 -->
+                <div class="screenshot-container mini-card" onclick="openModal(2)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_e_commerce3.png" 
+                             alt="Dashboard Power BI - Performance des produits top" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🏆 Performance Produits</h3>
+                            <div class="chart-period">Top performers</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">⭐ Premium</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Chart 4: Indicateurs clés -->
-                <div class="chart-container mini-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">🎯 KPIs vs Objectifs</h3>
-                        <div class="chart-period">Performance 2024</div>
-                    </div>
-                    <div class="chart-content">
-                        <div class="kpi-gauges">
-                            <div class="kpi-gauge">
-                                <canvas id="revenue-gauge" width="120" height="120"></canvas>
-                                <div class="kpi-label">CA: 574K€ / 650K€</div>
-                            </div>
-                            <div class="kpi-gauge">
-                                <canvas id="margin-gauge" width="120" height="120"></canvas>
-                                <div class="kpi-label">Marge: 10.6% / 12%</div>
-                            </div>
+                <!-- Dashboard View 4 -->
+                <div class="screenshot-container mini-card" onclick="openModal(3)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_e_commerce4.png" 
+                             alt="Dashboard Power BI - KPIs et tendances e-commerce" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🎯 KPIs & Tendances</h3>
+                            <div class="chart-period">Indicateurs clés</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">🚀 Insights</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- ===== VALEUR BUSINESS ===== -->
-        <section class="section-container value-proposition">
-            <div class="section-header">
-                <h2 class="section-title">
-                    Valeur Business de cette
-                    <span class="title-gradient">Analyse</span>
-                </h2>
-                <p class="section-subtitle">
-                    Impact concret sur les résultats de votre entreprise
-                </p>
-            </div>
-
-            <div class="value-grid">
-                <div class="value-card mini-card">
-                    <div class="value-icon">💡</div>
-                    <h3 class="value-title">Détection Proactive</h3>
-                    <p class="value-description">
-                        Alertes automatiques sur baisses de performance
-                        avant qu'elles impactent significativement les résultats
-                    </p>
-                    <div class="value-benefit">Économie: ~15K€/an en pertes évitées</div>
-                </div>
-
-                <div class="value-card mini-card">
-                    <div class="value-icon">📈</div>
-                    <h3 class="value-title">Optimisation Marges</h3>
-                    <p class="value-description">
-                        Identification précise des catégories et produits 
-                        sous-performants pour actions correctives
-                    </p>
-                    <div class="value-benefit">Gain: +2-3% marge globale</div>
-                </div>
-
-                <div class="value-card mini-card">
-                    <div class="value-icon">🎯</div>
-                    <h3 class="value-title">Actions Concrètes</h3>
-                    <p class="value-description">
-                        Recommandations directement applicables avec
-                        estimations ROI et priorités d'exécution
-                    </p>
-                    <div class="value-benefit">Impact: +50-80K€ CA additionnel</div>
-                </div>
-
-                <div class="value-card mini-card">
-                    <div class="value-icon">⚡</div>
-                    <h3 class="value-title">Réactivité Décisionnelle</h3>
-                    <p class="value-description">
-                        Dashboards temps réel pour ajustements
-                        stratégiques rapides selon les tendances
-                    </p>
-                    <div class="value-benefit">Gain: 2-3 semaines sur réactions marché</div>
+            <!-- Modal Zoom -->
+            <div class="screenshot-modal" id="screenshotModal" onclick="closeModal(event)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <span id="modalTitle">📈 Vue Dashboard</span>
+                        </div>
+                        <button class="modal-close" onclick="closeModal()">&times;</button>
+                    </div>
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                    <button class="modal-navigation modal-prev" onclick="prevImage()">‹</button>
+                    <button class="modal-navigation modal-next" onclick="nextImage()">›</button>
+                    <div class="modal-counter">
+                        <span id="modalCounter">1 / 4</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -443,19 +361,9 @@
                         <i data-lucide="check-circle" class="benefit-icon"></i>
                         <span>Recommandations actionnables</span>
                     </div>
-                    <div class="cta-benefit">
-                        <i data-lucide="check-circle" class="benefit-icon"></i>
-                        <span>Formation équipe incluse</span>
-                    </div>
                 </div>
 
                 <div class="cta-actions">
-                    <a href="mailto:otmane@zineinsight.com?subject=Dashboard%20comme%20exemple%20e-commerce&body=Bonjour%20Otmane,%0A%0AJe%20suis%20intéressé(e)%20par%20un%20dashboard%20Power%20BI%20similaire%20à%20votre%20exemple%20e-commerce.%0A%0AMon%20secteur:%20%0AMes%20données:%20%0AMes%20objectifs:%20%0A%0AMerci%20pour%20votre%20retour%20rapide.%0A%0ACordialement"
-                        class="btn btn-gradient btn-hero cta-primary">
-                        <i data-lucide="bar-chart-3" class="btn-icon"></i>
-                        <span>📊 Je veux mon dashboard</span>
-                        <div class="btn-shine"></div>
-                    </a>
                     
                     <a href="mailto:otmane@zineinsight.com?subject=Discutons%20de%20mon%20projet%20BI"
                         class="btn btn-secondary btn-hero">
@@ -522,9 +430,6 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-    <!-- Dashboard interactif -->
-    <script src="js/ecommerce-dashboard.js"></script>
-
     <!-- Initialize -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -535,11 +440,6 @@
 
             // Animated counters for main metrics
             animateCounters();
-
-            // Initialize charts if dashboard script loaded
-            if (typeof initEcommerceDashboard === 'function') {
-                initEcommerceDashboard();
-            }
 
             // Smooth scrolling for internal links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -627,6 +527,96 @@
                 observer.observe(element);
             });
         }
+
+        // ===== MODAL SCREENSHOTS ZOOM =====
+        let currentImageIndex = 0;
+        const screenshots = [
+            {
+                src: "/assets/images/dashboard_e_commerce1.png",
+                title: "📈 Vue d'ensemble Performance",
+                alt: "Dashboard Power BI - Vue d'ensemble performance e-commerce"
+            },
+            {
+                src: "/assets/images/dashboard_e_commerce2.png",
+                title: "🏷️ Analyse par Catégorie",
+                alt: "Dashboard Power BI - Analyse par catégorie produits"
+            },
+            {
+                src: "/assets/images/dashboard_e_commerce3.png",
+                title: "🏆 Performance Produits",
+                alt: "Dashboard Power BI - Performance des produits top"
+            },
+            {
+                src: "/assets/images/dashboard_e_commerce4.png",
+                title: "🎯 KPIs & Tendances",
+                alt: "Dashboard Power BI - KPIs et tendances e-commerce"
+            }
+        ];
+
+        function openModal(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('screenshotModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCounter = document.getElementById('modalCounter');
+
+            modalImage.src = screenshots[index].src;
+            modalImage.alt = screenshots[index].alt;
+            modalTitle.textContent = screenshots[index].title;
+            modalCounter.textContent = `${index + 1} / ${screenshots.length}`;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget && !event.target.classList.contains('modal-close')) {
+                return;
+            }
+            
+            const modal = document.getElementById('screenshotModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % screenshots.length;
+            updateModalContent();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + screenshots.length) % screenshots.length;
+            updateModalContent();
+        }
+
+        function updateModalContent() {
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCounter = document.getElementById('modalCounter');
+
+            modalImage.src = screenshots[currentImageIndex].src;
+            modalImage.alt = screenshots[currentImageIndex].alt;
+            modalTitle.textContent = screenshots[currentImageIndex].title;
+            modalCounter.textContent = `${currentImageIndex + 1} / ${screenshots.length}`;
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('screenshotModal');
+            if (!modal.classList.contains('active')) return;
+
+            switch(event.key) {
+                case 'Escape':
+                    closeModal();
+                    break;
+                case 'ArrowLeft':
+                    prevImage();
+                    break;
+                case 'ArrowRight':
+                    nextImage();
+                    break;
+            }
+        });
     </script>
 
 </body>

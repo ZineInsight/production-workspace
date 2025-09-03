@@ -5,6 +5,15 @@ import os
 from datetime import datetime, timedelta
 import pandas as pd
 
+# Import données e-commerce réelles
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from data_ecommerce import (
+    ECOMMERCE_MAIN_METRICS, TOP_PRODUCTS, MONTHLY_PERFORMANCE,
+    CATEGORIES_PERFORMANCE, BUSINESS_ALERTS, BUSINESS_OPPORTUNITIES,
+    ACTIONABLE_RECOMMENDATIONS, DASHBOARD_CONFIG
+)
+
 app = Flask(__name__, template_folder='../templates', static_folder='../static')
 CORS(app)
 
@@ -13,103 +22,58 @@ app.config['SECRET_KEY'] = 'your-secret-key-here'
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.jinja_env.auto_reload = True
 
-# Charger les données Amazon
+# Charger les données Amazon (optionnel - pour compatibilité)
 def load_amazon_data():
-    """Charge les données et insights Amazon"""
+    """Charge les données et insights Amazon si disponibles"""
     try:
         with open('data/amazon_insights.json', 'r') as f:
             insights = json.load(f)
-
         # Charger aussi les données brutes pour les graphiques détaillés
         products_df = pd.read_csv('data/amazon_products.csv')
         sales_df = pd.read_csv('data/amazon_sales_timeseries.csv')
-
         return insights, products_df, sales_df
     except FileNotFoundError:
-        print("⚠️ Données Amazon non trouvées. Lancez d'abord generate_amazon_data.py")
+        print("⚠️ Données Amazon non trouvées - utilisation des données e-commerce réelles")
         return None, None, None
 
-# Charger les données au démarrage
-amazon_insights, products_df, sales_df = load_amazon_data()
+# Charger les données au démarrage (optionnel)
+try:
+    amazon_insights, products_df, sales_df = load_amazon_data()
+except:
+    amazon_insights, products_df, sales_df = None, None, None
+    print("📊 Mode E-commerce Dashboard activé")
 
 @app.route('/')
 def index():
-    """Page d'accueil - Aperçu des 3 études de cas"""
-    studies = [
-        {
-            'id': 'ecommerce',
-            'title': 'E-commerce Analytics',
-            'subtitle': 'Amazon Product Performance Analysis',
-            'description': 'Deep dive into 50K+ Amazon products with pricing strategies, seasonal trends, and category performance insights.',
-            'metrics': [
-                {'label': 'Products Analyzed', 'value': '50,000+'},
-                {'label': 'Revenue Tracked', 'value': '$150M+'},
-                {'label': 'Categories', 'value': '12'},
-                {'label': 'Time Period', 'value': '2 Years'}
-            ],
-            'insights': [
-                'Electronics dominate with $54M revenue',
-                'Prime eligibility increases sales by 35%',
-                'Black Friday drives 200% sales spike',
-                '4.5+ rating products sell 60% more'
-            ],
-            'technologies': ['Python', 'Pandas', 'Plotly', 'Statistical Analysis'],
-            'status': 'Active',
-            'url': '/ecommerce'
-        },
-        {
-            'id': 'finance',
-            'title': 'Financial Market Analysis',
-            'subtitle': 'Sentiment-Driven Trading Signals',
-            'description': 'AI-powered analysis combining S&P 500 data with news sentiment to predict market movements and generate trading signals.',
-            'metrics': [
-                {'label': 'Stocks Tracked', 'value': '500'},
-                {'label': 'News Sources', 'value': '50+'},
-                {'label': 'Prediction Accuracy', 'value': '73%'},
-                {'label': 'Time Frame', 'value': '5 Years'}
-            ],
-            'insights': [
-                'Sentiment leads price by 2-4 hours',
-                'Tech stocks most sensitive to news',
-                'Weekend gaps predictable via sentiment',
-                '15% annual returns achievable'
-            ],
-            'technologies': ['Python', 'NLP', 'Machine Learning', 'Financial APIs'],
-            'status': 'Coming Soon',
-            'url': '/finance'
-        },
-        {
-            'id': 'saas',
-            'title': 'SaaS Customer Analytics',
-            'subtitle': 'Churn Prediction & Retention Strategy',
-            'description': 'Machine learning model to predict customer churn with 85% accuracy and actionable retention recommendations.',
-            'metrics': [
-                {'label': 'Customers Analyzed', 'value': '7,000+'},
-                {'label': 'Churn Prediction Accuracy', 'value': '85%'},
-                {'label': 'Features Analyzed', 'value': '20+'},
-                {'label': 'Retention Improvement', 'value': '23%'}
-            ],
-            'insights': [
-                'Contract type is #1 churn predictor',
-                'Support tickets correlation with churn',
-                'Monthly customers churn 2x more',
-                'Senior citizens need special attention'
-            ],
-            'technologies': ['Python', 'Scikit-learn', 'XGBoost', 'Cohort Analysis'],
-            'status': 'Coming Soon',
-            'url': '/saas'
-        }
-    ]
-
-    return render_template('index.html', studies=studies)
+    """Page d'accueil - Nouveau dashboard e-commerce avec données Power BI réelles"""
+    # Utilisation des données e-commerce réelles au lieu des anciennes données Amazon
+    dashboard_data = {
+        'main_metrics': ECOMMERCE_MAIN_METRICS,
+        'top_products': TOP_PRODUCTS,
+        'categories': CATEGORIES_PERFORMANCE,
+        'business_alerts': BUSINESS_ALERTS
+    }
+    
+    # Redirection vers le nouveau template e-commerce
+    return render_template('ecommerce.html', **dashboard_data)
 
 @app.route('/ecommerce')
 def ecommerce_study():
-    """Étude de cas E-commerce Amazon"""
-    if not amazon_insights:
-        return "Données Amazon non disponibles. Lancez d'abord la génération des données.", 500
-
-    return render_template('ecommerce.html', insights=amazon_insights)
+    """Dashboard E-commerce Power BI - Page principale de showcase"""
+    
+    # Préparer les données pour le template
+    dashboard_data = {
+        'main_metrics': ECOMMERCE_MAIN_METRICS,
+        'top_products': TOP_PRODUCTS,
+        'monthly_performance': MONTHLY_PERFORMANCE,
+        'categories': CATEGORIES_PERFORMANCE,
+        'alerts': BUSINESS_ALERTS,
+        'opportunities': BUSINESS_OPPORTUNITIES,
+        'recommendations': ACTIONABLE_RECOMMENDATIONS,
+        'dashboard_config': DASHBOARD_CONFIG
+    }
+    
+    return render_template('ecommerce.html', **dashboard_data)
 
 @app.route('/finance')
 def finance_study():
@@ -134,34 +98,75 @@ def api_studies():
 
 @app.route('/api/ecommerce/overview')
 def api_ecommerce_overview():
-    """Métriques générales E-commerce"""
-    if not amazon_insights:
-        return jsonify({'error': 'Data not available'}), 500
+    """Métriques générales E-commerce - Données réelles"""
+    return jsonify({
+        'main_metrics': ECOMMERCE_MAIN_METRICS,
+        'dashboard_config': DASHBOARD_CONFIG,
+        'last_update': datetime.now().isoformat()
+    })
 
-    return jsonify(amazon_insights['general_metrics'])
+@app.route('/api/ecommerce/temporal')
+def api_ecommerce_temporal():
+    """Données d'évolution temporelle"""
+    return jsonify({
+        'monthly_data': MONTHLY_PERFORMANCE,
+        'insights': {
+            'peak_month': max(MONTHLY_PERFORMANCE, key=lambda x: x['revenue']),
+            'low_month': min(MONTHLY_PERFORMANCE, key=lambda x: x['revenue']),
+            'total_revenue': sum(month['revenue'] for month in MONTHLY_PERFORMANCE),
+            'avg_conversion': sum(month['conversion'] for month in MONTHLY_PERFORMANCE) / len(MONTHLY_PERFORMANCE)
+        }
+    })
 
 @app.route('/api/ecommerce/categories')
 def api_ecommerce_categories():
-    """Performance par catégorie"""
-    if not amazon_insights:
-        return jsonify({'error': 'Data not available'}), 500
+    """Performance par catégories"""
+    return jsonify({
+        'categories': CATEGORIES_PERFORMANCE,
+        'summary': {
+            'leader': max(CATEGORIES_PERFORMANCE, key=lambda x: x['revenue']),
+            'most_profitable': max(CATEGORIES_PERFORMANCE, key=lambda x: x['margin']),
+            'needs_attention': [cat for cat in CATEGORIES_PERFORMANCE if cat['status'] in ['alert', 'warning']]
+        }
+    })
 
-    return jsonify(amazon_insights['category_performance'])
+@app.route('/api/ecommerce/products')
+def api_ecommerce_products():
+    """Top produits et analyse"""
+    return jsonify({
+        'top_products': TOP_PRODUCTS,
+        'analysis': {
+            'best_performer': TOP_PRODUCTS[0],
+            'highest_growth': max(TOP_PRODUCTS, key=lambda x: x['growth']),
+            'highest_margin': max(TOP_PRODUCTS, key=lambda x: x['margin']),
+            'needs_attention': [prod for prod in TOP_PRODUCTS if prod['growth'] < 0]
+        }
+    })
+
+@app.route('/api/ecommerce/alerts')
+def api_ecommerce_alerts():
+    """Alertes business et recommandations"""
+    return jsonify({
+        'alerts': BUSINESS_ALERTS,
+        'opportunities': BUSINESS_OPPORTUNITIES,
+        'recommendations': ACTIONABLE_RECOMMENDATIONS,
+        'priority_actions': [rec for rec in ACTIONABLE_RECOMMENDATIONS if rec['priority'] <= 2]
+    })
+
+# ===== LEGACY AMAZON API ROUTES (pour compatibilité) =====
 
 @app.route('/api/ecommerce/seasonal')
 def api_ecommerce_seasonal():
-    """Tendances saisonnières"""
+    """Tendances saisonnières - Legacy Amazon API"""
     if not amazon_insights:
-        return jsonify({'error': 'Data not available'}), 500
-
+        return jsonify({'error': 'Data not available - using real e-commerce data'}), 500
     return jsonify(amazon_insights['seasonal_trends'])
 
 @app.route('/api/ecommerce/pricing')
 def api_ecommerce_pricing():
-    """Insights pricing"""
+    """Insights pricing - Legacy Amazon API"""
     if not amazon_insights:
-        return jsonify({'error': 'Data not available'}), 500
-
+        return jsonify({'error': 'Data not available - using real e-commerce data'}), 500
     return jsonify(amazon_insights['pricing_insights'])
 
 @app.route('/api/ecommerce/top-performers')
@@ -207,4 +212,5 @@ if __name__ == '__main__':
         print("✅ Données Amazon chargées avec succès!")
         print(f"📊 {amazon_insights['general_metrics']['total_products']:,} produits disponibles")
 
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Démarrer le serveur sur le port 8002 (nginx proxie vers ce port)
+    app.run(debug=True, host='0.0.0.0', port=8002)

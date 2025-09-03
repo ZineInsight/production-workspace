@@ -785,7 +785,7 @@ class ZineInsightAnalysis {
                 // 🔧 HELPER FUNCTION: Extract recommendations array from API response
                 const extractRecommendations = (results) => {
                     let recommendations = [];
-                    
+
                     if (results.recommendations && Array.isArray(results.recommendations)) {
                         // Format direct : results.recommendations est déjà un tableau
                         recommendations = results.recommendations;
@@ -805,7 +805,7 @@ class ZineInsightAnalysis {
                             }
                         }
                     }
-                    
+
                     console.log('📊 Extracted recommendations count:', recommendations.length);
                     return recommendations;
                 };
@@ -817,7 +817,7 @@ class ZineInsightAnalysis {
                 if (this.state.selectedCountry === 'usa') {
                     // Format USA Residents API
                     console.log('🇺🇸 🔥 DEBUG MAX: Adaptation format USA Residents');
-                    
+
                     const usaRecommendations = extractRecommendations(results);
                     if (usaRecommendations.length > 0) {
                         console.log('🎯 🔥 DEBUG MAX: AVANT tri - ordre API USA:', usaRecommendations.map(c => `${c.city}, ${c.state}: ${c.score_percentage}%`));
@@ -840,7 +840,7 @@ class ZineInsightAnalysis {
                 } else if (this.state.selectedCountry === 'france') {
                     // Format France Residents API
                     console.log('🇫🇷 🔥 DEBUG MAX: Adaptation format France Residents');
-                    
+
                     const franceRecommendations = extractRecommendations(results);
                     if (franceRecommendations.length > 0) {
                         console.log('🎯 🔥 DEBUG MAX: AVANT tri - ordre API France:', franceRecommendations.map(c => `${c.city}, ${c.region}: ${c.score_percentage}%`));
@@ -863,7 +863,7 @@ class ZineInsightAnalysis {
                 } else if (this.state.selectedCountry === 'canada') {
                     // Format Canada Residents API
                     console.log('🇨🇦 🔥 DEBUG MAX: Adaptation format Canada Residents');
-                    
+
                     const canadaRecommendations = extractRecommendations(results);
                     if (canadaRecommendations.length > 0) {
                         console.log('🎯 🔥 DEBUG MAX: AVANT tri - ordre API Canada:', canadaRecommendations.map(c => `${c.city}, ${c.province}: ${c.score_percentage}%`));
@@ -886,7 +886,7 @@ class ZineInsightAnalysis {
                 } else if (this.state.selectedCountry === 'uk') {
                     // Format UK Residents API
                     console.log('🇬🇧 🔥 DEBUG MAX: Adaptation format UK Residents');
-                    
+
                     const ukRecommendations = extractRecommendations(results);
                     if (ukRecommendations.length > 0) {
                         console.log('🎯 🔥 DEBUG MAX: AVANT tri - ordre API UK:', ukRecommendations.map(c => `${c.city}, ${c.region}: ${c.score_percentage}%`));
@@ -952,7 +952,7 @@ class ZineInsightAnalysis {
                 } else if (this.state.selectedCountry === 'germany') {
                     // Format Germany Residents API - STRUCTURE IMBRIQUÉE
                     console.log('🇩🇪 🔥 DEBUG MAX: Adaptation format Germany Residents');
-                    
+
                     // 🔧 FIX: Les recommandations sont dans results.recommendations.recommendations
                     let germanyRecommendations = [];
                     if (results.recommendations && Array.isArray(results.recommendations)) {
@@ -967,7 +967,7 @@ class ZineInsightAnalysis {
                         console.error('❌ No valid recommendations array found in results.recommendations');
                         germanyRecommendations = [];
                     }
-                    
+
                     console.log('🎯 🔥 DEBUG MAX: Germany recommendations found:', germanyRecommendations.length);
                     if (germanyRecommendations.length > 0) {
                         console.log('🎯 🔥 DEBUG MAX: AVANT tri - ordre API Germany:', germanyRecommendations.map(c => `${c.city}, ${c.region}: ${c.score_percentage}%`));
@@ -1157,7 +1157,7 @@ class ZineInsightAnalysis {
 
                 console.log('🎉 🔥 DEBUG MAX: Redirection vers results.html...');
                 // Redirection vers les vrais résultats
-                window.location.href = '/results.html?completed=true';
+                window.location.href = '/zscore/results.html?completed=true';
             } else {
                 console.error('❌ 🔥 DEBUG MAX: Condition success ET recommendations = FALSE');
                 console.error('❌ 🔥 DEBUG MAX: results.success:', results.success);

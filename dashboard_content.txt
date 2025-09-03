@@ -1,0 +1,628 @@
+🎯 Analyse des Ventes 2025 – Performances,
+Power BI Desktop Marges et Opportunités
+
+🧠 Contexte & Objectif
+
+🧭 3. Recommandations Stratégiques
+
+Cette étude repose sur un jeu de données représentant les ventes d'une entreprise
+multisecteur (Électronique, Mode, Maison, Santé, Sport). L’objectif était de créer un
+dashboard stratégique synthétisant les KPIs financiers, les alertes business, et les
+opportunités d’optimisation, tout en permettant une exploration dynamique par
+saison, mois, produit ou catégorie.
+
+✅ Suivre les signaux faibles :
+
+📊 1. Performance Globale
+• Chiffre d'affaires total : 574K €, en progression de +14,8 % par rapport à 2024.
+• Marge brute : 60,72K € (soit 10,6 % du CA).
+• Les produits les plus performants sont les casques (202K €) et les iPhones (153K
+
+€).
+• Les mois les plus porteurs sont janvier et juin, probablement liés à des pics
+
+saisonniers ou campagnes commerciales.
+
+🔍 2. Analyse Approfondie
+• La catégorie Électronique domine les ventes, mais affiche aussi une marge plus
+
+solide que d'autres segments.
+• À l’inverse, la santé souffre d’une faible rentabilité (5,7 % de marge).
+• Le produit le plus lent en rotation est le laptop, ce qui interroge sur sa place en
+stock ou sa stratégie tarifaire.
+• L’analyse par saison révèle un pic au printemps, ce qui peut orienter les
+campagnes marketing futures.
+
+• Baisse notable des ventes en août → investiguer causes (vacances ? stocks ? pricing
+
+?).
+✅ Optimiser les marges :
+• Travailler les catégories faiblement rentables (santé), en revoyant prix, fournisseurs,
+ou gamme.
+✅ Améliorer la rotation produit :
+• Repenser le stock et les promotions sur les produits à rotation lente (ex. laptops,
+compléments, sneakers).
+✅ Capitaliser sur les points forts :
+• Renforcer l’offre et la communication autour des casques, qui allient volume, marge
+et rotation rapide.
+
+🧠 Conclusion
+Ce dashboard démontre ma capacité à :
+• Extraire les indicateurs clés d’un dataset commercial,
+• Produire des visualisations lisibles et utiles à la décision,
+• Formuler des recommandations concrètes à forte valeur ajoutée.
+🔧 Outils utilisés : Power BI, Excel, analyse métier.
+🧑‍💼 Positionnement : Freelance Data | Finance | Dashboarding stratégique
+
+Analyse des Ventes 2025 – Performances, Marges et Opportunités
+Power BI Desktop
+
+Choisir une ou
+plusieurs
+catégories
+
+Chiffre d'affaire
+
+ Maison
+
+Variation 2025/2024
+
+ Santé
+
+Marge Brute par Catégorie
+4,79K (7,…)
+
+category_1
+
+6,5…
+(1…)
+
+10,58
+
+Mode
+
+Mode
+Maison
+
+Maison
+Sport
+
+Sport
+Santé
+
+46,18K
+(76,07%)
+
+Santé
+0K
+
+Top 10 Produits par CA
+
+200K
+
+400K
+
+Chiffre d'Affaire par Région
+Électronique
+
+202K
+
+200K
+
+Électronique
+
+Électroniq…
+
+Marge Brute
+
+⬆+14.8% 60,72K
+
+ Sport
+
+Chiffre d'Affaire par Catégorie
+
+15,00
+
+574K
+
+ Électroni…
+ Mode
+
+Marge Brute %
+
+Maison
+
+Mode
+
+Santé
+
+Sport
+
+153K
+150K
+
+100K
+43K
+
+50K
+
+0K
+
+s
+ue
+
+C
+
+q
+as
+
+e
+on
+iPh
+
+s
+
+ble
+Ca
+
+33K
+
+ns
+
+si
+us
+Co
+
+30K
+
+es
+
+b
+Ro
+
+28K
+
+15K
+
+s
+
+c
+Sa
+
+icr
+M
+
+es
+
+d
+on
+
+o-
+
+15K
+
+F
+
+t
+oo
+
+ll
+
+ba
+
+15K
+
+ten
+Us
+
+es
+
+sil
+
+9K
+
+rs
+
+ke
+
+ea
+Sn
+
+©2025
+©2025 OSM
+OSM ©2025
+©2025 TomTom
+TomTom Feedback
+Feedback
+
+Analyse des Ventes 2025 – Performances, Marges et Opportunités
+Power BI Desktop
+
+Annee
+
+
+
+Trimestre
+
+
+
+Categorie
+
+
+
+All
+
+
+
+All
+
+
+
+All
+
+
+
+CA Mensuel
+Month
+
+
+Evolution Temporelle du CA sur l'année 2025
+150K
+
+CA
+
+January
+110417
+February
+60410
+March
+40433
+April
+53746
+May
+40905
+June
+109803
+July
+46643
+August
+30361
+September 39251
+October
+37530
+November
+50776
+December
+61815
+
+Saison
+
+T1
+
+100K
+
+50K
+
+Vitesse Rotation du Produit
+200
+
+l
+
+ary uary arch Apri
+M
+br
+Fe
+
+u
+Jan
+
+T2
+
+T3
+
+Électronique Maison Mode Santé Sport
+
+Automne
+Été
+Hiver
+Printemps
+
+TOP 10 Produits les plus vendus sur l'année
+NomProduit
+
+CA Catégorie par Saison
+
+T4
+
+Cables
+25775
+8088 9312
+Casques
+18720 129460 28425 25283
+Coussins
+12187
+5823 1315 13539
+Football
+5878
+5143 1469 2449
+iPhone
+101422 27685 16327 7111
+Micro-ondes
+7706
+4064 3075
+110
+Robes
+13507
+5521 5796 5234
+Sacs
+4980
+4775 15713 2369
+Sneakers
+4105
+1179 3918
+Ustensiles
+6136
+1894 3445 3089
+
+ay
+
+M
+
+ne
+
+Ju
+
+ly ust ber ber ber ber
+g
+o
+Au ptem Oct ovem ecem
+D
+N
+Se
+
+31706
+149366
+132826
+91650
+
+14383
+7426
+28626
+11946
+
+11308
+23796
+17181
+21036
+
+399 4366
+558 5661
+797 10512
+1116 9336
+
+185
+
+Ju
+
+150
+
+100
+
+84
+72
+
+71
+
+62
+
+62
+
+55
+
+45
+
+50
+
+0
+
+s
+Ca
+
+qu
+
+es
+U
+
+n
+ste
+
+es
+
+sil
+
+iPh
+
+on
+
+e
+
+es
+
+b
+Ro
+
+sin
+
+C
+
+s
+ou
+
+s
+
+sh
+T-
+
+s
+irt
+
+a
+
+g
+Yo
+
+all
+
+tb
+
+o
+Fo
+
+40
+
+s
+ble
+
+Ca
+
+38
+
+cs
+
+Sa
+
+23
+
+13
+
+8
+
+s
+e
+ts
+ps
+ers
+de
+né
+en
+to
+ak
+p
+on
+m
+e
+a
+lé
+L
+o
+Sn
+icr
+mp
+M
+Co
+
+n
+do
+
+n
+
+Ra
+
+34
+
+5
+
+Analyse des Ventes 2025 – Performances, Marges et Opportunités
+Power BI Desktop
+
+Bilan global
+📈 CA total
+
+Tendance CA
+
+574K
+📈 Marge Brute
+
+61K
+
+Alertes
+
+⬆+14.8%
+
+📈 Marge en % du CA
+
+📉Mois le plus faible
+🐢Produit le plus lent
+
+10,58 %
+
+🏆Produit top CA
+
+Août
+
+Laptops
+⚠️Catégorie avec faible marge
+
+Casques
+
+Santé (5.7 % de marge)
+
+🔍 Synthèse 2025 :
+
+✅ Recommandations :
+
+• Le chiffre d’affaires 2025 atteint 574K €, en hausse de 14,8 % vs 2024.
+• La marge brute est de 60,72K €, soit 10,6 % du CA.
+• Le produit le plus vendu est : Casques (202K €).
+• Juin et janvier sont les mois les plus porteurs.
+
+- Surveiller les ventes en août.
+- Optimiser la marge des catégories faibles (ex. Santé).
+- Réévaluer le stock des produits à faible rotation.
+
+Je transforme les données économiques
+en décisions stratégiques.
+Poweret
+BI financières
+Desktop
+
+🎓 Après un Master en Finance Internationale et 10 ans d’enseignement, j’ai
+
+choisi de mettre ma rigueur analytique au service des entreprises grâce à la data
+science.
+
+📊 Projets récents :
+Simulateurs économiques · Comparateurs de niveau de vie · Zscore
+
+💻 Formé au Bootcamp Data Analytics du Wagon, certifié Python/SQL/Data
+
+· Dashboards BI dynamiques
+
+⸻
+
+🎯 Ma mission
+
+💡 Mon approche :
+
+📈Accompagner les décideurs dans l’exploitation intelligente de leurs données.
+
+• Traduire les données en insights clairs, exploitables et orientés business
+• Construire des dashboards sur mesure pour piloter la performance
+• Faciliter les décisions stratégiques avec une pédagogie simple et impactante
+
+📍 Disponible en freelance pour des projets à forte valeur ajoutée (Data Analytics
+
+Engineering (U. Michigan, IBM), j’allie expertise technique et compréhension fine
+des enjeux économiques.
+
+⸻
+
+🔧 Compétences clés :
+Power BI, SQL, Python, Data Engineering, BigQuery, Excel, Cognos
+Analyse macroéconomique, finance d’entreprise, indicateurs économiques
+
+& Finance)
+
+🌐 Mon site : zineinsight.com
+
+

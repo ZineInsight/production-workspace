@@ -1,0 +1,4 @@
+Division,Secteur_Activite,Zone_Geographique,Type_Metier,Code_Division,Couleur_Dashboard
+Retail Banking France,Banque de detail,France,B2C,RBF,#1f77b4
+Corporate Banking,Banque d'entreprise,France,B2B,CB,#ff7f0e
+International,Banque de detail,International,B2C,INT,#2ca02c

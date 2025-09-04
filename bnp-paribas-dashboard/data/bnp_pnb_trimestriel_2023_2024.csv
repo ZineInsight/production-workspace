@@ -1,25 +1,27 @@
-Date,Annee,Trimestre,PNB_Millions_Euro,Variation_Pct,Division,Commentaire
-2023-03-31,2023,Q1,10800,-2.1,Retail Banking France,Impact inflation
-2023-06-30,2023,Q2,11200,1.5,Retail Banking France,Reprise activité
-2023-09-30,2023,Q3,11000,-0.8,Retail Banking France,Stabilisation
-2023-12-31,2023,Q4,11400,3.2,Retail Banking France,Fin d'année solide
-2024-03-31,2024,Q1,11600,7.4,Retail Banking France,Forte croissance
-2024-06-30,2024,Q2,11800,5.4,Retail Banking France,Momentum confirmé
-2024-09-30,2024,Q3,11500,4.5,Retail Banking France,Performance stable
-2024-12-31,2024,Q4,11900,4.4,Retail Banking France,Croissance continue
-2023-03-31,2023,Q1,8200,-3.2,Corporate Banking,Contexte difficile
-2023-06-30,2023,Q2,8500,2.1,Corporate Banking,Amélioration graduelle
-2023-09-30,2023,Q3,8300,-1.5,Corporate Banking,Volatilité marchés
-2023-12-31,2023,Q4,8600,4.8,Corporate Banking,Rattrapage T4
-2024-03-31,2024,Q1,8900,8.5,Corporate Banking,Très forte croissance
-2024-06-30,2024,Q2,9100,7.1,Corporate Banking,Excellence opérationnelle
-2024-09-30,2024,Q3,8950,7.8,Corporate Banking,Performance soutenue
-2024-12-31,2024,Q4,9200,7.0,Corporate Banking,Année record
-2023-03-31,2023,Q1,6800,-1.8,International,Ajustements géopolitiques
-2023-06-30,2023,Q2,7000,1.4,International,Stabilisation régionale
-2023-09-30,2023,Q3,6900,-0.5,International,Consolidation
-2023-12-31,2023,Q4,7200,5.2,International,Expansion contrôlée
-2024-03-31,2024,Q1,7400,8.8,International,Croissance internationale
-2024-06-30,2024,Q2,7600,8.6,International,Développement accéléré
-2024-09-30,2024,Q3,7350,6.5,International,Croissance robuste
-2024-12-31,2024,Q4,7800,8.3,International,Expansion réussie
+Date,Annee,Trimestre,PNB_Milliards_Euro,Variation_Pct,Division,Commentaire
+2023-03-31,2023,Q1,5.82,-2.8,Domestic Markets,Impact taux inflation
+2023-06-30,2023,Q2,6.05,1.2,Domestic Markets,Reprise commerciale
+2023-09-30,2023,Q3,5.91,-1.5,Domestic Markets,Ajustement saisonnier
+2023-12-31,2023,Q4,6.17,3.8,Domestic Markets,Solide fin d'année
+2024-03-31,2024,Q1,6.10,4.8,Domestic Markets,Excellente dynamique
+2024-06-30,2024,Q2,6.15,1.7,Domestic Markets,Croissance confirmée
+2024-09-30,2024,Q3,6.05,-1.6,Domestic Markets,Performance stable
+2024-12-31,2024,Q4,6.10,-1.1,Domestic Markets,Année record
+2023-03-31,2023,Q1,3.49,-1.5,International Financial Services,Volatilité marchés
+2023-06-30,2023,Q2,3.63,2.3,International Financial Services,Amélioration progressive
+2023-09-30,2023,Q3,3.55,-0.8,International Financial Services,Consolidation
+2023-12-31,2023,Q4,3.70,5.2,International Financial Services,Rattrapage T4
+2024-03-31,2024,Q1,3.66,-1.1,International Financial Services,Forte croissance
+2024-06-30,2024,Q2,3.69,1.6,International Financial Services,Momentum soutenu
+2024-09-30,2024,Q3,3.63,-1.7,International Financial Services,Performance robuste
+2024-12-31,2024,Q4,3.66,0.8,International Financial Services,Expansion réussie
+2023-03-31,2023,Q1,2.33,-3.2,Corporate & Institutional Banking,Contexte difficile
+2023-06-30,2023,Q2,2.42,1.8,Corporate & Institutional Banking,Amélioration graduelle
+2023-09-30,2023,Q3,2.36,-1.2,Corporate & Institutional Banking,Volatilité géopolitique
+2023-12-31,2023,Q4,2.47,6.1,Corporate & Institutional Banking,Reprise T4
+2024-03-31,2024,Q1,2.44,-1.2,Corporate & Institutional Banking,Très forte performance
+2024-06-30,2024,Q2,2.46,1.7,Corporate & Institutional Banking,Excellence opérationnelle
+2024-09-30,2024,Q3,2.42,-1.6,Corporate & Institutional Banking,Croissance soutenue
+2024-12-31,2024,Q4,2.44,1.2,Corporate & Institutional Banking,Année exceptionnelle
+2023-12-31,2023,Annuel,46.6,-1.2,Groupe BNP Paribas,Année de transition
+2024-12-31,2024,Annuel,48.8,4.7,Groupe BNP Paribas,Croissance solide

@@ -1,0 +1,11 @@
+KPI_Name,Categorie,Unite_Mesure,Seuil_Bon,Seuil_Moyen,Seuil_Mauvais,Format_Affichage,Description
+PNB_Millions_Euro,Performance,Millions EUR,>12000,8000-12000,<8000,"# ##0,, M€",Produit Net Bancaire
+Resultat_Net_Millions_Euro,Performance,Millions EUR,>3000,2000-3000,<2000,"# ##0,, M€",Resultat net apres impots
+ROE_Pct,Rentabilite,Pourcentage,>12,8-12,<8,0.0%,Return on Equity
+ROA_Pct,Rentabilite,Pourcentage,>0.6,0.4-0.6,<0.4,0.00%,Return on Assets
+CET1_Ratio_Pct,Capital,Pourcentage,>13,11-13,<11,0.0%,Common Equity Tier 1
+Tier1_Ratio_Pct,Capital,Pourcentage,>15,13-15,<13,0.0%,Tier 1 Capital Ratio
+NPL_Ratio_Pct,Risque,Pourcentage,<3,3-5,>5,0.0%,Non Performing Loans
+Cost_of_Risk_Bps,Risque,Points de base,<40,40-80,>80,"0 ""bps""",Cout du risque
+Cost_Income_Ratio_Pct,Efficacite,Pourcentage,<60,60-70,>70,0.0%,Ratio charges sur revenus
+Provisions_Credit_Millions_Euro,Risque,Millions EUR,<500,500-1000,>1000,"# ##0,, M€",Provisions pour credit

@@ -71,7 +71,7 @@ class RevolutionaryI18n {
                 'hero.subtitle': 'Notre outil ZScore analyse 30+ critères avec l\'IA pour vous guider vers votre ville idéale. Rejoignez la révolution de l\'expatriation intelligente.',
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'hero.badge': 'utilisateurs révolutionnent déjà leur vie',
                 'hero.badge': 'Nouvelle plateforme IA révolutionnaire',
-                'hero.cta.primary': 'Révolutionner ma vie maintenant',
+                'hero.cta.primary': 'Trouver ma ville idéale',
                 'hero.cta.secondary': 'Dashboard Premium',
                 'hero.trust.text': 'Utilisé par des professionnels de',
 
@@ -80,7 +80,7 @@ class RevolutionaryI18n {
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'stats.users': 'Utilisateurs',
                 'stats.criteria': 'Critères IA',
                 'stats.satisfaction': 'Satisfaction',
-                'stats.countries': 'Pays Analysés',
+                'stats.cities': 'Villes Analysées',
 
                 // Products
                 'product.zscore.title': 'ZScore Intelligence',
@@ -432,7 +432,7 @@ class RevolutionaryI18n {
                 'hero.subtitle': 'Our ZScore tool analyzes 30+ criteria with AI to guide you to your ideal city. Join the smart expatriation revolution.',
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'hero.badge': 'users are already revolutionizing their lives',
                 'hero.badge': 'New revolutionary AI platform',
-                'hero.cta.primary': 'Revolutionize my life now',
+                'hero.cta.primary': 'Find my ideal city',
                 'hero.cta.secondary': 'Premium Dashboard',
                 'hero.trust.text': 'Used by professionals from',
 
@@ -441,7 +441,7 @@ class RevolutionaryI18n {
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'stats.users': 'Users',
                 'stats.criteria': 'AI Criteria',
                 'stats.satisfaction': 'Satisfaction',
-                'stats.countries': 'Countries Analyzed',
+                'stats.cities': 'Cities Analyzed',
 
                 // Products
                 'product.zscore.title': 'ZScore Intelligence',

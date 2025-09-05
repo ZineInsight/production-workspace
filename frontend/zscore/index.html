@@ -64,6 +64,63 @@
 
     <!-- Styles Revolutionary -->
     <link rel="stylesheet" href="css/revolutionary.css">
+    
+    <style>
+        /* Style spécifique pour le bouton de retour accueil */
+        .nav-link.home-link {
+            background: rgba(0, 102, 255, 0.1);
+            border: 1px solid rgba(0, 102, 255, 0.2);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-radius: 12px;
+        }
+        
+        .nav-link.home-link:hover {
+            background: rgba(0, 102, 255, 0.15);
+            border-color: rgba(0, 102, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+        }
+        
+        .nav-link.home-link .nav-icon {
+            color: #0066ff;
+            opacity: 0.8;
+        }
+        
+        .nav-link.home-link:hover .nav-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .nav-link.home-link .nav-text {
+            background: linear-gradient(135deg, #0066ff, #667eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+        
+        /* Animation pulse subtile pour attirer l'attention */
+        @keyframes gentle-pulse {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 1; }
+        }
+        
+        .nav-link.home-link {
+            animation: gentle-pulse 3s ease-in-out infinite;
+        }
+        
+        /* Responsive mobile */
+        @media (max-width: 768px) {
+            .nav-link.home-link .nav-text {
+                font-size: 12px;
+            }
+            
+            .nav-link.home-link {
+                padding: 8px 12px;
+            }
+        }
+    </style>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -112,6 +169,12 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-links">
                     <!-- Navigation simplifiée -->
+                    <li class="nav-item">
+                        <a href="/" class="nav-link home-link" title="Retour à l'accueil ZineInsight">
+                            <i data-lucide="home" class="nav-icon"></i>
+                            <span class="nav-text">Portfolio Business</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -265,8 +328,8 @@
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-item">
-                            <div class="stat-number" data-counter="30">0</div>
-                            <div class="stat-label" data-i18n="stats.countries">Pays Analysés</div>
+                            <div class="stat-number" data-counter="258">0</div>
+                            <div class="stat-label" data-i18n="stats.cities">Villes Analysées</div>
                         </div>
                     </div>
 
@@ -274,8 +337,7 @@
                     <div class="hero-actions" data-animate="fade-up" data-delay="400">
                         <button class="btn btn-primary btn-hero" id="start-revolution-btn">
                             <i data-lucide="rocket" class="btn-icon"></i>
-                            <span class="btn-text" data-i18n="hero.cta.primary">Révolutionnez votre vie
-                                maintenant</span>
+                            <span class="btn-text" data-i18n="hero.cta.primary">Trouver ma ville idéale</span>
                             <div class="btn-shine"></div>
                             <div class="btn-glow"></div>
                         </button>
@@ -1106,7 +1168,9 @@
                     window.revolutionaryI18n?.translate('zine.tip.worldwide') || '🌍 +200 destinations analysées en temps réel !',
                     window.revolutionaryI18n?.translate('zine.tip.personalized') || '✨ Chaque recommandation est unique à ton profil !',
                     window.revolutionaryI18n?.translate('zine.tip.free') || '🎁 Analyse gratuite, résultats premium !',
-                    window.revolutionaryI18n?.translate('zine.tip.speed') || '⚡ Questionnaire : 3 minutes, résultats : instantanés !'
+                    window.revolutionaryI18n?.translate('zine.tip.speed') || '⚡ Questionnaire : 3 minutes, résultats : instantanés !',
+                    '🏠 Nouveau ! Bouton Portfolio Business en haut pour revenir à l\'accueil !',
+                    '💼 Découvre mes services Data Analytics via le bouton Portfolio !'
                 ];
 
                 const randomTip = tips[Math.floor(Math.random() * tips.length)];

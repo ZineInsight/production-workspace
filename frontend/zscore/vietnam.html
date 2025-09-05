@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Vietnam - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet pour réussir votre installation au Vietnam : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Vietnam, expatriation, installation, guide, logement, emploi, visa, Hô Chi Minh-Ville, Hanoi, Da Nang">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer au Vietnam">
+    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation au Vietnam">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --vietnam-red: #C8102E;
+            --vietnam-gold: #D4AF37;
+            --vietnam-yellow: #F7DC6F;
+            --vietnam-deep-red: #8B0000;
+            --warm-cream: #faf8f3;
+            --soft-gold: #E8D5A3;
+            --coral-accent: #CD5C5C;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-cream) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(200, 16, 46, 0.8), rgba(212, 175, 55, 0.7)),
+                url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--vietnam-yellow);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--vietnam-red), var(--vietnam-gold));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff8f0, #fef7e6);
+            border-left: 5px solid var(--vietnam-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-tag {
+            background: var(--vietnam-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .discover-button {
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+        }
+
+        .discover-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 16, 46, 0.4);
+            color: white;
+        }
+
+        .flag-emoji {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .icon-vietnam {
+            color: var(--vietnam-red);
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(200, 16, 46, 0.05), rgba(212, 175, 55, 0.05));
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--vietnam-red);
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid var(--vietnam-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-container {
+            background: linear-gradient(135deg, var(--vietnam-deep-red), var(--vietnam-red));
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--vietnam-yellow);
+        }
+
+        .budget-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .budget-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .budget-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .budget-item:last-child {
+            border-bottom: none;
+        }
+
+        .navigation-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(200, 16, 46, 0.3);
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--vietnam-red);
+            transform: scale(1.2);
+        }
+
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(200, 16, 46, 0.4);
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+
+        .floating-action:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(200, 16, 46, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+                padding: 2rem;
+            }
+            .navigation-dots {
+                display: none;
+            }
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="flag-emoji">🇻🇳</span> ZineInsight Vietnam
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Vue d'ensemble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cities">Villes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cost-living">Coût de la vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employment">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visa">Visa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lifestyle">Mode de vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#healthcare">Santé</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <div class="dot active" data-section="hero"></div>
+        <div class="dot" data-section="overview"></div>
+        <div class="dot" data-section="cities"></div>
+        <div class="dot" data-section="cost-living"></div>
+        <div class="dot" data-section="employment"></div>
+        <div class="dot" data-section="visa"></div>
+        <div class="dot" data-section="lifestyle"></div>
+        <div class="dot" data-section="education"></div>
+        <div class="dot" data-section="healthcare"></div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="floating-action" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="flag-emoji mb-4">🇻🇳</div>
+                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie au Vietnam</h1>
+                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation au Vietnam. 
+                    Entre tradition millénaire et modernité dynamique, le Vietnam offre une expérience d'expatriation unique en Asie.</p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>Guide Premium Complet
+                    </div>
+                    <br>
+                    <button class="discover-button btn-lg" onclick="document.getElementById('overview').scrollIntoView()">
+                        <i class="fas fa-compass me-2"></i>Découvrir le Vietnam
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi le Vietnam ?
+                </h2>
+                <p class="lead">Une destination d'expatriation en pleine croissance</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-vietnam mb-3">
+                            <i class="fas fa-dollar-sign fa-2x"></i>
+                        </div>
+                        <h4>Coût de la Vie Avantageux</h4>
+                        <p>L'un des coûts de la vie les plus abordables d'Asie du Sud-Est, permettant un style de vie confortable avec un budget modéré.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-vietnam mb-3">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                        </div>
+                        <h4>Économie Dynamique</h4>
+                        <p>Croissance économique soutenue de 6-7% par an, marché émergent attractif pour les investisseurs et entrepreneurs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-vietnam mb-3">
+                            <i class="fas fa-utensils fa-2x"></i>
+                        </div>
+                        <h4>Culture & Gastronomie</h4>
+                        <p>Patrimoine culturel riche, cuisine réputée mondialement et population accueillante envers les expatriés.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">97M</div>
+                                <div class="stat-label">Population</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">6.5%</div>
+                                <div class="stat-label">Croissance PIB</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Moins Cher que l'Europe</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">15ème</div>
+                                <div class="stat-label">Exportateur Mondial</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section id="cities" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-city me-3"></i>Principales Villes du Vietnam
+                </h2>
+                <p class="lead">Découvrez les métropoles vietnamiennes</p>
+            </div>
+
+            <div class="city-grid">
+                <!-- Hô Chi Minh-Ville -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hô Chi Minh-Ville" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-building me-2 icon-vietnam"></i>Hô Chi Minh-Ville
+                        </h5>
+                        <p class="card-text">La capitale économique du Vietnam, métropole dynamique et centre d'affaires de premier plan.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">9M habitants</span>
+                            <span class="info-tag ms-2">Centre économique</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Hub d'affaires principal</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté expat importante</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vie nocturne animée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hanoi -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1551525463-2ff5a442645e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hanoi" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-university me-2 icon-vietnam"></i>Hanoi
+                        </h5>
+                        <p class="card-text">La capitale politique et culturelle, riche en histoire avec un charme traditionnel préservé.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">8M habitants</span>
+                            <span class="info-tag ms-2">Capitale</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Centre politique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Patrimoine historique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Culture traditionnelle</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Da Nang -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1572183095039-ea4ac45c4e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Da Nang" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-umbrella-beach me-2 icon-vietnam"></i>Da Nang
+                        </h5>
+                        <p class="card-text">Ville côtière moderne, équilibre parfait entre développement urbain et plages magnifiques.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">1.2M habitants</span>
+                            <span class="info-tag ms-2">Côtière</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Plages spectaculaires</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Développement moderne</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Qualité de vie élevée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hoi An -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hoi An" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-lantern me-2 icon-vietnam"></i>Hoi An
+                        </h5>
+                        <p class="card-text">Ancienne cité marchande classée UNESCO, destination privilégiée pour un mode de vie tranquille.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">200K habitants</span>
+                            <span class="info-tag ms-2">UNESCO</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Charme authentique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Tourisme développé</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté internationale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost of Living Section -->
+    <section id="cost-living" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-dong-sign me-3"></i>Coût de la Vie au Vietnam
+                </h2>
+                <p class="lead">Budget réaliste pour vivre confortablement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-home icon-vietnam me-2"></i>Logement</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Hô Chi Minh-Ville</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio moderne : 300-600 $/mois</li>
+                                        <li>• Appartement 1BR : 500-900 $/mois</li>
+                                        <li>• Appartement 2BR : 700-1,200 $/mois</li>
+                                        <li>• Maison service : 800-1,500 $/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Hanoi</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio moderne : 250-500 $/mois</li>
+                                        <li>• Appartement 1BR : 400-750 $/mois</li>
+                                        <li>• Appartement 2BR : 600-1,000 $/mois</li>
+                                        <li>• Maison traditionelle : 500-900 $/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-utensils icon-vietnam me-2"></i>Alimentation & Restaurants</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Cuisine Locale</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Pho rue : 1-2 $</li>
+                                        <li>• Repas local : 2-4 $</li>
+                                        <li>• Restaurant vietnamien : 5-10 $</li>
+                                        <li>• Bière locale : 0.50-1 $</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Cuisine Occidentale</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Café occidental : 2-4 $</li>
+                                        <li>• Restaurant occidental : 10-20 $</li>
+                                        <li>• Fast food : 4-7 $</li>
+                                        <li>• Bière importée : 2-4 $</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-motorcycle icon-vietnam me-2"></i>Transport</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Transport Local</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Moto-taxi (Grab) : 1-3 $</li>
+                                        <li>• Taxi : 0.50-0.70 $/km</li>
+                                        <li>• Bus local : 0.30 $</li>
+                                        <li>• Location scooter : 5-8 $/jour</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Véhicule Personnel</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Scooter neuf : 1,000-2,500 $</li>
+                                        <li>• Essence : 0.90 $/L</li>
+                                        <li>• Assurance scooter : 50-100 $/an</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Budget Mensuel Moyen</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple HCMC</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--vietnam-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,500-2,200 $</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Hanoi</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--vietnam-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,200-1,800 $</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Célibataire Da Nang</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 50%; background: var(--soft-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>800-1,200 $</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Le salaire minimum au Vietnam est d'environ 180 $/mois, mais les expatriés gagnent généralement 800-3,000 $/mois.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Section -->
+    <section id="employment" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-briefcase me-3"></i>Marché de l'Emploi
+                </h2>
+                <p class="lead">Opportunités professionnelles au Vietnam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-laptop-code fa-3x icon-vietnam mb-3"></i>
+                        <h5>Technologies</h5>
+                        <p><strong>Salaire moyen :</strong> 1,200-3,500 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Développement logiciel : Croissance</li>
+                            <li>• Outsourcing IT : Secteur fort</li>
+                            <li>• Startups tech : Écosystème émergent</li>
+                            <li>• Digital marketing : Demande</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-chalkboard-teacher fa-3x icon-vietnam mb-3"></i>
+                        <h5>Enseignement</h5>
+                        <p><strong>Salaire moyen :</strong> 800-2,000 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Anglais langue étrangère : Très demandé</li>
+                            <li>• Écoles internationales : Opportunités</li>
+                            <li>• Formation entreprise : Croissance</li>
+                            <li>• Universités : Postes recherche</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-plane fa-3x icon-vietnam mb-3"></i>
+                        <h5>Tourisme & Hospitalité</h5>
+                        <p><strong>Salaire moyen :</strong> 600-1,800 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Hôtellerie : Secteur en expansion</li>
+                            <li>• Tour opérateurs : Demande</li>
+                            <li>• F&B Management : Opportunités</li>
+                            <li>• Événementiel : Croissance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-industry fa-3x icon-vietnam mb-3"></i>
+                        <h5>Manufacturing</h5>
+                        <p><strong>Salaire moyen :</strong> 1,000-2,500 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Textile : Secteur traditionnel</li>
+                            <li>• Électronique : Assemblage</li>
+                            <li>• Automobile : Développement</li>
+                            <li>• Quality Control : Postes expats</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-chart-line fa-3x icon-vietnam mb-3"></i>
+                        <h5>Finance & Banking</h5>
+                        <p><strong>Salaire moyen :</strong> 1,500-4,000 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Banques internationales : Présentes</li>
+                            <li>• Fintech : Secteur émergent</li>
+                            <li>• Investment : Opportunités</li>
+                            <li>• Audit : Demande constante</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-shipping-fast fa-3x icon-vietnam mb-3"></i>
+                        <h5>Import/Export</h5>
+                        <p><strong>Salaire moyen :</strong> 800-2,200 $/mois</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Commerce international : Fort</li>
+                            <li>• Logistique : Hub régional</li>
+                            <li>• Supply chain : Expertise</li>
+                            <li>• E-commerce : Expansion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card mt-4">
+                <div class="card-body p-4">
+                    <h4><i class="fas fa-search icon-vietnam me-2"></i>Recherche d'Emploi</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Sites d'Emploi Populaires</h6>
+                            <ul class="list-unstyled">
+                                <li>• <strong>VietnamWorks</strong> - Leader local</li>
+                                <li>• <strong>JobStreet Vietnam</strong> - International</li>
+                                <li>• <strong>TopCV</strong> - Plateforme moderne</li>
+                                <li>• <strong>LinkedIn</strong> - Réseautage</li>
+                                <li>• <strong>Careerbuilder.vn</strong> - Établi</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Conseils pour Réussir</h6>
+                            <ul class="list-unstyled">
+                                <li>• Apprendre les bases du vietnamien</li>
+                                <li>• Comprendre la culture d'entreprise</li>
+                                <li>• Réseautage dans communauté expat</li>
+                                <li>• Patience dans négociations</li>
+                                <li>• Respect hiérarchie traditionnelle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Section -->
+    <section id="visa" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-passport me-3"></i>Visas et Immigration
+                </h2>
+                <p class="lead">Vos options pour vous installer au Vietnam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-briefcase icon-vietnam me-2"></i>Visa de Travail
+                            </h4>
+                            <p class="card-text">Pour les professionnels avec un emploi au Vietnam.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Permis de travail obligatoire</li>
+                                    <li>Diplôme et expérience requis</li>
+                                    <li>Sponsor employeur nécessaire</li>
+                                    <li>Durée : 1-3 ans renouvelable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-rocket icon-vietnam me-2"></i>Visa Investisseur
+                            </h4>
+                            <p class="card-text">Pour les entrepreneurs et investisseurs.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Investissement minimum variable</li>
+                                    <li>Plan d'affaires détaillé</li>
+                                    <li>Licence d'investissement</li>
+                                    <li>Création d'emplois locaux</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-plane icon-vietnam me-2"></i>Visa Touriste (Extension)
+                            </h4>
+                            <p class="card-text">Pour les séjours touristiques prolongés.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Visa 30 jours à l'arrivée</li>
+                                    <li>Extensions possibles sur place</li>
+                                    <li>Visa électronique disponible</li>
+                                    <li>Sorties/entrées multiples</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-heart icon-vietnam me-2"></i>Visa Conjoint
+                            </h4>
+                            <p class="card-text">Pour les conjoints de citoyens vietnamiens.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Mariage officiel reconnu</li>
+                                    <li>Exemption visa long terme</li>
+                                    <li>Droits de résidence étendus</li>
+                                    <li>Possibilité naturalisation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart me-3"></i>Mode de Vie Vietnamien
+                </h2>
+                <p class="lead">Immersion dans la culture vietnamienne</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-utensils icon-vietnam me-2"></i>Culture Gastronomique</h4>
+                            <p>La cuisine vietnamienne est un art de vivre : pho matinal, street food à toute heure, marchés colorés et repas familiaux conviviaux. Une explosion de saveurs fraîches et saines.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-motorcycle icon-vietnam me-2"></i>Mobilité Urbaine</h4>
+                            <p>Le scooter règne en maître dans les villes vietnamiennes. Cette culture de la moto crée une dynamique urbaine unique, avec ses codes et sa fluidité particulière.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-users icon-vietnam me-2"></i>Société Collectiviste</h4>
+                            <p>La famille élargie et la communauté sont centrales. Les relations sociales se construisent sur le respect, la hiérarchie et la réciprocité dans les services rendus.</p>
+
+                            <h4 class="mt-4"><i class="fas fa-yin-yang icon-vietnam me-2"></i>Spiritualité & Traditions</h4>
+                            <p>Mélange unique de bouddhisme, confucianisme et traditions ancestrales. Les fêtes traditionnelles comme le Têt rythment la vie sociale et culturelle.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-vietnam"></i>
+                        </div>
+                        <p class="fst-italic">"Vivre au Vietnam depuis 2 ans m'a ouvert les yeux sur une culture fascinante. Le coût de la vie et la chaleur humaine sont extraordinaires."</p>
+                        <div class="mt-3">
+                            <strong>Marc D.</strong><br>
+                            <small class="text-muted">Enseignant, Hô Chi Minh-Ville</small>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-vietnam"></i>
+                        </div>
+                        <p class="fst-italic">"L'énergie entrepreneuriale du Vietnam est contagieuse. Mon business s'est développé plus vite qu'anticipé grâce au dynamisme local."</p>
+                        <div class="mt-3">
+                            <strong>Sarah L.</strong><br>
+                            <small class="text-muted">Entrepreneur, Hanoi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-bowl-rice fa-3x icon-vietnam mb-3"></i>
+                        <h5>Cuisine</h5>
+                        <p>Gastronomie raffinée et saine</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-umbrella-beach fa-3x icon-vietnam mb-3"></i>
+                        <h5>Climat</h5>
+                        <p>Tropical avec saisons marquées</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-handshake fa-3x icon-vietnam mb-3"></i>
+                        <h5>Hospitalité</h5>
+                        <p>Accueil chaleureux traditionnel</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-history fa-3x icon-vietnam mb-3"></i>
+                        <h5>Histoire</h5>
+                        <p>Patrimoine culturel millénaire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Vietnamien
+                </h2>
+                <p class="lead">Éducation en développement et écoles internationales</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-school icon-vietnam me-2"></i>Écoles Internationales</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Programmes Anglais</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>SSIS</strong> - Saigon South International</li>
+                                        <li>• <strong>BIS Hanoi</strong> - British International</li>
+                                        <li>• <strong>ISHCMC</strong> - International School</li>
+                                        <li>• <strong>Renaissance</strong> - Curriculum américain</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Programmes Français</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>Lycée Français</strong> - HCMC</li>
+                                        <li>• <strong>École Française</strong> - Hanoi</li>
+                                        <li>• <strong>EFIS</strong> - École Franco-Internationale</li>
+                                        <li>• <strong>Marguerite Duras</strong> - Établissement</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-university icon-vietnam me-2"></i>Enseignement Supérieur</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Universités Locales</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Université nationale du Vietnam</li>
+                                        <li>• Université d'économie HCMC</li>
+                                        <li>• Université de technologie Hanoi</li>
+                                        <li>• Programmes en anglais disponibles</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Campus Internationaux</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• RMIT University Vietnam</li>
+                                        <li>• University of Science VNU</li>
+                                        <li>• British University Vietnam</li>
+                                        <li>• Diplômes reconnus internationalement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Coûts Éducation</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>École Internationale</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--vietnam-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>8,000-25,000 $</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Université Locale</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 30%; background: var(--vietnam-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,000-3,000 $</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Campus International</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 50%; background: var(--soft-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>4,000-12,000 $</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Les écoles internationales sont nombreuses dans les grandes villes, offrant des standards élevés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Section -->
+    <section id="healthcare" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart-pulse me-3"></i>Système de Santé Vietnamien
+                </h2>
+                <p class="lead">Santé publique en développement et cliniques privées</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-hospital icon-vietnam me-2"></i>Système Public</h4>
+                            <p>Système de santé publique en développement :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Assurance santé sociale</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Hôpitaux publics nombreux</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Soins de base abordables</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i> Qualité variable</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i> Barrière de la langue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-user-md icon-vietnam me-2"></i>Secteur Privé</h4>
+                            <p>Recommandé pour les expatriés :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i> Cliniques internationales</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Personnel anglophone</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Standards internationaux</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Équipements modernes</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Assurance recommandée</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-clinic-medical icon-vietnam me-2"></i>Cliniques Recommandées</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Hô Chi Minh-Ville</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Family Medical Practice</li>
+                                        <li>• Columbia Asia Saigon</li>
+                                        <li>• Vinmec International Hospital</li>
+                                        <li>• Franco-Vietnamese Hospital</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Hanoi</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Vinmec Times City</li>
+                                        <li>• Family Medical Practice</li>
+                                        <li>• 108 Military Central Hospital</li>
+                                        <li>• Hanoi French Hospital</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Coûts Moyens</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Consultation privée : 30-80 $</li>
+                                        <li>• Urgences : 100-300 $</li>
+                                        <li>• Assurance expat : 800-2,000 $/an</li>
+                                        <li>• Médicaments : Prix abordables</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">6.1%</div>
+                                <div class="stat-label">PIB Santé</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">75.4</div>
+                                <div class="stat-label">Espérance de Vie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">0.8/1000</div>
+                                <div class="stat-label">Médecins</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">93%</div>
+                                <div class="stat-label">Couverture Santé</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3">
+                        <span class="flag-emoji">🇻🇳</span> ZineInsight Vietnam
+                    </h5>
+                    <p>Votre guide complet pour réussir votre installation au Vietnam. Des conseils d'experts pour chaque étape de votre parcours d'expatriation en Asie du Sud-Est.</p>
+                    <div class="mt-3">
+                        <button class="discover-button" onclick="window.location.href='../questionnaire.html'">
+                            <i class="fas fa-rocket me-2"></i>Commencer mon projet
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Sections</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#overview" class="text-light text-decoration-none">Vue d'ensemble</a></li>
+                        <li><a href="#cities" class="text-light text-decoration-none">Villes principales</a></li>
+                        <li><a href="#visa" class="text-light text-decoration-none">Visas</a></li>
+                        <li><a href="#lifestyle" class="text-light text-decoration-none">Mode de vie</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Autres Destinations</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="thailande.html" class="text-light text-decoration-none">Thaïlande</a></li>
+                        <li><a href="singapour.html" class="text-light text-decoration-none">Singapour</a></li>
+                        <li><a href="japon.html" class="text-light text-decoration-none">Japon</a></li>
+                        <li><a href="canada.html" class="text-light text-decoration-none">Canada</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Guide Premium Vietnam 🇻🇳</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation dots functionality
+        const dots = document.querySelectorAll('.dot');
+        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa'];
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const targetSection = document.getElementById(sections[index]);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Update active dot on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        current = section;
+                    }
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (sections[index] === current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.content-card, .benefit-card, .city-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

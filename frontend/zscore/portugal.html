@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Portugal - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet pour réussir votre installation au Portugal : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Portugal, expatriation, installation, guide, logement, emploi, visa, Lisbonne, Porto, Algarve">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer au Portugal">
+    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation au Portugal">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --portugal-green: #046A38;
+            --portugal-red: #C8102E;
+            --portugal-gold: #FFD700;
+            --portugal-cream: #F5F3F0;
+            --warm-sand: #f8f6f0;
+            --coral-red: #E63946;
+            --ocean-blue: #0077BE;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-sand) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(4, 106, 56, 0.7), rgba(200, 16, 46, 0.7)),
+                url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--portugal-green), var(--portugal-red));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--portugal-gold);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--portugal-green), var(--portugal-red));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(4, 106, 56, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f8f4, #e6f3ea);
+            border-left: 5px solid var(--portugal-green);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-tag {
+            background: var(--portugal-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .discover-button {
+            background: linear-gradient(135deg, var(--portugal-green), var(--portugal-red));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(4, 106, 56, 0.3);
+        }
+
+        .discover-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(4, 106, 56, 0.4);
+            color: white;
+        }
+
+        .flag-emoji {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .icon-portugal {
+            color: var(--portugal-green);
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(4, 106, 56, 0.05), rgba(200, 16, 46, 0.05));
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--portugal-green);
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid var(--portugal-red);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-container {
+            background: linear-gradient(135deg, var(--portugal-green), var(--portugal-red));
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--portugal-gold);
+        }
+
+        .budget-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .budget-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .budget-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .budget-item:last-child {
+            border-bottom: none;
+        }
+
+        .navigation-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(4, 106, 56, 0.3);
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--portugal-green);
+            transform: scale(1.2);
+        }
+
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--portugal-green), var(--portugal-red));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(4, 106, 56, 0.4);
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+
+        .floating-action:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(4, 106, 56, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+                padding: 2rem;
+            }
+            .navigation-dots {
+                display: none;
+            }
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="flag-emoji">🇵🇹</span> ZineInsight Portugal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Vue d'ensemble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cities">Villes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cost-living">Coût de la vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employment">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visa">Visa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lifestyle">Mode de vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#healthcare">Santé</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <div class="dot active" data-section="hero"></div>
+        <div class="dot" data-section="overview"></div>
+        <div class="dot" data-section="cities"></div>
+        <div class="dot" data-section="cost-living"></div>
+        <div class="dot" data-section="employment"></div>
+        <div class="dot" data-section="visa"></div>
+        <div class="dot" data-section="lifestyle"></div>
+        <div class="dot" data-section="education"></div>
+        <div class="dot" data-section="healthcare"></div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="floating-action" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="flag-emoji mb-4">🇵🇹</div>
+                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie au Portugal</h1>
+                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation au Portugal. 
+                    Entre tradition authentique et modernité, le Portugal offre une qualité de vie exceptionnelle.</p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>Guide Premium Complet
+                    </div>
+                    <br>
+                    <button class="discover-button btn-lg" onclick="document.getElementById('overview').scrollIntoView()">
+                        <i class="fas fa-compass me-2"></i>Découvrir le Portugal
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi le Portugal ?
+                </h2>
+                <p class="lead">Une destination d'expatriation de choix en Europe</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-portugal mb-3">
+                            <i class="fas fa-euro-sign fa-2x"></i>
+                        </div>
+                        <h4>Coût de la Vie Abordable</h4>
+                        <p>L'un des pays les plus abordables d'Europe occidentale, avec un excellent rapport qualité-prix pour le logement et les services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-portugal mb-3">
+                            <i class="fas fa-sun fa-2x"></i>
+                        </div>
+                        <h4>Climat Méditerranéen</h4>
+                        <p>Plus de 300 jours de soleil par an, des hivers doux et des étés agréables. Un climat idéal toute l'année.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-portugal mb-3">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
+                        <h4>Sécurité & Tranquillité</h4>
+                        <p>L'un des pays les plus sûrs au monde selon le Global Peace Index, avec une population accueillante et chaleureuse.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">10.3M</div>
+                                <div class="stat-label">Population</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">3ème</div>
+                                <div class="stat-label">Pays le Plus Sûr</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">Jours de Soleil/An</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">40%</div>
+                                <div class="stat-label">Moins Cher que la France</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section id="cities" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-city me-3"></i>Principales Villes du Portugal
+                </h2>
+                <p class="lead">Découvrez les destinations favorites des expatriés</p>
+            </div>
+
+            <div class="city-grid">
+                <!-- Lisbonne -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Lisbonne" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-building me-2 icon-portugal"></i>Lisbonne
+                        </h5>
+                        <p class="card-text">La capitale vibrante, mélange parfait entre tradition et modernité, avec ses fameux tramways jaunes.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">545K habitants</span>
+                            <span class="info-tag ms-2">Capitale</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Écosystème startup dynamique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Architecture unique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vie culturelle riche</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Porto -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c83a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Porto" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-wine-glass me-2 icon-portugal"></i>Porto
+                        </h5>
+                        <p class="card-text">Ville du port et du vin éponyme, classée UNESCO, avec un charme authentique incomparable.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">238K habitants</span>
+                            <span class="info-tag ms-2">UNESCO</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Coût de la vie très abordable</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Centre historique magnifique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Gastronomie exceptionnelle</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Algarve -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Algarve" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-umbrella-beach me-2 icon-portugal"></i>Algarve
+                        </h5>
+                        <p class="card-text">Région côtière du sud, paradis des retraités avec ses plages dorées et son climat exceptionnel.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">450K habitants</span>
+                            <span class="info-tag ms-2">Côte dorée</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Plages spectaculaires</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté expat importante</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Golf et loisirs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coimbra -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1509439581779-6298f75bf6e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Coimbra" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-graduation-cap me-2 icon-portugal"></i>Coimbra
+                        </h5>
+                        <p class="card-text">Ville universitaire historique, siège de l'une des plus anciennes universités d'Europe.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">143K habitants</span>
+                            <span class="info-tag ms-2">Universitaire</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Atmosphère étudiante</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Patrimoine exceptionnel</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Coût de la vie très bas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost of Living Section -->
+    <section id="cost-living" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-euro-sign me-3"></i>Coût de la Vie au Portugal
+                </h2>
+                <p class="lead">Budget réaliste pour vivre confortablement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-home icon-portugal me-2"></i>Logement</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Lisbonne</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : 600-900 €/mois</li>
+                                        <li>• T2 centre : 800-1,200 €/mois</li>
+                                        <li>• T3 banlieue : 700-1,000 €/mois</li>
+                                        <li>• Colocation : 300-500 €/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Porto</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : 400-700 €/mois</li>
+                                        <li>• T2 centre : 600-900 €/mois</li>
+                                        <li>• T3 banlieue : 500-750 €/mois</li>
+                                        <li>• Colocation : 250-400 €/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-shopping-cart icon-portugal me-2"></i>Alimentation & Courses</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Supermarché (par semaine)</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Couple : 60-80 €</li>
+                                        <li>• Famille de 4 : 100-130 €</li>
+                                        <li>• Célibataire : 30-50 €</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Restaurants</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Menu du jour : 8-12 €</li>
+                                        <li>• Dîner restaurant : 15-25 €</li>
+                                        <li>• Café : 0.70-1 €</li>
+                                        <li>• Bière : 1.50-3 €</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-bus icon-portugal me-2"></i>Transport</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Transport Public</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Pass mensuel Lisbonne : 40 €</li>
+                                        <li>• Pass mensuel Porto : 30 €</li>
+                                        <li>• Ticket simple : 1.50-2 €</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Voiture</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Essence : 1.60-1.70 €/L</li>
+                                        <li>• Assurance : 25-50 €/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Budget Mensuel Moyen</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Lisbonne</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--portugal-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,800-2,500 €</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Porto</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--portugal-green); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,500-2,000 €</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Célibataire Algarve</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 50%; background: var(--portugal-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>1,000-1,400 €</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Le salaire minimum au Portugal est de 760 € par mois, mais les expatriés gagnent généralement plus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Section -->
+    <section id="employment" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-briefcase me-3"></i>Marché de l'Emploi
+                </h2>
+                <p class="lead">Opportunités professionnelles au Portugal</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-laptop-code fa-3x icon-portugal mb-3"></i>
+                        <h5>Technologies</h5>
+                        <p><strong>Salaire moyen :</strong> 25,000-45,000 €/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Développeurs : Forte demande</li>
+                            <li>• Startups : Écosystème en boom</li>
+                            <li>• Remote : Télétravail populaire</li>
+                            <li>• Fintech : Secteur en croissance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-plane fa-3x icon-portugal mb-3"></i>
+                        <h5>Tourisme</h5>
+                        <p><strong>Salaire moyen :</strong> 18,000-30,000 €/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Hôtellerie : Secteur clé</li>
+                            <li>• Guides : Langues étrangères</li>
+                            <li>• Management : Opportunités</li>
+                            <li>• Saison : Emplois temporaires</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-chalkboard-teacher fa-3x icon-portugal mb-3"></i>
+                        <h5>Enseignement</h5>
+                        <p><strong>Salaire moyen :</strong> 20,000-35,000 €/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Langues : Français, anglais</li>
+                            <li>• Écoles privées : Demande</li>
+                            <li>• Formation : Entreprises</li>
+                            <li>• Universités : Recherche</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card mt-4">
+                <div class="card-body p-4">
+                    <h4><i class="fas fa-search icon-portugal me-2"></i>Recherche d'Emploi</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Sites d'Emploi Populaires</h6>
+                            <ul class="list-unstyled">
+                                <li>• <strong>Sapo Emprego</strong> - Leader local</li>
+                                <li>• <strong>Net-Empregos</strong> - Offres variées</li>
+                                <li>• <strong>LinkedIn</strong> - Réseautage</li>
+                                <li>• <strong>Indeed Portugal</strong> - International</li>
+                                <li>• <strong>ITJobs</strong> - Spécialisé tech</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Conseils pour Réussir</h6>
+                            <ul class="list-unstyled">
+                                <li>• Apprenez le portugais basique</li>
+                                <li>• Mettez en avant vos langues</li>
+                                <li>• Réseau : très important</li>
+                                <li>• CV européen standard</li>
+                                <li>• Patience et persévérance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Section -->
+    <section id="visa" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-passport me-3"></i>Visas et Résidence
+                </h2>
+                <p class="lead">Vos options pour vous installer au Portugal</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-star icon-portugal me-2"></i>Golden Visa
+                            </h4>
+                            <p class="card-text">Programme d'investissement pour obtenir la résidence.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Investissement immobilier (500k€+)</li>
+                                    <li>Création d'emplois (10 postes)</li>
+                                    <li>Fonds d'investissement (500k€)</li>
+                                    <li>Résidence permanente possible</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-briefcase icon-portugal me-2"></i>Visa de Travail
+                            </h4>
+                            <p class="card-text">Pour les salariés et travailleurs indépendants.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Contrat de travail requis</li>
+                                    <li>Reconnaissance des qualifications</li>
+                                    <li>Regroupement familial possible</li>
+                                    <li>Transition vers résidence permanente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-piggy-bank icon-portugal me-2"></i>Visa D7 (Retraités)
+                            </h4>
+                            <p class="card-text">Pour les retraités et rentiers avec revenus passifs.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Revenus passifs suffisants</li>
+                                    <li>Hébergement au Portugal</li>
+                                    <li>Assurance santé obligatoire</li>
+                                    <li>Voie vers la nationalité</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-heart icon-portugal me-2"></i>Regroupement Familial
+                            </h4>
+                            <p class="card-text">Pour les conjoints et famille de résidents.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Lien familial prouvé</li>
+                                    <li>Ressources financières suffisantes</li>
+                                    <li>Logement adapté</li>
+                                    <li>Droits similaires au sponsor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart me-3"></i>Mode de Vie Portugais
+                </h2>
+                <p class="lead">Découvrez l'art de vivre à la portugaise</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-coffee icon-portugal me-2"></i>Saudade et Convivialité</h4>
+                            <p>Le concept unique de "saudade" reflète la nostalgie portugaise, mais aussi l'appréciation profonde des moments présents. Les Portugais cultivent un art de vivre basé sur la famille, les relations humaines et la simplicité.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-utensils icon-portugal me-2"></i>Gastronomie Authentique</h4>
+                            <p>La cuisine portugaise va bien au-delà de la morue ! Pastéis de nata, francesinha, cataplana, vinho verde... Une gastronomie riche qui varie selon les régions, toujours accompagnée d'excellents vins.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-music icon-portugal me-2"></i>Fado et Traditions</h4>
+                            <p>Le fado, musique mélancolique classée UNESCO, exprime l'âme portugaise. Les festivités locales, les processions religieuses et les marchés traditionnels rythment la vie sociale.</p>
+
+                            <h4 class="mt-4"><i class="fas fa-clock icon-portugal me-2"></i>Rythme de Vie Détendu</h4>
+                            <p>Les Portugais privilégient l'équilibre vie-travail. Les longues pauses déjeuner, les soirées en famille et les week-ends à la plage font partie intégrante du mode de vie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-portugal"></i>
+                        </div>
+                        <p class="fst-italic">"Après 2 ans au Portugal, j'ai découvert une qualité de vie incroyable. Les gens sont chaleureux, le coût de la vie abordable et le climat parfait."</p>
+                        <div class="mt-3">
+                            <strong>Sophie M.</strong><br>
+                            <small class="text-muted">Designer, Porto</small>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-portugal"></i>
+                        </div>
+                        <p class="fst-italic">"L'intégration a été facile. Entre les plages de l'Algarve et la culture de Lisbonne, le Portugal offre le meilleur des deux mondes."</p>
+                        <div class="mt-3">
+                            <strong>Jean-Luc R.</strong><br>
+                            <small class="text-muted">Retraité, Algarve</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-umbrella-beach fa-3x icon-portugal mb-3"></i>
+                        <h5>Plages</h5>
+                        <p>943 km de côtes magnifiques</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-wine-glass fa-3x icon-portugal mb-3"></i>
+                        <h5>Gastronomie</h5>
+                        <p>Cuisine authentique et vins excellents</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-handshake fa-3x icon-portugal mb-3"></i>
+                        <h5>Hospitalité</h5>
+                        <p>Population accueillante et chaleureuse</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-monument fa-3x icon-portugal mb-3"></i>
+                        <h5>Patrimoine</h5>
+                        <p>Histoire riche et architecture unique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Portugais
+                </h2>
+                <p class="lead">Formation de qualité à prix abordable</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-university icon-portugal me-2"></i>Universités Reconnues</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Universités Publiques</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>Université de Coimbra</strong> - 1290, UNESCO</li>
+                                        <li>• <strong>Université de Porto</strong> - Recherche</li>
+                                        <li>• <strong>Université de Lisbonne</strong> - Prestigieuse</li>
+                                        <li>• <strong>Université de Minho</strong> - Innovation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Business Schools</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>Nova SBE</strong> - Top européen</li>
+                                        <li>• <strong>Católica Lisbon</strong> - Réputée</li>
+                                        <li>• <strong>ISCTE</strong> - Management</li>
+                                        <li>• <strong>ISEG</strong> - Économie</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-school icon-portugal me-2"></i>Éducation Internationale</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Écoles Internationales</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Curricula anglais, français, allemand</li>
+                                        <li>• International Baccalaureate (IB)</li>
+                                        <li>• Écoles bilingues nombreuses</li>
+                                        <li>• Frais abordables vs autres pays EU</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Programmes Erasmus</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Destination populaire Erasmus</li>
+                                        <li>• Échanges internationaux</li>
+                                        <li>• Cours en anglais disponibles</li>
+                                        <li>• Intégration facilitée</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Coûts Éducation</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Université Publique</strong></span>
+                                </div>
+                                <small class="text-muted">Par année (UE)</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 20%; background: var(--portugal-green); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>697 € (fixe)</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>École Internationale</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--portugal-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>8,000-15,000 €</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>MBA (Nova SBE)</strong></span>
+                                </div>
+                                <small class="text-muted">Programme complet</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 80%; background: var(--portugal-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>32,000 €</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-info-circle me-2"></i>Avantage UE</h6>
+                                <p class="mb-0">Les citoyens UE paient les mêmes frais que les Portugais dans les universités publiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Section -->
+    <section id="healthcare" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart-pulse me-3"></i>Système de Santé Portugais
+                </h2>
+                <p class="lead">SNS : Un système de santé universel et accessible</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-hospital icon-portugal me-2"></i>Serviço Nacional de Saúde (SNS)</h4>
+                            <p>Le système de santé public portugais offre :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Soins primaires gratuits</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Urgences 24h/24</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Hospitalisation publique</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Médicaments subventionnés</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Soins maternité gratuits</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>CESD (Carte Européenne) :</strong> Accès immédiat pour les citoyens UE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-user-md icon-portugal me-2"></i>Santé Privée</h4>
+                            <p>Complément recommandé pour :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i> Consultations rapides</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Spécialistes sans attente</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Soins dentaires</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Chambres privées</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Check-ups préventifs</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>Coût :</strong> 30-80€/mois selon l'âge et la couverture
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-pills icon-portugal me-2"></i>Pharmacies et Médicaments</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Réseau Dense</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Pharmacies dans chaque quartier</li>
+                                        <li>• Garde 24h/24 en rotation</li>
+                                        <li>• Conseil pharmaceutique qualifié</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Médicaments</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Génériques largement disponibles</li>
+                                        <li>• Subventions importantes (SNS)</li>
+                                        <li>• Prix réglementés par l'État</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Services</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Vaccinations courantes</li>
+                                        <li>• Tests COVID et grippe</li>
+                                        <li>• Mesure tension, diabète</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">9.1%</div>
+                                <div class="stat-label">PIB Santé</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">81.9</div>
+                                <div class="stat-label">Espérance de Vie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">3.2/1000</div>
+                                <div class="stat-label">Médecins</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">3.5/1000</div>
+                                <div class="stat-label">Lits d'Hôpital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3">
+                        <span class="flag-emoji">🇵🇹</span> ZineInsight Portugal
+                    </h5>
+                    <p>Votre guide complet pour réussir votre installation au Portugal. Des conseils d'experts pour chaque étape de votre parcours d'expatriation.</p>
+                    <div class="mt-3">
+                        <button class="discover-button" onclick="window.location.href='../questionnaire.html'">
+                            <i class="fas fa-rocket me-2"></i>Commencer mon projet
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Sections</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#overview" class="text-light text-decoration-none">Vue d'ensemble</a></li>
+                        <li><a href="#cities" class="text-light text-decoration-none">Villes principales</a></li>
+                        <li><a href="#visa" class="text-light text-decoration-none">Visas</a></li>
+                        <li><a href="#cost-living" class="text-light text-decoration-none">Coût de la vie</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Autres Destinations</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="espagne.html" class="text-light text-decoration-none">Espagne</a></li>
+                        <li><a href="france.html" class="text-light text-decoration-none">France</a></li>
+                        <li><a href="usa.html" class="text-light text-decoration-none">États-Unis</a></li>
+                        <li><a href="canada.html" class="text-light text-decoration-none">Canada</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Guide Premium Portugal 🇵🇹</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation dots functionality
+        const dots = document.querySelectorAll('.dot');
+        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa', 'lifestyle', 'education', 'healthcare'];
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const targetSection = document.getElementById(sections[index]);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Update active dot on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        current = section;
+                    }
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (sections[index] === current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.content-card, .benefit-card, .city-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

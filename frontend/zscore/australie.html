@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer en Australie - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet pour réussir votre installation en Australie : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Australie, expatriation, installation, guide, logement, emploi, visa, Sydney, Melbourne, Brisbane, Perth">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer en Australie">
+    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation en Australie">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --australia-blue: #00247D;
+            --australia-red: #CF142B;
+            --australia-white: #FFFFFF;
+            --australia-navy: #001F3F;
+            --warm-sand: #f8f6f0;
+            --coral-red: #FF6B35;
+            --ocean-blue: #006994;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-sand) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 36, 125, 0.7), rgba(207, 20, 43, 0.7)),
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--australia-blue);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--australia-blue), var(--ocean-blue));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(0, 36, 125, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f4ff, #e6efff);
+            border-left: 5px solid var(--australia-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-tag {
+            background: var(--australia-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .discover-button {
+            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 36, 125, 0.3);
+        }
+
+        .discover-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 36, 125, 0.4);
+            color: white;
+        }
+
+        .flag-emoji {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .icon-australia {
+            color: var(--australia-blue);
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(0, 36, 125, 0.05), rgba(207, 20, 43, 0.05));
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--australia-blue);
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid var(--australia-red);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-container {
+            background: linear-gradient(135deg, var(--australia-navy), var(--australia-blue));
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--australia-white);
+        }
+
+        .budget-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .budget-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .budget-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .budget-item:last-child {
+            border-bottom: none;
+        }
+
+        .navigation-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(0, 132, 61, 0.3);
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--australia-blue);
+            transform: scale(1.2);
+        }
+
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 36, 125, 0.4);
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+
+        .floating-action:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 36, 125, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+                padding: 2rem;
+            }
+            .navigation-dots {
+                display: none;
+            }
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="flag-emoji">🇦🇺</span> ZineInsight Australie
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Vue d'ensemble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cities">Villes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cost-living">Coût de la vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employment">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visa">Visa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lifestyle">Mode de vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#healthcare">Santé</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <div class="dot active" data-section="hero"></div>
+        <div class="dot" data-section="overview"></div>
+        <div class="dot" data-section="cities"></div>
+        <div class="dot" data-section="cost-living"></div>
+        <div class="dot" data-section="employment"></div>
+        <div class="dot" data-section="visa"></div>
+        <div class="dot" data-section="lifestyle"></div>
+        <div class="dot" data-section="education"></div>
+        <div class="dot" data-section="healthcare"></div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="floating-action" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="flag-emoji mb-4">🇦🇺</div>
+                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie en Australie</h1>
+                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation en Australie. 
+                    Des plages dorées aux métropoles cosmopolites, l'Australie vous offre un mode de vie unique.</p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>Guide Premium Complet
+                    </div>
+                    <br>
+                    <button class="discover-button btn-lg" onclick="document.getElementById('overview').scrollIntoView()">
+                        <i class="fas fa-compass me-2"></i>Découvrir l'Australie
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi l'Australie ?
+                </h2>
+                <p class="lead">Une destination d'expatriation exceptionnelle</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-australia mb-3">
+                            <i class="fas fa-sun fa-2x"></i>
+                        </div>
+                        <h4>Climat Exceptionnel</h4>
+                        <p>Plus de 300 jours de soleil par an dans la plupart des régions. Un climat qui favorise un mode de vie extérieur et actif.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-australia mb-3">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                        </div>
+                        <h4>Économie Dynamique</h4>
+                        <p>L'une des économies les plus stables au monde, avec des opportunités d'emploi dans tous les secteurs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-australia mb-3">
+                            <i class="fas fa-users fa-2x"></i>
+                        </div>
+                        <h4>Société Multiculturelle</h4>
+                        <p>Une société ouverte et accueillante, avec une forte tradition d'immigration et d'intégration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">25M+</div>
+                                <div class="stat-label">Population</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">8ème</div>
+                                <div class="stat-label">PIB Mondial</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">3ème</div>
+                                <div class="stat-label">Qualité de Vie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">30%</div>
+                                <div class="stat-label">Population Née à l'Étranger</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section id="cities" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-city me-3"></i>Principales Villes d'Australie
+                </h2>
+                <p class="lead">Découvrez les métropoles australiennes</p>
+            </div>
+
+            <div class="city-grid">
+                <!-- Sydney -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Sydney Opera House" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-building me-2 icon-australia"></i>Sydney
+                        </h5>
+                        <p class="card-text">La ville emblématique avec l'Opéra et le Harbour Bridge. Centre économique et culturel.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">5,3M habitants</span>
+                            <span class="info-tag ms-2">Centre économique</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Marché du travail dynamique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vie culturelle riche</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Plages magnifiques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Melbourne -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Melbourne" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-palette me-2 icon-australia"></i>Melbourne
+                        </h5>
+                        <p class="card-text">Capitale culturelle de l'Australie, réputée pour sa scène artistique et gastronomique.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">5,1M habitants</span>
+                            <span class="info-tag ms-2">Capitale culturelle</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Scène artistique vibrante</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Cafés et restaurants</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Événements sportifs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Brisbane -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Brisbane" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-sun me-2 icon-australia"></i>Brisbane
+                        </h5>
+                        <p class="card-text">Climat subtropical, lifestyle décontracté et proximité de la Gold Coast.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">2,6M habitants</span>
+                            <span class="info-tag ms-2">Climat subtropical</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Climat idéal toute l'année</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Coût de la vie abordable</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Proche de la Gold Coast</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Perth -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Perth" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-gem me-2 icon-australia"></i>Perth
+                        </h5>
+                        <p class="card-text">Ville minière prospère avec de magnifiques plages et un style de vie décontracté.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">2,1M habitants</span>
+                            <span class="info-tag ms-2">Secteur minier</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Secteur minier lucratif</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Plages spectaculaires</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Moins de trafic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost of Living Section -->
+    <section id="cost-living" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-dollar-sign me-3"></i>Coût de la Vie en Australie
+                </h2>
+                <p class="lead">Budget réaliste pour vivre confortablement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-home icon-australia me-2"></i>Logement</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Sydney</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : 1,800-2,500 AUD/mois</li>
+                                        <li>• 1BR centre : 2,500-3,500 AUD/mois</li>
+                                        <li>• 2BR banlieue : 2,000-3,000 AUD/mois</li>
+                                        <li>• Colocation : 800-1,500 AUD/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Melbourne</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : 1,500-2,200 AUD/mois</li>
+                                        <li>• 1BR centre : 2,200-3,000 AUD/mois</li>
+                                        <li>• 2BR banlieue : 1,800-2,500 AUD/mois</li>
+                                        <li>• Colocation : 700-1,200 AUD/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-shopping-cart icon-australia me-2"></i>Alimentation & Courses</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Supermarché (par semaine)</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Couple : 150-200 AUD</li>
+                                        <li>• Famille de 4 : 250-350 AUD</li>
+                                        <li>• Célibataire : 80-120 AUD</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Restaurants</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Déjeuner rapide : 12-18 AUD</li>
+                                        <li>• Dîner restaurant : 25-45 AUD</li>
+                                        <li>• Café : 4-6 AUD</li>
+                                        <li>• Bière : 8-12 AUD</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-car icon-australia me-2"></i>Transport</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Transport Public</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Pass mensuel Sydney : 217 AUD</li>
+                                        <li>• Pass mensuel Melbourne : 169 AUD</li>
+                                        <li>• Ticket simple : 3-5 AUD</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Voiture</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Essence : 1.60-1.80 AUD/L</li>
+                                        <li>• Assurance : 100-200 AUD/mois</li>
+                                        <li>• Parking CBD : 15-50 AUD/jour</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Budget Mensuel Moyen</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Sydney</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 85%; background: var(--australia-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>6,500-8,000 AUD</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Melbourne</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 75%; background: var(--australia-blue); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>5,800-7,200 AUD</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Célibataire Brisbane</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--ocean-blue); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>3,200-4,200 AUD</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Le salaire minimum en Australie est de 21.38 AUD/heure, soit environ 3,500 AUD/mois à temps plein.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Section -->
+    <section id="employment" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-briefcase me-3"></i>Marché de l'Emploi
+                </h2>
+                <p class="lead">Opportunités professionnelles en Australie</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-laptop-code fa-3x icon-australia mb-3"></i>
+                        <h5>Technologie</h5>
+                        <p><strong>Salaire moyen :</strong> 85,000-120,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Développeurs : Très demandés</li>
+                            <li>• Cybersécurité : Croissance forte</li>
+                            <li>• Data Science : Secteur en expansion</li>
+                            <li>• DevOps : Compétences recherchées</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-stethoscope fa-3x icon-australia mb-3"></i>
+                        <h5>Santé</h5>
+                        <p><strong>Salaire moyen :</strong> 75,000-150,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Infirmiers : Très recherchés</li>
+                            <li>• Médecins : Demande élevée</li>
+                            <li>• Physiothérapie : Croissance</li>
+                            <li>• Santé mentale : Priorité</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-hammer fa-3x icon-australia mb-3"></i>
+                        <h5>Construction & Mines</h5>
+                        <p><strong>Salaire moyen :</strong> 70,000-130,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Électriciens : Très demandés</li>
+                            <li>• Plombiers : Salaires élevés</li>
+                            <li>• Mineurs : Secteur lucratif</li>
+                            <li>• Ingénieurs : Opportunités</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-chart-line fa-3x icon-australia mb-3"></i>
+                        <h5>Finance</h5>
+                        <p><strong>Salaire moyen :</strong> 80,000-140,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Comptables : Demande stable</li>
+                            <li>• Analystes : Croissance</li>
+                            <li>• Banque : Secteur solide</li>
+                            <li>• Assurance : Opportunités</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-chalkboard-teacher fa-3x icon-australia mb-3"></i>
+                        <h5>Éducation</h5>
+                        <p><strong>Salaire moyen :</strong> 65,000-95,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Professeurs : Recherchés</li>
+                            <li>• Éducation spécialisée : Demande</li>
+                            <li>• Formation adultes : Croissance</li>
+                            <li>• Administration : Stable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-utensils fa-3x icon-australia mb-3"></i>
+                        <h5>Hôtellerie</h5>
+                        <p><strong>Salaire moyen :</strong> 50,000-75,000 AUD/an</p>
+                        <ul class="list-unstyled text-start">
+                            <li>• Chefs : Toujours demandés</li>
+                            <li>• Service : Secteur actif</li>
+                            <li>• Tourisme : Reprise forte</li>
+                            <li>• Management : Opportunités</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card mt-4">
+                <div class="card-body p-4">
+                    <h4><i class="fas fa-search icon-australia me-2"></i>Recherche d'Emploi</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Sites d'Emploi Populaires</h6>
+                            <ul class="list-unstyled">
+                                <li>• <strong>Seek.com.au</strong> - Leader du marché</li>
+                                <li>• <strong>Indeed.com.au</strong> - Large sélection</li>
+                                <li>• <strong>LinkedIn</strong> - Réseautage professionnel</li>
+                                <li>• <strong>Jora.com</strong> - Emplois locaux</li>
+                                <li>• <strong>CareerOne</strong> - Opportunités diverses</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Conseils pour Réussir</h6>
+                            <ul class="list-unstyled">
+                                <li>• Adaptez votre CV au format australien</li>
+                                <li>• Préparez-vous aux entretiens par vidéo</li>
+                                <li>• Mettez en avant vos certifications</li>
+                                <li>• Utilisez le réseautage professionnel</li>
+                                <li>• Soyez patient et persévérant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Section -->
+    <section id="visa" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-passport me-3"></i>Visas et Immigration
+                </h2>
+                <p class="lead">Vos options pour immigrer en Australie</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-briefcase icon-australia me-2"></i>Visa de Travail Qualifié
+                            </h4>
+                            <p class="card-text">Pour les professionnels qualifiés dans des domaines en demande.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Évaluation des compétences requise</li>
+                                    <li>Test d'anglais obligatoire</li>
+                                    <li>Âge limite : généralement 45 ans</li>
+                                    <li>Possibilité de résidence permanente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-heart icon-australia me-2"></i>Visa Partenaire
+                            </h4>
+                            <p class="card-text">Pour les conjoints de citoyens ou résidents australiens.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Relation genuine et continue</li>
+                                    <li>Visa temporaire puis permanent</li>
+                                    <li>Pas de limite d'âge</li>
+                                    <li>Droits de travail complets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-graduation-cap icon-australia me-2"></i>Visa Étudiant
+                            </h4>
+                            <p class="card-text">Pour étudier dans les universités australiennes de renommée mondiale.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Inscription dans un établissement agréé</li>
+                                    <li>Preuve de ressources financières</li>
+                                    <li>Travail à temps partiel autorisé</li>
+                                    <li>Possibilité de transition vers autre visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-rocket icon-australia me-2"></i>Visa Investisseur
+                            </h4>
+                            <p class="card-text">Pour les entrepreneurs et investisseurs souhaitant développer leurs affaires.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Investissement minimum requis</li>
+                                    <li>Plan d'affaires détaillé</li>
+                                    <li>Expérience entrepreneuriale</li>
+                                    <li>Contribution à l'économie australienne</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart me-3"></i>Mode de Vie Australien
+                </h2>
+                <p class="lead">Ce qui vous attend en Australie</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-umbrella-beach icon-australia me-2"></i>Culture du Plein Air</h4>
+                            <p>Les Australiens vivent littéralement dehors. Barbecues, sports de plage, randonnées dans les parcs nationaux font partie intégrante de la culture locale.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-handshake icon-australia me-2"></i>Mentalité "No Worries"</h4>
+                            <p>L'attitude décontractée australienne se reflète dans tous les aspects de la vie, du travail aux relations sociales.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-coffee icon-australia me-2"></i>Culture du Café</h4>
+                            <p>L'Australie a développé une culture du café sophistiquée, particulièrement à Melbourne, considérée comme la capitale mondiale du café.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-australia"></i>
+                        </div>
+                        <p class="fst-italic">"Après 3 ans en Australie, je ne peux pas imaginer vivre ailleurs. La qualité de vie, les opportunités professionnelles et la beauté naturelle sont incomparables."</p>
+                        <div class="mt-3">
+                            <strong>Marie L.</strong><br>
+                            <small class="text-muted">Développeuse Web, Sydney</small>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-australia"></i>
+                        </div>
+                        <p class="fst-italic">"L'intégration a été facile grâce à la mentalité ouverte des Australiens. Mon entreprise prospère ici comme nulle part ailleurs."</p>
+                        <div class="mt-3">
+                            <strong>Pierre D.</strong><br>
+                            <small class="text-muted">Entrepreneur, Melbourne</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-shield-alt fa-3x icon-australia mb-3"></i>
+                        <h5>Sécurité</h5>
+                        <p>Taux de criminalité très bas</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-hospital fa-3x icon-australia mb-3"></i>
+                        <h5>Santé</h5>
+                        <p>Système de santé excellent</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-school fa-3x icon-australia mb-3"></i>
+                        <h5>Éducation</h5>
+                        <p>Universités de rang mondial</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-card text-center">
+                        <i class="fas fa-leaf fa-3x icon-australia mb-3"></i>
+                        <h5>Environnement</h5>
+                        <p>Nature préservée unique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Australien
+                </h2>
+                <p class="lead">Excellence académique reconnue mondialement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-university icon-australia me-2"></i>Universités de Renommée Mondiale</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Groupe des 8 (Go8)</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>Australian National University</strong> - Canberra</li>
+                                        <li>• <strong>University of Melbourne</strong> - Melbourne</li>
+                                        <li>• <strong>University of Sydney</strong> - Sydney</li>
+                                        <li>• <strong>University of Queensland</strong> - Brisbane</li>
+                                        <li>• <strong>University of Western Australia</strong> - Perth</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Universités Technologiques</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• <strong>University of Technology Sydney</strong></li>
+                                        <li>• <strong>RMIT University</strong> - Melbourne</li>
+                                        <li>• <strong>Queensland University of Technology</strong></li>
+                                        <li>• <strong>Curtin University</strong> - Perth</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-school icon-australia me-2"></i>Éducation Primaire et Secondaire</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Écoles Publiques</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Gratuites pour les résidents</li>
+                                        <li>• Haut niveau d'enseignement</li>
+                                        <li>• Programmes spécialisés</li>
+                                        <li>• Activités extra-scolaires</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Écoles Privées</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• 10,000-40,000 AUD/an</li>
+                                        <li>• Classes plus petites</li>
+                                        <li>• Installations premium</li>
+                                        <li>• Programmes d'échange</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Coûts Universitaires</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Licence (Résidents)</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 40%; background: var(--australia-blue); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>6,000-12,000 AUD</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Licence (Internationaux)</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 85%; background: var(--australia-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>20,000-45,000 AUD</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-info-circle me-2"></i>Bourses d'Études</h6>
+                                <p class="mb-0">L'Australie offre de nombreuses bourses pour les étudiants internationaux méritants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Section -->
+    <section id="healthcare" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heart-pulse me-3"></i>Système de Santé Australien
+                </h2>
+                <p class="lead">Medicare : Une couverture santé universelle</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-shield-alt icon-australia me-2"></i>Medicare - Système Public</h4>
+                            <p>Le système de santé public australien offre :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Consultations médicales gratuites</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Soins hospitaliers publics gratuits</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Subventions médicaments (PBS)</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Tests et examens médicaux</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Soins d'urgence 24h/24</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-plus-circle icon-australia me-2"></i>Assurance Privée</h4>
+                            <p>Complément recommandé pour :</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i> Hôpitaux privés</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Soins dentaires</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Physiothérapie</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Optique et lunettes</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Réduire les temps d'attente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3">
+                        <span class="flag-emoji">🇦🇺</span> ZineInsight Australie
+                    </h5>
+                    <p>Votre guide complet pour réussir votre installation en Australie. Des conseils d'experts pour chaque étape de votre parcours d'expatriation.</p>
+                    <div class="mt-3">
+                        <button class="discover-button" onclick="window.location.href='../questionnaire.html'">
+                            <i class="fas fa-rocket me-2"></i>Commencer mon projet
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Sections</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#overview" class="text-light text-decoration-none">Vue d'ensemble</a></li>
+                        <li><a href="#cities" class="text-light text-decoration-none">Villes principales</a></li>
+                        <li><a href="#visa" class="text-light text-decoration-none">Visas</a></li>
+                        <li><a href="#lifestyle" class="text-light text-decoration-none">Mode de vie</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Autres Destinations</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="canada.html" class="text-light text-decoration-none">Canada</a></li>
+                        <li><a href="usa.html" class="text-light text-decoration-none">États-Unis</a></li>
+                        <li><a href="france.html" class="text-light text-decoration-none">France</a></li>
+                        <li><a href="allemagne.html" class="text-light text-decoration-none">Allemagne</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Guide Premium Australie 🇦🇺</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation dots functionality
+        const dots = document.querySelectorAll('.dot');
+        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa', 'lifestyle', 'education', 'healthcare'];
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const targetSection = document.getElementById(sections[index]);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Update active dot on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        current = section;
+                    }
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (sections[index] === current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.content-card, .benefit-card, .city-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

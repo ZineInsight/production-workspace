@@ -1116,8 +1116,22 @@ window.debugCityMapping = () => {
         'Casablanca', 'Rabat', 'Marrakech',
         // 🇨🇦 Canada
         'Toronto', 'Vancouver', 'Montreal',
+        // 🆕 NOUVEAUX PAYS AVEC GUIDES
+        // 🇦🇺 Australia
+        'Sydney', 'Melbourne', 'Brisbane', 'Perth',
+        // 🇧🇷 Brazil  
+        'São Paulo', 'Rio de Janeiro', 'Brasília', 'Salvador',
+        // 🇲🇽 Mexico
+        'Mexico City', 'Guadalajara', 'Monterrey', 'Cancún',
+        // 🆕 PAYS SANS PARCOURS NATIONAUX (via international)
+        // 🇵🇹 Portugal
+        'Lisbon', 'Porto', 'Braga', 'Coimbra',
+        // 🇳🇱 Netherlands
+        'Amsterdam', 'Rotterdam', 'The Hague', 'Utrecht', 
+        // 🇻🇳 Vietnam
+        'Ho Chi Minh City', 'Hanoi', 'Da Nang', 'Hue',
         // Villes sans guide
-        'Sydney', 'Rome', 'Amsterdam'
+        'Rome', 'Milan', 'Oslo', 'Stockholm'
     ];
 
     console.log('\n🧪 TESTING SIMPLIFIED CITY → GUIDE MAPPING:');
@@ -1147,7 +1161,7 @@ window.debugCityMapping = () => {
 
     // Test du mapping par pays direct
     console.log('\n🌍 COUNTRY DIRECT MAPPING TEST:');
-    const countries = ['france', 'usa', 'uk', 'germany', 'spain', 'japan', 'thailand', 'morocco', 'canada', 'brazil', 'australia'];
+    const countries = ['france', 'usa', 'uk', 'germany', 'spain', 'japan', 'thailand', 'morocco', 'canada', 'australia', 'brazil', 'mexico'];
     countries.forEach(country => {
         const guide = getGuideFromCountryName(country);
         const status = guide ? '✅' : '❌';
@@ -1383,7 +1397,43 @@ function detectCountryFromCity(cityName) {
 
         // 🇨🇦 Canada - Major cities
         'Toronto': 'canada', 'Montreal': 'canada', 'Calgary': 'canada', 'Ottawa': 'canada', 'Edmonton': 'canada',
-        'Mississauga': 'canada', 'Winnipeg': 'canada', 'Vancouver': 'canada', 'Quebec City': 'canada', 'Hamilton': 'canada'
+        'Mississauga': 'canada', 'Winnipeg': 'canada', 'Vancouver': 'canada', 'Quebec City': 'canada', 'Hamilton': 'canada',
+
+        // 🆕 NOUVEAUX PAYS AVEC GUIDES COMPLETS
+        // 🇦🇺 Australia - Major cities  
+        'Sydney': 'australia', 'Melbourne': 'australia', 'Brisbane': 'australia', 'Perth': 'australia', 'Adelaide': 'australia',
+        'Gold Coast': 'australia', 'Newcastle': 'australia', 'Canberra': 'australia', 'Sunshine Coast': 'australia', 'Wollongong': 'australia',
+        'Geelong': 'australia', 'Townsville': 'australia', 'Cairns': 'australia', 'Darwin': 'australia', 'Toowoomba': 'australia',
+
+        // 🇧🇷 Brazil - Major cities
+        'São Paulo': 'brazil', 'Rio de Janeiro': 'brazil', 'Brasília': 'brazil', 'Salvador': 'brazil', 'Fortaleza': 'brazil',
+        'Belo Horizonte': 'brazil', 'Manaus': 'brazil', 'Curitiba': 'brazil', 'Recife': 'brazil', 'Porto Alegre': 'brazil',
+        'Belém': 'brazil', 'Goiânia': 'brazil', 'Guarulhos': 'brazil', 'Campinas': 'brazil', 'São Luís': 'brazil',
+
+        // 🇲🇽 Mexico - Major cities
+        'Mexico City': 'mexico', 'Guadalajara': 'mexico', 'Monterrey': 'mexico', 'Puebla': 'mexico', 'Tijuana': 'mexico',
+        'León': 'mexico', 'Juárez': 'mexico', 'Torreón': 'mexico', 'Querétaro': 'mexico', 'San Luis Potosí': 'mexico',
+        'Mérida': 'mexico', 'Mexicali': 'mexico', 'Aguascalientes': 'mexico', 'Cancún': 'mexico', 'Cuernavaca': 'mexico',
+
+        // 🆕 PAYS SANS PARCOURS NATIONAUX (apparaissent en international)
+        // 🇵🇹 Portugal - Major cities
+        'Lisbon': 'portugal', 'Lisboa': 'portugal', 'Porto': 'portugal', 'Braga': 'portugal', 'Coimbra': 'portugal',
+        'Aveiro': 'portugal', 'Faro': 'portugal', 'Funchal': 'portugal', 'Évora': 'portugal', 'Setúbal': 'portugal',
+        'Guimarães': 'portugal', 'Leiria': 'portugal', 'Viseu': 'portugal', 'Castelo Branco': 'portugal',
+
+        // 🇳🇱 Netherlands - Major cities (18 villes)
+        'Amsterdam': 'netherlands', 'Rotterdam': 'netherlands', 'The Hague': 'netherlands', 'Utrecht': 'netherlands',
+        'Eindhoven': 'netherlands', 'Tilburg': 'netherlands', 'Groningen': 'netherlands', 'Almere': 'netherlands',
+        'Breda': 'netherlands', 'Nijmegen': 'netherlands', 'Enschede': 'netherlands', 'Haarlem': 'netherlands',
+        'Apeldoorn': 'netherlands', 'Arnhem': 'netherlands', 'Zaanstad': 'netherlands', 'Haarlemmermeer': 'netherlands',
+        'Amersfoort': 'netherlands', 'Dordrecht': 'netherlands',
+
+        // 🇻🇳 Vietnam - Major cities (20 villes)
+        'Ho Chi Minh City': 'vietnam', 'Hanoi': 'vietnam', 'Da Nang': 'vietnam', 'Can Tho': 'vietnam',
+        'Hai Phong': 'vietnam', 'Bien Hoa': 'vietnam', 'Hue': 'vietnam', 'Nha Trang': 'vietnam',
+        'Buon Ma Thuot': 'vietnam', 'Quy Nhon': 'vietnam', 'Vung Tau': 'vietnam', 'Nam Dinh': 'vietnam',
+        'Thai Nguyen': 'vietnam', 'Phan Thiet': 'vietnam', 'Cam Pha': 'vietnam', 'Vinh': 'vietnam',
+        'My Tho': 'vietnam', 'Rach Gia': 'vietnam', 'Tam Ky': 'vietnam', 'Ca Mau': 'vietnam'
     };
 
     return cityToCountryMap[cityName] || null;
@@ -1405,10 +1455,17 @@ function getGuideFromCountryID(countryId) {
         'th': 'thailande.html',
         'ma': 'maroc.html',
 
+        // 🆕 NOUVEAUX PAYS AVEC GUIDES COMPLETS
+        'au': 'australie.html', // Australia
+        'br': 'bresil.html',    // Brazil
+        'mx': 'mexique.html',   // Mexico
+
+        // 🆕 PAYS SANS PARCOURS NATIONAUX (via international)
+        'pt': 'portugal.html',  // Portugal
+        'nl': 'pays-bas.html',  // Netherlands
+        'vn': 'vietnam.html',   // Vietnam
+
         // Pays sans guides → null (message "à venir")
-        'br': null, // Brazil
-        'au': null, // Australia
-        'mx': null, // Mexico
         'it': null, // Italy
         'pt': null, // Portugal
         'nl': null, // Netherlands
@@ -1589,7 +1646,49 @@ function getCityCountryGuideV2(cityName, cityData = null) {
         'Tokyo': 'japon.html', 'Osaka': 'japon.html', 'Kyoto': 'japon.html',
         'Bangkok': 'thailande.html', 'Chiang Mai': 'thailande.html', 'Phuket': 'thailande.html',
         'Casablanca': 'maroc.html', 'Rabat': 'maroc.html', 'Marrakech': 'maroc.html',
-        'Toronto': 'canada.html', 'Vancouver': 'canada.html', 'Montreal': 'canada.html'
+        'Toronto': 'canada.html', 'Vancouver': 'canada.html', 'Montreal': 'canada.html',
+
+        // 🆕 NOUVEAUX PAYS - Villes principales
+        // Australie
+        'Sydney': 'australie.html', 'Melbourne': 'australie.html', 'Brisbane': 'australie.html', 
+        'Perth': 'australie.html', 'Adelaide': 'australie.html', 'Gold Coast': 'australie.html',
+        'Canberra': 'australie.html', 'Darwin': 'australie.html',
+        
+        // Brésil
+        'São Paulo': 'bresil.html', 'Rio de Janeiro': 'bresil.html', 'Brasília': 'bresil.html',
+        'Salvador': 'bresil.html', 'Fortaleza': 'bresil.html', 'Belo Horizonte': 'bresil.html',
+        'Manaus': 'bresil.html', 'Curitiba': 'bresil.html', 'Recife': 'bresil.html',
+        
+        // Mexique
+        'Mexico City': 'mexique.html', 'Guadalajara': 'mexique.html', 'Monterrey': 'mexique.html',
+        'Puebla': 'mexique.html', 'Tijuana': 'mexique.html', 'León': 'mexique.html',
+        'Juárez': 'mexique.html', 'Torreón': 'mexique.html', 'Querétaro': 'mexique.html',
+        'Cancún': 'mexique.html', 'Mérida': 'mexique.html',
+
+        // 🆕 PAYS SANS PARCOURS NATIONAUX (apparaissent en international)
+        // Portugal (14 villes)
+        'Lisbon': 'portugal.html', 'Lisboa': 'portugal.html', 'Porto': 'portugal.html', 
+        'Braga': 'portugal.html', 'Coimbra': 'portugal.html', 'Aveiro': 'portugal.html',
+        'Faro': 'portugal.html', 'Funchal': 'portugal.html', 'Évora': 'portugal.html',
+        'Setúbal': 'portugal.html', 'Guimarães': 'portugal.html', 'Leiria': 'portugal.html',
+        'Viseu': 'portugal.html', 'Castelo Branco': 'portugal.html',
+
+        // Pays-Bas (18 villes)
+        'Amsterdam': 'pays-bas.html', 'Rotterdam': 'pays-bas.html', 'The Hague': 'pays-bas.html',
+        'Utrecht': 'pays-bas.html', 'Eindhoven': 'pays-bas.html', 'Tilburg': 'pays-bas.html',
+        'Groningen': 'pays-bas.html', 'Almere': 'pays-bas.html', 'Breda': 'pays-bas.html',
+        'Nijmegen': 'pays-bas.html', 'Enschede': 'pays-bas.html', 'Haarlem': 'pays-bas.html',
+        'Apeldoorn': 'pays-bas.html', 'Arnhem': 'pays-bas.html', 'Zaanstad': 'pays-bas.html',
+        'Haarlemmermeer': 'pays-bas.html', 'Amersfoort': 'pays-bas.html', 'Dordrecht': 'pays-bas.html',
+
+        // Vietnam (20 villes)
+        'Ho Chi Minh City': 'vietnam.html', 'Hanoi': 'vietnam.html', 'Da Nang': 'vietnam.html',
+        'Can Tho': 'vietnam.html', 'Hai Phong': 'vietnam.html', 'Bien Hoa': 'vietnam.html',
+        'Hue': 'vietnam.html', 'Nha Trang': 'vietnam.html', 'Buon Ma Thuot': 'vietnam.html',
+        'Quy Nhon': 'vietnam.html', 'Vung Tau': 'vietnam.html', 'Nam Dinh': 'vietnam.html',
+        'Thai Nguyen': 'vietnam.html', 'Phan Thiet': 'vietnam.html', 'Cam Pha': 'vietnam.html',
+        'Vinh': 'vietnam.html', 'My Tho': 'vietnam.html', 'Rach Gia': 'vietnam.html',
+        'Tam Ky': 'vietnam.html', 'Ca Mau': 'vietnam.html'
     };
 
     if (cityFallbacks[cityName]) {
@@ -1619,7 +1718,23 @@ function getGuideFromCountryName(countryName) {
         'thailand': 'thailande.html',
         'thailande': 'thailande.html',
         'morocco': 'maroc.html',
-        'maroc': 'maroc.html'
+        'maroc': 'maroc.html',
+        
+        // 🆕 NOUVEAUX PAYS AVEC GUIDES COMPLETS
+        'australia': 'australie.html',
+        'australie': 'australie.html',
+        'brazil': 'bresil.html',
+        'bresil': 'bresil.html',
+        'brazil': 'bresil.html',
+        'mexico': 'mexique.html',
+        'mexique': 'mexique.html',
+
+        // 🆕 PAYS SANS PARCOURS NATIONAUX (apparaissent via international)
+        'portugal': 'portugal.html',
+        'netherlands': 'pays-bas.html',
+        'pays-bas': 'pays-bas.html',
+        'holland': 'pays-bas.html',
+        'vietnam': 'vietnam.html'
     };
 
     return countryNameToGuideMap[countryName?.toLowerCase()] || null;

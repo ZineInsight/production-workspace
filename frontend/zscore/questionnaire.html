@@ -556,20 +556,20 @@
                 const currentLang = window.revolutionaryI18n?.getCurrentLanguage() || 'fr';
                 const progressComments = {
                     first: currentLang === 'en'
-                        ? ["Excellent start! 👟 Let's build your dream!", "Here we go! 🎬 Adventure starts now!"]
-                        : ["Premier pas, excellent début ! 👟 Construisons ton rêve !", "C'est parti, tu assures ! 🎬 L'aventure commence !"],
+                        ? ["Excellent start! 👟 Let's build your dream!", "Here we go! 🎬 Adventure starts now!", "First step taken! 🚀 Journey begins!", "Perfect beginning! ⭐ Let's discover you!"]
+                        : ["Premier pas, excellent début ! 👟 Construisons ton rêve !", "C'est parti, tu assures ! 🎬 L'aventure commence !", "Premier pas franchi ! 🚀 Le voyage commence !", "Début parfait ! ⭐ Découvrons qui tu es !"],
                     quarter: currentLang === 'en'
-                        ? ["25% done! You're finding your rhythm! 🎵 On fire!", "Good pace, keep going! ⚡ Momentum building!"]
-                        : ["25% fait ! Tu prends le rythme ! 🎵 En feu !", "Bon rythme, continue ! ⚡ Momentum en construction !"],
+                        ? ["Great momentum! 🎵 You're on fire!", "Good pace, keep going! ⚡ Building strong!", "Excellent rhythm! 🎯 Flowing perfectly!", "Perfect flow! 🌊 Keep this energy!"]
+                        : ["Super élan ! 🎵 Tu es en feu !", "Bon rythme, continue ! ⚡ Construction solide !", "Rythme excellent ! 🎯 Ça coule parfaitement !", "Flow parfait ! 🌊 Garde cette énergie !"],
                     half: currentLang === 'en'
-                        ? ["Halfway there! You're doing perfectly! 🏃‍♀️ Halfway to greatness!", "50%! Excellent momentum! 🔥 Keep crushing it!"]
-                        : ["Mi-parcours ! Tu gères parfaitement ! 🏃‍♀️ À mi-chemin de la grandeur !", "50% ! Momentum excellent ! 🔥 Continue à tout déchirer !"],
+                        ? ["Halfway there! You're doing perfectly! 🏃‍♀️ Halfway to greatness!", "50%! Excellent momentum! 🔥 Keep crushing it!", "Midpoint mastery! 🎯 You're a natural!", "Perfect pace! ⚡ Halfway to your dream life!"]
+                        : ["Mi-parcours ! Tu gères parfaitement ! 🏃‍♀️ À mi-chemin de la grandeur !", "50% ! Momentum excellent ! 🔥 Continue à tout déchirer !", "Maîtrise du mi-parcours ! 🎯 Tu es un naturel !", "Rythme parfait ! ⚡ À mi-chemin de ta vie de rêve !"],
                     threequarter: currentLang === 'en'
-                        ? ["Final stretch! 🏁 Almost there, champion!", "75%! You're almost there! 🎯 Final push!"]
-                        : ["Dernière ligne droite ! 🏁 Presque là, champion !", "75% ! Tu touches au but ! 🎯 Dernier effort !"],
+                        ? ["Final stretch! 🏁 Almost there, champion!", "75%! You're almost there! 🎯 Final push!", "Home stretch! 🚀 Victory in sight!", "Final phase! 💎 Almost at your destination!"]
+                        : ["Dernière ligne droite ! 🏁 Presque là, champion !", "75% ! Tu touches au but ! 🎯 Dernier effort !", "Dernière ligne droite ! 🚀 Victoire en vue !", "Phase finale ! 💎 Presque à destination !"],
                     final: currentLang === 'en'
-                        ? ["Last question! Champion! 🏆 Victory lap time!", "Final sprint! You're going to make it! 🚀 Epic finale!"]
-                        : ["Dernière question ! Champion ! 🏆 Tour de victoire !", "Sprint final ! Tu vas y arriver ! 🚀 Finale épique !"]
+                        ? ["Last question! Champion! 🏆 Victory lap time!", "Final sprint! You're going to make it! 🚀 Epic finale!", "Ultimate question! 🎯 Finish line ahead!", "Final moment! ⭐ Your new life awaits!"]
+                        : ["Dernière question ! Champion ! 🏆 Tour de victoire !", "Sprint final ! Tu vas y arriver ! 🚀 Finale épique !", "Question ultime ! 🎯 Ligne d'arrivée en vue !", "Moment final ! ⭐ Ta nouvelle vie t'attend !"]
                 };
 
                 // Choisir le commentaire approprié
@@ -659,9 +659,11 @@
                 const totalQuestions = 15; // Estimation
                 const progress = this.questionCount / totalQuestions;
 
-                if (progress <= 0.25) return 'quarter';
-                if (progress <= 0.5) return 'half';
-                if (progress <= 0.75) return 'threequarter';
+                // Logique améliorée pour éviter les incohérences
+                if (this.questionCount === 1) return 'first';
+                if (progress <= 0.3) return 'quarter';  // Augmenté de 0.25 à 0.3
+                if (progress <= 0.6) return 'half';     // Augmenté de 0.5 à 0.6  
+                if (progress <= 0.85) return 'threequarter'; // Augmenté de 0.75 à 0.85
                 if (progress >= 0.9) return 'final';
                 return 'quarter';
             }
@@ -676,7 +678,12 @@
                         "Salut ! Je vais commenter tes réponses ! 🎯",
                     window.revolutionaryI18n ?
                         window.revolutionaryI18n.translate('zine.questionnaire.profile') :
-                        "Hey ! Ton profil parfait se construit ici ! ✨"
+                        "Hey ! Ton profil parfait se construit ici ! ✨",
+                    "🚀 Bienvenue dans ton voyage vers l'idéal !",
+                    "🎪 Spectacle IA personnalisé qui commence !",
+                    "🔮 Prépare-toi à découvrir des insights magiques !",
+                    "⚡ Analyse révolutionnaire en cours de préparation !",
+                    "🌟 Ta future vie commence maintenant !"
                 ];
 
                 const randomMessage = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
@@ -699,7 +706,12 @@
                         "🔍 L'IA analyse 30+ critères par réponse !",
                     window.revolutionaryI18n ?
                         window.revolutionaryI18n.translate('zine.questionnaire.tip_future') :
-                        "⚡ Ton futur se dessine question par question !"
+                        "⚡ Ton futur se dessine question par question !",
+                    "🧠 Pas de bonne ou mauvaise réponse, sois toi !",
+                    "🌟 Chaque clic révèle un peu plus de toi !",
+                    "🎪 L'aventure devient plus passionnante !",
+                    "🔮 L'algorithme lit dans tes préférences !",
+                    "🎨 Tu peins le portrait de ta vie idéale !"
                 ];
 
                 const contextTip = tips[Math.floor(Math.random() * tips.length)];

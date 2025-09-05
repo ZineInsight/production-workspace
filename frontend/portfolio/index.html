@@ -11,6 +11,140 @@
     <link rel="stylesheet" href="/css/revolutionary.css?v=DEBUG123">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
+    
+    <!-- Styles pour Floating AI Coach Zine -->
+    <style>
+        /* ===== FLOATING AI COACH ZINE ===== */
+        .floating-coach {
+            position: fixed;
+            bottom: 120px; /* Plus haut pour éviter le chevauchement */
+            right: 20px;
+            z-index: 10003;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            animation: slideInFromRight 1s ease-out 2s both;
+        }
+
+        .coach-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .coach-avatar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .coach-bubble {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 12px 16px;
+            margin-right: 10px;
+            position: relative;
+            max-width: 200px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+            display: none;
+        }
+
+        .coach-bubble.show {
+            opacity: 1;
+            transform: translateX(0);
+            display: block;
+        }
+
+        .coach-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            right: -8px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(255, 255, 255, 0.95);
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+
+        .coach-message {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        .coach-tooltip {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            margin-right: 15px;
+        }
+
+        .coach-avatar:hover ~ .coach-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .floating-coach {
+                bottom: 100px; /* Ajusté pour mobile aussi */
+                right: 15px;
+                scale: 0.9;
+            }
+
+            .coach-bubble {
+                max-width: 180px;
+            }
+
+            .coach-avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body class="revolutionary-body">
@@ -658,8 +792,483 @@
 
     <!-- JavaScript pour le formulaire de contact -->
     <script src="/js/contact-form.js"></script>
-</body>    <!-- CTA Flottant -->
-    <div class="floating-cta" id="floatingCta">
+
+    <!-- ===== ZINE AI COACH POUR PORTFOLIO BUSINESS ===== -->
+    <script>
+        class ZinePortfolioCoach {
+            constructor() {
+                this.coach = document.getElementById('floating-ai-coach');
+                this.avatar = document.getElementById('zine-avatar');
+                this.bubble = document.getElementById('zine-bubble');
+                this.message = document.getElementById('zine-message');
+                this.isVisible = false;
+                this.currentTimeout = null;
+                this.lastComment = '';
+                this.welcomeShown = false;
+                this.interactionLevel = 0;
+                this.currentSection = 'hero';
+
+                this.init();
+            }
+
+            init() {
+                // Message de bienvenue business après un délai
+                setTimeout(() => {
+                    this.showWelcomeMessage();
+                }, 2500);
+
+                // Event listener pour clic sur avatar
+                if (this.avatar) {
+                    this.avatar.addEventListener('click', () => this.handleAvatarClick());
+                }
+
+                // Détection d'activité et sections
+                this.setupSectionDetection();
+                this.setupBusinessTriggers();
+            }
+
+            showWelcomeMessage() {
+                const welcomeMessages = [
+                    "👋 Bienvenue chez ZineInsight ! Expert Data Analytics !",
+                    "🎯 Salut ! Découvrez mes dashboards Power BI pour PME !",
+                    "⚡ Hello ! Transformons vos données en décisions rentables !",
+                    "📊 Bienvenue ! 10 ans Finance + Le Wagon = résultats mesurables !",
+                    "🚀 Salut ! Prêt à révolutionner votre business avec la data ?",
+                    "💼 Bienvenue ! Spécialiste dashboards Power BI livraison rapide !"
+                ];
+
+                const randomWelcome = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+                this.speak(randomWelcome, 4000);
+                this.welcomeShown = true;
+            }
+
+            handleAvatarClick() {
+                this.interactionLevel++;
+
+                if (this.interactionLevel <= 3) {
+                    this.showBusinessTip();
+                } else if (this.interactionLevel <= 6) {
+                    this.showServicesTip();
+                } else {
+                    this.showContactEncouragement();
+                }
+            }
+
+            showBusinessTip() {
+                const businessTips = [
+                    "📊 Dashboard Power BI en 2-8 jours selon complexité !",
+                    "⚡ Tarifs transparents : 900€ à 3600€ selon besoins !",
+                    "🎯 Formation incluse dans tous les packages !",
+                    "💼 Spécialisé PME : ROI mesurable garanti !",
+                    "🔧 De la donnée brute à l'action business !",
+                    "📈 10 ans Finance + Le Wagon = expertise unique !",
+                    "🚀 Portfolio complet : e-commerce, finance, IA !",
+                    "💡 Audit gratuit de vos données disponible !"
+                ];
+
+                const randomTip = businessTips[Math.floor(Math.random() * businessTips.length)];
+                this.speak(randomTip, 5000);
+            }
+
+            showServicesTip() {
+                const servicesTips = [
+                    "🔧 Dashboard Simple : idéal pour débuter (900-1350€) !",
+                    "📊 Dashboard Standard : analyse multi-sources (1800-2250€) !",
+                    "🚀 Dashboard Complexe : solution avancée (2700-3600€) !",
+                    "⚡ Livraison garantie : 2-3j Simple, 6-8j Complexe !",
+                    "💼 Formation équipe incluse dans tous les packages !",
+                    "🎯 Plus de 200 connecteurs Power BI disponibles !",
+                    "📱 Dashboards responsives et apps mobiles natives !",
+                    "🔒 Sécurité enterprise et intégration Microsoft !"
+                ];
+
+                const randomServiceTip = servicesTips[Math.floor(Math.random() * servicesTips.length)];
+                this.speak(randomServiceTip, 5000);
+            }
+
+            showContactEncouragement() {
+                const contactMessages = [
+                    "📧 Contactez-moi pour un devis gratuit personnalisé !",
+                    "🎯 Audit gratuit de vos données : découvrons le potentiel !",
+                    "⚡ Réponse sous 24h garantie !",
+                    "💼 LinkedIn, Malt ou email : choisissez votre canal !",
+                    "🚀 Discutons de votre projet data analytics !",
+                    "💡 Devis gratuit et conseils inclus !"
+                ];
+
+                const randomContact = contactMessages[Math.floor(Math.random() * contactMessages.length)];
+                this.speak(randomContact, 6000);
+            }
+
+            setupSectionDetection() {
+                // Détection des sections pour messages contextuels - TIMING AMÉLIORÉ
+                const sections = document.querySelectorAll('section');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.intersectionRatio > 0.1) { // Seuil réduit pour détection plus rapide
+                            const sectionId = entry.target.id || this.getSectionName(entry.target);
+                            this.onSectionChange(sectionId);
+                        }
+                    });
+                }, { 
+                    threshold: [0.1, 0.3, 0.5], // Plusieurs seuils pour détection rapide
+                    rootMargin: '50px 0px -50px 0px' // Déclenche plus tôt
+                });
+
+                sections.forEach(section => observer.observe(section));
+                
+                // Observer aussi le footer pour la section contact
+                const footer = document.querySelector('footer');
+                if (footer) {
+                    observer.observe(footer);
+                }
+            }
+
+            getSectionName(element) {
+                // Améliorer la détection des sections
+                if (element.classList.contains('contact-section')) return 'contact-section';
+                if (element.querySelector('#contact')) return 'contact-section';
+                if (element.classList.contains('section-container')) {
+                    const header = element.querySelector('.section-badge');
+                    if (header) {
+                        const text = header.textContent.toLowerCase();
+                        if (text.includes('portfolio')) return 'portfolio';
+                        if (text.includes('services')) return 'services';
+                        if (text.includes('témoignages')) return 'testimonials';
+                        if (text.includes('technologie')) return 'technology';
+                        if (text.includes('contact')) return 'contact-section';
+                    }
+                }
+                return 'section-container';
+            }
+
+            onSectionChange(sectionId) {
+                // Éviter spam de messages mais être plus réactif
+                if (this.currentSection === sectionId) return;
+                
+                console.log('🎯 Section détectée:', sectionId); // Debug
+                this.currentSection = sectionId;
+
+                // Messages contextuels par section avec délai RÉDUIT
+                setTimeout(() => {
+                    if (!this.isVisible && this.welcomeShown) {
+                        this.showSectionMessage(sectionId);
+                    }
+                }, 800); // Réduit de 2000ms à 800ms
+            }
+
+            showSectionMessage(sectionId) {
+                const sectionMessages = {
+                    'portfolio': [
+                        "📊 Découvrez mes dashboards Power BI en action !",
+                        "🎯 3 projets concrets : e-commerce, finance, IA géo !",
+                        "⚡ Code source disponible sur GitHub !",
+                        "🚀 Applications réelles avec ROI mesurable !",
+                        "💼 Expertise Le Wagon + 10 ans Finance visible !"
+                    ],
+                    'services': [
+                        "💼 3 packages adaptés à votre budget PME !",
+                        "🔧 Simple, Standard ou Complexe : vous choisissez !",
+                        "⚡ Livraison garantie en 2-8 jours maximum !",
+                        "🎯 Tarifs transparents, pas de surprise !",
+                        "📊 Formation équipe incluse dans chaque package !"
+                    ],
+                    'testimonials': [
+                        "💬 Écoutez les résultats concrets !",
+                        "� +25% efficacité, -2 jours/mois économisés !",
+                        "⭐ Témoignages authentiques de dirigeants PME !",
+                        "🏆 Résultats mesurables et clients satisfaits !",
+                        "💎 Investissement qui se paie rapidement !"
+                    ],
+                    'technology': [
+                        "💡 Pourquoi Power BI ? 200+ connecteurs !",
+                        "🏢 Écosystème Microsoft native !",
+                        "📱 Mobile et cloud ready !",
+                        "💰 ROI optimal pour PME !",
+                        "⚡ Performance et vitesse exceptionnelles !"
+                    ],
+                    'contact-section': [
+                        "📧 Prêt à transformer vos données ?",
+                        "🎯 Audit gratuit disponible !",
+                        "⚡ Réponse sous 24h garantie !",
+                        "💼 Plusieurs canaux : email, LinkedIn, Malt !",
+                        "🚀 Démarrons votre projet data ensemble !",
+                        "💡 Consultation gratuite pour évaluer vos besoins !",
+                        "🎪 C'est parti pour révolutionner votre business !"
+                    ],
+                    'footer-revolutionary': [
+                        "🎉 Merci pour votre visite !",
+                        "📧 N'hésitez pas à me contacter !",
+                        "💼 Vos données méritent mieux qu'Excel !",
+                        "🚀 Prêt à passer au niveau supérieur ?",
+                        "⭐ À bientôt pour transformer votre business !"
+                    ]
+                };
+
+                // Fallback pour sections non reconnues
+                const defaultMessages = [
+                    "💡 Des questions sur nos services ?",
+                    "📊 Découvrez le potentiel de vos données !",
+                    "🎯 Transformons vos défis en opportunités !",
+                    "⚡ Power BI : la solution qu'il vous faut !",
+                    "🚀 Boostez votre business avec la data !"
+                ];
+
+                const messages = sectionMessages[sectionId] || defaultMessages;
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                
+                console.log(`💬 Message section ${sectionId}:`, randomMessage); // Debug
+                this.speak(randomMessage, 4000);
+            }
+
+            setupBusinessTriggers() {
+                // Trigger sur hover des boutons CTA business
+                const ctaButtons = document.querySelectorAll('.btn-primary, .btn-hero, .btn-contact');
+                ctaButtons.forEach(btn => {
+                    btn.addEventListener('mouseenter', () => {
+                        if (!this.isVisible && Math.random() > 0.7) { // 30% de chance
+                            const businessEncouragements = [
+                                "🎯 Excellent choix ! Démarrons !",
+                                "💼 Parfait pour votre PME !",
+                                "⚡ Action = résultats !",
+                                "📊 Transformons vos données !",
+                                "🚀 C'est parti pour le succès !",
+                                "💡 Décision intelligente !",
+                                "🎪 Let's make it happen !",
+                                "💎 Investissement rentable !",
+                                "⭐ Votre business va décoller !"
+                            ];
+                            const randomEncouragement = businessEncouragements[Math.floor(Math.random() * businessEncouragements.length)];
+                            this.speak(randomEncouragement, 2000);
+                        }
+                    });
+                });
+
+                // Trigger sur scroll pour engagement
+                let scrollTriggered = false;
+                let contactTriggered = false;
+                
+                window.addEventListener('scroll', () => {
+                    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                    
+                    // Message exploration à 50% du scroll
+                    if (!scrollTriggered && scrollPercent > 50) {
+                        scrollTriggered = true;
+                        setTimeout(() => {
+                            if (!this.isVisible) {
+                                const scrollMessages = [
+                                    "👀 Vous explorez ? Parfait ! Les détails comptent !",
+                                    "📖 Excellente recherche ! L'info précise est clé !",
+                                    "🔍 Investigation approfondie ! J'adore ça !",
+                                    "📚 Vous lisez tout ? Bravo ! Décision éclairée !",
+                                    "🧭 Exploration méthodique ! Très professionnel !",
+                                    "🕵️ Audit complet ? Smart move !"
+                                ];
+                                const randomScrollMessage = scrollMessages[Math.floor(Math.random() * scrollMessages.length)];
+                                this.speak(randomScrollMessage, 3000);
+                            }
+                        }, 1000);
+                    }
+                    
+                    // Force un message contact si on arrive à 85% du scroll
+                    if (!contactTriggered && scrollPercent > 85) {
+                        contactTriggered = true;
+                        setTimeout(() => {
+                            if (!this.isVisible) {
+                                this.showSectionMessage('contact-section');
+                            }
+                        }, 1500);
+                    }
+                });
+
+                // Trigger inactivité pour relance business
+                this.setupBusinessInactivity();
+            }
+
+            setupBusinessInactivity() {
+                let inactivityTimer;
+                const resetInactivityTimer = () => {
+                    clearTimeout(inactivityTimer);
+                    inactivityTimer = setTimeout(() => {
+                        if (!this.isVisible && this.welcomeShown) {
+                            this.triggerBusinessInactivity();
+                        }
+                    }, 45000); // 45 secondes pour business (plus long)
+                };
+
+                ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'].forEach(event => {
+                    document.addEventListener(event, resetInactivityTimer, true);
+                });
+
+                resetInactivityTimer();
+            }
+
+            triggerBusinessInactivity() {
+                const inactivityMessages = [
+                    "💡 Des questions sur nos services ? Cliquez-moi !",
+                    "📊 Besoin d'aide pour choisir votre package ?",
+                    "🎯 Audit gratuit disponible ! Intéressé ?",
+                    "⚡ Rapide : 2-8 jours pour transformer vos données !",
+                    "💼 PME : nos dashboards changent tout !",
+                    "🚀 Prêt à booster votre business avec la data ?",
+                    "📈 ROI mesurable garanti ! Discutons-en !",
+                    "💎 Investissement qui se paie rapidement !",
+                    "🔧 Simple, Standard ou Complexe : que choisir ?",
+                    "⭐ Déjà des centaines de PME satisfaites !"
+                ];
+
+                const randomMessage = inactivityMessages[Math.floor(Math.random() * inactivityMessages.length)];
+                this.speak(randomMessage, 6000);
+            }
+
+            speak(message, duration = 4000) {
+                // Éviter de répéter le même message
+                if (message === this.lastComment) {
+                    return;
+                }
+
+                this.lastComment = message;
+
+                if (this.currentTimeout) {
+                    clearTimeout(this.currentTimeout);
+                }
+
+                this.coach.classList.add('speaking');
+                this.bubble.classList.add('show');
+                this.isVisible = true;
+
+                // Animation d'apparition de l'avatar
+                this.avatar.style.transform = 'scale(1.1) rotate(5deg)';
+                setTimeout(() => {
+                    this.avatar.style.transform = 'scale(1) rotate(0deg)';
+                }, 200);
+
+                this.typeWriter(message, () => {
+                    this.currentTimeout = setTimeout(() => {
+                        this.hide();
+                    }, duration);
+                });
+            }
+
+            typeWriter(text, callback) {
+                this.message.textContent = '';
+                let index = 0;
+                const speed = 25;
+
+                const type = () => {
+                    if (index < text.length) {
+                        this.message.textContent += text.charAt(index);
+                        index++;
+
+                        let nextSpeed = speed;
+                        if (text.charAt(index) === ' ') nextSpeed = speed * 0.5;
+                        if (text.charAt(index) === ',' || text.charAt(index) === '.') nextSpeed = speed * 2;
+
+                        setTimeout(type, nextSpeed);
+                    } else {
+                        if (callback) callback();
+                    }
+                };
+                type();
+            }
+
+            hide() {
+                this.bubble.classList.remove('show');
+                this.coach.classList.remove('speaking');
+                this.isVisible = false;
+
+                if (this.currentTimeout) {
+                    clearTimeout(this.currentTimeout);
+                    this.currentTimeout = null;
+                }
+            }
+        }
+
+        // Initialiser Zine Portfolio Coach
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                window.zinePortfolio = new ZinePortfolioCoach();
+                console.log('🤖 Zine Portfolio Coach - Ready for business!');
+                
+                // Gestion intelligente du positionnement avec CTA
+                adjustFloatingElements();
+            });
+        } else {
+            window.zinePortfolio = new ZinePortfolioCoach();
+            console.log('🤖 Zine Portfolio Coach - Ready for business!');
+            adjustFloatingElements();
+        }
+
+        // Fonction pour ajuster les éléments flottants
+        function adjustFloatingElements() {
+            const coach = document.getElementById('floating-ai-coach');
+            const cta = document.getElementById('floatingCta');
+            
+            if (!coach || !cta) return;
+
+            // Responsive positioning
+            function updatePositions() {
+                const isMobile = window.innerWidth <= 768;
+                
+                if (isMobile) {
+                    // Sur mobile : stack vertical avec robot plus haut
+                    coach.style.bottom = '100px';
+                    coach.style.right = '20px';
+                    cta.style.bottom = '20px';
+                    cta.style.right = '20px';
+                } else {
+                    // Sur desktop : robot plus haut, CTA en bas
+                    coach.style.bottom = '120px';
+                    coach.style.right = '20px';
+                    cta.style.bottom = '20px';
+                    cta.style.right = '100px';
+                }
+            }
+
+            // Initial setup et resize listener
+            updatePositions();
+            window.addEventListener('resize', updatePositions);
+
+            // Cache temporaire du CTA quand le robot parle (UX improvement)
+            const originalCTADisplay = cta.style.display;
+            coach.addEventListener('speaking', () => {
+                cta.style.opacity = '0.3';
+            });
+            
+            // Restaurer quand robot stop
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.target.classList.contains('coach-bubble')) {
+                        const isVisible = mutation.target.classList.contains('show');
+                        cta.style.opacity = isVisible ? '0.3' : '1';
+                    }
+                });
+            });
+            
+            const bubble = document.getElementById('zine-bubble');
+            if (bubble) {
+                observer.observe(bubble, { attributes: true, attributeFilter: ['class'] });
+            }
+        }
+    </script>
+
+    <!-- Floating AI Coach Zine Business -->
+    <div id="floating-ai-coach" class="floating-coach">
+        <div class="coach-avatar" id="zine-avatar">
+            🤖
+        </div>
+        <div class="coach-bubble" id="zine-bubble">
+            <div class="coach-message" id="zine-message">
+                Bienvenue chez ZineInsight ! 💼
+            </div>
+        </div>
+        <div class="coach-tooltip">
+            Zine Assistant Business
+        </div>
+    </div>
+
+    <!-- CTA Flottant -->
+    <div class="floating-cta" id="floatingCta" style="bottom: 20px; right: 100px;">
         <a href="mailto:otmane@zineinsight.com?subject=Dashboard%20Power%20BI%20-%20Devis%20Gratuit&body=Bonjour,%0A%0AJe%20suis%20intéressé%20par%20votre%20offre%20et%20par%20un%20devis%20gratuit.%0A%0A-%20Secteur%20:%20%0A-%20Objectif%20:%20%0A-%20Timeline%20:%20%0A%0AMerci" 
            class="floating-cta-btn">
             <span class="cta-icon">🎯</span>

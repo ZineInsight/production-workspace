@@ -1159,7 +1159,13 @@
                     "🤔 Tu hésites ? Le questionnaire est vraiment facile !",
                     "⏰ Tic-tac... Ta ville parfaite t'attend !",
                     "💭 Besoin d'aide ? Clique-moi pour des tips !",
-                    "✨ Allez, lance-toi ! Que du positif t'attend !"
+                    "✨ Allez, lance-toi ! Que du positif t'attend !",
+                    "🎯 3 minutes pour changer ta vie, ça vaut le coup !",
+                    "🚀 L'aventure commence par un premier clic !",
+                    "💡 Curieux de voir ce que l'IA va découvrir sur toi ?",
+                    "🌍 Ta nouvelle vie t'attend quelque part...",
+                    "⭐ Des milliers ont déjà sauté le pas !",
+                    "🎪 Ne reste pas spectateur de ta propre vie !"
                 ];
 
                 const randomMessage = inactivityMessages[Math.floor(Math.random() * inactivityMessages.length)];
@@ -1176,7 +1182,13 @@
                                 "👆 Excellent choix ! Clique !",
                                 "💪 C'est parti mon champion !",
                                 "🎯 Go go go ! Fais-le !",
-                                "⚡ Yes ! Tu vas adorer !"
+                                "⚡ Yes ! Tu vas adorer !",
+                                "🔥 Tu brûles ! Fonce !",
+                                "✨ Perfecto ! Action !",
+                                "🚀 Décollage imminent !",
+                                "💎 Choix de winner !",
+                                "🎊 Let's gooo !",
+                                "⭐ Tu es sur la bonne voie !"
                             ];
                             const randomEncouragement = encouragements[Math.floor(Math.random() * encouragements.length)];
                             this.speak(randomEncouragement, 2000);
@@ -1191,7 +1203,16 @@
                         scrollTriggered = true;
                         setTimeout(() => {
                             if (!this.isVisible) {
-                                this.speak("👀 Tu explores ? J'adore les curieux ! 🕵️", 3000);
+                                const scrollMessages = [
+                                    "👀 Tu explores ? J'adore les curieux ! 🕵️",
+                                    "📖 Tu lis tout ? Excellent réflexe ! 🧠",
+                                    "🔍 Investigation mode activé ! 🎯",
+                                    "📚 Bonne recherche ! L'info c'est le pouvoir ! ⚡",
+                                    "🕵️ Detective en action ! Continue ! 🔎",
+                                    "🧭 Exploration intelligente ! 🌟"
+                                ];
+                                const randomScrollMessage = scrollMessages[Math.floor(Math.random() * scrollMessages.length)];
+                                this.speak(randomScrollMessage, 3000);
                             }
                         }, 1000);
                     }

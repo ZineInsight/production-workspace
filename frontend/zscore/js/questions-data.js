@@ -512,6 +512,156 @@ window.QUESTIONS_DATA = {
                     "boost_criteria": ["transport_adaptable", "local_solutions", "mobility_independent"]
                 }
             ]
+        },
+
+        // ===== 10. SANTÉ & QUALITÉ DE VIE =====
+        {
+            "id": "expat_health_wellbeing",
+            "title": "🏥 Quelle est votre priorité santé & bien-être ?",
+            "title_en": "🏥 What is your health & wellbeing priority?",
+            "category": "health_wellness",
+            "type": "single",
+            "description": "Soins médicaux, qualité de l'air, environnement sain",
+            "description_en": "Medical care, air quality, healthy environment",
+            "weight": 8,
+            "options": [
+                {
+                    "value": "health_premium",
+                    "icon": "⭐",
+                    "title": "Santé premium exigée",
+                    "title_en": "Premium health required",
+                    "description": "Meilleurs hôpitaux, air pur, environnement optimal",
+                    "description_en": "Best hospitals, clean air, optimal environment",
+                    "boost_criteria": ["premium_healthcare", "excellent_air_quality", "minimal_pollution"]
+                },
+                {
+                    "value": "health_preventive",
+                    "icon": "🌿",
+                    "title": "Prévention & mode de vie sain",
+                    "title_en": "Prevention & healthy lifestyle",
+                    "description": "Air respirable, alimentation bio, sport outdoor",
+                    "description_en": "Breathable air, organic food, outdoor sports",
+                    "boost_criteria": ["good_air_quality", "healthy_lifestyle", "organic_food_access"]
+                },
+                {
+                    "value": "health_standard",
+                    "icon": "🏥",
+                    "title": "Soins standards suffisants",
+                    "title_en": "Standard care sufficient",
+                    "description": "Système de santé correct, pas de problèmes majeurs",
+                    "description_en": "Decent healthcare system, no major issues",
+                    "boost_criteria": ["adequate_healthcare", "reasonable_air_quality", "basic_wellness"]
+                },
+                {
+                    "value": "health_adaptive",
+                    "icon": "💊",
+                    "title": "Je m'adapte facilement",
+                    "title_en": "I adapt easily",
+                    "description": "Santé robuste, pollution urbaine acceptable",
+                    "description_en": "Robust health, urban pollution acceptable",
+                    "boost_criteria": ["health_adaptable", "pollution_tolerant", "urban_resilience"]
+                }
+            ]
+        },
+
+        // ===== 11. CONSCIENCE ÉCOLOGIQUE =====
+        {
+            "id": "expat_environmental_values",
+            "title": "🌱 Quelle importance donnez-vous à l'écologie ?",
+            "title_en": "🌱 How important is ecology to you?",
+            "category": "environmental_values",
+            "type": "single",
+            "description": "Énergies renouvelables, alimentation locale, transport vert",
+            "description_en": "Renewable energy, local food, green transport",
+            "weight": 6,
+            "options": [
+                {
+                    "value": "eco_militant",
+                    "icon": "🌍",
+                    "title": "Écologie priorité absolue",
+                    "title_en": "Ecology absolute priority",
+                    "description": "100% renouvelable, bio local, zéro carbone",
+                    "description_en": "100% renewable, local organic, zero carbon",
+                    "boost_criteria": ["green_energy_leader", "local_organic_abundant", "carbon_neutral"]
+                },
+                {
+                    "value": "eco_conscious",
+                    "icon": "♻️",
+                    "title": "Conscient & engagé",
+                    "title_en": "Conscious & committed",
+                    "description": "Efforts écologiques visibles, choix durables possibles",
+                    "description_en": "Visible ecological efforts, sustainable choices possible",
+                    "boost_criteria": ["good_green_initiatives", "sustainable_options", "eco_mobility"]
+                },
+                {
+                    "value": "eco_interested",
+                    "icon": "🌿",
+                    "title": "Intéressé si pratique",
+                    "title_en": "Interested if practical",
+                    "description": "Écologie OK si pas contraignant ni plus cher",
+                    "description_en": "Ecology OK if not constraining or expensive",
+                    "boost_criteria": ["basic_green_options", "practical_sustainability", "eco_convenience"]
+                },
+                {
+                    "value": "eco_neutral",
+                    "icon": "🏙️",
+                    "title": "Neutre sur l'écologie",
+                    "title_en": "Neutral about ecology",
+                    "description": "L'environnement n'est pas un critère de choix",
+                    "description_en": "Environment is not a choice criterion",
+                    "boost_criteria": ["environment_independent", "urban_lifestyle", "convenience_first"]
+                }
+            ]
+        },
+
+        // ===== 12. OPTIMISATION FISCALE & FINANCE =====
+        {
+            "id": "expat_tax_finance_optimization",
+            "title": "💰 Quelle est votre priorité optimisation fiscale ?",
+            "title_en": "💰 What is your tax optimization priority?",
+            "category": "fiscal_strategy",
+            "type": "single",
+            "description": "Impôts, services bancaires, gestion patrimoniale",
+            "description_en": "Taxes, banking services, wealth management",
+            "weight": 7,
+            "options": [
+                {
+                    "value": "tax_optimizer",
+                    "icon": "📊",
+                    "title": "Optimisation fiscale maximale",
+                    "title_en": "Maximum tax optimization",
+                    "description": "Paradis fiscaux, 0% impôts, services financiers premium",
+                    "description_en": "Tax havens, 0% taxes, premium financial services",
+                    "boost_criteria": ["tax_haven_benefits", "premium_banking", "wealth_management"]
+                },
+                {
+                    "value": "tax_efficient",
+                    "icon": "💼",
+                    "title": "Fiscalité avantageuse recherchée",
+                    "title_en": "Advantageous taxation sought",
+                    "description": "Taux réduits expats, conventions fiscales, services pro",
+                    "description_en": "Reduced expat rates, tax treaties, professional services",
+                    "boost_criteria": ["expat_tax_benefits", "good_banking", "tax_treaties"]
+                },
+                {
+                    "value": "tax_standard",
+                    "icon": "🏦",
+                    "title": "Fiscalité normale acceptable",
+                    "title_en": "Normal taxation acceptable",
+                    "description": "Système transparent, services bancaires corrects",
+                    "description_en": "Transparent system, decent banking services",
+                    "boost_criteria": ["transparent_taxation", "standard_banking", "financial_stability"]
+                },
+                {
+                    "value": "tax_contribution",
+                    "icon": "🤝",
+                    "title": "J'accepte de contribuer",
+                    "title_en": "I accept to contribute",
+                    "description": "Impôts élevés OK si services publics excellents",
+                    "description_en": "High taxes OK if excellent public services",
+                    "boost_criteria": ["high_tax_good_services", "social_benefits", "public_infrastructure"]
+                }
+            ]
         }
     ]
 };
@@ -588,3 +738,4 @@ window.EXPAT_SCORING_SYSTEM = {
 
 console.log('🎯 QUESTIONS EXPAT-FOCUSED chargées:', window.QUESTIONS_DATA.international.length, 'questions optimales');
 console.log('⚡ Système de scoring centré BESOINS activé - Fini les incohérences géographiques !');
+console.log('🚀 NOUVELLES QUESTIONS: Santé, Écologie, Fiscalité - 12 questions au total!');

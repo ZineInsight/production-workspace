@@ -1282,7 +1282,18 @@ function showShareNotification(message) {
 async function loadCityMappingFromJSON() {
     const cityToGuideMap = {};
 
-    // Mapping des fichiers JSON vers les guides HTML
+    // 🔍 DÉTECTION DU TYPE DE QUESTIONNAIRE
+    const storedAnswers = localStorage.getItem('answers');
+    const isInternationalQuestionnaire = storedAnswers && 
+        (storedAnswers.includes('expat_') || storedAnswers.includes('"selectedCountry":"world"'));
+
+    // 🌍 Si questionnaire international, pas besoin de charger les JSON spécifiques pays
+    if (isInternationalQuestionnaire) {
+        console.log('🌍 International questionnaire detected - skipping country-specific JSON loading');
+        return cityToGuideMap; // Retourne vide, les guides seront gérés par detectCountryFromCity
+    }
+
+    // Mapping des fichiers JSON vers les guides HTML (seulement pour questionnaires spécifiques pays)
     const jsonToGuideMapping = {
         'villes_usa_residents.json': 'usa.html',
         'villes_france_residents.json': 'france.html',

@@ -27,7 +27,10 @@ class AlgorithmeExpat:
             'expat_language_comfort': self.eval_language_compatibility,
             'expat_family_status': self.eval_family_compatibility,
             'expat_professional_status': self.eval_professional_compatibility,
-            'expat_mobility_preference': self.eval_mobility_compatibility
+            'expat_mobility_preference': self.eval_mobility_compatibility,
+            'expat_health_wellbeing': self.eval_health_compatibility,
+            'expat_environmental_values': self.eval_environmental_compatibility,
+            'expat_tax_finance_optimization': self.eval_tax_finance_compatibility
         }
 
         # 🏆 POIDS DES QUESTIONS (importance relative)
@@ -37,10 +40,13 @@ class AlgorithmeExpat:
             'expat_climate_tolerance': 8, # Impact santé/humeur
             'expat_security_needs': 8,    # Tranquillité d'esprit
             'expat_family_status': 8,     # Impact majeur logement/écoles
+            'expat_health_wellbeing': 8,  # Santé & bien-être
             'expat_lifestyle_pace': 7,    # Rythme urbain
             'expat_language_comfort': 7,  # Barrière communication
             'expat_professional_status': 7, # Opportunités/visa/revenus
-            'expat_mobility_preference': 6  # Mobilité quotidienne
+            'expat_tax_finance_optimization': 7, # Optimisation fiscale
+            'expat_mobility_preference': 6,  # Mobilité quotidienne
+            'expat_environmental_values': 6  # Conscience écologique
         }
 
     def calculer_recommandations(self, reponses_user, country='world'):
@@ -72,10 +78,15 @@ class AlgorithmeExpat:
                     'city': ville['city'],
                     'country': ville['country'],
                     'score': round(score_total, 1),
-                    'compatibility': min(100, round(score_total * 100, 1))
+                    'compatibility': min(100, round(score_total * 100, 1)),
+                    'continent': self.get_continent(ville['country']),
+                    'original_score': score_total  # Score original avant ajustements
                 })
 
-        # Trier par score et retourner TOP 3
+        # 🌍 ANTI-MONOPOLE GÉOGRAPHIQUE - Diversité forcée
+        scores_villes = self.apply_geographic_diversity(scores_villes, reponses_user)
+
+        # Trier par score ajusté et retourner TOP 3
         scores_villes.sort(key=lambda x: x['score'], reverse=True)
         return scores_villes[:3]
 
@@ -144,10 +155,19 @@ class AlgorithmeExpat:
             return min(1.0, climat_agreable + bonus)
 
         elif climate_choice == 'cool_weather_lover':
-            # Malus pour les trop chauds
-            if any(t in ville_nom for t in ['bangkok', 'mumbai', 'dubai', 'miami']):
-                return climat_agreable * 0.5
-            return climat_agreable
+            # Bonus pour villes vraiment froides
+            cold_cities = ['stockholm', 'helsinki', 'copenhagen', 'oslo', 'reykjavik', 
+                          'moscow', 'st petersburg', 'tallinn', 'riga', 'vilnius',
+                          'montreal', 'toronto', 'vancouver', 'berlin', 'prague', 'warsaw']
+            bonus = 0.4 if any(c in ville_nom for c in cold_cities) else 0
+            
+            # Malus FORT pour les trop chauds (méditerranéen inclus)
+            hot_cities = ['bangkok', 'mumbai', 'dubai', 'miami', 'lisbon', 'barcelona', 
+                         'tel aviv', 'casablanca', 'rio de janeiro']
+            if any(h in ville_nom for h in hot_cities):
+                return climat_agreable * 0.3  # Malus renforcé
+            
+            return min(1.0, climat_agreable + bonus)
 
         return climat_agreable
 
@@ -255,6 +275,236 @@ class AlgorithmeExpat:
 
         return (transport_eco + infrastructure) / 2
 
+    def eval_health_compatibility(self, health_choice, ville):
+        """Évaluation compatibilité santé & bien-être"""
+
+        soins_accessibles = ville['scores'].get('soins_accessibles', 0.5)
+        qualite_air = ville['scores'].get('qualite_air', 0.5)
+        pollution_niveau = ville['scores'].get('pollution_niveau', 0.5)
+
+        if health_choice == 'health_premium':
+            # Exigence maximale : soins + air excellent
+            score_sante = (soins_accessibles * 0.4 + qualite_air * 0.4 + (1 - pollution_niveau) * 0.2)
+            return min(1.0, score_sante * 1.2)  # Boost pour les excellents
+
+        elif health_choice == 'health_preventive':
+            # Focus prévention : air + style de vie sain
+            score_preventif = (qualite_air * 0.5 + (1 - pollution_niveau) * 0.3 + soins_accessibles * 0.2)
+            return score_preventif
+
+        elif health_choice == 'health_standard':
+            # Soins corrects suffisent
+            return soins_accessibles
+
+        elif health_choice == 'health_adaptive':
+            # S'adapte, même à la pollution
+            return min(1.0, soins_accessibles * 0.7 + 0.3)  # Bonus adaptabilité
+
+        return soins_accessibles
+
+    def eval_environmental_compatibility(self, env_choice, ville):
+        """Évaluation compatibilité conscience écologique"""
+
+        energie_verte = ville['scores'].get('energie_verte', 0.5)
+        agriculture_locale = ville['scores'].get('agriculture_locale', 0.5)
+        mobilite_verte = ville['scores'].get('mobilite_verte', 0.5)
+
+        if env_choice == 'eco_militant':
+            # Écologie priorité absolue
+            score_eco = (energie_verte * 0.4 + agriculture_locale * 0.3 + mobilite_verte * 0.3)
+            return min(1.0, score_eco * 1.3)  # Boost pour les leaders verts
+
+        elif env_choice == 'eco_conscious':
+            # Conscient et engagé
+            score_conscient = (energie_verte * 0.35 + mobilite_verte * 0.35 + agriculture_locale * 0.3)
+            return score_conscient
+
+        elif env_choice == 'eco_interested':
+            # Intéressé si pratique
+            score_pratique = (mobilite_verte * 0.5 + energie_verte * 0.3 + agriculture_locale * 0.2)
+            return score_pratique
+
+        elif env_choice == 'eco_neutral':
+            # Neutre - pas de pénalité/bonus
+            return 0.6  # Score neutre
+
+        return (energie_verte + agriculture_locale + mobilite_verte) / 3
+
+    def eval_tax_finance_compatibility(self, tax_choice, ville):
+        """Évaluation compatibilité optimisation fiscale & finance"""
+
+        optimisation_fiscale = ville['scores'].get('optimisation_fiscale', 0.5)
+        services_bancaires = ville['scores'].get('services_bancaires', 0.5)
+        services_luxe = ville['scores'].get('services_luxe', 0.5)
+
+        if tax_choice == 'tax_optimizer':
+            # Optimisation fiscale maximale
+            score_optim = (optimisation_fiscale * 0.6 + services_bancaires * 0.25 + services_luxe * 0.15)
+            return min(1.0, score_optim * 1.2)  # Boost paradis fiscaux
+
+        elif tax_choice == 'tax_efficient':
+            # Fiscalité avantageuse recherchée
+            score_efficace = (optimisation_fiscale * 0.5 + services_bancaires * 0.5)
+            return score_efficace
+
+        elif tax_choice == 'tax_standard':
+            # Fiscalité normale acceptable
+            return services_bancaires  # Focus sur services bancaires
+
+        elif tax_choice == 'tax_contribution':
+            # Accepte impôts élevés si services publics excellents
+            infrastructure = ville['scores'].get('infrastructure_premium', 0.5)
+            soins = ville['scores'].get('soins_accessibles', 0.5)
+            score_social = (infrastructure * 0.4 + soins * 0.4 + services_bancaires * 0.2)
+            return score_social
+
+        return optimisation_fiscale
+
+    # ===============================================
+    # 🌍 SYSTÈME ANTI-MONOPOLE GÉOGRAPHIQUE
+    # ===============================================
+
+    def get_continent(self, country):
+        """Mapping pays → continent pour diversité géographique"""
+        
+        continent_mapping = {
+            # Europe
+            'Germany': 'Europe', 'Netherlands': 'Europe', 'Switzerland': 'Europe',
+            'Sweden': 'Europe', 'Austria': 'Europe', 'Poland': 'Europe',
+            'Czech Republic': 'Europe', 'Portugal': 'Europe', 'Spain': 'Europe',
+            'Ireland': 'Europe',
+            
+            # Amérique du Nord
+            'United States': 'North_America', 'Canada': 'North_America',
+            
+            # Amérique du Sud
+            'Brazil': 'South_America', 'Colombia': 'South_America', 
+            'Argentina': 'South_America', 'Chile': 'South_America',
+            'Peru': 'South_America', 'Ecuador': 'South_America', 
+            'Uruguay': 'South_America', 'Venezuela': 'South_America',
+            
+            # Asie
+            'Singapore': 'Asia', 'Japan': 'Asia', 'South Korea': 'Asia',
+            'Thailand': 'Asia', 'Malaysia': 'Asia', 'Indonesia': 'Asia',
+            'Philippines': 'Asia', 'Vietnam': 'Asia', 'India': 'Asia',
+            'Hong Kong': 'Asia',
+            
+            # Moyen-Orient
+            'United Arab Emirates': 'Middle_East', 'Israel': 'Middle_East',
+            
+            # Afrique
+            'South Africa': 'Africa', 'Morocco': 'Africa', 'Tunisia': 'Africa',
+            'Nigeria': 'Africa', 'Kenya': 'Africa',
+            
+            # Océanie
+            'Australia': 'Oceania', 'New Zealand': 'Oceania',
+            
+            # Amérique Centrale
+            'Mexico': 'Central_America'
+        }
+        
+        return continent_mapping.get(country, 'Other')
+
+    def apply_geographic_diversity(self, scores_villes, reponses_user):
+        """Applique la diversité géographique pour éviter le monopole"""
+        
+        if len(scores_villes) < 6:  # Pas assez de villes pour diversifier
+            return scores_villes
+        
+        # 1. Identifier les continents représentés dans le TOP 10
+        top_candidates = sorted(scores_villes, key=lambda x: x['original_score'], reverse=True)[:15]
+        
+        continent_counts = {}
+        for ville in top_candidates:
+            continent = ville['continent']
+            continent_counts[continent] = continent_counts.get(continent, 0) + 1
+        
+        # 2. Appliquer malus aux continents sur-représentés
+        for ville in scores_villes:
+            continent = ville['continent']
+            continent_count = continent_counts.get(continent, 0)
+            
+            # Malus progressif selon sur-représentation
+            if continent_count >= 4:  # 4+ villes même continent
+                malus = 0.15  # -15% du score
+            elif continent_count >= 3:  # 3 villes même continent  
+                malus = 0.10  # -10% du score
+            elif continent_count >= 2:  # 2 villes même continent
+                malus = 0.05  # -5% du score
+            else:
+                malus = 0.0   # Pas de malus
+            
+            # Appliquer le malus
+            ville['score'] = ville['original_score'] * (1 - malus)
+        
+        # 3. Bonus diversité pour profils aventuriers
+        adventure_profiles = ['adventure_tolerance', 'emerging_passport', 'immersion_ready']
+        is_adventurous = any(
+            reponses_user.get(key, '') in adventure_profiles 
+            for key in ['expat_security_needs', 'expat_passport', 'expat_language_comfort']
+        )
+        
+        if is_adventurous:
+            # Bonus pour continents exotiques
+            exotic_continents = ['Africa', 'South_America', 'Central_America']
+            for ville in scores_villes:
+                if ville['continent'] in exotic_continents:
+                    ville['score'] = ville['original_score'] * 1.08  # +8% bonus aventure
+        
+        # 4. Forcer diversité dans le TOP 3 final
+        return self.force_top3_diversity(scores_villes)
+
+    def force_top3_diversity(self, scores_villes):
+        """Force la diversité dans le TOP 3 final"""
+        
+        # Trier par score ajusté
+        candidates = sorted(scores_villes, key=lambda x: x['score'], reverse=True)
+        
+        final_top3 = []
+        used_continents = set()
+        used_countries = set()
+        
+        # Sélection intelligente du TOP 3
+        for ville in candidates:
+            continent = ville['continent']
+            country = ville['country']
+            
+            # Critères d'acceptation
+            accept = True
+            
+            # RÈGLE 1: Maximum 2 villes du même continent
+            if len(final_top3) >= 2 and continent in used_continents:
+                if len([v for v in final_top3 if v['continent'] == continent]) >= 2:
+                    accept = False
+            
+            # RÈGLE 2: Maximum 1 ville du même pays
+            if country in used_countries:
+                accept = False
+            
+            # RÈGLE 3: Si on a déjà 2 villes et pas assez de diversité, forcer
+            if len(final_top3) == 2 and len(used_continents) == 1:
+                # Forcer une ville d'un autre continent
+                if continent in used_continents:
+                    accept = False
+            
+            if accept:
+                final_top3.append(ville)
+                used_continents.add(continent)
+                used_countries.add(country)
+                
+                if len(final_top3) >= 3:
+                    break
+        
+        # Si on n'a pas assez de villes, prendre les meilleures restantes
+        while len(final_top3) < 3 and len(final_top3) < len(candidates):
+            for ville in candidates:
+                if ville not in final_top3:
+                    final_top3.append(ville)
+                    break
+        
+        # Retourner tous les scores ajustés (pour tri final)
+        return scores_villes
+
     def eval_passport_compatibility(self, passport_choice, ville):
         """Évaluation compatibilité passeport/visa"""
 
@@ -275,33 +525,119 @@ class AlgorithmeExpat:
     # ===============================================
 
     def appliquer_logique_bon_sens(self, reponses_user, ville, score):
-        """Applique la logique de bon sens pour éviter les incohérences"""
+        """Applique la logique de bon sens avancée pour éviter les incohérences"""
 
         ville_nom = ville['city'].lower()
+        
+        # Extraction des réponses utilisateur
         budget = reponses_user.get('expat_budget_realistic', '')
         lifestyle = reponses_user.get('expat_lifestyle_pace', '')
         security = reponses_user.get('expat_security_needs', '')
+        climate = reponses_user.get('expat_climate_tolerance', '')
+        family = reponses_user.get('expat_family_status', '')
+        health = reponses_user.get('expat_health_wellbeing', '')
+        environmental = reponses_user.get('expat_environmental_values', '')
+        tax_finance = reponses_user.get('expat_tax_finance_optimization', '')
 
-        # 🚫 RÈGLE 1: Pas de Dubai/Singapore pour les budgets serrés
+        # 🚫 RÈGLE 1: BUDGET vs COÛT DE VIE
         if budget == 'budget_maximizer':
-            villes_cheres = ['dubai', 'singapore', 'zurich', 'hong kong', 'new york city', 'san francisco']
-            if any(cher in ville_nom for cher in villes_cheres):
+            villes_tres_cheres = ['zurich', 'geneva', 'singapore', 'hong kong', 'new york city', 
+                                 'san francisco', 'sydney', 'oslo', 'copenhagen']
+            if any(cher in ville_nom for cher in villes_tres_cheres):
+                return False
+                
+        elif budget == 'budget_balanced':
+            # Budget équilibré incompatible avec les plus chères
+            villes_ultra_cheres = ['zurich', 'geneva', 'hong kong']
+            if any(ultra in ville_nom for ultra in villes_ultra_cheres):
                 return False
 
-        # 🚫 RÈGLE 2: Pas de NYC pour quelqu'un qui veut du calme
+        # 🚫 RÈGLE 2: LIFESTYLE vs RYTHME URBAIN
         if lifestyle == 'quiet_peaceful':
-            megacities_stressantes = ['new york city', 'mumbai', 'tokyo', 'hong kong']
+            megacities_stressantes = ['new york city', 'mumbai', 'tokyo', 'hong kong', 
+                                    'manila', 'jakarta', 'buenos aires']
             if any(stress in ville_nom for stress in megacities_stressantes):
                 return False
-
-        # 🚫 RÈGLE 3: Sécurité maximale incompatible avec villes dangereuses
-        if security == 'maximum_security':
-            villes_risquees = ['caracas', 'lagos', 'manila', 'bogotá']
-            if any(risque in ville_nom for risque in villes_risquees):
+                
+        elif lifestyle == 'hyperactive_urban':
+            # Hyperactif incompatible avec villes très calmes
+            villes_trop_calmes = ['reykjavik', 'wellington', 'dublin', 'porto']
+            if any(calme in ville_nom for calme in villes_trop_calmes):
                 return False
 
-        # 🚫 RÈGLE 4: Score minimum pour être recommandé
-        return score >= 0.4
+        # 🚫 RÈGLE 3: SÉCURITÉ vs STABILITÉ
+        if security == 'maximum_security':
+            villes_instables = ['caracas', 'lagos', 'manila', 'bogotá', 'lima', 'nairobi']
+            if any(instable in ville_nom for instable in villes_instables):
+                return False
+                
+        elif security == 'adventure_tolerance':
+            # Si on accepte l'aventure, boost pour villes émergentes
+            villes_emergentes = ['nairobi', 'lima', 'bogotá', 'manila', 'mumbai']
+            if any(emergent in ville_nom for emergent in villes_emergentes):
+                return True  # Force l'acceptation
+
+        # 🚫 RÈGLE 4: CLIMAT vs PRÉFÉRENCES
+        if climate == 'cool_weather_lover':
+            villes_tropicales = ['bangkok', 'ho chi minh city', 'jakarta', 'mumbai', 
+                               'manila', 'kuala lumpur', 'singapore']
+            if any(tropical in ville_nom for tropical in villes_tropicales):
+                return False
+                
+        elif climate == 'tropical_lover':
+            villes_froides = ['stockholm', 'helsinki', 'oslo', 'reykjavik', 'montreal', 'toronto']
+            if any(froid in ville_nom for froid in villes_froides):
+                return False
+
+        # 🚫 RÈGLE 5: FAMILLE vs INFRASTRUCTURE
+        if family in ['family_young_kids', 'family_teenagers']:
+            # Familles évitent villes peu sûres ou infrastructure faible
+            villes_peu_familiales = ['caracas', 'lagos', 'manila', 'nairobi']
+            if any(peu_fam in ville_nom for peu_fam in villes_peu_familiales):
+                return False
+
+        # 🚫 RÈGLE 6: SANTÉ vs QUALITÉ AIR/SOINS
+        if health == 'health_premium':
+            # Santé premium incompatible avec pollution élevée
+            villes_polluees = ['mumbai', 'delhi', 'jakarta', 'manila', 'ho chi minh city']
+            if any(pollue in ville_nom for pollue in villes_polluees):
+                return False
+
+        # 🚫 RÈGLE 7: ÉCOLOGIE vs POLITIQUE VERTE
+        if environmental == 'eco_militant':
+            # Écolo militant évite les pays peu verts
+            villes_peu_vertes = ['dubai', 'kuwait city', 'abu dhabi', 'caracas']
+            if any(peu_vert in ville_nom for peu_vert in villes_peu_vertes):
+                return False
+
+        # 🚫 RÈGLE 8: FISCALITÉ vs SYSTÈME FISCAL
+        if tax_finance == 'tax_optimizer':
+            # Optimiseur fiscal évite les pays à fiscalité lourde
+            villes_fiscalite_lourde = ['stockholm', 'copenhagen', 'oslo', 'helsinki']
+            if any(lourd in ville_nom for lourd in villes_fiscalite_lourde):
+                return False
+                
+        elif tax_finance == 'tax_contribution':
+            # Contributeur évite les paradis fiscaux
+            paradis_fiscaux = ['dubai', 'singapore', 'zurich', 'monaco']
+            if any(paradis in ville_nom for paradis in paradis_fiscaux):
+                return False
+
+        # 🚫 RÈGLE 9: SCORE MINIMUM GÉNÉRAL
+        if score < 0.35:  # Score trop faible
+            return False
+            
+        # 🚫 RÈGLE 10: COHÉRENCE PROFIL GLOBAL
+        # Budget serré + Sécurité max + Climat tropical = quasi impossible
+        impossible_combinations = [
+            (budget == 'budget_maximizer' and security == 'maximum_security' and score < 0.6),
+            (health == 'health_premium' and environmental == 'eco_militant' and score < 0.5)
+        ]
+        
+        if any(impossible_combinations):
+            return False
+
+        return True
 
     # ===============================================
     # 🗄️ CHARGEMENT DES DONNÉES
@@ -367,7 +703,10 @@ if __name__ == "__main__":
         'expat_language_comfort': 'english_only',
         'expat_family_status': 'single_flexible',
         'expat_professional_status': 'entrepreneur_startup',
-        'expat_mobility_preference': 'public_transport_only'
+        'expat_mobility_preference': 'public_transport_only',
+        'expat_health_wellbeing': 'health_premium',
+        'expat_environmental_values': 'eco_conscious',
+        'expat_tax_finance_optimization': 'tax_optimizer'
     }
 
     resultats = calculer_recommandations_expat(test_reponses)

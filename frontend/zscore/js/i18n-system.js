@@ -67,10 +67,10 @@ class RevolutionaryI18n {
                 'auth.back.link': '← Retour à la connexion',
 
                 // Hero
-                'hero.title': 'Révolutionnez Votre Vie avec l\'Intelligence Artificielle',
-                'hero.subtitle': 'Notre outil ZScore analyse 30+ critères avec l\'IA pour vous guider vers votre ville idéale. Rejoignez la révolution de l\'expatriation intelligente.',
+                'hero.title': 'Votre Ville Parfaite Vous Attend',
+                'hero.subtitle': 'Notre outil ZScore analyse salaires, fiscalité, climat, sécurité et bien plus pour vous guider vers votre ville idéale. Un outil data pour prendre une décision éclairée sur votre avenir.',
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'hero.badge': 'utilisateurs révolutionnent déjà leur vie',
-                'hero.badge': 'Nouvelle plateforme IA révolutionnaire',
+                'hero.badge': 'Analyse data-driven',
                 'hero.cta.primary': 'Trouver ma ville idéale',
                 'hero.cta.secondary': 'Dashboard Premium',
                 'hero.trust.text': 'Utilisé par des professionnels de',
@@ -78,7 +78,7 @@ class RevolutionaryI18n {
                 // Stats
                 'stats.users': 'Utilisateurs Actifs',
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'stats.users': 'Utilisateurs',
-                'stats.criteria': 'Critères IA',
+                'stats.criteria': 'Critères',
                 'stats.satisfaction': 'Satisfaction',
                 'stats.cities': 'Villes Analysées',
 
@@ -370,12 +370,12 @@ class RevolutionaryI18n {
                 'zine.results.tip_share': '⭐ Partage tes résultats sur les réseaux sociaux !',
 
                 // 🤖 INDEX PAGE AI COACH MESSAGES - FRENCH
-                'zine.welcome.message1': 'Salut ! Je suis Zine, ton coach IA ! 👋',
+                'zine.welcome.message1': 'Salut ! Je suis Zine, ton assistant ! 👋',
                 'zine.welcome.message2': 'Prêt à découvrir ta ville parfaite ? ✨',
                 'zine.welcome.message3': 'Je vais t\'accompagner dans cette aventure ! 🚀',
                 'zine.tip.questionnaire': '🎯 Lance le questionnaire pour une analyse personnalisée !',
-                'zine.tip.ai_power': '🧠 Mon IA analyse +50 critères pour toi !',
-                'zine.tip.worldwide': '🌍 +200 destinations analysées en temps réel !',
+                'zine.tip.ai_power': '🧠 ZScore analyse 25 critères pour toi !',
+                'zine.tip.worldwide': '🌍 +250 villes analysées en temps réel !',
                 'zine.tip.personalized': '✨ Chaque recommandation est unique à ton profil !',
                 'zine.tip.free': '🎁 Analyse gratuite, résultats premium !',
                 'zine.tip.speed': '⚡ Questionnaire : 3 minutes, résultats : instantanés !',
@@ -439,7 +439,7 @@ class RevolutionaryI18n {
                 // Stats
                 'stats.users': 'Active Users',
                 // TEMP DÉSACTIVÉ - Stats utilisateurs : 'stats.users': 'Users',
-                'stats.criteria': 'AI Criteria',
+                'stats.criteria': 'Criteria',
                 'stats.satisfaction': 'Satisfaction',
                 'stats.cities': 'Cities Analyzed',
 
@@ -689,12 +689,12 @@ class RevolutionaryI18n {
                 'zine.results.tip_share': '⭐ Share your results on social media!',
 
                 // 🤖 INDEX PAGE AI COACH MESSAGES - ENGLISH
-                'zine.welcome.message1': 'Hi! I\'m Zine, your AI coach! 👋',
+                'zine.welcome.message1': 'Hi! I\'m Zine, your assistant! 👋',
                 'zine.welcome.message2': 'Ready to discover your perfect city? ✨',
                 'zine.welcome.message3': 'I\'ll guide you through this adventure! 🚀',
                 'zine.tip.questionnaire': '🎯 Launch the questionnaire for personalized analysis!',
-                'zine.tip.ai_power': '🧠 My AI analyzes +50 criteria for you!',
-                'zine.tip.worldwide': '🌍 +200 destinations analyzed in real-time!',
+                'zine.tip.ai_power': '🧠 ZScore analyzes 25 criteria for you!',
+                'zine.tip.worldwide': '🌍 +250 cities analyzed in real-time!',
                 'zine.tip.personalized': '✨ Each recommendation is unique to your profile!',
                 'zine.tip.free': '🎁 Free analysis, premium results!',
                 'zine.tip.speed': '⚡ Questionnaire: 3 minutes, results: instant!',

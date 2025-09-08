@@ -1096,6 +1096,65 @@ body {
     transition: width var(--duration-700) var(--ease-out);
 }
 
+/* Criteria List - Two Columns */
+.criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.criteria-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.criteria-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.75rem;
+}
+
+.criteria-icon {
+    font-size: 0.875rem;
+}
+
+.criteria-name {
+    flex: 1;
+    color: var(--text-secondary);
+}
+
+.criteria-status {
+    color: var(--revolution-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.criteria-more {
+    margin-top: var(--space-2);
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Responsive: Side by side on larger cards */
+@media (min-width: 480px) {
+    .criteria-list {
+        flex-direction: row;
+        gap: var(--space-4);
+    }
+    
+    .criteria-column {
+        flex: 1;
+    }
+    
+    .criteria-more {
+        flex-basis: 100%;
+        margin-top: var(--space-3);
+    }
+}
+
 /* Floating Elements */
 .floating-elements {
     position: absolute;

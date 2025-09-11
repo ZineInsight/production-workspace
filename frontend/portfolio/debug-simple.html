@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug i18n Simple</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .language-switcher { margin-bottom: 20px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .test-content { border: 1px solid #ccc; padding: 20px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Test i18n Debug</h1>
+    
+    <div class="language-switcher">
+        <button id="lang-fr">FR</button>
+        <button id="lang-en">EN</button>
+    </div>
+
+    <div class="test-content">
+        <h2 data-i18n="hero.title">De la donnée brute à la décision stratégique</h2>
+        <p data-i18n="hero.subtitle">Transformez vos données en avantage concurrentiel avec nos solutions Power BI sur mesure</p>
+        <button data-i18n="hero.cta">Audit gratuit de vos données</button>
+    </div>
+
+    <div class="test-content">
+        <h3 data-i18n="nav.brand">ZineInsight</h3>
+        <p data-i18n="nav.tagline">Data Analytics</p>
+    </div>
+
+    <script>
+        console.log('=== DEBUG i18n SIMPLE ===');
+        
+        // Traductions simplifiées
+        const translations = {
+            fr: {
+                "hero.title": "De la donnée brute à la décision stratégique",
+                "hero.subtitle": "Transformez vos données en avantage concurrentiel avec nos solutions Power BI sur mesure",
+                "hero.cta": "Audit gratuit de vos données",
+                "nav.brand": "ZineInsight",
+                "nav.tagline": "Data Analytics"
+            },
+            en: {
+                "hero.title": "From raw data to strategic decision",
+                "hero.subtitle": "Transform your data into competitive advantage with our custom Power BI solutions",
+                "hero.cta": "Free data audit",
+                "nav.brand": "ZineInsight",
+                "nav.tagline": "Data Analytics"
+            }
+        };
+
+        let currentLang = 'fr';
+
+        function applyTranslations(lang) {
+            console.log(`🌍 Applying translations for: ${lang}`);
+            const elements = document.querySelectorAll('[data-i18n]');
+            console.log(`📝 Found ${elements.length} elements with data-i18n`);
+            
+            let translatedCount = 0;
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                console.log(`🔍 Processing element with key: ${key}`);
+                
+                if (translations[lang] && translations[lang][key]) {
+                    const oldText = element.textContent;
+                    element.textContent = translations[lang][key];
+                    console.log(`✅ Translated '${key}': '${oldText}' → '${translations[lang][key]}'`);
+                    translatedCount++;
+                } else {
+                    console.log(`⚠️ Missing translation for key: ${key} in language: ${lang}`);
+                }
+            });
+            
+            console.log(`📊 Translation completed: ${translatedCount}/${elements.length} elements translated`);
+        }
+
+        function switchLanguage(lang) {
+            console.log(`🔄 Switching to language: ${lang}`);
+            currentLang = lang;
+            applyTranslations(lang);
+            
+            // Update button states
+            document.querySelectorAll('.language-switcher button').forEach(btn => {
+                btn.style.backgroundColor = btn.id === `lang-${lang}` ? '#007bff' : '';
+                btn.style.color = btn.id === `lang-${lang}` ? 'white' : '';
+            });
+        }
+
+        // Event listeners
+        document.getElementById('lang-fr').addEventListener('click', () => switchLanguage('fr'));
+        document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+
+        // Initialize
+        console.log('🚀 Initializing i18n system...');
+        applyTranslations('fr');
+        
+        console.log('✅ i18n system ready!');
+    </script>
+</body>
+</html>

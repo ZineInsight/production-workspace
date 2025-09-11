@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : S'installer au Mexique - ZineInsight</title>
+    <meta name="description"
+        content="Guide complet pour réussir votre installation au Mexique : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Mexique, expatriation, installation, guide, logement, emploi, visa, Mexico, Guadalajara, Monterrey, Cancún">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guide Complet : S'installer au Mexique">
+    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation au Mexique">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --mexico-green: #006847;
+            --mexico-white: #FFFFFF;
+            --mexico-red: #CE1126;
+            --mexico-dark-green: #004B35;
+            --mexico-light-red: #E85D75;
+            --warm-beige: #FFF9F0;
+            --aztec-gold: #DAA520;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #ffffff 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 104, 71, 0.7), rgba(206, 17, 38, 0.7)),
+                url('https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--mexico-green), var(--mexico-red));
+            color: white;
+            padding: 3rem 0;
+            margin: 4rem 0 2rem 0;
+            position: relative;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--mexico-green);
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .premium-badge {
+            background: linear-gradient(45deg, var(--mexico-green), var(--mexico-dark-green));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(0, 104, 71, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0fff4, #e6ffed);
+            border-left: 5px solid var(--mexico-green);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-tag {
+            background: var(--aztec-gold);
+            color: var(--mexico-dark-green);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .discover-button {
+            background: linear-gradient(135deg, var(--mexico-green), var(--mexico-red));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 104, 71, 0.3);
+        }
+
+        .discover-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 104, 71, 0.4);
+            color: white;
+        }
+
+        .flag-emoji {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .icon-mexico {
+            color: var(--mexico-green);
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(0, 104, 71, 0.05), rgba(206, 17, 38, 0.05));
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--mexico-green);
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid var(--aztec-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-container {
+            background: linear-gradient(135deg, var(--mexico-dark-green), var(--mexico-green));
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--aztec-gold);
+        }
+
+        .budget-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .budget-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .budget-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .budget-item:last-child {
+            border-bottom: none;
+        }
+
+        .navigation-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(0, 104, 71, 0.3);
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--mexico-green);
+            transform: scale(1.2);
+        }
+
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--mexico-green), var(--mexico-red));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 104, 71, 0.4);
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+
+        .floating-action:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 104, 71, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+                padding: 2rem;
+            }
+            .navigation-dots {
+                display: none;
+            }
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="flag-emoji">🇲🇽</span> ZineInsight Mexique
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Vue d'ensemble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cities">Villes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cost-living">Coût de la vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employment">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visa">Visa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lifestyle">Mode de vie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#healthcare">Santé</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <div class="dot active" data-section="hero"></div>
+        <div class="dot" data-section="overview"></div>
+        <div class="dot" data-section="cities"></div>
+        <div class="dot" data-section="cost-living"></div>
+        <div class="dot" data-section="employment"></div>
+        <div class="dot" data-section="visa"></div>
+        <div class="dot" data-section="lifestyle"></div>
+        <div class="dot" data-section="education"></div>
+        <div class="dot" data-section="healthcare"></div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="floating-action" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="flag-emoji mb-4">🇲🇽</div>
+                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie au Mexique</h1>
+                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation au Mexique. 
+                    De Mexico à Guadalajara, vivez l'authenticité mexicaine dans un pays aux traditions millénaires et à l'économie dynamique.</p>
+                    <div class="premium-badge mb-4">
+                        <i class="fas fa-star me-2"></i>Guide Premium Complet
+                    </div>
+                    <br>
+                    <button class="discover-button btn-lg" onclick="document.getElementById('overview').scrollIntoView()">
+                        <i class="fas fa-compass me-2"></i>Découvrir le Mexique
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi le Mexique ?
+                </h2>
+                <p class="lead">Une destination d'expatriation authentique et dynamique</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-mexico mb-3">
+                            <i class="fas fa-history fa-2x"></i>
+                        </div>
+                        <h4>Héritage Millénaire</h4>
+                        <p>Berceau des civilisations aztèque et maya, patrimoine UNESCO exceptionnel. Une richesse culturelle unique au monde.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-mexico mb-3">
+                            <i class="fas fa-handshake fa-2x"></i>
+                        </div>
+                        <h4>Proximité USA/Canada</h4>
+                        <p>AEUMC/USMCA offre des opportunités commerciales uniques. Hub manufacturier vers l'Amérique du Nord.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card">
+                        <div class="icon-mexico mb-3">
+                            <i class="fas fa-dollar-sign fa-2x"></i>
+                        </div>
+                        <h4>Coût de Vie Attractif</h4>
+                        <p>Qualité de vie élevée à prix abordable. Un peso fort qui permet un excellent pouvoir d'achat pour les expatriés.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">130M+</div>
+                                <div class="stat-label">Population</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">15ème</div>
+                                <div class="stat-label">PIB Mondial</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">35</div>
+                                <div class="stat-label">Sites UNESCO</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">32</div>
+                                <div class="stat-label">États Fédéraux</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section id="cities" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-city me-3"></i>Principales Villes du Mexique
+                </h2>
+                <p class="lead">Découvrez les métropoles mexicaines</p>
+            </div>
+
+            <div class="city-grid">
+                <!-- Mexico City -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Mexico City" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-building me-2 icon-mexico"></i>Mexico (CDMX)
+                        </h5>
+                        <p class="card-text">Capitale dynamique, centre politique et culturel. Plus grande métropole d'Amérique du Nord avec une économie diversifiée.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">22M habitants</span>
+                            <span class="info-tag ms-2">Centre économique</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Plus grand marché du travail</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Hub financier Latam</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Scène culturelle exceptionnelle</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Guadalajara -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Guadalajara" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-microchip me-2 icon-mexico"></i>Guadalajara
+                        </h5>
+                        <p class="card-text">Silicon Valley mexicaine, berceau de la tequila et des mariachis. Ville technologique avec authenticité culturelle.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">5.2M habitants</span>
+                            <span class="info-tag ms-2">Tech Hub</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Centre technologique national</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Culture traditionnelle préservée</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Coût de la vie abordable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Monterrey -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Monterrey" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-industry me-2 icon-mexico"></i>Monterrey
+                        </h5>
+                        <p class="card-text">Capitale industrielle du Mexique, surnommée la "Sultan du Nord". Centre manufacturier et business proche des USA.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">5.3M habitants</span>
+                            <span class="info-tag ms-2">Hub industriel</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>PIB per capita le plus élevé</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Proximité États-Unis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Secteur automobile développé</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cancún -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Cancún" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-umbrella-beach me-2 icon-mexico"></i>Cancún
+                        </h5>
+                        <p class="card-text">Paradis tropical des Caraïbes mexicaines, capitale mondiale du tourisme. Lifestyle balnéaire et économie touristique.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">900K habitants</span>
+                            <span class="info-tag ms-2">Tourisme international</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Riviera Maya exceptionnelle</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Économie touristique forte</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté expat importante</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost of Living Section -->
+    <section id="cost-living" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-dollar-sign me-3"></i>Coût de la Vie au Mexique
+                </h2>
+                <p class="lead">Budget réaliste pour vivre confortablement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-home icon-mexico me-2"></i>Logement</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Mexico City (CDMX)</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : $8,000-15,000 MXN/mois</li>
+                                        <li>• 1BR zones prisées : $12,000-25,000 MXN/mois</li>
+                                        <li>• 2BR banlieue : $10,000-18,000 MXN/mois</li>
+                                        <li>• Colocation : $4,000-8,000 MXN/mois</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Guadalajara</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Studio centre : $6,000-12,000 MXN/mois</li>
+                                        <li>• 1BR zones résidentielles : $8,000-16,000 MXN/mois</li>
+                                        <li>• 2BR banlieue : $7,000-14,000 MXN/mois</li>
+                                        <li>• Colocation : $3,000-6,000 MXN/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-shopping-cart icon-mexico me-2"></i>Alimentation & Courses</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Supermarché (par semaine)</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Couple : $1,200-2,000 MXN</li>
+                                        <li>• Famille de 4 : $2,200-3,500 MXN</li>
+                                        <li>• Célibataire : $800-1,400 MXN</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Restaurants</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Comida corrida : $80-150 MXN</li>
+                                        <li>• Restaurant milieu de gamme : $300-600 MXN</li>
+                                        <li>• Café : $30-60 MXN</li>
+                                        <li>• Margarita : $80-180 MXN</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-bus icon-mexico me-2"></i>Transport</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Transport Public</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Métro Mexico : $5 MXN/trajet</li>
+                                        <li>• Bus urbain : $8-12 MXN</li>
+                                        <li>• Uber (course moyenne) : $60-120 MXN</li>
+                                        <li>• Taxi : $80-150 MXN/course</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">Voiture</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Essence : $22-24 MXN/L</li>
+                                        <li>• Assurance : $2,000-5,000 MXN/an</li>
+                                        <li>• Parking centre : $20-50 MXN/heure</li>
+                                        <li>• Entretien : $1,500-3,000 MXN/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Budget Mensuel Moyen</h5>
+                            
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Mexico City</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 80%; background: var(--mexico-green); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>$25,000-40,000 MXN</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Couple Guadalajara</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--aztec-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>$20,000-32,000 MXN</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Célibataire Cancún</strong></span>
+                                </div>
+                                <small class="text-muted">Vie confortable</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--mexico-red); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>$15,000-25,000 MXN</strong></div>
+                            </div>
+
+                            <div class="highlight-box mt-4">
+                                <h6><i class="fas fa-lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Le salaire minimum au Mexique est de $5,600 MXN/mois. Les salaires qualifiés sont généralement 5-15x plus élevés.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-mexico"></i>
+                        </div>
+                        <p class="fst-italic">"Vivre à Guadalajara avec $30,000 MXN/mois nous offre un excellent niveau de vie. La qualité prix est imbattable !"</p>
+                        <div class="mt-3">
+                            <strong>Pierre & Marie</strong><br>
+                            <small class="text-muted">Expatriés français, Guadalajara</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Section -->
+    <section id="employment" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-briefcase me-3"></i>Marché de l'Emploi au Mexique
+                </h2>
+                <p class="lead">Opportunités professionnelles dans l'économie mexicaine</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-chart-line icon-mexico me-2"></i>Secteurs Porteurs</h4>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">🚗 Automobile & Manufacturing</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Ingénieur Production :</strong> $35,000-65,000 MXN/mois</li>
+                                        <li><strong>Quality Manager :</strong> $40,000-70,000 MXN/mois</li>
+                                        <li><strong>Plant Manager :</strong> $60,000-120,000 MXN/mois</li>
+                                        <li><strong>Supply Chain Director :</strong> $55,000-95,000 MXN/mois</li>
+                                    </ul>
+                                    <p><em>Centres : Monterrey, Puebla, Bajío (León, Aguascalientes)</em></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">💻 Technologie & IT</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Software Developer :</strong> $25,000-55,000 MXN/mois</li>
+                                        <li><strong>DevOps Engineer :</strong> $35,000-65,000 MXN/mois</li>
+                                        <li><strong>Data Scientist :</strong> $40,000-75,000 MXN/mois</li>
+                                        <li><strong>Tech Lead :</strong> $50,000-90,000 MXN/mois</li>
+                                    </ul>
+                                    <p><em>Hub principal : Guadalajara (Silicon Valley mexicaine)</em></p>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">🏦 Finance & Services</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Financial Analyst :</strong> $25,000-50,000 MXN/mois</li>
+                                        <li><strong>Risk Manager :</strong> $35,000-65,000 MXN/mois</li>
+                                        <li><strong>Investment Director :</strong> $60,000-150,000 MXN/mois</li>
+                                        <li><strong>Compliance Officer :</strong> $30,000-60,000 MXN/mois</li>
+                                    </ul>
+                                    <p><em>Concentré à Mexico City et Monterrey</em></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">🏖️ Tourisme & Hospitalité</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Hotel Manager :</strong> $20,000-45,000 MXN/mois</li>
+                                        <li><strong>Tourism Director :</strong> $25,000-55,000 MXN/mois</li>
+                                        <li><strong>Event Coordinator :</strong> $15,000-35,000 MXN/mois</li>
+                                        <li><strong>Resort Operations :</strong> $30,000-60,000 MXN/mois</li>
+                                    </ul>
+                                    <p><em>Riviera Maya, Puerto Vallarta, Los Cabos</em></p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-box">
+                                <h6><i class="fas fa-language me-2"></i>Langues Requises</h6>
+                                <p><strong>Espagnol :</strong> Indispensable pour 90% des postes<br>
+                                <strong>Anglais :</strong> Requis dans tech, manufacturing, multinationales<br>
+                                <strong>Français :</strong> Valorisé dans luxe, aéronautique, consulting<br>
+                                <strong>Allemand :</strong> Atout dans automobile (BMW, Volkswagen, Audi)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">🎯 Stratégies de Recherche</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-laptop me-2 icon-mexico"></i><strong>LinkedIn México</strong></li>
+                                <li><i class="fas fa-briefcase me-2 icon-mexico"></i><strong>OCC Mundial</strong></li>
+                                <li><i class="fas fa-search me-2 icon-mexico"></i><strong>Indeed México</strong></li>
+                                <li><i class="fas fa-handshake me-2 icon-mexico"></i><strong>Bumeran.com.mx</strong></li>
+                                <li><i class="fas fa-building me-2 icon-mexico"></i><strong>CompuTrabajo</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-mexico"></i>
+                        </div>
+                        <p class="fst-italic">"J'ai trouvé mon poste chez Intel Guadalajara en 2 mois. L'écosystème tech mexicain recrute activement des talents internationaux."</p>
+                        <div class="mt-3">
+                            <strong>Laurent Dubois</strong><br>
+                            <small class="text-muted">Senior Engineer, Guadalajara</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Section -->
+    <section id="visa" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-passport me-3"></i>Visas et Résidence au Mexique
+                </h2>
+                <p class="lead">Guide complet des procédures d'immigration</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold"><i class="fas fa-briefcase icon-mexico me-2"></i>Visa de Travail</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Offre d'emploi requise</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Durée : 1-4 ans</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Renouvelable</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Famille incluse</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>Délai :</strong> 20-45 jours<br>
+                                <strong>Coût :</strong> $4,000-6,000 MXN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold"><i class="fas fa-graduation-cap icon-mexico me-2"></i>Visa Étudiant</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Inscription universitaire</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Preuve financière</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Durée des études</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Travail à temps partiel autorisé</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>Délai :</strong> 15-30 jours<br>
+                                <strong>Coût :</strong> $2,000-3,500 MXN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold"><i class="fas fa-heart icon-mexico me-2"></i>Résidence Permanente</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Mariage avec Mexicain(e)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Investissement (40,000+ USD)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Revenus stables (2,700+ USD/mois)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Après 4 ans de temporaire</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>Délai :</strong> 60-120 jours<br>
+                                <strong>Coût :</strong> $6,000-8,000 MXN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card mt-4">
+                <div class="card-body p-4">
+                    <h4><i class="fas fa-file-alt icon-mexico me-2"></i>Documents Requis (Traduits & Apostillés)</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Documents Personnels</h6>
+                            <ul class="list-unstyled">
+                                <li>• Passeport valide (6+ mois)</li>
+                                <li>• Acte de naissance apostillé</li>
+                                <li>• Casier judiciaire apostillé</li>
+                                <li>• Certificat médical récent</li>
+                                <li>• Photos d'identité format mexicain</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Documents Professionnels/Financiers</h6>
+                            <ul class="list-unstyled">
+                                <li>• Diplômes traduits par traducteur officiel</li>
+                                <li>• CV en espagnol</li>
+                                <li>• Contrat de travail (si applicable)</li>
+                                <li>• Preuves de revenus/épargne</li>
+                                <li>• Relevés bancaires (3 derniers mois)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-sun me-3"></i>Mode de Vie Mexicain
+                </h2>
+                <p class="lead">Découvrez l'art de vivre à la mexicaine</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-music icon-mexico me-2"></i>Culture & Traditions</h4>
+                            
+                            <h6 class="fw-bold">🎭 Festivals & Célébrations</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Día de los Muertos (2 nov) :</strong> Tradition UNESCO</li>
+                                <li><strong>Cinco de Mayo :</strong> Célébration nationale</li>
+                                <li><strong>Grito de Dolores (16 sept) :</strong> Fête de l'indépendance</li>
+                                <li><strong>Las Posadas (déc) :</strong> Traditions de Noël</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🌮 Gastronomie Authentique</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Tacos :</strong> Plat national aux mille variétés</li>
+                                <li><strong>Mole :</strong> Sauce complexe patrimoine culinaire</li>
+                                <li><strong>Guacamole :</strong> Avocat épicé traditionnel</li>
+                                <li><strong>Tequila/Mezcal :</strong> Spiritueux d'agave authentiques</li>
+                                <li><strong>Churros :</strong> Douceur sucrée populaire</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🎵 Musique & Arts</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Mariachi :</strong> Musique traditionnelle iconique</li>
+                                <li><strong>Ranchera :</strong> Genre musical populaire</li>
+                                <li><strong>Muralisme :</strong> Art de Diego Rivera, Frida Kahlo</li>
+                                <li><strong>Artisanat :</strong> Talavera, textiles Oaxaca</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-map-marked-alt icon-mexico me-2"></i>Régions & Climat</h4>
+                            
+                            <h6 class="fw-bold">🏖️ Côtes (Cancún, Puerto Vallarta)</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Climat :</strong> Tropical, 25-35°C, saison des pluies</li>
+                                <li><strong>Avantages :</strong> Plages paradisiaques, tourisme</li>
+                                <li><strong>Inconvénients :</strong> Ouragans (juin-nov), humidité</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🏔️ Plateau Central (Mexico, Guadalajara)</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Climat :</strong> Tempéré d'altitude, 15-25°C</li>
+                                <li><strong>Avantages :</strong> Climat agréable, opportunités</li>
+                                <li><strong>Inconvénients :</strong> Pollution, altitude (2,200m)</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🌵 Nord (Monterrey, Tijuana)</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Climat :</strong> Désertique, chaud et sec</li>
+                                <li><strong>Avantages :</strong> Proximité USA, industrie</li>
+                                <li><strong>Inconvénients :</strong> Chaleur extrême été, sécheresse</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🌿 Sud (Oaxaca, Chiapas)</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Climat :</strong> Tropical de montagne, 20-30°C</li>
+                                <li><strong>Avantages :</strong> Authenticité, coût bas, nature</li>
+                                <li><strong>Inconvénients :</strong> Moins d'opportunités économiques</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-quote-left fa-2x icon-mexico"></i>
+                        </div>
+                        <p class="fst-italic">"La calidez mexicana et la richesse culturelle nous ont immédiatement séduits. Chaque jour est une découverte !"</p>
+                        <div class="mt-3">
+                            <strong>Isabelle & Carlos</strong><br>
+                            <small class="text-muted">Couple franco-mexicain, Mexico City</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Mexicain
+                </h2>
+                <p class="lead">Éducation et formation pour toute la famille</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-university icon-mexico me-2"></i>Enseignement Supérieur</h4>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">🏆 Universités d'Excellence</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>UNAM (Mexico) :</strong> #1 Amérique Latine</li>
+                                        <li><strong>IPN (Polytechnique) :</strong> Ingénierie</li>
+                                        <li><strong>ITESM (Tec de Monterrey) :</strong> Privée d'élite</li>
+                                        <li><strong>UAM (Metropolitan) :</strong> Recherche</li>
+                                        <li><strong>UdeG (Guadalajara) :</strong> Technologie</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold">💼 Business Schools</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>EGADE Business School :</strong> Top MBA Latam</li>
+                                        <li><strong>IPADE :</strong> Executive education</li>
+                                        <li><strong>ITAM :</strong> Économie & finance</li>
+                                        <li><strong>Universidad Iberoamericana :</strong> Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold">💰 Coûts Université (par semestre)</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Universités publiques :</strong> $500-2,000 MXN/semestre</li>
+                                        <li><strong>Universités privées :</strong> $15,000-80,000 MXN/semestre</li>
+                                        <li><strong>MBA Executive :</strong> $400,000-800,000 MXN total</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Master/PhD :</strong> Bourses CONACyT</li>
+                                        <li><strong>Échanges internationaux :</strong> Programmes AMEXCID</li>
+                                        <li><strong>Cours d'espagnol :</strong> $3,000-8,000 MXN/mois</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-child icon-mexico me-2"></i>Éducation Primaire & Secondaire</h4>
+                            
+                            <h6 class="fw-bold">🌍 Écoles Internationales (Mexico City)</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>American School Foundation :</strong> $180,000-350,000 MXN/an</li>
+                                <li><strong>Lycée Franco-Mexicain :</strong> $150,000-280,000 MXN/an</li>
+                                <li><strong>German School :</strong> $120,000-250,000 MXN/an</li>
+                                <li><strong>Peterson Schools :</strong> $200,000-400,000 MXN/an</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🇲🇽 Écoles Mexicaines Prestigieuses</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Instituto Cumbres :</strong> Excellence académique</li>
+                                <li><strong>Colegio Madrid :</strong> Tradition espagnole</li>
+                                <li><strong>Vista Hermosa :</strong> Pédagogie bilingue</li>
+                                <li><strong>Coût :</strong> $8,000-25,000 MXN/mois</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-card mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">📚 Système Éducatif</h5>
+                            <div class="mb-3">
+                                <h6>Structure</h6>
+                                <ul class="list-unstyled">
+                                    <li>• <strong>Primaria :</strong> 6 ans (6-12 ans)</li>
+                                    <li>• <strong>Secundaria :</strong> 3 ans (12-15 ans)</li>
+                                    <li>• <strong>Preparatoria :</strong> 3 ans (15-18 ans)</li>
+                                    <li>• <strong>Universidad :</strong> 4-6 ans</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="highlight-box">
+                                <h6><i class="fas fa-graduation-cap me-2"></i>CENEVAL</h6>
+                                <p class="mb-0">Examen national d'accès à l'université. Alternative : examens d'admission spécifiques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">🌍 Programmes d'Échange</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-plane me-2 icon-mexico"></i><strong>CONACYT Becas</strong></li>
+                                <li><i class="fas fa-handshake me-2 icon-mexico"></i><strong>AMEXCID</strong></li>
+                                <li><i class="fas fa-university me-2 icon-mexico"></i><strong>Santander Universidades</strong></li>
+                                <li><i class="fas fa-globe me-2 icon-mexico"></i><strong>Fulbright México</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Section -->
+    <section id="healthcare" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-heartbeat me-3"></i>Système de Santé Mexicain
+                </h2>
+                <p class="lead">Soins de santé publics et privés au Mexique</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-hospital icon-mexico me-2"></i>IMSS - Système Public</h4>
+                            
+                            <h6 class="fw-bold">🏥 Avantages de l'IMSS</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Couverture universelle employés</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Urgences 24h/24</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Médicaments subventionnés</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Soins préventifs inclus</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Famille couverte</li>
+                            </ul>
+
+                            <h6 class="fw-bold">⚠️ Limitations</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Délais d'attente variables</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Qualité inégale selon régions</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Spécialistes : listes d'attente</li>
+                            </ul>
+
+                            <div class="highlight-box">
+                                <h6><i class="fas fa-id-card me-2"></i>Accès IMSS</h6>
+                                <p class="mb-0">Automatique avec contrat de travail. NSS (Número de Seguridad Social) requis. Cotisations partagées employeur/employé.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-user-md icon-mexico me-2"></i>Assurance Privée</h4>
+                            
+                            <h6 class="fw-bold">🏆 Principaux Assureurs</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>GNP Seguros :</strong> $1,500-6,000 MXN/mois</li>
+                                <li><strong>Metlife México :</strong> $1,200-5,500 MXN/mois</li>
+                                <li><strong>Allianz México :</strong> $1,800-7,000 MXN/mois</li>
+                                <li><strong>AXA México :</strong> $1,400-6,500 MXN/mois</li>
+                                <li><strong>Seguros Monterrey :</strong> $1,000-4,500 MXN/mois</li>
+                            </ul>
+
+                            <h6 class="fw-bold">💰 Coûts par Type</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><strong>Basique :</strong> $1,000-2,500 MXN/mois</li>
+                                <li><strong>Intermédiaire :</strong> $2,500-5,000 MXN/mois</li>
+                                <li><strong>Premium :</strong> $5,000-10,000 MXN/mois</li>
+                                <li><strong>Famille (4 pers) :</strong> $4,000-15,000 MXN/mois</li>
+                            </ul>
+
+                            <h6 class="fw-bold">🎯 Services Inclus</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Consultations spécialisées</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Examens et diagnostics</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Chirurgies programmées</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Hospitalisation privée</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Couverture internationale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card mt-4">
+                <div class="card-body p-4">
+                    <h4><i class="fas fa-procedures icon-mexico me-2"></i>Hôpitaux de Référence</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">🏥 Mexico City</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Hospital ABC :</strong> Privé, excellence internationale</li>
+                                <li><strong>Hospital Español :</strong> Privé, tradition espagnole</li>
+                                <li><strong>Instituto Nacional de Cardiología :</strong> Public spécialisé</li>
+                                <li><strong>Hospital Médica Sur :</strong> Privé, technologie avancée</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">🏥 Guadalajara & Monterrey</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Hospital San Javier (GDL) :</strong> Privé, soins premium</li>
+                                <li><strong>Hospital Christus Muguerza (MTY) :</strong> Réseau privé</li>
+                                <li><strong>Hospital Country 2000 (GDL) :</strong> Spécialités avancées</li>
+                                <li><strong>CIMA Monterrey :</strong> Médecine internationale</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <h6><i class="fas fa-phone icon-mexico me-2"></i>Urgences</h6>
+                                <p><strong>Cruz Roja :</strong> 065<br>
+                                <strong>Bomberos :</strong> 911<br>
+                                <strong>Police :</strong> 911</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <h6><i class="fas fa-pills icon-mexico me-2"></i>Pharmacies</h6>
+                                <p><strong>Farmacias del Ahorro, Benavides</strong><br>
+                                24h/24 dans grandes villes<br>
+                                Médicaments accessible sans ordonnance</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <h6><i class="fas fa-syringe icon-mexico me-2"></i>Vaccins</h6>
+                                <p><strong>Obligatoires :</strong> Aucun spécifique<br>
+                                <strong>Recommandés :</strong> Hépatite A/B<br>
+                                <strong>Centres privés :</strong> Vaccination internationale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                        <i class="fas fa-quote-left fa-3x icon-mexico"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <p class="fst-italic mb-3">"Le système de santé mexicain offre d'excellentes options privées à prix compétitifs. Notre assurance GNP nous donne accès aux meilleurs hôpitaux avec un service de qualité mondiale."</p>
+                        <div>
+                            <strong>Dr. François Morales</strong><br>
+                            <small class="text-muted">Chirurgien français, Mexico City</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation dots functionality
+        const dots = document.querySelectorAll('.dot');
+        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa', 'lifestyle', 'education', 'healthcare'];
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const targetSection = document.getElementById(sections[index]);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Update active dot on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        current = section;
+                    }
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (sections[index] === current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.content-card, .benefit-card, .city-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

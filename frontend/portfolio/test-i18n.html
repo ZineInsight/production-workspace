@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test i18n</title>
+</head>
+<body>
+    <h1 data-i18n="hero.title">Test français</h1>
+    <button id="lang-fr">FR</button>
+    <button id="lang-en">EN</button>
+    
+    <script src="js/portfolio-i18n.js"></script>
+    <script>
+        // Debug
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded');
+            console.log('portfolioI18n:', window.portfolioI18n);
+            
+            setTimeout(() => {
+                if (window.portfolioI18n) {
+                    console.log('Current language:', window.portfolioI18n.currentLanguage);
+                    console.log('Translations FR:', window.portfolioI18n.translations.fr.hero);
+                    console.log('Translations EN:', window.portfolioI18n.translations.en.hero);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

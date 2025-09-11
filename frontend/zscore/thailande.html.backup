@@ -1,0 +1,3652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Expatriation Thaïlande - Vivre, Travailler et S'épanouir au Pays du Sourire</title>
+    <meta name="description" content="Guide complet pour votre expatriation en Thaïlande. Visas, emploi, logement, culture thaïe - Tout pour réussir votre projet au Pays du Sourire.">
+    <meta name="keywords" content="expatriation Thaïlande, visa Thaïlande, travail Bangkok, logement Phuket, culture thaïe, guide expat">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --thai-red: #ED1C24;
+            --thai-blue: #2E5BBA;
+            --thai-gold: #FFD700;
+            --thai-orange: #FF6B35;
+            --thai-green: #00A651;
+            --lotus-pink: #FF69B4;
+            --temple-bronze: #CD7F32;
+            --royal-purple: #663399;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue)) !important;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .dropdown-menu {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .dropdown-item {
+            color: white !important;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(237, 28, 36, 0.8), rgba(46, 91, 186, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="temple" patternUnits="userSpaceOnUse" width="100" height="100"><rect width="100" height="100" fill="%23FFD700" opacity="0.1"/><path d="M50,20 L80,50 L50,80 L20,50 Z" fill="%23FF6B35" opacity="0.3"/></pattern></defs><rect width="1200" height="600" fill="url(%23temple)"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(237, 28, 36, 0.3), rgba(46, 91, 186, 0.3), rgba(255, 215, 0, 0.2));
+            animation: gradientShift 8s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background: linear-gradient(45deg, rgba(237, 28, 36, 0.3), rgba(46, 91, 186, 0.3), rgba(255, 215, 0, 0.2)); }
+            50% { background: linear-gradient(45deg, rgba(255, 215, 0, 0.3), rgba(237, 28, 36, 0.3), rgba(46, 91, 186, 0.2)); }
+        }
+
+        .hero-content {
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, var(--thai-gold), white, var(--thai-orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .hero .lead {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Section Headers */
+        .section-header {
+            background: linear-gradient(135deg, var(--thai-blue), var(--royal-purple));
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 0;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Cards */
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 1px solid rgba(237, 28, 36, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        /* Feature Icons */
+        .feature-icon {
+            background: linear-gradient(135deg, var(--thai-gold), var(--thai-orange));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Stats */
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--thai-red);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Badges */
+        .premium-badge {
+            background: linear-gradient(135deg, var(--thai-gold), var(--thai-orange));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .price-badge {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--thai-red), var(--thai-blue), var(--thai-gold));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -2.5rem;
+            top: 1rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--thai-gold);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--thai-red);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            border: none;
+            border-radius: 25px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(237, 28, 36, 0.3);
+        }
+
+        /* Accordion */
+        .accordion-button {
+            background: linear-gradient(135deg, var(--lotus-pink), var(--thai-orange));
+            color: white;
+            border: none;
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            color: white;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(237, 28, 36, 0.25);
+        }
+
+        /* Tables */
+        .table th {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            color: white;
+            border: none;
+            font-weight: 600;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(237, 28, 36, 0.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--thai-blue), var(--royal-purple));
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .lead {
+                font-size: 1.2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .timeline {
+                padding-left: 1.5rem;
+            }
+            
+            .timeline::before {
+                left: 0.5rem;
+            }
+            
+            .timeline-marker {
+                left: -0.25rem;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--thai-red), var(--thai-blue));
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--thai-blue), var(--thai-red));
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-om me-2"></i>Thaïlande Expat
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visas"><i class="fas fa-passport me-1"></i>Visas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#budget"><i class="fas fa-coins me-1"></i>Budget</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#emploi"><i class="fas fa-briefcase me-1"></i>Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logement"><i class="fas fa-home me-1"></i>Logement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#culture"><i class="fas fa-temple me-1"></i>Culture</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-star me-1"></i>Premium
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#premium">
+                                <i class="fas fa-trophy me-1"></i>Success Stories
+                            </a></li>
+                            <li><a class="dropdown-item" href="#premium">
+                                <i class="fas fa-question-circle me-1"></i>FAQ Expertes
+                            </a></li>
+                            <li><a class="dropdown-item" href="#premium">
+                                <i class="fas fa-gem me-1"></i>Ressources Exclusives
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 data-aos="fade-up" data-aos-duration="1000">
+                            <i class="fas fa-om me-3"></i>Expatriation Thaïlande
+                        </h1>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="300">
+                            Votre guide complet pour vivre, travailler et s'épanouir au Pays du Sourire. 
+                            De Bangkok à Phuket, découvrez toutes les clés d'une expatriation réussie en Thaïlande.
+                        </p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#visas" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Commencer l'Aventure
+                            </a>
+                            <a href="#budget" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calculator me-2"></i>Calculer mon Budget
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="container my-5">
+        <div class="row text-center" data-aos="fade-up">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>70M</h4>
+                    <p>Population</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>$543B</h4>
+                    <p>PIB (USD)</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>UTC+7</h4>
+                    <p>Fuseau horaire</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="content-card p-4 h-100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h4>Thai</h4>
+                    <p>Langue officielle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visas Section -->
+    <section id="visas" class="py-5">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-passport me-3"></i>Visas & Immigration
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Naviguer dans le système d'immigration thaï : des visas touristiques aux permis de travail
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Vue d'ensemble -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-info-circle text-primary me-2"></i>Vue d'ensemble du système</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-check-circle text-success me-2"></i>Points positifs</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-plus text-success me-2"></i>Visa touristique 60 jours sans demande préalable</li>
+                                    <li><i class="fas fa-plus text-success me-2"></i>Visa Élite pour long séjour disponible</li>
+                                    <li><i class="fas fa-plus text-success me-2"></i>Nombreuses options pour retraités</li>
+                                    <li><i class="fas fa-plus text-success me-2"></i>Extensions possibles sur place</li>
+                                    <li><i class="fas fa-plus text-success me-2"></i>Système digitalisé en cours</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-exclamation-triangle text-warning me-2"></i>Points d'attention</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Pas de visa nomade digital officiel</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Permis de travail obligatoire même pour freelance</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Règle des 180 jours/an pour touristes</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Contrôles aux frontières renforcés</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Exigences financières strictes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Types de visas principaux -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-list me-2"></i>Types de visas principaux
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Visa Touristique -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Visa Touristique</h4>
+                                <span class="premium-badge">60 jours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-users me-1"></i>Pour qui ?</h6>
+                            <p class="small">Touristes, courts séjours, exploration du pays</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-clock me-1"></i>Durée & Extension</h6>
+                            <ul class="small">
+                                <li>60 jours initial (exemption visa)</li>
+                                <li>Extension +30 jours possible (1900 THB)</li>
+                                <li>Maximum 90 jours par entrée</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Coût</h6>
+                            <div class="price-badge">Gratuit (exemption)</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-file-alt me-1"></i>Documents requis</h6>
+                            <ul class="small">
+                                <li>Passeport (6 mois validité)</li>
+                                <li>Billet retour</li>
+                                <li>Preuve 20,000 THB/personne</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-1"></i>
+                            <strong>Attention :</strong> Règle des 180 jours maximum par année civile via exemptions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visa Éducation -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Visa Étudiant (ED)</h4>
+                                <span class="premium-badge">1 an renouvelable</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-users me-1"></i>Pour qui ?</h6>
+                            <p class="small">Étudiants, cours de thaï, formation professionnelle</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-clock me-1"></i>Durée & Extension</h6>
+                            <ul class="small">
+                                <li>1 an initial</li>
+                                <li>Extensions par périodes de 90 jours</li>
+                                <li>Renouvelable selon cursus</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Coût</h6>
+                            <div class="price-badge">2,000 THB + frais école</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-file-alt me-1"></i>Documents requis</h6>
+                            <ul class="small">
+                                <li>Lettre d'acceptation école</li>
+                                <li>Diplômes certifiés</li>
+                                <li>Preuve financière 500,000 THB</li>
+                                <li>Casier judiciaire</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-1"></i>
+                            <strong>Conseil :</strong> Préférer écoles reconnues par le Ministry of Education
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visa Retraite -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Visa Retraite (O-A)</h4>
+                                <span class="premium-badge">1 an renouvelable</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-users me-1"></i>Pour qui ?</h6>
+                            <p class="small">50+ ans, retraités, pré-retraités financièrement indépendants</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-clock me-1"></i>Durée & Extension</h6>
+                            <ul class="small">
+                                <li>1 an multi-entrées</li>
+                                <li>Renouvelable chaque année</li>
+                                <li>Pas de limite de renouvellement</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Exigences financières</h6>
+                            <ul class="small">
+                                <li><strong>Option 1 :</strong> 800,000 THB en banque thaïe</li>
+                                <li><strong>Option 2 :</strong> 65,000 THB/mois pension</li>
+                                <li><strong>Option 3 :</strong> Combinaison des deux</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-file-alt me-1"></i>Documents requis</h6>
+                            <ul class="small">
+                                <li>Preuve de revenus/épargne</li>
+                                <li>Assurance santé (400,000 THB)</li>
+                                <li>Certificat médical</li>
+                                <li>Casier judiciaire</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <i class="fas fa-star me-1"></i>
+                            <strong>Avantage :</strong> Permet investissement immobilier et activités business limitées
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visa Elite -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Thailand Elite</h4>
+                                <span class="premium-badge">5-20 ans</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-users me-1"></i>Pour qui ?</h6>
+                            <p class="small">Investisseurs, entrepreneurs, résidents aisés long-terme</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-gem me-1"></i>Formules disponibles</h6>
+                            <ul class="small">
+                                <li><strong>Elite Easy Access :</strong> 5 ans - 600,000 THB</li>
+                                <li><strong>Elite Superiority :</strong> 10 ans - 1,000,000 THB</li>
+                                <li><strong>Elite Ultimate :</strong> 20 ans - 2,000,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-star me-1"></i>Services inclus</h6>
+                            <ul class="small">
+                                <li>Fast-track aéroports</li>
+                                <li>Transferts VIP</li>
+                                <li>Golf gratuit</li>
+                                <li>Spa & wellness</li>
+                                <li>Concierge 24/7</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-check-circle me-1"></i>Avantages</h6>
+                            <ul class="small">
+                                <li>Visa multi-entrées</li>
+                                <li>Pas de 90 days reporting</li>
+                                <li>Assistance juridique</li>
+                                <li>Ouverture compte bancaire</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-1"></i>
+                            <strong>ROI :</strong> Idéal pour résidents long-terme évitant les renouvellements
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline du processus -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-route me-2"></i>Processus d'obtention type
+                    </h3>
+                    
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-search text-primary me-2"></i>
+                                <h5 class="mb-0">1. Recherche & Préparation</h5>
+                                <span class="badge bg-primary ms-auto">Semaine 1-2</span>
+                            </div>
+                            <p>Identifier le visa approprié, rassembler documents, traductions et certifications.</p>
+                            <ul class="small">
+                                <li>Consultation site officiel consulat</li>
+                                <li>Préparation dossier complet</li>
+                                <li>Réservations billets & logement</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-file-signature text-success me-2"></i>
+                                <h5 class="mb-0">2. Demande Consulat</h5>
+                                <span class="badge bg-success ms-auto">Semaine 3</span>
+                            </div>
+                            <p>Dépôt demande en personne ou en ligne selon consulat.</p>
+                            <ul class="small">
+                                <li>Rendez-vous consulat français</li>
+                                <li>Paiement frais visa</li>
+                                <li>Interview si requis</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-clock text-warning me-2"></i>
+                                <h5 class="mb-0">3. Traitement & Attente</h5>
+                                <span class="badge bg-warning ms-auto">1-4 semaines</span>
+                            </div>
+                            <p>Délai de traitement variable selon type visa et consulat.</p>
+                            <ul class="small">
+                                <li>Suivi statut demande</li>
+                                <li>Documents additionnels si demandés</li>
+                                <li>Préparation voyage</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-plane-departure text-info me-2"></i>
+                                <h5 class="mb-0">4. Arrivée & Activation</h5>
+                                <span class="badge bg-info ms-auto">Jour J</span>
+                            </div>
+                            <p>Contrôle immigration, activation visa, premiers démarches.</p>
+                            <ul class="small">
+                                <li>Présentation documents frontière</li>
+                                <li>Tampon d'entrée</li>
+                                <li>TM30 & TM47 registration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conseils pratiques -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-lightbulb text-warning me-2"></i>Conseils d'experts</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-check text-success me-2"></i>Best Practices</h5>
+                                <ul>
+                                    <li><strong>Toujours avoir un plan B :</strong> Visa backup en cas de refus</li>
+                                    <li><strong>Documents originaux :</strong> Copies certifiées ne suffisent pas toujours</li>
+                                    <li><strong>Fonds disponibles :</strong> Liquide ou relevés récents</li>
+                                    <li><strong>Assurance complète :</strong> Couverture COVID obligatoire</li>
+                                    <li><strong>Agent visa local :</strong> Pour cas complexes</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-times text-danger me-2"></i>Erreurs courantes</h5>
+                                <ul>
+                                    <li><strong>Visa runs répétés :</strong> Attention aux contrôles</li>
+                                    <li><strong>Travail sans permis :</strong> Amende et expulsion</li>
+                                    <li><strong>Overstay :</strong> 500 THB/jour + blacklist</li>
+                                    <li><strong>Faux documents :</strong> Bannissement définitif</li>
+                                    <li><strong>90-day report oublié :</strong> Amende 2000 THB</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h6><i class="fas fa-info-circle me-2"></i>Mise à jour importante 2025</h6>
+                            <p class="mb-0">
+                                Le système de visa digital (eVisa) est désormais disponible pour la plupart des nationalités. 
+                                Les délais sont réduits et le processus simplifié. Consultez le site officiel 
+                                <a href="https://www.thaievisa.go.th" target="_blank" class="text-decoration-none">thaievisa.go.th</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Section -->
+    <section id="budget" class="py-5 bg-light">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-coins me-3"></i>Budget & Coût de la Vie
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Planifiez votre budget en Thaïlande : du mode backpacker au lifestyle premium
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Profils de budget -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-user-tag me-2"></i>Profils de vie et budgets
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Budget Économique -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="text-center mb-4">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-backpack"></i>
+                            </div>
+                            <h4>Mode Backpacker</h4>
+                            <div class="stat-number">25,000</div>
+                            <span class="text-muted">THB/mois</span>
+                            <div class="price-badge mt-2">~675€/mois</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-bed text-primary me-1"></i>Logement</h6>
+                            <ul class="small">
+                                <li>Dortoir backpacker : 8,000 THB</li>
+                                <li>Chambre partagée : 10,000 THB</li>
+                                <li>Quartiers : Khao San, Silom</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-utensils text-success me-1"></i>Alimentation</h6>
+                            <ul class="small">
+                                <li>Street food : 5,000 THB</li>
+                                <li>Marché local : 2,000 THB</li>
+                                <li>Total : 7,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-bus text-info me-1"></i>Transport</h6>
+                            <ul class="small">
+                                <li>BTS/MRT : 2,000 THB</li>
+                                <li>Bus/Songthaew : 1,500 THB</li>
+                                <li>Moto-taxi : 1,500 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <i class="fas fa-lightbulb me-1"></i>
+                            <strong>Idéal pour :</strong> Digital nomads, gap year, découverte courte durée
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Confortable -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100 border-primary" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center mb-4">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>Vie Confortable</h4>
+                            <div class="stat-number">65,000</div>
+                            <span class="text-muted">THB/mois</span>
+                            <div class="price-badge mt-2">~1,750€/mois</div>
+                            <span class="premium-badge mt-2">Recommandé</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-bed text-primary me-1"></i>Logement</h6>
+                            <ul class="small">
+                                <li>Condo 1BR moderne : 25,000 THB</li>
+                                <li>Quartiers : Thonglor, Ekkamai</li>
+                                <li>Équipé, piscine, gym</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-utensils text-success me-1"></i>Alimentation</h6>
+                            <ul class="small">
+                                <li>Mix local/occidental : 15,000 THB</li>
+                                <li>Restaurant qualité : 8,000 THB</li>
+                                <li>Courses supermarché : 7,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-car text-info me-1"></i>Transport</h6>
+                            <ul class="small">
+                                <li>BTS/MRT illimité : 3,000 THB</li>
+                                <li>Grab/Taxi : 4,000 THB</li>
+                                <li>Location scooter : 3,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dumbbell text-warning me-1"></i>Loisirs & Santé</h6>
+                            <ul class="small">
+                                <li>Assurance santé : 3,000 THB</li>
+                                <li>Gym premium : 2,000 THB</li>
+                                <li>Sorties & voyage : 10,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <i class="fas fa-star me-1"></i>
+                            <strong>Idéal pour :</strong> Expatriés long-terme, familles, working professionals
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Premium -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-center mb-4">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>Lifestyle Premium</h4>
+                            <div class="stat-number">150,000</div>
+                            <span class="text-muted">THB/mois</span>
+                            <div class="price-badge mt-2">~4,050€/mois</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-bed text-primary me-1"></i>Logement</h6>
+                            <ul class="small">
+                                <li>Penthouse/Villa : 80,000 THB</li>
+                                <li>Quartiers : Sathorn, Ploenchit</li>
+                                <li>Services concierge inclus</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-utensils text-success me-1"></i>Alimentation</h6>
+                            <ul class="small">
+                                <li>Restaurants haut de gamme : 20,000 THB</li>
+                                <li>Produits importés : 10,000 THB</li>
+                                <li>Chef privé occasionnel : 5,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-car text-info me-1"></i>Transport</h6>
+                            <ul class="small">
+                                <li>Voiture avec chauffeur : 15,000 THB</li>
+                                <li>Véhicule personnel : 10,000 THB</li>
+                                <li>Vols domestiques : 5,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-spa text-warning me-1"></i>Premium Services</h6>
+                            <ul class="small">
+                                <li>Assurance international : 8,000 THB</li>
+                                <li>Spa & wellness : 5,000 THB</li>
+                                <li>Clubs privés : 7,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-gem me-1"></i>
+                            <strong>Idéal pour :</strong> Executives, entrepreneurs, retraités aisés
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparaison villes -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-city me-2"></i>Coût de la vie par destination
+                    </h3>
+                    
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Destination</th>
+                                        <th>Condo 1BR</th>
+                                        <th>Repas local</th>
+                                        <th>Transport</th>
+                                        <th>Budget total</th>
+                                        <th>Profil</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-building text-primary me-2"></i>
+                                            <strong>Bangkok (Centre)</strong>
+                                        </td>
+                                        <td>30,000-80,000 THB</td>
+                                        <td>80-300 THB</td>
+                                        <td>100-200 THB/jour</td>
+                                        <td>65,000-150,000 THB</td>
+                                        <td><span class="badge bg-primary">Business Hub</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-umbrella-beach text-info me-2"></i>
+                                            <strong>Phuket</strong>
+                                        </td>
+                                        <td>20,000-60,000 THB</td>
+                                        <td>100-400 THB</td>
+                                        <td>150-300 THB/jour</td>
+                                        <td>50,000-120,000 THB</td>
+                                        <td><span class="badge bg-info">Lifestyle</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-mountain text-success me-2"></i>
+                                            <strong>Chiang Mai</strong>
+                                        </td>
+                                        <td>12,000-35,000 THB</td>
+                                        <td>50-200 THB</td>
+                                        <td>50-150 THB/jour</td>
+                                        <td>35,000-80,000 THB</td>
+                                        <td><span class="badge bg-success">Digital Nomad</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-water text-warning me-2"></i>
+                                            <strong>Koh Samui</strong>
+                                        </td>
+                                        <td>25,000-70,000 THB</td>
+                                        <td>120-350 THB</td>
+                                        <td>200-400 THB/jour</td>
+                                        <td>60,000-140,000 THB</td>
+                                        <td><span class="badge bg-warning">Resort Life</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-tree text-secondary me-2"></i>
+                                            <strong>Hua Hin</strong>
+                                        </td>
+                                        <td>15,000-45,000 THB</td>
+                                        <td>70-250 THB</td>
+                                        <td>100-200 THB/jour</td>
+                                        <td>40,000-95,000 THB</td>
+                                        <td><span class="badge bg-secondary">Retraite</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculateur de budget -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-calculator me-2"></i>Calculateur de budget personnalisé
+                    </h3>
+                    
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="mb-3">Paramètres de vie</h5>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Destination</label>
+                                    <select class="form-select" id="city">
+                                        <option value="bangkok">Bangkok</option>
+                                        <option value="phuket">Phuket</option>
+                                        <option value="chiangmai">Chiang Mai</option>
+                                        <option value="samui">Koh Samui</option>
+                                        <option value="huahin">Hua Hin</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Type de logement</label>
+                                    <select class="form-select" id="housing">
+                                        <option value="backpacker">Backpacker/Shared (8,000-15,000 THB)</option>
+                                        <option value="studio">Studio moderne (15,000-25,000 THB)</option>
+                                        <option value="condo1br">Condo 1BR (25,000-40,000 THB)</option>
+                                        <option value="condo2br">Condo 2BR (40,000-60,000 THB)</option>
+                                        <option value="luxury">Luxury/Villa (60,000+ THB)</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Style alimentaire</label>
+                                    <select class="form-select" id="food">
+                                        <option value="local">100% Local (5,000-8,000 THB)</option>
+                                        <option value="mixed">Mix local/occidental (12,000-18,000 THB)</option>
+                                        <option value="western">Occidental premium (20,000-30,000 THB)</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Transport</label>
+                                    <select class="form-select" id="transport">
+                                        <option value="public">Transport public (2,000-4,000 THB)</option>
+                                        <option value="mixed">Mix public/Grab (5,000-8,000 THB)</option>
+                                        <option value="private">Voiture/Chauffeur (10,000-20,000 THB)</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn btn-primary" onclick="calculateBudget()">
+                                    <i class="fas fa-calculator me-2"></i>Calculer mon Budget
+                                </button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h5 class="mb-3">Résultat personnalisé</h5>
+                                
+                                <div id="budgetResult" class="content-card p-4 bg-light">
+                                    <div class="text-center">
+                                        <i class="fas fa-hand-point-left text-primary fa-2x mb-3"></i>
+                                        <p class="text-muted">Utilisez le calculateur pour obtenir votre budget personnalisé</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h6><i class="fas fa-lightbulb text-warning me-2"></i>Conseils budget</h6>
+                                    <ul class="small">
+                                        <li><strong>Négociation :</strong> Toujours possible pour loyers longs</li>
+                                        <li><strong>Saison :</strong> Prix +30% en haute saison touristique</li>
+                                        <li><strong>Caution :</strong> 2-3 mois de loyer à prévoir</li>
+                                        <li><strong>Visa run :</strong> Budget 5,000-10,000 THB/sortie</li>
+                                        <li><strong>Urgences :</strong> Garder 20,000 THB d'urgence</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astuces économies -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-piggy-bank me-2"></i>Astuces pour économiser
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-utensils text-success me-2"></i>Alimentation</h5>
+                        <ul>
+                            <li><strong>Street food :</strong> Authentique et économique (40-80 THB)</li>
+                            <li><strong>Marchés locaux :</strong> Fruits/légumes 50% moins cher</li>
+                            <li><strong>Food courts :</strong> Malls, qualité/prix excellent</li>
+                            <li><strong>Éviter :</strong> Zones touristiques (+200% prix)</li>
+                            <li><strong>Apps :</strong> GrabFood promotions quotidiennes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-home text-primary me-2"></i>Logement</h5>
+                        <ul>
+                            <li><strong>Négociation :</strong> Séjours 6+ mois = -20%</li>
+                            <li><strong>Quartiers locaux :</strong> 30-50% moins cher qu'expat areas</li>
+                            <li><strong>Colocation :</strong> Diviser par 2 les coûts</li>
+                            <li><strong>Période :</strong> Négocier en basse saison</li>
+                            <li><strong>Direct propriétaire :</strong> Éviter frais agence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-bus text-info me-2"></i>Transport</h5>
+                        <ul>
+                            <li><strong>Rabbit Card :</strong> BTS/MRT abonnements mensuels</li>
+                            <li><strong>Moto-taxi :</strong> Courtes distances, 20-40 THB</li>
+                            <li><strong>Apps locales :</strong> Bolt souvent -30% vs Grab</li>
+                            <li><strong>Vélo :</strong> Bangkok bike sharing 10 THB/jour</li>
+                            <li><strong>Bus public :</strong> 8-24 THB, climatisés</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-heart text-danger me-2"></i>Lifestyle</h5>
+                        <ul>
+                            <li><strong>Happy hours :</strong> 4-7pm, boissons -50%</li>
+                            <li><strong>Temples gratuits :</strong> Culture authentique sans coût</li>
+                            <li><strong>Parcs publics :</strong> Sport/détente gratuit</li>
+                            <li><strong>Festivals :</strong> Événements culturels gratuits</li>
+                            <li><strong>Beach publiques :</strong> Éviter beach clubs premium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert importante -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="alert alert-warning" data-aos="fade-up">
+                        <h5><i class="fas fa-exclamation-triangle me-2"></i>Important : Inflation 2024-2025</h5>
+                        <p class="mb-2">
+                            <strong>Impact économique post-COVID :</strong> Les prix ont augmenté de 15-25% dans les zones touristiques principales. 
+                            Bangkok et Phuket sont les plus impactés.
+                        </p>
+                        <ul class="mb-0">
+                            <li><strong>Logement :</strong> +20% en moyenne, pénurie de condos modernes</li>
+                            <li><strong>Alimentation :</strong> Restaurants +15%, street food relativement stable</li>
+                            <li><strong>Transport :</strong> Grab +25%, carburant en hausse</li>
+                            <li><strong>Conseil :</strong> Prévoir budget +20% vs estimations pré-2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emploi Section -->
+    <section id="emploi" class="py-5">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-briefcase me-3"></i>Emploi & Opportunités
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Décrocher un emploi en Thaïlande : secteurs porteurs, salaires et stratégies
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Vue d'ensemble du marché -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-chart-line text-primary me-2"></i>Marché de l'emploi 2025</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-trending-up text-success me-2"></i>Secteurs en croissance</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-laptop-code text-primary me-2"></i>Tech & Digital (Fintech, E-commerce)</li>
+                                    <li><i class="fas fa-plane text-info me-2"></i>Tourisme premium & Hospitality</li>
+                                    <li><i class="fas fa-graduation-cap text-warning me-2"></i>Éducation internationale</li>
+                                    <li><i class="fas fa-heartbeat text-danger me-2"></i>Medical Tourism & Wellness</li>
+                                    <li><i class="fas fa-leaf text-success me-2"></i>Agribusiness & Sustainability</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-exclamation-triangle text-warning me-2"></i>Défis du marché</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Permis de travail obligatoire</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Compétition locale croissante</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Barrière linguistique (thaï requis)</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Salaires inférieurs à l'Occident</li>
+                                    <li><i class="fas fa-minus text-warning me-2"></i>Bureaucratie administrative</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secteurs et salaires -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-industry me-2"></i>Secteurs porteurs et rémunérations
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tech & IT -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Tech & IT</h4>
+                                <span class="premium-badge">Très demandé</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-code me-1"></i>Postes recherchés</h6>
+                            <ul class="small">
+                                <li>Software Developer (React, Node.js, Python)</li>
+                                <li>Data Scientist / AI Engineer</li>
+                                <li>DevOps / Cloud Architect</li>
+                                <li>Product Manager</li>
+                                <li>UI/UX Designer</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Salaires (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Junior (0-2 ans) :</strong> 50,000 - 80,000</li>
+                                <li><strong>Mid-level (3-5 ans) :</strong> 80,000 - 120,000</li>
+                                <li><strong>Senior (5+ ans) :</strong> 120,000 - 200,000</li>
+                                <li><strong>Lead/Manager :</strong> 200,000 - 300,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-building me-1"></i>Entreprises clés</h6>
+                            <ul class="small">
+                                <li>Agoda, LINE, Shopee, Central Group</li>
+                                <li>Startups fintech (Omise, 2C2P)</li>
+                                <li>Multinationales (Google, Microsoft)</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <i class="fas fa-star me-1"></i>
+                            <strong>Avantage :</strong> Remote work accepté, visa Smart facilité
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Éducation -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Éducation</h4>
+                                <span class="premium-badge">Stable</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-graduation-cap me-1"></i>Postes disponibles</h6>
+                            <ul class="small">
+                                <li>Professeur d'anglais (ESL)</li>
+                                <li>Enseignant matières (Maths, Sciences)</li>
+                                <li>Directeur académique</li>
+                                <li>Coordinateur international</li>
+                                <li>Formateur entreprise</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Salaires (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Prof ESL débutant :</strong> 35,000 - 45,000</li>
+                                <li><strong>Prof expérimenté :</strong> 50,000 - 70,000</li>
+                                <li><strong>École internationale :</strong> 70,000 - 120,000</li>
+                                <li><strong>Management :</strong> 100,000 - 180,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-certificate me-1"></i>Exigences</h6>
+                            <ul class="small">
+                                <li>Licence minimum (Master préféré)</li>
+                                <li>TEFL/TESOL pour ESL</li>
+                                <li>Certification enseignement (PGCE)</li>
+                                <li>2+ ans expérience</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-1"></i>
+                            <strong>Conseil :</strong> Écoles internationales offrent les meilleurs packages
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tourisme & Hospitality -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-concierge-bell"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Hospitality</h4>
+                                <span class="premium-badge">En reprise</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-hotel me-1"></i>Secteurs</h6>
+                            <ul class="small">
+                                <li>Hôtellerie de luxe</li>
+                                <li>Resort management</li>
+                                <li>Tour operations</li>
+                                <li>Event planning</li>
+                                <li>Spa & wellness</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Salaires (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Supervisor :</strong> 40,000 - 60,000</li>
+                                <li><strong>Manager :</strong> 60,000 - 100,000</li>
+                                <li><strong>Director :</strong> 100,000 - 200,000</li>
+                                <li><strong>GM Resort :</strong> 200,000 - 400,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-map-marker-alt me-1"></i>Localisation</h6>
+                            <ul class="small">
+                                <li><strong>Bangkok :</strong> Hôtels business</li>
+                                <li><strong>Phuket/Samui :</strong> Resorts luxury</li>
+                                <li><strong>Chiang Mai :</strong> Boutique hotels</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-1"></i>
+                            <strong>Saisonnier :</strong> Forte variation selon haute/basse saison
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business & Finance -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Business & Finance</h4>
+                                <span class="premium-badge">Expérience requise</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-briefcase me-1"></i>Postes</h6>
+                            <ul class="small">
+                                <li>Business Development</li>
+                                <li>Sales Manager</li>
+                                <li>Financial Analyst</li>
+                                <li>Country Manager</li>
+                                <li>Consultant</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Salaires (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Analyst :</strong> 60,000 - 90,000</li>
+                                <li><strong>Manager :</strong> 90,000 - 150,000</li>
+                                <li><strong>Senior Manager :</strong> 150,000 - 250,000</li>
+                                <li><strong>Director :</strong> 250,000 - 500,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-language me-1"></i>Compétences clés</h6>
+                            <ul class="small">
+                                <li>Anglais business fluent</li>
+                                <li>Thaï conversationnel (avantage)</li>
+                                <li>Expérience Asie-Pacifique</li>
+                                <li>MBA ou équivalent</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <i class="fas fa-globe me-1"></i>
+                            <strong>Focus :</strong> Hub régional ASEAN, opportunités export
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processus de recherche d'emploi -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-search me-2"></i>Processus de recherche d'emploi
+                    </h3>
+                    
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-file-alt text-primary me-2"></i>
+                                <h5 class="mb-0">1. Préparation CV & Portfolio</h5>
+                                <span class="badge bg-primary ms-auto">Semaine 1</span>
+                            </div>
+                            <p>CV format international, portfolio en ligne, certifications.</p>
+                            <ul class="small">
+                                <li>CV 2 pages maximum, format ATS-friendly</li>
+                                <li>Portfolio GitHub/Behance selon secteur</li>
+                                <li>Traductions certifiées diplômes</li>
+                                <li>Références professionnelles vérifiables</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-network-wired text-success me-2"></i>
+                                <h5 class="mb-0">2. Networking & Plateformes</h5>
+                                <span class="badge bg-success ms-auto">Semaine 2-3</span>
+                            </div>
+                            <p>Construction réseau professionnel local et digital.</p>
+                            <ul class="small">
+                                <li><strong>LinkedIn :</strong> Profil optimisé, connexions locales</li>
+                                <li><strong>JobsDB :</strong> Plateforme #1 en Thaïlande</li>
+                                <li><strong>Events :</strong> Meetups tech, chambres de commerce</li>
+                                <li><strong>Headhunters :</strong> Robert Walters, Michael Page</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-paper-plane text-warning me-2"></i>
+                                <h5 class="mb-0">3. Candidatures Ciblées</h5>
+                                <span class="badge bg-warning ms-auto">Semaine 3-6</span>
+                            </div>
+                            <p>Applications stratégiques avec suivi personnalisé.</p>
+                            <ul class="small">
+                                <li>5-10 candidatures qualité > quantité</li>
+                                <li>Cover letter personnalisée par poste</li>
+                                <li>Suivi 1 semaine après candidature</li>
+                                <li>Préparation entretiens vidéo/présentiel</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-handshake text-info me-2"></i>
+                                <h5 class="mb-0">4. Entretiens & Négociation</h5>
+                                <span class="badge bg-info ms-auto">Semaine 6-8</span>
+                            </div>
+                            <p>Process d'entretien et négociation package complet.</p>
+                            <ul class="small">
+                                <li>Entretien RH + technique + management</li>
+                                <li>Négociation salaire + benefits package</li>
+                                <li>Conditions permis de travail/visa</li>
+                                <li>Période d'essai et objectifs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plateformes de recrutement -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-laptop me-2"></i>Plateformes de recrutement
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-star text-warning me-2"></i>Plateformes principales</h5>
+                        <ul>
+                            <li><strong>JobsDB :</strong> Leader local, tous secteurs</li>
+                            <li><strong>LinkedIn :</strong> Postes internationaux</li>
+                            <li><strong>Indeed Thailand :</strong> Volume important</li>
+                            <li><strong>JobThai :</strong> Entreprises locales</li>
+                            <li><strong>Glassdoor :</strong> Recherche salaires</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-users text-primary me-2"></i>Cabinets de recrutement</h5>
+                        <ul>
+                            <li><strong>Robert Walters :</strong> Finance, IT, Sales</li>
+                            <li><strong>Michael Page :</strong> Management, Legal</li>
+                            <li><strong>Adecco :</strong> Temporaire, permanent</li>
+                            <li><strong>Monroe Consulting :</strong> Executive search</li>
+                            <li><strong>JAC Recruitment :</strong> Japonais/Asie</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="400">
+                        <h5><i class="fas fa-code text-success me-2"></i>Tech spécialisées</h5>
+                        <ul>
+                            <li><strong>AngelList :</strong> Startups & tech</li>
+                            <li><strong>Stack Overflow :</strong> Développeurs</li>
+                            <li><strong>Upwork/Toptal :</strong> Freelance</li>
+                            <li><strong>GitHub Jobs :</strong> Postes tech</li>
+                            <li><strong>Remote.co :</strong> Travail à distance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Permis de travail -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-id-card text-warning me-2"></i>Permis de travail & Visa</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-file-signature text-primary me-2"></i>Process standard</h5>
+                                <ol>
+                                    <li><strong>Job offer :</strong> Employeur initie demande</li>
+                                    <li><strong>Non-Immigrant B :</strong> Visa business 90 jours</li>
+                                    <li><strong>Work Permit :</strong> Demande au Department of Employment</li>
+                                    <li><strong>Extension visa :</strong> 1 an renouvelable</li>
+                                    <li><strong>90-day reporting :</strong> Obligation résidence</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-clock text-info me-2"></i>Délais & coûts</h5>
+                                <ul>
+                                    <li><strong>Visa B :</strong> 5-10 jours, 2,000 THB</li>
+                                    <li><strong>Work Permit :</strong> 15-30 jours, 3,000 THB</li>
+                                    <li><strong>Extension :</strong> 7 jours, 1,900 THB</li>
+                                    <li><strong>Total process :</strong> 1-2 mois</li>
+                                    <li><strong>Coûts employeur :</strong> 20,000-50,000 THB</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-4">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>SMART Visa - Nouveau système 2025</h6>
+                            <p class="mb-2">
+                                <strong>Pour professionnels qualifiés :</strong> Tech, Agri-tech, Médical, Aviation
+                            </p>
+                            <ul class="mb-0">
+                                <li><strong>Avantages :</strong> 4 ans, famille incluse, pas de work permit séparé</li>
+                                <li><strong>Exigences :</strong> Master + 5 ans exp OU salaire 200,000+ THB</li>
+                                <li><strong>Secteurs :</strong> 12 industries S-curve prioritaires</li>
+                                <li><strong>Process :</strong> One-stop service, 60 jours maximum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conseils négociation -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-handshake text-success me-2"></i>Négociation salariale & Benefits</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-dollar-sign text-primary me-2"></i>Package salarial type</h5>
+                                <ul>
+                                    <li><strong>Salaire de base :</strong> Négociable selon expérience</li>
+                                    <li><strong>Bonus annuel :</strong> 1-6 mois de salaire</li>
+                                    <li><strong>Assurance santé :</strong> Employé + famille</li>
+                                    <li><strong>Transport :</strong> Allocation 3,000-8,000 THB</li>
+                                    <li><strong>Formation :</strong> Budget développement</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-plus text-success me-2"></i>Benefits à négocier</h5>
+                                <ul>
+                                    <li><strong>Congés payés :</strong> 15-25 jours selon ancienneté</li>
+                                    <li><strong>Logement :</strong> Allowance 15,000-30,000 THB</li>
+                                    <li><strong>Visa & WP :</strong> Frais pris en charge</li>
+                                    <li><strong>Relocation :</strong> Package installation</li>
+                                    <li><strong>Flexibilité :</strong> Remote work partiel</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h6><i class="fas fa-lightbulb me-2"></i>Conseils de négociation</h6>
+                            <ul class="mb-0">
+                                <li><strong>Timing :</strong> Négocier après offre ferme, pas avant</li>
+                                <li><strong>Recherche :</strong> Connaître ranges secteur via Glassdoor</li>
+                                <li><strong>Total package :</strong> Compter all-in, pas que le salaire</li>
+                                <li><strong>Période d'essai :</strong> Review salariale après 6 mois</li>
+                                <li><strong>Benchmark :</strong> Comparer avec expatriés similaires</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logement Section -->
+    <section id="logement" class="py-5 bg-light">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-home me-3"></i>Logement & Quartiers
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Trouver le logement idéal en Thaïlande : types, quartiers et processus de location
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Types de logements -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-building me-2"></i>Types de logements disponibles
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Condo/Appartement -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Condo Moderne</h4>
+                                <span class="premium-badge">Plus populaire</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-home me-1"></i>Caractéristiques</h6>
+                            <ul class="small">
+                                <li>Studio : 25-40m² meublé</li>
+                                <li>1-2 chambres : 40-80m²</li>
+                                <li>Piscine, gym, sécurité 24h</li>
+                                <li>Climatisation, cuisine équipée</li>
+                                <li>Parking, wifi inclus</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Prix Bangkok (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Studio centre :</strong> 18,000 - 35,000</li>
+                                <li><strong>1BR moderne :</strong> 25,000 - 50,000</li>
+                                <li><strong>2BR luxury :</strong> 45,000 - 80,000</li>
+                                <li><strong>Penthouse :</strong> 80,000 - 200,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-map-marker-alt me-1"></i>Quartiers recherchés</h6>
+                            <ul class="small">
+                                <li><strong>Sukhumvit :</strong> Thonglor, Ekkamai</li>
+                                <li><strong>Silom :</strong> Central business district</li>
+                                <li><strong>Sathorn :</strong> Financial district</li>
+                                <li><strong>Ploenchit :</strong> Shopping & expats</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <i class="fas fa-check me-1"></i>
+                            <strong>Avantages :</strong> Clé en main, sécurisé, prestations incluses
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maison/Villa -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Maison/Villa</h4>
+                                <span class="premium-badge">Familles</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-home me-1"></i>Caractéristiques</h6>
+                            <ul class="small">
+                                <li>2-4 chambres : 150-300m²</li>
+                                <li>Jardin privé, piscine possible</li>
+                                <li>Garage, terrasse</li>
+                                <li>Meublé ou non-meublé</li>
+                                <li>Quartiers résidentiels</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Prix Bangkok (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Townhouse :</strong> 35,000 - 60,000</li>
+                                <li><strong>Villa moderne :</strong> 60,000 - 120,000</li>
+                                <li><strong>Villa luxury :</strong> 120,000 - 300,000</li>
+                                <li><strong>Compound privé :</strong> 300,000+</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-map-marker-alt me-1"></i>Zones recommandées</h6>
+                            <ul class="small">
+                                <li><strong>On Nut :</strong> Familles expatriées</li>
+                                <li><strong>Ramkhamhaeng :</strong> Résidentiel</li>
+                                <li><strong>Lat Phrao :</strong> Quartier calme</li>
+                                <li><strong>Suburbs :</strong> Samut Prakan</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-1"></i>
+                            <strong>Note :</strong> Prévoir frais entretien jardin/piscine supplémentaires
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviced Apartment -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-concierge-bell"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Serviced Apartment</h4>
+                                <span class="premium-badge">Temporaire</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-star me-1"></i>Services inclus</h6>
+                            <ul class="small">
+                                <li>Ménage quotidien/hebdomadaire</li>
+                                <li>Linge de maison fourni</li>
+                                <li>Concierge & réception 24h</li>
+                                <li>Maintenance incluse</li>
+                                <li>Facturation tout-en-un</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Prix (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Studio :</strong> 35,000 - 55,000</li>
+                                <li><strong>1BR :</strong> 45,000 - 75,000</li>
+                                <li><strong>2BR :</strong> 70,000 - 120,000</li>
+                                <li><strong>Daily rate :</strong> 1,500 - 4,000/jour</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-calendar me-1"></i>Durée recommandée</h6>
+                            <ul class="small">
+                                <li><strong>Court terme :</strong> 1-6 mois</li>
+                                <li><strong>Business trips :</strong> 1-4 semaines</li>
+                                <li><strong>Transition :</strong> En attendant condo</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-clock me-1"></i>
+                            <strong>Conseil :</strong> Plus cher long terme, idéal pour débuter
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colocation -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Colocation</h4>
+                                <span class="premium-badge">Économique</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-home me-1"></i>Formules</h6>
+                            <ul class="small">
+                                <li>Chambre privée, espaces partagés</li>
+                                <li>Condo 2-3BR avec expatriés</li>
+                                <li>Villa avec groupe d'amis</li>
+                                <li>Maison familiale (room rental)</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-dollar-sign me-1"></i>Prix (THB/mois)</h6>
+                            <ul class="small">
+                                <li><strong>Chambre simple :</strong> 8,000 - 15,000</li>
+                                <li><strong>Chambre + SDB :</strong> 12,000 - 20,000</li>
+                                <li><strong>Master bedroom :</strong> 15,000 - 25,000</li>
+                                <li><strong>All-inclusive :</strong> +2,000 - 4,000</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-search me-1"></i>Où chercher</h6>
+                            <ul class="small">
+                                <li><strong>Facebook groups :</strong> "Rent Bangkok"</li>
+                                <li><strong>Expatriate forums :</strong> ThaiVisa</li>
+                                <li><strong>Apps :</strong> Roomster, SpareRoom</li>
+                                <li><strong>Unis :</strong> Tableaux d'affichage</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <i class="fas fa-handshake me-1"></i>
+                            <strong>Idéal pour :</strong> Jeunes expats, étudiants, networking
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quartiers par ville -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-map me-2"></i>Guide des quartiers par destination
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Bangkok -->
+            <div class="row mb-4">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h4 class="mb-4"><i class="fas fa-building text-primary me-2"></i>Bangkok - Quartiers expatriés</h4>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6><i class="fas fa-star text-warning me-2"></i>Premium Expatrié</h6>
+                                <div class="mb-3">
+                                    <strong>Thonglor (Sukhumvit 55)</strong>
+                                    <p class="small text-muted mb-1">Le "Beverly Hills" de Bangkok</p>
+                                    <ul class="small">
+                                        <li>Restaurants haut de gamme, nightlife</li>
+                                        <li>BTS Thong Lo, shopping premium</li>
+                                        <li>Condo 1BR : 35,000-60,000 THB</li>
+                                        <li>Communauté japonaise importante</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ekkamai (Sukhumvit 63)</strong>
+                                    <p class="small text-muted mb-1">Quartier branché et connecté</p>
+                                    <ul class="small">
+                                        <li>BTS Ekkamai, bus terminal</li>
+                                        <li>Bars, cafés, coworking spaces</li>
+                                        <li>Condo 1BR : 25,000-45,000 THB</li>
+                                        <li>Digital nomads, jeunes expats</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ploenchit/Chidlom</strong>
+                                    <p class="small text-muted mb-1">Centre shopping & business</p>
+                                    <ul class="small">
+                                        <li>Central World, Siam Paragon</li>
+                                        <li>BTS Central, très connecté</li>
+                                        <li>Condo 1BR : 40,000-80,000 THB</li>
+                                        <li>Expatriés working professionals</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h6><i class="fas fa-dollar-sign text-success me-2"></i>Rapport Qualité/Prix</h6>
+                                <div class="mb-3">
+                                    <strong>On Nut (Sukhumvit 77)</strong>
+                                    <p class="small text-muted mb-1">Familial et abordable</p>
+                                    <ul class="small">
+                                        <li>BTS On Nut, Tesco Lotus mega</li>
+                                        <li>Écoles internationales proches</li>
+                                        <li>Condo 1BR : 15,000-25,000 THB</li>
+                                        <li>Familles expatriées, locaux</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ari (BTS Victory Monument)</strong>
+                                    <p class="small text-muted mb-1">Authentique et en développement</p>
+                                    <ul class="small">
+                                        <li>Cafés hipster, marchés locaux</li>
+                                        <li>BTS Ari, quartier artistique</li>
+                                        <li>Condo 1BR : 18,000-30,000 THB</li>
+                                        <li>Créatifs, étudiants</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ramkhamhaeng</strong>
+                                    <p class="small text-muted mb-1">Universitaire et résidentiel</p>
+                                    <ul class="small">
+                                        <li>Ramkhamhaeng University</li>
+                                        <li>Airport Rail Link accessible</li>
+                                        <li>Condo 1BR : 12,000-20,000 THB</li>
+                                        <li>Étudiants, budget serré</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Autres destinations -->
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-mountain text-success me-2"></i>Chiang Mai</h5>
+                        
+                        <div class="mb-3">
+                            <strong>Nimman (Nimmanhaemin)</strong>
+                            <ul class="small">
+                                <li>Digital nomad hub principal</li>
+                                <li>Cafés, coworking, universités</li>
+                                <li>Condo 1BR : 12,000-20,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Old City</strong>
+                            <ul class="small">
+                                <li>Centre historique, temples</li>
+                                <li>Guesthouses, culture authentique</li>
+                                <li>Studio : 8,000-15,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Hang Dong</strong>
+                            <ul class="small">
+                                <li>Banlieue, maisons avec jardin</li>
+                                <li>Familles expatriées</li>
+                                <li>Villa 3BR : 20,000-35,000 THB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-umbrella-beach text-info me-2"></i>Phuket</h5>
+                        
+                        <div class="mb-3">
+                            <strong>Patong</strong>
+                            <ul class="small">
+                                <li>Centre touristique, nightlife</li>
+                                <li>Plage, restaurants, shopping</li>
+                                <li>Condo 1BR : 25,000-40,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Kata/Karon</strong>
+                            <ul class="small">
+                                <li>Plages calmes, familles</li>
+                                <li>Resorts, villas privées</li>
+                                <li>Villa 2BR : 35,000-60,000 THB</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Rawai</strong>
+                            <ul class="small">
+                                <li>Communauté expatriée établie</li>
+                                <li>Yacht club, fishing village</li>
+                                <li>Condo 1BR : 20,000-35,000 THB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processus de location -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-key me-2"></i>Processus de location étape par étape
+                    </h3>
+                    
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-search text-primary me-2"></i>
+                                <h5 class="mb-0">1. Recherche & Repérage</h5>
+                                <span class="badge bg-primary ms-auto">Semaine 1-2</span>
+                            </div>
+                            <p>Définir critères et explorer le marché en ligne et sur place.</p>
+                            <ul class="small">
+                                <li><strong>Sites web :</strong> DDProperty, Hipflat, Dot Property</li>
+                                <li><strong>Facebook groups :</strong> "Bangkok Rent", "Expat Housing"</li>
+                                <li><strong>Agents immobiliers :</strong> Consultations gratuites</li>
+                                <li><strong>Visite quartiers :</strong> Transport, commodités, ambiance</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-eye text-success me-2"></i>
+                                <h5 class="mb-0">2. Visites & Sélection</h5>
+                                <span class="badge bg-success ms-auto">Semaine 2-3</span>
+                            </div>
+                            <p>Programmer 5-10 visites, négocier et comparer options.</p>
+                            <ul class="small">
+                                <li><strong>Check-list visite :</strong> Équipements, état, nuisances</li>
+                                <li><strong>Photos/vidéos :</strong> Documenter chaque visite</li>
+                                <li><strong>Négociation :</strong> Prix, durée, inclusions</li>
+                                <li><strong>Références :</strong> Autres locataires du building</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-file-signature text-warning me-2"></i>
+                                <h5 class="mb-0">3. Négociation & Contrat</h5>
+                                <span class="badge bg-warning ms-auto">Semaine 3-4</span>
+                            </div>
+                            <p>Finaliser termes, signer contrat et effectuer paiements.</p>
+                            <ul class="small">
+                                <li><strong>Durée :</strong> 6-12 mois minimum standard</li>
+                                <li><strong>Dépôt :</strong> 1-2 mois de caution remboursable</li>
+                                <li><strong>Avance :</strong> 1er mois payé à la signature</li>
+                                <li><strong>Frais agence :</strong> 50% du loyer mensuel</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-home text-info me-2"></i>
+                                <h5 class="mb-0">4. Emménagement & Setup</h5>
+                                <span class="badge bg-info ms-auto">Semaine 4</span>
+                            </div>
+                            <p>État des lieux, transfert utilities et installation.</p>
+                            <ul class="small">
+                                <li><strong>État des lieux :</strong> Photos avant/après détaillées</li>
+                                <li><strong>Utilities :</strong> Électricité, eau, internet</li>
+                                <li><strong>Address registration :</strong> TM30 pour visa</li>
+                                <li><strong>Clés & accès :</strong> Card access, parking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents et frais -->
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-file-alt text-primary me-2"></i>Documents requis</h5>
+                        <ul>
+                            <li><strong>Passeport :</strong> Original + copies</li>
+                            <li><strong>Visa/Work Permit :</strong> Si applicable</li>
+                            <li><strong>Certificat emploi :</strong> Lettre employer</li>
+                            <li><strong>Relevés bancaires :</strong> 3 derniers mois</li>
+                            <li><strong>Références :</strong> Anciens propriétaires</li>
+                            <li><strong>Photos d'identité :</strong> 4x6 cm</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-calculator text-success me-2"></i>Frais à prévoir</h5>
+                        <ul>
+                            <li><strong>Dépôt de garantie :</strong> 1-2 mois de loyer</li>
+                            <li><strong>1er mois :</strong> Payé à la signature</li>
+                            <li><strong>Frais d'agence :</strong> 50-100% du loyer</li>
+                            <li><strong>Utilities setup :</strong> 500-2,000 THB</li>
+                            <li><strong>Internet installation :</strong> 1,000-3,000 THB</li>
+                            <li><strong>Assurance logement :</strong> 2,000-5,000 THB/an</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conseils pratiques -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-lightbulb text-warning me-2"></i>Conseils d'experts</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-check text-success me-2"></i>À faire absolument</h5>
+                                <ul>
+                                    <li><strong>Tester tout :</strong> AC, eau chaude, wifi avant signature</li>
+                                    <li><strong>Photos détaillées :</strong> État initial pour dépôt</li>
+                                    <li><strong>Négocier inclusions :</strong> Internet, ménage, maintenance</li>
+                                    <li><strong>Vérifier building :</strong> Ascenseurs, sécurité, piscine</li>
+                                    <li><strong>Clause de résiliation :</strong> Préavis 30-60 jours</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-times text-danger me-2"></i>Pièges à éviter</h5>
+                                <ul>
+                                    <li><strong>Paiement cash total :</strong> Toujours demander reçu</li>
+                                    <li><strong>Contrat thaï uniquement :</strong> Exiger version anglaise</li>
+                                    <li><strong>Dépôt excessif :</strong> Maximum 2 mois standard</li>
+                                    <li><strong>Frais cachés :</strong> Maintenance, parking, utilities</li>
+                                    <li><strong>Pas d'inspection :</strong> État des lieux obligatoire</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h6><i class="fas fa-info-circle me-2"></i>Spécial 2025 : Marché post-COVID</h6>
+                            <p class="mb-2">
+                                <strong>Opportunités actuelles :</strong> Beaucoup de logements vides, négociation possible
+                            </p>
+                            <ul class="mb-0">
+                                <li><strong>Réduction loyers :</strong> 10-20% possible sur demande</li>
+                                <li><strong>Flexibility :</strong> Contrats plus courts acceptés</li>
+                                <li><strong>Inclusions bonus :</strong> Internet, ménage, utilities</li>
+                                <li><strong>Éviter :</strong> Buildings vides (sécurité, maintenance)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="py-5">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-temple me-3"></i>Culture & Intégration
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Comprendre et s'adapter à la culture thaïe : codes sociaux, langue et art de vivre
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Codes culturels fondamentaux -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-heart text-danger me-2"></i>Codes culturels essentiels</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-pray text-warning me-2"></i>Concepts spirituels</h5>
+                                <div class="mb-3">
+                                    <strong>Sanuk (สนุก) - Le plaisir de vivre</strong>
+                                    <p class="small">La vie doit être agréable et amusante. Les Thaïs évitent les conflits et privilégient l'harmonie.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Sabai (สบาย) - Le bien-être</strong>
+                                    <p class="small">État de relaxation et de contentement. "Sabai sabai" = tout va bien, pas de stress.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Kreng Jai (เกรงใจ) - La considération</strong>
+                                    <p class="small">Éviter de déranger autrui, être attentionné et respectueux des autres.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-users text-primary me-2"></i>Relations sociales</h5>
+                                <div class="mb-3">
+                                    <strong>Face-saving (รักษาหน้า)</strong>
+                                    <p class="small">Préserver la dignité d'autrui. Éviter les critiques publiques ou l'embarras.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Mai Pen Rai (ไม่เป็นไร)</strong>
+                                    <p class="small">"Ce n'est pas grave" - Philosophie du lâcher-prise et de l'acceptation.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Système hiérarchique</strong>
+                                    <p class="small">Respect de l'âge, du statut social et de l'autorité. Relations Phi (grand frère/sœur) - Nong (petit frère/sœur).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étiquette et bonnes manières -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-handshake me-2"></i>Étiquette et savoir-vivre
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Salutations -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-pray"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Wai & Salutations</h4>
+                                <span class="premium-badge">Essentiel</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-hands me-1"></i>Le Wai traditionnel</h6>
+                            <ul class="small">
+                                <li>Paumes jointes devant la poitrine</li>
+                                <li>Léger hochement de tête</li>
+                                <li>Plus haut = plus de respect</li>
+                                <li>Niveau nez : personnes âgées/supérieurs</li>
+                                <li>Niveau poitrine : égaux</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-users me-1"></i>Quand utiliser</h6>
+                            <ul class="small">
+                                <li><strong>Toujours :</strong> Temples, moines, personnes âgées</li>
+                                <li><strong>Business :</strong> Première rencontre, clients importants</li>
+                                <li><strong>Éviter :</strong> Enfants, vendeurs, serveurs</li>
+                                <li><strong>Alternative :</strong> Sourire et hochement suffisent</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-1"></i>
+                            <strong>Conseil :</strong> Observez et imitez le niveau de formalité des Thaïs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temples et religion -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-om"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Temples & Spiritualité</h4>
+                                <span class="premium-badge">Respect requis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-tshirt me-1"></i>Code vestimentaire</h6>
+                            <ul class="small">
+                                <li>Épaules et genoux couverts</li>
+                                <li>Pas de shorts, débardeurs, mini-jupes</li>
+                                <li>Retirer chaussures avant d'entrer</li>
+                                <li>Couleurs sombres préférées</li>
+                                <li>Chapeau retiré à l'intérieur</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-walking me-1"></i>Comportement</h6>
+                            <ul class="small">
+                                <li>Parler à voix basse</li>
+                                <li>Pas de photos flash de Bouddha</li>
+                                <li>Ne jamais tourner le dos à Bouddha</li>
+                                <li>Femmes : ne pas toucher les moines</li>
+                                <li>S'asseoir jambes repliées sur le côté</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-1"></i>
+                            <strong>Important :</strong> 95% bouddhistes - respect de la religion obligatoire
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communication -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Communication</h4>
+                                <span class="premium-badge">Indirecte</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-smile me-1"></i>Style indirect</h6>
+                            <ul class="small">
+                                <li>"Maybe" souvent = "Non" poli</li>
+                                <li>Éviter "Non" direct</li>
+                                <li>Sourire même en cas de problème</li>
+                                <li>Silence = réflexion, pas accord</li>
+                                <li>Poser questions ouvertes</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-volume-down me-1"></i>Ton et gestuelle</h6>
+                            <ul class="small">
+                                <li>Voix calme et posée</li>
+                                <li>Éviter gestes brusques</li>
+                                <li>Ne pas pointer du doigt</li>
+                                <li>Garder self-control en public</li>
+                                <li>Sourire = réponse universelle</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <i class="fas fa-heart me-1"></i>
+                            <strong>Clé :</strong> Patience, sourire et bienveillance ouvrent toutes les portes
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabous culturels -->
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-ban"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Tabous à éviter</h4>
+                                <span class="premium-badge">Critique</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6><i class="fas fa-crown me-1"></i>Monarchie</h6>
+                            <ul class="small">
+                                <li>Aucune critique du Roi autorisée</li>
+                                <li>Se lever pour hymne national</li>
+                                <li>Respecter images royales</li>
+                                <li>Loi de lèse-majesté très stricte</li>
+                                <li>Éviter tout commentaire politique</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-head-side-brain me-1"></i>Tête et pieds</h6>
+                            <ul class="small">
+                                <li>Ne jamais toucher la tête d'autrui</li>
+                                <li>Tête = partie la plus sacrée</li>
+                                <li>Pieds = partie la plus basse</li>
+                                <li>Ne pas pointer pieds vers Bouddha</li>
+                                <li>Éviter enjamber les gens</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <i class="fas fa-gavel me-1"></i>
+                            <strong>Légal :</strong> Lèse-majesté = prison ferme, pas de blague possible
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apprentissage du thaï -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-language me-2"></i>Apprentissage du thaï
+                    </h3>
+                    
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-baby text-primary me-2"></i>
+                                <h5 class="mb-0">1. Débutant - Survie</h5>
+                                <span class="badge bg-primary ms-auto">0-3 mois</span>
+                            </div>
+                            <p>Expressions essentielles pour le quotidien et la politesse.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Phrases indispensables</h6>
+                                    <ul class="small">
+                                        <li><strong>สวัสดี (Sa-wat-dee)</strong> : Bonjour/Salut</li>
+                                        <li><strong>ขอบคุณ (Kob-khun)</strong> : Merci</li>
+                                        <li><strong>ไม่เป็นไร (Mai-pen-rai)</strong> : Ce n'est rien</li>
+                                        <li><strong>ขอโทษ (Kor-tot)</strong> : Excusez-moi</li>
+                                        <li><strong>ไม่เข้าใจ (Mai-kao-jai)</strong> : Je ne comprends pas</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Survival kit</h6>
+                                    <ul class="small">
+                                        <li>Chiffres 1-10</li>
+                                        <li>Directions de base</li>
+                                        <li>Nourriture courante</li>
+                                        <li>Transport (taxi, BTS)</li>
+                                        <li>Urgences médicales</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-user text-success me-2"></i>
+                                <h5 class="mb-0">2. Intermédiaire - Conversation</h5>
+                                <span class="badge bg-success ms-auto">3-12 mois</span>
+                            </div>
+                            <p>Développer capacité de conversation et compréhension culturelle.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Compétences ciblées</h6>
+                                    <ul class="small">
+                                        <li>Conversations sociales basiques</li>
+                                        <li>Négociation marchés/prix</li>
+                                        <li>Explications problèmes quotidiens</li>
+                                        <li>Relations amicales superficielles</li>
+                                        <li>Compréhension médias simples</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Grammaire essentielle</h6>
+                                    <ul class="small">
+                                        <li>Tons (5 tons distincts)</li>
+                                        <li>Particules de politesse (ครับ/ค่ะ)</li>
+                                        <li>Classificateurs (ลักษณนาม)</li>
+                                        <li>Structure temporelle</li>
+                                        <li>Questions et négations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-graduation-cap text-warning me-2"></i>
+                                <h5 class="mb-0">3. Avancé - Intégration</h5>
+                                <span class="badge bg-warning ms-auto">1-3 ans</span>
+                            </div>
+                            <p>Maîtrise permettant intégration professionnelle et sociale complète.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Objectifs avancés</h6>
+                                    <ul class="small">
+                                        <li>Meetings professionnels en thaï</li>
+                                        <li>Lecture journaux/contrats</li>
+                                        <li>Humour et subtilités culturelles</li>
+                                        <li>Dialectes régionaux (Isaan, Sud)</li>
+                                        <li>Écriture courante (pas forcément lecture)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Ressources recommandées</h6>
+                                    <ul class="small">
+                                        <li><strong>AUA Language Center</strong> : Méthode naturelle</li>
+                                        <li><strong>Chula/Thammasat</strong> : Cours universitaires</li>
+                                        <li><strong>Private tutor</strong> : 300-800 THB/heure</li>
+                                        <li><strong>Apps :</strong> Ling, Mondly Thai</li>
+                                        <li><strong>Immersion :</strong> Famille thaïe, travail local</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Festivals et traditions -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-calendar-alt me-2"></i>Festivals et traditions annuels
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-water text-info me-2"></i>Songkran (13-15 Avril)</h5>
+                        <p class="small text-muted mb-2">Nouvel An traditionnel thaï</p>
+                        
+                        <div class="mb-3">
+                            <h6>Célébrations</h6>
+                            <ul class="small">
+                                <li>Bataille d'eau géante dans les rues</li>
+                                <li>Cérémonie Rod Nam aux aînés</li>
+                                <li>Nettoyage des statues de Bouddha</li>
+                                <li>Retour en famille dans les provinces</li>
+                                <li>Nourriture traditionnelle partagée</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Conseils pratiques</h6>
+                            <ul class="small">
+                                <li>Vêtements de rechange indispensables</li>
+                                <li>Protection téléphone/documents</li>
+                                <li>Éviter véhicules si possible</li>
+                                <li>Participer respectueusement</li>
+                                <li>Bangkok = chaos total mais amusant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-moon text-warning me-2"></i>Loy Krathong (Novembre)</h5>
+                        <p class="small text-muted mb-2">Festival des lumières</p>
+                        
+                        <div class="mb-3">
+                            <h6>Tradition</h6>
+                            <ul class="small">
+                                <li>Lâcher krathong (bateau décoré) sur l'eau</li>
+                                <li>Faire un vœu et demander pardon</li>
+                                <li>Lanterne volante (khom loi)</li>
+                                <li>Pleine lune du 12e mois lunaire</li>
+                                <li>Couples romantiques main dans la main</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Où célébrer</h6>
+                            <ul class="small">
+                                <li><strong>Chiang Mai :</strong> Yi Peng + lanternes</li>
+                                <li><strong>Sukhothai :</strong> Spectacle historique</li>
+                                <li><strong>Bangkok :</strong> Chao Phraya River</li>
+                                <li><strong>Ayutthaya :</strong> Cadre authentique</li>
+                                <li>Acheter krathong sur place</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-birthday-cake text-success me-2"></i>Anniversaire du Roi (28 Juillet)</h5>
+                        <p class="small text-muted mb-2">Fête nationale majeure</p>
+                        
+                        <div class="mb-3">
+                            <h6>Observances</h6>
+                            <ul class="small">
+                                <li>Jour férié national</li>
+                                <li>Décorations jaunes partout</li>
+                                <li>Cérémonie royale télévisée</li>
+                                <li>Alcool interdit de vente</li>
+                                <li>Respect et recueillement</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-1"></i>
+                            <strong>Note :</strong> Porter du jaune montre le respect à la monarchie
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-praying-hands text-danger me-2"></i>Makha Bucha (Février/Mars)</h5>
+                        <p class="small text-muted mb-2">Jour saint bouddhiste</p>
+                        
+                        <div class="mb-3">
+                            <h6>Rituels</h6>
+                            <ul class="small">
+                                <li>Procession aux bougies (Wian Tian)</li>
+                                <li>Méditation et prières</li>
+                                <li>Offrandes aux temples</li>
+                                <li>Jeûne et purification</li>
+                                <li>Alcool interdit</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-wine-bottle me-1"></i>
+                            <strong>Important :</strong> Vente alcool interdite (amendes lourdes)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuisine et étiquette alimentaire -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-utensils text-success me-2"></i>Cuisine et étiquette alimentaire</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-pepper-hot text-danger me-2"></i>Bases culinaires</h5>
+                                <div class="mb-3">
+                                    <strong>5 saveurs fondamentales</strong>
+                                    <ul class="small">
+                                        <li><strong>เผ็ด (Phet)</strong> : Épicé (piments)</li>
+                                        <li><strong>เปรีํยว (Prieo)</strong> : Aigre (tamarin, citron vert)</li>
+                                        <li><strong>หวาน (Waan)</strong> : Sucré (sucre de palme)</li>
+                                        <li><strong>เค็ม (Kem)</strong> : Salé (sauce poisson)</li>
+                                        <li><strong>ขม (Kom)</strong> : Amer (herbes, légumes)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ingrédients essentiels</strong>
+                                    <ul class="small">
+                                        <li>Nam pla (sauce poisson) = sel</li>
+                                        <li>Prik (piments) = épices</li>
+                                        <li>Manao (citron vert) = acidité</li>
+                                        <li>Nam tan (sucre) = douceur</li>
+                                        <li>Herbs : basilic, citronnelle, galanga</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-hands text-primary me-2"></i>Étiquette à table</h5>
+                                <div class="mb-3">
+                                    <strong>Partage des plats</strong>
+                                    <ul class="small">
+                                        <li>Commande collective, partage</li>
+                                        <li>Riz individuel + plats communs</li>
+                                        <li>Prendre petites portions</li>
+                                        <li>Attendre que tous soient servis</li>
+                                        <li>Laisser dernier morceau</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <strong>Ustensiles</strong>
+                                    <ul class="small">
+                                        <li>Cuillère main droite, fourchette gauche</li>
+                                        <li>Fourchette = pousser vers cuillère</li>
+                                        <li>Baguettes pour nouilles uniquement</li>
+                                        <li>Jamais manger avec fourchette</li>
+                                        <li>Serviettes humides fournies</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-success mt-4">
+                            <h6><i class="fas fa-lightbulb me-2"></i>Conseils intégration alimentaire</h6>
+                            <ul class="mb-0">
+                                <li><strong>Commencer doux :</strong> "Mai phet" (pas épicé) au début</li>
+                                <li><strong>Street food :</strong> Excellent moyen de socialiser avec locaux</li>
+                                <li><strong>Invitations :</strong> Toujours accepter, grande marque de respect</li>
+                                <li><strong>Payer l'addition :</strong> Aîné ou personne qui invite paye</li>
+                                <li><strong>Compliments :</strong> "Aroi mak" (très délicieux) fait toujours plaisir</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conseils d'intégration -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-4" data-aos="fade-up">
+                        <h3 class="mb-4"><i class="fas fa-users text-warning me-2"></i>Stratégies d'intégration</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-heart text-success me-2"></i>S'intégrer naturellement</h5>
+                                <ul>
+                                    <li><strong>Apprendre basics thaï :</strong> Effort très apprécié des locaux</li>
+                                    <li><strong>Participer festivals :</strong> Songkran, Loy Krathong avec collègues</li>
+                                    <li><strong>Fréquenter temples :</strong> Méditation, cours de dhamma</li>
+                                    <li><strong>Sport communautaire :</strong> Muay Thai, football, volleyball</li>
+                                    <li><strong>Volontariat :</strong> Teaching English, aide communautaire</li>
+                                    <li><strong>Quartier local :</strong> Saluer voisins, marchés de proximité</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-times text-danger me-2"></i>Éviter ghettos expats</h5>
+                                <ul>
+                                    <li><strong>Sortir zone comfort :</strong> Éviter que quartiers occidentaux</li>
+                                    <li><strong>Media locaux :</strong> Thai PBS, journaux en anglais</li>
+                                    <li><strong>Collègues thaïs :</strong> Invitations déjeuner, after-work</li>
+                                    <li><strong>Transport public :</strong> BTS/MRT vs taxi constant</li>
+                                    <li><strong>Marchés locaux :</strong> Chatuchak, Saphan Phut vs malls</li>
+                                    <li><strong>Apps locales :</strong> LINE vs WhatsApp, Grab vs Uber</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h6><i class="fas fa-clock me-2"></i>Timeline d'adaptation culturelle</h6>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <strong>Mois 1-3 : Honeymoon</strong>
+                                    <p class="small">Tout est nouveau et excitant. Période d'émerveillement et découverte.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>Mois 4-12 : Culture Shock</strong>
+                                    <p class="small">Frustrations, différences culturelles marquées. Phase normale et transitoire.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>Année 2+ : Intégration</strong>
+                                    <p class="small">Adaptation réussie, compréhension culturelle, sentiments de "chez soi".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="py-5 bg-light">
+        <div class="section-header text-center">
+            <div class="container">
+                <h2 data-aos="fade-up">
+                    <i class="fas fa-star me-3"></i>Premium Experience
+                </h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Success stories, conseils d'experts et ressources exclusives pour une expatriation d'excellence
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <!-- Success Stories -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-trophy me-2"></i>Success Stories Inspirantes
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Success Story 1 - Tech Entrepreneur -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <div class="text-center mb-3">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Alexandre M.</h4>
+                            <p class="text-muted small">Entrepreneur Tech → Startup Exit</p>
+                            <span class="premium-badge">2019-2024</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-map-marker-alt text-primary me-1"></i>Parcours</h6>
+                            <ul class="small">
+                                <li><strong>2019 :</strong> Arrivée Bangkok, visa Élite</li>
+                                <li><strong>2020 :</strong> Lancement fintech (payments)</li>
+                                <li><strong>2021 :</strong> Levée seed 2M$ avec VCs locaux</li>
+                                <li><strong>2023 :</strong> Série A 15M$ (Grab, SCB)</li>
+                                <li><strong>2024 :</strong> Exit 85M$ à Sea Limited</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-lightbulb text-warning me-1"></i>Facteurs clés succès</h6>
+                            <ul class="small">
+                                <li>Immersion totale : thaï B2 en 18 mois</li>
+                                <li>Réseau local : 60% équipe thaïe</li>
+                                <li>Marché timing : digital payments boom</li>
+                                <li>Partenariats bancaires précoces</li>
+                                <li>Compréhension culturelle clients</li>
+                            </ul>
+                        </div>
+
+                        <blockquote class="border-start border-primary ps-3 fst-italic small">
+                            "La Thaïlande offre un écosystème startup unique en ASEAN. 
+                            La clé : investir dans les relations locales avant tout."
+                        </blockquote>
+
+                        <div class="alert alert-success mt-3">
+                            <strong>Leçon :</strong> L'intégration culturelle = avantage concurrentiel business
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 2 - Executive Relocation -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center mb-3">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Sarah L.</h4>
+                            <p class="text-muted small">CFO Multinational → Regional Director APAC</p>
+                            <span class="premium-badge">2020-Present</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-chart-line text-success me-1"></i>Évolution carrière</h6>
+                            <ul class="small">
+                                <li><strong>2020 :</strong> CFO Thaïlande (package 180K THB)</li>
+                                <li><strong>2021 :</strong> Extension Indochine +Vietnam</li>
+                                <li><strong>2022 :</strong> Promotion Regional Director</li>
+                                <li><strong>2023 :</strong> Package 420K THB + équity</li>
+                                <li><strong>2024 :</strong> Board member filiale Asia</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-home text-info me-1"></i>Lifestyle premium</h6>
+                            <ul class="small">
+                                <li>Penthouse Sathorn (80K THB/mois)</li>
+                                <li>École internationale enfants</li>
+                                <li>Club premium (Polo, British Club)</li>
+                                <li>Voyages régionaux constant (15 pays)</li>
+                                <li>Réseau executive expatrié solide</li>
+                            </ul>
+                        </div>
+
+                        <blockquote class="border-start border-success ps-3 fst-italic small">
+                            "Bangkok = hub parfait pour diriger l'Asie. Infrastructure, 
+                            timezone, qualité de vie. Mes enfants sont trilingues."
+                        </blockquote>
+
+                        <div class="alert alert-info mt-3">
+                            <strong>Leçon :</strong> Thaïlande = tremplin vers leadership régional ASEAN
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 3 - Digital Nomad to Resident -->
+                <div class="col-lg-4 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-center mb-3">
+                            <div class="feature-icon mx-auto mb-3">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h4>Marcus K.</h4>
+                            <p class="text-muted small">Freelance → Agency Owner</p>
+                            <span class="premium-badge">2018-Present</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-rocket text-warning me-1"></i>Croissance business</h6>
+                            <ul class="small">
+                                <li><strong>2018 :</strong> Arrivée Chiang Mai (freelance)</li>
+                                <li><strong>2019 :</strong> Création agence digitale</li>
+                                <li><strong>2021 :</strong> 12 employés (6 thaïs, 6 remote)</li>
+                                <li><strong>2023 :</strong> CA 800K$/an, clients Fortune 500</li>
+                                <li><strong>2024 :</strong> Expansion Singapour + Malaisie</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6><i class="fas fa-heart text-danger me-1"></i>Intégration totale</h6>
+                            <ul class="small">
+                                <li>Mariage avec Thaïe (2022)</li>
+                                <li>Achat terrain/villa Chiang Rai</li>
+                                <li>Thaï fluent, permis conduire local</li>
+                                <li>Investissements immobilier (4 condos)</li>
+                                <li>Membre Rotary Club, coaching jeunes</li>
+                            </ul>
+                        </div>
+
+                        <blockquote class="border-start border-warning ps-3 fst-italic small">
+                            "De digital nomad en transit à résident permanent. 
+                            La Thaïlande m'a donné famille, business et vraie maison."
+                        </blockquote>
+
+                        <div class="alert alert-warning mt-3">
+                            <strong>Leçon :</strong> Nomadisme → opportunité d'enracinement et prospérité
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Expertes -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-question-circle me-2"></i>FAQ Expertes - Niveau Avancé
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="expertFAQ" data-aos="fade-up">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="fas fa-building me-2"></i>
+                                    Comment optimiser ma structure juridique pour minimiser l'imposition en Thaïlande ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#expertFAQ">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-chart-pie text-primary me-1"></i>Stratégies d'optimisation fiscale</h6>
+                                            <ul class="small">
+                                                <li><strong>Résidence fiscale :</strong> <180 jours/an = non-résident</li>
+                                                <li><strong>Revenus étrangers :</strong> Pas d'imposition si non rapatriés l'année même</li>
+                                                <li><strong>Holding Singapour :</strong> Dividendes 0% si > 25% participation</li>
+                                                <li><strong>BOI incentives :</strong> 3-8 ans exemption impôt sociétés</li>
+                                                <li><strong>Treaty network :</strong> 61 conventions double imposition</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-calculator text-success me-1"></i>Calculs pratiques</h6>
+                                            <ul class="small">
+                                                <li><strong>Personal Income Tax :</strong> 5-35% progressif</li>
+                                                <li><strong>Corporate Tax :</strong> 20% standard</li>
+                                                <li><strong>Withholding Tax :</strong> 10% dividendes, 15% royalties</li>
+                                                <li><strong>VAT :</strong> 7% (exemptions services export)</li>
+                                            </ul>
+                                            <div class="alert alert-warning">
+                                                <small><strong>Conseil :</strong> Consultation fiscal attorney obligatoire pour structures >2M THB/an</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="fas fa-home me-2"></i>
+                                    Quelles sont les meilleures stratégies d'investissement immobilier pour expatriés ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#expertFAQ">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-building text-info me-1"></i>Options légales expatriés</h6>
+                                            <ul class="small">
+                                                <li><strong>Condo ownership :</strong> 49% foreign quota par building</li>
+                                                <li><strong>Leasehold :</strong> 30 ans renouvelable (maisons/terrains)</li>
+                                                <li><strong>Company structure :</strong> 51% thaï + 49% foreign (complexe)</li>
+                                                <li><strong>BOI visa :</strong> 1 rai max ownership directe</li>
+                                                <li><strong>Usufruct :</strong> 30 ans droits d'usage</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-chart-line text-success me-1"></i>ROI et stratégies</h6>
+                                            <ul class="small">
+                                                <li><strong>Bangkok condos :</strong> 4-6% yield, appréciation 3-5%/an</li>
+                                                <li><strong>Phuket villas :</strong> 6-8% yield seasonal, 5-7% appréciation</li>
+                                                <li><strong>Off-plan :</strong> 15-20% discount, risque développeur</li>
+                                                <li><strong>Resale market :</strong> Négociation 10-15% possible</li>
+                                            </ul>
+                                            <div class="alert alert-info">
+                                                <small><strong>Hotspot 2025 :</strong> EEC zones (Rayong, Chonburi) - infrastructure boom</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="fas fa-graduation-cap me-2"></i>
+                                    Comment optimiser l'éducation de mes enfants dans le système international ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#expertFAQ">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-school text-warning me-1"></i>Top écoles internationales</h6>
+                                            <ul class="small">
+                                                <li><strong>ISB (International School Bangkok) :</strong> 500K-800K THB/an</li>
+                                                <li><strong>NIST :</strong> 450K-650K THB/an, IB program</li>
+                                                <li><strong>Shrewsbury :</strong> 600K-900K THB/an, British curriculum</li>
+                                                <li><strong>Bangkok Prep :</strong> 400K-600K THB/an, UK focused</li>
+                                                <li><strong>Ruamrudee :</strong> 300K-500K THB/an, American system</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-language text-primary me-1"></i>Stratégies multilinguisme</h6>
+                                            <ul class="small">
+                                                <li><strong>Trilinguisme :</strong> Anglais + Français/Allemand + Thaï</li>
+                                                <li><strong>Weekend schools :</strong> Alliance Française, Goethe</li>
+                                                <li><strong>Tuteurs privés :</strong> 800-1500 THB/heure langue maternelle</li>
+                                                <li><strong>Summer programs :</strong> Échanges Europe/US</li>
+                                            </ul>
+                                            <div class="alert alert-success">
+                                                <small><strong>Avantage unique :</strong> Enfants TCK (Third Culture Kids) = profil international prisé</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <i class="fas fa-rocket me-2"></i>
+                                    Comment naviguer l'écosystème startup et lever des fonds en Thaïlande ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#expertFAQ">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-money-bill text-success me-1"></i>Écosystème funding</h6>
+                                            <ul class="small">
+                                                <li><strong>Seed stage :</strong> 500TukTuks, Gobi Partners (1-5M THB)</li>
+                                                <li><strong>Series A :</strong> SCB 10X, CP Group (20-100M THB)</li>
+                                                <li><strong>Growth :</strong> Grab Ventures, Sea Capital (100M+ THB)</li>
+                                                <li><strong>Government :</strong> DEPA grants, BOI incentives</li>
+                                                <li><strong>Corporate VCs :</strong> PTT, True, Central Group</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-network-wired text-info me-1"></i>Networking clé</h6>
+                                            <ul class="small">
+                                                <li><strong>TechSauce Summit :</strong> Principal événement tech</li>
+                                                <li><strong>Startup Thailand :</strong> Community officielle</li>
+                                                <li><strong>RISE Conf :</strong> Networking Asia-wide</li>
+                                                <li><strong>Accelerators :</strong> Techstars Bangkok, 500 Startups</li>
+                                            </ul>
+                                            <div class="alert alert-info">
+                                                <small><strong>Trend 2025 :</strong> Fintech, Healthtech, Agritech = secteurs chauds</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    <i class="fas fa-umbrella-beach me-2"></i>
+                                    Quelles stratégies pour optimiser ma retraite anticipée en Thaïlande ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#expertFAQ">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-piggy-bank text-warning me-1"></i>Stratégies financières</h6>
+                                            <ul class="small">
+                                                <li><strong>FIRE approach :</strong> 800K THB capital = 32K THB/mois (4% rule)</li>
+                                                <li><strong>Property income :</strong> 3-4 condos location = 60-80K THB/mois</li>
+                                                <li><strong>Offshore investing :</strong> Singapore REITs, dividend stocks</li>
+                                                <li><strong>Business passive :</strong> Online business, royalties</li>
+                                                <li><strong>Healthcare savings :</strong> 200-300K THB/an budget</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-heartbeat text-danger me-1"></i>Lifestyle optimisé</h6>
+                                            <ul class="small">
+                                                <li><strong>Medical tourism :</strong> Check-ups Bangkok Hospital</li>
+                                                <li><strong>Wellness focus :</strong> Spa, massage, méditation</li>
+                                                <li><strong>Climate strategy :</strong> Cool season North, Hot season South</li>
+                                                <li><strong>Community expat :</strong> Hua Hin, Chiang Mai retiree hubs</li>
+                                            </ul>
+                                            <div class="alert alert-success">
+                                                <small><strong>Quality of life :</strong> Budget occidental Europe = lifestyle premium Asia</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ressources exclusives -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4" data-aos="fade-up">
+                        <i class="fas fa-gem me-2"></i>Ressources Exclusives Premium
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-file-download text-primary me-2"></i>Templates & Outils</h5>
+                        
+                        <div class="mb-3">
+                            <h6>Documents juridiques</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-download me-1"></i>Modèle contrat de travail bilingue</li>
+                                <li><i class="fas fa-download me-1"></i>Checklist visa extension complète</li>
+                                <li><i class="fas fa-download me-1"></i>Template budget expatrié (Excel)</li>
+                                <li><i class="fas fa-download me-1"></i>Guide négociation salaire secteur par secteur</li>
+                                <li><i class="fas fa-download me-1"></i>Modèle bail logement protégé expatrié</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Calculateurs avancés</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-calculator me-1"></i>Simulateur fiscal Thaïlande/France</li>
+                                <li><i class="fas fa-calculator me-1"></i>ROI immobilier par zone géographique</li>
+                                <li><i class="fas fa-calculator me-1"></i>Coût scolarité internationale comparative</li>
+                                <li><i class="fas fa-calculator me-1"></i>Budget retraite anticipée FIRE</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Accès VIP :</strong> Mise à jour légale trimestrielle + hotline juridique
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-users text-success me-2"></i>Réseau & Contacts</h5>
+                        
+                        <div class="mb-3">
+                            <h6>Experts certifiés</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-user-tie me-1"></i>Fiscalistes internationaux (Big 4)</li>
+                                <li><i class="fas fa-user-tie me-1"></i>Avocats immigration business</li>
+                                <li><i class="fas fa-user-tie me-1"></i>Conseillers financiers expatriés</li>
+                                <li><i class="fas fa-user-tie me-1"></i>Headhunters executive niveau C</li>
+                                <li><i class="fas fa-user-tie me-1"></i>Agents immobilier haut de gamme</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Community premium</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-crown me-1"></i>WhatsApp groups sectoriels (Tech, Finance, F&B)</li>
+                                <li><i class="fas fa-crown me-1"></i>Événements networking mensuels Bangkok</li>
+                                <li><i class="fas fa-crown me-1"></i>Masterclasses experts (investissement, tax)</li>
+                                <li><i class="fas fa-crown me-1"></i>Mentoring 1-on-1 success stories</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <strong>Exclusif :</strong> Accès deal flow startup + opportunités investment
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up">
+                        <h5><i class="fas fa-concierge-bell text-warning me-2"></i>Services Concierge</h5>
+                        
+                        <div class="mb-3">
+                            <h6>Installation clé en main</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-plane me-1"></i>Airport pickup VIP service</li>
+                                <li><i class="fas fa-home me-1"></i>House hunting personnalisé (3 jours)</li>
+                                <li><i class="fas fa-university me-1"></i>School selection + inscriptions enfants</li>
+                                <li><i class="fas fa-car me-1"></i>Vehicle import + registration complète</li>
+                                <li><i class="fas fa-heartbeat me-1"></i>Healthcare setup + médecin family</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Services ongoing</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-file-signature me-1"></i>Visa renewals automated</li>
+                                <li><i class="fas fa-language me-1"></i>Cours thaï business personnalisés</li>
+                                <li><i class="fas fa-calendar me-1"></i>90-day reporting service</li>
+                                <li><i class="fas fa-phone me-1"></i>24/7 emergency hotline</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <strong>Premium :</strong> Personal assistant Bangkok pour tous démarches
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                        <h5><i class="fas fa-chart-line text-info me-2"></i>Business Intelligence</h5>
+                        
+                        <div class="mb-3">
+                            <h6>Market insights</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-chart-bar me-1"></i>Salary surveys sectoriels trimestriels</li>
+                                <li><i class="fas fa-chart-bar me-1"></i>Real estate trends + forecasts</li>
+                                <li><i class="fas fa-chart-bar me-1"></i>Startup ecosystem reports</li>
+                                <li><i class="fas fa-chart-bar me-1"></i>Regulatory changes impact analysis</li>
+                                <li><i class="fas fa-chart-bar me-1"></i>ASEAN expansion opportunities</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Investment opportunities</h6>
+                            <ul class="small">
+                                <li><i class="fas fa-gem me-1"></i>Pre-launch condo projects (developer direct)</li>
+                                <li><i class="fas fa-gem me-1"></i>Private equity deals sourcing</li>
+                                <li><i class="fas fa-gem me-1"></i>Angel investment opportunities</li>
+                                <li><i class="fas fa-gem me-1"></i>Joint ventures partnerships</li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <strong>ROI Focus :</strong> Deals exclusifs membres + due diligence support
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action premium -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="content-card p-5 text-center" data-aos="fade-up">
+                        <h3 class="mb-4">
+                            <i class="fas fa-crown text-warning me-3"></i>
+                            Prêt pour l'Excellence en Thaïlande ?
+                        </h3>
+                        
+                        <p class="lead mb-4">
+                            Rejoignez notre communauté d'expatriés premium et transformez votre projet 
+                            thaï en succès garanti avec nos ressources exclusives et notre réseau d'experts.
+                        </p>
+
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-4 mb-3">
+                                <div class="stat-number">250+</div>
+                                <p>Expatriés accompagnés</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="stat-number">95%</div>
+                                <p>Taux de réussite</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="stat-number">24/7</div>
+                                <p>Support expert</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <span class="premium-badge fs-5 px-4 py-2">
+                                <i class="fas fa-star me-2"></i>Accès Premium - 2,900 THB/mois
+                            </span>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button class="btn btn-primary btn-lg px-5">
+                                <i class="fas fa-rocket me-2"></i>Commencer Premium
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg px-4">
+                                <i class="fas fa-calendar me-2"></i>Consultation Gratuite
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-om me-2"></i>Guide Expatriation Thaïlande</h5>
+                    <p>Votre référence complète pour une expatriation réussie au Pays du Sourire. 
+                    Informations à jour, conseils pratiques et retours d'expérience authentiques.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Sections</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#visas" class="text-white-50">Visas & Immigration</a></li>
+                        <li><a href="#budget" class="text-white-50">Budget & Coût de la vie</a></li>
+                        <li><a href="#emploi" class="text-white-50">Emploi & Carrière</a></li>
+                        <li><a href="#logement" class="text-white-50">Logement</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Ressources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#culture" class="text-white-50">Culture Thaïe</a></li>
+                        <li><a href="#premium" class="text-white-50">Success Stories</a></li>
+                        <li><a href="#premium" class="text-white-50">FAQ Expertes</a></li>
+                        <li><a href="#premium" class="text-white-50">Contact Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Guide Expatriation Thaïlande. Informations à jour et vérifiées.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small>Dernière mise à jour: Août 2025</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(237, 28, 36, 0.95), rgba(46, 91, 186, 0.95))';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--thai-red), var(--thai-blue))';
+            }
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Budget Calculator
+        function calculateBudget() {
+            const city = document.getElementById('city').value;
+            const housing = document.getElementById('housing').value;
+            const food = document.getElementById('food').value;
+            const transport = document.getElementById('transport').value;
+
+            // Base costs by city (multipliers)
+            const cityMultipliers = {
+                bangkok: 1.0,
+                phuket: 0.9,
+                chiangmai: 0.6,
+                samui: 1.1,
+                huahin: 0.7
+            };
+
+            // Housing costs (THB)
+            const housingCosts = {
+                backpacker: 12000,
+                studio: 20000,
+                condo1br: 32000,
+                condo2br: 50000,
+                luxury: 80000
+            };
+
+            // Food costs (THB)
+            const foodCosts = {
+                local: 6500,
+                mixed: 15000,
+                western: 25000
+            };
+
+            // Transport costs (THB)
+            const transportCosts = {
+                public: 3000,
+                mixed: 6500,
+                private: 15000
+            };
+
+            // Calculate costs
+            const cityMultiplier = cityMultipliers[city];
+            const housingCost = housingCosts[housing] * cityMultiplier;
+            const foodCost = foodCosts[food] * cityMultiplier;
+            const transportCost = transportCosts[transport] * cityMultiplier;
+
+            // Additional costs
+            const utilities = 3000 * cityMultiplier;
+            const healthcare = 2000;
+            const leisure = 8000 * cityMultiplier;
+            const miscellaneous = 5000 * cityMultiplier;
+
+            const totalBudget = housingCost + foodCost + transportCost + utilities + healthcare + leisure + miscellaneous;
+            const totalEur = (totalBudget / 37).toFixed(0); // Approximate THB to EUR rate
+
+            // City names in French
+            const cityNames = {
+                bangkok: 'Bangkok',
+                phuket: 'Phuket',
+                chiangmai: 'Chiang Mai',
+                samui: 'Koh Samui',
+                huahin: 'Hua Hin'
+            };
+
+            // Generate result
+            const resultHTML = `
+                <div class="text-center">
+                    <h4 class="text-primary mb-3">Votre Budget pour ${cityNames[city]}</h4>
+                    <div class="stat-number text-primary">${totalBudget.toLocaleString()}</div>
+                    <p class="text-muted">THB/mois</p>
+                    <div class="price-badge">≈ ${totalEur}€/mois</div>
+                </div>
+                
+                <hr class="my-4">
+                
+                <div class="row text-center">
+                    <div class="col-6 mb-3">
+                        <h6><i class="fas fa-home text-primary me-1"></i>Logement</h6>
+                        <strong>${housingCost.toLocaleString()} THB</strong>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h6><i class="fas fa-utensils text-success me-1"></i>Alimentation</h6>
+                        <strong>${foodCost.toLocaleString()} THB</strong>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h6><i class="fas fa-bus text-info me-1"></i>Transport</h6>
+                        <strong>${transportCost.toLocaleString()} THB</strong>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h6><i class="fas fa-plus text-warning me-1"></i>Autres</h6>
+                        <strong>${(utilities + healthcare + leisure + miscellaneous).toLocaleString()} THB</strong>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-3">
+                    <small>
+                        <i class="fas fa-info-circle me-1"></i>
+                        <strong>Inclus :</strong> Utilities, santé de base, loisirs modérés, frais divers. 
+                        Prévoir +20% pour sécurité et imprévus.
+                    </small>
+                </div>
+                
+                <div class="mt-3">
+                    <h6 class="text-center">Recommandations personnalisées</h6>
+                    <ul class="small">
+                        ${totalBudget < 40000 ? '<li><strong>Budget serré :</strong> Privilégier Chiang Mai ou Hua Hin pour optimiser coûts</li>' : ''}
+                        ${totalBudget > 100000 ? '<li><strong>Budget confortable :</strong> Accès aux meilleurs quartiers et services premium</li>' : ''}
+                        ${city === 'bangkok' ? '<li><strong>Bangkok :</strong> Négocier loyers longs, utiliser BTS pass mensuel</li>' : ''}
+                        ${city === 'phuket' ? '<li><strong>Phuket :</strong> Éviter haute saison (Dec-Mar) pour économiser</li>' : ''}
+                        ${city === 'chiangmai' ? '<li><strong>Chiang Mai :</strong> Meilleur rapport qualité/prix pour digital nomads</li>' : ''}
+                    </ul>
+                </div>
+            `;
+
+            document.getElementById('budgetResult').innerHTML = resultHTML;
+        }
+    </script>
+</body>
+</html>

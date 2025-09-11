@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test I18n System</title>
+    <script src="js/i18n-system.js"></script>
+</head>
+
+<body>
+    <h1>🧪 Test Revolutionary I18n System</h1>
+
+    <div id="test-results"></div>
+
+    <button onclick="testTranslations()">Test Translations</button>
+    <button onclick="switchLanguage('en')">Switch to English</button>
+    <button onclick="switchLanguage('fr')">Switch to French</button>
+
+    <script>
+        function testTranslations() {
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '';
+
+            console.log('🧪 Testing I18n System...');
+
+            // Test basic translate method
+            const welcomeMsg = window.revolutionaryI18n.translate('zine.welcome.message1');
+            console.log('✅ Welcome message:', welcomeMsg);
+            resultsDiv.innerHTML += `<p><strong>Welcome:</strong> ${welcomeMsg}</p>`;
+
+            // Test with replacements
+            const resultMsg = window.revolutionaryI18n.translate('zine.results.comment_excellent', null, {
+                city: 'Paris',
+                score: '95'
+            });
+            console.log('✅ Result with replacements:', resultMsg);
+            resultsDiv.innerHTML += `<p><strong>Result:</strong> ${resultMsg}</p>`;
+
+            // Test tips
+            const tip = window.revolutionaryI18n.translate('zine.tip.questionnaire');
+            console.log('✅ Tip:', tip);
+            resultsDiv.innerHTML += `<p><strong>Tip:</strong> ${tip}</p>`;
+
+            // Show current language
+            const currentLang = window.revolutionaryI18n.getCurrentLanguage();
+            console.log('✅ Current language:', currentLang);
+            resultsDiv.innerHTML += `<p><strong>Current Language:</strong> ${currentLang}</p>`;
+
+            console.log('🎉 Test completed!');
+        }
+
+        function switchLanguage(lang) {
+            console.log('🌍 Switching to:', lang);
+            window.revolutionaryI18n.setLanguage(lang);
+            testTranslations();
+        }
+
+        // Auto-test on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                console.log('🚀 Auto-testing I18n...');
+                testTranslations();
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

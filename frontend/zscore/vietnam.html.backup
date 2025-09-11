@@ -4,44 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide Complet : S'installer en Australie - ZineInsight</title>
+    <title>Guide Complet : S'installer au Vietnam - ZineInsight</title>
     <meta name="description"
-        content="Guide complet pour réussir votre installation en Australie : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
-    <meta name="keywords" content="Australie, expatriation, installation, guide, logement, emploi, visa, Sydney, Melbourne, Brisbane, Perth">
+        content="Guide complet pour réussir votre installation au Vietnam : logement, emploi, visa, culture, coût de la vie et conseils pratiques.">
+    <meta name="keywords" content="Vietnam, expatriation, installation, guide, logement, emploi, visa, Hô Chi Minh-Ville, Hanoi, Da Nang">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Guide Complet : S'installer en Australie">
-    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation en Australie">
+    <meta property="og:title" content="Guide Complet : S'installer au Vietnam">
+    <meta property="og:description" content="Guide d'expertise pour réussir votre expatriation au Vietnam">
     <meta property="og:image"
-        content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+        content="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- 🍪 COOKIES GLOBAL SYSTEM -->
-    <link rel="stylesheet" href="/css/cookies-global.css">
 
     <style>
         :root {
-            --australia-blue: #00247D;
-            --australia-red: #CF142B;
-            --australia-white: #FFFFFF;
-            --australia-navy: #001F3F;
-            --warm-sand: #f8f6f0;
-            --coral-red: #FF6B35;
-            --ocean-blue: #006994;
+            --vietnam-red: #C8102E;
+            --vietnam-gold: #D4AF37;
+            --vietnam-yellow: #F7DC6F;
+            --vietnam-deep-red: #8B0000;
+            --warm-cream: #faf8f3;
+            --soft-gold: #E8D5A3;
+            --coral-accent: #CD5C5C;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, var(--warm-sand) 0%, #ffffff 100%);
+            background: linear-gradient(135deg, var(--warm-cream) 0%, #ffffff 100%);
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0, 36, 125, 0.7), rgba(207, 20, 43, 0.7)),
-                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            background: linear-gradient(rgba(200, 16, 46, 0.8), rgba(212, 175, 55, 0.7)),
+                url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -61,7 +58,7 @@
         }
 
         .section-header {
-            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
             color: white;
             padding: 3rem 0;
             margin: 4rem 0 2rem 0;
@@ -75,7 +72,8 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: var(--australia-blue);
+            background: var(--vietnam-yellow);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .content-card {
@@ -93,19 +91,19 @@
         }
 
         .premium-badge {
-            background: linear-gradient(45deg, var(--australia-blue), var(--ocean-blue));
+            background: linear-gradient(45deg, var(--vietnam-red), var(--vietnam-gold));
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 25px;
             font-weight: bold;
             display: inline-block;
             margin: 1rem 0;
-            box-shadow: 0 4px 15px rgba(0, 36, 125, 0.3);
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #f0f4ff, #e6efff);
-            border-left: 5px solid var(--australia-blue);
+            background: linear-gradient(135deg, #fff8f0, #fef7e6);
+            border-left: 5px solid var(--vietnam-red);
             padding: 1.5rem;
             margin: 1.5rem 0;
             border-radius: 0 10px 10px 0;
@@ -132,7 +130,7 @@
         }
 
         .info-tag {
-            background: var(--australia-red);
+            background: var(--vietnam-red);
             color: white;
             padding: 0.3rem 0.8rem;
             border-radius: 15px;
@@ -141,19 +139,19 @@
         }
 
         .discover-button {
-            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
             color: white;
             border: none;
             padding: 1rem 2rem;
             border-radius: 25px;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 36, 125, 0.3);
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
         }
 
         .discover-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 36, 125, 0.4);
+            box-shadow: 0 8px 25px rgba(200, 16, 46, 0.4);
             color: white;
         }
 
@@ -162,17 +160,17 @@
             margin-right: 1rem;
         }
 
-        .icon-australia {
-            color: var(--australia-blue);
+        .icon-vietnam {
+            color: var(--vietnam-red);
             font-size: 1.5rem;
         }
 
         .testimonial-card {
-            background: linear-gradient(135deg, rgba(0, 36, 125, 0.05), rgba(207, 20, 43, 0.05));
+            background: linear-gradient(135deg, rgba(200, 16, 46, 0.05), rgba(212, 175, 55, 0.05));
             border-radius: 15px;
             padding: 2rem;
             margin: 1rem 0;
-            border-left: 4px solid var(--australia-blue);
+            border-left: 4px solid var(--vietnam-red);
         }
 
         .benefit-card {
@@ -181,7 +179,7 @@
             padding: 1.5rem;
             margin: 1rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-top: 3px solid var(--australia-red);
+            border-top: 3px solid var(--vietnam-gold);
             transition: transform 0.3s ease;
         }
 
@@ -190,7 +188,7 @@
         }
 
         .stats-container {
-            background: linear-gradient(135deg, var(--australia-navy), var(--australia-blue));
+            background: linear-gradient(135deg, var(--vietnam-deep-red), var(--vietnam-red));
             color: white;
             padding: 3rem 0;
             margin: 3rem 0;
@@ -205,7 +203,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
-            color: var(--australia-white);
+            color: var(--vietnam-yellow);
         }
 
         .budget-bar {
@@ -243,14 +241,14 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: rgba(0, 132, 61, 0.3);
+            background: rgba(200, 16, 46, 0.3);
             margin: 10px 0;
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .dot.active {
-            background: var(--australia-blue);
+            background: var(--vietnam-red);
             transform: scale(1.2);
         }
 
@@ -258,21 +256,21 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
+            background: linear-gradient(135deg, var(--vietnam-red), var(--vietnam-gold));
             color: white;
             border: none;
             border-radius: 50%;
             width: 60px;
             height: 60px;
             font-size: 1.5rem;
-            box-shadow: 0 4px 20px rgba(0, 36, 125, 0.4);
+            box-shadow: 0 4px 20px rgba(200, 16, 46, 0.4);
             transition: all 0.3s ease;
             z-index: 998;
         }
 
         .floating-action:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 25px rgba(0, 36, 125, 0.6);
+            box-shadow: 0 6px 25px rgba(200, 16, 46, 0.6);
         }
 
         @media (max-width: 768px) {
@@ -295,7 +293,7 @@
     <nav class="navbar navbar-expand-lg nav-bar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">
-                <span class="flag-emoji">🇦🇺</span> ZineInsight Australie
+                <span class="flag-emoji">🇻🇳</span> ZineInsight Vietnam
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -354,16 +352,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <div class="flag-emoji mb-4">🇦🇺</div>
-                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie en Australie</h1>
-                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation en Australie. 
-                    Des plages dorées aux métropoles cosmopolites, l'Australie vous offre un mode de vie unique.</p>
+                    <div class="flag-emoji mb-4">🇻🇳</div>
+                    <h1 class="display-4 fw-bold mb-4">Votre Nouvelle Vie au Vietnam</h1>
+                    <p class="lead mb-5">Découvrez le guide complet pour réussir votre installation au Vietnam. 
+                    Entre tradition millénaire et modernité dynamique, le Vietnam offre une expérience d'expatriation unique en Asie.</p>
                     <div class="premium-badge mb-4">
                         <i class="fas fa-star me-2"></i>Guide Premium Complet
                     </div>
                     <br>
                     <button class="discover-button btn-lg" onclick="document.getElementById('overview').scrollIntoView()">
-                        <i class="fas fa-compass me-2"></i>Découvrir l'Australie
+                        <i class="fas fa-compass me-2"></i>Découvrir le Vietnam
                     </button>
                 </div>
             </div>
@@ -375,37 +373,37 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi l'Australie ?
+                    <i class="fas fa-map-marked-alt me-3"></i>Pourquoi le Vietnam ?
                 </h2>
-                <p class="lead">Une destination d'expatriation exceptionnelle</p>
+                <p class="lead">Une destination d'expatriation en pleine croissance</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4">
                     <div class="benefit-card">
-                        <div class="icon-australia mb-3">
-                            <i class="fas fa-sun fa-2x"></i>
+                        <div class="icon-vietnam mb-3">
+                            <i class="fas fa-dollar-sign fa-2x"></i>
                         </div>
-                        <h4>Climat Exceptionnel</h4>
-                        <p>Plus de 300 jours de soleil par an dans la plupart des régions. Un climat qui favorise un mode de vie extérieur et actif.</p>
+                        <h4>Coût de la Vie Avantageux</h4>
+                        <p>L'un des coûts de la vie les plus abordables d'Asie du Sud-Est, permettant un style de vie confortable avec un budget modéré.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="benefit-card">
-                        <div class="icon-australia mb-3">
+                        <div class="icon-vietnam mb-3">
                             <i class="fas fa-chart-line fa-2x"></i>
                         </div>
                         <h4>Économie Dynamique</h4>
-                        <p>L'une des économies les plus stables au monde, avec des opportunités d'emploi dans tous les secteurs.</p>
+                        <p>Croissance économique soutenue de 6-7% par an, marché émergent attractif pour les investisseurs et entrepreneurs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="benefit-card">
-                        <div class="icon-australia mb-3">
-                            <i class="fas fa-users fa-2x"></i>
+                        <div class="icon-vietnam mb-3">
+                            <i class="fas fa-utensils fa-2x"></i>
                         </div>
-                        <h4>Société Multiculturelle</h4>
-                        <p>Une société ouverte et accueillante, avec une forte tradition d'immigration et d'intégration.</p>
+                        <h4>Culture & Gastronomie</h4>
+                        <p>Patrimoine culturel riche, cuisine réputée mondialement et population accueillante envers les expatriés.</p>
                     </div>
                 </div>
             </div>
@@ -415,26 +413,26 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">25M+</div>
+                                <div class="stat-number">97M</div>
                                 <div class="stat-label">Population</div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">8ème</div>
-                                <div class="stat-label">PIB Mondial</div>
+                                <div class="stat-number">6.5%</div>
+                                <div class="stat-label">Croissance PIB</div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">3ème</div>
-                                <div class="stat-label">Qualité de Vie</div>
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Moins Cher que l'Europe</div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="stat-item">
-                                <div class="stat-number">30%</div>
-                                <div class="stat-label">Population Née à l'Étranger</div>
+                                <div class="stat-number">15ème</div>
+                                <div class="stat-label">Exportateur Mondial</div>
                             </div>
                         </div>
                     </div>
@@ -448,92 +446,92 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-city me-3"></i>Principales Villes d'Australie
+                    <i class="fas fa-city me-3"></i>Principales Villes du Vietnam
                 </h2>
-                <p class="lead">Découvrez les métropoles australiennes</p>
+                <p class="lead">Découvrez les métropoles vietnamiennes</p>
             </div>
 
             <div class="city-grid">
-                <!-- Sydney -->
+                <!-- Hô Chi Minh-Ville -->
                 <div class="city-card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         class="card-img-top" alt="Sydney Opera House" style="height: 200px; object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hô Chi Minh-Ville" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">
-                            <i class="fas fa-building me-2 icon-australia"></i>Sydney
+                            <i class="fas fa-building me-2 icon-vietnam"></i>Hô Chi Minh-Ville
                         </h5>
-                        <p class="card-text">La ville emblématique avec l'Opéra et le Harbour Bridge. Centre économique et culturel.</p>
+                        <p class="card-text">La capitale économique du Vietnam, métropole dynamique et centre d'affaires de premier plan.</p>
                         <div class="mb-3">
-                            <span class="info-tag">5,3M habitants</span>
+                            <span class="info-tag">9M habitants</span>
                             <span class="info-tag ms-2">Centre économique</span>
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Marché du travail dynamique</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Vie culturelle riche</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Plages magnifiques</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Hub d'affaires principal</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté expat importante</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vie nocturne animée</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Melbourne -->
+                <!-- Hanoi -->
                 <div class="city-card">
-                    <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         class="card-img-top" alt="Melbourne" style="height: 200px; object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1551525463-2ff5a442645e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hanoi" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">
-                            <i class="fas fa-palette me-2 icon-australia"></i>Melbourne
+                            <i class="fas fa-university me-2 icon-vietnam"></i>Hanoi
                         </h5>
-                        <p class="card-text">Capitale culturelle de l'Australie, réputée pour sa scène artistique et gastronomique.</p>
+                        <p class="card-text">La capitale politique et culturelle, riche en histoire avec un charme traditionnel préservé.</p>
                         <div class="mb-3">
-                            <span class="info-tag">5,1M habitants</span>
-                            <span class="info-tag ms-2">Capitale culturelle</span>
+                            <span class="info-tag">8M habitants</span>
+                            <span class="info-tag ms-2">Capitale</span>
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Scène artistique vibrante</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Cafés et restaurants</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Événements sportifs</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Centre politique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Patrimoine historique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Culture traditionnelle</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Brisbane -->
+                <!-- Da Nang -->
                 <div class="city-card">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         class="card-img-top" alt="Brisbane" style="height: 200px; object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1572183095039-ea4ac45c4e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Da Nang" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">
-                            <i class="fas fa-sun me-2 icon-australia"></i>Brisbane
+                            <i class="fas fa-umbrella-beach me-2 icon-vietnam"></i>Da Nang
                         </h5>
-                        <p class="card-text">Climat subtropical, lifestyle décontracté et proximité de la Gold Coast.</p>
+                        <p class="card-text">Ville côtière moderne, équilibre parfait entre développement urbain et plages magnifiques.</p>
                         <div class="mb-3">
-                            <span class="info-tag">2,6M habitants</span>
-                            <span class="info-tag ms-2">Climat subtropical</span>
+                            <span class="info-tag">1.2M habitants</span>
+                            <span class="info-tag ms-2">Côtière</span>
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Climat idéal toute l'année</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Coût de la vie abordable</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Proche de la Gold Coast</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Perth -->
-                <div class="city-card">
-                    <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         class="card-img-top" alt="Perth" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">
-                            <i class="fas fa-gem me-2 icon-australia"></i>Perth
-                        </h5>
-                        <p class="card-text">Ville minière prospère avec de magnifiques plages et un style de vie décontracté.</p>
-                        <div class="mb-3">
-                            <span class="info-tag">2,1M habitants</span>
-                            <span class="info-tag ms-2">Secteur minier</span>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Secteur minier lucratif</li>
                             <li><i class="fas fa-check text-success me-2"></i>Plages spectaculaires</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Moins de trafic</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Développement moderne</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Qualité de vie élevée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hoi An -->
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         class="card-img-top" alt="Hoi An" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-lantern me-2 icon-vietnam"></i>Hoi An
+                        </h5>
+                        <p class="card-text">Ancienne cité marchande classée UNESCO, destination privilégiée pour un mode de vie tranquille.</p>
+                        <div class="mb-3">
+                            <span class="info-tag">200K habitants</span>
+                            <span class="info-tag ms-2">UNESCO</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Charme authentique</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Tourisme développé</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Communauté internationale</li>
                         </ul>
                     </div>
                 </div>
@@ -546,7 +544,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-dollar-sign me-3"></i>Coût de la Vie en Australie
+                    <i class="fas fa-dong-sign me-3"></i>Coût de la Vie au Vietnam
                 </h2>
                 <p class="lead">Budget réaliste pour vivre confortablement</p>
             </div>
@@ -555,65 +553,67 @@
                 <div class="col-lg-8">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h4><i class="fas fa-home icon-australia me-2"></i>Logement</h4>
+                            <h4><i class="fas fa-home icon-vietnam me-2"></i>Logement</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Sydney</h6>
+                                    <h6 class="fw-bold">Hô Chi Minh-Ville</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Studio centre : 1,800-2,500 AUD/mois</li>
-                                        <li>• 1BR centre : 2,500-3,500 AUD/mois</li>
-                                        <li>• 2BR banlieue : 2,000-3,000 AUD/mois</li>
-                                        <li>• Colocation : 800-1,500 AUD/mois</li>
+                                        <li>• Studio moderne : 300-600 $/mois</li>
+                                        <li>• Appartement 1BR : 500-900 $/mois</li>
+                                        <li>• Appartement 2BR : 700-1,200 $/mois</li>
+                                        <li>• Maison service : 800-1,500 $/mois</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Melbourne</h6>
+                                    <h6 class="fw-bold">Hanoi</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Studio centre : 1,500-2,200 AUD/mois</li>
-                                        <li>• 1BR centre : 2,200-3,000 AUD/mois</li>
-                                        <li>• 2BR banlieue : 1,800-2,500 AUD/mois</li>
-                                        <li>• Colocation : 700-1,200 AUD/mois</li>
+                                        <li>• Studio moderne : 250-500 $/mois</li>
+                                        <li>• Appartement 1BR : 400-750 $/mois</li>
+                                        <li>• Appartement 2BR : 600-1,000 $/mois</li>
+                                        <li>• Maison traditionelle : 500-900 $/mois</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <h4 class="mt-4"><i class="fas fa-shopping-cart icon-australia me-2"></i>Alimentation & Courses</h4>
+                            <h4 class="mt-4"><i class="fas fa-utensils icon-vietnam me-2"></i>Alimentation & Restaurants</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Supermarché (par semaine)</h6>
+                                    <h6 class="fw-bold">Cuisine Locale</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Couple : 150-200 AUD</li>
-                                        <li>• Famille de 4 : 250-350 AUD</li>
-                                        <li>• Célibataire : 80-120 AUD</li>
+                                        <li>• Pho rue : 1-2 $</li>
+                                        <li>• Repas local : 2-4 $</li>
+                                        <li>• Restaurant vietnamien : 5-10 $</li>
+                                        <li>• Bière locale : 0.50-1 $</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Restaurants</h6>
+                                    <h6 class="fw-bold">Cuisine Occidentale</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Déjeuner rapide : 12-18 AUD</li>
-                                        <li>• Dîner restaurant : 25-45 AUD</li>
-                                        <li>• Café : 4-6 AUD</li>
-                                        <li>• Bière : 8-12 AUD</li>
+                                        <li>• Café occidental : 2-4 $</li>
+                                        <li>• Restaurant occidental : 10-20 $</li>
+                                        <li>• Fast food : 4-7 $</li>
+                                        <li>• Bière importée : 2-4 $</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <h4 class="mt-4"><i class="fas fa-car icon-australia me-2"></i>Transport</h4>
+                            <h4 class="mt-4"><i class="fas fa-motorcycle icon-vietnam me-2"></i>Transport</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Transport Public</h6>
+                                    <h6 class="fw-bold">Transport Local</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Pass mensuel Sydney : 217 AUD</li>
-                                        <li>• Pass mensuel Melbourne : 169 AUD</li>
-                                        <li>• Ticket simple : 3-5 AUD</li>
+                                        <li>• Moto-taxi (Grab) : 1-3 $</li>
+                                        <li>• Taxi : 0.50-0.70 $/km</li>
+                                        <li>• Bus local : 0.30 $</li>
+                                        <li>• Location scooter : 5-8 $/jour</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Voiture</h6>
+                                    <h6 class="fw-bold">Véhicule Personnel</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Essence : 1.60-1.80 AUD/L</li>
-                                        <li>• Assurance : 100-200 AUD/mois</li>
-                                        <li>• Parking CBD : 15-50 AUD/jour</li>
+                                        <li>• Scooter neuf : 1,000-2,500 $</li>
+                                        <li>• Essence : 0.90 $/L</li>
+                                        <li>• Assurance scooter : 50-100 $/an</li>
                                     </ul>
                                 </div>
                             </div>
@@ -628,40 +628,40 @@
                             
                             <div class="budget-item mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <span><strong>Couple Sydney</strong></span>
+                                    <span><strong>Couple HCMC</strong></span>
                                 </div>
                                 <small class="text-muted">Vie confortable</small>
                                 <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
-                                    <div class="budget-fill rounded" style="width: 85%; background: var(--australia-red); height: 100%;"></div>
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--vietnam-red); height: 100%;"></div>
                                 </div>
-                                <div class="text-end"><strong>6,500-8,000 AUD</strong></div>
+                                <div class="text-end"><strong>1,500-2,200 $</strong></div>
                             </div>
 
                             <div class="budget-item mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <span><strong>Couple Melbourne</strong></span>
+                                    <span><strong>Couple Hanoi</strong></span>
                                 </div>
                                 <small class="text-muted">Vie confortable</small>
                                 <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
-                                    <div class="budget-fill rounded" style="width: 75%; background: var(--australia-blue); height: 100%;"></div>
+                                    <div class="budget-fill rounded" style="width: 60%; background: var(--vietnam-gold); height: 100%;"></div>
                                 </div>
-                                <div class="text-end"><strong>5,800-7,200 AUD</strong></div>
+                                <div class="text-end"><strong>1,200-1,800 $</strong></div>
                             </div>
 
                             <div class="budget-item mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <span><strong>Célibataire Brisbane</strong></span>
+                                    <span><strong>Célibataire Da Nang</strong></span>
                                 </div>
                                 <small class="text-muted">Vie confortable</small>
                                 <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
-                                    <div class="budget-fill rounded" style="width: 60%; background: var(--ocean-blue); height: 100%;"></div>
+                                    <div class="budget-fill rounded" style="width: 50%; background: var(--soft-gold); height: 100%;"></div>
                                 </div>
-                                <div class="text-end"><strong>3,200-4,200 AUD</strong></div>
+                                <div class="text-end"><strong>800-1,200 $</strong></div>
                             </div>
 
                             <div class="highlight-box mt-4">
                                 <h6><i class="fas fa-lightbulb me-2"></i>Conseil</h6>
-                                <p class="mb-0">Le salaire minimum en Australie est de 21.38 AUD/heure, soit environ 3,500 AUD/mois à temps plein.</p>
+                                <p class="mb-0">Le salaire minimum au Vietnam est d'environ 180 $/mois, mais les expatriés gagnent généralement 800-3,000 $/mois.</p>
                             </div>
                         </div>
                     </div>
@@ -677,90 +677,90 @@
                 <h2 class="display-5 fw-bold">
                     <i class="fas fa-briefcase me-3"></i>Marché de l'Emploi
                 </h2>
-                <p class="lead">Opportunités professionnelles en Australie</p>
+                <p class="lead">Opportunités professionnelles au Vietnam</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-laptop-code fa-3x icon-australia mb-3"></i>
-                        <h5>Technologie</h5>
-                        <p><strong>Salaire moyen :</strong> 85,000-120,000 AUD/an</p>
+                        <i class="fas fa-laptop-code fa-3x icon-vietnam mb-3"></i>
+                        <h5>Technologies</h5>
+                        <p><strong>Salaire moyen :</strong> 1,200-3,500 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Développeurs : Très demandés</li>
-                            <li>• Cybersécurité : Croissance forte</li>
-                            <li>• Data Science : Secteur en expansion</li>
-                            <li>• DevOps : Compétences recherchées</li>
+                            <li>• Développement logiciel : Croissance</li>
+                            <li>• Outsourcing IT : Secteur fort</li>
+                            <li>• Startups tech : Écosystème émergent</li>
+                            <li>• Digital marketing : Demande</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-stethoscope fa-3x icon-australia mb-3"></i>
-                        <h5>Santé</h5>
-                        <p><strong>Salaire moyen :</strong> 75,000-150,000 AUD/an</p>
+                        <i class="fas fa-chalkboard-teacher fa-3x icon-vietnam mb-3"></i>
+                        <h5>Enseignement</h5>
+                        <p><strong>Salaire moyen :</strong> 800-2,000 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Infirmiers : Très recherchés</li>
-                            <li>• Médecins : Demande élevée</li>
-                            <li>• Physiothérapie : Croissance</li>
-                            <li>• Santé mentale : Priorité</li>
+                            <li>• Anglais langue étrangère : Très demandé</li>
+                            <li>• Écoles internationales : Opportunités</li>
+                            <li>• Formation entreprise : Croissance</li>
+                            <li>• Universités : Postes recherche</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-hammer fa-3x icon-australia mb-3"></i>
-                        <h5>Construction & Mines</h5>
-                        <p><strong>Salaire moyen :</strong> 70,000-130,000 AUD/an</p>
+                        <i class="fas fa-plane fa-3x icon-vietnam mb-3"></i>
+                        <h5>Tourisme & Hospitalité</h5>
+                        <p><strong>Salaire moyen :</strong> 600-1,800 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Électriciens : Très demandés</li>
-                            <li>• Plombiers : Salaires élevés</li>
-                            <li>• Mineurs : Secteur lucratif</li>
-                            <li>• Ingénieurs : Opportunités</li>
+                            <li>• Hôtellerie : Secteur en expansion</li>
+                            <li>• Tour opérateurs : Demande</li>
+                            <li>• F&B Management : Opportunités</li>
+                            <li>• Événementiel : Croissance</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-chart-line fa-3x icon-australia mb-3"></i>
-                        <h5>Finance</h5>
-                        <p><strong>Salaire moyen :</strong> 80,000-140,000 AUD/an</p>
+                        <i class="fas fa-industry fa-3x icon-vietnam mb-3"></i>
+                        <h5>Manufacturing</h5>
+                        <p><strong>Salaire moyen :</strong> 1,000-2,500 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Comptables : Demande stable</li>
-                            <li>• Analystes : Croissance</li>
-                            <li>• Banque : Secteur solide</li>
-                            <li>• Assurance : Opportunités</li>
+                            <li>• Textile : Secteur traditionnel</li>
+                            <li>• Électronique : Assemblage</li>
+                            <li>• Automobile : Développement</li>
+                            <li>• Quality Control : Postes expats</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-chalkboard-teacher fa-3x icon-australia mb-3"></i>
-                        <h5>Éducation</h5>
-                        <p><strong>Salaire moyen :</strong> 65,000-95,000 AUD/an</p>
+                        <i class="fas fa-chart-line fa-3x icon-vietnam mb-3"></i>
+                        <h5>Finance & Banking</h5>
+                        <p><strong>Salaire moyen :</strong> 1,500-4,000 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Professeurs : Recherchés</li>
-                            <li>• Éducation spécialisée : Demande</li>
-                            <li>• Formation adultes : Croissance</li>
-                            <li>• Administration : Stable</li>
+                            <li>• Banques internationales : Présentes</li>
+                            <li>• Fintech : Secteur émergent</li>
+                            <li>• Investment : Opportunités</li>
+                            <li>• Audit : Demande constante</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-utensils fa-3x icon-australia mb-3"></i>
-                        <h5>Hôtellerie</h5>
-                        <p><strong>Salaire moyen :</strong> 50,000-75,000 AUD/an</p>
+                        <i class="fas fa-shipping-fast fa-3x icon-vietnam mb-3"></i>
+                        <h5>Import/Export</h5>
+                        <p><strong>Salaire moyen :</strong> 800-2,200 $/mois</p>
                         <ul class="list-unstyled text-start">
-                            <li>• Chefs : Toujours demandés</li>
-                            <li>• Service : Secteur actif</li>
-                            <li>• Tourisme : Reprise forte</li>
-                            <li>• Management : Opportunités</li>
+                            <li>• Commerce international : Fort</li>
+                            <li>• Logistique : Hub régional</li>
+                            <li>• Supply chain : Expertise</li>
+                            <li>• E-commerce : Expansion</li>
                         </ul>
                     </div>
                 </div>
@@ -768,26 +768,26 @@
 
             <div class="content-card mt-4">
                 <div class="card-body p-4">
-                    <h4><i class="fas fa-search icon-australia me-2"></i>Recherche d'Emploi</h4>
+                    <h4><i class="fas fa-search icon-vietnam me-2"></i>Recherche d'Emploi</h4>
                     <div class="row">
                         <div class="col-md-6">
                             <h6 class="fw-bold">Sites d'Emploi Populaires</h6>
                             <ul class="list-unstyled">
-                                <li>• <strong>Seek.com.au</strong> - Leader du marché</li>
-                                <li>• <strong>Indeed.com.au</strong> - Large sélection</li>
-                                <li>• <strong>LinkedIn</strong> - Réseautage professionnel</li>
-                                <li>• <strong>Jora.com</strong> - Emplois locaux</li>
-                                <li>• <strong>CareerOne</strong> - Opportunités diverses</li>
+                                <li>• <strong>VietnamWorks</strong> - Leader local</li>
+                                <li>• <strong>JobStreet Vietnam</strong> - International</li>
+                                <li>• <strong>TopCV</strong> - Plateforme moderne</li>
+                                <li>• <strong>LinkedIn</strong> - Réseautage</li>
+                                <li>• <strong>Careerbuilder.vn</strong> - Établi</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <h6 class="fw-bold">Conseils pour Réussir</h6>
                             <ul class="list-unstyled">
-                                <li>• Adaptez votre CV au format australien</li>
-                                <li>• Préparez-vous aux entretiens par vidéo</li>
-                                <li>• Mettez en avant vos certifications</li>
-                                <li>• Utilisez le réseautage professionnel</li>
-                                <li>• Soyez patient et persévérant</li>
+                                <li>• Apprendre les bases du vietnamien</li>
+                                <li>• Comprendre la culture d'entreprise</li>
+                                <li>• Réseautage dans communauté expat</li>
+                                <li>• Patience dans négociations</li>
+                                <li>• Respect hiérarchie traditionnelle</li>
                             </ul>
                         </div>
                     </div>
@@ -803,7 +803,7 @@
                 <h2 class="display-5 fw-bold">
                     <i class="fas fa-passport me-3"></i>Visas et Immigration
                 </h2>
-                <p class="lead">Vos options pour immigrer en Australie</p>
+                <p class="lead">Vos options pour vous installer au Vietnam</p>
             </div>
 
             <div class="row">
@@ -811,16 +811,16 @@
                     <div class="content-card">
                         <div class="card-body p-4">
                             <h4 class="card-title">
-                                <i class="fas fa-briefcase icon-australia me-2"></i>Visa de Travail Qualifié
+                                <i class="fas fa-briefcase icon-vietnam me-2"></i>Visa de Travail
                             </h4>
-                            <p class="card-text">Pour les professionnels qualifiés dans des domaines en demande.</p>
+                            <p class="card-text">Pour les professionnels avec un emploi au Vietnam.</p>
                             <div class="highlight-box">
                                 <strong>Points clés :</strong>
                                 <ul class="mt-2">
-                                    <li>Évaluation des compétences requise</li>
-                                    <li>Test d'anglais obligatoire</li>
-                                    <li>Âge limite : généralement 45 ans</li>
-                                    <li>Possibilité de résidence permanente</li>
+                                    <li>Permis de travail obligatoire</li>
+                                    <li>Diplôme et expérience requis</li>
+                                    <li>Sponsor employeur nécessaire</li>
+                                    <li>Durée : 1-3 ans renouvelable</li>
                                 </ul>
                             </div>
                         </div>
@@ -831,56 +831,56 @@
                     <div class="content-card">
                         <div class="card-body p-4">
                             <h4 class="card-title">
-                                <i class="fas fa-heart icon-australia me-2"></i>Visa Partenaire
+                                <i class="fas fa-rocket icon-vietnam me-2"></i>Visa Investisseur
                             </h4>
-                            <p class="card-text">Pour les conjoints de citoyens ou résidents australiens.</p>
+                            <p class="card-text">Pour les entrepreneurs et investisseurs.</p>
                             <div class="highlight-box">
                                 <strong>Points clés :</strong>
                                 <ul class="mt-2">
-                                    <li>Relation genuine et continue</li>
-                                    <li>Visa temporaire puis permanent</li>
-                                    <li>Pas de limite d'âge</li>
-                                    <li>Droits de travail complets</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="content-card">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">
-                                <i class="fas fa-graduation-cap icon-australia me-2"></i>Visa Étudiant
-                            </h4>
-                            <p class="card-text">Pour étudier dans les universités australiennes de renommée mondiale.</p>
-                            <div class="highlight-box">
-                                <strong>Points clés :</strong>
-                                <ul class="mt-2">
-                                    <li>Inscription dans un établissement agréé</li>
-                                    <li>Preuve de ressources financières</li>
-                                    <li>Travail à temps partiel autorisé</li>
-                                    <li>Possibilité de transition vers autre visa</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="content-card">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">
-                                <i class="fas fa-rocket icon-australia me-2"></i>Visa Investisseur
-                            </h4>
-                            <p class="card-text">Pour les entrepreneurs et investisseurs souhaitant développer leurs affaires.</p>
-                            <div class="highlight-box">
-                                <strong>Points clés :</strong>
-                                <ul class="mt-2">
-                                    <li>Investissement minimum requis</li>
+                                    <li>Investissement minimum variable</li>
                                     <li>Plan d'affaires détaillé</li>
-                                    <li>Expérience entrepreneuriale</li>
-                                    <li>Contribution à l'économie australienne</li>
+                                    <li>Licence d'investissement</li>
+                                    <li>Création d'emplois locaux</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-plane icon-vietnam me-2"></i>Visa Touriste (Extension)
+                            </h4>
+                            <p class="card-text">Pour les séjours touristiques prolongés.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Visa 30 jours à l'arrivée</li>
+                                    <li>Extensions possibles sur place</li>
+                                    <li>Visa électronique disponible</li>
+                                    <li>Sorties/entrées multiples</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">
+                                <i class="fas fa-heart icon-vietnam me-2"></i>Visa Conjoint
+                            </h4>
+                            <p class="card-text">Pour les conjoints de citoyens vietnamiens.</p>
+                            <div class="highlight-box">
+                                <strong>Points clés :</strong>
+                                <ul class="mt-2">
+                                    <li>Mariage officiel reconnu</li>
+                                    <li>Exemption visa long terme</li>
+                                    <li>Droits de résidence étendus</li>
+                                    <li>Possibilité naturalisation</li>
                                 </ul>
                             </div>
                         </div>
@@ -895,23 +895,26 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-heart me-3"></i>Mode de Vie Australien
+                    <i class="fas fa-heart me-3"></i>Mode de Vie Vietnamien
                 </h2>
-                <p class="lead">Ce qui vous attend en Australie</p>
+                <p class="lead">Immersion dans la culture vietnamienne</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-8">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h4><i class="fas fa-umbrella-beach icon-australia me-2"></i>Culture du Plein Air</h4>
-                            <p>Les Australiens vivent littéralement dehors. Barbecues, sports de plage, randonnées dans les parcs nationaux font partie intégrante de la culture locale.</p>
+                            <h4><i class="fas fa-utensils icon-vietnam me-2"></i>Culture Gastronomique</h4>
+                            <p>La cuisine vietnamienne est un art de vivre : pho matinal, street food à toute heure, marchés colorés et repas familiaux conviviaux. Une explosion de saveurs fraîches et saines.</p>
                             
-                            <h4 class="mt-4"><i class="fas fa-handshake icon-australia me-2"></i>Mentalité "No Worries"</h4>
-                            <p>L'attitude décontractée australienne se reflète dans tous les aspects de la vie, du travail aux relations sociales.</p>
+                            <h4 class="mt-4"><i class="fas fa-motorcycle icon-vietnam me-2"></i>Mobilité Urbaine</h4>
+                            <p>Le scooter règne en maître dans les villes vietnamiennes. Cette culture de la moto crée une dynamique urbaine unique, avec ses codes et sa fluidité particulière.</p>
                             
-                            <h4 class="mt-4"><i class="fas fa-coffee icon-australia me-2"></i>Culture du Café</h4>
-                            <p>L'Australie a développé une culture du café sophistiquée, particulièrement à Melbourne, considérée comme la capitale mondiale du café.</p>
+                            <h4 class="mt-4"><i class="fas fa-users icon-vietnam me-2"></i>Société Collectiviste</h4>
+                            <p>La famille élargie et la communauté sont centrales. Les relations sociales se construisent sur le respect, la hiérarchie et la réciprocité dans les services rendus.</p>
+
+                            <h4 class="mt-4"><i class="fas fa-yin-yang icon-vietnam me-2"></i>Spiritualité & Traditions</h4>
+                            <p>Mélange unique de bouddhisme, confucianisme et traditions ancestrales. Les fêtes traditionnelles comme le Têt rythment la vie sociale et culturelle.</p>
                         </div>
                     </div>
                 </div>
@@ -919,23 +922,23 @@
                 <div class="col-lg-4">
                     <div class="testimonial-card">
                         <div class="mb-3">
-                            <i class="fas fa-quote-left fa-2x icon-australia"></i>
+                            <i class="fas fa-quote-left fa-2x icon-vietnam"></i>
                         </div>
-                        <p class="fst-italic">"Après 3 ans en Australie, je ne peux pas imaginer vivre ailleurs. La qualité de vie, les opportunités professionnelles et la beauté naturelle sont incomparables."</p>
+                        <p class="fst-italic">"Vivre au Vietnam depuis 2 ans m'a ouvert les yeux sur une culture fascinante. Le coût de la vie et la chaleur humaine sont extraordinaires."</p>
                         <div class="mt-3">
-                            <strong>Marie L.</strong><br>
-                            <small class="text-muted">Développeuse Web, Sydney</small>
+                            <strong>Marc D.</strong><br>
+                            <small class="text-muted">Enseignant, Hô Chi Minh-Ville</small>
                         </div>
                     </div>
 
                     <div class="testimonial-card">
                         <div class="mb-3">
-                            <i class="fas fa-quote-left fa-2x icon-australia"></i>
+                            <i class="fas fa-quote-left fa-2x icon-vietnam"></i>
                         </div>
-                        <p class="fst-italic">"L'intégration a été facile grâce à la mentalité ouverte des Australiens. Mon entreprise prospère ici comme nulle part ailleurs."</p>
+                        <p class="fst-italic">"L'énergie entrepreneuriale du Vietnam est contagieuse. Mon business s'est développé plus vite qu'anticipé grâce au dynamisme local."</p>
                         <div class="mt-3">
-                            <strong>Pierre D.</strong><br>
-                            <small class="text-muted">Entrepreneur, Melbourne</small>
+                            <strong>Sarah L.</strong><br>
+                            <small class="text-muted">Entrepreneur, Hanoi</small>
                         </div>
                     </div>
                 </div>
@@ -944,30 +947,30 @@
             <div class="row mt-5">
                 <div class="col-md-3">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-shield-alt fa-3x icon-australia mb-3"></i>
-                        <h5>Sécurité</h5>
-                        <p>Taux de criminalité très bas</p>
+                        <i class="fas fa-bowl-rice fa-3x icon-vietnam mb-3"></i>
+                        <h5>Cuisine</h5>
+                        <p>Gastronomie raffinée et saine</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-hospital fa-3x icon-australia mb-3"></i>
-                        <h5>Santé</h5>
-                        <p>Système de santé excellent</p>
+                        <i class="fas fa-umbrella-beach fa-3x icon-vietnam mb-3"></i>
+                        <h5>Climat</h5>
+                        <p>Tropical avec saisons marquées</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-school fa-3x icon-australia mb-3"></i>
-                        <h5>Éducation</h5>
-                        <p>Universités de rang mondial</p>
+                        <i class="fas fa-handshake fa-3x icon-vietnam mb-3"></i>
+                        <h5>Hospitalité</h5>
+                        <p>Accueil chaleureux traditionnel</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="benefit-card text-center">
-                        <i class="fas fa-leaf fa-3x icon-australia mb-3"></i>
-                        <h5>Environnement</h5>
-                        <p>Nature préservée unique</p>
+                        <i class="fas fa-history fa-3x icon-vietnam mb-3"></i>
+                        <h5>Histoire</h5>
+                        <p>Patrimoine culturel millénaire</p>
                     </div>
                 </div>
             </div>
@@ -979,56 +982,55 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Australien
+                    <i class="fas fa-graduation-cap me-3"></i>Système Éducatif Vietnamien
                 </h2>
-                <p class="lead">Excellence académique reconnue mondialement</p>
+                <p class="lead">Éducation en développement et écoles internationales</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-8">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h4><i class="fas fa-university icon-australia me-2"></i>Universités de Renommée Mondiale</h4>
+                            <h4><i class="fas fa-school icon-vietnam me-2"></i>Écoles Internationales</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Groupe des 8 (Go8)</h6>
+                                    <h6 class="fw-bold">Programmes Anglais</h6>
                                     <ul class="list-unstyled">
-                                        <li>• <strong>Australian National University</strong> - Canberra</li>
-                                        <li>• <strong>University of Melbourne</strong> - Melbourne</li>
-                                        <li>• <strong>University of Sydney</strong> - Sydney</li>
-                                        <li>• <strong>University of Queensland</strong> - Brisbane</li>
-                                        <li>• <strong>University of Western Australia</strong> - Perth</li>
+                                        <li>• <strong>SSIS</strong> - Saigon South International</li>
+                                        <li>• <strong>BIS Hanoi</strong> - British International</li>
+                                        <li>• <strong>ISHCMC</strong> - International School</li>
+                                        <li>• <strong>Renaissance</strong> - Curriculum américain</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Universités Technologiques</h6>
+                                    <h6 class="fw-bold">Programmes Français</h6>
                                     <ul class="list-unstyled">
-                                        <li>• <strong>University of Technology Sydney</strong></li>
-                                        <li>• <strong>RMIT University</strong> - Melbourne</li>
-                                        <li>• <strong>Queensland University of Technology</strong></li>
-                                        <li>• <strong>Curtin University</strong> - Perth</li>
+                                        <li>• <strong>Lycée Français</strong> - HCMC</li>
+                                        <li>• <strong>École Française</strong> - Hanoi</li>
+                                        <li>• <strong>EFIS</strong> - École Franco-Internationale</li>
+                                        <li>• <strong>Marguerite Duras</strong> - Établissement</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <h4 class="mt-4"><i class="fas fa-school icon-australia me-2"></i>Éducation Primaire et Secondaire</h4>
+                            <h4 class="mt-4"><i class="fas fa-university icon-vietnam me-2"></i>Enseignement Supérieur</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Écoles Publiques</h6>
+                                    <h6 class="fw-bold">Universités Locales</h6>
                                     <ul class="list-unstyled">
-                                        <li>• Gratuites pour les résidents</li>
-                                        <li>• Haut niveau d'enseignement</li>
-                                        <li>• Programmes spécialisés</li>
-                                        <li>• Activités extra-scolaires</li>
+                                        <li>• Université nationale du Vietnam</li>
+                                        <li>• Université d'économie HCMC</li>
+                                        <li>• Université de technologie Hanoi</li>
+                                        <li>• Programmes en anglais disponibles</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold">Écoles Privées</h6>
+                                    <h6 class="fw-bold">Campus Internationaux</h6>
                                     <ul class="list-unstyled">
-                                        <li>• 10,000-40,000 AUD/an</li>
-                                        <li>• Classes plus petites</li>
-                                        <li>• Installations premium</li>
-                                        <li>• Programmes d'échange</li>
+                                        <li>• RMIT University Vietnam</li>
+                                        <li>• University of Science VNU</li>
+                                        <li>• British University Vietnam</li>
+                                        <li>• Diplômes reconnus internationalement</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1039,33 +1041,44 @@
                 <div class="col-lg-4">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h5 class="fw-bold mb-3">Coûts Universitaires</h5>
+                            <h5 class="fw-bold mb-3">Coûts Éducation</h5>
                             
                             <div class="budget-item mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <span><strong>Licence (Résidents)</strong></span>
+                                    <span><strong>École Internationale</strong></span>
                                 </div>
                                 <small class="text-muted">Par année</small>
                                 <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
-                                    <div class="budget-fill rounded" style="width: 40%; background: var(--australia-blue); height: 100%;"></div>
+                                    <div class="budget-fill rounded" style="width: 70%; background: var(--vietnam-red); height: 100%;"></div>
                                 </div>
-                                <div class="text-end"><strong>6,000-12,000 AUD</strong></div>
+                                <div class="text-end"><strong>8,000-25,000 $</strong></div>
                             </div>
 
                             <div class="budget-item mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <span><strong>Licence (Internationaux)</strong></span>
+                                    <span><strong>Université Locale</strong></span>
                                 </div>
                                 <small class="text-muted">Par année</small>
                                 <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
-                                    <div class="budget-fill rounded" style="width: 85%; background: var(--australia-red); height: 100%;"></div>
+                                    <div class="budget-fill rounded" style="width: 30%; background: var(--vietnam-gold); height: 100%;"></div>
                                 </div>
-                                <div class="text-end"><strong>20,000-45,000 AUD</strong></div>
+                                <div class="text-end"><strong>1,000-3,000 $</strong></div>
+                            </div>
+
+                            <div class="budget-item mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span><strong>Campus International</strong></span>
+                                </div>
+                                <small class="text-muted">Par année</small>
+                                <div class="budget-bar bg-light rounded" style="height: 8px; position: relative;">
+                                    <div class="budget-fill rounded" style="width: 50%; background: var(--soft-gold); height: 100%;"></div>
+                                </div>
+                                <div class="text-end"><strong>4,000-12,000 $</strong></div>
                             </div>
 
                             <div class="highlight-box mt-4">
-                                <h6><i class="fas fa-info-circle me-2"></i>Bourses d'Études</h6>
-                                <p class="mb-0">L'Australie offre de nombreuses bourses pour les étudiants internationaux méritants.</p>
+                                <h6><i class="fas lightbulb me-2"></i>Conseil</h6>
+                                <p class="mb-0">Les écoles internationales sont nombreuses dans les grandes villes, offrant des standards élevés.</p>
                             </div>
                         </div>
                     </div>
@@ -1079,23 +1092,23 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="display-5 fw-bold">
-                    <i class="fas fa-heart-pulse me-3"></i>Système de Santé Australien
+                    <i class="fas fa-heart-pulse me-3"></i>Système de Santé Vietnamien
                 </h2>
-                <p class="lead">Medicare : Une couverture santé universelle</p>
+                <p class="lead">Santé publique en développement et cliniques privées</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h4><i class="fas fa-shield-alt icon-australia me-2"></i>Medicare - Système Public</h4>
-                            <p>Le système de santé public australien offre :</p>
+                            <h4><i class="fas fa-hospital icon-vietnam me-2"></i>Système Public</h4>
+                            <p>Système de santé publique en développement :</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i> Consultations médicales gratuites</li>
-                                <li><i class="fas fa-check text-success me-2"></i> Soins hospitaliers publics gratuits</li>
-                                <li><i class="fas fa-check text-success me-2"></i> Subventions médicaments (PBS)</li>
-                                <li><i class="fas fa-check text-success me-2"></i> Tests et examens médicaux</li>
-                                <li><i class="fas fa-check text-success me-2"></i> Soins d'urgence 24h/24</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Assurance santé sociale</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Hôpitaux publics nombreux</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Soins de base abordables</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i> Qualité variable</li>
+                                <li><i class="fas fa-exclamation-triangle text-warning me-2"></i> Barrière de la langue</li>
                             </ul>
                         </div>
                     </div>
@@ -1104,15 +1117,85 @@
                 <div class="col-lg-6">
                     <div class="content-card">
                         <div class="card-body p-4">
-                            <h4><i class="fas fa-plus-circle icon-australia me-2"></i>Assurance Privée</h4>
-                            <p>Complément recommandé pour :</p>
+                            <h4><i class="fas fa-user-md icon-vietnam me-2"></i>Secteur Privé</h4>
+                            <p>Recommandé pour les expatriés :</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-star text-warning me-2"></i> Hôpitaux privés</li>
-                                <li><i class="fas fa-star text-warning me-2"></i> Soins dentaires</li>
-                                <li><i class="fas fa-star text-warning me-2"></i> Physiothérapie</li>
-                                <li><i class="fas fa-star text-warning me-2"></i> Optique et lunettes</li>
-                                <li><i class="fas fa-star text-warning me-2"></i> Réduire les temps d'attente</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Cliniques internationales</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Personnel anglophone</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Standards internationaux</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Équipements modernes</li>
+                                <li><i class="fas fa-star text-warning me-2"></i> Assurance recommandée</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <div class="card-body p-4">
+                            <h4><i class="fas fa-clinic-medical icon-vietnam me-2"></i>Cliniques Recommandées</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Hô Chi Minh-Ville</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Family Medical Practice</li>
+                                        <li>• Columbia Asia Saigon</li>
+                                        <li>• Vinmec International Hospital</li>
+                                        <li>• Franco-Vietnamese Hospital</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Hanoi</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Vinmec Times City</li>
+                                        <li>• Family Medical Practice</li>
+                                        <li>• 108 Military Central Hospital</li>
+                                        <li>• Hanoi French Hospital</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Coûts Moyens</h6>
+                                    <ul class="list-unstyled">
+                                        <li>• Consultation privée : 30-80 $</li>
+                                        <li>• Urgences : 100-300 $</li>
+                                        <li>• Assurance expat : 800-2,000 $/an</li>
+                                        <li>• Médicaments : Prix abordables</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">6.1%</div>
+                                <div class="stat-label">PIB Santé</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">75.4</div>
+                                <div class="stat-label">Espérance de Vie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">0.8/1000</div>
+                                <div class="stat-label">Médecins</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">93%</div>
+                                <div class="stat-label">Couverture Santé</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1126,9 +1209,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5 class="fw-bold mb-3">
-                        <span class="flag-emoji">🇦🇺</span> ZineInsight Australie
+                        <span class="flag-emoji">🇻🇳</span> ZineInsight Vietnam
                     </h5>
-                    <p>Votre guide complet pour réussir votre installation en Australie. Des conseils d'experts pour chaque étape de votre parcours d'expatriation.</p>
+                    <p>Votre guide complet pour réussir votre installation au Vietnam. Des conseils d'experts pour chaque étape de votre parcours d'expatriation en Asie du Sud-Est.</p>
                     <div class="mt-3">
                         <button class="discover-button" onclick="window.location.href='../questionnaire.html'">
                             <i class="fas fa-rocket me-2"></i>Commencer mon projet
@@ -1147,10 +1230,10 @@
                 <div class="col-lg-3">
                     <h6 class="fw-bold mb-3">Autres Destinations</h6>
                     <ul class="list-unstyled">
+                        <li><a href="thailande.html" class="text-light text-decoration-none">Thaïlande</a></li>
+                        <li><a href="singapour.html" class="text-light text-decoration-none">Singapour</a></li>
+                        <li><a href="japon.html" class="text-light text-decoration-none">Japon</a></li>
                         <li><a href="canada.html" class="text-light text-decoration-none">Canada</a></li>
-                        <li><a href="usa.html" class="text-light text-decoration-none">États-Unis</a></li>
-                        <li><a href="france.html" class="text-light text-decoration-none">France</a></li>
-                        <li><a href="allemagne.html" class="text-light text-decoration-none">Allemagne</a></li>
                     </ul>
                 </div>
             </div>
@@ -1160,7 +1243,7 @@
                     <p class="mb-0">&copy; 2025 ZineInsight. Tous droits réservés.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Guide Premium Australie 🇦🇺</p>
+                    <p class="mb-0">Guide Premium Vietnam 🇻🇳</p>
                 </div>
             </div>
         </div>
@@ -1186,7 +1269,7 @@
 
         // Navigation dots functionality
         const dots = document.querySelectorAll('.dot');
-        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa', 'lifestyle', 'education', 'healthcare'];
+        const sections = ['hero', 'overview', 'cities', 'cost-living', 'employment', 'visa'];
 
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
@@ -1258,10 +1341,6 @@
             observer.observe(card);
         });
     </script>
-
-    <!-- 🍪 COOKIES GLOBAL SYSTEM -->
-    <script src="/js/cookies-global.js"></script>
-
 </body>
 
 </html>

@@ -65,6 +65,9 @@
     <!-- Styles Revolutionary -->
     <link rel="stylesheet" href="css/revolutionary.css">
     
+    <!-- 🍪 COOKIES GLOBAL SYSTEM (Override local) -->
+    <link rel="stylesheet" href="/css/cookies-global.css">
+    
     <style>
         /* Style spécifique pour le bouton de retour accueil */
         .nav-link.home-link {
@@ -496,7 +499,10 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-    <!-- 🌍 Revolutionary I18n System (CENTRALIZED) -->
+    <!-- � COOKIES GLOBAL SYSTEM (Load First) -->
+    <script src="/js/cookies-global.js"></script>
+
+    <!-- �🌍 Revolutionary I18n System (CENTRALIZED) -->
     <script src="js/i18n-system.js?v=2025082401"></script>
 
     <!-- Simple Configuration & API (NEW - ULTRA SIMPLE!) -->
@@ -655,98 +661,7 @@
         </div>
     </div>
 
-    <!-- 🍪 REVOLUTIONARY COOKIES CONSENT -->
-    <div class="cookies-banner" id="cookiesBanner">
-        <div class="cookies-content">
-            <div class="cookies-info">
-                <div class="cookies-icon">🍪</div>
-                <div class="cookies-text">
-                    <h3 data-i18n="cookies.title">Nous respectons votre vie privée</h3>
-                    <p data-i18n="cookies.description">
-                        Nous utilisons des cookies essentiels pour sauvegarder vos préférences (langue, thème) et
-                        améliorer votre expérience. Aucun tracking publicitaire.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cookies-actions">
-                <button class="btn btn-ghost btn-sm" onclick="rejectCookies()" data-i18n="cookies.reject">
-                    Refuser
-                </button>
-                <button class="btn btn-secondary btn-sm" onclick="customizeCookies()" data-i18n="cookies.customize">
-                    Personnaliser
-                </button>
-                <button class="btn btn-primary btn-sm" onclick="acceptCookies()" data-i18n="cookies.accept">
-                    Accepter tout
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- 🛠️ COOKIES CUSTOMIZATION MODAL -->
-    <div class="cookies-modal-overlay" id="cookiesModalOverlay">
-        <div class="cookies-modal">
-            <div class="modal-header">
-                <h2 data-i18n="cookies.settings.title">Paramètres des cookies</h2>
-                <button class="modal-close" onclick="closeCookiesModal()">
-                    <i data-lucide="x"></i>
-                </button>
-            </div>
-
-            <div class="modal-content">
-                <div class="cookie-category">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <h3 data-i18n="cookies.essential.title">Cookies essentiels</h3>
-                            <p data-i18n="cookies.essential.description">Nécessaires au fonctionnement du site (langue,
-                                sécurité)</p>
-                        </div>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="essential" checked disabled>
-                            <label for="essential"></label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cookie-category">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <h3 data-i18n="cookies.preferences.title">Cookies de préférences</h3>
-                            <p data-i18n="cookies.preferences.description">Sauvegarde vos choix (langue, thème,
-                                paramètres)</p>
-                        </div>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="preferences" checked>
-                            <label for="preferences"></label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cookie-category">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <h3 data-i18n="cookies.analytics.title">Cookies analytiques</h3>
-                            <p data-i18n="cookies.analytics.description">Nous aident à améliorer le site (anonymisés)
-                            </p>
-                        </div>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="analytics">
-                            <label for="analytics"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-ghost" onclick="closeCookiesModal()" data-i18n="cookies.cancel">
-                    Annuler
-                </button>
-                <button class="btn btn-primary" onclick="saveCookiesPreferences()" data-i18n="cookies.save">
-                    Sauvegarder
-                </button>
-            </div>
-        </div>
-    </div>
+    <!-- 🍪 COOKIES HTML REMOVED - Using Global System -->
 
     <script>
         // 🎯 SERVICE INFO MODAL SYSTEM
@@ -954,172 +869,7 @@
         // I18n system is now handled by js/i18n-system.js
         console.log('✅ Index page initialization complete with centralized Revolutionary I18n');
 
-        // 🍪 REVOLUTIONARY COOKIES MANAGEMENT SYSTEM
-        const cookiesConfig = {
-            essential: true,    // Always true - required for site function
-            preferences: false, // User preferences (language, theme)
-            analytics: false    // Analytics and improvements
-        };
-
-        function checkCookiesConsent() {
-            const consent = localStorage.getItem('cookies-consent');
-            const consentData = consent ? JSON.parse(consent) : null;
-
-            if (!consentData || !consentData.timestamp ||
-                (Date.now() - consentData.timestamp) > (365 * 24 * 60 * 60 * 1000)) {
-                // Show banner if no consent or consent expired (1 year)
-                showCookiesBanner();
-            } else {
-                // Apply saved preferences
-                Object.assign(cookiesConfig, consentData.preferences);
-                applyCookiesSettings();
-            }
-        }
-
-        function showCookiesBanner() {
-            const banner = document.getElementById('cookiesBanner');
-            banner.style.display = 'block';
-            setTimeout(() => banner.classList.add('show'), 100);
-        }
-
-        function hideCookiesBanner() {
-            const banner = document.getElementById('cookiesBanner');
-            banner.classList.remove('show');
-            setTimeout(() => banner.style.display = 'none', 300);
-        }
-
-        function acceptCookies() {
-            cookiesConfig.essential = true;
-            cookiesConfig.preferences = true;
-            cookiesConfig.analytics = true;
-
-            saveCookiesConsent();
-            applyCookiesSettings();
-            hideCookiesBanner();
-
-            // Show success toast
-            showToast('Cookies acceptés ! Merci de nous faire confiance 🍪✨', 'success');
-        }
-
-        function rejectCookies() {
-            cookiesConfig.essential = true;
-            cookiesConfig.preferences = false;
-            cookiesConfig.analytics = false;
-
-            saveCookiesConsent();
-            applyCookiesSettings();
-            hideCookiesBanner();
-
-            // Show info toast
-            showToast('Seuls les cookies essentiels sont activés 🛡️', 'info');
-        }
-
-        function customizeCookies() {
-            // Update modal checkboxes
-            document.getElementById('essential').checked = cookiesConfig.essential;
-            document.getElementById('preferences').checked = cookiesConfig.preferences;
-            document.getElementById('analytics').checked = cookiesConfig.analytics;
-
-            // Show modal
-            const overlay = document.getElementById('cookiesModalOverlay');
-            overlay.style.display = 'flex';
-            setTimeout(() => overlay.classList.add('active'), 10);
-        }
-
-        function closeCookiesModal() {
-            const overlay = document.getElementById('cookiesModalOverlay');
-            overlay.classList.remove('active');
-            setTimeout(() => overlay.style.display = 'none', 300);
-        }
-
-        function saveCookiesPreferences() {
-            // Get checkbox values
-            cookiesConfig.essential = document.getElementById('essential').checked;
-            cookiesConfig.preferences = document.getElementById('preferences').checked;
-            cookiesConfig.analytics = document.getElementById('analytics').checked;
-
-            saveCookiesConsent();
-            applyCookiesSettings();
-            closeCookiesModal();
-            hideCookiesBanner();
-
-            showToast('Préférences sauvegardées ! 🎯', 'success');
-        }
-
-        function saveCookiesConsent() {
-            const consentData = {
-                timestamp: Date.now(),
-                preferences: { ...cookiesConfig },
-                version: '1.0'
-            };
-
-            if (cookiesConfig.preferences) {
-                localStorage.setItem('cookies-consent', JSON.stringify(consentData));
-            } else {
-                // Use sessionStorage for essential-only
-                sessionStorage.setItem('cookies-consent-session', JSON.stringify(consentData));
-                localStorage.removeItem('cookies-consent');
-                localStorage.removeItem('preferred-language');
-            }
-        }
-
-        function applyCookiesSettings() {
-            // Apply preferences cookies
-            if (!cookiesConfig.preferences) {
-                // Clear preference-related storage
-                localStorage.removeItem('preferred-language');
-                // Reset to default language
-                currentLang = 'fr';
-                setLanguage('fr');
-            }
-
-            // Apply analytics cookies
-            if (cookiesConfig.analytics) {
-                // Initialize analytics (placeholder for future)
-                console.log('📊 Analytics cookies enabled');
-            } else {
-                console.log('🚫 Analytics cookies disabled');
-            }
-
-            // Show current status in console
-            console.log('🍪 Cookies Status:', cookiesConfig);
-        }
-
-        function showToast(message, type = 'info') {
-            // Create toast element
-            const toast = document.createElement('div');
-            toast.className = `toast toast-${type}`;
-            toast.innerHTML = `
-                <div class="toast-content">
-                    <span class="toast-icon">${type === 'success' ? '✅' : '💡'}</span>
-                    <span class="toast-message">${message}</span>
-                </div>
-            `;
-
-            // Add to DOM
-            document.body.appendChild(toast);
-
-            // Show with animation
-            setTimeout(() => toast.classList.add('show'), 10);
-
-            // Auto remove
-            setTimeout(() => {
-                toast.classList.remove('show');
-                setTimeout(() => document.body.removeChild(toast), 300);
-            }, 3000);
-        }
-
-        // Initialize cookies system on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            checkCookiesConsent();
-        });
-
-        // Reinitialize if already loaded
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', checkCookiesConsent);
-        } else {
-            checkCookiesConsent();
-        }
+        // 🍪 COOKIES MANAGEMENT - Using Global System (cookies-global.js)
 
         // ===== ZINE - FLOATING AI COACH OPTIMIZED & ENHANCED =====
         class Zine {

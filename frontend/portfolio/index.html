@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="/css/revolutionary.css?v=DEBUG123">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    
+
     <!-- 🍪 COOKIES GLOBAL SYSTEM -->
     <link rel="stylesheet" href="/css/cookies-global.css">
-    
+
     <!-- 🌍 I18N SYSTEM -->
-    <script src="js/portfolio-i18n-v2.js"></script>
-    
+    <script src="js/portfolio-i18n-v2.js?v=1761223099"></script>
+
     <!-- Styles pour Floating AI Coach Zine -->
     <style>
         /* ===== FLOATING AI COACH ZINE ===== */
         .floating-coach {
             position: fixed;
-            bottom: 120px; /* Plus haut pour éviter le chevauchement */
+            bottom: 120px;
+            /* Plus haut pour éviter le chevauchement */
             right: 20px;
             z-index: 10003;
             display: flex;
@@ -54,9 +55,12 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-8px);
             }
@@ -116,7 +120,7 @@
             margin-right: 15px;
         }
 
-        .coach-avatar:hover ~ .coach-tooltip {
+        .coach-avatar:hover~.coach-tooltip {
             opacity: 1;
             transform: translateX(0);
         }
@@ -126,6 +130,7 @@
                 transform: translateX(100px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -135,7 +140,8 @@
         /* Responsive */
         @media (max-width: 768px) {
             .floating-coach {
-                bottom: 100px; /* Ajusté pour mobile aussi */
+                bottom: 100px;
+                /* Ajusté pour mobile aussi */
                 right: 15px;
                 scale: 0.9;
             }
@@ -208,11 +214,11 @@
             .nav-actions {
                 margin-left: auto;
             }
-            
+
             .lang-btn {
                 padding: 4px 6px;
             }
-            
+
             .lang-text {
                 font-size: 11px;
             }
@@ -259,7 +265,8 @@
                     🎓 Diplômé Le Wagon Data Science
                 </div>
                 <h1 class="hero-title">
-                    <span class="title-gradient" data-i18n="hero.title">De la donnée brute à la décision stratégique</span>
+                    <span class="title-gradient" data-i18n="hero.title">De la donnée brute à la décision
+                        stratégique</span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">
                     10 ans Finance Corporate + Formation Le Wagon Data Science =<br>
@@ -285,7 +292,8 @@
                         <span class="btn-icon">🎯</span>
                         <span data-i18n="hero.cta">Audit gratuit de vos données</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/otmane-boulahia-553bb6363" target="_blank" class="btn btn-secondary">
+                    <a href="https://www.linkedin.com/in/otmane-boulahia-553bb6363" target="_blank"
+                        class="btn btn-secondary">
                         <span class="btn-icon">💼</span>
                         LinkedIn
                     </a>
@@ -369,18 +377,18 @@
                         <span class="badge" data-i18n="portfolio.project1.tech4">ROI Tracking</span>
                     </div>
                     <div class="product-actions">
-                        <a href="/analytics/" class="btn btn-primary" data-i18n="portfolio.project1.cta1">Voir le dashboard</a>
-                        <a href="https://github.com/ZineInsight/saas-analytics-portfolio" target="_blank"
-                            class="btn btn-ghost" data-i18n="portfolio.project1.cta2">Voir le code</a>
+                        <a href="/analytics/" class="btn btn-primary" data-i18n="portfolio.project1.cta1">Voir le
+                            dashboard</a>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <div class="card-icon">🎯</div>
                     <br>
-                    <h3 class="product-title" data-i18n="portfolio.project2.title">ZScore Analytics IA / Projet Signature Le Wagon </h3>
+                    <h3 class="product-title" data-i18n="portfolio.project2.title">ZScore Analytics IA / Projet
+                        Signature Le Wagon </h3>
                     <p class="product-subtitle" data-i18n="portfolio.project2.description">
-                        Simulation à l'aide d'algorithmes pour trouver sa ville idéale. 
+                        Simulation à l'aide d'algorithmes pour trouver sa ville idéale.
                     </p>
                     <div class="project-tech">
                         <span class="badge" data-i18n="portfolio.project2.tech1">Power BI</span>
@@ -389,29 +397,28 @@
                         <span class="badge" data-i18n="portfolio.project2.tech2">Scoring IA</span>
                     </div>
                     <div class="product-actions">
-                        <a href="/zscore/" class="btn btn-primary" data-i18n="portfolio.project2.cta1">Faire une Simulation</a>
-                        <a href="https://github.com/ZineInsight/zineinsight-platform" target="_blank"
-                            class="btn btn-ghost" data-i18n="portfolio.project2.cta2">Voir le code</a>
+                        <a href="/zscore/" class="btn btn-primary" data-i18n="portfolio.project2.cta1">Faire une
+                            Simulation</a>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <div class="card-icon">📊</div>
                     <br>
-                    <h3 class="product-title" data-i18n="portfolio.project3.title">Dashboard Enterprise / Finance</h3>
+                    <h3 class="product-title" data-i18n="portfolio.project3.title">Dashboard Finance & Performance</h3>
                     <p class="product-subtitle" data-i18n="portfolio.project3.description">
-                        Dashboard Finance. Etude des risques systèmiques. Conformité réglementaire.
+                        Maximisation du rendement pour PME/ETI. Gestion des risques automatisée. Interface executive
+                        pour pilotage stratégique.
                     </p>
                     <div class="project-tech">
-                        <span class="badge" data-i18n="portfolio.project3.tech1">Power BI</span>
-                        <span class="badge" data-i18n="portfolio.project3.tech2">BigQuery</span>
-                        <span class="badge" data-i18n="portfolio.project3.badge1">Résultats Financiers</span>
-                        <span class="badge" data-i18n="portfolio.project3.badge2">Etude des risques</span>
+                        <span class="badge" data-i18n="portfolio.project3.tech1">ROI Optimization</span>
+                        <span class="badge" data-i18n="portfolio.project3.tech2">Strategic Piloting</span>
+                        <span class="badge" data-i18n="portfolio.project3.badge1">Automated Risk</span>
+                        <span class="badge" data-i18n="portfolio.project3.badge2">Executive Interface</span>
                     </div>
                     <div class="product-actions">
-                        <a href="/analytics_finance/" class="btn btn-primary" data-i18n="portfolio.project3.cta1">Voir le dashboard</a>
-                        <a href="https://github.com/ZineInsight/geo-intelligence-algos" target="_blank"
-                            class="btn btn-ghost" data-i18n="portfolio.project3.cta2">Voir le code</a>
+                        <a href="/analytics_finance/" class="btn btn-primary" data-i18n="portfolio.project3.cta1">Voir
+                            le dashboard</a>
                     </div>
                 </div>
 
@@ -424,7 +431,8 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-badge" data-i18n="services.badge">🎯 Mes Services</div>
-                <h2 class="section-title" data-i18n="services.title">Dashboards Power BI qui Boostent Votre Business</h2>
+                <h2 class="section-title" data-i18n="services.title">Dashboards Power BI qui Boostent Votre Business
+                </h2>
                 <p class="section-subtitle" data-i18n="services.subtitle">
                     Solutions sur-mesure pour PME ambitieuses
                 </p>
@@ -436,7 +444,8 @@
 
                     <h3 class="product-title" data-i18n="service1.title">Dashboard Simple</h3>
                     <p class="product-subtitle" data-i18n="service1.subtitle">
-                        Dashboard essentiel pour PME. Visualisez vos KPIs clés et prenez des décisions éclairées rapidement.
+                        Dashboard essentiel pour PME. Visualisez vos KPIs clés et prenez des décisions éclairées
+                        rapidement.
                     </p>
                     <div class="service-details">
                         <div class="detail-section">
@@ -479,7 +488,8 @@
                     <br>
                     <h3 class="product-title" data-i18n="service2.title">Dashboard Standard</h3>
                     <p class="product-subtitle" data-i18n="service2.subtitle">
-                        Solution complète pour PME qui veulent analyser leurs données en profondeur et optimiser leurs performances.
+                        Solution complète pour PME qui veulent analyser leurs données en profondeur et optimiser leurs
+                        performances.
                     </p>
                     <div class="service-details">
                         <div class="detail-section">
@@ -494,7 +504,8 @@
                         <div class="detail-section">
                             <h4 class="detail-title" data-i18n="service2.deliverables">🎯 Livrables inclus :</h4>
                             <ul class="detail-list">
-                                <li data-i18n="service2.deliverable1">Dashboard avancé avec 6-10 visuels interactifs</li>
+                                <li data-i18n="service2.deliverable1">Dashboard avancé avec 6-10 visuels interactifs
+                                </li>
                                 <li data-i18n="service2.deliverable2">Connexion 3-4 sources de données</li>
                                 <li data-i18n="service2.deliverable3">Filtres croisés et analyse détaillée</li>
                                 <li data-i18n="service2.deliverable4">Formation équipe (2h) + documentation</li>
@@ -522,7 +533,8 @@
                     <br>
                     <h3 class="product-title" data-i18n="service3.title">Dashboard Complexe</h3>
                     <p class="product-subtitle" data-i18n="service3.subtitle">
-                        Solution avancée pour PME ambitieuses qui veulent un avantage concurrentiel durable avec leurs données.
+                        Solution avancée pour PME ambitieuses qui veulent un avantage concurrentiel durable avec leurs
+                        données.
                     </p>
                     <div class="service-details">
                         <div class="detail-section">
@@ -537,10 +549,13 @@
                         <div class="detail-section">
                             <h4 class="detail-title" data-i18n="service3.deliverables">🎯 Livrables inclus :</h4>
                             <ul class="detail-list">
-                                <li data-i18n="service3.deliverable1">Dashboard multi-niveaux (direction, managers, équipes)</li>
+                                <li data-i18n="service3.deliverable1">Dashboard multi-niveaux (direction, managers,
+                                    équipes)</li>
                                 <li data-i18n="service3.deliverable2">Connexion automatisée 5+ sources</li>
-                                <li data-i18n="service3.deliverable3">Alertes intelligentes + notifications automatiques</li>
-                                <li data-i18n="service3.deliverable4">Formation complète équipe (4h) + support 1 mois</li>
+                                <li data-i18n="service3.deliverable3">Alertes intelligentes + notifications automatiques
+                                </li>
+                                <li data-i18n="service3.deliverable4">Formation complète équipe (4h) + support 1 mois
+                                </li>
                                 <li data-i18n="service3.deliverable5">Documentation technique complète</li>
                             </ul>
                         </div>
@@ -579,15 +594,18 @@
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p class="testimonial-text" data-i18n="testimonials.testimonial1.text">
-                            "Notre suivi des ventes en temps réel nous a fait gagner 2 jours par mois sur les rapports. On voit tout d'un coup d'œil maintenant."
+                            "Notre suivi des ventes en temps réel nous a fait gagner 2 jours par mois sur les rapports.
+                            On voit tout d'un coup d'œil maintenant."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
                                 <div class="author-name" data-i18n="testimonials.testimonial1.name">Patrick D.</div>
-                                <div class="author-role" data-i18n="testimonials.testimonial1.role">Gérant SARL - Bâtiment</div>
+                                <div class="author-role" data-i18n="testimonials.testimonial1.role">Gérant SARL -
+                                    Bâtiment</div>
                             </div>
                             <div class="testimonial-impact">
-                                <span class="impact-badge" data-i18n="testimonials.testimonial1.impact">Suivi des ventes</span>
+                                <span class="impact-badge" data-i18n="testimonials.testimonial1.impact">Suivi des
+                                    ventes</span>
                             </div>
                         </div>
                     </div>
@@ -596,15 +614,18 @@
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p class="testimonial-text" data-i18n="testimonials.testimonial2.text">
-                            "Fini les tableaux Excel interminables. Nos commerciaux voient leurs objectifs et résultats d'un simple clic. Formation en 2h, c'était parfait."
+                            "Fini les tableaux Excel interminables. Nos commerciaux voient leurs objectifs et résultats
+                            d'un simple clic. Formation en 2h, c'était parfait."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
                                 <div class="author-name" data-i18n="testimonials.testimonial2.name">Marie L.</div>
-                                <div class="author-role" data-i18n="testimonials.testimonial2.role">Directrice - Services B2B</div>
+                                <div class="author-role" data-i18n="testimonials.testimonial2.role">Directrice -
+                                    Services B2B</div>
                             </div>
                             <div class="testimonial-impact">
-                                <span class="impact-badge" data-i18n="testimonials.testimonial2.impact">Suivi des équipes</span>
+                                <span class="impact-badge" data-i18n="testimonials.testimonial2.impact">Suivi des
+                                    équipes</span>
                             </div>
                         </div>
                     </div>
@@ -613,15 +634,18 @@
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p class="testimonial-text" data-i18n="testimonials.testimonial3.text">
-                            ""Le tableau de bord nous permet de mieux suivre nos ventes et d’anticiper nos besoins. Nous avons réduit nos ruptures et gagné en sérénité dans la gestion des stocks."
+                            ""Le tableau de bord nous permet de mieux suivre nos ventes et d’anticiper nos besoins. Nous
+                            avons réduit nos ruptures et gagné en sérénité dans la gestion des stocks."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
                                 <div class="author-name" data-i18n="testimonials.testimonial3.name">Jean R.</div>
-                                <div class="author-role" data-i18n="testimonials.testimonial3.role">PDG PME - Distribution</div>
+                                <div class="author-role" data-i18n="testimonials.testimonial3.role">PDG PME -
+                                    Distribution</div>
                             </div>
                             <div class="testimonial-impact">
-                                <span class="impact-badge" data-i18n="testimonials.testimonial3.impact">gestion des stocks</span>
+                                <span class="impact-badge" data-i18n="testimonials.testimonial3.impact">gestion des
+                                    stocks</span>
                             </div>
                         </div>
                     </div>
@@ -635,7 +659,8 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-badge" data-i18n="technology.badge">💡 Technologie</div>
-                <h2 class="section-title" data-i18n="technology.title">Pourquoi choisir Power BI pour vos dashboards business ?</h2>
+                <h2 class="section-title" data-i18n="technology.title">Pourquoi choisir Power BI pour vos dashboards
+                    business ?</h2>
                 <p class="section-subtitle" data-i18n="technology.subtitle">
                     La solution de référence pour transformer vos données en avantage concurrentiel
                 </p>
@@ -672,7 +697,8 @@
 
                     <div class="advantage-card">
                         <div class="advantage-icon">🔌</div>
-                        <h3 class="advantage-title" data-i18n="technology.advantage3.title">Connectivité Universelle</h3>
+                        <h3 class="advantage-title" data-i18n="technology.advantage3.title">Connectivité Universelle
+                        </h3>
                         <p class="advantage-desc" data-i18n="technology.advantage3.description">
                             Plus de 200 connecteurs natifs : SQL, Excel, APIs REST,
                             Google Analytics, Salesforce, BigQuery...
@@ -808,10 +834,14 @@
                         <div class="form-group">
                             <label for="project" data-i18n="contact.form.project_label">Type de projet</label>
                             <select id="project" name="project" required>
-                                <option value="" data-i18n="contact.form.project_placeholder">Sélectionnez votre besoin</option>
-                                <option value="analytics" data-i18n="contact.form.option1">Analytics & Dashboards</option>
-                                <option value="data-pipeline" data-i18n="contact.form.option2">Pipeline Data & APIs</option>
-                                <option value="consulting" data-i18n="contact.form.option3">Consulting Data Strategy</option>
+                                <option value="" data-i18n="contact.form.project_placeholder">Sélectionnez votre besoin
+                                </option>
+                                <option value="analytics" data-i18n="contact.form.option1">Analytics & Dashboards
+                                </option>
+                                <option value="data-pipeline" data-i18n="contact.form.option2">Pipeline Data & APIs
+                                </option>
+                                <option value="consulting" data-i18n="contact.form.option3">Consulting Data Strategy
+                                </option>
                                 <option value="other" data-i18n="contact.form.option4">Autre projet data</option>
                             </select>
                         </div>
@@ -820,8 +850,7 @@
                             <label for="message" data-i18n="contact.form.message_label">Décrivez votre projet</label>
                             <textarea id="message" name="message" rows="5"
                                 placeholder="Décrivez vos besoins en data analysis, ou tout autre projet data..."
-                                data-i18n-placeholder="contact.form.message_placeholder"
-                                required></textarea>
+                                data-i18n-placeholder="contact.form.message_placeholder" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-contact" data-i18n="contact.form.submit">
@@ -915,8 +944,8 @@
 
             showWelcomeMessage() {
                 // Utiliser les traductions du système i18n
-                const welcomeMessages = window.portfolioI18n ? 
-                    window.portfolioI18n.getTranslation('ai_coach.welcome_messages') : 
+                const welcomeMessages = window.portfolioI18n ?
+                    window.portfolioI18n.getTranslation('ai_coach.welcome_messages') :
                     [
                         "👋 Bienvenue chez ZineInsight ! Expert Data Analytics !",
                         "🎯 Salut ! Découvrez mes dashboards Power BI pour PME !",
@@ -945,8 +974,8 @@
 
             showBusinessTip() {
                 // Utiliser les traductions du système i18n
-                const businessTips = window.portfolioI18n ? 
-                    window.portfolioI18n.getTranslation('ai_coach.business_tips') : 
+                const businessTips = window.portfolioI18n ?
+                    window.portfolioI18n.getTranslation('ai_coach.business_tips') :
                     [
                         "📊 Dashboard Power BI en 2-8 jours selon complexité !",
                         "⚡ Tarifs transparents : 900€ à 3600€ selon besoins !",
@@ -964,8 +993,8 @@
 
             showServicesTip() {
                 // Utiliser les traductions du système i18n
-                const servicesTips = window.portfolioI18n ? 
-                    window.portfolioI18n.getTranslation('ai_coach.services_tips') : 
+                const servicesTips = window.portfolioI18n ?
+                    window.portfolioI18n.getTranslation('ai_coach.services_tips') :
                     [
                         "🔧 Dashboard Simple : idéal pour débuter (900-1350€) !",
                         "📊 Dashboard Standard : analyse multi-sources (1800-2250€) !",
@@ -983,8 +1012,8 @@
 
             showContactEncouragement() {
                 // Utiliser les traductions du système i18n
-                const contactMessages = window.portfolioI18n ? 
-                    window.portfolioI18n.getTranslation('ai_coach.contact_messages') : 
+                const contactMessages = window.portfolioI18n ?
+                    window.portfolioI18n.getTranslation('ai_coach.contact_messages') :
                     [
                         "📧 Contactez-moi pour un devis gratuit personnalisé !",
                         "🎯 Audit gratuit de vos données : découvrons le potentiel !",
@@ -1008,13 +1037,13 @@
                             this.onSectionChange(sectionId);
                         }
                     });
-                }, { 
+                }, {
                     threshold: [0.1, 0.3, 0.5], // Plusieurs seuils pour détection rapide
                     rootMargin: '50px 0px -50px 0px' // Déclenche plus tôt
                 });
 
                 sections.forEach(section => observer.observe(section));
-                
+
                 // Observer aussi le footer pour la section contact
                 const footer = document.querySelector('footer');
                 if (footer) {
@@ -1043,7 +1072,7 @@
             onSectionChange(sectionId) {
                 // Éviter spam de messages mais être plus réactif
                 if (this.currentSection === sectionId) return;
-                
+
                 console.log('🎯 Section détectée:', sectionId); // Debug
                 this.currentSection = sectionId;
 
@@ -1114,7 +1143,7 @@
 
                 const messages = sectionMessages[sectionId] || defaultMessages;
                 const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-                
+
                 console.log(`💬 Message section ${sectionId}:`, randomMessage); // Debug
                 this.speak(randomMessage, 4000);
             }
@@ -1145,10 +1174,10 @@
                 // Trigger sur scroll pour engagement
                 let scrollTriggered = false;
                 let contactTriggered = false;
-                
+
                 window.addEventListener('scroll', () => {
                     const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                    
+
                     // Message exploration à 50% du scroll
                     if (!scrollTriggered && scrollPercent > 50) {
                         scrollTriggered = true;
@@ -1167,7 +1196,7 @@
                             }
                         }, 1000);
                     }
-                    
+
                     // Force un message contact si on arrive à 85% du scroll
                     if (!contactTriggered && scrollPercent > 85) {
                         contactTriggered = true;
@@ -1287,7 +1316,7 @@
             document.addEventListener('DOMContentLoaded', () => {
                 window.zinePortfolio = new ZinePortfolioCoach();
                 console.log('🤖 Zine Portfolio Coach - Ready for business!');
-                
+
                 // Gestion intelligente du positionnement avec CTA
                 adjustFloatingElements();
             });
@@ -1301,13 +1330,13 @@
         function adjustFloatingElements() {
             const coach = document.getElementById('floating-ai-coach');
             const cta = document.getElementById('floatingCta');
-            
+
             if (!coach || !cta) return;
 
             // Responsive positioning
             function updatePositions() {
                 const isMobile = window.innerWidth <= 768;
-                
+
                 if (isMobile) {
                     // Sur mobile : stack vertical avec robot plus haut
                     coach.style.bottom = '100px';
@@ -1332,7 +1361,7 @@
             coach.addEventListener('speaking', () => {
                 cta.style.opacity = '0.3';
             });
-            
+
             // Restaurer quand robot stop
             const observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
@@ -1342,7 +1371,7 @@
                     }
                 });
             });
-            
+
             const bubble = document.getElementById('zine-bubble');
             if (bubble) {
                 observer.observe(bubble, { attributes: true, attributeFilter: ['class'] });
@@ -1367,8 +1396,8 @@
 
     <!-- CTA Flottant -->
     <div class="floating-cta" id="floatingCta" style="bottom: 20px; right: 100px;">
-        <a href="mailto:otmane@zineinsight.com?subject=Dashboard%20Power%20BI%20-%20Devis%20Gratuit&body=Bonjour,%0A%0AJe%20suis%20intéressé%20par%20votre%20offre%20et%20par%20un%20devis%20gratuit.%0A%0A-%20Secteur%20:%20%0A-%20Objectif%20:%20%0A-%20Timeline%20:%20%0A%0AMerci" 
-           class="floating-cta-btn">
+        <a href="mailto:otmane@zineinsight.com?subject=Dashboard%20Power%20BI%20-%20Devis%20Gratuit&body=Bonjour,%0A%0AJe%20suis%20intéressé%20par%20votre%20offre%20et%20par%20un%20devis%20gratuit.%0A%0A-%20Secteur%20:%20%0A-%20Objectif%20:%20%0A-%20Timeline%20:%20%0A%0AMerci"
+            class="floating-cta-btn">
             <span class="cta-icon">🎯</span>
             <span class="cta-text">
                 <strong data-i18n="floating_cta.title">Audit Gratuit</strong>

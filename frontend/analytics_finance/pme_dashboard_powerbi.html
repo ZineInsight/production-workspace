@@ -16,8 +16,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #F3F2F1;
-            color: #323130;
+            background: #0a0a0b;
+            color: #ffffff;
             line-height: 1.4;
             overflow-x: hidden;
         }
@@ -25,19 +25,19 @@
         .dashboard-container {
             max-width: 1400px;
             margin: 20px auto;
-            background: #F3F2F1;
+            background: #0a0a0b;
             padding: 20px;
         }
 
-        /* Header Ultra Power BI Style */
+        /* Header Ultra ZineInsight Style */
         .header {
-            background: linear-gradient(135deg, #0078D4 0%, #106EBE 50%, #005A9E 100%),
+            background: linear-gradient(135deg, #0066FF 0%, #00D4AA 50%, #667eea 100%),
                 radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
             color: white;
             padding: 0;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 8px 32px rgba(0, 120, 212, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 102, 255, 0.25);
             position: relative;
             overflow: hidden;
         }
@@ -200,13 +200,13 @@
         }
 
         .kpi-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 1) 100%);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(135deg, rgba(26, 26, 29, 0.9) 0%, rgba(26, 26, 29, 0.95) 100%);
+            backdrop-filter: blur(20px);
             border-radius: 12px;
             padding: 20px 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-            border-left: 4px solid #0078D4;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-left: 4px solid #0066FF;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -219,26 +219,26 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 120, 212, 0.02) 0%, transparent 50%);
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, transparent 50%);
             pointer-events: none;
         }
 
         .kpi-card:hover {
             transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
-            border-color: rgba(0, 120, 212, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 102, 255, 0.3);
+            border-color: rgba(0, 102, 255, 0.5);
         }
 
         .kpi-card:nth-child(2) {
-            border-left-color: #107C10;
+            border-left-color: #00D4AA;
         }
 
         .kpi-card:nth-child(3) {
-            border-left-color: #FF8C00;
+            border-left-color: #667eea;
         }
 
         .kpi-card:nth-child(4) {
-            border-left-color: #5C2D91;
+            border-left-color: #764ba2;
         }
 
         .kpi-header {
@@ -273,19 +273,19 @@
         }
 
         .kpi-card:nth-child(1) .kpi-icon {
-            color: #0078D4;
+            color: #0066FF;
         }
 
         .kpi-card:nth-child(2) .kpi-icon {
-            color: #107C10;
+            color: #00D4AA;
         }
 
         .kpi-card:nth-child(3) .kpi-icon {
-            color: #FF8C00;
+            color: #667eea;
         }
 
         .kpi-card:nth-child(4) .kpi-icon {
-            color: #5C2D91;
+            color: #764ba2;
         }
 
         .status-badge {
@@ -333,7 +333,7 @@
         .kpi-value {
             font-size: 2.4rem;
             font-weight: 700;
-            color: #323130;
+            color: #ffffff;
             margin-bottom: 2px;
             line-height: 1;
             position: relative;
@@ -341,7 +341,7 @@
 
         .kpi-label {
             font-size: 0.85rem;
-            color: #605E5C;
+            color: #b3b3b3;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -355,7 +355,7 @@
         .progress-bar {
             width: 100%;
             height: 6px;
-            background: #F3F2F1;
+            background: #2d2d30;
             border-radius: 3px;
             overflow: hidden;
             position: relative;
@@ -369,24 +369,24 @@
         }
 
         .kpi-card:nth-child(1) .progress-fill {
-            background: linear-gradient(90deg, #0078D4, #106EBE);
+            background: linear-gradient(90deg, #0066FF, #3385FF);
         }
 
         .kpi-card:nth-child(2) .progress-fill {
-            background: linear-gradient(90deg, #107C10, #16A085);
+            background: linear-gradient(90deg, #00D4AA, #33DDBB);
         }
 
         .kpi-card:nth-child(3) .progress-fill {
-            background: linear-gradient(90deg, #FF8C00, #F39C12);
+            background: linear-gradient(90deg, #667eea, #8a9df8);
         }
 
         .kpi-card:nth-child(4) .progress-fill {
-            background: linear-gradient(90deg, #5C2D91, #8E44AD);
+            background: linear-gradient(90deg, #764ba2, #9a6bc4);
         }
 
         .progress-text {
             font-size: 0.7rem;
-            color: #605E5C;
+            color: #808080;
             margin-top: 4px;
             display: flex;
             justify-content: space-between;
@@ -445,13 +445,13 @@
         }
 
         .chart-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 1) 100%);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(135deg, rgba(26, 26, 29, 0.95) 0%, rgba(26, 26, 29, 1) 100%);
+            backdrop-filter: blur(20px);
             border-radius: 12px;
             padding: 25px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-            border-top: 3px solid #0078D4;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-top: 3px solid #0066FF;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -464,30 +464,30 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 120, 212, 0.02) 0%, transparent 50%);
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, transparent 50%);
             pointer-events: none;
         }
 
         .chart-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-            border-color: rgba(0, 120, 212, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 102, 255, 0.3);
+            border-color: rgba(0, 102, 255, 0.5);
         }
 
         .chart-card:nth-child(1) {
-            border-top-color: #0078D4;
+            border-top-color: #0066FF;
         }
 
         .chart-card:nth-child(2) {
-            border-top-color: #107C10;
+            border-top-color: #00D4AA;
         }
 
         .chart-card:nth-child(3) {
-            border-top-color: #FF8C00;
+            border-top-color: #667eea;
         }
 
         .chart-card:nth-child(4) {
-            border-top-color: #5C2D91;
+            border-top-color: #764ba2;
         }
 
         .chart-card.full-width {
@@ -497,7 +497,7 @@
         .chart-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #323130;
+            color: #ffffff;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -971,18 +971,20 @@
 
         /* Benchmark Section */
         .benchmark-section {
-            background: white;
+            background: linear-gradient(135deg, rgba(26, 26, 29, 0.95) 0%, rgba(26, 26, 29, 1) 100%);
+            backdrop-filter: blur(20px);
             border-radius: 8px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-top: 3px solid #FF8C00;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-top: 3px solid #667eea;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .benchmark-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #323130;
+            color: #ffffff;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -998,31 +1000,32 @@
         .benchmark-item {
             text-align: center;
             padding: 15px;
-            background: #F9F9F9;
+            background: rgba(45, 45, 48, 0.7);
             border-radius: 6px;
-            border: 1px solid #E1DFDD;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .benchmark-value {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #D13438;
+            color: #FA709A;
             margin-bottom: 5px;
         }
 
         .benchmark-label {
             font-size: 0.8rem;
-            color: #605E5C;
+            color: #b3b3b3;
             font-weight: 500;
         }
 
         .optimized {
-            background: #DFF6DD !important;
-            border-color: #107C10 !important;
+            background: rgba(0, 212, 170, 0.15) !important;
+            border-color: #00D4AA !important;
         }
 
         .optimized .benchmark-value {
-            color: #107C10;
+            color: #00D4AA;
         }
 
         /* Footer */
@@ -1030,10 +1033,11 @@
             margin-top: 20px;
             text-align: center;
             padding: 20px;
-            background: #323130;
+            background: linear-gradient(135deg, rgba(26, 26, 29, 0.9) 0%, rgba(26, 26, 29, 1) 100%);
             color: white;
             border-radius: 8px;
             font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* Responsive */
@@ -1416,8 +1420,8 @@
 
         <!-- Footer -->
         <div class="footer">
-            🔧 Tech Stack: Python + Skfolio + Power BI | 📊 Données: Yahoo Finance EUR | ⚠️ Backtest - Performance
-            passée ne préjuge pas du futur | 🎯 Contraintes PME: Vol ≤5%, Actions ≤10%
+            Solution sur-mesure développée pour PME • Données financières temps réel • Optimisation respectant
+            profil de risque conservateur • Architecture scalable et sécurisée
         </div>
     </div>
 
@@ -1425,16 +1429,16 @@
         // Configuration globale Chart.js
         Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
         Chart.defaults.font.size = 11;
-        Chart.defaults.color = '#605E5C';
+        Chart.defaults.color = '#b3b3b3';
 
-        // Couleurs Power BI
-        const powerBIColors = {
-            blue: '#0078D4',
-            green: '#107C10',
-            orange: '#FF8C00',
-            purple: '#5C2D91',
-            red: '#D13438',
-            teal: '#00BCF2',
+        // Couleurs ZineInsight
+        const zineInsightColors = {
+            blue: '#0066FF',
+            teal: '#00D4AA',
+            purple: '#667eea',
+            violet: '#764ba2',
+            red: '#FF6B6B',
+            orange: '#FA709A',
             gray: '#737373'
         };
 
@@ -1452,9 +1456,9 @@
                     label: 'Allocation',
                     data: [210, 105, 35], // Montants en k€
                     backgroundColor: [
-                        '#107C10', // Vert (faible risque)
-                        '#FFB900', // Orange (risque modéré)
-                        '#D13438'  // Rouge (risque élevé)
+                        '#00D4AA', // Teal (faible risque)
+                        '#667eea', // Purple (risque modéré)
+                        '#FA709A'  // Pink (risque élevé)
                     ],
                     borderRadius: 6,
                     borderSkipped: false,
@@ -1497,11 +1501,11 @@
                         beginAtZero: true,
                         max: 250,
                         grid: {
-                            color: 'rgba(0,0,0,0.1)',
+                            color: 'rgba(255,255,255,0.1)',
                             lineWidth: 1
                         },
                         ticks: {
-                            color: '#605E5C',
+                            color: '#b3b3b3',
                             font: { size: 10 },
                             callback: function (value) {
                                 return '€' + value + 'k';
@@ -1513,7 +1517,7 @@
                             display: false
                         },
                         ticks: {
-                            color: '#605E5C',
+                            color: '#b3b3b3',
                             font: { size: 10, weight: '500' },
                             callback: function (value, index) {
                                 const percentages = ['60%', '30%', '10%'];
@@ -1536,8 +1540,8 @@
                     {
                         label: 'Rendement (%)',
                         data: [5.8, 6.2, 6.8, 6.5, 7.1, 7.3, 7.0, 6.9, 7.05, 7.16],
-                        borderColor: powerBIColors.blue,
-                        backgroundColor: powerBIColors.blue + '20',
+                        borderColor: zineInsightColors.blue,
+                        backgroundColor: zineInsightColors.blue + '20',
                         yAxisID: 'y',
                         borderWidth: 3,
                         fill: false,
@@ -1548,8 +1552,8 @@
                     {
                         label: 'Volatilité (%)',
                         data: [4.2, 4.5, 5.1, 4.8, 5.3, 5.6, 5.2, 5.0, 5.1, 5.32],
-                        borderColor: powerBIColors.orange,
-                        backgroundColor: powerBIColors.orange + '20',
+                        borderColor: zineInsightColors.orange,
+                        backgroundColor: zineInsightColors.orange + '20',
                         yAxisID: 'y1',
                         borderWidth: 3,
                         borderDash: [5, 5],
@@ -1585,24 +1589,24 @@
                 scales: {
                     x: {
                         display: true,
-                        grid: { color: '#E1DFDD' },
-                        ticks: { color: '#605E5C', font: { size: 10 } }
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        ticks: { color: '#b3b3b3', font: { size: 10 } }
                     },
                     y: {
                         type: 'linear',
                         display: true,
                         position: 'left',
-                        title: { display: true, text: 'Rendement (%)', color: powerBIColors.blue },
-                        grid: { color: '#E1DFDD' },
-                        ticks: { color: powerBIColors.blue, font: { size: 10 } }
+                        title: { display: true, text: 'Rendement (%)', color: zineInsightColors.blue },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        ticks: { color: zineInsightColors.blue, font: { size: 10 } }
                     },
                     y1: {
                         type: 'linear',
                         display: true,
                         position: 'right',
-                        title: { display: true, text: 'Volatilité (%)', color: powerBIColors.orange },
+                        title: { display: true, text: 'Volatilité (%)', color: zineInsightColors.orange },
                         grid: { drawOnChartArea: false },
-                        ticks: { color: powerBIColors.orange, font: { size: 10 } }
+                        ticks: { color: zineInsightColors.orange, font: { size: 10 } }
                     }
                 }
             }
@@ -1618,11 +1622,11 @@
                     label: 'Gains (€)',
                     data: [10500, 8500, 2200, 1294, 14494], // Base 350k€ * 3% = 10,500€
                     backgroundColor: [
-                        powerBIColors.red,
-                        powerBIColors.blue,
-                        powerBIColors.green,
-                        powerBIColors.purple,
-                        powerBIColors.orange
+                        zineInsightColors.red,
+                        zineInsightColors.blue,
+                        zineInsightColors.teal,
+                        zineInsightColors.purple,
+                        zineInsightColors.orange
                     ],
                     borderRadius: 6,
                     borderSkipped: false
@@ -1650,17 +1654,17 @@
                 scales: {
                     y: {
                         beginAtZero: true,
-                        grid: { color: '#E1DFDD' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
                         ticks: {
                             callback: function (value) { return value.toLocaleString() + '€'; },
-                            color: '#605E5C',
+                            color: '#b3b3b3',
                             font: { size: 10 }
                         }
                     },
                     x: {
                         grid: { display: false },
                         ticks: {
-                            color: '#605E5C',
+                            color: '#b3b3b3',
                             font: { size: 10, weight: '500' }
                         }
                     }
@@ -1724,10 +1728,10 @@
 
             // Sparklines creation
             setTimeout(() => {
-                createSparkline('sparkline1', [5.8, 6.2, 6.8, 6.5, 7.1, 7.3, 7.16], '#0078D4');
-                createSparkline('sparkline2', [8.5, 10.2, 12.1, 13.8, 14.1, 14.3, 14.5], '#107C10');
-                createSparkline('sparkline3', [0.28, 0.31, 0.34, 0.33, 0.35, 0.37, 0.36], '#FF8C00');
-                createSparkline('sparkline4', [85, 87, 89, 88, 90, 91, 90], '#5C2D91');
+                createSparkline('sparkline1', [5.8, 6.2, 6.8, 6.5, 7.1, 7.3, 7.16], '#0066FF');
+                createSparkline('sparkline2', [8.5, 10.2, 12.1, 13.8, 14.1, 14.3, 14.5], '#00D4AA');
+                createSparkline('sparkline3', [0.28, 0.31, 0.34, 0.33, 0.35, 0.37, 0.36], '#667eea');
+                createSparkline('sparkline4', [85, 87, 89, 88, 90, 91, 90], '#764ba2');
             }, 1000);
 
             // Drill-down buttons functionality

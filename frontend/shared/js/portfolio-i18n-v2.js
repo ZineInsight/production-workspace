@@ -7,7 +7,7 @@ console.log('🚀 PORTFOLIO I18N SCRIPT LOADED - VERSION 2!');
 
 class PortfolioI18n {
     constructor() {
-        this.currentLanguage = 'fr'; // Default language  
+        this.currentLanguage = 'fr'; // Default language
         this.translations = {
             fr: {
                 // Navigation
@@ -124,10 +124,9 @@ class PortfolioI18n {
                         description: "Dashboard complet pour e-commerce : CA, ROI, performance produits.",
                         tech1: "Power BI",
                         tech2: "BigQuery",
-                        tech3: "E-commerce KPIs",
-                        tech4: "ROI Tracking",
-                        cta1: "Voir le dashboard",
-                        cta2: "Voir le code"
+                        badge1: "E-commerce KPIs",
+                        badge2: "ROI Tracking",
+                        cta1: "Voir le dashboard"
                     },
                     project2: {
                         title: "ZScore Analytics IA / Projet Signature Le Wagon",
@@ -136,18 +135,16 @@ class PortfolioI18n {
                         tech2: "Scoring IA",
                         badge1: "Simulation Gratuite",
                         badge2: "12 marchés",
-                        cta1: "Faire une Simulation",
-                        cta2: "Voir le code"
+                        cta1: "Faire une Simulation"
                     },
                     project3: {
-                        title: "Dashboard Enterprise / Finance",
-                        description: "Dashboard Finance. Etude des risques systèmiques. Conformité réglementaire.",
-                        tech1: "Power BI",
-                        tech2: "BigQuery",
-                        badge1: "Résultats Financiers",
-                        badge2: "Etude des risques",
-                        cta1: "Voir le dashboard",
-                        cta2: "Voir le code"
+                        title: "Dashboard Finance & Performance",
+                        description: "Maximisation du rendement pour PME/ETI. Gestion des risques automatisée. Interface executive pour pilotage stratégique.",
+                        tech1: "ROI Optimization",
+                        tech2: "Strategic Piloting",
+                        badge1: "Automated Risk",
+                        badge2: "Executive Interface",
+                        cta1: "Voir le dashboard"
                     }
                 },
 
@@ -337,7 +334,7 @@ class PortfolioI18n {
                         ]
                     }
                 },
-                
+
                 // Cookies System
                 cookies: {
                     title: "Nous respectons votre vie privée",
@@ -370,7 +367,7 @@ class PortfolioI18n {
                 // Navigation
                 nav: {
                     brand: "ZineInsight",
-                    tagline: "Data Analytics", 
+                    tagline: "Data Analytics",
                     about: "About",
                     portfolio: "Portfolio",
                     packages: "Packages & Pricing",
@@ -483,8 +480,7 @@ class PortfolioI18n {
                         tech2: "BigQuery",
                         tech3: "E-commerce KPIs",
                         tech4: "ROI Tracking",
-                        cta1: "View dashboard",
-                        cta2: "View code"
+                        cta1: "View dashboard"
                     },
                     project2: {
                         title: "ZScore Analytics AI / Le Wagon Signature Project",
@@ -493,18 +489,16 @@ class PortfolioI18n {
                         tech2: "AI Scoring",
                         badge1: "Free Simulation",
                         badge2: "12 markets",
-                        cta1: "Try Simulation",
-                        cta2: "View code"
+                        cta1: "Try Simulation"
                     },
                     project3: {
-                        title: "Enterprise Finance Dashboard",
-                        description: "Finance Dashboard. Systemic risk analysis. Regulatory compliance.",
-                        tech1: "Power BI",
-                        tech2: "BigQuery",
-                        badge1: "Financial Results",
-                        badge2: "Risk Analysis",
-                        cta1: "View dashboard",
-                        cta2: "View code"
+                        title: "Finance & Performance Dashboard",
+                        description: "ROI maximization for SME/ETI. Automated risk management. Executive interface for strategic piloting.",
+                        tech1: "ROI Optimization",
+                        tech2: "Strategic Piloting",
+                        badge1: "Automated Risk",
+                        badge2: "Executive Interface",
+                        cta1: "View dashboard"
                     }
                 },
 
@@ -694,7 +688,7 @@ class PortfolioI18n {
                         ]
                     }
                 },
-                
+
                 // Cookies System
                 cookies: {
                     title: "We respect your privacy",
@@ -736,7 +730,7 @@ class PortfolioI18n {
 
         // Set up language switcher
         this.setupLanguageSwitcher();
-        
+
         // Apply translations
         this.applyTranslations();
     }
@@ -769,7 +763,7 @@ class PortfolioI18n {
                 console.log('🇬🇧 EN button clicked!');
                 this.switchLanguage('en');
             });
-            
+
             console.log('👂 Event listeners attached!');
         } else {
             console.error('❌ Buttons not found!');
@@ -778,17 +772,17 @@ class PortfolioI18n {
 
     switchLanguage(language) {
         console.log(`🔄 Switching language to: ${language}`);
-        
+
         if (this.translations[language]) {
             this.currentLanguage = language;
             localStorage.setItem('portfolio-language', language);
-            
+
             console.log(`✅ Language switched to: ${language}`);
-            
+
             // Update button states
             const frBtn = document.getElementById('lang-fr');
             const enBtn = document.getElementById('lang-en');
-            
+
             if (frBtn && enBtn) {
                 if (language === 'fr') {
                     frBtn.classList.add('active');
@@ -802,7 +796,7 @@ class PortfolioI18n {
 
             // Apply new translations
             this.applyTranslations();
-            
+
             // Déclencher l'événement de changement de langue
             document.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: language } }));
         } else {
@@ -821,7 +815,7 @@ class PortfolioI18n {
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             const translation = this.getNestedTranslation(currentTranslations, key);
-            
+
             if (translation) {
                 element.textContent = translation;
                 console.log(`✅ ${key}: ${translation}`);
@@ -834,7 +828,7 @@ class PortfolioI18n {
         placeholderElements.forEach(element => {
             const key = element.getAttribute('data-i18n-placeholder');
             const translation = this.getNestedTranslation(currentTranslations, key);
-            
+
             if (translation) {
                 element.placeholder = translation;
                 console.log(`✅ Placeholder ${key}: ${translation}`);
@@ -842,14 +836,14 @@ class PortfolioI18n {
                 console.warn(`❌ Missing placeholder translation for: ${key}`);
             }
         });
-        
+
         console.log('Translation application completed!');
     }
 
     getNestedTranslation(translations, key) {
         const keys = key.split('.');
         let result = translations;
-        
+
         for (const k of keys) {
             if (result && typeof result === 'object' && k in result) {
                 result = result[k];
@@ -857,7 +851,7 @@ class PortfolioI18n {
                 return null;
             }
         }
-        
+
         return result;
     }
 

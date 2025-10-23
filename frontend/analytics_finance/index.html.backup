@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth antialiased">
+
+<head>
+    <!-- Meta Essentials -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Premium -->
+    <title>Dashboard F                    <div class="trust-item">
+                        <div class="trust-icon">🎯</div>
+                        <div class="trust-text">ROI mesurable</div>
+                    </div>BNP Paribas - 44 Md€ PNB | ZineInsight</title>
+    <meta name="description"
+        content="Découvrez notre dashboard Power BI Finance : 44 Md€ PNB, +4% croissance, analyse complète des performances bancaires BNP Paribas 2023-2024.">
+    <meta name="keywords"
+        content="dashboard power bi, finance analytics, business intelligence, analyse bancaire, kpi finance, bnp paribas">
+    <meta name="author" content="ZineInsight - Business Intelligence">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Premium -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ZineInsight">
+    <meta property="og:title" content="Dashboard Finance BNP Paribas - 44 Md€ PNB | ZineInsight">
+    <meta property="og:description"
+        content="Dashboard Power BI professionnel : analyse complète finance avec 44 Md€ PNB, insights bancaires et recommandations actionnables.">
+    <meta property="og:url" content="https://zineinsight.com/analytics_finance/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        as="style">
+
+    <!-- Premium Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons Premium -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.css">
+
+    <!-- Styles Revolutionary + Power BI -->
+    <link rel="stylesheet" href="/css/revolutionary.css">
+        <!-- Premium Business Intelligence CSS -->
+    <link rel="stylesheet" href="/css/powerbi-dashboard.css">
+    <!-- Chart.js for interactive elements -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="revolutionary-body">
+
+    <!-- ===== REVOLUTIONARY HEADER (Same as main site) ===== -->
+    <header class="header-revolutionary" id="header-main">
+        <nav class="nav-container">
+            <!-- Logo Revolutionary -->
+            <div class="brand-revolutionary">
+                <a href="/" class="brand-link">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i data-lucide="zap" class="logo-svg"></i>
+                        </div>
+                        <div class="brand-text">
+                            <div class="brand-name">ZineInsight</div>
+                            <div class="brand-tagline">Business Intelligence</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <i data-lucide="home" class="nav-icon"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/zscore/" class="nav-link">
+                            <i data-lucide="map-pin" class="nav-icon"></i>
+                            <span>ZScore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i data-lucide="building-2" class="nav-icon"></i>
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <a href="mailto:otmane@zineinsight.com?subject=Dashboard%20Finance%20comme%20exemple"
+                    class="btn btn-primary">
+                    <i data-lucide="mail" class="btn-icon"></i>
+                    <span>Me contacter</span>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Scroll Progress -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-revolutionary" id="main-content">
+
+        <!-- ===== HERO DASHBOARD FINANCE ===== -->
+        <section class="section-container powerbi-showcase">
+            <!-- Header avec badge Power BI -->
+            <div class="section-header">
+                <div class="section-badge powerbi-badge">
+                    <i data-lucide="trending-up" class="badge-icon"></i>
+                    <span>🏦 Dashboard Power BI Finance</span>
+                </div>
+                <h1 class="section-title">
+                    Dashboard Finance
+                    <span class="title-gradient">BNP Paribas</span>
+                </h1>
+                <p class="section-subtitle">
+                    Analyse complète des performances 2023/2024 : 44 Md€ PNB (+4%),
+                    ROE 10%, analyse prudentielle et insights secteur bancaire
+                </p>
+            </div>
+
+            <!-- Métriques principales - Style Power BI + Revolutionary -->
+            <div class="hero-stats powerbi-metrics">
+                <div class="stat-item metric-primary">
+                    <div class="stat-number" id="pnb-counter">44.0 Md€</div>
+                    <div class="stat-label">Produit Net Bancaire</div>
+                    <div class="stat-growth positive">+4.0%</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item metric-secondary">
+                    <div class="stat-number" id="resultat-counter">11.7 Md€</div>
+                    <div class="stat-label">Résultat Net</div>
+                    <div class="stat-growth positive">+11.6%</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item metric-accent">
+                    <div class="stat-number" id="roe-counter">10.0%</div>
+                    <div class="stat-label">Return on Equity</div>
+                    <div class="stat-growth positive">+1.0 pt</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item metric-info">
+                    <div class="stat-number" id="cet1-counter">13.0%</div>
+                    <div class="stat-label">CET1 Ratio</div>
+                    <div class="stat-growth negative">-0.3 pt</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INSIGHTS BUSINESS ACTIONNABLES ===== -->
+        <section class="section-container insights-business">
+            <div class="section-header">
+                <h2 class="section-title">Insights Business Actionnables</h2>
+                <p class="section-subtitle">
+                    Analyse automatique des données pour identifier opportunités et points
+                    d'attention dans la performance bancaire
+                </p>
+            </div>
+
+            <!-- Insights Grid -->
+            <div class="insights-grid">
+                <!-- Opportunités -->
+                <div class="insight-card opportunity-card">
+                    <div class="card-header">
+                        <div class="card-icon opportunity-icon">💡</div>
+                        <h3 class="card-title">Opportunités détectées</h3>
+                    </div>
+                    <ul class="insights-list">
+                        <li class="insight-item positive">
+                            <strong>Domestic Markets :</strong> Performance + marge optimale
+                            <div class="insight-impact">Potentiel: 50% du PNB</div>
+                        </li>
+                        <li class="insight-item positive">
+                            <strong>Q4 2024 :</strong> Pic de performance à exploiter
+                            <div class="insight-impact">ROE: +11.1% vs moyenne</div>
+                        </li>
+                        <li class="insight-item positive">
+                            <strong>Capital solide :</strong> Momentum CET1 13%
+                            <div class="insight-impact">Marge sécurité vs minimum</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Recommandations -->
+                <div class="insight-card recommendation-card">
+                    <div class="card-header">
+                        <div class="card-icon recommendation-icon">🎯</div>
+                        <h3 class="card-title">Recommandations prioritaires</h3>
+                    </div>
+                    <ul class="insights-list">
+                        <li class="insight-item action">
+                            <strong>Diversification :</strong> Maintenir équilibre divisions
+                            <div class="insight-impact">Stabilité: 50/30/20%</div>
+                        </li>
+                        <li class="insight-item action">
+                            <strong>Optimisation :</strong> Surveiller cost/income ratio
+                            <div class="insight-impact">Cible: < 65%</div>
+                        </li>
+                        <li class="insight-item action">
+                            <strong>Capital :</strong> Maintenir CET1 > 12%
+                            <div class="insight-impact">Marge: +2.5 pts mini</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ANALYSES DÉTAILLÉES ===== -->
+        <section class="section-container charts-analysis">
+            <div class="section-header">
+                <h2 class="section-title">Analyses Approfondies</h2>
+                <p class="section-subtitle">
+                    Screenshots authentiques de votre dashboard Power BI en action
+                </p>
+            </div>
+
+            <div class="powerbi-screenshots-grid">
+                <!-- Dashboard View 1 -->
+                <div class="screenshot-container mini-card" onclick="openModal(0)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_bnp1.png" 
+                             alt="Dashboard Power BI - Synthèse financière BNP Paribas" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">📈 Synthèse Financière</h3>
+                            <div class="chart-period">Dashboard principal</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">🔴 LIVE Dashboard</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard View 2 -->
+                <div class="screenshot-container mini-card" onclick="openModal(1)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_bnp3.png" 
+                             alt="Dashboard Power BI - Risques et Réglementation BNP" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🛡️ Risques & Réglementation</h3>
+                            <div class="chart-period">Analyse prudentielle</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">📊 Analytics</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard View 3 -->
+                <div class="screenshot-container mini-card" onclick="openModal(2)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_pnb2.png" 
+                             alt="Dashboard Power BI - Performance par Division BNP" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🏢 Performance Divisions</h3>
+                            <div class="chart-period">Domestic/IFS/CIB</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">⭐ Premium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard View 4 -->
+                <div class="screenshot-container mini-card" onclick="openModal(3)">
+                    <div class="screenshot-content">
+                        <img src="/assets/images/dashboard_pnb4.png" 
+                             alt="Dashboard Power BI - Model View et Relations" 
+                             class="dashboard-screenshot"
+                             loading="lazy">
+                        <div class="chart-header">
+                            <h3 class="chart-title">🔗 Model View</h3>
+                            <div class="chart-period">Power BI</div>
+                        </div>
+                        <div class="screenshot-overlay">
+                            <div class="screenshot-badge">🔧 Technical</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Zoom -->
+            <div class="screenshot-modal" id="screenshotModal" onclick="closeModal(event)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <span id="modalTitle">📈 Vue Dashboard</span>
+                        </div>
+                        <button class="modal-close" onclick="closeModal()">&times;</button>
+                    </div>
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                    <button class="modal-navigation modal-prev" onclick="prevImage()">‹</button>
+                    <button class="modal-navigation modal-next" onclick="nextImage()">›</button>
+                    <div class="modal-counter">
+                        <span id="modalCounter">1 / 4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA FORT BUSINESS ===== -->
+        <section class="section-container cta-business">
+            <div class="cta-container">
+                <div class="cta-header">
+                    <h2 class="cta-title">
+                        Vous voulez le même pour 
+                        <span class="title-gradient">votre banque</span> ?
+                    </h2>
+                    <p class="cta-subtitle">
+                        Dashboard finance personnalisé livré en <strong>7-10 jours</strong><br>
+                        Analyse de vos données réelles + insights bancaires actionnables
+                    </p>
+                </div>
+
+                <div class="cta-benefits">
+                    <div class="cta-benefit">
+                        <i data-lucide="check-circle" class="benefit-icon"></i>
+                        <span>Dashboard Power BI professionnel</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i data-lucide="check-circle" class="benefit-icon"></i>
+                        <span>Analyse de vos données réelles</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i data-lucide="check-circle" class="benefit-icon"></i>
+                        <span>Recommandations actionnables</span>
+                    </div>
+                </div>
+
+                <div class="cta-actions">
+                    
+                    <a href="mailto:otmane@zineinsight.com?subject=Discutons%20de%20mon%20projet%20BI%20Finance"
+                        class="btn btn-secondary btn-hero">
+                        <i data-lucide="message-circle" class="btn-icon"></i>
+                        <span>💬 Discutons de votre projet</span>
+                    </a>
+                </div>
+
+                <div class="cta-trust">
+                    <div class="trust-item">
+                        <div class="trust-icon">⚡</div>
+                        <div class="trust-text">Livraison rapide 7-10j</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">�</div>
+                        <div class="feature-text">
+                            <strong>Insights actionnables</strong><br>
+                            Recommandations IA
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🔒</div>
+                        <div class="trust-text">Support inclus</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER (Same as main site) ===== -->
+    <footer class="footer-revolutionary" id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-revolutionary">
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <i data-lucide="zap" class="logo-svg"></i>
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-name">ZineInsight</div>
+                                <div class="brand-tagline">Business Intelligence</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Dashboards Power BI professionnels pour optimiser 
+                        vos performances business avec des insights actionnables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 ZineInsight. Excellence en Business Intelligence.
+                </p>
+                <div class="footer-badges">
+                    <span class="badge">Power BI Certified</span>
+                    <span class="badge">Data Analytics</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Essential -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="/js/ecommerce-dashboard.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Dashboard data for modal navigation
+        const dashboardData = [
+            {
+                title: "📈 Synthèse Financière",
+                image: "/assets/images/dashboard_bnp1.png",
+                description: "Vue d'ensemble des performances BNP Paribas"
+            },
+            {
+                title: "🛡️ Risques & Réglementation", 
+                image: "/assets/images/dashboard_bnp3.png",
+                description: "Analyse prudentielle et conformité"
+            },
+            {
+                title: "🏢 Performance Divisions",
+                image: "/assets/images/dashboard_pnb2.png", 
+                description: "Domestic Markets, IFS, CIB"
+            },
+            {
+                title: "🔗 Model View / Power BI",
+                image: "/assets/images/dashboard_pnb4.png", 
+                description: "Architecture et relations du modèle de données"
+            }
+        ];
+
+        let currentModalIndex = 0;
+
+        // Modal functions
+        function openModal(index) {
+            currentModalIndex = index;
+            const modal = document.getElementById('screenshotModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalImage = document.getElementById('modalImage');
+            const modalCounter = document.getElementById('modalCounter');
+            
+            modal.style.display = 'flex';
+            modalTitle.textContent = dashboardData[index].title;
+            modalImage.src = dashboardData[index].image;
+            modalImage.alt = dashboardData[index].description;
+            modalCounter.textContent = `${index + 1} / ${dashboardData.length}`;
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            const modal = document.getElementById('screenshotModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentModalIndex = (currentModalIndex + 1) % dashboardData.length;
+            openModal(currentModalIndex);
+        }
+
+        function prevImage() {
+            currentModalIndex = currentModalIndex === 0 ? dashboardData.length - 1 : currentModalIndex - 1;
+            openModal(currentModalIndex);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('screenshotModal');
+            if (modal.style.display === 'flex') {
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'ArrowRight') nextImage();
+            }
+        });
+
+        // Counter animations
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const pnbElement = document.getElementById('pnb-counter');
+                const resultatElement = document.getElementById('resultat-counter');
+                const roeElement = document.getElementById('roe-counter');
+                const cet1Element = document.getElementById('cet1-counter');
+
+                if (pnbElement) pnbElement.textContent = '44.0 Md€';
+                if (resultatElement) resultatElement.textContent = '11.7 Md€';
+                if (roeElement) roeElement.textContent = '10.0%';
+                if (cet1Element) cet1Element.textContent = '13.0%';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
